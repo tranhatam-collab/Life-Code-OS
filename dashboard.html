@@ -4,18 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#0b0f14" />
-  <title>Bảng điều khiển Life Code | IAI.one</title>
-  <meta name="description" content="Cấu trúc bảng điều khiển của Life Code: core identity, chỉ số, timeline, widgets theo level và hướng hành động." />
+  <meta name="color-scheme" content="dark light" />
+
+  <title>Bảng Điều Khiển Life Code | IAI.one</title>
+  <meta name="description" content="Bảng điều khiển Life Code giúp theo dõi hồ sơ, chỉ số, timeline cuộc đời, risk map, mission path và các báo cáo nhiều tầng trên nền tảng IAI.one." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="format-detection" content="telephone=no" />
+
   <link rel="canonical" href="https://lifecode.iai.one/dashboard.html" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <div class="lc-page">
     <div class="lc-noise"></div>
+    <div class="lc-orb lc-orb-1"></div>
+    <div class="lc-orb lc-orb-2"></div>
+
     <header class="lc-header">
       <div class="lc-container lc-header-row">
-        <a class="lc-brand" href="/"><span class="lc-brand-mark">LC</span><span class="lc-brand-text"><strong>Life Code</strong><small>Mật Mã Đời Người · IAI.one</small></span></a>
-        <button class="lc-menu-toggle" id="lcMenuToggle" type="button" aria-expanded="false" aria-controls="lcNav"><span></span><span></span><span></span></button>
+        <a class="lc-brand" href="/" aria-label="Trang chủ Life Code">
+          <span class="lc-brand-mark">LC</span>
+          <span class="lc-brand-text">
+            <strong>Life Code</strong>
+            <small>Mật Mã Đời Người · IAI.one</small>
+          </span>
+        </a>
+
+        <button class="lc-menu-toggle" id="lcMenuToggle" type="button" aria-expanded="false" aria-controls="lcNav" aria-label="Mở menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <nav class="lc-nav" id="lcNav">
           <a href="/">Trang chủ</a>
           <a href="/gioi-thieu.html">Giới thiệu</a>
@@ -28,6 +48,10 @@
           <a href="/cau-hoi-thuong-gap.html">Hỏi đáp</a>
           <a href="/ban-quyen-so-huu-tri-tue.html">Bản quyền</a>
         </nav>
+
+        <div class="lc-header-actions">
+          <a class="lc-btn lc-btn-header" href="/bat-dau.html">Bắt đầu</a>
+        </div>
       </div>
     </header>
 
@@ -35,11 +59,19 @@
       <section class="lc-hero">
         <div class="lc-container">
           <div class="lc-section-head">
-            <span class="lc-kicker">Bảng điều khiển</span>
-            <h1 class="lc-hero-title" style="max-width:14ch">Mỗi level mở thêm một vùng nhìn thấy cuộc đời<span>Không chỉ có chỉ số, mà có cả nhịp sống và hướng đi</span></h1>
+            <span class="lc-kicker">Bảng điều khiển Life Code</span>
+            <h1 class="lc-hero-title" style="max-width:14ch">
+              Trung tâm theo dõi hồ sơ Life Code
+              <span>Chỉ số, timeline, rủi ro, cơ hội và hành động theo từng tầng dữ liệu</span>
+            </h1>
             <p class="lc-hero-text">
-              Dashboard Life Code phải cho người dùng thấy ngay họ đang ở đâu, mức dữ liệu hiện tại ra sao, confidence thế nào, và level tiếp theo sẽ mở ra điều gì.
+              Đây là không gian trung tâm để người dùng theo dõi mức độ hoàn thiện hồ sơ, độ phủ dữ liệu, Life Code Index, tiến trình mở 9 tầng Life Code và các hướng hành động theo từng giai đoạn sống.
             </p>
+
+            <div class="lc-hero-actions">
+              <a class="lc-btn lc-btn-primary" href="/bat-dau.html">Cập nhật dữ liệu hồ sơ</a>
+              <a class="lc-btn lc-btn-secondary" href="/bao-cao-life-code.html">Xem hệ báo cáo</a>
+            </div>
           </div>
         </div>
       </section>
@@ -47,9 +79,20 @@
       <section class="lc-section">
         <div class="lc-container">
           <div class="lc-card-grid lc-card-grid-3">
-            <article class="lc-card"><h3>Core Identity Card</h3><p>Hiển thị bản chất cốt lõi, level hiện tại và life code index.</p></article>
-            <article class="lc-card"><h3>Data Coverage</h3><p>Cho biết hồ sơ còn thiếu gì và mức đọc hiện tại đang là sơ bộ hay đã đủ mạnh.</p></article>
-            <article class="lc-card"><h3>Next Action</h3><p>Cho người dùng biết ngay điều quan trọng nhất nên làm kế tiếp.</p></article>
+            <article class="lc-card">
+              <h3>Chỉ Số Life Code</h3>
+              <p>Chỉ số tổng hợp đầu tiên phản ánh mức độ rõ của cấu trúc đời người tại thời điểm phân tích.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Độ Tin Cậy Dữ Liệu</h3>
+              <p>Cho biết hồ sơ hiện tại mạnh đến đâu, còn thiếu dữ liệu nào và mức đọc đang ở tầng nào.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Chu Kỳ Hiện Tại</h3>
+              <p>Giúp người dùng biết mình đang ở giai đoạn nào, nên tập trung điều gì và nên tránh điều gì.</p>
+            </article>
           </div>
         </div>
       </section>
@@ -57,19 +100,241 @@
       <section class="lc-section lc-section-alt">
         <div class="lc-container">
           <div class="lc-section-head">
-            <span class="lc-kicker">Widgets theo level</span>
-            <h2>Bảng điều khiển phải mở dần theo 9 tầng</h2>
+            <span class="lc-kicker">Tổng quan hồ sơ</span>
+            <h2>Các khối quan trọng nhất của bảng điều khiển</h2>
+            <p>
+              Bảng điều khiển phải giúp người dùng nhìn thấy ngay trạng thái hiện tại của hồ sơ, không cần đọc hết toàn bộ báo cáo mới hiểu mình đang ở đâu.
+            </p>
           </div>
+
+          <div class="lc-card-grid lc-card-grid-2">
+            <article class="lc-card">
+              <h3>Hồ Sơ Cá Nhân</h3>
+              <ul>
+                <li>Họ tên đầy đủ</li>
+                <li>Ngày sinh</li>
+                <li>Giờ sinh</li>
+                <li>Nơi sinh</li>
+                <li>Giới tính</li>
+                <li>Độ đầy đủ dữ liệu nền</li>
+              </ul>
+            </article>
+
+            <article class="lc-card">
+              <h3>Trạng Thái Hồ Sơ</h3>
+              <ul>
+                <li>Dữ liệu chưa đủ</li>
+                <li>Dữ liệu một phần</li>
+                <li>Dữ liệu mạnh</li>
+                <li>Dữ liệu đầy đủ</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">Khối chỉ số</span>
+            <h2>Life Code Index và các chỉ số nền</h2>
+            <p>
+              Đây là nhóm chỉ số cốt lõi để đánh giá nhanh độ rõ của hồ sơ và mức sẵn sàng để mở các tầng phân tích tiếp theo.
+            </p>
+          </div>
+
+          <div class="lc-card-grid lc-card-grid-2">
+            <article class="lc-card">
+              <h3>Life Code Index</h3>
+              <ul>
+                <li>Raw Life Code Index</li>
+                <li>Normalized Life Code Index</li>
+                <li>Adjusted Life Code Index</li>
+                <li>Data Coverage</li>
+              </ul>
+            </article>
+
+            <article class="lc-card">
+              <h3>Giải thích chỉ số</h3>
+              <p>
+                Chỉ số càng rõ khi dữ liệu càng đầy đủ, confidence càng cao và nhiều layer đồng thuận với nhau. Chỉ số thấp hoặc coverage thấp không phải là phán quyết xấu, mà là dấu hiệu cần bổ sung dữ liệu hoặc chưa nên kết luận mạnh.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section lc-section-alt">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">Timeline và windows</span>
+            <h2>Các vùng thời gian cần hiển thị ngay trên dashboard</h2>
+            <p>
+              Dashboard không chỉ có số. Nó phải cho người dùng thấy mình đang ở đâu trên trục thời gian và những cửa nào đang mở ra.
+            </p>
+          </div>
+
           <div class="lc-card-grid lc-card-grid-3">
-            <article class="lc-card"><h3>Level 1</h3><p>Core identity, LCI, cycle now, 30-day focus.</p></article>
-            <article class="lc-card"><h3>Level 2</h3><p>Inner architecture map, risk base map, 3-year direction.</p></article>
-            <article class="lc-card"><h3>Level 3</h3><p>Behavior radar, stress profile, work rhythm.</p></article>
-            <article class="lc-card"><h3>Level 4</h3><p>Wealth pattern, financial leakage map, work archetype.</p></article>
-            <article class="lc-card"><h3>Level 5</h3><p>Relationship field, trust map, conflict triggers.</p></article>
-            <article class="lc-card"><h3>Level 6</h3><p>Timeline 0–99, risk windows, peak windows, transformation windows.</p></article>
-            <article class="lc-card"><h3>Level 7</h3><p>Face map, hand map, foot grounding map.</p></article>
-            <article class="lc-card"><h3>Level 8</h3><p>Mission alignment, repeated lessons, service path.</p></article>
-            <article class="lc-card lc-level-card-featured"><h3>Level 9</h3><p>Full life dashboard, strategy navigator, report library.</p></article>
+            <article class="lc-card">
+              <h3>Timeline Cuộc Đời</h3>
+              <p>Bản đồ các giai đoạn từ 0 đến 99 tuổi, thể hiện logic tăng trưởng, áp lực và chuyển hóa.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Cửa Sổ Cơ Hội</h3>
+              <p>Những giai đoạn thuận lợi để xây hệ, tạo bước tiến, tạo sản phẩm hoặc mở rộng vai trò.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Vùng Rủi Ro</h3>
+              <p>Những khoảng thời gian cần ưu tiên bảo vệ sức khỏe, tài chính, năng lượng và các quan hệ cốt lõi.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">Các khối phân tích chính</span>
+            <h2>Từ dashboard có thể đi vào từng vùng của một đời người</h2>
+          </div>
+
+          <div class="lc-levels-grid">
+            <article class="lc-level-card">
+              <span class="lc-level-no">01</span>
+              <h3>Life Code Index</h3>
+              <p>Theo dõi chỉ số nền, coverage và confidence của hồ sơ.</p>
+              <a href="/life-code-index.html">Xem chi tiết</a>
+            </article>
+
+            <article class="lc-level-card">
+              <span class="lc-level-no">02</span>
+              <h3>Timeline Cuộc Đời</h3>
+              <p>Xem trục thời gian 0–99, chu kỳ hiện tại và các vùng chuyển hóa.</p>
+              <a href="/timeline-cuoc-doi.html">Xem chi tiết</a>
+            </article>
+
+            <article class="lc-level-card">
+              <span class="lc-level-no">03</span>
+              <h3>Wealth Code</h3>
+              <p>Theo dõi mô thức tiền bạc, dòng tiền và các thời điểm tăng trưởng hoặc phòng thủ.</p>
+              <a href="/bao-cao-life-code.html">Xem báo cáo</a>
+            </article>
+
+            <article class="lc-level-card">
+              <span class="lc-level-no">04</span>
+              <h3>Relationship Field</h3>
+              <p>Theo dõi pattern quan hệ, niềm tin, xung đột và khả năng đồng hành.</p>
+              <a href="/bao-cao-life-code.html">Xem báo cáo</a>
+            </article>
+
+            <article class="lc-level-card">
+              <span class="lc-level-no">05</span>
+              <h3>Mission Path</h3>
+              <p>Nhìn thấy hướng sống, nhiệm vụ, bài học lặp và các năm kích hoạt mạnh.</p>
+              <a href="/bao-cao-life-code.html">Xem báo cáo</a>
+            </article>
+
+            <article class="lc-level-card lc-level-card-featured">
+              <span class="lc-level-no">09</span>
+              <h3>Full Life Code</h3>
+              <p>Mở cuốn sách đầy đủ của một đời người khi hồ sơ đã đủ mạnh.</p>
+              <a href="/9-levels-life-code.html#level-9">Xem tầng cuối</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section lc-section-alt">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">Widgets theo từng level</span>
+            <h2>Mỗi tầng dữ liệu phải mở thêm widget tương ứng</h2>
+            <p>
+              Dashboard phải phản ánh đúng kiến trúc 9 tầng Life Code, không hiển thị lẫn lộn hoặc mở trước những gì dữ liệu chưa đủ.
+            </p>
+          </div>
+
+          <div class="lc-card-grid lc-card-grid-3">
+            <article class="lc-card">
+              <h3>Level 1</h3>
+              <p>Core identity, Life Code Index, chu kỳ hiện tại, hành động 30 ngày.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Level 2</h3>
+              <p>Bản đồ cấu trúc bên trong, risk base map, hướng 3 năm.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Level 3</h3>
+              <p>Behavior radar, stress profile, work rhythm và vùng rò rỉ năng lượng.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Level 4</h3>
+              <p>Wealth pattern, financial leakage map, work archetype.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Level 5</h3>
+              <p>Relationship field, trust map, conflict triggers.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Level 6</h3>
+              <p>Timeline 0–99, risk windows, peak windows, transformation windows.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Level 7</h3>
+              <p>Face map, hand map, foot grounding map.</p>
+            </article>
+
+            <article class="lc-card">
+              <h3>Level 8</h3>
+              <p>Mission alignment, repeated lessons, service path.</p>
+            </article>
+
+            <article class="lc-card lc-level-card-featured">
+              <h3>Level 9</h3>
+              <p>Full life dashboard, strategy navigator, report library.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">Hành động từ dashboard</span>
+            <h2>Dashboard phải dẫn người dùng đi tiếp chứ không chỉ để xem</h2>
+          </div>
+
+          <div class="lc-card-grid lc-card-grid-2">
+            <article class="lc-card">
+              <h3>Các nút hành động chuẩn</h3>
+              <ul>
+                <li>Tạo Hồ Sơ</li>
+                <li>Cập Nhật Dữ Liệu</li>
+                <li>Tạo Báo Cáo</li>
+                <li>Xem Chi Tiết</li>
+                <li>Xuất PDF</li>
+              </ul>
+            </article>
+
+            <article class="lc-card">
+              <h3>Mục tiêu UX</h3>
+              <p>
+                Người dùng phải luôn biết bước tiếp theo là gì: bổ sung dữ liệu, mở level mới, xem báo cáo sâu hơn hay quay về chỉnh hồ sơ nền để tăng độ tin cậy của kết quả.
+              </p>
+            </article>
+          </div>
+
+          <div class="lc-cta-row">
+            <a class="lc-btn lc-btn-primary" href="/bat-dau.html">Bắt đầu hoặc cập nhật hồ sơ</a>
+            <a class="lc-btn lc-btn-secondary" href="/bao-cao-life-code.html">Xem toàn bộ hệ báo cáo</a>
           </div>
         </div>
       </section>
@@ -77,13 +342,52 @@
 
     <footer class="lc-footer">
       <div class="lc-container lc-footer-grid">
-        <div class="lc-footer-brand"><div class="lc-footer-logo">LC</div><div><strong>Life Code</strong><p>Mật Mã Đời Người · IAI.one</p></div></div>
-        <div class="lc-footer-col"><h3>Khám phá</h3><a href="/gioi-thieu.html">Giới thiệu</a><a href="/he-thong-life-code.html">Hệ thống Life Code</a><a href="/9-levels-life-code.html">9 tầng Life Code</a><a href="/bao-cao-life-code.html">Báo cáo</a></div>
-        <div class="lc-footer-col"><h3>Sản phẩm</h3><a href="/bat-dau.html">Bắt đầu</a><a href="/dashboard.html">Bảng điều khiển</a><a href="/timeline-cuoc-doi.html">Timeline cuộc đời</a><a href="/life-code-index.html">Life Code Index</a></div>
-        <div class="lc-footer-col"><h3>Pháp lý</h3><a href="/ban-quyen-so-huu-tri-tue.html">Bản quyền</a><a href="/dieu-khoan-su-dung.html">Điều khoản sử dụng</a><a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a><a href="/lien-he.html">Liên hệ</a></div>
+        <div class="lc-footer-brand">
+          <div class="lc-footer-logo">LC</div>
+          <div>
+            <strong>Life Code</strong>
+            <p>Mật Mã Đời Người · Nền tảng trí tuệ đời người của IAI.one</p>
+          </div>
+        </div>
+
+        <div class="lc-footer-col">
+          <h3>Khám phá</h3>
+          <a href="/gioi-thieu.html">Giới thiệu</a>
+          <a href="/he-thong-life-code.html">Hệ thống Life Code</a>
+          <a href="/9-levels-life-code.html">9 tầng Life Code</a>
+          <a href="/bao-cao-life-code.html">Báo cáo</a>
+        </div>
+
+        <div class="lc-footer-col">
+          <h3>Sản phẩm</h3>
+          <a href="/bat-dau.html">Bắt đầu</a>
+          <a href="/dashboard.html">Bảng điều khiển</a>
+          <a href="/timeline-cuoc-doi.html">Timeline cuộc đời</a>
+          <a href="/life-code-index.html">Life Code Index</a>
+        </div>
+
+        <div class="lc-footer-col">
+          <h3>Pháp lý</h3>
+          <a href="/ban-quyen-so-huu-tri-tue.html">Bản quyền</a>
+          <a href="/dieu-khoan-su-dung.html">Điều khoản sử dụng</a>
+          <a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
+          <a href="/lien-he.html">Liên hệ</a>
+        </div>
+      </div>
+
+      <div class="lc-footer-bottom">
+        <div class="lc-container lc-footer-bottom-row">
+          <p>
+            © Life Code OS · Mật Mã Đời Người · IAI.one. Bản quyền sở hữu trí tuệ thuộc ông Trần Hà Tâm trên nền tảng IAI.one.
+          </p>
+          <div class="lc-footer-domains">
+            <a href="https://lifecode.iai.one" target="_blank" rel="noopener noreferrer">lifecode.iai.one</a>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
+
   <script src="./app.js"></script>
   <script src="./site.js"></script>
 </body>
