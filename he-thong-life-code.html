@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Hệ thống Life Code | IAI.one</title>
+  <meta name="description" content="Toàn bộ kiến trúc hệ thống Life Code: dữ liệu, feature layer, 12 engines, fusion layer, forecast, recommendation và report." />
+  <link rel="canonical" href="https://lifecode.iai.one/he-thong-life-code.html" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="lc-page">
+    <div class="lc-noise"></div>
+    <div class="lc-orb lc-orb-1"></div>
+    <div class="lc-orb lc-orb-3"></div>
+    <header class="lc-header">
+      <div class="lc-container lc-header-row">
+        <a class="lc-brand" href="/"><span class="lc-brand-mark">LC</span><span class="lc-brand-text"><strong>Life Code</strong><small>Mật Mã Đời Người · IAI.one</small></span></a>
+        <button class="lc-menu-toggle" id="lcMenuToggle" type="button" aria-expanded="false" aria-controls="lcNav"><span></span><span></span><span></span></button>
+        <nav class="lc-nav" id="lcNav">
+          <a href="/">Trang chủ</a>
+          <a href="/gioi-thieu.html">Giới thiệu</a>
+          <a href="/he-thong-life-code.html">Hệ thống Life Code</a>
+          <a href="/9-levels-life-code.html">9 tầng Life Code</a>
+          <a href="/life-code-index.html">Life Code Index</a>
+          <a href="/timeline-cuoc-doi.html">Timeline cuộc đời</a>
+          <a href="/bao-cao-life-code.html">Báo cáo</a>
+          <a href="/dashboard.html">Bảng điều khiển</a>
+          <a href="/cau-hoi-thuong-gap.html">Hỏi đáp</a>
+          <a href="/ban-quyen-so-huu-tri-tue.html">Bản quyền</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="lc-hero">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">Hệ thống Life Code</span>
+            <h1 class="lc-hero-title" style="max-width:15ch">Toàn bộ kiến trúc của hệ<span>Từ dữ liệu đầu vào đến report cuối cùng</span></h1>
+            <p class="lc-hero-text">
+              Life Code phải là một hệ thống khép kín: input chuẩn → feature extraction → 12 layer engines → fusion → forecast → recommendation → dashboard → report. Không phần nào được đứng rời khỏi toàn hệ.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section lc-section-alt">
+        <div class="lc-container">
+          <div class="lc-architecture">
+            <div class="lc-arch-box">
+              <h3>Tầng đầu vào</h3>
+              <ul>
+                <li>Dữ liệu sinh</li>
+                <li>Họ tên và ngôn ngữ</li>
+                <li>Questionnaire hành vi</li>
+                <li>Dữ liệu xã hội</li>
+                <li>Timeline biến cố</li>
+                <li>Ảnh mặt, tay, chân</li>
+              </ul>
+            </div>
+            <div class="lc-arch-arrow">→</div>
+            <div class="lc-arch-box">
+              <h3>Tầng xử lý</h3>
+              <ul>
+                <li>Chuẩn hóa dữ liệu</li>
+                <li>Trích xuất biến</li>
+                <li>Tính score từng layer</li>
+                <li>Tính confidence</li>
+                <li>Hợp nhất tín hiệu</li>
+                <li>Tạo event probabilities</li>
+              </ul>
+            </div>
+            <div class="lc-arch-arrow">→</div>
+            <div class="lc-arch-box">
+              <h3>Tầng đầu ra</h3>
+              <ul>
+                <li>Life Code Index</li>
+                <li>Risk map</li>
+                <li>Timeline 0–99</li>
+                <li>Mission path</li>
+                <li>Dashboard widgets</li>
+                <li>Reports nhiều tầng</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">12 lớp phân tích</span>
+            <h2>12 engines tạo nên hệ Life Code</h2>
+          </div>
+          <div class="lc-levels-grid">
+            <article class="lc-level-card"><h3>Chrono Code</h3><p>Đọc dữ liệu thời điểm sinh, chu kỳ năm, tháng, tuổi và các cửa thời gian.</p></article>
+            <article class="lc-level-card"><h3>Name Code</h3><p>Đọc họ tên, âm thanh, ngữ nghĩa, projection xã hội của tên gọi.</p></article>
+            <article class="lc-level-card"><h3>Birth Matrix</h3><p>Tầng cấu trúc nền và các hệ ma trận sinh tích hợp.</p></article>
+            <article class="lc-level-card"><h3>Face / Hand / Foot</h3><p>Đọc tín hiệu hình thái cơ thể và dấu áp lực in lên cơ thể.</p></article>
+            <article class="lc-level-card"><h3>Behavior Code</h3><p>Đọc cách vận hành đời sống thật qua hành vi, stress, quyết định, nhịp làm việc.</p></article>
+            <article class="lc-level-card"><h3>Social Fate</h3><p>Đọc môi trường sinh ra, áp lực vô hình, trần xã hội và lợi thế xã hội.</p></article>
+            <article class="lc-level-card"><h3>Relationship Code</h3><p>Đọc mô thức quan hệ, kiểu gắn bó, niềm tin và xung đột.</p></article>
+            <article class="lc-level-card"><h3>Wealth Code</h3><p>Đọc đường tiền bạc, cách tiền đến, cách tiền rời đi và hướng xây tài sản.</p></article>
+            <article class="lc-level-card"><h3>Health Risk</h3><p>Đọc stress, overload, khả năng phục hồi, vùng quá tải sinh học.</p></article>
+            <article class="lc-level-card"><h3>Mission Code</h3><p>Đọc nhiệm vụ, bài học lặp, hướng phụng sự và legacy direction.</p></article>
+            <article class="lc-level-card"><h3>Fusion Layer</h3><p>Hợp nhất tín hiệu, kiểm tra cross-layer agreement và confidence toàn hệ.</p></article>
+            <article class="lc-level-card lc-level-card-featured"><h3>Forecast Layer</h3><p>Tạo timeline, risk windows, peak windows, transformation windows và chiến lược hành động.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="lc-section lc-section-alt">
+        <div class="lc-container">
+          <div class="lc-section-head">
+            <span class="lc-kicker">Đầu ra cuối cùng</span>
+            <h2>Mọi phân tích đều phải đi về hành động</h2>
+            <p>Life Code không dừng ở diễn giải. Mọi kết quả cuối cùng phải đưa ra hướng hành động theo thời gian và mức độ ưu tiên.</p>
+          </div>
+          <div class="lc-card-grid lc-card-grid-2">
+            <article class="lc-card">
+              <h3>Các loại đầu ra</h3>
+              <ul>
+                <li>Snapshot</li>
+                <li>Deep Analysis</li>
+                <li>Timeline 0–99</li>
+                <li>Risk map</li>
+                <li>Mission path</li>
+                <li>Full Life Code Book</li>
+              </ul>
+            </article>
+            <article class="lc-card">
+              <h3>Các lớp hành động</h3>
+              <ul>
+                <li>Điều nên dừng</li>
+                <li>Điều nên bắt đầu</li>
+                <li>Điều nên bảo vệ</li>
+                <li>Điều nên xây</li>
+                <li>30 ngày – 90 ngày – 1 năm – 3 năm</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="lc-footer">
+      <div class="lc-container lc-footer-grid">
+        <div class="lc-footer-brand"><div class="lc-footer-logo">LC</div><div><strong>Life Code</strong><p>Mật Mã Đời Người · IAI.one</p></div></div>
+        <div class="lc-footer-col"><h3>Khám phá</h3><a href="/gioi-thieu.html">Giới thiệu</a><a href="/he-thong-life-code.html">Hệ thống Life Code</a><a href="/9-levels-life-code.html">9 tầng Life Code</a><a href="/bao-cao-life-code.html">Báo cáo</a></div>
+        <div class="lc-footer-col"><h3>Sản phẩm</h3><a href="/bat-dau.html">Bắt đầu</a><a href="/dashboard.html">Bảng điều khiển</a><a href="/timeline-cuoc-doi.html">Timeline cuộc đời</a><a href="/life-code-index.html">Life Code Index</a></div>
+        <div class="lc-footer-col"><h3>Pháp lý</h3><a href="/ban-quyen-so-huu-tri-tue.html">Bản quyền</a><a href="/dieu-khoan-su-dung.html">Điều khoản sử dụng</a><a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a><a href="/lien-he.html">Liên hệ</a></div>
+      </div>
+    </footer>
+  </div>
+  <script src="./app.js"></script>
+  <script src="./site.js"></script>
+</body>
+</html>
