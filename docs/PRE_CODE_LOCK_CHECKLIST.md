@@ -2,11 +2,16 @@
 
 Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã chốt trong docs/code; mọi thay đổi sau đó phải cập nhật README trước (mục 33).
 
+**Tài liệu đã có (tiến độ Trục B):**
+
+- [GLOSSARY.md](./GLOSSARY.md) — bản khóa ngôn ngữ v1 (tên hệ, 9 level, thuật ngữ cấm/dùng, LCI)  
+- [schemas/engine-output-v1.schema.json](./schemas/engine-output-v1.schema.json) — khung JSON tối thiểu engine output (mục E)  
+
 ---
 
 ## Giai đoạn khóa chuẩn (mục 31 — thứ tự)
 
-- [ ] 1. Khóa ngôn ngữ toàn hệ  
+- [ ] 1. Khóa ngôn ngữ toàn hệ *(xem [GLOSSARY.md](./GLOSSARY.md) — cần review & tick khi chốt)*  
 - [ ] 2. Khóa kiến trúc 9 level  
 - [ ] 3. Khóa kiến trúc report generator  
 - [ ] 4. Khóa output contract  
