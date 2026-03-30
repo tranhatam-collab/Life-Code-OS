@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-03-30T21:04:16.091Z",
+  "identity_layer": "Người dùng có nền chủ động cao, thích tự quyết và học qua trải nghiệm.",
+  "analysis_layer": "Hành vi quyết định tốt khi có dữ liệu, giảm chất lượng khi stress kéo dài.",
+  "timeline_layer": "3 năm tới xuất hiện nhiều cửa chuyển hóa liên quan nghề nghiệp và hệ quan hệ.",
+  "action_layer": "Tập trung stop/start/protect/build theo nhịp 90 ngày.",
+  "raw_lci": 73.08,
+  "adjusted_lci": 52.8975,
+  "data_coverage": 1,
+  "normalized_lci": 73.08,
+  "status": "full",
+  "risk_score": 0.386,
+  "risk_score_raw": 0.5455,
+  "wealth_score": 0.5117,
+  "wealth_score_raw": 0.7165,
+  "mission_signal": 0.4839,
+  "mission_signal_raw": 0.703,
+  "timeline_events": [
+    {
+      "stage_id": "stage_0_9",
+      "from": 0,
+      "to": 9
+    },
+    {
+      "stage_id": "stage_10_19",
+      "from": 10,
+      "to": 19
+    },
+    {
+      "stage_id": "stage_20_29",
+      "from": 20,
+      "to": 29
+    },
+    {
+      "stage_id": "stage_30_39",
+      "from": 30,
+      "to": 39
+    },
+    {
+      "stage_id": "stage_40_49",
+      "from": 40,
+      "to": 49
+    },
+    {
+      "stage_id": "stage_50_59",
+      "from": 50,
+      "to": 59
+    },
+    {
+      "stage_id": "stage_60_69",
+      "from": 60,
+      "to": 69
+    },
+    {
+      "stage_id": "stage_70_79",
+      "from": 70,
+      "to": 79
+    },
+    {
+      "stage_id": "stage_80_99",
+      "from": 80,
+      "to": 99
+    }
+  ],
+  "opportunity_windows": [
+    0,
+    8,
+    11,
+    14,
+    48,
+    51,
+    58,
+    63,
+    67,
+    70,
+    73,
+    89,
+    91,
+    95
+  ],
+  "transformation_windows": [
+    32,
+    40,
+    42,
+    72,
+    80
+  ],
+  "mission_activation_years": []
+}
