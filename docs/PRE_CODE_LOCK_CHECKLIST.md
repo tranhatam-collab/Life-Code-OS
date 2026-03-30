@@ -16,6 +16,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [LCI_FORMULA_V1.md](./LCI_FORMULA_V1.md) — Life Code Index formula v1 (README §19)
 - [TIMELINE_ALGORITHM_V1.md](./TIMELINE_ALGORITHM_V1.md) — Timeline 0–99 algorithm v1 (Level 6)
 - [RISK_WEALTH_MISSION_FORMULAS_V1.md](./RISK_WEALTH_MISSION_FORMULAS_V1.md) — Risk/Wealth/Mission formulas v1
+- [AUTOMATIC_REPORT_APP_V1.md](./AUTOMATIC_REPORT_APP_V1.md) — automatic report app v1
 
 ---
 
@@ -84,7 +85,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [x] Life Code Index formula  
 - [x] Timeline 0–99 algorithm  
 - [x] Risk / Wealth / Mission formulas  
-- [ ] Automatic report app  
+- [x] Automatic report app  
 
 ---
 

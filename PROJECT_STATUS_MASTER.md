@@ -45,14 +45,14 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **60–70%** (đã chốt LCI, Timeline 0–99, Risk/Wealth/Mission formulas v1) |
 | Engine + API + web app + report system | **0–10%** |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~20–30%**. Phần còn lại chủ yếu là triển khai engine/API/web/app/report app (đặc biệt automatic report app).
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~10–20%**. Phần còn lại chủ yếu là triển khai engine/API/web/app/report + QA theo contract/pipeline.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
 - **Chỉ hạ tầng + deploy tự động:** **100%** (Actions đã Success).  
-- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~20–30%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
+- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~10–20%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
 
 ---
 
@@ -93,6 +93,7 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | `docs/LCI_FORMULA_V1.md` | Life Code Index formula v1 (README §19) |
 | `docs/TIMELINE_ALGORITHM_V1.md` | Timeline 0–99 algorithm v1 (Level 6) |
 | `docs/RISK_WEALTH_MISSION_FORMULAS_V1.md` | Risk/Wealth/Mission formulas v1 |
+| `docs/AUTOMATIC_REPORT_APP_V1.md` | Automatic report app v1 |
 
 ---
 
