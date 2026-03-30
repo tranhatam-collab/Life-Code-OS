@@ -10,13 +10,14 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [schemas/engine-output-v1.schema.json](./schemas/engine-output-v1.schema.json) — JSON engine output (README §17)  
 - [OUTPUT_CONTRACT_V1.md](./OUTPUT_CONTRACT_V1.md) — output contract v1 (README §17)  
 - [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md) — core output codes (README §18)  
+- [LEVELS_ARCHITECTURE_V1.md](./LEVELS_ARCHITECTURE_V1.md) — kiến trúc Input/Engine/Output 9 level + widgets + unlock flow
 
 ---
 
 ## Giai đoạn khóa chuẩn (mục 31 — thứ tự)
 
 - [x] 1. Khóa ngôn ngữ toàn hệ *(chốt bằng [GLOSSARY.md](./GLOSSARY.md) + [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md))*  
-- [ ] 2. Khóa kiến trúc 9 level  
+- [x] 2. Khóa kiến trúc 9 level *(chốt bằng [LEVELS_ARCHITECTURE_V1.md](./LEVELS_ARCHITECTURE_V1.md))*  
 - [ ] 3. Khóa kiến trúc report generator  
 - [x] 4. Khóa output contract *(chốt bằng schema + [OUTPUT_CONTRACT_V1.md](./OUTPUT_CONTRACT_V1.md))*  
 - [x] 5. Khóa glossary  
@@ -32,12 +33,12 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 
 ## B — Sản phẩm (theo level)
 
-- [ ] Input từng level  
-- [ ] Engine từng level  
-- [ ] Output từng level  
-- [ ] Độ dài / cấu trúc report  
-- [ ] Widget từng level  
-- [ ] Unlock flow  
+- [x] Input từng level  
+- [x] Engine từng level  
+- [x] Output từng level  
+- [x] Độ dài / cấu trúc report  
+- [x] Widget từng level  
+- [x] Unlock flow  
 
 ## C — Report system
 
