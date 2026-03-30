@@ -1,10 +1,23 @@
 # Life Code OS — Trạng thái tổng hợp & tỷ lệ hoàn thành
 
 **Cập nhật:** 2026-03-31  
-**Push:** Nếu `main` chưa lên GitHub, chạy `git push origin main` trên máy có quyền — sau đó kiểm tra tab **Actions**.  
 **Repo:** `https://github.com/tranhatam-collab/Life-Code-OS`  
 **Site:** `https://lifecode.iai.one`  
 **Cloudflare Pages:** `life-code-os` → `life-code-os.pages.dev`
+
+### Chặn hiện tại (quan trọng)
+
+Nếu Dashboard Cloudflare vẫn chỉ thấy production ở commit **`6876746`** (*Update _headers*), nghĩa là **GitHub `origin/main` chưa có** các commit CI/CD (`00419f5`, `94b497a`). Cloudflare đang build từ repo GitHub, không phải từ bản local chưa push.
+
+**Bắt buộc trên máy có quyền GitHub:**
+
+```bash
+cd "/path/to/Life-Code-OS"
+git status   # phải thấy: ahead of 'origin/main' by N commits (nếu chưa push)
+git push origin main
+```
+
+Sau đó: **GitHub → Actions** phải có workflow *Deploy Life Code OS…*; **Deployments** sẽ hiện commit mới (không còn stuck ở `6876746` cho tính năng CI).
 
 ---
 
@@ -28,7 +41,7 @@
 | Workflow `.github/workflows/deploy-pages.yml` | Đã có, target `life-code-os` | 100% |
 | Script `prepare-pages` / `deploy-pages` | Đã có | 100% |
 | Domain `lifecode.iai.one` trên Pages | Đã gắn (bạn xác nhận) | 100% |
-| Push `main` + Actions chạy xanh | *Sau commit này — cần xác nhận trên tab Actions* | **~95%** tới khi job mới nhất **Success** |
+| Push `main` lên GitHub + Actions xanh | *Chỉ xong khi `git push` đã chạy và job Success* | **~90%** tới khi xác nhận; **100%** khi deploy mới gắn commit `00419f5`+ |
 
 **Trục A (sau khi workflow lần mới nhất Success): ~100%.**  
 **Còn lại trục A:** ~**0–5%** (chỉ là xác nhận tay + có thể tắt cảnh báo Git disconnect nếu không dùng build Cloudflare UI).
@@ -81,4 +94,16 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 
 ---
 
-*File này là báo cáo trạng thái một lần; không thay README. Cập nhật khi khóa thêm mục 30–31 hoặc khi ship engine/API.*
+## 7. Bước tiếp theo — Trục B (sản phẩm / dev)
+
+Sau khi hạ tầng push xong (mục 5), ưu tiên theo **README mục 30 → 31**:
+
+1. **Khóa A–F** (ngôn ngữ, input/output từng level, report layers, data model, engine contract, ethics) — mỗi mục có “Definition of Done” ở mục 32.  
+2. **Thứ tự kỹ thuật:** Life Code Index formula → Timeline 0–99 → Risk/Wealth/Mission → automatic report app.  
+3. **Code:** engine → API (`life-code-api`) → web/app → report system (khi đã có contract JSON + test).
+
+Làm **từng phần, commit từng phần**; deploy marketing site vẫn qua push `main` như hiện tại.
+
+---
+
+*Cập nhật khi khóa thêm mục 30–31 hoặc khi ship engine/API.*
