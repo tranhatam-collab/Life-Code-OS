@@ -1,6 +1,7 @@
 # Life Code OS — Trạng thái tổng hợp & tỷ lệ hoàn thành
 
 **Cập nhật:** 2026-03-31  
+**Push:** Nếu `main` chưa lên GitHub, chạy `git push origin main` trên máy có quyền — sau đó kiểm tra tab **Actions**.  
 **Repo:** `https://github.com/tranhatam-collab/Life-Code-OS`  
 **Site:** `https://lifecode.iai.one`  
 **Cloudflare Pages:** `life-code-os` → `life-code-os.pages.dev`
