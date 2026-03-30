@@ -2,34 +2,40 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://lifecode.iai.one/schemas/engine-output-v1.json",
   "title": "LifeCodeEngineOutputV1",
-  "description": "Khung tối thiểu cho output engine theo README mục 30E — mở rộng field sau khi khóa contract chi tiết.",
+  "description": "Khớp README §17 — không được phá contract này.",
   "type": "object",
-  "required": ["confidence"],
+  "required": ["confidence", "signals", "insights", "recommendations"],
   "properties": {
     "score": {
-      "description": "Điểm hoặc chỉ số tổng hợp layer (nullable khi thiếu dữ liệu)",
+      "description": "Điểm layer (nullable khi thiếu dữ liệu)",
       "type": ["number", "null"]
     },
     "confidence": {
-      "description": "0..1 — bắt buộc mọi kết luận dùng được",
       "type": "number",
       "minimum": 0,
       "maximum": 1
     },
     "signals": {
       "type": "array",
-      "items": { "type": "object", "additionalProperties": true }
+      "items": { "type": "string" }
     },
     "insights": {
       "type": "array",
-      "items": { "type": "object", "additionalProperties": true }
+      "items": { "type": "string" }
     },
     "recommendations": {
-      "type": "array",
-      "items": { "type": "object", "additionalProperties": true }
+      "type": "object",
+      "required": ["stop", "start", "protect", "build"],
+      "properties": {
+        "stop": { "type": "array", "items": { "type": "string" } },
+        "start": { "type": "array", "items": { "type": "string" } },
+        "protect": { "type": "array", "items": { "type": "string" } },
+        "build": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
     },
     "data_gaps": {
-      "description": "Layer/field thiếu dữ liệu — README: rule thiếu dữ liệu",
+      "description": "Tùy chọn — layer/field thiếu dữ liệu",
       "type": "array",
       "items": { "type": "string" }
     }

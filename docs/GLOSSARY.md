@@ -75,10 +75,15 @@ Level, Life Layer, Insight Layer, Signal, Pattern, Field, Direction, Window, Str
 
 ---
 
-## Engine output — trường hợp hợp đồng (mục 30E)
+## Engine output — hợp đồng (README §17 / mục 30E)
 
-Mọi engine layer nên có thể map sang: **score**, **confidence**, **signals**, **insights**, **recommendations**.  
-Schema JSON tham chiếu: [schemas/engine-output-v1.schema.json](./schemas/engine-output-v1.schema.json).
+Bắt buộc: `score`, `confidence`, `signals[]`, `insights[]`, `recommendations{ stop, start, protect, build }`.  
+Schema JSON: [schemas/engine-output-v1.schema.json](./schemas/engine-output-v1.schema.json).
+
+## Data model & report (tham chiếu nhanh)
+
+- [DATA_MODEL.md](./DATA_MODEL.md) — 5 profile (§16)  
+- [REPORT_LAYERS.md](./REPORT_LAYERS.md) — 4 lớp report (§11)  
 
 ---
 

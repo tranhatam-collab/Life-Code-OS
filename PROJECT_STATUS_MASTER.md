@@ -82,7 +82,9 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | `docs/GIT_CLOUDFLARE_LIFECODE.md` | Chi tiết Git + Cloudflare + secrets |
 | `docs/PRE_CODE_LOCK_CHECKLIST.md` | Checklist A–F + mục 31–32 (đánh dấu tiến độ Trục B) |
 | `docs/GLOSSARY.md` | Khóa ngôn ngữ v1 (README 6–8 + đồng bộ `app.js`) |
-| `docs/schemas/engine-output-v1.schema.json` | Khung JSON tối thiểu output engine (mục 30E) |
+| `docs/schemas/engine-output-v1.schema.json` | JSON output engine — khớp README §17 |
+| `docs/DATA_MODEL.md` | 5 profile — README §16 |
+| `docs/REPORT_LAYERS.md` | 4 lớp report — README §11 |
 
 ---
 

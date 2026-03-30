@@ -5,7 +5,9 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 **Tài liệu đã có (tiến độ Trục B):**
 
 - [GLOSSARY.md](./GLOSSARY.md) — bản khóa ngôn ngữ v1 (tên hệ, 9 level, thuật ngữ cấm/dùng, LCI)  
-- [schemas/engine-output-v1.schema.json](./schemas/engine-output-v1.schema.json) — khung JSON tối thiểu engine output (mục E)  
+- [DATA_MODEL.md](./DATA_MODEL.md) — 5 profile (README §16)  
+- [REPORT_LAYERS.md](./REPORT_LAYERS.md) — 4 lớp report (README §11)  
+- [schemas/engine-output-v1.schema.json](./schemas/engine-output-v1.schema.json) — JSON engine output (README §17)  
 
 ---
 
