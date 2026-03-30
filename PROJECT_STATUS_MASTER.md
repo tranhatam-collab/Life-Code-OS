@@ -41,18 +41,18 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 
 | Giai đoạn | Gợi ý % hoàn thành toàn dự án “Life Code OS đầy đủ README” |
 |-----------|-----------------------------------------------------------|
-| Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | Hiện tại **~60–70%** (đã chốt glossary + data model + report layers + engine output contract v1 + kiến trúc 9 level) |
+| Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | Hiện tại **~70–80%** (đã chốt glossary + data model + report layers + engine output contract v1 + kiến trúc 9 level + report generator templates/pipeline v1) |
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **0–15%** |
 | Engine + API + web app + report system | **0–10%** |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~50–60%**. Phần còn lại chủ yếu là “report generator architecture + templates/render pipeline” và các bước công thức + triển khai engine/API/web/app/report.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~40–50%**. Phần còn lại chủ yếu là các bước công thức (LCI, Timeline 0–99, Risk/Wealth/Mission) và triển khai engine/API/web/app/report app, cùng ethics.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
 - **Chỉ hạ tầng + deploy tự động:** **100%** (Actions đã Success).  
-- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~50–60%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
+- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~40–50%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
 
 ---
 
@@ -88,6 +88,7 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | `docs/OUTPUT_CONTRACT_V1.md` | Output contract v1 — README §17 |
 | `docs/CORE_OUTPUT_CODES.md` | Core output codes — README §18 |
 | `docs/LEVELS_ARCHITECTURE_V1.md` | Kiến trúc Input/Engine/Output 9 level + widgets + unlock flow |
+| `docs/REPORT_GENERATOR_ARCHITECTURE_V1.md` | Report generator pipeline + placeholder + templates system (README §21) |
 
 ---
 

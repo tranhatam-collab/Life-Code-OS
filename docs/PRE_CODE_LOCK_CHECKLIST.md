@@ -11,6 +11,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [OUTPUT_CONTRACT_V1.md](./OUTPUT_CONTRACT_V1.md) — output contract v1 (README §17)  
 - [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md) — core output codes (README §18)  
 - [LEVELS_ARCHITECTURE_V1.md](./LEVELS_ARCHITECTURE_V1.md) — kiến trúc Input/Engine/Output 9 level + widgets + unlock flow
+- [REPORT_GENERATOR_ARCHITECTURE_V1.md](./REPORT_GENERATOR_ARCHITECTURE_V1.md) — pipeline + templates system (README §21)
 
 ---
 
@@ -18,7 +19,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 
 - [x] 1. Khóa ngôn ngữ toàn hệ *(chốt bằng [GLOSSARY.md](./GLOSSARY.md) + [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md))*  
 - [x] 2. Khóa kiến trúc 9 level *(chốt bằng [LEVELS_ARCHITECTURE_V1.md](./LEVELS_ARCHITECTURE_V1.md))*  
-- [ ] 3. Khóa kiến trúc report generator  
+- [x] 3. Khóa kiến trúc report generator *(chốt bằng [REPORT_GENERATOR_ARCHITECTURE_V1.md](./REPORT_GENERATOR_ARCHITECTURE_V1.md) + templates 1–9 trong `docs/report-templates/`)*  
 - [x] 4. Khóa output contract *(chốt bằng schema + [OUTPUT_CONTRACT_V1.md](./OUTPUT_CONTRACT_V1.md))*  
 - [x] 5. Khóa glossary  
 
@@ -43,10 +44,10 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 ## C — Report system
 
 - [x] 4 lớp report  
-- [ ] Templates 1–9  
-- [ ] Quy ước đặt tên file  
-- [ ] Quy ước placeholder  
-- [ ] Render pipeline  
+- [x] Templates 1–9  
+- [x] Quy ước đặt tên file  
+- [x] Quy ước placeholder  
+- [x] Render pipeline  
 
 ## D — Data model
 
