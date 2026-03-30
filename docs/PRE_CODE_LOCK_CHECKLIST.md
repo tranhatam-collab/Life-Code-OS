@@ -8,25 +8,27 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [DATA_MODEL.md](./DATA_MODEL.md) — 5 profile (README §16)  
 - [REPORT_LAYERS.md](./REPORT_LAYERS.md) — 4 lớp report (README §11)  
 - [schemas/engine-output-v1.schema.json](./schemas/engine-output-v1.schema.json) — JSON engine output (README §17)  
+- [OUTPUT_CONTRACT_V1.md](./OUTPUT_CONTRACT_V1.md) — output contract v1 (README §17)  
+- [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md) — core output codes (README §18)  
 
 ---
 
 ## Giai đoạn khóa chuẩn (mục 31 — thứ tự)
 
-- [ ] 1. Khóa ngôn ngữ toàn hệ *(xem [GLOSSARY.md](./GLOSSARY.md) — cần review & tick khi chốt)*  
+- [x] 1. Khóa ngôn ngữ toàn hệ *(chốt bằng [GLOSSARY.md](./GLOSSARY.md) + [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md))*  
 - [ ] 2. Khóa kiến trúc 9 level  
 - [ ] 3. Khóa kiến trúc report generator  
-- [ ] 4. Khóa output contract  
-- [ ] 5. Khóa glossary  
+- [x] 4. Khóa output contract *(chốt bằng schema + [OUTPUT_CONTRACT_V1.md](./OUTPUT_CONTRACT_V1.md))*  
+- [x] 5. Khóa glossary  
 
 ---
 
 ## A — Ngôn ngữ
 
-- [ ] Tên hệ (chuẩn hiển thị + internal)  
-- [ ] Tên 9 level (đồng bộ UI / report / API)  
-- [ ] Tên output (từng loại báo cáo / chỉ số)  
-- [ ] Glossary (thuật ngữ cấm / bắt buộc — xem README mục 7)  
+- [x] Tên hệ (chuẩn hiển thị + internal)  
+- [x] Tên 9 level (đồng bộ UI / report / API)  
+- [x] Tên output (từng loại báo cáo / chỉ số)  
+- [x] Glossary (thuật ngữ cấm / bắt buộc — xem README mục 7)  
 
 ## B — Sản phẩm (theo level)
 
@@ -39,7 +41,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 
 ## C — Report system
 
-- [ ] 4 lớp report  
+- [x] 4 lớp report  
 - [ ] Templates 1–9  
 - [ ] Quy ước đặt tên file  
 - [ ] Quy ước placeholder  
@@ -47,19 +49,19 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 
 ## D — Data model
 
-- [ ] Identity profile  
-- [ ] Input profile  
-- [ ] Analysis profile  
-- [ ] Growth profile  
-- [ ] Event profile  
+- [x] Identity profile  
+- [x] Input profile  
+- [x] Analysis profile  
+- [x] Growth profile  
+- [x] Event profile  
 
 ## E — Engine contracts
 
-- [ ] Score  
-- [ ] Confidence  
-- [ ] Signals  
-- [ ] Insights  
-- [ ] Recommendations  
+- [x] Score  
+- [x] Confidence  
+- [x] Signals  
+- [x] Insights  
+- [x] Recommendations  
 
 ## F — Ethics (đối chiếu README mục 4 + 26)
 

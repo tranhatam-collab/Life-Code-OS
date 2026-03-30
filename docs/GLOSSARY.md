@@ -75,6 +75,12 @@ Level, Life Layer, Insight Layer, Signal, Pattern, Field, Direction, Window, Str
 
 ---
 
+## Core output codes (README §18)
+
+Các output key dùng chung toàn hệ: [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md).
+
+---
+
 ## Engine output — hợp đồng (README §17 / mục 30E)
 
 Bắt buộc: `score`, `confidence`, `signals[]`, `insights[]`, `recommendations{ stop, start, protect, build }`.  

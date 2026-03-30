@@ -4,7 +4,7 @@
   "title": "LifeCodeEngineOutputV1",
   "description": "Khớp README §17 — không được phá contract này.",
   "type": "object",
-  "required": ["confidence", "signals", "insights", "recommendations"],
+  "required": ["score", "confidence", "signals", "insights", "recommendations"],
   "properties": {
     "score": {
       "description": "Điểm layer (nullable khi thiếu dữ liệu)",

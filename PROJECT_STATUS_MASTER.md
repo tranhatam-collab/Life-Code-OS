@@ -41,18 +41,18 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 
 | Giai đoạn | Gợi ý % hoàn thành toàn dự án “Life Code OS đầy đủ README” |
 |-----------|-----------------------------------------------------------|
-| Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | Tùy team; thường **10–40%** nếu README đã là SSOT |
+| Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | Hiện tại **~45–60%** (đã chốt glossary + data model + report layers + engine output contract v1) |
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **0–15%** |
 | Engine + API + web app + report system | **0–10%** |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~85–95%** (phần lớn là backend, engine, dữ liệu, QA). Con số này chỉ có ý nghĩa khi bạn chốt checklist từng mục A–F trong README.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~60–70%**. Phần đã khóa chủ yếu là “ngôn ngữ + contract + core output codes”, còn phần “kiến trúc 9 level + report generator + công thức + engine/API/report app” đang chờ triển khai.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
 - **Chỉ hạ tầng + deploy tự động:** **100%** (Actions đã Success).  
-- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~85–95%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
+- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~60–70%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
 
 ---
 
@@ -85,6 +85,8 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | `docs/schemas/engine-output-v1.schema.json` | JSON output engine — khớp README §17 |
 | `docs/DATA_MODEL.md` | 5 profile — README §16 |
 | `docs/REPORT_LAYERS.md` | 4 lớp report — README §11 |
+| `docs/OUTPUT_CONTRACT_V1.md` | Output contract v1 — README §17 |
+| `docs/CORE_OUTPUT_CODES.md` | Core output codes — README §18 |
 
 ---
 
