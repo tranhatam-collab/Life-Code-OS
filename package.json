@@ -9,7 +9,9 @@
     "deploy:pages": "bash scripts/deploy-pages.sh production",
     "deploy:preview": "bash scripts/deploy-pages.sh preview",
     "engine:sample": "node scripts/run-engine-v1.cjs",
-    "engine:test": "node engine/tests/smoke.cjs"
+    "engine:test": "node engine/tests/smoke.cjs",
+    "api:dev": "node api/server.cjs",
+    "api:test": "node scripts/test-api-v1.cjs"
   },
   "devDependencies": {
     "wrangler": "^4.77.0"

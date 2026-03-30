@@ -45,14 +45,14 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **60–70%** (đã chốt LCI, Timeline 0–99, Risk/Wealth/Mission formulas v1) |
 | Engine + API + web app + report system | **0–10%** |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~8–15%**. Đã bắt đầu code engine v1 (LCI/Timeline/Risk-Wealth-Mission + generate `life_code_data.json` + smoke test); phần còn lại là API/web/app tích hợp và QA sâu.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~5–12%**. Đã có engine v1 + API local v1 (smoke test pass); phần còn lại là tích hợp web/app + hoàn thiện QA/validation.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
 - **Chỉ hạ tầng + deploy tự động:** **100%** (Actions đã Success).  
-- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~8–15%** công việc sản phẩm (API/web/app integration + QA), **không** gồm trong commit hạ tầng này.
+- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~5–12%** công việc sản phẩm (web/app integration + QA), **không** gồm trong commit hạ tầng này.
 
 ---
 
