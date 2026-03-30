@@ -45,14 +45,14 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **0–15%** |
 | Engine + API + web app + report system | **0–10%** |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~40–50%**. Phần còn lại chủ yếu là các bước công thức (LCI, Timeline 0–99, Risk/Wealth/Mission) và triển khai engine/API/web/app/report app, cùng ethics.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~38–48%**. Phần còn lại chủ yếu là các bước công thức (LCI, Timeline 0–99, Risk/Wealth/Mission) và triển khai engine/API/web/app/report app.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
 - **Chỉ hạ tầng + deploy tự động:** **100%** (Actions đã Success).  
-- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~40–50%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
+- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~38–48%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
 
 ---
 
@@ -89,6 +89,7 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 | `docs/CORE_OUTPUT_CODES.md` | Core output codes — README §18 |
 | `docs/LEVELS_ARCHITECTURE_V1.md` | Kiến trúc Input/Engine/Output 9 level + widgets + unlock flow |
 | `docs/REPORT_GENERATOR_ARCHITECTURE_V1.md` | Report generator pipeline + placeholder + templates system (README §21) |
+| `docs/ETHICS_GUARDRAILS_V1.md` | Ethics guardrails (README §4 + §26) |
 
 ---
 

@@ -12,6 +12,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [CORE_OUTPUT_CODES.md](./CORE_OUTPUT_CODES.md) — core output codes (README §18)  
 - [LEVELS_ARCHITECTURE_V1.md](./LEVELS_ARCHITECTURE_V1.md) — kiến trúc Input/Engine/Output 9 level + widgets + unlock flow
 - [REPORT_GENERATOR_ARCHITECTURE_V1.md](./REPORT_GENERATOR_ARCHITECTURE_V1.md) — pipeline + templates system (README §21)
+- [ETHICS_GUARDRAILS_V1.md](./ETHICS_GUARDRAILS_V1.md) — đạo đức/guardrails (README §4 + §26)
 
 ---
 
@@ -67,11 +68,11 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 
 ## F — Ethics (đối chiếu README mục 4 + 26)
 
-- [ ] Không ngày chết  
-- [ ] Không phán quyết tuyệt đối  
-- [ ] Mọi kết luận mạnh có confidence  
-- [ ] Forecast có điều kiện đúng/sai  
-- [ ] Output dẫn tới hành động  
+- [x] Không ngày chết  
+- [x] Không phán quyết tuyệt đối  
+- [x] Mọi kết luận mạnh có confidence  
+- [x] Forecast có điều kiện đúng/sai  
+- [x] Output dẫn tới hành động  
 
 ---
 
