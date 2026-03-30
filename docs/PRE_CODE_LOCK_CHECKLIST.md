@@ -13,6 +13,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [LEVELS_ARCHITECTURE_V1.md](./LEVELS_ARCHITECTURE_V1.md) — kiến trúc Input/Engine/Output 9 level + widgets + unlock flow
 - [REPORT_GENERATOR_ARCHITECTURE_V1.md](./REPORT_GENERATOR_ARCHITECTURE_V1.md) — pipeline + templates system (README §21)
 - [ETHICS_GUARDRAILS_V1.md](./ETHICS_GUARDRAILS_V1.md) — đạo đức/guardrails (README §4 + §26)
+- [LCI_FORMULA_V1.md](./LCI_FORMULA_V1.md) — Life Code Index formula v1 (README §19)
 
 ---
 
@@ -78,7 +79,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 
 ## Sau khóa chuẩn — 4 bước kỹ thuật (mục 31)
 
-- [ ] Life Code Index formula  
+- [x] Life Code Index formula  
 - [ ] Timeline 0–99 algorithm  
 - [ ] Risk / Wealth / Mission formulas  
 - [ ] Automatic report app  
