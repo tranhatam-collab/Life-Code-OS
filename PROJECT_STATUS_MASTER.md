@@ -5,19 +5,9 @@
 **Site:** `https://lifecode.iai.one`  
 **Cloudflare Pages:** `life-code-os` → `life-code-os.pages.dev`
 
-### Chặn hiện tại (quan trọng)
+### Trục A — đã xác nhận
 
-Nếu Dashboard Cloudflare vẫn chỉ thấy production ở commit **`6876746`** (*Update _headers*), nghĩa là **GitHub `origin/main` chưa có** các commit CI/CD (`00419f5`, `94b497a`). Cloudflare đang build từ repo GitHub, không phải từ bản local chưa push.
-
-**Bắt buộc trên máy có quyền GitHub:**
-
-```bash
-cd "/path/to/Life-Code-OS"
-git status   # phải thấy: ahead of 'origin/main' by N commits (nếu chưa push)
-git push origin main
-```
-
-Sau đó: **GitHub → Actions** phải có workflow *Deploy Life Code OS…*; **Deployments** sẽ hiện commit mới (không còn stuck ở `6876746` cho tính năng CI).
+GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success** (ví dụ commit `eca3b55`). **Trục A (hạ tầng + CI deploy) = 100%.**
 
 ---
 
@@ -41,10 +31,9 @@ Sau đó: **GitHub → Actions** phải có workflow *Deploy Life Code OS…*; *
 | Workflow `.github/workflows/deploy-pages.yml` | Đã có, target `life-code-os` | 100% |
 | Script `prepare-pages` / `deploy-pages` | Đã có | 100% |
 | Domain `lifecode.iai.one` trên Pages | Đã gắn (bạn xác nhận) | 100% |
-| Push `main` lên GitHub + Actions xanh | *Chỉ xong khi `git push` đã chạy và job Success* | **~90%** tới khi xác nhận; **100%** khi deploy mới gắn commit `00419f5`+ |
+| Push `main` + Actions Success | Đã xác nhận | **100%** |
 
-**Trục A (sau khi workflow lần mới nhất Success): ~100%.**  
-**Còn lại trục A:** ~**0–5%** (chỉ là xác nhận tay + có thể tắt cảnh báo Git disconnect nếu không dùng build Cloudflare UI).
+**Trục A:** **100%.** Tùy chọn: tắt cảnh báo Git disconnect trên Cloudflare nếu chỉ dùng Actions (xem `docs/GIT_CLOUDFLARE_LIFECODE.md` mục 4b).
 
 ### Trục B — Nội dung sản phẩm / code sâu (README mục 30–31)
 
@@ -62,7 +51,7 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
-- **Chỉ hạ tầng + deploy tự động:** **~100%** sau khi Actions **xanh** cho commit mới nhất.  
+- **Chỉ hạ tầng + deploy tự động:** **100%** (Actions đã Success).  
 - **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~85–95%** công việc sản phẩm (engine/API/report/QA), **không** gồm trong commit hạ tầng này.
 
 ---
@@ -91,12 +80,13 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 |------|----------|
 | `README.md` | Single source of truth sản phẩm & triết lý |
 | `docs/GIT_CLOUDFLARE_LIFECODE.md` | Chi tiết Git + Cloudflare + secrets |
+| `docs/PRE_CODE_LOCK_CHECKLIST.md` | Checklist A–F + mục 31–32 (đánh dấu tiến độ Trục B) |
 
 ---
 
 ## 7. Bước tiếp theo — Trục B (sản phẩm / dev)
 
-Sau khi hạ tầng push xong (mục 5), ưu tiên theo **README mục 30 → 31**:
+Ưu tiên theo **README mục 30 → 31**; dùng **[docs/PRE_CODE_LOCK_CHECKLIST.md](./docs/PRE_CODE_LOCK_CHECKLIST.md)** để tick từng mục:
 
 1. **Khóa A–F** (ngôn ngữ, input/output từng level, report layers, data model, engine contract, ethics) — mỗi mục có “Definition of Done” ở mục 32.  
 2. **Thứ tự kỹ thuật:** Life Code Index formula → Timeline 0–99 → Risk/Wealth/Mission → automatic report app.  
