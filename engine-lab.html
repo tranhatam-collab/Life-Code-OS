@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Engine Lab | Life Code OS</title>
+  <link rel="canonical" href="https://lifecode.iai.one/engine-lab.html" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="lc-page">
+    <header class="lc-header">
+      <div class="lc-container lc-header-row">
+        <a class="lc-brand" href="/"><span class="lc-brand-mark">LC</span><span class="lc-brand-text"><strong>Life Code</strong><small>Engine Lab</small></span></a>
+      </div>
+    </header>
+
+    <main class="lc-section">
+      <div class="lc-container">
+        <div class="lc-section-head">
+          <span class="lc-kicker">Developer Test</span>
+          <h1>Engine/API Lab (local)</h1>
+          <p>Trang này gọi API local <code>http://localhost:8788</code>. Dùng để test nhanh engine v1.</p>
+        </div>
+
+        <div class="lc-card">
+          <h2>Actions</h2>
+          <p><code>npm run api:dev</code> ở terminal khác, sau đó bấm test.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <button id="btnLci" class="lc-btn lc-btn-primary" type="button">Test /api/v1/lci</button>
+            <button id="btnTimeline" class="lc-btn lc-btn-secondary" type="button">Test /api/v1/timeline</button>
+            <button id="btnFull" class="lc-btn lc-btn-secondary" type="button">Test /api/v1/life-code-data</button>
+          </div>
+        </div>
+
+        <div class="lc-card" style="margin-top:16px">
+          <h2>Result</h2>
+          <pre id="result" style="white-space:pre-wrap;word-break:break-word;max-height:60vh;overflow:auto"></pre>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const API_BASE = "http://localhost:8788";
+    const resultEl = document.getElementById("result");
+
+    function print(data) {
+      resultEl.textContent = JSON.stringify(data, null, 2);
+    }
+
+    async function post(path, body) {
+      const res = await fetch(API_BASE + path, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const json = await res.json();
+      print({ status: res.status, data: json });
+    }
+
+    document.getElementById("btnLci").addEventListener("click", () =>
+      post("/api/v1/lci", {
+        layers: [
+          { score: 80, weight: 0.5, confidence: 0.8 },
+          { score: 60, weight: 0.5, confidence: 0.9 },
+        ],
+      })
+    );
+
+    document.getElementById("btnTimeline").addEventListener("click", () =>
+      post("/api/v1/timeline", { calibration_seed: 17 })
+    );
+
+    document.getElementById("btnFull").addEventListener("click", () =>
+      post("/api/v1/life-code-data", {
+        calibration_seed: 17,
+        layers: [{ score: 70, weight: 1, confidence: 0.8 }],
+        risk_wealth_mission: {
+          health_risk: 0.5,
+          health_confidence: 0.8,
+          behavior_risk: 0.4,
+          behavior_confidence: 0.8,
+          relationship_risk: 0.3,
+          relationship_confidence: 0.7,
+          social_risk: 0.3,
+          social_confidence: 0.7,
+          wealth_base: 0.7,
+          wealth_confidence: 0.8,
+          work_fit: 0.7,
+          work_confidence: 0.8,
+          behavior_finance: 0.7,
+          mission_base: 0.7,
+          mission_confidence: 0.8,
+          legacy_fit: 0.7,
+          relationship_support: 0.7
+        }
+      })
+    );
+  </script>
+</body>
+</html>
