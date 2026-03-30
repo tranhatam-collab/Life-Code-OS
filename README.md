@@ -137,9 +137,11 @@ Nếu lệch trục này, hệ sẽ rơi vào một trong ba lỗi:
 
 ### 6.2. Domain
 
-- Web: `life.code.iai.one`
-- API: `api.life.code.iai.one`
-- Admin: `admin.life.code.iai.one`
+- Web (công khai): `lifecode.iai.one`
+- API: `api.lifecode.iai.one`
+- Admin: `admin.lifecode.iai.one`
+
+*(Hostname cũ trong bản nháp `life.code.iai.one` được thay bằng một cấp subdomain cho DNS đơn giản; kế hoạch Git + Cloudflare: [docs/GIT_CLOUDFLARE_LIFECODE.md](./docs/GIT_CLOUDFLARE_LIFECODE.md).)*
 
 ### 6.3. Tên repo
 
@@ -147,7 +149,7 @@ Nếu lệch trục này, hệ sẽ rơi vào một trong ba lỗi:
 
 ### 6.4. Tên Pages project
 
-`life-code`
+`life-code-os` (trùng tên project trên Cloudflare Dashboard)
 
 ### 6.5. Tên Worker API
 
@@ -1172,6 +1174,8 @@ File static hiện tại để ngay ở root:
 * `style.css`
 
 Không tự ý chuyển sang `public/` nếu chưa khóa lại kiến trúc.
+
+**CI/CD:** push nhánh `main` → GitHub Actions deploy thư mục `dist/` lên Cloudflare Pages project `life-code-os`. Chi tiết secret, DNS và domain `lifecode.iai.one`: [docs/GIT_CLOUDFLARE_LIFECODE.md](./docs/GIT_CLOUDFLARE_LIFECODE.md).
 
 ---
 

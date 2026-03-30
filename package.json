@@ -1,0 +1,15 @@
+{
+  "name": "life-code-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Life Code OS static marketing site — Cloudflare Pages root deploy.",
+  "scripts": {
+    "dev": "bash scripts/prepare-pages.sh && wrangler pages dev dist --port 8792",
+    "build:pages": "bash scripts/prepare-pages.sh",
+    "deploy:pages": "bash scripts/deploy-pages.sh production",
+    "deploy:preview": "bash scripts/deploy-pages.sh preview"
+  },
+  "devDependencies": {
+    "wrangler": "^4.77.0"
+  }
+}

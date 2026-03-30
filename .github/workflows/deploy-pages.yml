@@ -1,0 +1,54 @@
+name: Deploy Life Code OS to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  WRANGLER_VERSION: 4.77.0
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Build dist and deploy to Pages
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: f3f9e76222dcb488d5e303e29e8ba192
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Pages bundle
+        run: npm run build:pages
+
+      - name: Install Wrangler
+        run: npm install -g wrangler@${WRANGLER_VERSION}
+
+      - name: Ensure Pages project exists
+        run: wrangler pages project create life-code-os --production-branch=main || true
+        env:
+          WRANGLER_CONFIG_PATH: /dev/null
+
+      - name: Deploy to Cloudflare Pages
+        run: |
+          wrangler pages deploy dist \
+            --project-name=life-code-os \
+            --branch=main \
+            --commit-dirty=true
+        env:
+          WRANGLER_CONFIG_PATH: /dev/null

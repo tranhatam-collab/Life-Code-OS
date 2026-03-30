@@ -1,6 +1,6 @@
 window.LIFE_CODE_APP = {
   name: 'Life Code OS',
-  domain: 'life.code.iai.one',
+  domain: 'lifecode.iai.one',
   version: '1.0.0',
   environment: 'production',
   projectStatus: {
