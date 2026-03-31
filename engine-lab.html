@@ -85,6 +85,7 @@
     const LS_KEY = "lc_engine_lab_api_base";
     const TEMPLATE_PATH = "./site-templates/level1_self_signal_template.md";
     const DEFAULT_LOCAL = "http://127.0.0.1:8788";
+    const DEFAULT_WORKER = "https://life-code-api.tranhatam.workers.dev";
 
     const apiBaseEl = document.getElementById("apiBase");
     const resultEl = document.getElementById("result");
@@ -99,9 +100,9 @@
       try {
         const s = localStorage.getItem(LS_KEY);
         if (s) apiBaseEl.value = s;
-        else apiBaseEl.value = DEFAULT_LOCAL;
+        else apiBaseEl.value = DEFAULT_WORKER;
       } catch {
-        apiBaseEl.value = DEFAULT_LOCAL;
+        apiBaseEl.value = DEFAULT_WORKER;
       }
     }
 
@@ -219,7 +220,7 @@
     });
 
     document.getElementById("presetWorkerHint").addEventListener("click", () => {
-      apiBaseEl.value = "https://life-code-api.YOUR_SUBDOMAIN.workers.dev";
+      apiBaseEl.value = DEFAULT_WORKER;
     });
 
     document.getElementById("saveBase").addEventListener("click", saveBase);

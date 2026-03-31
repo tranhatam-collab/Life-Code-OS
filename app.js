@@ -3,12 +3,14 @@ window.LIFE_CODE_APP = {
   domain: 'lifecode.iai.one',
   version: '1.0.0',
   environment: 'production',
+  apiBase: 'https://life-code-api.tranhatam.workers.dev',
   projectStatus: {
     foundationLocked: true,
     lifeCodeIndexV1: true,
-    timelineAlgorithm: false,
-    riskWealthMissionFormulas: false,
-    fullReportEngine: false
+    timelineAlgorithm: true,
+    riskWealthMissionFormulas: true,
+    fullReportEngine: false,
+    webAppIntegration: true
   },
   levels: [
     {
@@ -79,5 +81,11 @@ window.LIFE_CODE_APP = {
       'strong',
       'full'
     ]
+  },
+  coverageRules: {
+    insufficient: { max: 0.25, label: 'Dữ liệu chưa đủ' },
+    partial: { max: 0.55, label: 'Dữ liệu một phần' },
+    strong: { max: 0.8, label: 'Dữ liệu mạnh' },
+    full: { max: Infinity, label: 'Dữ liệu đầy đủ' }
   }
 };

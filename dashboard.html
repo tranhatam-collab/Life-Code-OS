@@ -76,6 +76,30 @@
         </div>
       </section>
 
+      <section class="lc-section" id="lcDashboardData">
+        <div class="lc-container">
+          <div id="lcDashboardNoData" style="text-align:center;padding:40px 20px;">
+            <h3>Chưa có dữ liệu hồ sơ</h3>
+            <p>Bạn chưa tạo hồ sơ Life Code. Hãy bắt đầu để xem các chỉ số cá nhân hóa tại đây.</p>
+            <a class="lc-btn lc-btn-primary" href="/bat-dau.html" style="margin-top:16px;">Tạo hồ sơ ngay</a>
+          </div>
+          <div id="lcDashboardWithData" style="display:none;">
+            <div class="lc-section-head">
+              <span class="lc-kicker">Hồ sơ của bạn</span>
+              <h2 id="lcDashWelcome">Chào mừng</h2>
+            </div>
+            <div class="lc-card-grid lc-card-grid-3" id="lcDashMetrics"></div>
+            <div class="lc-card-grid lc-card-grid-2" style="margin-top:20px;">
+              <article class="lc-card" id="lcDashProfile"></article>
+              <article class="lc-card" id="lcDashStatus"></article>
+            </div>
+            <div style="margin-top:20px;">
+              <article class="lc-card" id="lcDashTimeline"></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="lc-section">
         <div class="lc-container">
           <div class="lc-card-grid lc-card-grid-3">
@@ -390,5 +414,63 @@
 
   <script src="./app.js"></script>
   <script src="./site.js"></script>
+  <script>
+    (function() {
+      const profile = JSON.parse(localStorage.getItem('lc_profile') || 'null');
+      const result = JSON.parse(localStorage.getItem('lc_result') || 'null');
+      const noData = document.getElementById('lcDashboardNoData');
+      const withData = document.getElementById('lcDashboardWithData');
+      if (!profile || !result) return;
+
+      noData.style.display = 'none';
+      withData.style.display = 'block';
+
+      const welcome = document.getElementById('lcDashWelcome');
+      welcome.textContent = `Chào ${profile.name || 'bạn'} — Life Code Index: ${result.life_code_index ?? 'N/A'}`;
+
+      const metrics = document.getElementById('lcDashMetrics');
+      const items = [
+        { label: 'Life Code Index', value: result.life_code_index ?? 'N/A' },
+        { label: 'Adjusted LCI', value: result.adjusted_life_code_index ?? 'N/A' },
+        { label: 'Data Coverage', value: result.data_coverage ?? 'N/A' },
+        { label: 'Risk Score', value: result.risk_score ?? 'N/A' },
+        { label: 'Wealth Score', value: result.wealth_score ?? 'N/A' },
+        { label: 'Mission Signal', value: result.mission_signal ?? 'N/A' }
+      ];
+      metrics.innerHTML = items.map(i =>
+        `<article class="lc-card" style="text-align:center;"><div style="font-size:0.85rem;opacity:0.7;">${i.label}</div><div style="font-size:1.8rem;font-weight:700;margin:8px 0;">${i.value}</div></article>`
+      ).join('');
+
+      const profileCard = document.getElementById('lcDashProfile');
+      profileCard.innerHTML = `<h3>Hồ sơ cá nhân</h3><ul>
+        <li><strong>Họ tên:</strong> ${profile.name || 'N/A'}</li>
+        <li><strong>Năm sinh:</strong> ${profile.birth_year || 'N/A'}</li>
+        <li><strong>Nơi sinh:</strong> ${profile.birth_place || 'N/A'}</li>
+        <li><strong>Giới tính:</strong> ${profile.gender || 'N/A'}</li>
+        <li><strong>Nơi ở:</strong> ${profile.current_location || 'N/A'}</li>
+      </ul>`;
+
+      const statusCard = document.getElementById('lcDashStatus');
+      const statusLabels = { insufficient: 'Dữ liệu chưa đủ', partial: 'Dữ liệu một phần', strong: 'Dữ liệu mạnh', full: 'Dữ liệu đầy đủ' };
+      statusCard.innerHTML = `<h3>Trạng thái hồ sơ</h3><ul>
+        <li><strong>Trạng thái:</strong> ${statusLabels[result.status] || result.status || 'N/A'}</li>
+        <li><strong>Raw LCI:</strong> ${result.raw_lci ?? 'N/A'}</li>
+        <li><strong>Normalized LCI:</strong> ${result.normalized_lci ?? 'N/A'}</li>
+        <li><strong>Adjusted LCI:</strong> ${result.adjusted_lci ?? 'N/A'}</li>
+        <li><strong>Coverage:</strong> ${result.data_coverage ?? 'N/A'}</li>
+      </ul>`;
+
+      const timelineCard = document.getElementById('lcDashTimeline');
+      const oppWindows = (result.opportunity_windows || []).slice(0, 6).join(', ') || 'N/A';
+      const transWindows = (result.transformation_windows || []).slice(0, 4).join(', ') || 'N/A';
+      const riskYears = (result.risk_years || []).slice(0, 6).join(', ') || 'N/A';
+      timelineCard.innerHTML = `<h3>Timeline & Windows</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:12px;">
+          <div><strong>Cửa sổ cơ hội:</strong> ${oppWindows}</div>
+          <div><strong>Vùng chuyển hóa:</strong> ${transWindows}</div>
+          <div><strong>Vùng rủi ro:</strong> ${riskYears}</div>
+        </div>`;
+    })();
+  </script>
 </body>
 </html>
