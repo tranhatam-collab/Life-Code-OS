@@ -11,6 +11,7 @@ Ngày cập nhật: 2026-03-31
 | Build deploy | `npm run build:pages` → thư mục `dist/` (rsync, loại trừ dev/Git/npm) |
 | Cloudflare Pages — tên project | `life-code-os` (theo README mục 6.4; Dashboard: Workers & Pages) |
 | CI/CD | `.github/workflows/deploy-pages.yml` — push `main` → deploy `dist/` |
+| Worker API | `life-code-api` — `workers/life-code-api/`, workflow `deploy-worker.yml` |
 | Domain công khai | **lifecode.iai.one** (+ `life-code-os.pages.dev`) |
 
 ## 2. Account Cloudflare (đồng bộ các repo iai.one khác)
@@ -78,3 +79,12 @@ curl -sI "https://lifecode.iai.one" | head -5
 ```
 
 Trên Dashboard Pages: xem deployment mới nhất và trạng thái custom domain (Active / Pending).
+
+## 6. Worker API `life-code-api`
+
+- **Mã nguồn:** `workers/life-code-api/` (`wrangler.toml` + `src/index.js`, engine mirror trong `src/engine.mjs`).
+- **Deploy tay:** `npm run deploy:worker` (cần đăng nhập Wrangler hoặc biến `CLOUDFLARE_API_TOKEN`).
+- **CI:** `.github/workflows/deploy-worker.yml` — khi push thay đổi trong `workers/life-code-api/**` (hoặc chạy **workflow_dispatch**).
+- **URL production:** sau deploy, Dashboard → Workers → `life-code-api` → copy URL dạng `https://life-code-api.<account-subdomain>.workers.dev`. Dán URL đó vào **Engine Lab** (`engine-lab.html`) làm API base. Khi có DNS: route tùy chọn `api.lifecode.iai.one` (khai báo trong `wrangler.toml` hoặc Dashboard).
+- **Health:** `GET /health` — kiểm tra nhanh.
+- **CORS:** cho phép `https://lifecode.iai.one`, preview `*.life-code-os.pages.dev`, `localhost` / `127.0.0.1` với mọi cổng.

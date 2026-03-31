@@ -6,6 +6,21 @@
   <title>Engine Lab | Life Code OS</title>
   <link rel="canonical" href="https://lifecode.iai.one/engine-lab.html" />
   <link rel="stylesheet" href="./style.css" />
+  <style>
+    .lc-lab-api-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+    .lc-lab-api-row label { font-weight: 600; }
+    .lc-lab-api-row input[type="url"] { flex: 1; min-width: 220px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--lc-border, #2a2f3a); background: var(--lc-surface, #12151c); color: inherit; }
+    .lc-report-preview { margin-top: 12px; padding: 16px; border-radius: 12px; border: 1px solid var(--lc-border, #2a2f3a); background: var(--lc-surface, #0d0f14); max-height: 45vh; overflow: auto; font-size: 0.95rem; line-height: 1.5; }
+    .lc-report-preview h1 { font-size: 1.35rem; margin: 0 0 0.75rem; }
+    .lc-report-preview h2 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+    .lc-report-preview ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+    .lc-report-preview hr { border: none; border-top: 1px solid var(--lc-border, #2a2f3a); margin: 1rem 0; }
+    @media print {
+      body * { visibility: hidden; }
+      #lcPrintArea, #lcPrintArea * { visibility: visible; }
+      #lcPrintArea { position: absolute; left: 0; top: 0; width: 100%; max-height: none; border: none; background: #fff; color: #111; }
+    }
+  </style>
 </head>
 <body>
   <div class="lc-page">
@@ -19,45 +34,195 @@
       <div class="lc-container">
         <div class="lc-section-head">
           <span class="lc-kicker">Developer Test</span>
-          <h1>Engine/API Lab (local)</h1>
-          <p>Trang này gọi API local <code>http://localhost:8788</code>. Dùng để test nhanh engine v1.</p>
+          <h1>Engine / API Lab</h1>
+          <p>Gọi API local (<code>npm run api:dev</code>, cổng 8788) hoặc Worker production (<code>npm run deploy:worker</code> rồi dán URL <code>*.workers.dev</code>). CORS đã mở cho <code>lifecode.iai.one</code> và localhost.</p>
         </div>
 
         <div class="lc-card">
+          <h2>API base</h2>
+          <div class="lc-lab-api-row">
+            <label for="apiBase">URL gốc</label>
+            <input id="apiBase" type="url" placeholder="https://life-code-api.&lt;subdomain&gt;.workers.dev" autocomplete="off" />
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+            <button type="button" class="lc-btn lc-btn-secondary" id="presetLocal">Local :8788</button>
+            <button type="button" class="lc-btn lc-btn-secondary" id="presetWorkerHint">Gợi ý workers.dev</button>
+            <button type="button" class="lc-btn lc-btn-secondary" id="saveBase">Lưu URL (trình duyệt)</button>
+          </div>
+          <p><code>npm run worker:dev</code> chạy Worker cục bộ (Wrangler), thường <code>http://127.0.0.1:8787</code> — chỉnh URL cho khớp cổng.</p>
+        </div>
+
+        <div class="lc-card" style="margin-top:16px">
           <h2>Actions</h2>
-          <p><code>npm run api:dev</code> ở terminal khác, sau đó bấm test.</p>
+          <p>Với local: <code>npm run api:dev</code> ở terminal khác. Sau đó bấm test.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap">
-            <button id="btnLci" class="lc-btn lc-btn-primary" type="button">Test /api/v1/lci</button>
-            <button id="btnTimeline" class="lc-btn lc-btn-secondary" type="button">Test /api/v1/timeline</button>
-            <button id="btnFull" class="lc-btn lc-btn-secondary" type="button">Test /api/v1/life-code-data</button>
+            <button id="btnLci" class="lc-btn lc-btn-primary" type="button">POST /api/v1/lci</button>
+            <button id="btnTimeline" class="lc-btn lc-btn-secondary" type="button">POST /api/v1/timeline</button>
+            <button id="btnFull" class="lc-btn lc-btn-secondary" type="button">POST /api/v1/life-code-data</button>
           </div>
         </div>
 
         <div class="lc-card" style="margin-top:16px">
+          <h2>JSON &amp; báo cáo (Level 1)</h2>
+          <p>Sau khi gọi <strong>life-code-data</strong> thành công, có thể tải JSON và dựng preview từ <code>site-templates/level1_self_signal_template.md</code> (cùng origin với site).</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px">
+            <button id="btnDownloadJson" class="lc-btn lc-btn-secondary" type="button" disabled>Tải life-code-data.json</button>
+            <button id="btnRenderReport" class="lc-btn lc-btn-secondary" type="button" disabled>Render HTML từ template</button>
+            <button id="btnPrintPdf" class="lc-btn lc-btn-secondary" type="button" disabled>In / lưu PDF (trình duyệt)</button>
+          </div>
+          <div id="lcPrintArea" class="lc-report-preview" hidden></div>
+        </div>
+
+        <div class="lc-card" style="margin-top:16px">
           <h2>Result</h2>
-          <pre id="result" style="white-space:pre-wrap;word-break:break-word;max-height:60vh;overflow:auto"></pre>
+          <pre id="result" style="white-space:pre-wrap;word-break:break-word;max-height:40vh;overflow:auto"></pre>
         </div>
       </div>
     </main>
   </div>
 
   <script>
-    const API_BASE = "http://localhost:8788";
-    const resultEl = document.getElementById("result");
+    const LS_KEY = "lc_engine_lab_api_base";
+    const TEMPLATE_PATH = "./site-templates/level1_self_signal_template.md";
+    const DEFAULT_LOCAL = "http://127.0.0.1:8788";
 
-    function print(data) {
-      resultEl.textContent = JSON.stringify(data, null, 2);
+    const apiBaseEl = document.getElementById("apiBase");
+    const resultEl = document.getElementById("result");
+    const btnDownload = document.getElementById("btnDownloadJson");
+    const btnRender = document.getElementById("btnRenderReport");
+    const btnPrint = document.getElementById("btnPrintPdf");
+    const printArea = document.getElementById("lcPrintArea");
+
+    let lastLifeCodeData = null;
+
+    function loadSavedBase() {
+      try {
+        const s = localStorage.getItem(LS_KEY);
+        if (s) apiBaseEl.value = s;
+        else apiBaseEl.value = DEFAULT_LOCAL;
+      } catch {
+        apiBaseEl.value = DEFAULT_LOCAL;
+      }
+    }
+
+    function saveBase() {
+      try {
+        localStorage.setItem(LS_KEY, apiBaseEl.value.trim());
+      } catch (_) {}
+    }
+
+    function apiBase() {
+      const u = apiBaseEl.value.trim().replace(/\/$/, "");
+      return u || DEFAULT_LOCAL;
+    }
+
+    function setReportButtons(enabled) {
+      btnDownload.disabled = !enabled;
+      btnRender.disabled = !enabled;
+      btnPrint.disabled = !enabled;
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function fillTemplate(md, data) {
+      return md.replace(/\{\{\s*([\w_]+)\s*\}\}/g, (_, key) => {
+        const v = data[key];
+        if (v === undefined || v === null) return "";
+        if (typeof v === "object") return escapeHtml(JSON.stringify(v));
+        return escapeHtml(String(v));
+      });
+    }
+
+    function mdToHtml(md) {
+      const lines = md.split("\n");
+      let html = "";
+      let inUl = false;
+      for (const line of lines) {
+        if (line.startsWith("# ")) {
+          if (inUl) { html += "</ul>"; inUl = false; }
+          html += "<h1>" + escapeHtml(line.slice(2)) + "</h1>";
+          continue;
+        }
+        if (line.startsWith("## ")) {
+          if (inUl) { html += "</ul>"; inUl = false; }
+          html += "<h2>" + escapeHtml(line.slice(3)) + "</h2>";
+          continue;
+        }
+        if (line.startsWith("- ")) {
+          if (!inUl) { html += "<ul>"; inUl = true; }
+          html += "<li>" + escapeHtml(line.slice(2)) + "</li>";
+          continue;
+        }
+        if (line.trim() === "---") {
+          if (inUl) { html += "</ul>"; inUl = false; }
+          html += "<hr/>";
+          continue;
+        }
+        if (line.trim() === "") {
+          if (inUl) { html += "</ul>"; inUl = false; }
+          continue;
+        }
+        if (inUl) { html += "</ul>"; inUl = false; }
+        html += "<p>" + escapeHtml(line) + "</p>";
+      }
+      if (inUl) html += "</ul>";
+      return html;
+    }
+
+    function printResult() {
+      if (!printArea.innerHTML.trim()) return;
+      printArea.hidden = false;
+      window.print();
     }
 
     async function post(path, body) {
-      const res = await fetch(API_BASE + path, {
+      const base = apiBase();
+      const res = await fetch(base + path, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(body),
       });
-      const json = await res.json();
-      print({ status: res.status, data: json });
+      const text = await res.text();
+      let parsed;
+      try {
+        parsed = JSON.parse(text);
+      } catch {
+        resultEl.textContent = text;
+        lastLifeCodeData = null;
+        setReportButtons(false);
+        printArea.hidden = true;
+        printArea.innerHTML = "";
+        return;
+      }
+
+      if (path === "/api/v1/life-code-data" && res.ok) {
+        lastLifeCodeData = parsed;
+        setReportButtons(true);
+      } else {
+        lastLifeCodeData = null;
+        setReportButtons(false);
+        printArea.hidden = true;
+        printArea.innerHTML = "";
+      }
+
+      resultEl.textContent = JSON.stringify({ status: res.status, body: parsed }, null, 2);
     }
+
+    document.getElementById("presetLocal").addEventListener("click", () => {
+      apiBaseEl.value = DEFAULT_LOCAL;
+    });
+
+    document.getElementById("presetWorkerHint").addEventListener("click", () => {
+      apiBaseEl.value = "https://life-code-api.YOUR_SUBDOMAIN.workers.dev";
+    });
+
+    document.getElementById("saveBase").addEventListener("click", saveBase);
 
     document.getElementById("btnLci").addEventListener("click", () =>
       post("/api/v1/lci", {
@@ -93,10 +258,41 @@
           mission_base: 0.7,
           mission_confidence: 0.8,
           legacy_fit: 0.7,
-          relationship_support: 0.7
-        }
+          relationship_support: 0.7,
+        },
       })
     );
+
+    btnDownload.addEventListener("click", () => {
+      if (!lastLifeCodeData) return;
+      const blob = new Blob([JSON.stringify(lastLifeCodeData, null, 2) + "\n"], {
+        type: "application/json",
+      });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "life-code-data.json";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    btnRender.addEventListener("click", async () => {
+      if (!lastLifeCodeData) return;
+      try {
+        const res = await fetch(TEMPLATE_PATH);
+        if (!res.ok) throw new Error("Không tải được template: " + res.status);
+        const md = await res.text();
+        const filled = fillTemplate(md, lastLifeCodeData);
+        printArea.innerHTML = mdToHtml(filled);
+        printArea.hidden = false;
+      } catch (e) {
+        resultEl.textContent = String(e.message || e);
+      }
+    });
+
+    btnPrint.addEventListener("click", printResult);
+
+    loadSavedBase();
+    setReportButtons(false);
   </script>
 </body>
 </html>

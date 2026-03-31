@@ -1,0 +1,40 @@
+name: Deploy life-code-api Worker
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "workers/life-code-api/**"
+      - ".github/workflows/deploy-worker.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  WRANGLER_VERSION: 4.77.0
+
+jobs:
+  deploy-worker:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: f3f9e76222dcb488d5e303e29e8ba192
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Wrangler
+        run: npm install -g wrangler@${WRANGLER_VERSION}
+
+      - name: Deploy Worker
+        run: wrangler deploy --config workers/life-code-api/wrangler.toml
+        env:
+          WRANGLER_CONFIG_PATH: /dev/null

@@ -10,6 +10,8 @@ function buildLifeCodeData(input) {
   const timeline = buildTimeline({ calibrationSeed: input.calibration_seed ?? 11 });
   const rwm = computeRiskWealthMission(input.risk_wealth_mission ?? {});
 
+  const lifeCodeIndex = lci.normalized_lci ?? lci.raw_lci;
+
   return {
     generated_at: new Date().toISOString(),
     identity_layer: input.identity_layer ?? "Identity layer is missing.",
@@ -20,6 +22,8 @@ function buildLifeCodeData(input) {
         .slice(0, 6)
         .join(", ")}`,
     action_layer: input.action_layer ?? "Action layer requires manual recommendations.",
+    life_code_index: lifeCodeIndex,
+    adjusted_life_code_index: lci.adjusted_lci,
     ...lci,
     ...rwm,
     timeline_events: timeline.timeline_events,

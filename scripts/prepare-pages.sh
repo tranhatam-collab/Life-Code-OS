@@ -20,5 +20,6 @@ rsync -a \
   --exclude='README.md' \
   --exclude='PROJECT_STATUS_MASTER.md' \
   --exclude='docs/' \
+  --exclude='workers/' \
   --exclude='.DS_Store' \
   "$ROOT_DIR/" "$DIST_DIR/"
