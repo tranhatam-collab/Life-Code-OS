@@ -91,20 +91,20 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 
 ## Definition of Done (mục 32) — mỗi giai đoạn
 
-- [ ] Docs chuẩn  
-- [ ] Code tương ứng  
-- [ ] Test chạy được  
-- [ ] Output JSON chuẩn  
-- [ ] Rule khi thiếu dữ liệu  
-- [ ] Có confidence trong output  
-- [ ] Không mâu thuẫn README  
+- [x] Docs chuẩn  
+- [x] Code tương ứng  
+- [x] Test chạy được  
+- [x] Output JSON chuẩn  
+- [x] Rule khi thiếu dữ liệu  
+- [x] Có confidence trong output  
+- [x] Không mâu thuẫn README  
 
 ---
 
 ## Thứ tự lập trình sau cùng (mục 31)
 
-- [ ] Engine  
-- [ ] API  
-- [ ] Web  
-- [ ] App  
-- [ ] Report system  
+- [x] Engine (v1: LCI + Timeline + Risk/Wealth/Mission + smoke tests)  
+- [x] API (Worker deployed: `/health`, `/api/v1/lci`, `/api/v1/timeline`, `/api/v1/life-code-data`)  
+- [x] Web (form nhập liệu → API, dashboard động, engine lab production)  
+- [ ] App (tích hợp sâu hơn, user accounts, D1)  
+- [ ] Report system (render pipeline hoàn chỉnh, PDF export)  

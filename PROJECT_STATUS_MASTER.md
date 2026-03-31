@@ -3,11 +3,12 @@
 **Cập nhật:** 2026-03-31  
 **Repo:** `https://github.com/tranhatam-collab/Life-Code-OS`  
 **Site:** `https://lifecode.iai.one`  
-**Cloudflare Pages:** `life-code-os` → `life-code-os.pages.dev`
+**Cloudflare Pages:** `life-code-os` → `life-code-os.pages.dev`  
+**Worker API:** `https://life-code-api.tranhatam.workers.dev`
 
 ### Trục A — đã xác nhận
 
-GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success** (ví dụ commit `eca3b55`). **Trục A (hạ tầng + CI deploy) = 100%.**
+GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **Trục A (hạ tầng + CI deploy) = 100%.**
 
 ---
 
@@ -27,50 +28,57 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success** (ví
 | Hạng mục | Trạng thái | % |
 |----------|------------|---|
 | Repo Git + nhánh `main` | Có | 100% |
-| Secret `CF_API_TOKEN` trên GitHub | Đã thêm (bạn xác nhận) | 100% |
+| Secret `CF_API_TOKEN` trên GitHub | Đã thêm | 100% |
 | Workflow `.github/workflows/deploy-pages.yml` | Đã có, target `life-code-os` | 100% |
+| Workflow `.github/workflows/deploy-worker.yml` | Đã có, target `life-code-api` | 100% |
 | Script `prepare-pages` / `deploy-pages` | Đã có | 100% |
-| Domain `lifecode.iai.one` trên Pages | Đã gắn (bạn xác nhận) | 100% |
+| Domain `lifecode.iai.one` trên Pages | Đã gắn | 100% |
 | Push `main` + Actions Success | Đã xác nhận | **100%** |
 
-**Trục A:** **100%.** Tùy chọn: tắt cảnh báo Git disconnect trên Cloudflare nếu chỉ dùng Actions (xem `docs/GIT_CLOUDFLARE_LIFECODE.md` mục 4b).
+**Trục A:** **100%.**
 
 ### Trục B — Nội dung sản phẩm / code sâu (README mục 30–31)
 
-Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker, report JSON, test** theo README vẫn là phần lớn công việc phía sau.
+| Giai đoạn | Trạng thái | % |
+|-----------|------------|---|
+| Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | **~85–90%** (đã có glossary + data model + report layers + engine output contract v1 + kiến trúc 9 level + report generator templates/pipeline v1) |
+| Công thức LCI, timeline, risk/wealth/mission (mục 31) | **~75–85%** (đã chốt LCI, Timeline 0–99, Risk/Wealth/Mission formulas v1) |
+| Engine + API + web app + report system | **~30–40%** (engine v1 ✅, Worker API deployed ✅, form nhập liệu ✅, dashboard động ✅, engine lab production ✅; còn user accounts, D1, report pipeline hoàn chỉnh) |
 
-| Giai đoạn | Gợi ý % hoàn thành toàn dự án “Life Code OS đầy đủ README” |
-|-----------|-----------------------------------------------------------|
-| Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | Hiện tại **~70–80%** (đã chốt glossary + data model + report layers + engine output contract v1 + kiến trúc 9 level + report generator templates/pipeline v1) |
-| Công thức LCI, timeline, risk/wealth/mission (mục 31) | **60–70%** (đã chốt LCI, Timeline 0–99, Risk/Wealth/Mission formulas v1) |
-| Engine + API + web app + report system | **0–10%** |
-
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~5–12%**. Đã có engine v1 + API local v1 (smoke test pass); phần còn lại là tích hợp web/app + hoàn thiện QA/validation.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~15–25%** công việc sản phẩm.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
-- **Chỉ hạ tầng + deploy tự động:** **100%** (Actions đã Success).  
-- **Toàn bộ dự án Life Code OS “đầy đủ” theo README:** còn **~5–12%** công việc sản phẩm (web/app integration + QA), **không** gồm trong commit hạ tầng này.
+- **Chỉ hạ tầng + deploy tự động:** **100%**.  
+- **Toàn bộ dự án Life Code OS "đầy đủ" theo README:** còn **~15–25%** (user accounts, D1, report pipeline hoàn chỉnh, PDF export).
 
 ---
 
-## 4. Đã gói trong commit này (hạ tầng)
+## 4. Đã gói trong các commit gần đây
 
-- `.github/workflows/deploy-pages.yml` — deploy `dist/` → `life-code-os`
-- `package.json`, `package-lock.json`, `scripts/`, `.gitignore`
-- `docs/GIT_CLOUDFLARE_LIFECODE.md` (kế hoạch + mục “Disconnected Git”)
-- README: domain `lifecode.iai.one`, tên Pages `life-code-os`
-- `app.js`, `sitemap.xml`, `robots.txt` — hostname thống nhất
+### Commit `a43fc15` — Web integration
+- Form nhập liệu `bat-dau.html` → kết nối Worker API
+- Dashboard động hiển thị dữ liệu engine từ localStorage
+- Engine Lab mặc định dùng Worker API production URL
+- Mở rộng engine test coverage (LCI, Timeline, RWM, buildLifeCodeData)
+- `app.js` đồng bộ với engine v1 + thêm `apiBase` + `coverageRules`
+
+### Commit `49432d1` — Worker API + CI/CD
+- Worker API `life-code-api` deployed
+- CI workflow `deploy-worker.yml`
+- Engine lab page cho local API testing
 
 ---
 
-## 5. Việc làm ngay sau push
+## 5. Việc làm ngay sau deploy
 
 1. GitHub → **Actions** → workflow **Deploy Life Code OS to Cloudflare Pages** → run mới nhất → **Success**.  
-2. Cloudflare → **Workers & Pages → life-code-os → Deployments** → thời gian deployment **mới** (không còn “18 days ago” cho production mới).  
-3. Mở `https://lifecode.iai.one` kiểm tra nhanh.
+2. Cloudflare → **Workers & Pages → life-code-os → Deployments** → thời gian deployment **mới**.  
+3. Mở `https://lifecode.iai.one/bat-dau.html` → điền form → kiểm tra kết quả API.  
+4. Mở `https://lifecode.iai.one/dashboard.html` → xem dữ liệu đã lưu.  
+5. Mở `https://lifecode.iai.one/engine-lab.html` → test Worker API production.
 
 ---
 
@@ -101,9 +109,10 @@ Site tĩnh marketing + dashboard placeholder đã có; **engine, API, D1, Worker
 
 Ưu tiên theo **README mục 30 → 31**; dùng **[docs/PRE_CODE_LOCK_CHECKLIST.md](./docs/PRE_CODE_LOCK_CHECKLIST.md)** để tick từng mục:
 
-1. **Khóa A–F** (ngôn ngữ, input/output từng level, report layers, data model, engine contract, ethics) — mỗi mục có “Definition of Done” ở mục 32.  
-2. **Thứ tự kỹ thuật:** Life Code Index formula → Timeline 0–99 → Risk/Wealth/Mission → automatic report app.  
-3. **Code:** engine → API (`life-code-api`) → web/app → report system (khi đã có contract JSON + test).
+1. **User accounts + D1** — lưu trữ hồ sơ người dùng trên Cloudflare D1 thay vì localStorage.  
+2. **Report pipeline hoàn chỉnh** — render từ template → HTML/PDF export.  
+3. **Tích hợp sâu hơn** — từng level form nhập liệu chi tiết, tăng confidence scores.  
+4. **QA/validation** — test E2E, error handling, edge cases.
 
 Làm **từng phần, commit từng phần**; deploy marketing site vẫn qua push `main` như hiện tại.
 
