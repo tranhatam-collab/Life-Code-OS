@@ -271,10 +271,16 @@
 
         const formData = new FormData(form);
         const birthYear = formData.get('birth_date') ? new Date(formData.get('birth_date')).getFullYear() : null;
+        const existingUserId = localStorage.getItem('lc_user_id');
 
         const payload = {
+          user_id: existingUserId || undefined,
           name: formData.get('full_name'),
-          birth_year: birthYear,
+          birth_date: formData.get('birth_date') || null,
+          birth_time: formData.get('birth_time') || null,
+          birth_place: formData.get('birth_place') || null,
+          gender: formData.get('gender') || null,
+          current_location: formData.get('current_location') || null,
           layers: [
             { score: 70, weight: 0.3, confidence: 0.7 },
             { score: 60, weight: 0.25, confidence: 0.6 },
@@ -312,12 +318,15 @@
           if (!res.ok) throw new Error(`API error: ${res.status}`);
 
           const data = await res.json();
+          const userId = data.user_id || existingUserId || crypto.randomUUID();
+          localStorage.setItem('lc_user_id', userId);
           localStorage.setItem('lc_profile', JSON.stringify({
+            user_id: userId,
             name: payload.name,
-            birth_year: payload.birth_year,
-            birth_place: formData.get('birth_place'),
-            gender: formData.get('gender'),
-            current_location: formData.get('current_location'),
+            birth_date: payload.birth_date,
+            birth_place: payload.birth_place,
+            gender: payload.gender,
+            current_location: payload.current_location,
             created_at: new Date().toISOString()
           }));
           localStorage.setItem('lc_result', JSON.stringify(data));

@@ -3,5 +3,11 @@ main = "src/index.js"
 compatibility_date = "2024-11-12"
 account_id = "f3f9e76222dcb488d5e303e29e8ba192"
 
+[[d1_databases]]
+binding = "LIFE_CODE_DB"
+database_name = "life-code-db"
+database_id = "6bbddd07-a644-486b-bc66-a6e35b46b68d"
+migrations_dir = "migrations"
+
 # Sau khi deploy: gắn route tùy chọn, ví dụ:
 # routes = [{ pattern = "api.lifecode.iai.one/*", zone_name = "iai.one" }]

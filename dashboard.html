@@ -416,60 +416,100 @@
   <script src="./site.js"></script>
   <script>
     (function() {
-      const profile = JSON.parse(localStorage.getItem('lc_profile') || 'null');
-      const result = JSON.parse(localStorage.getItem('lc_result') || 'null');
+      const API_BASE = 'https://life-code-api.tranhatam.workers.dev';
       const noData = document.getElementById('lcDashboardNoData');
       const withData = document.getElementById('lcDashboardWithData');
-      if (!profile || !result) return;
 
-      noData.style.display = 'none';
-      withData.style.display = 'block';
+      function renderDashboard(profile, result) {
+        noData.style.display = 'none';
+        withData.style.display = 'block';
 
-      const welcome = document.getElementById('lcDashWelcome');
-      welcome.textContent = `Chào ${profile.name || 'bạn'} — Life Code Index: ${result.life_code_index ?? 'N/A'}`;
+        const welcome = document.getElementById('lcDashWelcome');
+        welcome.textContent = `Chào ${profile.name || 'bạn'} — Life Code Index: ${result.life_code_index ?? 'N/A'}`;
 
-      const metrics = document.getElementById('lcDashMetrics');
-      const items = [
-        { label: 'Life Code Index', value: result.life_code_index ?? 'N/A' },
-        { label: 'Adjusted LCI', value: result.adjusted_life_code_index ?? 'N/A' },
-        { label: 'Data Coverage', value: result.data_coverage ?? 'N/A' },
-        { label: 'Risk Score', value: result.risk_score ?? 'N/A' },
-        { label: 'Wealth Score', value: result.wealth_score ?? 'N/A' },
-        { label: 'Mission Signal', value: result.mission_signal ?? 'N/A' }
-      ];
-      metrics.innerHTML = items.map(i =>
-        `<article class="lc-card" style="text-align:center;"><div style="font-size:0.85rem;opacity:0.7;">${i.label}</div><div style="font-size:1.8rem;font-weight:700;margin:8px 0;">${i.value}</div></article>`
-      ).join('');
+        const metrics = document.getElementById('lcDashMetrics');
+        const items = [
+          { label: 'Life Code Index', value: result.life_code_index ?? 'N/A' },
+          { label: 'Adjusted LCI', value: result.adjusted_life_code_index ?? 'N/A' },
+          { label: 'Data Coverage', value: result.data_coverage ?? 'N/A' },
+          { label: 'Risk Score', value: result.risk_score ?? 'N/A' },
+          { label: 'Wealth Score', value: result.wealth_score ?? 'N/A' },
+          { label: 'Mission Signal', value: result.mission_signal ?? 'N/A' }
+        ];
+        metrics.innerHTML = items.map(i =>
+          `<article class="lc-card" style="text-align:center;"><div style="font-size:0.85rem;opacity:0.7;">${i.label}</div><div style="font-size:1.8rem;font-weight:700;margin:8px 0;">${i.value}</div></article>`
+        ).join('');
 
-      const profileCard = document.getElementById('lcDashProfile');
-      profileCard.innerHTML = `<h3>Hồ sơ cá nhân</h3><ul>
-        <li><strong>Họ tên:</strong> ${profile.name || 'N/A'}</li>
-        <li><strong>Năm sinh:</strong> ${profile.birth_year || 'N/A'}</li>
-        <li><strong>Nơi sinh:</strong> ${profile.birth_place || 'N/A'}</li>
-        <li><strong>Giới tính:</strong> ${profile.gender || 'N/A'}</li>
-        <li><strong>Nơi ở:</strong> ${profile.current_location || 'N/A'}</li>
-      </ul>`;
+        const profileCard = document.getElementById('lcDashProfile');
+        profileCard.innerHTML = `<h3>Hồ sơ cá nhân</h3><ul>
+          <li><strong>Họ tên:</strong> ${profile.full_name || profile.name || 'N/A'}</li>
+          <li><strong>Nơi sinh:</strong> ${profile.birth_place || 'N/A'}</li>
+          <li><strong>Giới tính:</strong> ${profile.gender || 'N/A'}</li>
+          <li><strong>Nơi ở:</strong> ${profile.current_location || 'N/A'}</li>
+          <li><strong>Created:</strong> ${profile.created_at || profile.updated_at || 'N/A'}</li>
+        </ul>`;
 
-      const statusCard = document.getElementById('lcDashStatus');
-      const statusLabels = { insufficient: 'Dữ liệu chưa đủ', partial: 'Dữ liệu một phần', strong: 'Dữ liệu mạnh', full: 'Dữ liệu đầy đủ' };
-      statusCard.innerHTML = `<h3>Trạng thái hồ sơ</h3><ul>
-        <li><strong>Trạng thái:</strong> ${statusLabels[result.status] || result.status || 'N/A'}</li>
-        <li><strong>Raw LCI:</strong> ${result.raw_lci ?? 'N/A'}</li>
-        <li><strong>Normalized LCI:</strong> ${result.normalized_lci ?? 'N/A'}</li>
-        <li><strong>Adjusted LCI:</strong> ${result.adjusted_lci ?? 'N/A'}</li>
-        <li><strong>Coverage:</strong> ${result.data_coverage ?? 'N/A'}</li>
-      </ul>`;
+        const statusCard = document.getElementById('lcDashStatus');
+        const statusLabels = { insufficient: 'Dữ liệu chưa đủ', partial: 'Dữ liệu một phần', strong: 'Dữ liệu mạnh', full: 'Dữ liệu đầy đủ' };
+        statusCard.innerHTML = `<h3>Trạng thái hồ sơ</h3><ul>
+          <li><strong>Trạng thái:</strong> ${statusLabels[result.status] || result.status || 'N/A'}</li>
+          <li><strong>Raw LCI:</strong> ${result.raw_lci ?? 'N/A'}</li>
+          <li><strong>Normalized LCI:</strong> ${result.normalized_lci ?? 'N/A'}</li>
+          <li><strong>Adjusted LCI:</strong> ${result.adjusted_lci ?? 'N/A'}</li>
+          <li><strong>Coverage:</strong> ${result.data_coverage ?? 'N/A'}</li>
+        </ul>`;
 
-      const timelineCard = document.getElementById('lcDashTimeline');
-      const oppWindows = (result.opportunity_windows || []).slice(0, 6).join(', ') || 'N/A';
-      const transWindows = (result.transformation_windows || []).slice(0, 4).join(', ') || 'N/A';
-      const riskYears = (result.risk_years || []).slice(0, 6).join(', ') || 'N/A';
-      timelineCard.innerHTML = `<h3>Timeline & Windows</h3>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:12px;">
-          <div><strong>Cửa sổ cơ hội:</strong> ${oppWindows}</div>
-          <div><strong>Vùng chuyển hóa:</strong> ${transWindows}</div>
-          <div><strong>Vùng rủi ro:</strong> ${riskYears}</div>
-        </div>`;
+        const timelineCard = document.getElementById('lcDashTimeline');
+        const oppWindows = (result.opportunity_windows || []).slice(0, 6).join(', ') || 'N/A';
+        const transWindows = (result.transformation_windows || []).slice(0, 4).join(', ') || 'N/A';
+        const riskYears = (result.risk_years || []).slice(0, 6).join(', ') || 'N/A';
+        timelineCard.innerHTML = `<h3>Timeline & Windows</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:12px;">
+            <div><strong>Cửa sổ cơ hội:</strong> ${oppWindows}</div>
+            <div><strong>Vùng chuyển hóa:</strong> ${transWindows}</div>
+            <div><strong>Vùng rủi ro:</strong> ${riskYears}</div>
+          </div>`;
+      }
+
+      async function loadFromD1(userId) {
+        try {
+          const res = await fetch(`${API_BASE}/api/v1/profile/${userId}`);
+          if (!res.ok) throw new Error('Profile not found');
+          const data = await res.json();
+          if (data.profile && data.latest_result) {
+            const profile = {
+              name: data.profile.full_name,
+              full_name: data.profile.full_name,
+              birth_place: data.profile.birth_place,
+              gender: data.profile.gender,
+              current_location: data.profile.current_location,
+              created_at: data.profile.created_at,
+              updated_at: data.profile.updated_at
+            };
+            const result = typeof data.latest_result.raw_json === 'string'
+              ? JSON.parse(data.latest_result.raw_json)
+              : data.latest_result;
+            renderDashboard(profile, result);
+          }
+        } catch (e) {
+          console.warn('D1 fetch failed, falling back to localStorage:', e.message);
+        }
+      }
+
+      const userId = localStorage.getItem('lc_user_id');
+      if (userId) {
+        loadFromD1(userId).then(() => {
+          if (withData.style.display !== 'block') {
+            const profile = JSON.parse(localStorage.getItem('lc_profile') || 'null');
+            const result = JSON.parse(localStorage.getItem('lc_result') || 'null');
+            if (profile && result) renderDashboard(profile, result);
+          }
+        });
+      } else {
+        const profile = JSON.parse(localStorage.getItem('lc_profile') || 'null');
+        const result = JSON.parse(localStorage.getItem('lc_result') || 'null');
+        if (profile && result) renderDashboard(profile, result);
+      }
     })();
   </script>
 </body>
