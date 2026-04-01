@@ -6,6 +6,7 @@
   <title>Engine Lab | Life Code OS</title>
   <link rel="canonical" href="https://lifecode.iai.one/engine-lab.html" />
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     .lc-lab-api-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
     .lc-lab-api-row label { font-weight: 600; }
@@ -67,8 +68,8 @@
           <p>Sau khi gọi <strong>life-code-data</strong> thành công, có thể tải JSON và dựng preview từ <code>site-templates/level1_self_signal_template.md</code> (cùng origin với site).</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px">
             <button id="btnDownloadJson" class="lc-btn lc-btn-secondary" type="button" disabled>Tải life-code-data.json</button>
-            <button id="btnRenderReport" class="lc-btn lc-btn-secondary" type="button" disabled>Render HTML từ template</button>
-            <button id="btnPrintPdf" class="lc-btn lc-btn-secondary" type="button" disabled>In / lưu PDF (trình duyệt)</button>
+            <button id="btnRenderReport" class="lc-btn lc-btn-secondary" type="button" disabled>Render HTML</button>
+            <button id="btnPrintPdf" class="lc-btn lc-btn-secondary" type="button" disabled>In / Lưu PDF</button>
           </div>
           <div id="lcPrintArea" class="lc-report-preview" hidden></div>
         </div>
@@ -178,8 +179,14 @@
 
     function printResult() {
       if (!printArea.innerHTML.trim()) return;
-      printArea.hidden = false;
-      window.print();
+      const opt = {
+        margin:       10,
+        filename:     'life-code-report.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(printArea).save();
     }
 
     async function post(path, body) {
