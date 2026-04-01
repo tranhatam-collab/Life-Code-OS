@@ -91,6 +91,9 @@ export default {
       }
 
       if (url.pathname === "/api/v1/life-code-data") {
+        if (!payload.layers || !Array.isArray(payload.layers) || payload.layers.length === 0) {
+          return jsonResponse(request, 400, { error: "Missing or invalid layers" });
+        }
         const result = buildLifeCodeData(payload);
 
         if (db && payload.name) {
