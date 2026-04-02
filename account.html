@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Account | Life Code OS</title>
+  <link rel="canonical" href="https://lifecode.iai.one/account.html" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="lc-page">
+    <header class="lc-header">
+      <div class="lc-container lc-header-row">
+        <a class="lc-brand" href="/">
+          <span class="lc-brand-mark">LC</span>
+          <span class="lc-brand-text"><strong>Life Code</strong><small>Account Center</small></span>
+        </a>
+      </div>
+    </header>
+
+    <main class="lc-section">
+      <div class="lc-container">
+        <div class="lc-section-head">
+          <span class="lc-kicker">Account</span>
+          <h1>Hồ sơ, metadata theo level và quản lý phiên</h1>
+          <p>Trang này quản lý tài khoản thật, tách riêng khỏi dashboard.</p>
+        </div>
+
+        <article class="lc-card" style="margin-bottom:16px;">
+          <h2>Profile Settings</h2>
+          <form id="lcAccountForm" style="display:grid;gap:10px;max-width:760px;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <input id="accFullName" type="text" placeholder="Họ tên" required style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+              <input id="accNickname" type="text" placeholder="Mật danh" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <input id="accBirthPlace" type="text" placeholder="Nơi sinh" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+              <input id="accCurrentLocation" type="text" placeholder="Nơi ở hiện tại" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+            </div>
+            <h3 style="margin:6px 0 0;">Profile Metadata theo level</h3>
+            <div id="accLevelMetadata" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;"></div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="lc-btn lc-btn-primary" type="submit">Lưu Profile</button>
+              <a class="lc-btn lc-btn-secondary" href="/dashboard.html">Về Dashboard</a>
+            </div>
+          </form>
+          <p id="accMsg" style="margin-top:10px;"></p>
+        </article>
+
+        <article class="lc-card">
+          <h2>Sessions</h2>
+          <p>Danh sách phiên đang hoạt động và revoke từng phiên.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+            <button id="btnReloadSessions" class="lc-btn lc-btn-secondary" type="button">Tải lại sessions</button>
+            <button id="btnLogoutCurrent" class="lc-btn lc-btn-secondary" type="button">Logout phiên hiện tại</button>
+            <button id="btnLogoutAll" class="lc-btn lc-btn-secondary" type="button">Logout tất cả phiên</button>
+          </div>
+          <div id="accSessions"></div>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const API_BASE = 'https://life-code-api.tranhatam.workers.dev';
+      const accMsg = document.getElementById('accMsg');
+      const sessionsEl = document.getElementById('accSessions');
+      const levelWrap = document.getElementById('accLevelMetadata');
+
+      const fields = {
+        full_name: document.getElementById('accFullName'),
+        nickname: document.getElementById('accNickname'),
+        birth_place: document.getElementById('accBirthPlace'),
+        current_location: document.getElementById('accCurrentLocation')
+      };
+
+      for (let i = 1; i <= 9; i += 1) {
+        const t = document.createElement('textarea');
+        t.id = `accMetaLevel${i}`;
+        t.placeholder = `level${i} metadata`;
+        t.rows = 3;
+        t.style.cssText = 'padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;';
+        levelWrap.appendChild(t);
+      }
+
+      function authHeaders() {
+        const token = localStorage.getItem('lc_session_token');
+        return token
+          ? { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }
+          : { 'Content-Type': 'application/json' };
+      }
+
+      async function loadMe() {
+        const res = await fetch(`${API_BASE}/api/v1/me`, { headers: authHeaders() });
+        if (!res.ok) throw new Error('Bạn chưa đăng nhập session hợp lệ. Hãy vào Bắt đầu để tạo lại session.');
+        const data = await res.json();
+        const p = data.profile || {};
+        fields.full_name.value = p.full_name || '';
+        fields.nickname.value = p.nickname || '';
+        fields.birth_place.value = p.birth_place || '';
+        fields.current_location.value = p.current_location || '';
+        const m = p.profile_metadata || {};
+        for (let i = 1; i <= 9; i += 1) {
+          document.getElementById(`accMetaLevel${i}`).value = m[`level${i}`] || '';
+        }
+      }
+
+      async function loadSessions() {
+        const res = await fetch(`${API_BASE}/api/v1/sessions`, { headers: authHeaders() });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'Không tải được sessions');
+
+        const rows = (data.sessions || []).map((s) => {
+          const state = s.revoked_at ? 'revoked' : 'active';
+          const current = s.is_current ? ' (current)' : '';
+          const btn = (!s.revoked_at && !s.is_current)
+            ? `<button class="lc-btn lc-btn-secondary" data-revoke="${s.id}">Revoke</button>`
+            : '';
+          return `<tr>
+            <td>${s.id}${current}</td>
+            <td>${s.token_tail || 'n/a'}</td>
+            <td>${state}</td>
+            <td>${s.created_at || 'n/a'}</td>
+            <td>${s.expires_at || 'n/a'}</td>
+            <td>${btn}</td>
+          </tr>`;
+        }).join('');
+
+        sessionsEl.innerHTML = `
+          <div style="overflow:auto;">
+            <table style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr>
+                  <th style="text-align:left;padding:8px;">Session ID</th>
+                  <th style="text-align:left;padding:8px;">Token tail</th>
+                  <th style="text-align:left;padding:8px;">State</th>
+                  <th style="text-align:left;padding:8px;">Created</th>
+                  <th style="text-align:left;padding:8px;">Expires</th>
+                  <th style="text-align:left;padding:8px;">Action</th>
+                </tr>
+              </thead>
+              <tbody>${rows || ''}</tbody>
+            </table>
+          </div>`;
+
+        sessionsEl.querySelectorAll('button[data-revoke]').forEach((btn) => {
+          btn.addEventListener('click', async () => {
+            const sessionId = btn.getAttribute('data-revoke');
+            const r = await fetch(`${API_BASE}/api/v1/session/revoke`, {
+              method: 'POST',
+              headers: authHeaders(),
+              body: JSON.stringify({ session_id: sessionId })
+            });
+            const body = await r.json();
+            if (!r.ok) {
+              accMsg.textContent = `Lỗi revoke session: ${body.error || r.status}`;
+              accMsg.style.color = '#f87171';
+              return;
+            }
+            accMsg.textContent = 'Đã revoke session.';
+            accMsg.style.color = '#facc15';
+            loadSessions();
+          });
+        });
+      }
+
+      document.getElementById('lcAccountForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const profile_metadata = {};
+        for (let i = 1; i <= 9; i += 1) {
+          const v = document.getElementById(`accMetaLevel${i}`).value.trim();
+          if (v) profile_metadata[`level${i}`] = v;
+        }
+
+        const res = await fetch(`${API_BASE}/api/v1/profile/update`, {
+          method: 'POST',
+          headers: authHeaders(),
+          body: JSON.stringify({
+            full_name: fields.full_name.value.trim(),
+            nickname: fields.nickname.value.trim() || null,
+            birth_place: fields.birth_place.value.trim() || null,
+            current_location: fields.current_location.value.trim() || null,
+            profile_metadata,
+          })
+        });
+
+        const body = await res.json();
+        if (!res.ok) {
+          accMsg.textContent = `Lỗi cập nhật: ${body.error || res.status}`;
+          accMsg.style.color = '#f87171';
+          return;
+        }
+
+        const p = body.profile || {};
+        localStorage.setItem('lc_profile', JSON.stringify({
+          user_id: p.id,
+          name: p.full_name,
+          full_name: p.full_name,
+          nickname: p.nickname,
+          birth_place: p.birth_place,
+          current_location: p.current_location,
+          profile_metadata: p.profile_metadata || {}
+        }));
+
+        accMsg.textContent = 'Đã cập nhật profile thành công.';
+        accMsg.style.color = '#34d399';
+        loadSessions();
+      });
+
+      document.getElementById('btnReloadSessions').addEventListener('click', () => loadSessions());
+      document.getElementById('btnLogoutCurrent').addEventListener('click', async () => {
+        const res = await fetch(`${API_BASE}/api/v1/logout`, {
+          method: 'POST', headers: authHeaders(), body: JSON.stringify({ revoke_all_sessions: false })
+        });
+        if (res.ok) {
+          localStorage.removeItem('lc_session_token');
+          window.location.href = '/bat-dau.html';
+        }
+      });
+      document.getElementById('btnLogoutAll').addEventListener('click', async () => {
+        const res = await fetch(`${API_BASE}/api/v1/logout`, {
+          method: 'POST', headers: authHeaders(), body: JSON.stringify({ revoke_all_sessions: true })
+        });
+        if (res.ok) {
+          localStorage.removeItem('lc_session_token');
+          localStorage.removeItem('lc_user_id');
+          localStorage.removeItem('lc_profile');
+          localStorage.removeItem('lc_result');
+          window.location.href = '/bat-dau.html';
+        }
+      });
+
+      loadMe().then(loadSessions).catch((e) => {
+        accMsg.textContent = e.message;
+        accMsg.style.color = '#f87171';
+      });
+    })();
+  </script>
+</body>
+</html>

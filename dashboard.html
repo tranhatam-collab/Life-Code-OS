@@ -122,22 +122,10 @@
               </article>
             </div>
             <div style="margin-top:20px;">
-              <article class="lc-card" id="lcDashSettingsCard">
-                <h3>Profile Settings</h3>
-                <p>Cập nhật hồ sơ nhanh và quản lý phiên đăng nhập.</p>
-                <form id="lcProfileSettingsForm" style="display:grid;gap:10px;margin-top:12px;max-width:680px;">
-                  <input id="lcSetFullName" type="text" placeholder="Họ tên" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
-                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-                    <input id="lcSetBirthPlace" type="text" placeholder="Nơi sinh" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
-                    <input id="lcSetCurrentLocation" type="text" placeholder="Nơi ở hiện tại" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
-                  </div>
-                  <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                    <button id="lcSaveProfile" class="lc-btn lc-btn-primary" type="submit">Lưu hồ sơ</button>
-                    <button id="lcLogout" class="lc-btn lc-btn-secondary" type="button">Logout phiên này</button>
-                    <button id="lcLogoutAll" class="lc-btn lc-btn-secondary" type="button">Logout tất cả phiên</button>
-                  </div>
-                </form>
-                <p id="lcSettingsMsg" style="margin-top:10px;opacity:0.9;"></p>
+              <article class="lc-card">
+                <h3>Account & Session</h3>
+                <p>Quản lý mật danh, metadata theo level, và danh sách phiên trong trang riêng.</p>
+                <a class="lc-btn lc-btn-primary" href="/account.html">Mở trang Account</a>
               </article>
             </div>
           </div>
@@ -468,13 +456,6 @@
       const reportGenBtn = document.getElementById('lcGenerateReport');
       const reportMdBtn = document.getElementById('lcDownloadReportMd');
       const reportPdfBtn = document.getElementById('lcDownloadReportPdf');
-      const settingsForm = document.getElementById('lcProfileSettingsForm');
-      const setFullName = document.getElementById('lcSetFullName');
-      const setBirthPlace = document.getElementById('lcSetBirthPlace');
-      const setCurrentLocation = document.getElementById('lcSetCurrentLocation');
-      const settingsMsg = document.getElementById('lcSettingsMsg');
-      const logoutBtn = document.getElementById('lcLogout');
-      const logoutAllBtn = document.getElementById('lcLogoutAll');
 
       let currentReportMarkdown = '';
       let currentProfile = null;
@@ -563,72 +544,6 @@
           <div><strong>Vùng chuyển hóa:</strong> ${transWindows}</div>
           <div><strong>Vùng rủi ro:</strong> ${riskYears}</div>
         </div>`;
-
-        setFullName.value = profile.full_name || profile.name || '';
-        setBirthPlace.value = profile.birth_place || '';
-        setCurrentLocation.value = profile.current_location || '';
-      }
-
-      async function saveProfileSettings(e) {
-        e.preventDefault();
-        try {
-          const response = await fetch(`${API_BASE}/api/v1/profile/update`, {
-            method: 'POST',
-            headers: authHeaders(),
-            body: JSON.stringify({
-              full_name: setFullName.value.trim(),
-              birth_place: setBirthPlace.value.trim() || null,
-              current_location: setCurrentLocation.value.trim() || null
-            })
-          });
-          const body = await response.json();
-          if (!response.ok) throw new Error(body.error || `HTTP ${response.status}`);
-
-          settingsMsg.textContent = 'Đã lưu profile thành công.';
-          settingsMsg.style.color = '#34d399';
-
-          const updatedProfile = {
-            ...currentProfile,
-            user_id: body.profile.id,
-            full_name: body.profile.full_name,
-            name: body.profile.full_name,
-            birth_place: body.profile.birth_place,
-            current_location: body.profile.current_location,
-            gender: body.profile.gender,
-            created_at: body.profile.created_at,
-            updated_at: body.profile.updated_at
-          };
-          localStorage.setItem('lc_profile', JSON.stringify(updatedProfile));
-          renderDashboard(updatedProfile, currentResult || JSON.parse(localStorage.getItem('lc_result') || 'null'));
-        } catch (err) {
-          settingsMsg.textContent = `Lỗi lưu profile: ${err.message}`;
-          settingsMsg.style.color = '#f87171';
-        }
-      }
-
-      async function revokeSession(revokeAll) {
-        try {
-          const response = await fetch(`${API_BASE}/api/v1/logout`, {
-            method: 'POST',
-            headers: authHeaders(),
-            body: JSON.stringify({ revoke_all_sessions: revokeAll })
-          });
-          const body = await response.json();
-          if (!response.ok) throw new Error(body.error || `HTTP ${response.status}`);
-
-          localStorage.removeItem('lc_session_token');
-          if (revokeAll) {
-            localStorage.removeItem('lc_user_id');
-            localStorage.removeItem('lc_profile');
-            localStorage.removeItem('lc_result');
-          }
-          settingsMsg.textContent = revokeAll ? 'Đã logout tất cả phiên.' : 'Đã logout phiên hiện tại.';
-          settingsMsg.style.color = '#facc15';
-          setTimeout(() => window.location.href = '/bat-dau.html', 700);
-        } catch (err) {
-          settingsMsg.textContent = `Lỗi logout: ${err.message}`;
-          settingsMsg.style.color = '#f87171';
-        }
       }
 
       async function generateReport() {
@@ -680,10 +595,6 @@
           jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         }).from(container).save();
       });
-
-      settingsForm.addEventListener('submit', saveProfileSettings);
-      logoutBtn.addEventListener('click', () => revokeSession(false));
-      logoutAllBtn.addEventListener('click', () => revokeSession(true));
 
       async function loadFromApi() {
         try {

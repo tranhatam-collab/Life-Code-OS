@@ -101,6 +101,51 @@ function parseReportLevel(value) {
   return level;
 }
 
+function sanitizeProfileMetadata(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return {};
+  }
+  const out = {};
+  for (const [k, v] of Object.entries(value)) {
+    if (!k) continue;
+    if (v === undefined || v === null) continue;
+    out[k] = String(v).slice(0, 4000);
+  }
+  return out;
+}
+
+function parseProfileMetadataJson(raw) {
+  if (!raw) return {};
+  try {
+    const parsed = JSON.parse(raw);
+    return sanitizeProfileMetadata(parsed);
+  } catch {
+    return {};
+  }
+}
+
+function sessionView(row, currentSessionId) {
+  if (!row) return null;
+  const token = row.session_token || "";
+  return {
+    id: row.id,
+    created_at: row.created_at,
+    expires_at: row.expires_at,
+    last_seen_at: row.last_seen_at,
+    revoked_at: row.revoked_at,
+    is_current: row.id === currentSessionId,
+    token_tail: token ? token.slice(-8) : null,
+  };
+}
+
+function profileView(row) {
+  if (!row) return null;
+  return {
+    ...row,
+    profile_metadata: parseProfileMetadataJson(row.profile_metadata_json),
+  };
+}
+
 export default {
   async fetch(request, env) {
     if (request.method === "OPTIONS") {
@@ -136,7 +181,32 @@ export default {
           )
           .bind(sessionUserId)
           .first();
-        return jsonResponse(request, 200, { profile, latest_result: latestResult || null });
+        return jsonResponse(request, 200, {
+          profile: profileView(profile),
+          latest_result: latestResult || null,
+          session: sessionView(session, session.id),
+        });
+      } catch (e) {
+        return jsonResponse(request, 500, { error: e.message || "Internal error" });
+      }
+    }
+
+    if (request.method === "GET" && url.pathname === "/api/v1/sessions") {
+      if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+      const session = await resolveSession(request, db);
+      if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+      try {
+        const rows = await db
+          .prepare(
+            "SELECT id, session_token, created_at, expires_at, last_seen_at, revoked_at FROM user_sessions WHERE user_id = ? ORDER BY created_at DESC LIMIT 50"
+          )
+          .bind(session.user_id)
+          .all();
+
+        return jsonResponse(request, 200, {
+          current_session_id: session.id,
+          sessions: (rows.results || []).map((row) => sessionView(row, session.id)),
+        });
       } catch (e) {
         return jsonResponse(request, 500, { error: e.message || "Internal error" });
       }
@@ -149,7 +219,10 @@ export default {
         const profile = await db.prepare("SELECT * FROM user_profiles WHERE id = ?").bind(userId).first();
         if (!profile) return jsonResponse(request, 404, { error: "Profile not found" });
         const results = await db.prepare("SELECT * FROM life_code_results WHERE user_id = ? ORDER BY generated_at DESC LIMIT 1").bind(userId).all();
-        return jsonResponse(request, 200, { profile, latest_result: results.results[0] || null });
+        return jsonResponse(request, 200, {
+          profile: profileView(profile),
+          latest_result: results.results[0] || null,
+        });
       } catch (e) {
         return jsonResponse(request, 500, { error: e.message || "Internal error" });
       }
@@ -183,21 +256,30 @@ export default {
         const now = new Date().toISOString();
         const expiresAt = sessionExpiryIso();
         const sessionToken = `${generateId()}${generateId().replace(/-/g, "")}`;
+        const profileMetadata = sanitizeProfileMetadata(payload.profile_metadata);
+        const nickname = payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null;
 
         const current = await db
-          .prepare("SELECT created_at FROM user_profiles WHERE id = ? LIMIT 1")
+          .prepare("SELECT created_at, profile_metadata_json, nickname FROM user_profiles WHERE id = ? LIMIT 1")
           .bind(userId)
           .first();
         const createdAt = current?.created_at || now;
+        const mergedMetadata = {
+          ...parseProfileMetadataJson(current?.profile_metadata_json),
+          ...profileMetadata,
+        };
+        const resolvedNickname = nickname || current?.nickname || null;
 
         await db
           .prepare(
-            `INSERT OR REPLACE INTO user_profiles (id, full_name, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+            `INSERT OR REPLACE INTO user_profiles (id, full_name, nickname, profile_metadata_json, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
           )
           .bind(
             userId,
             String(payload.name || "").trim(),
+            resolvedNickname,
+            JSON.stringify(mergedMetadata),
             payload.birth_date || null,
             payload.birth_time || null,
             payload.birth_place || null,
@@ -238,15 +320,24 @@ export default {
         const now = new Date().toISOString();
         const fullName = String(payload.full_name || current.full_name || "").trim();
         if (!fullName) return jsonResponse(request, 400, { error: "full_name cannot be empty" });
+        const nickname = payload.nickname === undefined
+          ? current.nickname
+          : (payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null);
+        const mergedMetadata = {
+          ...parseProfileMetadataJson(current.profile_metadata_json),
+          ...sanitizeProfileMetadata(payload.profile_metadata),
+        };
 
         await db
           .prepare(
             `UPDATE user_profiles
-             SET full_name = ?, birth_date = ?, birth_time = ?, birth_place = ?, gender = ?, current_location = ?, updated_at = ?
+             SET full_name = ?, nickname = ?, profile_metadata_json = ?, birth_date = ?, birth_time = ?, birth_place = ?, gender = ?, current_location = ?, updated_at = ?
              WHERE id = ?`
           )
           .bind(
             fullName,
+            nickname,
+            JSON.stringify(mergedMetadata),
             payload.birth_date ?? current.birth_date,
             payload.birth_time ?? current.birth_time,
             payload.birth_place ?? current.birth_place,
@@ -262,7 +353,7 @@ export default {
           .bind(session.user_id)
           .first();
 
-        return jsonResponse(request, 200, { ok: true, profile: updated });
+        return jsonResponse(request, 200, { ok: true, profile: profileView(updated) });
       }
 
       if (url.pathname === "/api/v1/session/revoke" || url.pathname === "/api/v1/logout") {
@@ -272,11 +363,22 @@ export default {
 
         const now = new Date().toISOString();
         const revokeAll = Boolean(payload.revoke_all_sessions);
+        const specificSessionId = payload.session_id ? String(payload.session_id) : null;
 
         if (revokeAll) {
           await db
             .prepare("UPDATE user_sessions SET revoked_at = ? WHERE user_id = ? AND revoked_at IS NULL")
             .bind(now, session.user_id)
+            .run();
+        } else if (specificSessionId) {
+          const target = await db
+            .prepare("SELECT id FROM user_sessions WHERE id = ? AND user_id = ? LIMIT 1")
+            .bind(specificSessionId, session.user_id)
+            .first();
+          if (!target) return jsonResponse(request, 404, { error: "Session not found" });
+          await db
+            .prepare("UPDATE user_sessions SET revoked_at = ? WHERE id = ?")
+            .bind(now, specificSessionId)
             .run();
         } else {
           await db
@@ -287,7 +389,7 @@ export default {
 
         return jsonResponse(request, 200, {
           ok: true,
-          revoked: revokeAll ? "all" : "current",
+          revoked: revokeAll ? "all" : specificSessionId ? "specific" : "current",
         });
       }
 
@@ -302,20 +404,29 @@ export default {
           const userId = payload.user_id || sessionUserId || (payload.name ? generateId() : null);
           if (userId) {
           const now = new Date().toISOString();
+          const metadataUpdate = sanitizeProfileMetadata(payload.profile_metadata);
+          const nicknameUpdate = payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null;
 
           const profile = await db
-            .prepare("SELECT created_at, full_name FROM user_profiles WHERE id = ? LIMIT 1")
+            .prepare("SELECT created_at, full_name, nickname, profile_metadata_json FROM user_profiles WHERE id = ? LIMIT 1")
             .bind(userId)
             .first();
           const createdAt = profile?.created_at || now;
           const fullName = String(payload.name || profile?.full_name || "Life Code User").trim();
+          const mergedMetadata = {
+            ...parseProfileMetadataJson(profile?.profile_metadata_json),
+            ...metadataUpdate,
+          };
+          const resolvedNickname = nicknameUpdate || profile?.nickname || null;
 
           await db.prepare(
-            `INSERT OR REPLACE INTO user_profiles (id, full_name, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+            `INSERT OR REPLACE INTO user_profiles (id, full_name, nickname, profile_metadata_json, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
           ).bind(
             userId,
             fullName,
+            resolvedNickname,
+            JSON.stringify(mergedMetadata),
             payload.birth_date || null,
             payload.birth_time || null,
             payload.birth_place || null,

@@ -70,17 +70,41 @@ async function run() {
   assert.equal(me.res.status, 200, "/api/v1/me should return 200");
   assert.equal(me.body.profile.id, start.body.user_id, "profile id should match session user");
 
+  const secondSession = await jsonFetch("/api/v1/session/start", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      user_id: start.body.user_id,
+      name: `${uniqueName} 2`,
+    }),
+  });
+  assert.equal(secondSession.res.status, 200, "second session/start should return 200");
+
+  const sessionsBeforeRevoke = await jsonFetch("/api/v1/sessions", {
+    method: "GET",
+    headers: { Authorization: `Bearer ${start.body.session_token}` },
+  });
+  assert.equal(sessionsBeforeRevoke.res.status, 200, "/api/v1/sessions should return 200");
+  assert.ok((sessionsBeforeRevoke.body.sessions || []).length >= 2, "should have at least 2 sessions");
+
   const update = await jsonFetch("/api/v1/profile/update", {
     method: "POST",
     headers: authHeaders,
     body: JSON.stringify({
       full_name: `${uniqueName} Updated`,
+      nickname: "smoke-nick",
       birth_place: "HCMC",
       current_location: "Da Nang",
+      profile_metadata: {
+        level3: "behavior note",
+        level6: "timeline note",
+      },
     }),
   });
   assert.equal(update.res.status, 200, "profile/update should return 200");
   assert.equal(update.body.profile.full_name, `${uniqueName} Updated`);
+  assert.equal(update.body.profile.nickname, "smoke-nick");
+  assert.equal(update.body.profile.profile_metadata.level3, "behavior note");
 
   const report1 = await fetch(`${API_BASE}/api/v1/report`, {
     method: "POST",
@@ -99,6 +123,23 @@ async function run() {
   const report9Text = await report9.text();
   assert.equal(report9.status, 200, "report level 9 should return 200");
   assert.match(report9Text, /^# Level 9/, "report level 9 markdown header");
+
+  const target = (sessionsBeforeRevoke.body.sessions || []).find((s) => !s.is_current && !s.revoked_at);
+  assert.ok(target, "should find non-current session to revoke");
+
+  const revokeSpecific = await jsonFetch("/api/v1/session/revoke", {
+    method: "POST",
+    headers: authHeaders,
+    body: JSON.stringify({ session_id: target.id }),
+  });
+  assert.equal(revokeSpecific.res.status, 200, "revoke specific session should return 200");
+
+  const sessionsAfterRevoke = await jsonFetch("/api/v1/sessions", {
+    method: "GET",
+    headers: { Authorization: `Bearer ${start.body.session_token}` },
+  });
+  assert.equal(sessionsAfterRevoke.res.status, 200);
+  assert.ok((sessionsAfterRevoke.body.sessions || []).some((s) => s.revoked_at), "at least one session should be revoked");
 
   const logout = await jsonFetch("/api/v1/logout", {
     method: "POST",
