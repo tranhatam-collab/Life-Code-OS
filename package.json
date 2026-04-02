@@ -12,6 +12,7 @@
     "worker:dev": "npx wrangler dev --config workers/life-code-api/wrangler.toml",
     "engine:sample": "node scripts/run-engine-v1.cjs",
     "engine:test": "node engine/tests/smoke.cjs",
+    "report:test": "node workers/life-code-api/tests/report-smoke.mjs",
     "api:dev": "node api/server.cjs",
     "api:test": "node scripts/test-api-v1.cjs"
   },

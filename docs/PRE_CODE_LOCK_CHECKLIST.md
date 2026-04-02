@@ -104,7 +104,7 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 ## Thứ tự lập trình sau cùng (mục 31)
 
 - [x] Engine (v1: LCI + Timeline + Risk/Wealth/Mission + smoke tests)  
-- [x] API (Worker deployed: `/health`, `/api/v1/lci`, `/api/v1/timeline`, `/api/v1/life-code-data`)  
+- [x] API (Worker deployed: `/health`, `/api/v1/lci`, `/api/v1/timeline`, `/api/v1/life-code-data`, `/api/v1/profile/:id`, `/api/v1/report`)  
 - [x] Web (form nhập liệu → API, dashboard động, engine lab production)  
-- [ ] App (tích hợp sâu hơn, user accounts, D1)  
-- [ ] Report system (render pipeline hoàn chỉnh, PDF export)  
+- [~] App (đã có D1 + profile/result persistence; còn thiếu auth/session và CRUD hoàn chỉnh)  
+- [x] Report system (templates 1-9, render pipeline level 1-9, PDF export trong Engine Lab)  

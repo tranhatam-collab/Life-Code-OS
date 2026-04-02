@@ -43,24 +43,42 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **T
 |-----------|------------|---|
 | Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | **~85–90%** (đã có glossary + data model + report layers + engine output contract v1 + kiến trúc 9 level + report generator templates/pipeline v1) |
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **~75–85%** (đã chốt LCI, Timeline 0–99, Risk/Wealth/Mission formulas v1) |
-| Engine + API + web app + report system | **~30–40%** (engine v1 ✅, Worker API deployed ✅, form nhập liệu ✅, dashboard động ✅, engine lab production ✅; còn user accounts, D1, report pipeline hoàn chỉnh) |
+| Engine + API + web app + report system | **~55–65%** (engine v1 ✅, Worker API deployed ✅, D1 persistence ✅, form nhập liệu ✅, dashboard động ✅, engine lab production ✅, report API level 1-9 ✅, templates 1-9 ✅, PDF export trong lab ✅; còn auth/session, CRUD hoàn chỉnh, QA sâu) |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~15–25%** công việc sản phẩm.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~10–20%** công việc sản phẩm.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
 - **Chỉ hạ tầng + deploy tự động:** **100%**.  
-- **Toàn bộ dự án Life Code OS "đầy đủ" theo README:** còn **~15–25%** (user accounts, D1, report pipeline hoàn chỉnh, PDF export).
+- **Toàn bộ dự án Life Code OS "đầy đủ" theo README:** còn **~10–20%** (auth/session, CRUD hoàn chỉnh, report production flow ngoài lab, QA/E2E).
 
 ---
 
 ## 4. Đã gói trong các commit gần đây
 
+### Commit `4fd6585` — API validation
+- Validation cho `POST /api/v1/life-code-data` khi thiếu `layers`
+
+### Commit `0c8c875` — PDF export
+- Thêm export PDF trong `engine-lab.html` bằng `html2pdf.js`
+
+### Commit `99362ff` — Report templates 2–9
+- Bổ sung templates Level 2–9 trong `site-templates/`
+
+### Commit `f0fd12b` — Report API Level 1
+- Thêm endpoint `POST /api/v1/report`
+- Tăng chất lượng template Level 1
+
+### Commit `1fa3a62` — D1 integration
+- Tạo D1 database `life-code-db`
+- Lưu `user_profiles` + `life_code_results`
+- Thêm `GET /api/v1/profile/:id`
+
 ### Commit `a43fc15` — Web integration
 - Form nhập liệu `bat-dau.html` → kết nối Worker API
-- Dashboard động hiển thị dữ liệu engine từ localStorage
+- Dashboard động hiển thị dữ liệu engine từ localStorage / D1 fallback
 - Engine Lab mặc định dùng Worker API production URL
 - Mở rộng engine test coverage (LCI, Timeline, RWM, buildLifeCodeData)
 - `app.js` đồng bộ với engine v1 + thêm `apiBase` + `coverageRules`
@@ -76,9 +94,10 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **T
 
 1. GitHub → **Actions** → workflow **Deploy Life Code OS to Cloudflare Pages** → run mới nhất → **Success**.  
 2. Cloudflare → **Workers & Pages → life-code-os → Deployments** → thời gian deployment **mới**.  
-3. Mở `https://lifecode.iai.one/bat-dau.html` → điền form → kiểm tra kết quả API.  
-4. Mở `https://lifecode.iai.one/dashboard.html` → xem dữ liệu đã lưu.  
-5. Mở `https://lifecode.iai.one/engine-lab.html` → test Worker API production.
+3. Mở `https://lifecode.iai.one/bat-dau` → điền form → kiểm tra kết quả API + D1 persistence.  
+4. Mở `https://lifecode.iai.one/dashboard` → xem dữ liệu đã lưu từ D1/local fallback.  
+5. Mở `https://lifecode.iai.one/engine-lab.html` → test Worker API production + render report/PDF.  
+6. Gọi `POST /api/v1/report` với `level` từ `1..9` để kiểm tra render markdown theo level.
 
 ---
 
@@ -109,10 +128,10 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **T
 
 Ưu tiên theo **README mục 30 → 31**; dùng **[docs/PRE_CODE_LOCK_CHECKLIST.md](./docs/PRE_CODE_LOCK_CHECKLIST.md)** để tick từng mục:
 
-1. **User accounts + D1** — lưu trữ hồ sơ người dùng trên Cloudflare D1 thay vì localStorage.  
-2. **Report pipeline hoàn chỉnh** — render từ template → HTML/PDF export.  
-3. **Tích hợp sâu hơn** — từng level form nhập liệu chi tiết, tăng confidence scores.  
-4. **QA/validation** — test E2E, error handling, edge cases.
+1. **Auth/session + CRUD profile** — hoàn thiện app layer thay vì chỉ dùng `user_id` local fallback.  
+2. **Report production flow** — render/report ngoài Engine Lab, chọn level trong UI, lưu report generated nếu cần.  
+3. **Tích hợp sâu hơn** — từng level form nhập liệu chi tiết, tăng confidence scores và mapping dữ liệu thật cho level 2-9.  
+4. **QA/validation** — test E2E, error handling, edge cases, smoke test deploy.
 
 Làm **từng phần, commit từng phần**; deploy marketing site vẫn qua push `main` như hiện tại.
 
