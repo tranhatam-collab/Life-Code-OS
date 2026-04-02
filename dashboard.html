@@ -13,6 +13,7 @@
 
   <link rel="canonical" href="https://lifecode.iai.one/dashboard.html" />
   <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
   <div class="lc-page">
@@ -95,6 +96,30 @@
             </div>
             <div style="margin-top:20px;">
               <article class="lc-card" id="lcDashTimeline"></article>
+            </div>
+            <div style="margin-top:20px;">
+              <article class="lc-card" id="lcDashReportCard">
+                <h3>Tạo báo cáo theo level</h3>
+                <p>Chọn level 1-9, render markdown và tải PDF trực tiếp từ dashboard.</p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+                  <label for="lcReportLevel"><strong>Level</strong></label>
+                  <select id="lcReportLevel" style="padding:8px 10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;">
+                    <option value="1">Level 1 - Self Signal</option>
+                    <option value="2">Level 2 - Inner Architecture</option>
+                    <option value="3">Level 3 - Behavior Code</option>
+                    <option value="4">Level 4 - Work & Wealth</option>
+                    <option value="5">Level 5 - Relationship Field</option>
+                    <option value="6">Level 6 - Life Timeline</option>
+                    <option value="7">Level 7 - Body Intelligence</option>
+                    <option value="8">Level 8 - Mission Path</option>
+                    <option value="9">Level 9 - Full Life Code</option>
+                  </select>
+                  <button id="lcGenerateReport" class="lc-btn lc-btn-primary" type="button">Generate Report</button>
+                  <button id="lcDownloadReportMd" class="lc-btn lc-btn-secondary" type="button" disabled>Tải .md</button>
+                  <button id="lcDownloadReportPdf" class="lc-btn lc-btn-secondary" type="button" disabled>Tải PDF</button>
+                </div>
+                <pre id="lcReportPreview" style="white-space:pre-wrap;word-break:break-word;max-height:40vh;overflow:auto;margin-top:14px;display:none;"></pre>
+              </article>
             </div>
           </div>
         </div>
@@ -419,10 +444,53 @@
       const API_BASE = 'https://life-code-api.tranhatam.workers.dev';
       const noData = document.getElementById('lcDashboardNoData');
       const withData = document.getElementById('lcDashboardWithData');
+      const reportLevelEl = document.getElementById('lcReportLevel');
+      const reportPreviewEl = document.getElementById('lcReportPreview');
+      const reportGenBtn = document.getElementById('lcGenerateReport');
+      const reportMdBtn = document.getElementById('lcDownloadReportMd');
+      const reportPdfBtn = document.getElementById('lcDownloadReportPdf');
+
+      let currentReportMarkdown = '';
+      let currentProfile = null;
+      let currentResult = null;
+
+      function authHeaders() {
+        const sessionToken = localStorage.getItem('lc_session_token');
+        if (!sessionToken) return { 'Content-Type': 'application/json' };
+        return {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${sessionToken}`
+        };
+      }
+
+      function mdDownload(name, text) {
+        const blob = new Blob([text + '\n'], { type: 'text/markdown;charset=utf-8' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = name;
+        a.click();
+        URL.revokeObjectURL(a.href);
+      }
+
+      function reportToHtml(md) {
+        const escaped = md
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+        return escaped
+          .replace(/^#\s+(.+)$/gm, '<h1>$1</h1>')
+          .replace(/^##\s+(.+)$/gm, '<h2>$1</h2>')
+          .replace(/^###\s+(.+)$/gm, '<h3>$1</h3>')
+          .replace(/^\-\s+(.+)$/gm, '<li>$1</li>')
+          .replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>')
+          .replace(/\n\n/g, '<br/><br/>');
+      }
 
       function renderDashboard(profile, result) {
         noData.style.display = 'none';
         withData.style.display = 'block';
+        currentProfile = profile;
+        currentResult = result;
 
         const welcome = document.getElementById('lcDashWelcome');
         welcome.textContent = `Chào ${profile.name || 'bạn'} — Life Code Index: ${result.life_code_index ?? 'N/A'}`;
@@ -466,18 +534,72 @@
         timelineCard.innerHTML = `<h3>Timeline & Windows</h3>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:12px;">
             <div><strong>Cửa sổ cơ hội:</strong> ${oppWindows}</div>
-            <div><strong>Vùng chuyển hóa:</strong> ${transWindows}</div>
-            <div><strong>Vùng rủi ro:</strong> ${riskYears}</div>
-          </div>`;
+          <div><strong>Vùng chuyển hóa:</strong> ${transWindows}</div>
+          <div><strong>Vùng rủi ro:</strong> ${riskYears}</div>
+        </div>`;
       }
 
-      async function loadFromD1(userId) {
+      async function generateReport() {
         try {
-          const res = await fetch(`${API_BASE}/api/v1/profile/${userId}`);
-          if (!res.ok) throw new Error('Profile not found');
+          const level = Number(reportLevelEl.value || 1);
+          const response = await fetch(`${API_BASE}/api/v1/report`, {
+            method: 'POST',
+            headers: authHeaders(),
+            body: JSON.stringify({
+              user_id: currentProfile?.user_id,
+              level
+            })
+          });
+          const text = await response.text();
+          if (!response.ok) {
+            throw new Error(text || `Report API error: ${response.status}`);
+          }
+          currentReportMarkdown = text;
+          reportPreviewEl.style.display = 'block';
+          reportPreviewEl.textContent = text;
+          reportMdBtn.disabled = false;
+          reportPdfBtn.disabled = false;
+        } catch (e) {
+          reportPreviewEl.style.display = 'block';
+          reportPreviewEl.textContent = `Lỗi tạo report: ${e.message}`;
+          reportMdBtn.disabled = true;
+          reportPdfBtn.disabled = true;
+        }
+      }
+
+      reportGenBtn.addEventListener('click', generateReport);
+      reportMdBtn.addEventListener('click', () => {
+        if (!currentReportMarkdown) return;
+        const level = reportLevelEl.value || '1';
+        mdDownload(`life-code-level-${level}.md`, currentReportMarkdown);
+      });
+      reportPdfBtn.addEventListener('click', () => {
+        if (!currentReportMarkdown) return;
+        const container = document.createElement('div');
+        container.style.padding = '20px';
+        container.style.background = '#fff';
+        container.style.color = '#111';
+        container.innerHTML = reportToHtml(currentReportMarkdown);
+        html2pdf().set({
+          margin: 10,
+          filename: `life-code-level-${reportLevelEl.value || '1'}.pdf`,
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        }).from(container).save();
+      });
+
+      async function loadFromApi() {
+        try {
+          const res = await fetch(`${API_BASE}/api/v1/me`, {
+            method: 'GET',
+            headers: authHeaders()
+          });
+          if (!res.ok) throw new Error('Session/profile not found');
           const data = await res.json();
           if (data.profile && data.latest_result) {
             const profile = {
+              user_id: data.profile.id,
               name: data.profile.full_name,
               full_name: data.profile.full_name,
               birth_place: data.profile.birth_place,
@@ -489,27 +611,23 @@
             const result = typeof data.latest_result.raw_json === 'string'
               ? JSON.parse(data.latest_result.raw_json)
               : data.latest_result;
+            localStorage.setItem('lc_user_id', profile.user_id);
+            localStorage.setItem('lc_profile', JSON.stringify(profile));
+            localStorage.setItem('lc_result', JSON.stringify(result));
             renderDashboard(profile, result);
           }
         } catch (e) {
-          console.warn('D1 fetch failed, falling back to localStorage:', e.message);
+          console.warn('Session API failed, falling back to localStorage:', e.message);
         }
       }
 
-      const userId = localStorage.getItem('lc_user_id');
-      if (userId) {
-        loadFromD1(userId).then(() => {
-          if (withData.style.display !== 'block') {
-            const profile = JSON.parse(localStorage.getItem('lc_profile') || 'null');
-            const result = JSON.parse(localStorage.getItem('lc_result') || 'null');
-            if (profile && result) renderDashboard(profile, result);
-          }
-        });
-      } else {
+      loadFromApi().then(() => {
+        if (withData.style.display !== 'block') {
         const profile = JSON.parse(localStorage.getItem('lc_profile') || 'null');
         const result = JSON.parse(localStorage.getItem('lc_result') || 'null');
         if (profile && result) renderDashboard(profile, result);
-      }
+        }
+      });
     })();
   </script>
 </body>

@@ -270,8 +270,8 @@
         submitLoading.style.display = 'inline';
 
         const formData = new FormData(form);
-        const birthYear = formData.get('birth_date') ? new Date(formData.get('birth_date')).getFullYear() : null;
         const existingUserId = localStorage.getItem('lc_user_id');
+        const existingSessionToken = localStorage.getItem('lc_session_token');
 
         const payload = {
           user_id: existingUserId || undefined,
@@ -309,16 +309,44 @@
         };
 
         try {
+          let userId = existingUserId;
+          let sessionToken = existingSessionToken;
+
+          if (!sessionToken) {
+            const sessionRes = await fetch(`${API_BASE}/api/v1/session/start`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                user_id: userId || undefined,
+                name: payload.name,
+                birth_date: payload.birth_date,
+                birth_time: payload.birth_time,
+                birth_place: payload.birth_place,
+                gender: payload.gender,
+                current_location: payload.current_location
+              })
+            });
+            if (!sessionRes.ok) throw new Error(`Session error: ${sessionRes.status}`);
+            const sessionData = await sessionRes.json();
+            userId = sessionData.user_id;
+            sessionToken = sessionData.session_token;
+            localStorage.setItem('lc_session_token', sessionToken);
+            localStorage.setItem('lc_user_id', userId);
+          }
+
           const res = await fetch(`${API_BASE}/api/v1/life-code-data`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${sessionToken}`
+            },
             body: JSON.stringify(payload)
           });
 
           if (!res.ok) throw new Error(`API error: ${res.status}`);
 
           const data = await res.json();
-          const userId = data.user_id || existingUserId || crypto.randomUUID();
+          userId = data.user_id || userId || crypto.randomUUID();
           localStorage.setItem('lc_user_id', userId);
           localStorage.setItem('lc_profile', JSON.stringify({
             user_id: userId,

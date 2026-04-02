@@ -43,16 +43,16 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **T
 |-----------|------------|---|
 | Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | **~85–90%** (đã có glossary + data model + report layers + engine output contract v1 + kiến trúc 9 level + report generator templates/pipeline v1) |
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **~75–85%** (đã chốt LCI, Timeline 0–99, Risk/Wealth/Mission formulas v1) |
-| Engine + API + web app + report system | **~55–65%** (engine v1 ✅, Worker API deployed ✅, D1 persistence ✅, form nhập liệu ✅, dashboard động ✅, engine lab production ✅, report API level 1-9 ✅, templates 1-9 ✅, PDF export trong lab ✅; còn auth/session, CRUD hoàn chỉnh, QA sâu) |
+| Engine + API + web app + report system | **~65–75%** (engine v1 ✅, Worker API deployed ✅, D1 persistence ✅, session token auth ✅, form nhập liệu ✅, dashboard động ✅, report UI level selector ✅, report API level 1-9 ✅, templates 1-9 ✅, PDF export ✅; còn CRUD/profile settings hoàn chỉnh + QA sâu) |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~10–20%** công việc sản phẩm.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~8–15%** công việc sản phẩm.
 
 ---
 
 ## 3. Một dòng tóm tắt tỷ lệ
 
 - **Chỉ hạ tầng + deploy tự động:** **100%**.  
-- **Toàn bộ dự án Life Code OS "đầy đủ" theo README:** còn **~10–20%** (auth/session, CRUD hoàn chỉnh, report production flow ngoài lab, QA/E2E).
+- **Toàn bộ dự án Life Code OS "đầy đủ" theo README:** còn **~8–15%** (CRUD/profile settings hoàn chỉnh, report production polish, QA/E2E mở rộng).
 
 ---
 
@@ -60,6 +60,17 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **T
 
 ### Commit `4fd6585` — API validation
 - Validation cho `POST /api/v1/life-code-data` khi thiếu `layers`
+
+### Commit `dbe0690` — Report API level 1-9 + smoke test
+- Tách report renderer thành module `report.mjs`
+- `POST /api/v1/report` hỗ trợ `level` từ 1 đến 9
+- Thêm `npm run report:test`
+
+### Commit mới nhất — Session auth + UI report + E2E smoke
+- Session token auth qua `POST /api/v1/session/start`
+- Endpoint `GET /api/v1/me` theo session
+- Dashboard có chọn level report + tải `.md` / PDF
+- Thêm `npm run e2e:smoke` cho flow `bat-dau -> D1 -> dashboard -> report`
 
 ### Commit `0c8c875` — PDF export
 - Thêm export PDF trong `engine-lab.html` bằng `html2pdf.js`
@@ -128,8 +139,8 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **T
 
 Ưu tiên theo **README mục 30 → 31**; dùng **[docs/PRE_CODE_LOCK_CHECKLIST.md](./docs/PRE_CODE_LOCK_CHECKLIST.md)** để tick từng mục:
 
-1. **Auth/session + CRUD profile** — hoàn thiện app layer thay vì chỉ dùng `user_id` local fallback.  
-2. **Report production flow** — render/report ngoài Engine Lab, chọn level trong UI, lưu report generated nếu cần.  
+1. **CRUD profile/settings hoàn chỉnh** — cập nhật hồ sơ người dùng theo từng level input trong app UI.  
+2. **Report production flow polish** — lưu report generated (nếu cần), tối ưu UI đọc report dài.  
 3. **Tích hợp sâu hơn** — từng level form nhập liệu chi tiết, tăng confidence scores và mapping dữ liệu thật cho level 2-9.  
 4. **QA/validation** — test E2E, error handling, edge cases, smoke test deploy.
 

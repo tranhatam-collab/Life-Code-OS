@@ -13,6 +13,7 @@
     "engine:sample": "node scripts/run-engine-v1.cjs",
     "engine:test": "node engine/tests/smoke.cjs",
     "report:test": "node workers/life-code-api/tests/report-smoke.mjs",
+    "e2e:smoke": "node scripts/smoke-flow-v1.cjs",
     "api:dev": "node api/server.cjs",
     "api:test": "node scripts/test-api-v1.cjs"
   },

@@ -1,0 +1,97 @@
+const assert = require("node:assert/strict");
+
+const API_BASE = process.env.LC_API_BASE || "https://life-code-api.tranhatam.workers.dev";
+
+async function jsonFetch(path, options = {}) {
+  const res = await fetch(`${API_BASE}${path}`, options);
+  const text = await res.text();
+  let body;
+  try {
+    body = JSON.parse(text);
+  } catch {
+    body = text;
+  }
+  return { res, body, text };
+}
+
+async function run() {
+  const uniqueName = `Smoke User ${Date.now()}`;
+
+  const start = await jsonFetch("/api/v1/session/start", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ name: uniqueName, birth_place: "HN" }),
+  });
+  assert.equal(start.res.status, 200, "session/start should return 200");
+  assert.ok(start.body.session_token, "session token should exist");
+  assert.ok(start.body.user_id, "user id should exist");
+
+  const authHeaders = {
+    "content-type": "application/json",
+    Authorization: `Bearer ${start.body.session_token}`,
+  };
+
+  const lifeCode = await jsonFetch("/api/v1/life-code-data", {
+    method: "POST",
+    headers: authHeaders,
+    body: JSON.stringify({
+      layers: [
+        { score: 74, weight: 0.5, confidence: 0.8 },
+        { score: 62, weight: 0.5, confidence: 0.7 },
+      ],
+      risk_wealth_mission: {
+        health_risk: 0.4,
+        health_confidence: 0.7,
+        behavior_risk: 0.3,
+        behavior_confidence: 0.6,
+        relationship_risk: 0.35,
+        relationship_confidence: 0.65,
+        social_risk: 0.3,
+        social_confidence: 0.6,
+        wealth_base: 0.5,
+        wealth_confidence: 0.6,
+        work_fit: 0.6,
+        work_confidence: 0.65,
+        behavior_finance: 0.55,
+        mission_base: 0.55,
+        mission_confidence: 0.6,
+        legacy_fit: 0.5,
+        relationship_support: 0.6,
+      },
+    }),
+  });
+  assert.equal(lifeCode.res.status, 200, "life-code-data should return 200");
+  assert.ok(lifeCode.body.user_id, "life-code-data should include user_id");
+
+  const me = await jsonFetch("/api/v1/me", {
+    method: "GET",
+    headers: { Authorization: `Bearer ${start.body.session_token}` },
+  });
+  assert.equal(me.res.status, 200, "/api/v1/me should return 200");
+  assert.equal(me.body.profile.id, start.body.user_id, "profile id should match session user");
+
+  const report1 = await fetch(`${API_BASE}/api/v1/report`, {
+    method: "POST",
+    headers: authHeaders,
+    body: JSON.stringify({ level: 1 }),
+  });
+  const report1Text = await report1.text();
+  assert.equal(report1.status, 200, "report level 1 should return 200");
+  assert.match(report1Text, /^# Level 1/, "report level 1 markdown header");
+
+  const report9 = await fetch(`${API_BASE}/api/v1/report`, {
+    method: "POST",
+    headers: authHeaders,
+    body: JSON.stringify({ level: 9 }),
+  });
+  const report9Text = await report9.text();
+  assert.equal(report9.status, 200, "report level 9 should return 200");
+  assert.match(report9Text, /^# Level 9/, "report level 9 markdown header");
+
+  console.log("e2e smoke flow passed");
+}
+
+run().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
