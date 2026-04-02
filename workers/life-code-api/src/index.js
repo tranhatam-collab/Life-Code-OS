@@ -77,6 +77,22 @@ async function resolveSessionUserId(request, db) {
   return session.user_id || null;
 }
 
+async function resolveSession(request, db) {
+  if (!db) return null;
+  const token = bearerToken(request);
+  if (!token) return null;
+  const session = await db
+    .prepare(
+      "SELECT id, user_id, session_token, expires_at, revoked_at FROM user_sessions WHERE session_token = ? LIMIT 1"
+    )
+    .bind(token)
+    .first();
+  if (!session) return null;
+  if (session.revoked_at) return null;
+  if (session.expires_at && Date.parse(session.expires_at) < Date.now()) return null;
+  return session;
+}
+
 function parseReportLevel(value) {
   const level = Number(value ?? 1);
   if (!Number.isInteger(level) || !getSupportedReportLevels().includes(level)) {
@@ -100,9 +116,15 @@ export default {
 
     if (request.method === "GET" && url.pathname === "/api/v1/me") {
       if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
-      const sessionUserId = await resolveSessionUserId(request, db);
+      const session = await resolveSession(request, db);
+      const sessionUserId = session?.user_id;
       if (!sessionUserId) return jsonResponse(request, 401, { error: "Unauthorized" });
       try {
+        await db
+          .prepare("UPDATE user_sessions SET last_seen_at = ? WHERE id = ?")
+          .bind(new Date().toISOString(), session.id)
+          .run();
+
         const profile = await db
           .prepare("SELECT * FROM user_profiles WHERE id = ?")
           .bind(sessionUserId)
@@ -199,6 +221,73 @@ export default {
           user_id: userId,
           session_token: sessionToken,
           expires_at: expiresAt,
+        });
+      }
+
+      if (url.pathname === "/api/v1/profile/update") {
+        if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+        const session = await resolveSession(request, db);
+        if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+
+        const current = await db
+          .prepare("SELECT * FROM user_profiles WHERE id = ? LIMIT 1")
+          .bind(session.user_id)
+          .first();
+        if (!current) return jsonResponse(request, 404, { error: "Profile not found" });
+
+        const now = new Date().toISOString();
+        const fullName = String(payload.full_name || current.full_name || "").trim();
+        if (!fullName) return jsonResponse(request, 400, { error: "full_name cannot be empty" });
+
+        await db
+          .prepare(
+            `UPDATE user_profiles
+             SET full_name = ?, birth_date = ?, birth_time = ?, birth_place = ?, gender = ?, current_location = ?, updated_at = ?
+             WHERE id = ?`
+          )
+          .bind(
+            fullName,
+            payload.birth_date ?? current.birth_date,
+            payload.birth_time ?? current.birth_time,
+            payload.birth_place ?? current.birth_place,
+            payload.gender ?? current.gender,
+            payload.current_location ?? current.current_location,
+            now,
+            session.user_id
+          )
+          .run();
+
+        const updated = await db
+          .prepare("SELECT * FROM user_profiles WHERE id = ? LIMIT 1")
+          .bind(session.user_id)
+          .first();
+
+        return jsonResponse(request, 200, { ok: true, profile: updated });
+      }
+
+      if (url.pathname === "/api/v1/session/revoke" || url.pathname === "/api/v1/logout") {
+        if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+        const session = await resolveSession(request, db);
+        if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+
+        const now = new Date().toISOString();
+        const revokeAll = Boolean(payload.revoke_all_sessions);
+
+        if (revokeAll) {
+          await db
+            .prepare("UPDATE user_sessions SET revoked_at = ? WHERE user_id = ? AND revoked_at IS NULL")
+            .bind(now, session.user_id)
+            .run();
+        } else {
+          await db
+            .prepare("UPDATE user_sessions SET revoked_at = ? WHERE id = ?")
+            .bind(now, session.id)
+            .run();
+        }
+
+        return jsonResponse(request, 200, {
+          ok: true,
+          revoked: revokeAll ? "all" : "current",
         });
       }
 

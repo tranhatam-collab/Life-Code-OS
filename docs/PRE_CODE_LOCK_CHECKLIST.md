@@ -106,5 +106,5 @@ Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã c
 - [x] Engine (v1: LCI + Timeline + Risk/Wealth/Mission + smoke tests)  
 - [x] API (Worker deployed: `/health`, `/api/v1/lci`, `/api/v1/timeline`, `/api/v1/life-code-data`, `/api/v1/profile/:id`, `/api/v1/report`)  
 - [x] Web (form nhập liệu → API, dashboard động, engine lab production)  
-- [~] App (đã có D1 + session token auth + profile/result persistence; còn thiếu CRUD/profile settings hoàn chỉnh)  
+- [~] App (đã có D1 + session token auth + edit profile + logout; còn thiếu profile settings nâng cao và quản trị phiên sâu)  
 - [x] Report system (templates 1-9, render pipeline level 1-9, PDF export trong Engine Lab)  

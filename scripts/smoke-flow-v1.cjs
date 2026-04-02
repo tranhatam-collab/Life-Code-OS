@@ -70,6 +70,18 @@ async function run() {
   assert.equal(me.res.status, 200, "/api/v1/me should return 200");
   assert.equal(me.body.profile.id, start.body.user_id, "profile id should match session user");
 
+  const update = await jsonFetch("/api/v1/profile/update", {
+    method: "POST",
+    headers: authHeaders,
+    body: JSON.stringify({
+      full_name: `${uniqueName} Updated`,
+      birth_place: "HCMC",
+      current_location: "Da Nang",
+    }),
+  });
+  assert.equal(update.res.status, 200, "profile/update should return 200");
+  assert.equal(update.body.profile.full_name, `${uniqueName} Updated`);
+
   const report1 = await fetch(`${API_BASE}/api/v1/report`, {
     method: "POST",
     headers: authHeaders,
@@ -87,6 +99,19 @@ async function run() {
   const report9Text = await report9.text();
   assert.equal(report9.status, 200, "report level 9 should return 200");
   assert.match(report9Text, /^# Level 9/, "report level 9 markdown header");
+
+  const logout = await jsonFetch("/api/v1/logout", {
+    method: "POST",
+    headers: authHeaders,
+    body: JSON.stringify({ revoke_all_sessions: false }),
+  });
+  assert.equal(logout.res.status, 200, "logout should return 200");
+
+  const meAfterLogout = await jsonFetch("/api/v1/me", {
+    method: "GET",
+    headers: { Authorization: `Bearer ${start.body.session_token}` },
+  });
+  assert.equal(meAfterLogout.res.status, 401, "/api/v1/me should return 401 after logout");
 
   console.log("e2e smoke flow passed");
 }
