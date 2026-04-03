@@ -76,6 +76,7 @@ async function run() {
     body: JSON.stringify({
       user_id: start.body.user_id,
       name: `${uniqueName} 2`,
+      device_label: "Second smoke device",
     }),
   });
   assert.equal(secondSession.res.status, 200, "second session/start should return 200");
@@ -93,8 +94,16 @@ async function run() {
     body: JSON.stringify({
       full_name: `${uniqueName} Updated`,
       nickname: "smoke-nick",
+      avatar_url: "https://example.com/avatar.png",
+      locale: "en-US",
       birth_place: "HCMC",
       current_location: "Da Nang",
+      notification_prefs: {
+        email: true,
+        sms: false,
+        push: true,
+        weekly_report: true,
+      },
       profile_metadata: {
         level3: "behavior note",
         level6: "timeline note",
@@ -104,7 +113,10 @@ async function run() {
   assert.equal(update.res.status, 200, "profile/update should return 200");
   assert.equal(update.body.profile.full_name, `${uniqueName} Updated`);
   assert.equal(update.body.profile.nickname, "smoke-nick");
+  assert.equal(update.body.profile.locale, "en-US");
+  assert.equal(update.body.profile.avatar_url, "https://example.com/avatar.png");
   assert.equal(update.body.profile.profile_metadata.level3, "behavior note");
+  assert.equal(update.body.profile.notification_prefs.email, true);
 
   const report1 = await fetch(`${API_BASE}/api/v1/report`, {
     method: "POST",
@@ -126,6 +138,14 @@ async function run() {
 
   const target = (sessionsBeforeRevoke.body.sessions || []).find((s) => !s.is_current && !s.revoked_at);
   assert.ok(target, "should find non-current session to revoke");
+  assert.ok(target.device_label || target.ip_address !== undefined, "session should include device/ip metadata");
+
+  const updateLabel = await jsonFetch("/api/v1/session/update-label", {
+    method: "POST",
+    headers: authHeaders,
+    body: JSON.stringify({ session_id: target.id, device_label: "Renamed smoke device" }),
+  });
+  assert.equal(updateLabel.res.status, 200, "session/update-label should return 200");
 
   const revokeSpecific = await jsonFetch("/api/v1/session/revoke", {
     method: "POST",

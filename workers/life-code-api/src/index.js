@@ -124,6 +124,27 @@ function parseProfileMetadataJson(raw) {
   }
 }
 
+function sanitizeNotificationPrefs(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return {};
+  }
+  return {
+    email: Boolean(value.email),
+    sms: Boolean(value.sms),
+    push: Boolean(value.push),
+    weekly_report: Boolean(value.weekly_report),
+  };
+}
+
+function parseNotificationPrefsJson(raw) {
+  if (!raw) return {};
+  try {
+    return sanitizeNotificationPrefs(JSON.parse(raw));
+  } catch {
+    return {};
+  }
+}
+
 function sessionView(row, currentSessionId) {
   if (!row) return null;
   const token = row.session_token || "";
@@ -135,6 +156,9 @@ function sessionView(row, currentSessionId) {
     revoked_at: row.revoked_at,
     is_current: row.id === currentSessionId,
     token_tail: token ? token.slice(-8) : null,
+    device_label: row.device_label || null,
+    ip_address: row.ip_address || null,
+    user_agent: row.user_agent || null,
   };
 }
 
@@ -143,6 +167,7 @@ function profileView(row) {
   return {
     ...row,
     profile_metadata: parseProfileMetadataJson(row.profile_metadata_json),
+    notification_prefs: parseNotificationPrefsJson(row.notification_prefs_json),
   };
 }
 
@@ -198,7 +223,7 @@ export default {
       try {
         const rows = await db
           .prepare(
-            "SELECT id, session_token, created_at, expires_at, last_seen_at, revoked_at FROM user_sessions WHERE user_id = ? ORDER BY created_at DESC LIMIT 50"
+            "SELECT id, session_token, created_at, expires_at, last_seen_at, revoked_at, device_label, ip_address, user_agent FROM user_sessions WHERE user_id = ? ORDER BY created_at DESC LIMIT 50"
           )
           .bind(session.user_id)
           .all();
@@ -258,9 +283,17 @@ export default {
         const sessionToken = `${generateId()}${generateId().replace(/-/g, "")}`;
         const profileMetadata = sanitizeProfileMetadata(payload.profile_metadata);
         const nickname = payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null;
+        const avatarUrl = payload.avatar_url ? String(payload.avatar_url).trim().slice(0, 2000) : null;
+        const locale = payload.locale ? String(payload.locale).trim().slice(0, 40) : null;
+        const notificationPrefs = sanitizeNotificationPrefs(payload.notification_prefs);
+        const ipAddress = request.headers.get("CF-Connecting-IP") || null;
+        const userAgent = request.headers.get("User-Agent") || null;
+        const deviceLabel = payload.device_label
+          ? String(payload.device_label).trim().slice(0, 120)
+          : (userAgent ? userAgent.slice(0, 120) : "Unknown device");
 
         const current = await db
-          .prepare("SELECT created_at, profile_metadata_json, nickname FROM user_profiles WHERE id = ? LIMIT 1")
+          .prepare("SELECT created_at, profile_metadata_json, nickname, avatar_url, locale, notification_prefs_json FROM user_profiles WHERE id = ? LIMIT 1")
           .bind(userId)
           .first();
         const createdAt = current?.created_at || now;
@@ -269,16 +302,25 @@ export default {
           ...profileMetadata,
         };
         const resolvedNickname = nickname || current?.nickname || null;
+        const resolvedAvatarUrl = avatarUrl || current?.avatar_url || null;
+        const resolvedLocale = locale || current?.locale || "vi-VN";
+        const mergedNotificationPrefs = {
+          ...parseNotificationPrefsJson(current?.notification_prefs_json),
+          ...notificationPrefs,
+        };
 
         await db
           .prepare(
-            `INSERT OR REPLACE INTO user_profiles (id, full_name, nickname, profile_metadata_json, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+            `INSERT OR REPLACE INTO user_profiles (id, full_name, nickname, avatar_url, locale, notification_prefs_json, profile_metadata_json, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
           )
           .bind(
             userId,
             String(payload.name || "").trim(),
             resolvedNickname,
+            resolvedAvatarUrl,
+            resolvedLocale,
+            JSON.stringify(mergedNotificationPrefs),
             JSON.stringify(mergedMetadata),
             payload.birth_date || null,
             payload.birth_time || null,
@@ -292,10 +334,10 @@ export default {
 
         await db
           .prepare(
-            `INSERT INTO user_sessions (id, user_id, session_token, created_at, expires_at, last_seen_at, revoked_at)
-             VALUES (?, ?, ?, ?, ?, ?, NULL)`
+            `INSERT INTO user_sessions (id, user_id, session_token, device_label, ip_address, user_agent, created_at, expires_at, last_seen_at, revoked_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NULL)`
           )
-          .bind(generateId(), userId, sessionToken, now, expiresAt, now)
+          .bind(generateId(), userId, sessionToken, deviceLabel, ipAddress, userAgent, now, expiresAt, now)
           .run();
 
         return jsonResponse(request, 200, {
@@ -323,6 +365,16 @@ export default {
         const nickname = payload.nickname === undefined
           ? current.nickname
           : (payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null);
+        const avatarUrl = payload.avatar_url === undefined
+          ? current.avatar_url
+          : (payload.avatar_url ? String(payload.avatar_url).trim().slice(0, 2000) : null);
+        const locale = payload.locale === undefined
+          ? (current.locale || "vi-VN")
+          : (payload.locale ? String(payload.locale).trim().slice(0, 40) : "vi-VN");
+        const mergedNotificationPrefs = {
+          ...parseNotificationPrefsJson(current.notification_prefs_json),
+          ...sanitizeNotificationPrefs(payload.notification_prefs),
+        };
         const mergedMetadata = {
           ...parseProfileMetadataJson(current.profile_metadata_json),
           ...sanitizeProfileMetadata(payload.profile_metadata),
@@ -331,12 +383,15 @@ export default {
         await db
           .prepare(
             `UPDATE user_profiles
-             SET full_name = ?, nickname = ?, profile_metadata_json = ?, birth_date = ?, birth_time = ?, birth_place = ?, gender = ?, current_location = ?, updated_at = ?
+             SET full_name = ?, nickname = ?, avatar_url = ?, locale = ?, notification_prefs_json = ?, profile_metadata_json = ?, birth_date = ?, birth_time = ?, birth_place = ?, gender = ?, current_location = ?, updated_at = ?
              WHERE id = ?`
           )
           .bind(
             fullName,
             nickname,
+            avatarUrl,
+            locale,
+            JSON.stringify(mergedNotificationPrefs),
             JSON.stringify(mergedMetadata),
             payload.birth_date ?? current.birth_date,
             payload.birth_time ?? current.birth_time,
@@ -354,6 +409,30 @@ export default {
           .first();
 
         return jsonResponse(request, 200, { ok: true, profile: profileView(updated) });
+      }
+
+      if (url.pathname === "/api/v1/session/update-label") {
+        if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+        const session = await resolveSession(request, db);
+        if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+
+        const sessionId = payload.session_id ? String(payload.session_id) : null;
+        const deviceLabel = payload.device_label ? String(payload.device_label).trim().slice(0, 120) : null;
+        if (!sessionId) return jsonResponse(request, 400, { error: "session_id is required" });
+        if (!deviceLabel) return jsonResponse(request, 400, { error: "device_label is required" });
+
+        const target = await db
+          .prepare("SELECT id FROM user_sessions WHERE id = ? AND user_id = ? LIMIT 1")
+          .bind(sessionId, session.user_id)
+          .first();
+        if (!target) return jsonResponse(request, 404, { error: "Session not found" });
+
+        await db
+          .prepare("UPDATE user_sessions SET device_label = ? WHERE id = ?")
+          .bind(deviceLabel, sessionId)
+          .run();
+
+        return jsonResponse(request, 200, { ok: true, session_id: sessionId, device_label: deviceLabel });
       }
 
       if (url.pathname === "/api/v1/session/revoke" || url.pathname === "/api/v1/logout") {
@@ -406,9 +485,12 @@ export default {
           const now = new Date().toISOString();
           const metadataUpdate = sanitizeProfileMetadata(payload.profile_metadata);
           const nicknameUpdate = payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null;
+          const avatarUrlUpdate = payload.avatar_url ? String(payload.avatar_url).trim().slice(0, 2000) : null;
+          const localeUpdate = payload.locale ? String(payload.locale).trim().slice(0, 40) : null;
+          const notificationPrefsUpdate = sanitizeNotificationPrefs(payload.notification_prefs);
 
           const profile = await db
-            .prepare("SELECT created_at, full_name, nickname, profile_metadata_json FROM user_profiles WHERE id = ? LIMIT 1")
+            .prepare("SELECT created_at, full_name, nickname, avatar_url, locale, notification_prefs_json, profile_metadata_json FROM user_profiles WHERE id = ? LIMIT 1")
             .bind(userId)
             .first();
           const createdAt = profile?.created_at || now;
@@ -417,15 +499,24 @@ export default {
             ...parseProfileMetadataJson(profile?.profile_metadata_json),
             ...metadataUpdate,
           };
+          const mergedNotificationPrefs = {
+            ...parseNotificationPrefsJson(profile?.notification_prefs_json),
+            ...notificationPrefsUpdate,
+          };
           const resolvedNickname = nicknameUpdate || profile?.nickname || null;
+          const resolvedAvatarUrl = avatarUrlUpdate || profile?.avatar_url || null;
+          const resolvedLocale = localeUpdate || profile?.locale || "vi-VN";
 
           await db.prepare(
-            `INSERT OR REPLACE INTO user_profiles (id, full_name, nickname, profile_metadata_json, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
-             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+            `INSERT OR REPLACE INTO user_profiles (id, full_name, nickname, avatar_url, locale, notification_prefs_json, profile_metadata_json, birth_date, birth_time, birth_place, gender, current_location, created_at, updated_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
           ).bind(
             userId,
             fullName,
             resolvedNickname,
+            resolvedAvatarUrl,
+            resolvedLocale,
+            JSON.stringify(mergedNotificationPrefs),
             JSON.stringify(mergedMetadata),
             payload.birth_date || null,
             payload.birth_time || null,

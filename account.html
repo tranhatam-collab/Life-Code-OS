@@ -34,8 +34,18 @@
               <input id="accNickname" type="text" placeholder="Mật danh" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+              <input id="accAvatarUrl" type="url" placeholder="Avatar URL" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+              <input id="accLocale" type="text" placeholder="Locale (vd: vi-VN, en-US)" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
               <input id="accBirthPlace" type="text" placeholder="Nơi sinh" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
               <input id="accCurrentLocation" type="text" placeholder="Nơi ở hiện tại" style="padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
+              <label><input id="accNotifEmail" type="checkbox" /> Email</label>
+              <label><input id="accNotifSms" type="checkbox" /> SMS</label>
+              <label><input id="accNotifPush" type="checkbox" /> Push</label>
+              <label><input id="accNotifWeekly" type="checkbox" /> Weekly report</label>
             </div>
             <h3 style="margin:6px 0 0;">Profile Metadata theo level</h3>
             <div id="accLevelMetadata" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;"></div>
@@ -71,8 +81,16 @@
       const fields = {
         full_name: document.getElementById('accFullName'),
         nickname: document.getElementById('accNickname'),
+        avatar_url: document.getElementById('accAvatarUrl'),
+        locale: document.getElementById('accLocale'),
         birth_place: document.getElementById('accBirthPlace'),
         current_location: document.getElementById('accCurrentLocation')
+      };
+      const notif = {
+        email: document.getElementById('accNotifEmail'),
+        sms: document.getElementById('accNotifSms'),
+        push: document.getElementById('accNotifPush'),
+        weekly_report: document.getElementById('accNotifWeekly')
       };
 
       for (let i = 1; i <= 9; i += 1) {
@@ -98,8 +116,15 @@
         const p = data.profile || {};
         fields.full_name.value = p.full_name || '';
         fields.nickname.value = p.nickname || '';
+        fields.avatar_url.value = p.avatar_url || '';
+        fields.locale.value = p.locale || 'vi-VN';
         fields.birth_place.value = p.birth_place || '';
         fields.current_location.value = p.current_location || '';
+        const np = p.notification_prefs || {};
+        notif.email.checked = Boolean(np.email);
+        notif.sms.checked = Boolean(np.sms);
+        notif.push.checked = Boolean(np.push);
+        notif.weekly_report.checked = Boolean(np.weekly_report);
         const m = p.profile_metadata || {};
         for (let i = 1; i <= 9; i += 1) {
           document.getElementById(`accMetaLevel${i}`).value = m[`level${i}`] || '';
@@ -117,13 +142,17 @@
           const btn = (!s.revoked_at && !s.is_current)
             ? `<button class="lc-btn lc-btn-secondary" data-revoke="${s.id}">Revoke</button>`
             : '';
+          const labelInput = `<input data-label="${s.id}" value="${(s.device_label || '').replace(/"/g, '&quot;')}" placeholder="Device label" style="width:180px;padding:6px;border-radius:6px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />`;
+          const labelBtn = `<button class="lc-btn lc-btn-secondary" data-save-label="${s.id}">Save label</button>`;
           return `<tr>
             <td>${s.id}${current}</td>
             <td>${s.token_tail || 'n/a'}</td>
+            <td>${s.device_label || 'n/a'}</td>
+            <td>${s.ip_address || 'n/a'}</td>
             <td>${state}</td>
             <td>${s.created_at || 'n/a'}</td>
             <td>${s.expires_at || 'n/a'}</td>
-            <td>${btn}</td>
+            <td style="display:flex;gap:8px;flex-wrap:wrap;">${labelInput}${labelBtn}${btn}</td>
           </tr>`;
         }).join('');
 
@@ -134,6 +163,8 @@
                 <tr>
                   <th style="text-align:left;padding:8px;">Session ID</th>
                   <th style="text-align:left;padding:8px;">Token tail</th>
+                  <th style="text-align:left;padding:8px;">Device</th>
+                  <th style="text-align:left;padding:8px;">IP</th>
                   <th style="text-align:left;padding:8px;">State</th>
                   <th style="text-align:left;padding:8px;">Created</th>
                   <th style="text-align:left;padding:8px;">Expires</th>
@@ -163,6 +194,28 @@
             loadSessions();
           });
         });
+
+        sessionsEl.querySelectorAll('button[data-save-label]').forEach((btn) => {
+          btn.addEventListener('click', async () => {
+            const sessionId = btn.getAttribute('data-save-label');
+            const input = sessionsEl.querySelector(`input[data-label="${sessionId}"]`);
+            const deviceLabel = (input?.value || '').trim();
+            const r = await fetch(`${API_BASE}/api/v1/session/update-label`, {
+              method: 'POST',
+              headers: authHeaders(),
+              body: JSON.stringify({ session_id: sessionId, device_label: deviceLabel })
+            });
+            const body = await r.json();
+            if (!r.ok) {
+              accMsg.textContent = `Lỗi lưu label: ${body.error || r.status}`;
+              accMsg.style.color = '#f87171';
+              return;
+            }
+            accMsg.textContent = 'Đã cập nhật device label.';
+            accMsg.style.color = '#34d399';
+            loadSessions();
+          });
+        });
       }
 
       document.getElementById('lcAccountForm').addEventListener('submit', async (e) => {
@@ -179,8 +232,16 @@
           body: JSON.stringify({
             full_name: fields.full_name.value.trim(),
             nickname: fields.nickname.value.trim() || null,
+            avatar_url: fields.avatar_url.value.trim() || null,
+            locale: fields.locale.value.trim() || 'vi-VN',
             birth_place: fields.birth_place.value.trim() || null,
             current_location: fields.current_location.value.trim() || null,
+            notification_prefs: {
+              email: notif.email.checked,
+              sms: notif.sms.checked,
+              push: notif.push.checked,
+              weekly_report: notif.weekly_report.checked,
+            },
             profile_metadata,
           })
         });
@@ -198,6 +259,9 @@
           name: p.full_name,
           full_name: p.full_name,
           nickname: p.nickname,
+          avatar_url: p.avatar_url,
+          locale: p.locale,
+          notification_prefs: p.notification_prefs || {},
           birth_place: p.birth_place,
           current_location: p.current_location,
           profile_metadata: p.profile_metadata || {}
