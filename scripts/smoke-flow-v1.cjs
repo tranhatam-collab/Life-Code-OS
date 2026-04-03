@@ -147,6 +147,15 @@ async function run() {
   });
   assert.equal(updateLabel.res.status, 200, "session/update-label should return 200");
 
+  const auditLogs = await jsonFetch("/api/v1/account/audit-logs?limit=20", {
+    method: "GET",
+    headers: { Authorization: `Bearer ${start.body.session_token}` },
+  });
+  assert.equal(auditLogs.res.status, 200, "account/audit-logs should return 200");
+  const actions = (auditLogs.body.logs || []).map((l) => l.action);
+  assert.ok(actions.includes("profile_update"), "audit should contain profile_update");
+  assert.ok(actions.includes("session_label_update"), "audit should contain session_label_update");
+
   const revokeSpecific = await jsonFetch("/api/v1/session/revoke", {
     method: "POST",
     headers: authHeaders,

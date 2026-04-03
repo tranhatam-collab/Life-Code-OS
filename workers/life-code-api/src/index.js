@@ -9,6 +9,8 @@ const ALLOWED_ORIGIN_PATTERNS = [
 ];
 
 const SESSION_TTL_DAYS = 30;
+const AVATAR_URL_MAX = 2000;
+const LOCALE_MAX = 40;
 
 function corsHeaders(request) {
   const origin = request.headers.get("Origin") || "";
@@ -124,6 +126,15 @@ function parseProfileMetadataJson(raw) {
   }
 }
 
+function parseJsonSafe(raw, fallback = {}) {
+  if (!raw) return fallback;
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return fallback;
+  }
+}
+
 function sanitizeNotificationPrefs(value) {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     return {};
@@ -134,6 +145,129 @@ function sanitizeNotificationPrefs(value) {
     push: Boolean(value.push),
     weekly_report: Boolean(value.weekly_report),
   };
+}
+
+function validateAvatarUrl(value) {
+  if (value === undefined) return undefined;
+  if (value === null || value === "") return null;
+  const str = String(value).trim();
+  if (str.length > AVATAR_URL_MAX) {
+    throw new Error("avatar_url is too long");
+  }
+  let url;
+  try {
+    url = new URL(str);
+  } catch {
+    throw new Error("avatar_url must be a valid URL");
+  }
+  if (!url.protocol || !["https:", "http:"].includes(url.protocol)) {
+    throw new Error("avatar_url must use http or https");
+  }
+  return str;
+}
+
+function validateLocale(value) {
+  if (value === undefined) return undefined;
+  if (value === null || value === "") return "vi-VN";
+  const str = String(value).trim();
+  if (str.length > LOCALE_MAX) {
+    throw new Error("locale is too long");
+  }
+  const localePattern = /^[a-z]{2,3}(?:-[A-Z]{2})?$/;
+  if (!localePattern.test(str)) {
+    throw new Error("locale must follow format like vi-VN or en-US");
+  }
+  return str;
+}
+
+function validateNotificationPrefsStrict(value) {
+  if (value === undefined || value === null) return undefined;
+  if (typeof value !== "object" || Array.isArray(value)) {
+    throw new Error("notification_prefs must be an object");
+  }
+  const allowed = ["email", "sms", "push", "weekly_report"];
+  const out = {};
+  for (const [key, val] of Object.entries(value)) {
+    if (!allowed.includes(key)) {
+      throw new Error(`notification_prefs contains unsupported key: ${key}`);
+    }
+    if (typeof val !== "boolean") {
+      throw new Error(`notification_prefs.${key} must be boolean`);
+    }
+    out[key] = val;
+  }
+  return out;
+}
+
+function requestIp(request) {
+  return request.headers.get("CF-Connecting-IP") || "unknown";
+}
+
+function requestUserAgent(request) {
+  return request.headers.get("User-Agent") || "unknown";
+}
+
+async function rateLimitHit(db, bucketKey, limit, windowSeconds) {
+  if (!db) return null;
+  const now = Math.floor(Date.now() / 1000);
+  const windowStart = now - (now % windowSeconds);
+  const id = `${bucketKey}:${windowStart}`;
+  const createdAt = new Date(windowStart * 1000).toISOString();
+
+  const row = await db
+    .prepare("SELECT request_count FROM rate_limits WHERE id = ? LIMIT 1")
+    .bind(id)
+    .first();
+
+  if (!row) {
+    await db
+      .prepare(
+        `INSERT INTO rate_limits (id, bucket_key, window_start, window_seconds, request_count, created_at)
+         VALUES (?, ?, ?, ?, ?, ?)`
+      )
+      .bind(id, bucketKey, windowStart, windowSeconds, 1, createdAt)
+      .run();
+    return null;
+  }
+
+  const current = Number(row.request_count || 0);
+  if (current >= limit) {
+    return {
+      retry_after_seconds: windowSeconds - (now - windowStart),
+      limit,
+      window_seconds: windowSeconds,
+    };
+  }
+
+  await db
+    .prepare("UPDATE rate_limits SET request_count = ? WHERE id = ?")
+    .bind(current + 1, id)
+    .run();
+  return null;
+}
+
+async function auditLog(db, request, userId, action, details) {
+  if (!db || !userId || !action) return;
+  const createdAt = new Date().toISOString();
+  try {
+    await db
+      .prepare(
+        `INSERT INTO account_audit_logs (id, user_id, action, details_json, ip_address, user_agent, created_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?)`
+      )
+      .bind(
+        generateId(),
+        userId,
+        action,
+        JSON.stringify(details || {}),
+        requestIp(request),
+        requestUserAgent(request),
+        createdAt
+      )
+      .run();
+  } catch (_) {
+    // Intentionally ignore audit errors to avoid blocking primary flow.
+  }
 }
 
 function parseNotificationPrefsJson(raw) {
@@ -189,6 +323,8 @@ export default {
       const session = await resolveSession(request, db);
       const sessionUserId = session?.user_id;
       if (!sessionUserId) return jsonResponse(request, 401, { error: "Unauthorized" });
+      const meRate = await rateLimitHit(db, `me:${sessionUserId}`, 120, 60);
+      if (meRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...meRate });
       try {
         await db
           .prepare("UPDATE user_sessions SET last_seen_at = ? WHERE id = ?")
@@ -220,6 +356,8 @@ export default {
       if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
       const session = await resolveSession(request, db);
       if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+      const sessionsRate = await rateLimitHit(db, `sessions:${session.user_id}`, 60, 60);
+      if (sessionsRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...sessionsRate });
       try {
         const rows = await db
           .prepare(
@@ -232,6 +370,36 @@ export default {
           current_session_id: session.id,
           sessions: (rows.results || []).map((row) => sessionView(row, session.id)),
         });
+      } catch (e) {
+        return jsonResponse(request, 500, { error: e.message || "Internal error" });
+      }
+    }
+
+    if (request.method === "GET" && url.pathname === "/api/v1/account/audit-logs") {
+      if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+      const session = await resolveSession(request, db);
+      if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+      const auditRate = await rateLimitHit(db, `audit_logs:${session.user_id}`, 40, 60);
+      if (auditRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...auditRate });
+
+      const limit = Math.min(Math.max(Number(url.searchParams.get("limit") || 20), 1), 100);
+      try {
+        const rows = await db
+          .prepare(
+            "SELECT id, action, details_json, ip_address, user_agent, created_at FROM account_audit_logs WHERE user_id = ? ORDER BY created_at DESC LIMIT ?"
+          )
+          .bind(session.user_id, limit)
+          .all();
+        const logs = (rows.results || []).map((row) => ({
+          id: row.id,
+          action: row.action,
+          details: parseJsonSafe(row.details_json, {}),
+          ip_address: row.ip_address || null,
+          user_agent: row.user_agent || null,
+          created_at: row.created_at,
+        }));
+
+        return jsonResponse(request, 200, { logs });
       } catch (e) {
         return jsonResponse(request, 500, { error: e.message || "Internal error" });
       }
@@ -277,17 +445,20 @@ export default {
         if (!payload.name || !String(payload.name).trim()) {
           return jsonResponse(request, 400, { error: "name is required" });
         }
+        const startRate = await rateLimitHit(db, `session_start:${requestIp(request)}`, 15, 60);
+        if (startRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...startRate });
         const userId = payload.user_id || generateId();
         const now = new Date().toISOString();
         const expiresAt = sessionExpiryIso();
+        const sessionId = generateId();
         const sessionToken = `${generateId()}${generateId().replace(/-/g, "")}`;
         const profileMetadata = sanitizeProfileMetadata(payload.profile_metadata);
         const nickname = payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null;
-        const avatarUrl = payload.avatar_url ? String(payload.avatar_url).trim().slice(0, 2000) : null;
-        const locale = payload.locale ? String(payload.locale).trim().slice(0, 40) : null;
-        const notificationPrefs = sanitizeNotificationPrefs(payload.notification_prefs);
-        const ipAddress = request.headers.get("CF-Connecting-IP") || null;
-        const userAgent = request.headers.get("User-Agent") || null;
+        const avatarUrl = validateAvatarUrl(payload.avatar_url);
+        const locale = validateLocale(payload.locale);
+        const notificationPrefs = validateNotificationPrefsStrict(payload.notification_prefs) || {};
+        const ipAddress = requestIp(request);
+        const userAgent = requestUserAgent(request);
         const deviceLabel = payload.device_label
           ? String(payload.device_label).trim().slice(0, 120)
           : (userAgent ? userAgent.slice(0, 120) : "Unknown device");
@@ -337,12 +508,18 @@ export default {
             `INSERT INTO user_sessions (id, user_id, session_token, device_label, ip_address, user_agent, created_at, expires_at, last_seen_at, revoked_at)
              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NULL)`
           )
-          .bind(generateId(), userId, sessionToken, deviceLabel, ipAddress, userAgent, now, expiresAt, now)
+          .bind(sessionId, userId, sessionToken, deviceLabel, ipAddress, userAgent, now, expiresAt, now)
           .run();
+
+        await auditLog(db, request, userId, "session_start", {
+          session_id: sessionId,
+          device_label: deviceLabel,
+        });
 
         return jsonResponse(request, 200, {
           ok: true,
           user_id: userId,
+          session_id: sessionId,
           session_token: sessionToken,
           expires_at: expiresAt,
         });
@@ -352,6 +529,8 @@ export default {
         if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
         const session = await resolveSession(request, db);
         if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+        const profileRate = await rateLimitHit(db, `profile_update:${session.user_id}`, 20, 60);
+        if (profileRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...profileRate });
 
         const current = await db
           .prepare("SELECT * FROM user_profiles WHERE id = ? LIMIT 1")
@@ -367,13 +546,13 @@ export default {
           : (payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null);
         const avatarUrl = payload.avatar_url === undefined
           ? current.avatar_url
-          : (payload.avatar_url ? String(payload.avatar_url).trim().slice(0, 2000) : null);
+          : validateAvatarUrl(payload.avatar_url);
         const locale = payload.locale === undefined
           ? (current.locale || "vi-VN")
-          : (payload.locale ? String(payload.locale).trim().slice(0, 40) : "vi-VN");
+          : validateLocale(payload.locale);
         const mergedNotificationPrefs = {
           ...parseNotificationPrefsJson(current.notification_prefs_json),
-          ...sanitizeNotificationPrefs(payload.notification_prefs),
+          ...(validateNotificationPrefsStrict(payload.notification_prefs) || {}),
         };
         const mergedMetadata = {
           ...parseProfileMetadataJson(current.profile_metadata_json),
@@ -408,6 +587,13 @@ export default {
           .bind(session.user_id)
           .first();
 
+        await auditLog(db, request, session.user_id, "profile_update", {
+          full_name_changed: fullName !== current.full_name,
+          nickname_changed: nickname !== current.nickname,
+          avatar_changed: avatarUrl !== current.avatar_url,
+          locale_changed: locale !== current.locale,
+        });
+
         return jsonResponse(request, 200, { ok: true, profile: profileView(updated) });
       }
 
@@ -415,6 +601,8 @@ export default {
         if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
         const session = await resolveSession(request, db);
         if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+        const labelRate = await rateLimitHit(db, `session_label:${session.user_id}`, 40, 60);
+        if (labelRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...labelRate });
 
         const sessionId = payload.session_id ? String(payload.session_id) : null;
         const deviceLabel = payload.device_label ? String(payload.device_label).trim().slice(0, 120) : null;
@@ -432,6 +620,11 @@ export default {
           .bind(deviceLabel, sessionId)
           .run();
 
+        await auditLog(db, request, session.user_id, "session_label_update", {
+          session_id: sessionId,
+          device_label: deviceLabel,
+        });
+
         return jsonResponse(request, 200, { ok: true, session_id: sessionId, device_label: deviceLabel });
       }
 
@@ -439,6 +632,8 @@ export default {
         if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
         const session = await resolveSession(request, db);
         if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+        const revokeRate = await rateLimitHit(db, `session_revoke:${session.user_id}`, 30, 60);
+        if (revokeRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...revokeRate });
 
         const now = new Date().toISOString();
         const revokeAll = Boolean(payload.revoke_all_sessions);
@@ -465,6 +660,12 @@ export default {
             .bind(now, session.id)
             .run();
         }
+
+        await auditLog(db, request, session.user_id, "session_revoke", {
+          revoke_all_sessions: revokeAll,
+          session_id: specificSessionId || session.id,
+          mode: revokeAll ? "all" : specificSessionId ? "specific" : "current",
+        });
 
         return jsonResponse(request, 200, {
           ok: true,

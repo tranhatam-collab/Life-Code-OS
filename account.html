@@ -67,6 +67,15 @@
           </div>
           <div id="accSessions"></div>
         </article>
+
+        <article class="lc-card" style="margin-top:16px;">
+          <h2>Audit Logs</h2>
+          <p>Theo dõi các hành động account gần nhất (update profile, session, logout).</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+            <button id="btnReloadAudit" class="lc-btn lc-btn-secondary" type="button">Tải lại audit logs</button>
+          </div>
+          <div id="accAuditLogs"></div>
+        </article>
       </div>
     </main>
   </div>
@@ -76,6 +85,7 @@
       const API_BASE = 'https://life-code-api.tranhatam.workers.dev';
       const accMsg = document.getElementById('accMsg');
       const sessionsEl = document.getElementById('accSessions');
+      const auditLogsEl = document.getElementById('accAuditLogs');
       const levelWrap = document.getElementById('accLevelMetadata');
 
       const fields = {
@@ -218,6 +228,37 @@
         });
       }
 
+      async function loadAuditLogs() {
+        const res = await fetch(`${API_BASE}/api/v1/account/audit-logs?limit=25`, { headers: authHeaders() });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'Không tải được audit logs');
+
+        const rows = (data.logs || []).map((log) => {
+          const details = JSON.stringify(log.details || {});
+          return `<tr>
+            <td>${log.created_at || 'n/a'}</td>
+            <td>${log.action || 'n/a'}</td>
+            <td>${log.ip_address || 'n/a'}</td>
+            <td style="max-width:320px;word-break:break-word;">${details}</td>
+          </tr>`;
+        }).join('');
+
+        auditLogsEl.innerHTML = `
+          <div style="overflow:auto;">
+            <table style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr>
+                  <th style="text-align:left;padding:8px;">Time</th>
+                  <th style="text-align:left;padding:8px;">Action</th>
+                  <th style="text-align:left;padding:8px;">IP</th>
+                  <th style="text-align:left;padding:8px;">Details</th>
+                </tr>
+              </thead>
+              <tbody>${rows || ''}</tbody>
+            </table>
+          </div>`;
+      }
+
       document.getElementById('lcAccountForm').addEventListener('submit', async (e) => {
         e.preventDefault();
         const profile_metadata = {};
@@ -270,9 +311,11 @@
         accMsg.textContent = 'Đã cập nhật profile thành công.';
         accMsg.style.color = '#34d399';
         loadSessions();
+        loadAuditLogs();
       });
 
       document.getElementById('btnReloadSessions').addEventListener('click', () => loadSessions());
+      document.getElementById('btnReloadAudit').addEventListener('click', () => loadAuditLogs());
       document.getElementById('btnLogoutCurrent').addEventListener('click', async () => {
         const res = await fetch(`${API_BASE}/api/v1/logout`, {
           method: 'POST', headers: authHeaders(), body: JSON.stringify({ revoke_all_sessions: false })
@@ -295,7 +338,7 @@
         }
       });
 
-      loadMe().then(loadSessions).catch((e) => {
+      loadMe().then(() => Promise.all([loadSessions(), loadAuditLogs()])).catch((e) => {
         accMsg.textContent = e.message;
         accMsg.style.color = '#f87171';
       });
