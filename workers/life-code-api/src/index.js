@@ -207,6 +207,14 @@ function requestUserAgent(request) {
   return request.headers.get("User-Agent") || "unknown";
 }
 
+function monitorAuthorized(request, env) {
+  const key = env.MONITOR_KEY;
+  if (!key) return { ok: false, status: 503, error: "Monitoring key not configured" };
+  const received = request.headers.get("x-monitor-key") || "";
+  if (received !== key) return { ok: false, status: 401, error: "Unauthorized" };
+  return { ok: true };
+}
+
 async function rateLimitHit(db, bucketKey, limit, windowSeconds) {
   if (!db) return null;
   const now = Math.floor(Date.now() / 1000);
@@ -400,6 +408,38 @@ export default {
         }));
 
         return jsonResponse(request, 200, { logs });
+      } catch (e) {
+        return jsonResponse(request, 500, { error: e.message || "Internal error" });
+      }
+    }
+
+    if (request.method === "GET" && url.pathname === "/api/v1/ops/summary") {
+      if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+      const auth = monitorAuthorized(request, env);
+      if (!auth.ok) return jsonResponse(request, auth.status, { error: auth.error });
+
+      try {
+        const [users, sessions, results, audits, limits, latestAudit] = await Promise.all([
+          db.prepare("SELECT COUNT(*) AS c FROM user_profiles").first(),
+          db.prepare("SELECT COUNT(*) AS c FROM user_sessions").first(),
+          db.prepare("SELECT COUNT(*) AS c FROM life_code_results").first(),
+          db.prepare("SELECT COUNT(*) AS c FROM account_audit_logs").first(),
+          db.prepare("SELECT COUNT(*) AS c FROM rate_limits").first(),
+          db.prepare("SELECT created_at FROM account_audit_logs ORDER BY created_at DESC LIMIT 1").first(),
+        ]);
+
+        return jsonResponse(request, 200, {
+          ok: true,
+          counts: {
+            user_profiles: Number(users?.c || 0),
+            user_sessions: Number(sessions?.c || 0),
+            life_code_results: Number(results?.c || 0),
+            account_audit_logs: Number(audits?.c || 0),
+            rate_limits: Number(limits?.c || 0),
+          },
+          latest_audit_at: latestAudit?.created_at || null,
+          generated_at: new Date().toISOString(),
+        });
       } catch (e) {
         return jsonResponse(request, 500, { error: e.message || "Internal error" });
       }

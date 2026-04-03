@@ -14,14 +14,37 @@ async function jsonFetch(path, options = {}) {
   return { res, body, text };
 }
 
+async function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function startSessionWithRetry(payload, attempts = 5) {
+  for (let i = 0; i < attempts; i += 1) {
+    const resp = await jsonFetch("/api/v1/session/start", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (resp.res.status === 200) return resp;
+    if (resp.res.status === 429) {
+      const wait = Number(resp.body.retry_after_seconds || 2);
+      await sleep(Math.min(wait, 5) * 1000);
+      continue;
+    }
+    return resp;
+  }
+
+  return jsonFetch("/api/v1/session/start", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+}
+
 async function run() {
   const uniqueName = `Smoke User ${Date.now()}`;
 
-  const start = await jsonFetch("/api/v1/session/start", {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({ name: uniqueName, birth_place: "HN" }),
-  });
+  const start = await startSessionWithRetry({ name: uniqueName, birth_place: "HN", locale: "vi-VN" });
   assert.equal(start.res.status, 200, "session/start should return 200");
   assert.ok(start.body.session_token, "session token should exist");
   assert.ok(start.body.user_id, "user id should exist");
@@ -70,14 +93,11 @@ async function run() {
   assert.equal(me.res.status, 200, "/api/v1/me should return 200");
   assert.equal(me.body.profile.id, start.body.user_id, "profile id should match session user");
 
-  const secondSession = await jsonFetch("/api/v1/session/start", {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({
-      user_id: start.body.user_id,
-      name: `${uniqueName} 2`,
-      device_label: "Second smoke device",
-    }),
+  const secondSession = await startSessionWithRetry({
+    user_id: start.body.user_id,
+    name: `${uniqueName} 2`,
+    locale: "vi-VN",
+    device_label: "Second smoke device",
   });
   assert.equal(secondSession.res.status, 200, "second session/start should return 200");
 

@@ -14,6 +14,9 @@
     "engine:test": "node engine/tests/smoke.cjs",
     "report:test": "node workers/life-code-api/tests/report-smoke.mjs",
     "e2e:smoke": "node scripts/smoke-flow-v1.cjs",
+    "qa:contract": "node scripts/contract-hardening-v1.cjs",
+    "qa:rate-limit": "node scripts/rate-limit-smoke-v1.cjs",
+    "qa:hardening": "npm run qa:contract && npm run qa:rate-limit",
     "api:dev": "node api/server.cjs",
     "api:test": "node scripts/test-api-v1.cjs"
   },

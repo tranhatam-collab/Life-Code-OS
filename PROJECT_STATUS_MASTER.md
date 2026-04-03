@@ -43,9 +43,9 @@ GitHub Actions **Deploy Life Code OS to Cloudflare Pages** đã **Success**. **T
 |-----------|------------|---|
 | Khóa chuẩn ngôn ngữ / glossary / contract (mục 30) | **~85–90%** (đã có glossary + data model + report layers + engine output contract v1 + kiến trúc 9 level + report generator templates/pipeline v1) |
 | Công thức LCI, timeline, risk/wealth/mission (mục 31) | **~75–85%** (đã chốt LCI, Timeline 0–99, Risk/Wealth/Mission formulas v1) |
-| Engine + API + web app + report system | **~82–90%** (engine v1 ✅, Worker API deployed ✅, D1 persistence ✅, session token auth ✅, edit profile ✅, avatar/locale/notification prefs ✅, session list + per-session revoke/label ✅, audit logs account ✅, rate-limit session/profile ✅, form nhập liệu ✅, dashboard động ✅, account page riêng ✅, report UI level selector ✅, report API level 1-9 ✅, templates 1-9 ✅, PDF export ✅; còn QA sâu + hardening production cuối) |
+| Engine + API + web app + report system | **~86–92%** (engine v1 ✅, Worker API deployed ✅, D1 persistence ✅, session token auth ✅, edit profile ✅, avatar/locale/notification prefs ✅, session list + per-session revoke/label ✅, audit logs account ✅, rate-limit session/profile ✅, contract tests ✅, rate-limit smoke tests ✅, monitoring endpoint hook ✅, form nhập liệu ✅, dashboard động ✅, account page riêng ✅, report UI level selector ✅, report API level 1-9 ✅, templates 1-9 ✅, PDF export ✅; còn QA production cuối + monitoring key rollout) |
 
-**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~3–8%** công việc sản phẩm.
+**Ước lượng thực tế:** toàn bộ **tầm nhìn README** còn khoảng **~2–6%** công việc sản phẩm.
 
 ---
 
