@@ -11,6 +11,8 @@ const ALLOWED_ORIGIN_PATTERNS = [
 const SESSION_TTL_DAYS = 30;
 const AVATAR_URL_MAX = 2000;
 const LOCALE_MAX = 40;
+const DEFAULT_AUDIT_SPIKE_THRESHOLD = 25;
+const DEFAULT_RATE_LIMIT_SPIKE_THRESHOLD = 120;
 
 function corsHeaders(request) {
   const origin = request.headers.get("Origin") || "";
@@ -419,17 +421,53 @@ export default {
       if (!auth.ok) return jsonResponse(request, auth.status, { error: auth.error });
 
       try {
-        const [users, sessions, results, audits, limits, latestAudit] = await Promise.all([
+        const windowMinutes = Math.min(Math.max(Number(url.searchParams.get("window_minutes") || 10), 1), 60);
+        const sinceIso = new Date(Date.now() - windowMinutes * 60 * 1000).toISOString();
+        const auditThreshold = Number(env.AUDIT_SPIKE_THRESHOLD || DEFAULT_AUDIT_SPIKE_THRESHOLD);
+        const rateLimitThreshold = Number(env.RATE_LIMIT_SPIKE_THRESHOLD || DEFAULT_RATE_LIMIT_SPIKE_THRESHOLD);
+
+        const [users, sessions, results, audits, limits, latestAudit, recentAudits, recentRateWindowCount, recentRateRequestSum, topRateBuckets] = await Promise.all([
           db.prepare("SELECT COUNT(*) AS c FROM user_profiles").first(),
           db.prepare("SELECT COUNT(*) AS c FROM user_sessions").first(),
           db.prepare("SELECT COUNT(*) AS c FROM life_code_results").first(),
           db.prepare("SELECT COUNT(*) AS c FROM account_audit_logs").first(),
           db.prepare("SELECT COUNT(*) AS c FROM rate_limits").first(),
           db.prepare("SELECT created_at FROM account_audit_logs ORDER BY created_at DESC LIMIT 1").first(),
+          db.prepare("SELECT COUNT(*) AS c FROM account_audit_logs WHERE created_at >= ?").bind(sinceIso).first(),
+          db.prepare("SELECT COUNT(*) AS c FROM rate_limits WHERE created_at >= ?").bind(sinceIso).first(),
+          db.prepare("SELECT COALESCE(SUM(request_count), 0) AS c FROM rate_limits WHERE created_at >= ?").bind(sinceIso).first(),
+          db
+            .prepare(
+              "SELECT bucket_key, request_count, window_start, window_seconds FROM rate_limits WHERE created_at >= ? ORDER BY request_count DESC LIMIT 5"
+            )
+            .bind(sinceIso)
+            .all(),
         ]);
+
+        const audit10m = Number(recentAudits?.c || 0);
+        const rateLimitWindows10m = Number(recentRateWindowCount?.c || 0);
+        const rateLimitRequests10m = Number(recentRateRequestSum?.c || 0);
+
+        const alerts = {
+          audit_spike: {
+            triggered: audit10m >= auditThreshold,
+            current: audit10m,
+            threshold: auditThreshold,
+            window_minutes: windowMinutes,
+          },
+          rate_limit_spike: {
+            triggered: rateLimitRequests10m >= rateLimitThreshold,
+            current: rateLimitRequests10m,
+            threshold: rateLimitThreshold,
+            window_minutes: windowMinutes,
+          },
+        };
+
+        const severity = alerts.audit_spike.triggered || alerts.rate_limit_spike.triggered ? "warning" : "normal";
 
         return jsonResponse(request, 200, {
           ok: true,
+          severity,
           counts: {
             user_profiles: Number(users?.c || 0),
             user_sessions: Number(sessions?.c || 0),
@@ -437,6 +475,19 @@ export default {
             account_audit_logs: Number(audits?.c || 0),
             rate_limits: Number(limits?.c || 0),
           },
+          recent_window: {
+            window_minutes: windowMinutes,
+            audit_logs: audit10m,
+            rate_limit_windows: rateLimitWindows10m,
+            rate_limit_requests: rateLimitRequests10m,
+            top_rate_buckets: (topRateBuckets.results || []).map((r) => ({
+              bucket_key: r.bucket_key,
+              request_count: r.request_count,
+              window_start: r.window_start,
+              window_seconds: r.window_seconds,
+            })),
+          },
+          alerts,
           latest_audit_at: latestAudit?.created_at || null,
           generated_at: new Date().toISOString(),
         });

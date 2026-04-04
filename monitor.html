@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Ops Monitor | Life Code OS</title>
+  <link rel="canonical" href="https://lifecode.iai.one/monitor.html" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="lc-page">
+    <header class="lc-header">
+      <div class="lc-container lc-header-row">
+        <a class="lc-brand" href="/">
+          <span class="lc-brand-mark">LC</span>
+          <span class="lc-brand-text"><strong>Life Code</strong><small>Ops Monitor</small></span>
+        </a>
+      </div>
+    </header>
+
+    <main class="lc-section">
+      <div class="lc-container">
+        <div class="lc-section-head">
+          <span class="lc-kicker">Nội bộ</span>
+          <h1>Monitoring dashboard</h1>
+          <p>Quan sát audit spike / rate-limit spike thời gian thực.</p>
+        </div>
+
+        <article class="lc-card" style="margin-bottom:16px;">
+          <h2>Kết nối monitor</h2>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+            <input id="monitorKey" type="password" placeholder="MONITOR_KEY" style="min-width:320px;padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+            <label for="windowMinutes">Window (phút)</label>
+            <input id="windowMinutes" type="number" min="1" max="60" value="10" style="width:90px;padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
+            <button id="btnMonitorConnect" class="lc-btn lc-btn-primary" type="button">Kết nối</button>
+            <button id="btnMonitorRefresh" class="lc-btn lc-btn-secondary" type="button">Làm mới</button>
+          </div>
+          <p id="monitorMsg" style="margin-top:10px;"></p>
+        </article>
+
+        <div class="lc-card-grid lc-card-grid-3" id="monitorCards">
+          <article class="lc-card"><h3>Severity</h3><p id="cardSeverity">-</p></article>
+          <article class="lc-card"><h3>Audit Spike</h3><p id="cardAuditSpike">-</p></article>
+          <article class="lc-card"><h3>Rate-Limit Spike</h3><p id="cardRateSpike">-</p></article>
+        </div>
+
+        <article class="lc-card" style="margin-top:16px;">
+          <h2>Ops Summary</h2>
+          <pre id="monitorRaw" style="white-space:pre-wrap;word-break:break-word;max-height:52vh;overflow:auto;">Chưa có dữ liệu</pre>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const API_BASE = 'https://life-code-api.tranhatam.workers.dev';
+      const keyInput = document.getElementById('monitorKey');
+      const winInput = document.getElementById('windowMinutes');
+      const msg = document.getElementById('monitorMsg');
+      const raw = document.getElementById('monitorRaw');
+      const cardSeverity = document.getElementById('cardSeverity');
+      const cardAudit = document.getElementById('cardAuditSpike');
+      const cardRate = document.getElementById('cardRateSpike');
+      let timer = null;
+
+      const LS_KEY = 'lc_monitor_key';
+      keyInput.value = localStorage.getItem(LS_KEY) || '';
+
+      function setMsg(text, color) {
+        msg.textContent = text;
+        msg.style.color = color;
+      }
+
+      function applyCards(data) {
+        const severity = data.severity || 'unknown';
+        const audit = data.alerts?.audit_spike;
+        const rate = data.alerts?.rate_limit_spike;
+
+        cardSeverity.textContent = severity;
+        cardSeverity.style.color = severity === 'warning' ? '#f87171' : '#34d399';
+
+        cardAudit.textContent = `${audit?.current ?? '-'} / ${audit?.threshold ?? '-'} (${audit?.triggered ? 'TRIGGERED' : 'normal'})`;
+        cardAudit.style.color = audit?.triggered ? '#f87171' : '#34d399';
+
+        cardRate.textContent = `${rate?.current ?? '-'} / ${rate?.threshold ?? '-'} (${rate?.triggered ? 'TRIGGERED' : 'normal'})`;
+        cardRate.style.color = rate?.triggered ? '#f87171' : '#34d399';
+      }
+
+      async function fetchSummary() {
+        const key = keyInput.value.trim();
+        if (!key) {
+          setMsg('Nhập MONITOR_KEY trước.', '#f87171');
+          return;
+        }
+
+        const windowMinutes = Math.min(Math.max(Number(winInput.value || 10), 1), 60);
+        const res = await fetch(`${API_BASE}/api/v1/ops/summary?window_minutes=${windowMinutes}`, {
+          headers: { 'x-monitor-key': key }
+        });
+        const text = await res.text();
+        let body;
+        try {
+          body = JSON.parse(text);
+        } catch {
+          body = { raw: text };
+        }
+
+        if (!res.ok) {
+          setMsg(`Lỗi monitor: ${body.error || res.status}`, '#f87171');
+          raw.textContent = JSON.stringify(body, null, 2);
+          return;
+        }
+
+        localStorage.setItem(LS_KEY, key);
+        setMsg(`OK • cập nhật ${new Date().toLocaleTimeString()}`, '#34d399');
+        raw.textContent = JSON.stringify(body, null, 2);
+        applyCards(body);
+      }
+
+      document.getElementById('btnMonitorConnect').addEventListener('click', async () => {
+        await fetchSummary();
+        if (timer) clearInterval(timer);
+        timer = setInterval(fetchSummary, 30000);
+      });
+
+      document.getElementById('btnMonitorRefresh').addEventListener('click', fetchSummary);
+    })();
+  </script>
+</body>
+</html>
