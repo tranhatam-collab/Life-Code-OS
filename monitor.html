@@ -34,6 +34,7 @@
             <input id="windowMinutes" type="number" min="1" max="60" value="10" style="width:90px;padding:10px;border-radius:8px;border:1px solid var(--lc-border,#2a2f3a);background:var(--lc-surface,#12151c);color:inherit;" />
             <button id="btnMonitorConnect" class="lc-btn lc-btn-primary" type="button">Kết nối</button>
             <button id="btnMonitorRefresh" class="lc-btn lc-btn-secondary" type="button">Làm mới</button>
+            <button id="btnSendAlert" class="lc-btn lc-btn-secondary" type="button">Gửi alert test</button>
           </div>
           <p id="monitorMsg" style="margin-top:10px;"></p>
         </article>
@@ -118,6 +119,40 @@
         applyCards(body);
       }
 
+      async function sendAlertCheck() {
+        const key = keyInput.value.trim();
+        if (!key) {
+          setMsg('Nhập MONITOR_KEY trước.', '#f87171');
+          return;
+        }
+        const windowMinutes = Math.min(Math.max(Number(winInput.value || 10), 1), 60);
+        const res = await fetch(`${API_BASE}/api/v1/ops/alert-check`, {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json',
+            'x-monitor-key': key
+          },
+          body: JSON.stringify({ window_minutes: windowMinutes, dry_run: false })
+        });
+        const body = await res.json();
+        if (!res.ok) {
+          setMsg(`Alert check lỗi: ${body.error || res.status}`, '#f87171');
+          return;
+        }
+
+        const dispatch = body.dispatch || {};
+        if (dispatch.sent) {
+          setMsg(`Đã gửi alert (${dispatch.alert_type}) lúc ${dispatch.created_at}`, '#34d399');
+        } else {
+          setMsg(`Không gửi alert: ${dispatch.reason || 'no-op'}`, '#facc15');
+        }
+
+        if (body.summary) {
+          raw.textContent = JSON.stringify(body.summary, null, 2);
+          applyCards(body.summary);
+        }
+      }
+
       document.getElementById('btnMonitorConnect').addEventListener('click', async () => {
         await fetchSummary();
         if (timer) clearInterval(timer);
@@ -125,6 +160,7 @@
       });
 
       document.getElementById('btnMonitorRefresh').addEventListener('click', fetchSummary);
+      document.getElementById('btnSendAlert').addEventListener('click', sendAlertCheck);
     })();
   </script>
 </body>

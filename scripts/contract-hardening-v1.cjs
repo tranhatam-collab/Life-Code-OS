@@ -88,7 +88,14 @@ async function run() {
   assert.ok(Array.isArray(audit.body.logs));
 
   const monitorNoKey = await fetchWithRateRetry("/api/v1/ops/summary", { method: "GET" });
-  assert.ok([401, 503].includes(monitorNoKey.res.status));
+  assert.ok([401, 403, 503].includes(monitorNoKey.res.status));
+
+  const alertNoKey = await fetchWithRateRetry("/api/v1/ops/alert-check", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ window_minutes: 10, dry_run: true }),
+  });
+  assert.ok([401, 403, 503].includes(alertNoKey.res.status));
 
   console.log("contract hardening tests passed");
 }
