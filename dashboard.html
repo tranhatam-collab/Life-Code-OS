@@ -45,7 +45,8 @@
           <a href="/life-code-index.html">Life Code Index</a>
           <a href="/timeline-cuoc-doi.html">Timeline cuộc đời</a>
           <a href="/bao-cao-life-code.html">Báo cáo</a>
-          <a href="/dashboard.html">Bảng điều khiển</a>
+          <a href="/dashboard.html" aria-current="page">Bảng điều khiển</a>
+          <a href="/account.html">Account</a>
           <a href="/cau-hoi-thuong-gap.html">Hỏi đáp</a>
           <a href="/ban-quyen-so-huu-tri-tue.html">Bản quyền</a>
         </nav>
@@ -90,6 +91,15 @@
               <h2 id="lcDashWelcome">Chào mừng</h2>
             </div>
             <div class="lc-card-grid lc-card-grid-3" id="lcDashMetrics"></div>
+            <div style="margin-top:20px;">
+              <article class="lc-card" id="lcDashCompleteness" style="display:none;">
+                <h3>Mức độ hoàn thiện hồ sơ</h3>
+                <div id="lcCompletenessBar" style="background:var(--lc-border,#2a2f3a);border-radius:8px;height:12px;overflow:hidden;margin:10px 0;">
+                  <div id="lcCompletenessBarFill" style="height:100%;border-radius:8px;background:var(--lc-accent,#6c6cff);transition:width .5s;"></div>
+                </div>
+                <div id="lcCompletenessInfo" style="font-size:0.9rem;opacity:0.85;"></div>
+              </article>
+            </div>
             <div class="lc-card-grid lc-card-grid-2" style="margin-top:20px;">
               <article class="lc-card" id="lcDashProfile"></article>
               <article class="lc-card" id="lcDashStatus"></article>
@@ -126,6 +136,14 @@
                 <h3>Account & Session</h3>
                 <p>Quản lý mật danh, metadata theo level, và danh sách phiên trong trang riêng.</p>
                 <a class="lc-btn lc-btn-primary" href="/account.html">Mở trang Account</a>
+              </article>
+            </div>
+            <div style="margin-top:20px;" id="lcDashResultsSection" style="display:none;">
+              <article class="lc-card">
+                <h3>Lịch sử kết quả phân tích</h3>
+                <p style="font-size:0.88rem;opacity:0.75;margin-bottom:12px;">Tất cả lần chạy Life Code của bạn, mới nhất hiển thị trước.</p>
+                <div id="lcResultsHistory"><span style="opacity:0.5;font-size:0.9rem;">Đang tải...</span></div>
+                <div id="lcResultsPagination" style="display:flex;gap:8px;margin-top:14px;align-items:center;flex-wrap:wrap;"></div>
               </article>
             </div>
           </div>
@@ -460,6 +478,7 @@
       let currentReportMarkdown = '';
       let currentProfile = null;
       let currentResult = null;
+      let resultsPage = { offset: 0, limit: 10, total: 0 };
 
       function authHeaders() {
         const sessionToken = localStorage.getItem('lc_session_token');
@@ -493,7 +512,7 @@
           .replace(/\n\n/g, '<br/><br/>');
       }
 
-      function renderDashboard(profile, result) {
+      function renderDashboard(profile, result, completeness) {
         noData.style.display = 'none';
         withData.style.display = 'block';
         currentProfile = profile;
@@ -514,6 +533,18 @@
         metrics.innerHTML = items.map(i =>
           `<article class="lc-card" style="text-align:center;"><div style="font-size:0.85rem;opacity:0.7;">${i.label}</div><div style="font-size:1.8rem;font-weight:700;margin:8px 0;">${i.value}</div></article>`
         ).join('');
+
+        // Completeness widget
+        if (completeness) {
+          const compCard = document.getElementById('lcDashCompleteness');
+          compCard.style.display = '';
+          document.getElementById('lcCompletenessBarFill').style.width = `${completeness.score}%`;
+          const missingText = completeness.missing.length
+            ? `Còn thiếu: ${completeness.missing.join(', ')}`
+            : 'Hồ sơ đã hoàn thiện!';
+          document.getElementById('lcCompletenessInfo').innerHTML =
+            `<strong>${completeness.score}%</strong> hoàn thiện (${completeness.filled}/${completeness.total} trường) — ${missingText}`;
+        }
 
         const profileCard = document.getElementById('lcDashProfile');
         profileCard.innerHTML = `<h3>Hồ sơ cá nhân</h3><ul>
@@ -596,6 +627,63 @@
         }).from(container).save();
       });
 
+      async function loadResultsHistory(offset) {
+        const section = document.getElementById('lcDashResultsSection');
+        const container = document.getElementById('lcResultsHistory');
+        const pagination = document.getElementById('lcResultsPagination');
+        section.removeAttribute('style');
+        section.style.display = '';
+        try {
+          const res = await fetch(`${API_BASE}/api/v1/results?limit=${resultsPage.limit}&offset=${offset}`, {
+            headers: authHeaders()
+          });
+          if (!res.ok) { section.style.display = 'none'; return; }
+          const data = await res.json();
+          resultsPage.offset = offset;
+          resultsPage.total = data.total || 0;
+          if (!data.results || data.results.length === 0) {
+            container.innerHTML = '<span style="opacity:0.5;font-size:0.9rem;">Chưa có kết quả nào.</span>';
+            pagination.innerHTML = '';
+            return;
+          }
+          const statusLabels = { insufficient: 'Chưa đủ', partial: 'Một phần', strong: 'Mạnh', full: 'Đầy đủ' };
+          container.innerHTML = `<table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+            <thead><tr style="border-bottom:1px solid var(--lc-border,#2a2f3a);text-align:left;opacity:0.65;">
+              <th style="padding:6px 8px;">Ngày tạo</th>
+              <th style="padding:6px 8px;">LCI</th>
+              <th style="padding:6px 8px;">Adjusted</th>
+              <th style="padding:6px 8px;">Coverage</th>
+              <th style="padding:6px 8px;">Risk</th>
+              <th style="padding:6px 8px;">Wealth</th>
+              <th style="padding:6px 8px;">Trạng thái</th>
+            </tr></thead>
+            <tbody>${data.results.map((r, i) => `
+              <tr style="border-bottom:1px solid var(--lc-border,#1e222a);${i === 0 && offset === 0 ? 'font-weight:600;' : ''}">
+                <td style="padding:6px 8px;">${(r.generated_at || '').replace('T',' ').slice(0,19)}</td>
+                <td style="padding:6px 8px;">${r.life_code_index ?? 'N/A'}</td>
+                <td style="padding:6px 8px;">${r.adjusted_life_code_index ?? 'N/A'}</td>
+                <td style="padding:6px 8px;">${r.data_coverage ?? 'N/A'}</td>
+                <td style="padding:6px 8px;">${r.risk_score ?? 'N/A'}</td>
+                <td style="padding:6px 8px;">${r.wealth_score ?? 'N/A'}</td>
+                <td style="padding:6px 8px;">${statusLabels[r.status] || r.status || 'N/A'}</td>
+              </tr>`).join('')}
+            </tbody>
+          </table>`;
+          // pagination
+          const hasPrev = offset > 0;
+          const hasNext = offset + resultsPage.limit < resultsPage.total;
+          pagination.innerHTML = [
+            hasPrev ? `<button class="lc-btn lc-btn-secondary" id="lcResPrev" type="button" style="padding:6px 16px;font-size:0.85rem;">Trước</button>` : '',
+            `<span style="font-size:0.85rem;opacity:0.65;">${offset + 1}–${Math.min(offset + data.results.length, resultsPage.total)} / ${resultsPage.total}</span>`,
+            hasNext ? `<button class="lc-btn lc-btn-secondary" id="lcResNext" type="button" style="padding:6px 16px;font-size:0.85rem;">Tiếp</button>` : '',
+          ].join('');
+          if (hasPrev) document.getElementById('lcResPrev').onclick = () => loadResultsHistory(offset - resultsPage.limit);
+          if (hasNext) document.getElementById('lcResNext').onclick = () => loadResultsHistory(offset + resultsPage.limit);
+        } catch (e) {
+          section.style.display = 'none';
+        }
+      }
+
       async function loadFromApi() {
         try {
           const res = await fetch(`${API_BASE}/api/v1/me`, {
@@ -621,7 +709,8 @@
             localStorage.setItem('lc_user_id', profile.user_id);
             localStorage.setItem('lc_profile', JSON.stringify(profile));
             localStorage.setItem('lc_result', JSON.stringify(result));
-            renderDashboard(profile, result);
+            renderDashboard(profile, result, data.completeness || null);
+            await loadResultsHistory(0);
           }
         } catch (e) {
           console.warn('Session API failed, falling back to localStorage:', e.message);
@@ -632,7 +721,7 @@
         if (withData.style.display !== 'block') {
         const profile = JSON.parse(localStorage.getItem('lc_profile') || 'null');
         const result = JSON.parse(localStorage.getItem('lc_result') || 'null');
-        if (profile && result) renderDashboard(profile, result);
+        if (profile && result) renderDashboard(profile, result, null);
         }
       });
     })();

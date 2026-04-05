@@ -444,6 +444,41 @@ function profileView(row) {
   };
 }
 
+function profileCompleteness(row) {
+  if (!row) return { score: 0, filled: 0, total: 0, missing: [] };
+  const fields = [
+    { key: "full_name", label: "Họ và tên" },
+    { key: "nickname", label: "Tên gọi" },
+    { key: "avatar_url", label: "Ảnh đại diện" },
+    { key: "birth_date", label: "Ngày sinh" },
+    { key: "birth_time", label: "Giờ sinh" },
+    { key: "birth_place", label: "Nơi sinh" },
+    { key: "gender", label: "Giới tính" },
+    { key: "current_location", label: "Nơi ở hiện tại" },
+    { key: "locale", label: "Ngôn ngữ" },
+  ];
+  const metadata = parseProfileMetadataJson(row.profile_metadata_json);
+  const metaField = { key: "_metadata", label: "Dữ liệu bổ sung" };
+  const allFields = [...fields, metaField];
+  let filled = 0;
+  const missing = [];
+  for (const f of fields) {
+    if (row[f.key] && String(row[f.key]).trim()) {
+      filled++;
+    } else {
+      missing.push(f.label);
+    }
+  }
+  if (Object.keys(metadata).length > 0) {
+    filled++;
+  } else {
+    missing.push(metaField.label);
+  }
+  const total = allFields.length;
+  const score = Math.round((filled / total) * 100);
+  return { score, filled, total, missing };
+}
+
 export default {
   async fetch(request, env) {
     if (request.method === "OPTIONS") {
@@ -483,6 +518,7 @@ export default {
           .first();
         return jsonResponse(request, 200, {
           profile: profileView(profile),
+          completeness: profileCompleteness(profile),
           latest_result: latestResult || null,
           session: sessionView(session, session.id),
         });
@@ -539,6 +575,40 @@ export default {
         }));
 
         return jsonResponse(request, 200, { logs });
+      } catch (e) {
+        return jsonResponse(request, 500, { error: e.message || "Internal error" });
+      }
+    }
+
+    if (request.method === "GET" && url.pathname === "/api/v1/results") {
+      if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+      const session = await resolveSession(request, db);
+      if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
+      const resultsRate = await rateLimitHit(db, `results:${session.user_id}`, 60, 60);
+      if (resultsRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...resultsRate });
+
+      const limit = Math.min(Math.max(Number(url.searchParams.get("limit") || 20), 1), 100);
+      const offset = Math.max(Number(url.searchParams.get("offset") || 0), 0);
+      try {
+        const countRow = await db
+          .prepare("SELECT COUNT(*) as cnt FROM life_code_results WHERE user_id = ?")
+          .bind(session.user_id)
+          .first();
+        const total = countRow?.cnt || 0;
+        const rows = await db
+          .prepare(
+            `SELECT id, generated_at, life_code_index, adjusted_life_code_index, data_coverage, status,
+             risk_score, wealth_score, mission_signal, normalized_lci
+             FROM life_code_results WHERE user_id = ? ORDER BY generated_at DESC LIMIT ? OFFSET ?`
+          )
+          .bind(session.user_id, limit, offset)
+          .all();
+        return jsonResponse(request, 200, {
+          total,
+          limit,
+          offset,
+          results: rows.results || [],
+        });
       } catch (e) {
         return jsonResponse(request, 500, { error: e.message || "Internal error" });
       }

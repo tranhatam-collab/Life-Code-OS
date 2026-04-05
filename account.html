@@ -15,6 +15,19 @@
           <span class="lc-brand-mark">LC</span>
           <span class="lc-brand-text"><strong>Life Code</strong><small>Account Center</small></span>
         </a>
+        <button class="lc-menu-toggle" id="lcMenuToggle" type="button" aria-expanded="false" aria-controls="lcNav" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="lc-nav" id="lcNav">
+          <a href="/">Trang chủ</a>
+          <a href="/dashboard.html">Bảng điều khiển</a>
+          <a href="/account.html" aria-current="page">Account</a>
+          <a href="/monitor.html">Monitor</a>
+          <a href="/bat-dau.html">Bắt đầu</a>
+        </nav>
+        <div class="lc-header-actions">
+          <a class="lc-btn lc-btn-header" href="/bat-dau.html">Bắt đầu</a>
+        </div>
       </div>
     </header>
 
@@ -26,6 +39,14 @@
           <p>Trang này quản lý tài khoản thật, tách riêng khỏi dashboard.</p>
           <p><a class="lc-btn lc-btn-secondary" href="/monitor.html">Mở Ops Monitor</a></p>
         </div>
+
+        <article class="lc-card" id="accCompletenessCard" style="margin-bottom:16px;display:none;">
+          <h2>Mức độ hoàn thiện hồ sơ</h2>
+          <div id="accCompletenessBar" style="background:var(--lc-border,#2a2f3a);border-radius:8px;height:12px;overflow:hidden;margin:10px 0;">
+            <div id="accCompletenessBarFill" style="height:100%;border-radius:8px;background:var(--lc-accent,#6c6cff);transition:width .5s;width:0%;"></div>
+          </div>
+          <div id="accCompletenessInfo" style="font-size:0.9rem;opacity:0.85;"></div>
+        </article>
 
         <article class="lc-card" style="margin-bottom:16px;">
           <h2>Profile Settings</h2>
@@ -139,6 +160,18 @@
         const m = p.profile_metadata || {};
         for (let i = 1; i <= 9; i += 1) {
           document.getElementById(`accMetaLevel${i}`).value = m[`level${i}`] || '';
+        }
+        // Render completeness
+        if (data.completeness) {
+          const c = data.completeness;
+          const card = document.getElementById('accCompletenessCard');
+          card.style.display = '';
+          document.getElementById('accCompletenessBarFill').style.width = `${c.score}%`;
+          const missingText = c.missing.length
+            ? `Còn thiếu: ${c.missing.join(', ')}`
+            : 'Hồ sơ đã hoàn thiện!';
+          document.getElementById('accCompletenessInfo').innerHTML =
+            `<strong>${c.score}%</strong> hoàn thiện (${c.filled}/${c.total} trường) — ${missingText}`;
         }
       }
 
@@ -345,5 +378,6 @@
       });
     })();
   </script>
+  <script src="./site.js"></script>
 </body>
 </html>

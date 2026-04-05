@@ -15,6 +15,18 @@
           <span class="lc-brand-mark">LC</span>
           <span class="lc-brand-text"><strong>Life Code</strong><small>Ops Monitor</small></span>
         </a>
+        <button class="lc-menu-toggle" id="lcMenuToggle" type="button" aria-expanded="false" aria-controls="lcNav" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="lc-nav" id="lcNav">
+          <a href="/">Trang chủ</a>
+          <a href="/dashboard.html">Bảng điều khiển</a>
+          <a href="/account.html">Account</a>
+          <a href="/monitor.html" aria-current="page">Monitor</a>
+        </nav>
+        <div class="lc-header-actions">
+          <a class="lc-btn lc-btn-header" href="/bat-dau.html">Bắt đầu</a>
+        </div>
       </div>
     </header>
 
@@ -163,5 +175,6 @@
       document.getElementById('btnSendAlert').addEventListener('click', sendAlertCheck);
     })();
   </script>
+  <script src="./site.js"></script>
 </body>
 </html>
