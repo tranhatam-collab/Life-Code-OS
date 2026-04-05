@@ -36,5 +36,3 @@ jobs:
 
       - name: Deploy Worker
         run: wrangler deploy --config workers/life-code-api/wrangler.toml
-        env:
-          WRANGLER_CONFIG_PATH: /dev/null
