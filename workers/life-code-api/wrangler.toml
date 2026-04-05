@@ -1,7 +1,6 @@
 name = "life-code-api"
 main = "src/index.js"
 compatibility_date = "2024-11-12"
-account_id = "f3f9e76222dcb488d5e303e29e8ba192"
 
 [[d1_databases]]
 binding = "LIFE_CODE_DB"
