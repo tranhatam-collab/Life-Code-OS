@@ -21,6 +21,6 @@
     "api:test": "node scripts/test-api-v1.cjs"
   },
   "devDependencies": {
-    "wrangler": "^4.77.0"
+    "wrangler": "^4.153.0"
   }
 }
