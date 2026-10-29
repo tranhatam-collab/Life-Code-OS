@@ -1,0 +1,866 @@
+[
+  {
+    "scenario_id": "LIFE-identity-history",
+    "domain_id": "identity",
+    "mode": "history",
+    "title_vi": "Bản sắc và quyền tự chủ: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Tôi muốn được gọi thế nào và ai có quyền xem hồ sơ?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-identity-present",
+    "domain_id": "identity",
+    "mode": "present",
+    "title_vi": "Bản sắc và quyền tự chủ: Làm rõ tình trạng hiện tại",
+    "question": "Tôi muốn được gọi thế nào và ai có quyền xem hồ sơ?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-identity-action",
+    "domain_id": "identity",
+    "mode": "action",
+    "title_vi": "Bản sắc và quyền tự chủ: Thiết kế một bước trong 30 ngày",
+    "question": "Tôi muốn được gọi thế nào và ai có quyền xem hồ sơ?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-learning-history",
+    "domain_id": "learning",
+    "mode": "history",
+    "title_vi": "Học tập và năng lực: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Điều gì đã học được và có minh chứng nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-learning-present",
+    "domain_id": "learning",
+    "mode": "present",
+    "title_vi": "Học tập và năng lực: Làm rõ tình trạng hiện tại",
+    "question": "Điều gì đã học được và có minh chứng nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-learning-action",
+    "domain_id": "learning",
+    "mode": "action",
+    "title_vi": "Học tập và năng lực: Thiết kế một bước trong 30 ngày",
+    "question": "Điều gì đã học được và có minh chứng nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-work-history",
+    "domain_id": "work",
+    "mode": "history",
+    "title_vi": "Công việc và vai trò: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Vai trò nào phù hợp nguồn lực và mục tiêu hiện tại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-work-present",
+    "domain_id": "work",
+    "mode": "present",
+    "title_vi": "Công việc và vai trò: Làm rõ tình trạng hiện tại",
+    "question": "Vai trò nào phù hợp nguồn lực và mục tiêu hiện tại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-work-action",
+    "domain_id": "work",
+    "mode": "action",
+    "title_vi": "Công việc và vai trò: Thiết kế một bước trong 30 ngày",
+    "question": "Vai trò nào phù hợp nguồn lực và mục tiêu hiện tại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-resources-history",
+    "domain_id": "resources",
+    "mode": "history",
+    "title_vi": "Nguồn lực và tài chính: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Điều gì cần được giữ, giảm hoặc tổ chức lại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-resources-present",
+    "domain_id": "resources",
+    "mode": "present",
+    "title_vi": "Nguồn lực và tài chính: Làm rõ tình trạng hiện tại",
+    "question": "Điều gì cần được giữ, giảm hoặc tổ chức lại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-resources-action",
+    "domain_id": "resources",
+    "mode": "action",
+    "title_vi": "Nguồn lực và tài chính: Thiết kế một bước trong 30 ngày",
+    "question": "Điều gì cần được giữ, giảm hoặc tổ chức lại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-relationships-history",
+    "domain_id": "relationships",
+    "mode": "history",
+    "title_vi": "Quan hệ và ranh giới: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Tôi đang mong điều gì và đã nói rõ chưa?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-relationships-present",
+    "domain_id": "relationships",
+    "mode": "present",
+    "title_vi": "Quan hệ và ranh giới: Làm rõ tình trạng hiện tại",
+    "question": "Tôi đang mong điều gì và đã nói rõ chưa?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-relationships-action",
+    "domain_id": "relationships",
+    "mode": "action",
+    "title_vi": "Quan hệ và ranh giới: Thiết kế một bước trong 30 ngày",
+    "question": "Tôi đang mong điều gì và đã nói rõ chưa?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-family-history",
+    "domain_id": "family",
+    "mode": "history",
+    "title_vi": "Gia đình và trách nhiệm chung: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Trách nhiệm nào là của tôi, của người khác hoặc cần thỏa thuận?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-family-present",
+    "domain_id": "family",
+    "mode": "present",
+    "title_vi": "Gia đình và trách nhiệm chung: Làm rõ tình trạng hiện tại",
+    "question": "Trách nhiệm nào là của tôi, của người khác hoặc cần thỏa thuận?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-family-action",
+    "domain_id": "family",
+    "mode": "action",
+    "title_vi": "Gia đình và trách nhiệm chung: Thiết kế một bước trong 30 ngày",
+    "question": "Trách nhiệm nào là của tôi, của người khác hoặc cần thỏa thuận?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-home-history",
+    "domain_id": "home",
+    "mode": "history",
+    "title_vi": "Nhà ở và môi trường: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Nơi sống hỗ trợ hay làm khó hoạt động nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-home-present",
+    "domain_id": "home",
+    "mode": "present",
+    "title_vi": "Nhà ở và môi trường: Làm rõ tình trạng hiện tại",
+    "question": "Nơi sống hỗ trợ hay làm khó hoạt động nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-home-action",
+    "domain_id": "home",
+    "mode": "action",
+    "title_vi": "Nhà ở và môi trường: Thiết kế một bước trong 30 ngày",
+    "question": "Nơi sống hỗ trợ hay làm khó hoạt động nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-community-history",
+    "domain_id": "community",
+    "mode": "history",
+    "title_vi": "Cộng đồng và sự tham gia: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Có thể đóng góp điều gì mà vẫn giữ giới hạn?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-community-present",
+    "domain_id": "community",
+    "mode": "present",
+    "title_vi": "Cộng đồng và sự tham gia: Làm rõ tình trạng hiện tại",
+    "question": "Có thể đóng góp điều gì mà vẫn giữ giới hạn?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-community-action",
+    "domain_id": "community",
+    "mode": "action",
+    "title_vi": "Cộng đồng và sự tham gia: Thiết kế một bước trong 30 ngày",
+    "question": "Có thể đóng góp điều gì mà vẫn giữ giới hạn?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-body-history",
+    "domain_id": "body",
+    "mode": "history",
+    "title_vi": "Cơ thể và tự chăm sóc: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Điều gì đang cần được trao đổi với chuyên gia phù hợp?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-body-present",
+    "domain_id": "body",
+    "mode": "present",
+    "title_vi": "Cơ thể và tự chăm sóc: Làm rõ tình trạng hiện tại",
+    "question": "Điều gì đang cần được trao đổi với chuyên gia phù hợp?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-body-action",
+    "domain_id": "body",
+    "mode": "action",
+    "title_vi": "Cơ thể và tự chăm sóc: Thiết kế một bước trong 30 ngày",
+    "question": "Điều gì đang cần được trao đổi với chuyên gia phù hợp?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-daily_rhythm-history",
+    "domain_id": "daily_rhythm",
+    "mode": "history",
+    "title_vi": "Nhịp sống và phục hồi: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Một điều chỉnh nhỏ nào thực hiện được trong tuần?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-daily_rhythm-present",
+    "domain_id": "daily_rhythm",
+    "mode": "present",
+    "title_vi": "Nhịp sống và phục hồi: Làm rõ tình trạng hiện tại",
+    "question": "Một điều chỉnh nhỏ nào thực hiện được trong tuần?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-daily_rhythm-action",
+    "domain_id": "daily_rhythm",
+    "mode": "action",
+    "title_vi": "Nhịp sống và phục hồi: Thiết kế một bước trong 30 ngày",
+    "question": "Một điều chỉnh nhỏ nào thực hiện được trong tuần?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-meaning-history",
+    "domain_id": "meaning",
+    "mode": "history",
+    "title_vi": "Ý nghĩa và niềm tin: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Điều quan trọng với tôi có mặt trong việc tôi đang làm không?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-meaning-present",
+    "domain_id": "meaning",
+    "mode": "present",
+    "title_vi": "Ý nghĩa và niềm tin: Làm rõ tình trạng hiện tại",
+    "question": "Điều quan trọng với tôi có mặt trong việc tôi đang làm không?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-meaning-action",
+    "domain_id": "meaning",
+    "mode": "action",
+    "title_vi": "Ý nghĩa và niềm tin: Thiết kế một bước trong 30 ngày",
+    "question": "Điều quan trọng với tôi có mặt trong việc tôi đang làm không?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-creativity-history",
+    "domain_id": "creativity",
+    "mode": "history",
+    "title_vi": "Sáng tạo và biểu đạt: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Tôi muốn tạo ra điều gì thay vì chỉ tiêu thụ?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-creativity-present",
+    "domain_id": "creativity",
+    "mode": "present",
+    "title_vi": "Sáng tạo và biểu đạt: Làm rõ tình trạng hiện tại",
+    "question": "Tôi muốn tạo ra điều gì thay vì chỉ tiêu thụ?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-creativity-action",
+    "domain_id": "creativity",
+    "mode": "action",
+    "title_vi": "Sáng tạo và biểu đạt: Thiết kế một bước trong 30 ngày",
+    "question": "Tôi muốn tạo ra điều gì thay vì chỉ tiêu thụ?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-mobility-history",
+    "domain_id": "mobility",
+    "mode": "history",
+    "title_vi": "Di chuyển và chuyển môi trường: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Chuyển nơi sống cần chuẩn bị những điều kiện nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-mobility-present",
+    "domain_id": "mobility",
+    "mode": "present",
+    "title_vi": "Di chuyển và chuyển môi trường: Làm rõ tình trạng hiện tại",
+    "question": "Chuyển nơi sống cần chuẩn bị những điều kiện nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-mobility-action",
+    "domain_id": "mobility",
+    "mode": "action",
+    "title_vi": "Di chuyển và chuyển môi trường: Thiết kế một bước trong 30 ngày",
+    "question": "Chuyển nơi sống cần chuẩn bị những điều kiện nào?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-caregiving-history",
+    "domain_id": "caregiving",
+    "mode": "history",
+    "title_vi": "Chăm sóc và người phụ thuộc: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Cần phân chia trách nhiệm thế nào để không một người phải gánh tất cả?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-caregiving-present",
+    "domain_id": "caregiving",
+    "mode": "present",
+    "title_vi": "Chăm sóc và người phụ thuộc: Làm rõ tình trạng hiện tại",
+    "question": "Cần phân chia trách nhiệm thế nào để không một người phải gánh tất cả?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-caregiving-action",
+    "domain_id": "caregiving",
+    "mode": "action",
+    "title_vi": "Chăm sóc và người phụ thuộc: Thiết kế một bước trong 30 ngày",
+    "question": "Cần phân chia trách nhiệm thế nào để không một người phải gánh tất cả?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-later_life-history",
+    "domain_id": "later_life",
+    "mode": "history",
+    "title_vi": "Nghỉ hưu và đời sống lớn tuổi: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Bước tiếp theo nào vừa sức và có ý nghĩa?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-later_life-present",
+    "domain_id": "later_life",
+    "mode": "present",
+    "title_vi": "Nghỉ hưu và đời sống lớn tuổi: Làm rõ tình trạng hiện tại",
+    "question": "Bước tiếp theo nào vừa sức và có ý nghĩa?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-later_life-action",
+    "domain_id": "later_life",
+    "mode": "action",
+    "title_vi": "Nghỉ hưu và đời sống lớn tuổi: Thiết kế một bước trong 30 ngày",
+    "question": "Bước tiếp theo nào vừa sức và có ý nghĩa?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-legacy-history",
+    "domain_id": "legacy",
+    "mode": "history",
+    "title_vi": "Di sản và chuyển giao: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Điều gì cần được ghi lại, bàn giao hoặc giữ riêng?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-legacy-present",
+    "domain_id": "legacy",
+    "mode": "present",
+    "title_vi": "Di sản và chuyển giao: Làm rõ tình trạng hiện tại",
+    "question": "Điều gì cần được ghi lại, bàn giao hoặc giữ riêng?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-legacy-action",
+    "domain_id": "legacy",
+    "mode": "action",
+    "title_vi": "Di sản và chuyển giao: Thiết kế một bước trong 30 ngày",
+    "question": "Điều gì cần được ghi lại, bàn giao hoặc giữ riêng?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-life_changes-history",
+    "domain_id": "life_changes",
+    "mode": "history",
+    "title_vi": "Biến chuyển và mất mát: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Người dùng muốn kể đến đâu và cần điều gì lúc này?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-life_changes-present",
+    "domain_id": "life_changes",
+    "mode": "present",
+    "title_vi": "Biến chuyển và mất mát: Làm rõ tình trạng hiện tại",
+    "question": "Người dùng muốn kể đến đâu và cần điều gì lúc này?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-life_changes-action",
+    "domain_id": "life_changes",
+    "mode": "action",
+    "title_vi": "Biến chuyển và mất mát: Thiết kế một bước trong 30 ngày",
+    "question": "Người dùng muốn kể đến đâu và cần điều gì lúc này?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-digital_life-history",
+    "domain_id": "digital_life",
+    "mode": "history",
+    "title_vi": "Đời sống số và danh tính: Ghi nhận một sự kiện đã xảy ra",
+    "question": "Thông tin nào cần bảo vệ, giảm chia sẻ hoặc dọn lại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-digital_life-present",
+    "domain_id": "digital_life",
+    "mode": "present",
+    "title_vi": "Đời sống số và danh tính: Làm rõ tình trạng hiện tại",
+    "question": "Thông tin nào cần bảo vệ, giảm chia sẻ hoặc dọn lại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  },
+  {
+    "scenario_id": "LIFE-digital_life-action",
+    "domain_id": "digital_life",
+    "mode": "action",
+    "title_vi": "Đời sống số và danh tính: Thiết kế một bước trong 30 ngày",
+    "question": "Thông tin nào cần bảo vệ, giảm chia sẻ hoặc dọn lại?",
+    "required_evidence": "subject_provided_event_or_goal",
+    "outputs": [
+      "context",
+      "question",
+      "action_if_requested",
+      "review_date"
+    ],
+    "forecast": false,
+    "authoritative_diagnosis": false
+  }
+]

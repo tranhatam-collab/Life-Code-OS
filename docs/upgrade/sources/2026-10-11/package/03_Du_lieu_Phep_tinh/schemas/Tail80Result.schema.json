@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/Tail80Result.json",
+  "title": "Tail80Result",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "method_id": {
+      "const": "lc_tail4_mod80"
+    },
+    "suffix": {
+      "type": "string",
+      "pattern": "^[0-9]{4}$"
+    },
+    "quotient": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 124
+    },
+    "remainder": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 79
+    },
+    "lookup_code": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 80
+    },
+    "zero_policy": {
+      "enum": [
+        "unmapped",
+        "as80"
+      ]
+    },
+    "table_version": {
+      "type": "string"
+    },
+    "source_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "is_personalized": {
+      "const": false
+    },
+    "probability": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "method_id",
+    "suffix",
+    "quotient",
+    "remainder",
+    "lookup_code",
+    "zero_policy",
+    "table_version",
+    "source_label",
+    "is_personalized",
+    "probability"
+  ]
+}

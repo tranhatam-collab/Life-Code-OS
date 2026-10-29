@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:DeletionRequestV2",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "subject_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "scope": {
+      "enum": [
+        "profile",
+        "observations",
+        "reports",
+        "all_subject_data"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "acknowledged_download_limit": {
+      "const": true
+    }
+  },
+  "required": [
+    "subject_id",
+    "scope",
+    "reason",
+    "acknowledged_download_limit"
+  ]
+}

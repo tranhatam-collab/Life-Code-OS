@@ -1,0 +1,395 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-29",
+  "lane": "product_frontend_reports_ai_academy",
+  "scope": "Only enumerated files; no claim of visual review of PDF/DOCX/XLSX or all package files.",
+  "files": [
+    {
+      "path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/07_PRODUCT_EXECUTION_CHARTER_2026-10-20.md",
+      "sha256": "1e9d10fb35fefb86d7048af502da66359c0ff25ebded1aa5fda069568d88f7d6",
+      "bytes": 10156,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.json",
+      "sha256": "02df9d6e7918c11e7287ef074487ad37f32994358f65335c4e9a6cd93e83b196",
+      "bytes": 43148,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 23
+    },
+    {
+      "path": "docs/upgrade/2026-10-20/05_Frontend_UI/04_PWA_RESPONSIVE_EXECUTION_PLAN_2026-10-20.md",
+      "sha256": "c62f6de315f873fb7025899aec1ec1f6a99f4e35c5c658fadb0da76eee796a52",
+      "bytes": 9024,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/2026-10-20/05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.json",
+      "sha256": "b700a6e9c63607e886252f7574eac3af608596056d83d154a2e0bd4116f7e595",
+      "bytes": 86364,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 45
+    },
+    {
+      "path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/06_NINE_LEVEL_AI_REPORT_CONTRACTS_2026-10-20.md",
+      "sha256": "44aba29ceec7170e1d674ac0ab4853a95b24c0d31ece11d139d33df7366cc3b6",
+      "bytes": 6735,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.json",
+      "sha256": "5f40e72a3f6b191f23f4884ba6173b60b7a99c08aa32deec82d65d2ebc9b7f20",
+      "bytes": 22009,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 9
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/ACADEMY_EXPERT_ORGANIZATION_GLOBAL.md",
+      "sha256": "fd84050eb8830a1db7b22d6a1baf98bffdde6047a8e6e87bc70db92c0341a1d1",
+      "bytes": 4097,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/NINE_REPORT_BLUEPRINTS.md",
+      "sha256": "59ff8b14dc69410439d4f1de4b644f3103eed0efa4a7109f8817dfbb146f36d3",
+      "bytes": 4771,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_AND_USER_VALUE_V2.md",
+      "sha256": "1a488954beaeda28f013603ffaa1aff615a7f2ea41806f68400f2091b8d5697a",
+      "bytes": 3771,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_CATALOG_BASELINE.json",
+      "sha256": "07f231482f840e205047f33ffc91197ba0eb4dcf218f12beb375dd5aeff9d475",
+      "bytes": 18829,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 23
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_CATALOG_V2.json",
+      "sha256": "bef19a4bc912222ffb1045e7754ed36ced4793d3d9f3de0af575217a839853a9",
+      "bytes": 32192,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 23
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/07_UI/AI_INTERACTION_AND_ADMIN_CONSOLE.md",
+      "sha256": "65da15aa92cd29fd8f4dc967ca6c80f7137659e8f6bb4649525cacf978c904ec",
+      "bytes": 3446,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/07_UI/SCREEN_ADDITIONS_V2.json",
+      "sha256": "fb75c277c5e2ab03af829205f635ee97278ae8e903bbd74154f980214007c5f8",
+      "bytes": 6985,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 12
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/07_UI/SCREEN_REGISTRY_COMBINED.json",
+      "sha256": "dfa042f285fc48b74a2adc8edc09cedf9a139b0a648fa3d055ee8ff70a7295cf",
+      "bytes": 25415,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 57
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/07_UI/UX_MOBILE_WEB_DESKTOP.md",
+      "sha256": "5e9fee514cf1adcc08cd0dab7b920f40b7a3583f4fe0a689d46efac230a88073",
+      "bytes": 4527,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/00_START/Life_Code_Numbers_Names_Bat_Cuc_Atlas_V3.md",
+      "sha256": "cfdf32a69f4236d6b7bc376d0ead5d5b822fa25d683d841b316cad3ec6d19163",
+      "bytes": 51524,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_10.md",
+      "sha256": "f07a99b7fe9475e1fc5750f6863f58e4ccea4584d4ec91a40f3d53be1857f8a3",
+      "bytes": 2048,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_11.md",
+      "sha256": "2ca902dd3753aba9ca0f0bd247495adf3fe19059a6511fed13711fa9d9d31a9a",
+      "bytes": 3350,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_12.md",
+      "sha256": "4f370fca01babaedaa9cc715a34e6b908824b42d6d29e76c34668b657d597304",
+      "bytes": 2814,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_16.md",
+      "sha256": "b2c826f3d3761a65dae85e66bfbeacc18fcaf2fdbc24215e3a45f7503514055d",
+      "bytes": 2660,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_17.md",
+      "sha256": "027d1a63ba242e347b70ed6b805ce40efd97af5db8a111f8d53d7efce2acd9c8",
+      "bytes": 2639,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_18.md",
+      "sha256": "9dafe8aafb261157a3d006a7ba1a9fb7aeb840e6457641d9f7367b988ceb1de3",
+      "bytes": 2444,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_19.md",
+      "sha256": "d404d03d1d1ee4e06dda3611780665e9e832989b1f37183f79417dbec931c4b2",
+      "bytes": 2554,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_20.md",
+      "sha256": "369df39a145b84e80e3ba38a29ff570a8a58f8a3fa9fbb94da3bfed50469c70d",
+      "bytes": 2511,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/CHAPTER_21.md",
+      "sha256": "fd8edcfa6fd37bfee2f83b2552ab58dbfe1e30f1b6afac48aeecf6c90000eed1",
+      "bytes": 2575,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_1_REPORT_CONTRACT.md",
+      "sha256": "a6b45a8efab0988260e26db26ebbbdbecfcb0e1079c5b9f0f40b4c0825d8b81c",
+      "bytes": 2735,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_2_REPORT_CONTRACT.md",
+      "sha256": "205bb231779966134a31865f0c725bc4b20b615e3c8bf3aa235d8be2aaf49205",
+      "bytes": 2760,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_3_REPORT_CONTRACT.md",
+      "sha256": "69f33cebf7085e8a677877659e75b104ce521286dffa326479fc3b9d587ffe2a",
+      "bytes": 2660,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_4_REPORT_CONTRACT.md",
+      "sha256": "7a2cbb244186f4ee702f85bc8a4e9bc2becc608a9f9e305742b3e427ae07015e",
+      "bytes": 2623,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_5_REPORT_CONTRACT.md",
+      "sha256": "ea07d567942d77c775364ba2e012b629dbbf598bf1bc5b35f63905dee5f4aa93",
+      "bytes": 2747,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_6_REPORT_CONTRACT.md",
+      "sha256": "1a7cc4912419d87b5404fef6993434b939fa8f4d1c2629093b2af89f819c253c",
+      "bytes": 2702,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_7_REPORT_CONTRACT.md",
+      "sha256": "93e461badcb1044eefaf08d1abe5446370b1a48274fa5c0d908f2f7a7ea5d0ec",
+      "bytes": 2743,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_8_REPORT_CONTRACT.md",
+      "sha256": "c08ee1d6256b4ce8d7d7e1dbfba045cb2393f6f9053ae621cd827f8226d95fba",
+      "bytes": 2784,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_9_REPORT_CONTRACT.md",
+      "sha256": "acbd38e4f9bed38f62eea593c061592c7d52d85dc9f7d98c0c0a10e2cb76eb20",
+      "bytes": 2850,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/NINE_LEVELS_INTEGRATED_V3.json",
+      "sha256": "a1734c6499149b3d393ced04f2dce14b50f3ac7e4c2f00a54a48c14c3ecf5a75",
+      "bytes": 13360,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 9
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.csv",
+      "sha256": "6f133115539c664562251b00f21d8ad8ee5a16f54d775eae1c8a2bf35ade03ff",
+      "bytes": 2338,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "data_rows": 28
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "sha256": "61d523880138451892f31382ee654c00bd103c0755871bf274ec502641debe5f",
+      "bytes": 38707,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 28
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_V2_PRESERVED.json",
+      "sha256": "bef19a4bc912222ffb1045e7754ed36ced4793d3d9f3de0af575217a839853a9",
+      "bytes": 32192,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 23
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/SCREEN_REGISTRY_ALL.json",
+      "sha256": "0e5943b54cb9a5faac0941e323be0e4c9a7668b370dbd4f4ef079916d4634171",
+      "bytes": 32970,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 69
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/SCREEN_REGISTRY_V2_PRESERVED.json",
+      "sha256": "dfa042f285fc48b74a2adc8edc09cedf9a139b0a648fa3d055ee8ff70a7295cf",
+      "bytes": 25415,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 57
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/SCREEN_REGISTRY_V3_ADDITIONS.json",
+      "sha256": "f54c93146e3b58eeb79504887f86dc4abff267ee28bda672e45fb6e413bdf2f0",
+      "bytes": 7558,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data",
+      "top_level_records": 12
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/WEB_MOBILE_DESKTOP.md",
+      "sha256": "b2c826f3d3761a65dae85e66bfbeacc18fcaf2fdbc24215e3a45f7503514055d",
+      "bytes": 2660,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "sha256": "6221efc16c31725d7a7b868e1df43ed73316915ffa1995b0e3b4a28080fd2430",
+      "bytes": 424720,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "Full bytes read; operationId/method/path index reviewed for UI bindings only; backend lane owns request/response schema audit.",
+      "top_level_records": 7
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/10_GLOBAL_ACADEMY/ACADEMY_AND_LICENSING.md",
+      "sha256": "fd8edcfa6fd37bfee2f83b2552ab58dbfe1e30f1b6afac48aeecf6c90000eed1",
+      "bytes": 2575,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/10_GLOBAL_ACADEMY/HNH_ACADEMY_9_SESSIONS.md",
+      "sha256": "3e6fd5d18fbe69268ea39c7480d781aa269daadbe9881cfbd8a3901d9162c483",
+      "bytes": 2067,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/10_GLOBAL_ACADEMY/TERRITORY_RELEASE_MATRIX.md",
+      "sha256": "18d9b148f2129210e716f4f66f6bb8cbd6614fceef079c3dcb49962385e287d3",
+      "bytes": 1595,
+      "status": "READ_COMPLETE_TEXT_OR_STRUCTURED",
+      "review_scope": "product/frontend/report/AI/academy planning; source instructions treated as data"
+    }
+  ],
+  "file_count": 46,
+  "byte_count": 967349,
+  "semantic_checks": {
+    "old_product_fields_preserved": 23,
+    "old_screen_fields_preserved": 45,
+    "old_report_fields_preserved": 9,
+    "product_count": 28,
+    "screen_requirement_id_count": 69,
+    "distinct_implemented_pages_claim": false,
+    "report_count": 9,
+    "csv_json_product_parity": 28,
+    "combined_screen_union": "45+12+12=69",
+    "source_openapi_operation_ids": 99
+  },
+  "limitations": [
+    "Planning artifacts are not implementation, legal approval, market release or runtime evidence.",
+    "Preserving raw fields may expose old ambiguous requirements; effective proposals are separately namespaced and require review.",
+    "No source scripts were executed by this builder."
+  ],
+  "cross_contract_validation": {
+    "status": "PASS_LOCAL_PLANNING_CONSISTENCY_ONLY",
+    "as_of": "2026-10-29",
+    "normalized_openapi_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+    "normalized_openapi_sha256": "32aee98a5a8613d8e9c211c7f253d7197e2ce094c8939428d7e8483f74d5d3f1",
+    "method_register_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "method_register_sha256": "be5e0d63299af47a0431c9fcda42bff1b66ebda64c3975aa700ca49bff1f77df",
+    "method_register_review_scope": "method_id membership and release/reference flags only; full method audit owned by backend lane",
+    "checks": [
+      "28_product_unique_IDs",
+      "69_screen_unique_IDs",
+      "9_report_unique_IDs",
+      "23_product_all_old_fields_equal",
+      "45_screen_all_old_fields_equal",
+      "9_report_all_old_fields_equal",
+      "all_product_screen_report_operationIds_in_normalized99",
+      "all_proposed_methodIds_in_register62",
+      "all_product_screen_references_resolve",
+      "9x10_report_fixture_requirements",
+      "14_required_sections_each_level",
+      "62_methods_not_production_released",
+      "11_reference_implementations_only"
+    ],
+    "does_not_prove": [
+      "application_implementation",
+      "executed_UI_or_report_tests",
+      "runtime",
+      "release_approval",
+      "legal_or_commercial_approval"
+    ]
+  }
+}

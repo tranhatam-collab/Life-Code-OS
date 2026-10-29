@@ -1,0 +1,10 @@
+{
+  "subject_id": "00000000-0000-4000-8000-000000000001",
+  "recipient_account_id": "00000000-0000-4000-8000-000000000002",
+  "purpose": "knowledge_legacy_sharing",
+  "artifact_ids": [
+    "00000000-0000-4000-8000-000000000003"
+  ],
+  "expires_at": "2027-01-01T00:00:00Z",
+  "expected_access_revision": 1
+}

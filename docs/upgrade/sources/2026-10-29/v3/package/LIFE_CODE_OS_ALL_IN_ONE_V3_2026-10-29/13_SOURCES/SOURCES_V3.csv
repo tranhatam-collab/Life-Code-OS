@@ -1,0 +1,31 @@
+﻿source_id,title,url,language,access_status,scope,checked_on,full_book_read
+R01,Life Code: nội dung website công khai,https://lifecode.iai.one/,vi,PUBLIC_PAGE_RETRIEVED,"Đối chiếu định vị, 12 lớp, 9 cấp; không xác minh deployed SHA.",2026-10-29,False
+R02,GitHub: danh sách nhánh,https://api.github.com/repos/tranhatam-collab/Life-Code-OS/branches?per_page=100,en,CONNECTOR_READ,main và audit giữ SHA; nhánh rescue cùng SHA audit.,2026-10-29,False
+R03,GitHub: kế hoạch audit 11/10/2026,https://github.com/tranhatam-collab/Life-Code-OS/blob/336ef35a8386a744c6de18a7f7c6e268e89e6dac/docs/audit/LIFE_CODE_OS_COMPREHENSIVE_UPGRADE_PLAN_2026-10-11.md,vi,CONNECTOR_READ,"Kế hoạch có đề xuất, chưa phải release approval.",2026-10-29,False
+R04,Kim Tâm Cát: Bát Cực Linh Số,https://kimtamcat.com.vn/bat-cuc-linh-so-la-gi-va-cach-ung-dung-cai-van/,vi,PRACTITIONER_SOURCE,Bảng cặp và quy ước; các tuyên bố số phận không được coi là bằng chứng thực nghiệm.,2026-10-29,False
+R05,八星數字能量在人生各方面的應用,https://20401319.org/number02/,zh-Hant,PRACTITIONER_SOURCE,Đối chiếu thuật ngữ và chuỗi; không gộp ngầm trường phái.,2026-10-29,False
+R06,World Numerology: Life Path,https://www.worldnumerology.com/numerology-life-path/,en,PRACTITIONER_SOURCE,Phân biệt cộng trực tiếp và rút gọn từng thành phần; lưu phương pháp.,2026-10-29,False
+R07,World Numerology: chữ Y,https://www.worldnumerology.com/numerology-articles/numerology-Y-vowel-consonant.html,en,PRACTITIONER_SOURCE,Y phụ thuộc quy ước/phát âm; không áp máy móc một quy tắc cho mọi tên Việt.,2026-10-29,False
+R08,World Numerology: Maturity,https://www.worldnumerology.com/numerology-articles/numerology-maturity-number.html,en,PRACTITIONER_SOURCE,Cộng Life Path và Expression theo quy tắc được chọn.,2026-10-29,False
+R09,World Numerology: Rational Thought,https://www.worldnumerology.com/numerology-articles/rational-thought-number.html,en,PRACTITIONER_SOURCE,"Tên riêng cần được xác nhận, không tự dùng token đầu của tên Việt.",2026-10-29,False
+R10,World Numerology: Subconscious Self,https://www.worldnumerology.com/numerology-articles/numerology-subconscious-self.html,en,PRACTITIONER_SOURCE,Đếm nhóm số có mặt trong tên; Hidden Passion có thể đồng hạng.,2026-10-29,False
+R11,World Numerology: Balance,https://www.worldnumerology.com/numerology-balance-number/,en,PRACTITIONER_SOURCE,Quy đổi chữ đầu tên; không phải đo cân bằng tâm lý.,2026-10-29,False
+R12,World Numerology: Pinnacles,https://www.worldnumerology.com/numerology-pinnacles/,en,PRACTITIONER_SOURCE,"Bốn công thức, ranh giới tuổi cần khóa cách tính inclusive/exclusive.",2026-10-29,False
+R13,World Numerology: Challenges,https://www.worldnumerology.com/numerology-challenges/,en,PRACTITIONER_SOURCE,Bốn hiệu tuyệt đối; mốc thời gian phải có chính sách riêng.,2026-10-29,False
+R14,World Numerology: Period Cycles,https://www.worldnumerology.com/numerology-period-cycles/,en,PRACTITIONER_SOURCE,Chu kỳ không đồng nhất với Pinnacles; không tự giữ bảng tuổi cũ nếu thiếu nguồn.,2026-10-29,False
+R15,Yandex Books: Цифровой психоанализ для начинающих,https://books.yandex.ru/books/WHuirlQq/read-online,ru,SEARCH_EXCERPT_ONLY_FULL_TEXT_NOT_ACCESSED,Nhận diện công thức bốn số phụ; quyền và toàn văn còn phải đối chiếu.,2026-10-29,False
+R16,Unicode Normalization,https://www.unicode.org/reports/tr15/,en,PRIMARY_STANDARD,NFC không đồng nghĩa xóa dấu hoặc phiên âm.,2026-10-29,False
+R17,IANA Time Zone Database,https://www.iana.org/time-zones,en,PRIMARY_DOCUMENTATION,Lưu phiên bản tzdb và độ chính xác thời điểm sinh.,2026-10-29,False
+R18,Cloudflare Queues: delivery guarantees,https://developers.cloudflare.com/queues/reference/delivery-guarantees/,en,PRIMARY_DOCUMENTATION,At-least-once; tác vụ phải chống tác dụng phụ trùng.,2026-10-29,False
+R19,PostgreSQL Row Security Policies,https://www.postgresql.org/docs/current/ddl-rowsecurity.html,en,PRIMARY_DOCUMENTATION,Runtime role không được tự bỏ qua RLS.,2026-10-29,False
+R20,W3C WCAG 2.2,https://www.w3.org/TR/WCAG22/,en,PRIMARY_STANDARD,Mục tiêu AA; kiểm thử demo không tự là chứng nhận toàn hệ.,2026-10-29,False
+R21,Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15,https://chinhphu.vn/?classid=1&docid=214590&orggroupid=1&pageid=27160,vi,OFFICIAL_METADATA_VERIFIED,Hiệu lực 01/01/2026; cần pháp lý rà phạm vi áp dụng thực tế.,2026-10-29,False
+R22,Luật Trí tuệ nhân tạo 134/2025/QH15,https://chinhphu.vn/?classid=1&docid=216334&orggroupid=1&pageid=27160,vi,OFFICIAL_METADATA_VERIFIED,"Hiệu lực 01/03/2026; phân loại theo chức năng, không theo nhãn giáo dục.",2026-10-29,False
+R23,Luật Thương mại điện tử 122/2025/QH15,https://chinhphu.vn/?classid=1&docid=216503&pageid=27160&typegroupid=3,vi,OFFICIAL_METADATA_VERIFIED,Hiệu lực 01/07/2026; chưa có legal opinion cho launch.,2026-10-29,False
+R24,OWASP API1:2023 BOLA,https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/,en,PRIMARY_SECURITY_GUIDANCE,Mọi ID đối tượng cần kiểm tra quyền ở phía server.,2026-10-29,False
+R25,WIPO Copyright,https://www.wipo.int/en/web/copyright,en,PRIMARY_RIGHTS_GUIDANCE,"Tách ý tưởng/phương pháp khỏi biểu đạt, bản dịch và phần mềm có quyền.",2026-10-29,False
+R26,World Numerology: tự tính biểu đồ,https://www.worldnumerology.com/do-your-own-reading/,en,PRACTITIONER_SOURCE,Các công thức tham khảo; không sao chép luận giải thương mại.,2026-10-29,False
+R27,GitHub: kiến trúc chín cấp v1,https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/docs/LEVELS_ARCHITECTURE_V1.md,en-vi,CONNECTOR_READ,"Giữ tên/ID; thay cơ chế mở khóa theo dữ liệu và quyền, không chỉ coverage.",2026-10-29,False
+R28,Bảng Mã đuôi 80 do Founder cung cấp,user-supplied:conversation:tail80,vi,USER_SUPPLIED,Lưu bảng 80 riêng; chưa xác minh một bảng gốc lịch sử duy nhất.,2026-10-29,False
+R29,Bộ V1 đính kèm 11/10/2026,attachment:Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip,vi,BYTES_PRESERVED,"149 tệp, hash ở PRESERVATION_MANIFEST.",2026-10-29,False
+R30,Bộ V2 đính kèm 20/10/2026,attachment:Life_Code_OS_V2_Complete_Upgrade_2026-10-20.zip,vi,BYTES_PRESERVED,307 mục tệp của ZIP được giữ nguyên; các receipt cũ giữ ngày cũ.,2026-10-29,False

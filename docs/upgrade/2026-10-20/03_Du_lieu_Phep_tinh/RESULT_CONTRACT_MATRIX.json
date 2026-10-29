@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0-proposed",
+  "as_of": "2026-10-20",
+  "status": "PROPOSED_NOT_APPROVED",
+  "contracts": [
+    {
+      "contract_id": "RC-CLAIM",
+      "schema_path": "schemas/Claim.schema.json",
+      "applies_to": ["all_claims"],
+      "schema_guards": ["typed_claim", "nonempty_source_ids", "probability_range", "model_evidence_for_model_probability"],
+      "runtime_guards": ["source_ids_exist_and_are_usable", "result_or_observation_lineage_belongs_to_same_subject", "review_state_authority", "model_release_and_evaluation_receipt_are_current"],
+      "known_limits": ["JSON Schema cannot verify database ownership or source-rights validity"]
+    },
+    {
+      "contract_id": "RC-PROFILE-VERSION",
+      "schema_path": "schemas/ProfileVersion.schema.json",
+      "applies_to": ["profile_snapshot"],
+      "schema_guards": ["version_number", "date_precision", "time_range_shape", "exact_time_requires_full_date_and_verified_timezone"],
+      "runtime_guards": ["Unicode NFC equality", "timezone_exists_in_recorded_tzdb_version", "DST_gap_fold_resolution", "hypothesis_ids_exist", "supersedes_same_subject_and_tenant"],
+      "known_limits": ["partial-date hypotheses still require a dedicated DataHypothesis schema"]
+    },
+    {
+      "contract_id": "RC-RELEASE-RECEIPT",
+      "schema_path": "schemas/ReleaseReceipt.schema.json",
+      "applies_to": ["deployment_receipt"],
+      "schema_guards": ["source_and_artifact_digests", "verified_release_nonempty_gates_methods_approvals_runtime_receipts", "production_domain_receipt", "verified_at"],
+      "runtime_guards": ["CI_provider_receipt_readback", "artifact_hash_recalculation", "provider_deployment_identity", "domain_runtime_probe", "rollback_target_exists"],
+      "known_limits": ["Receipt content is a claim until primary-provider readback is performed"]
+    },
+    {
+      "contract_id": "RC-TAIL80",
+      "schema_path": "schemas/Tail80Result.schema.json",
+      "applies_to": ["M06"],
+      "schema_guards": ["four_ASCII_digits", "integer_ranges", "zero_policy_lookup_consistency", "probability_null", "not_personalized"],
+      "runtime_guards": ["N_equals_80_times_quotient_plus_remainder", "nonzero_lookup_equals_remainder", "table_version_and_source_ref_exist", "rights_gate_before_symbolic_label"],
+      "known_limits": ["JSON Schema cannot express modulo arithmetic"]
+    },
+    {
+      "contract_id": "RC-METHOD-RESULT",
+      "schema_path": "schemas/MethodResult.schema.json",
+      "applies_to": ["M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M09", "M10", "M11", "M12", "M13", "M14", "M15"],
+      "schema_guards": ["input_and_configuration_digests", "typed_confidence", "probability_only_for_approved_model", "complete_has_no_missing_or_unresolved", "blocked_has_reason"],
+      "runtime_guards": ["method_release_exists_and_is_eligible", "calculation_matches_method_specific_schema", "input_fields_match_profile_version", "claim_subject_and_result_lineage", "immutable_result"],
+      "known_limits": ["Method-specific calculation schemas are still missing except Tail80"]
+    },
+    {
+      "contract_id": "RC-REPORT-SNAPSHOT",
+      "schema_path": "schemas/ReportSnapshot.schema.json",
+      "applies_to": ["report_snapshot"],
+      "schema_guards": ["published_report_nonempty", "published_at", "reviewer_and_authorization_snapshot", "snapshot_and_source_digests"],
+      "runtime_guards": ["section_claims_subset_of_report_claims", "claims_approved_and_not_withdrawn", "subject_profile_mapping", "product_and_method_releases_current", "digest_recalculation", "entitlement_and_grants_rechecked"],
+      "known_limits": ["JSON Schema cannot enforce set-subset or database authorization relations"]
+    },
+    {
+      "contract_id": "RC-METRIC",
+      "schema_path": "schemas/Metric.schema.json",
+      "applies_to": ["derived_metric"],
+      "schema_guards": ["null_requires_missing_reason", "percent_and_ratio_ranges", "formula_version", "declared_scale_and_rounding"],
+      "runtime_guards": ["scale_min_less_than_scale_max", "value_within_declared_scale", "decimal_places_and_rounding_applied", "window_and_units_match_formula_release"],
+      "known_limits": ["JSON number does not preserve financial decimal semantics"]
+    },
+    {
+      "contract_id": "RC-JOB-ENVELOPE",
+      "schema_path": "schemas/JobEnvelope.schema.json",
+      "applies_to": ["asynchronous_jobs"],
+      "schema_guards": ["payload_is_typed_database_reference_not_URL", "authorization_recheck_required", "bounded_attempts", "deadline_and_policy_versions"],
+      "runtime_guards": ["authorization_and_consent_rechecked_at_start_and_publish", "payload_reference_same_tenant_subject", "attempt_less_than_max_attempts", "deadline_after_created_at", "idempotency_namespace_account_and_operation"],
+      "known_limits": ["JSON Schema cannot verify TOCTOU state or queue transactionality"]
+    },
+    {
+      "contract_id": "RC-METHOD-RELEASE",
+      "schema_path": "schemas/MethodRelease.schema.json",
+      "applies_to": ["method_release"],
+      "schema_guards": ["separate_computation_evidence_release_states", "permitted_release_nonempty_source_rights_tests_products_countries_approval", "artifact_digest"],
+      "runtime_guards": ["source_rights_receipts_current", "test_receipt_matches_artifact_digest", "approver_has_role", "country_and_product_scope_current", "references_resolve_to_immutable_artifacts"],
+      "known_limits": ["No current method satisfies the permitted release gate"]
+    }
+  ]
+}

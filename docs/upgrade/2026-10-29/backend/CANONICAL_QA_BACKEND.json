@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-29",
+  "scope": "Independent structural checks of canonical planning artifacts; implementation and release not checked",
+  "checks": {
+    "backlog316_unique": true,
+    "dev_contracts316_same_ids": true,
+    "dependency_nodes316_same_ids": true,
+    "topological_order316_same_ids": true,
+    "dependency_missing_and_cycle_free": true,
+    "trace407_unique": true,
+    "trace_task_ids_resolve": true,
+    "integration_work_orders20_present": true,
+    "method_execution_matrix62": true,
+    "api99_and68schemas": true,
+    "codegen_remains_blocked": true,
+    "canonical9_exact_and_new27_exact": true
+  },
+  "all_checks_pass": true,
+  "backlog_origin_counts": {
+    "LOCAL_R2": 156,
+    "V2": 68,
+    "V3": 72,
+    "INTEGRATION_REFINEMENT": 20
+  },
+  "trace_origin_counts": {
+    "LOCAL_R2": 87,
+    "INCOMING_V3": 62,
+    "CANONICAL_REGISTRY": 258
+  },
+  "missing_dependency_edges": [],
+  "invalid_topological_edges": [],
+  "unknown_trace_tasks": [],
+  "production_ready": false,
+  "limitations": [
+    "Acyclic dependency links do not mean tasks are complete or their decisions approved.",
+    "Backend WP estimates overlap canonical tasks and must not be summed as an additional budget.",
+    "No CI/deployment/runtime/provider/live validation performed."
+  ]
+}

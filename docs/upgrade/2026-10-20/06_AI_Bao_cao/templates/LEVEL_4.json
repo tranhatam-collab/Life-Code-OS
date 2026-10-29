@@ -1,0 +1,98 @@
+{
+  "product_id": "LC-L4",
+  "template_version": "0.1-proposed",
+  "page_budget": {
+    "min": 50,
+    "max": 80,
+    "mandatory": false
+  },
+  "sections": [
+    {
+      "block": "identity",
+      "title_vi": "Phạm vi và dữ liệu gốc",
+      "requirements": "Nguồn, consent, input precision và unknowns",
+      "section_id": "L4.01",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "identity",
+      "title_vi": "Bản đồ điều đã biết",
+      "requirements": "Dữ kiện/khai báo/quan sát riêng",
+      "section_id": "L4.02",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Công việc và năng lực",
+      "requirements": "Skills evidence",
+      "section_id": "L4.03",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Vai trò và môi trường",
+      "requirements": "Work constraints",
+      "section_id": "L4.04",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Nguồn lực và dòng tiền",
+      "requirements": "Actual user provided currency/asof",
+      "section_id": "L4.05",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Kịch bản",
+      "requirements": "Giả định và giới hạn",
+      "section_id": "L4.06",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "action",
+      "title_vi": "Kế hoạch nghề nghiệp",
+      "requirements": "Không investment advice tự động",
+      "section_id": "L4.07",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "appendix",
+      "title_vi": "Phép tính, nguồn và giới hạn",
+      "requirements": "Method versions/rights/claim types + missing fields",
+      "section_id": "L4.08",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "action",
+      "title_vi": "Quyền sửa, chia sẻ và xóa",
+      "requirements": "Hướng dẫn thực tế và kênh hỗ trợ miễn phí",
+      "section_id": "L4.09",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    }
+  ],
+  "public_auto_publish": false,
+  "default_review": "human_before_publish_beta",
+  "prohibited": [
+    "unverified_biography",
+    "health_from_numbers",
+    "morphology_personality",
+    "unvalidated_probability",
+    "filler_to_reach_page_count"
+  ],
+  "execution_amendment_2026_10_20": {
+    "contract_id": "RPT-L4",
+    "contract_ref": "../NINE_LEVEL_REPORT_CONTRACTS.json",
+    "evaluation_ref": "../07_AI_EVALUATION_AND_DEMO_PLAN_2026-10-20.md",
+    "claim_status": "NOT_CHECKED"
+  }
+}

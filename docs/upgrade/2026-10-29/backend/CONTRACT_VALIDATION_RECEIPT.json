@@ -1,0 +1,1273 @@
+{
+  "date": "2026-10-29",
+  "scope": "PLANNING_CONTRACT_AND_SYNTHETIC_REFERENCE_ONLY",
+  "validator": "jsonschema 4.26.0 Draft202012Validator + FormatChecker; PyYAML 6.0.3 safe_load",
+  "unified_component_schemas_checked": 68,
+  "component_schema_checks": [
+    {
+      "name": "ProfileVersion",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "Claim",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "Metric",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "MethodResult",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "MethodRelease",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ReportSnapshot",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "JobEnvelope",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ReleaseReceipt",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "Tail80Result",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "Error",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "JobAccepted",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "Resource",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ResourcePage",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "SubjectCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ProfileCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "AnalysisCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ObservationCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ConsentCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "GrantCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "PlanCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "CheckinCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "OrderCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ReportCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ExportCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ReviewCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "TicketCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "AutomationCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "HypothesisCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ScopedRequest",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "QuestionnaireResponse",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "AssignmentCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "CountryPackDraft",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "CheckoutCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "RefundRequest",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "CancelRequest",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "PublishRequest",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "PrivacyExportRequest",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "DeletionRequest",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "MethodResultPage",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "HealthStatus",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ClaimV2",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "RunCreate",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "RunStatus",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "BirthRecordV2",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ProfilePipelineInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "MethodPassportV2",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "OutboxEvent",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "AccessDecision",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ReportSectionV2",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "Problem",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "RunCompare",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "MethodPreview",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ConflictResolution",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "DeletionRequestV2",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ReviewDecision",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "MethodFreeze",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "OfflineBatch",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "NumerologyFullInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "BatCucInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "PsychomatrixInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "LifetimeInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "AllInOneInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "NumberCompareInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "NameCompareInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ReferenceResult",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "BundleCancelInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "KnowledgeTransferInput",
+      "schema_syntax": "PASS"
+    },
+    {
+      "name": "ProblemDetails",
+      "schema_syntax": "PASS"
+    }
+  ],
+  "local_canonical_schemas": [
+    {
+      "name": "Claim",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "sha256": "5105e0bd8d6b1ac5f8b72371217b78cdfe16fdf18ed702df1dfcd54e89a169eb",
+      "exact_object_match": true
+    },
+    {
+      "name": "ProfileVersion",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "sha256": "4d916e423cd99fbc4f1d3c202f2709c48c23fc9d7d44f25b85aa56b848599403",
+      "exact_object_match": true
+    },
+    {
+      "name": "ReleaseReceipt",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "sha256": "aa20c32a7f5b515f1ee49ed51d632b9f19c7ac04dd1ac41bdf89a220b5616030",
+      "exact_object_match": true
+    },
+    {
+      "name": "Tail80Result",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "sha256": "f8c3269a4ac8e52cc9a07bf0a953fc47ea4b87aea17fc17ad1000dc82b363a45",
+      "exact_object_match": true
+    },
+    {
+      "name": "MethodResult",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "sha256": "04d3b051cd8611ef3e7286e810856ae9e5d031378d1a918f04e30f69714533a8",
+      "exact_object_match": true
+    },
+    {
+      "name": "ReportSnapshot",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "sha256": "29f0abed150e90ada05d2408631b8789d5545c4218034710713676cac45ddc38",
+      "exact_object_match": true
+    },
+    {
+      "name": "Metric",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "sha256": "45641bd50dc72df60dbeea785f33c17e0827231918f1668d1eee5ae30db61dc6",
+      "exact_object_match": true
+    },
+    {
+      "name": "JobEnvelope",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "sha256": "111a83a5782bfa30d68ca9169f1ad129af03921cad9bda94dbc830ad58688382",
+      "exact_object_match": true
+    },
+    {
+      "name": "MethodRelease",
+      "path": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "sha256": "0cde37e13a0ed82a3da9f338909ea5ae3ea35234f084398526150577c84dda0f",
+      "exact_object_match": true
+    }
+  ],
+  "standalone_source_schemas_checked": 27,
+  "standalone_preservation_and_examples": [
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/AccessDecision.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/BirthRecordV2.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ClaimV2.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ConflictResolution.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/DeletionRequestV2.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodFreeze.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPassportV2.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPreview.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OfflineBatch.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OutboxEvent.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/Problem.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ProfilePipelineInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReportSectionV2.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReviewDecision.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCompare.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCreate.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V2",
+      "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunStatus.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/AllInOneInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/BatCucInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/BundleCancelInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/KnowledgeTransferInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/LifetimeInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NameCompareInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NumberCompareInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NumerologyFullInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/PsychomatrixInput.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "PASS",
+      "errors": []
+    },
+    {
+      "source": "V3",
+      "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/ReferenceResult.schema.json",
+      "preserved_exact_object": true,
+      "example_status": "NO_SUPPLIED_EXAMPLE",
+      "errors": []
+    }
+  ],
+  "v2_json_yaml_parity": true,
+  "v3_dispatcher_cases_crosschecked": 72,
+  "positive_reference_contract_pass": 57,
+  "expected_rejections": 15,
+  "case_rows": [
+    {
+      "case_id": "V3-DEMO-001",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-002",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-003",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-004",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-005",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-006",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-007",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-008",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-009",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": "UNSUPPORTED_SCRIPT",
+      "runtime_error": "UNSUPPORTED_SCRIPT",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-010",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": "UNSUPPORTED_SCRIPT",
+      "runtime_error": "UNSUPPORTED_SCRIPT",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-011",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": "INVALID_INTEGER",
+      "runtime_error": "INVALID_INTEGER",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-012",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-013",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-014",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-015",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": "PERIOD_SOURCE_REQUIRED",
+      "runtime_error": "PERIOD_SOURCE_REQUIRED",
+      "structural_input_errors": [
+        "[] is too short"
+      ],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-016",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": "NONCONTIGUOUS_SPANS",
+      "runtime_error": "NONCONTIGUOUS_SPANS",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-017",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-018",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-019",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-020",
+      "dispatcher": "numerology_full",
+      "input_schema": "NumerologyFullInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-021",
+      "dispatcher": "name_compare",
+      "input_schema": "NameCompareInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-022",
+      "dispatcher": "name_compare",
+      "input_schema": "NameCompareInput",
+      "expected_error": "DUPLICATE_VARIANT",
+      "runtime_error": "DUPLICATE_VARIANT",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-023",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-024",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-025",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-026",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-027",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-028",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-029",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-030",
+      "dispatcher": "psychomatrix",
+      "input_schema": "PsychomatrixInput",
+      "expected_error": "NEGATIVE_WORKING_NUMBER",
+      "runtime_error": "NEGATIVE_WORKING_NUMBER",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-031",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-032",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-033",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-034",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-035",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-036",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-037",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-038",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-039",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-040",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-041",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-042",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-043",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-044",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-045",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-046",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-047",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-048",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-049",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-050",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-051",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-052",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-053",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-054",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-055",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": "SUFFIX_ONLY",
+      "runtime_error": "SUFFIX_ONLY",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-056",
+      "dispatcher": "bat_cuc",
+      "input_schema": "BatCucInput",
+      "expected_error": "INVALID_PHONE",
+      "runtime_error": "INVALID_PHONE",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-057",
+      "dispatcher": "number_compare",
+      "input_schema": "NumberCompareInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-063",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-064",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-065",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": "INVALID_HISTORY_DATE",
+      "runtime_error": "INVALID_HISTORY_DATE",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-066",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": "INVALID_HISTORY_DATE",
+      "runtime_error": "INVALID_HISTORY_DATE",
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-067",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": "UNSUPPORTED_POLICY",
+      "runtime_error": "UNSUPPORTED_POLICY",
+      "structural_input_errors": [
+        "'unknown' is not one of ['identity', 'learning', 'work', 'resources', 'relationships', 'family', 'home', 'community', 'body', 'daily_rhythm', 'meaning', 'creativity', 'mobility', 'caregiving', 'later_life', 'legacy', 'life_changes', 'digital_life']"
+      ],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-068",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-069",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-070",
+      "dispatcher": "lifetime",
+      "input_schema": "LifetimeInput",
+      "expected_error": "INVALID_DATE",
+      "runtime_error": "INVALID_DATE",
+      "structural_input_errors": [
+        "'1963' does not match '^\\\\d{4}-\\\\d{2}-\\\\d{2}$'"
+      ],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-071",
+      "dispatcher": "all_in_one",
+      "input_schema": "AllInOneInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-072",
+      "dispatcher": "all_in_one",
+      "input_schema": "AllInOneInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-073",
+      "dispatcher": "all_in_one",
+      "input_schema": "AllInOneInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-074",
+      "dispatcher": "all_in_one",
+      "input_schema": "AllInOneInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    },
+    {
+      "case_id": "V3-DEMO-075",
+      "dispatcher": "all_in_one",
+      "input_schema": "AllInOneInput",
+      "expected_error": "METHOD_NOT_RELEASED",
+      "runtime_error": "METHOD_NOT_RELEASED",
+      "structural_input_errors": [
+        "'face_personality' is not one of ['numerology', 'raw_matrix', 'working_matrix', 'bat_cuc', 'lifetime']"
+      ],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-076",
+      "dispatcher": "all_in_one",
+      "input_schema": "AllInOneInput",
+      "expected_error": "INVALID_SELECTION",
+      "runtime_error": "INVALID_SELECTION",
+      "structural_input_errors": [
+        "['numerology', 'numerology'] has non-unique elements"
+      ],
+      "reference_output_errors": [],
+      "status": "EXPECTED_DOMAIN_OR_STRUCTURAL_REJECTION"
+    },
+    {
+      "case_id": "V3-DEMO-077",
+      "dispatcher": "all_in_one",
+      "input_schema": "AllInOneInput",
+      "expected_error": null,
+      "runtime_error": null,
+      "structural_input_errors": [],
+      "reference_output_errors": [],
+      "status": "PASS_REFERENCE_CONTRACT"
+    }
+  ],
+  "replay_source": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS/docs/upgrade/2026-10-29/evidence/backend-tests/v3_demo_results_current.json",
+  "replay_sha256": "7558ffd5ad788cbc5eb169ff5b7a46b91168ad49e460d973ca2fec1e50f337cc",
+  "codegen_ready": false,
+  "production_ready": false,
+  "limits": [
+    "Syntax and fixture conformance are not a full OpenAPI implementation or authorization proof.",
+    "Expected runtime rejection can express domain rules beyond structural JSON Schema.",
+    "No hidden test fixtures or independent scientific/source validation is implied."
+  ]
+}

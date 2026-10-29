@@ -1,0 +1,21 @@
+﻿decision_id,topic,status,proposed_action,approver,evidence_required,production_permission
+Q1,Định vị tự hiểu và thiết kế đời sống,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q2,9 cấp/12 lớp/4 phần/12 trường/K01–20,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q3,Method độc lập theo nguồn và phiên bản,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q4,Entitlement khác quyền và đủ dữ liệu,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q5,Dừng điểm giả và cho null,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q6,Numbers là tham chiếu không đo số phận,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q7,Báo cáo cấu trúc không filler,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q8,Dòng sản phẩm mở theo gates,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q9,"Privacy, auth, delete từ đầu",PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q10,Tám bộ nền từ source/runtime khóa,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q11,Quarantine experimental_legacy,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q12,Passport/rights/tests/limits/approver,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q13,Free Essentials và quota minh bạch,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q14,Pháp nhân/merchant/controller,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q15,IdP/PG/payment/AI provider selection,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q16,Autonomy A0–A3 và kill switches,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q17,Academy/practitioner scope,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q18,Organization privacy boundary,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q19,Country pack và license/franchise,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False
+Q20,Budget/team/roadmap có điều kiện,PENDING_FOUNDER,APPROVE_WITH_CONDITIONS,Founder + chức năng liên quan,"Biên bản phạm vi, điều kiện, ngày, người duyệt",False

@@ -1,0 +1,19 @@
+{
+  "name": "life-code-reference-tests",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Local reference only. No deployment, authentication provider, database server, billing or production integration.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:reference": "node --test tests/reference.test.mjs",
+    "test:demo": "node --test tests/demo-suite.test.mjs",
+    "test:contracts": "node --test tests/backend-contract.test.mjs",
+    "test:tap": "node --test --test-reporter=tap tests/*.test.mjs",
+    "openapi:resolve": "python3 tools/resolve_openapi.py",
+    "openapi:check": "python3 tools/resolve_openapi.py --check"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

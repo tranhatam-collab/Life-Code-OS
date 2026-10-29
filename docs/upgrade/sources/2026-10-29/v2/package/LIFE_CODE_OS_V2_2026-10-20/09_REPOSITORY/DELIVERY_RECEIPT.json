@@ -1,0 +1,29 @@
+{
+  "project": "tranhatam-collab/Life-Code-OS",
+  "as_of": "2026-10-20",
+  "baseline_main_sha": "99b402764437f81859fa0cd3a3af860125f7bd52",
+  "audit_plan_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+  "requested_branch": "upgrade/lifecode-v2-backend-lab-2026-10-20",
+  "target_prefix": "docs/upgrades/2026-10-20-v2",
+  "read_status": "REPOSITORY_READ_SUCCEEDED",
+  "write_attempts": [
+    {
+      "action": "create_tree",
+      "status": 403,
+      "message": "Resource not accessible by integration"
+    },
+    {
+      "action": "create_branch",
+      "status": 403,
+      "message": "Resource not accessible by integration"
+    }
+  ],
+  "remote_write_status": "BLOCKED_BY_CONNECTOR_PERMISSION",
+  "remote_files_written": 0,
+  "new_commit": null,
+  "new_branch_created": false,
+  "pull_request": null,
+  "main_modified": false,
+  "production_deployed": false,
+  "delivery_alternative": "Complete ZIP, additive binary patch and verified dry-run-first importer. Full import remains pending with an authorized repository writer."
+}

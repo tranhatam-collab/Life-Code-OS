@@ -1,0 +1,328 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/MethodResult.json",
+  "title": "MethodResult",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "result_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "run_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "subject_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "profile_version_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "method_id": {
+      "type": "string"
+    },
+    "method_release_id": {
+      "type": "string"
+    },
+    "configuration_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "calculation": {
+      "type": "object",
+      "description": "Method-specific schema validated separately; not arbitrary personal claims."
+    },
+    "output_kind": {
+      "enum": [
+        "deterministic_calculation",
+        "observation_summary",
+        "symbolic_map",
+        "approved_model"
+      ]
+    },
+    "metric": {
+      "anyOf": [
+        {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "$id": "https://schemas.lifecode.iai.one/proposed/Metric.json",
+          "title": "Metric",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": "string"
+            },
+            "meaning": {
+              "type": "string",
+              "minLength": 1
+            },
+            "method_id": {
+              "type": "string"
+            },
+            "window": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "higher_means": {
+              "enum": [
+                "more",
+                "less",
+                "not_ordered"
+              ]
+            },
+            "missing_reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unit",
+            "meaning",
+            "method_id",
+            "higher_means"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "confidence": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "If present needs kind, meaning and evidence; forbidden by default for symbolic methods."
+    },
+    "probability": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://schemas.lifecode.iai.one/proposed/Claim.json",
+        "title": "Claim",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "subject_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "type": {
+            "enum": [
+              "fact",
+              "self_report",
+              "observation",
+              "symbolic_interpretation",
+              "derived_metric",
+              "model_probability"
+            ]
+          },
+          "text_vi": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 12000
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "result_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "observation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scope": {
+            "type": "string"
+          },
+          "probability": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "model_release_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "review_state": {
+            "enum": [
+              "draft",
+              "needs_review",
+              "approved",
+              "rejected",
+              "withdrawn"
+            ]
+          }
+        },
+        "required": [
+          "claim_id",
+          "subject_id",
+          "type",
+          "text_vi",
+          "source_ids",
+          "scope",
+          "probability",
+          "model_release_id",
+          "limitations",
+          "review_state"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "model_probability"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "probability": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "model_release_id": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "probability",
+                "model_release_id"
+              ]
+            },
+            "else": {
+              "properties": {
+                "probability": {
+                  "type": "null"
+                },
+                "model_release_id": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "missing_inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "state": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "failed",
+        "withdrawn"
+      ]
+    }
+  },
+  "required": [
+    "result_id",
+    "run_id",
+    "subject_id",
+    "profile_version_id",
+    "method_id",
+    "method_release_id",
+    "configuration_digest",
+    "calculation",
+    "output_kind",
+    "metric",
+    "confidence",
+    "probability",
+    "claims",
+    "missing_inputs",
+    "unresolved_rules",
+    "limitations",
+    "created_at",
+    "state"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "output_kind": {
+            "enum": [
+              "deterministic_calculation",
+              "symbolic_map",
+              "observation_summary"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "probability": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}

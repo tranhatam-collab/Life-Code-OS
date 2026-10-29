@@ -1,0 +1,10 @@
+﻿surface,address_or_discovery_rule,status,limitation,owner,action_status
+public_web,https://lifecode.iai.one/,CONTENT_RETRIEVED,"Không chứng minh byte hash, headers hay deployed SHA.",Platform + Security,NOT_STARTED
+public_app,https://lifecode.iai.one/bat-dau,CONTENT_RETRIEVED,Đã xem nội dung; không gửi dữ liệu.,Platform + Security,NOT_STARTED
+engine_lab,https://lifecode.iai.one/engine-lab,CONTENT_RETRIEVED,Không gọi POST trong nghiên cứu.,Platform + Security,NOT_STARTED
+worker_origin,https://life-code-api.tranhatam.workers.dev,RUNTIME_NOT_VERIFIED_THIS_PASS,Cần kiểm tra nguồn và route trực tiếp sau khi có scope.,Platform + Security,NOT_STARTED
+worker_health,https://life-code-api.tranhatam.workers.dev/health,RUNTIME_NOT_VERIFIED_THIS_PASS,Lỗi công cụ/mạng không chứng minh dịch vụ ngừng hoạt động.,Platform + Security,NOT_STARTED
+pages_preview,Theo deployment inventory được Platform xác nhận,NOT_CHECKED,Không tự phát sinh URL preview; phải ngăn đi vòng policy.,Platform + Security,NOT_STARTED
+r2_objects,Theo binding inventory riêng tư,NOT_CHECKED,Không ghi URL ký trước/bucket nhạy cảm vào log public.,Platform + Security,NOT_STARTED
+background_jobs,Theo queue/worker inventory,NOT_CHECKED,Dừng intake chưa đủ nếu job cũ vẫn xử lý dữ liệu.,Platform + Security,NOT_STARTED
+cached_reports,Theo CDN/cache inventory,NOT_CHECKED,"Kiểm tra cache riêng tư, tệp đã cấp và trạng thái thu hồi.",Platform + Security,NOT_STARTED

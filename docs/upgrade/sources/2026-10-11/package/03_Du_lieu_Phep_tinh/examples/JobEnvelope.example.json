@@ -1,0 +1,17 @@
+{
+  "job_id": "00000000-0000-0000-0000-000000000007",
+  "tenant_id": "00000000-0000-0000-0000-000000000003",
+  "subject_id": "00000000-0000-0000-0000-000000000002",
+  "principal_account_id": "00000000-0000-0000-0000-000000000008",
+  "purpose_id": "service_report",
+  "policy_version": "policy-draft1",
+  "operation": "export_report",
+  "resource_id": "00000000-0000-0000-0000-000000000006",
+  "idempotency_key": "synthetic-idempotency-key-0001",
+  "request_digest": "1111111111111111111111111111111111111111111111111111111111111111",
+  "created_at": "2026-10-11T00:00:00Z",
+  "authorization_recheck_required": true,
+  "attempt": 0,
+  "payload_ref": "authorized-db-reference",
+  "raw_personal_data_in_queue": false
+}

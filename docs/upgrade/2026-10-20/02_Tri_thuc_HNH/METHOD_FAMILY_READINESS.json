@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0-proposed",
+  "as_of": "2026-10-20",
+  "status": "PROPOSED_NOT_APPROVED",
+  "interpretation": "Coverage of K01-K20 is taxonomy coverage only. No family is product-permitted by this file.",
+  "counts": {
+    "families": 20,
+    "families_with_method_passports": 8,
+    "families_without_method_passports": 12,
+    "method_passports": 15,
+    "product_permitted_methods": 0
+  },
+  "families": [
+    {
+      "family_id": "K01",
+      "name_vi": "Lịch pháp, thiên văn và múi giờ",
+      "passport_method_ids": ["M01", "M09"],
+      "readiness_state": "method_drafts_only",
+      "source_state": "foundational_source_only",
+      "rights_state": "pending",
+      "blockers": ["method_specific_sources_pending", "configuration_and_golden_corpus_not_approved", "approver_missing"]
+    },
+    {
+      "family_id": "K02",
+      "name_vi": "Bát tự, Tứ trụ, Tử Bình",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K03",
+      "name_vi": "Tử Vi Đẩu Số và mệnh bàn",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K04",
+      "name_vi": "Kinh Dịch, Mai Hoa, Lục Hào",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K05",
+      "name_vi": "Kỳ Môn, Lục Nhâm, Thái Ất",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K06",
+      "name_vi": "Phong thủy, Vastu, không gian",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K07",
+      "name_vi": "Jyotish, Nadi, truyền thống Ấn Độ",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K08",
+      "name_vi": "Chiêm tinh phương Tây và trung đại",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K09",
+      "name_vi": "Lịch và chiêm nghiệm khu vực",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K10",
+      "name_vi": "Thần số học, Psychomatrix, chữ–số",
+      "passport_method_ids": ["M03", "M04", "M05", "M08"],
+      "readiness_state": "method_drafts_only",
+      "source_state": "method_sources_missing",
+      "rights_state": "unknown_or_review_required",
+      "blockers": ["all_method_source_ids_empty", "variant_and_reduction_policies_not_locked", "approver_missing"]
+    },
+    {
+      "family_id": "K11",
+      "name_vi": "Bát Cực Linh Số, Mã đuôi80, dãy số",
+      "passport_method_ids": ["M06", "M07"],
+      "readiness_state": "calculation_reference_only",
+      "source_state": "user_table_identifier_mismatch_and_method_sources_missing",
+      "rights_state": "unknown",
+      "blockers": ["USER_TABLE80_vs_USER_TABLE80_CONVERSATION_not_reconciled", "table_rights_not_permitted", "pair_table_source_missing", "approver_missing"]
+    },
+    {
+      "family_id": "K12",
+      "name_vi": "Danh học, ngôn ngữ và ký hiệu",
+      "passport_method_ids": ["M02"],
+      "readiness_state": "normalization_reference_only",
+      "source_state": "foundational_source_only",
+      "rights_state": "pending",
+      "blockers": ["unicode_source_does_not_authorize_symbolic_name_claims", "transliteration_scope_not_approved", "approver_missing"]
+    },
+    {
+      "family_id": "K13",
+      "name_vi": "Bàn tay, khuôn mặt, bàn chân, hình thái",
+      "passport_method_ids": ["M15"],
+      "readiness_state": "research_only",
+      "source_state": "method_sources_missing",
+      "rights_state": "review_required",
+      "blockers": ["image_consent_and_purpose_contract_not_released", "method_source_missing", "special_review_missing"]
+    },
+    {
+      "family_id": "K14",
+      "name_vi": "Tarot, Rune, Ifá, giấc mơ",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_method_source_or_rights_receipt"]
+    },
+    {
+      "family_id": "K15",
+      "name_vi": "Human Design, Gene Keys và hệ tổng hợp",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "trademark_and_commercial_rights_not_reviewed"]
+    },
+    {
+      "family_id": "K16",
+      "name_vi": "Triết học, tôn giáo và nội tâm",
+      "passport_method_ids": ["M11"],
+      "readiness_state": "content_review_required",
+      "source_state": "method_sources_missing",
+      "rights_state": "pending",
+      "blockers": ["content_and_source_review_missing", "approver_missing"]
+    },
+    {
+      "family_id": "K17",
+      "name_vi": "Tâm lý học và đo lường",
+      "passport_method_ids": ["M12"],
+      "readiness_state": "instrument_review_required",
+      "source_state": "source_leads_only",
+      "rights_state": "review_required",
+      "blockers": ["instrument_version_and_locale_not_selected", "translation_rights_and_validation_missing", "approver_missing"]
+    },
+    {
+      "family_id": "K18",
+      "name_vi": "Hành vi, nghề nghiệp, kinh tế, xã hội",
+      "passport_method_ids": ["M10", "M13", "M14"],
+      "readiness_state": "mixed_drafts_only",
+      "source_state": "method_sources_missing",
+      "rights_state": "pending",
+      "blockers": ["goal_denominator_contract_not_released", "financial_decimal_contract_missing", "multi_subject_grant_review_missing", "approver_missing"]
+    },
+    {
+      "family_id": "K19",
+      "name_vi": "Sinh hoạt, môi trường, sức khỏe nền",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "health_data_classification_and_specialist_review_missing"]
+    },
+    {
+      "family_id": "K20",
+      "name_vi": "Toán học, dữ liệu, AI và kỹ thuật",
+      "passport_method_ids": [],
+      "readiness_state": "taxonomy_only",
+      "source_state": "not_registered_for_method_release",
+      "rights_state": "unknown",
+      "blockers": ["no_method_passport", "no_approved_model_release_or_evaluation_receipt"]
+    }
+  ]
+}

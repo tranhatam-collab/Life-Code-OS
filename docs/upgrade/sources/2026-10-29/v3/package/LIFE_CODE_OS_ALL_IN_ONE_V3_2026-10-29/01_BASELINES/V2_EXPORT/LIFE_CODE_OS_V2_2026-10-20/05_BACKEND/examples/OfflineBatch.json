@@ -1,0 +1,14 @@
+{
+  "device_batch_id": "00000000-0000-4000-8000-000000000001",
+  "operations": [
+    {
+      "client_event_id": "00000000-0000-4000-8000-000000000002",
+      "resource_type": "action_checkin",
+      "expected_version": null,
+      "occurred_at": "2026-10-20T00:00:00Z",
+      "payload": {
+        "done": true
+      }
+    }
+  ]
+}

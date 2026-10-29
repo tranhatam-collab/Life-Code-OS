@@ -1,0 +1,727 @@
+{
+  "table_version": "user_supplied_80_draft1",
+  "source": "Bảng 80 mục do người dùng cung cấp trong cuộc trao đổi; nhãn giữ nguyên, chủ đề là biên tập đề xuất.",
+  "zero_policy_default": "unmapped",
+  "records": [
+    {
+      "code": 1,
+      "source_label": "Cát",
+      "editorial_theme": "Mở rộng chí hướng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 2,
+      "source_label": "Bình",
+      "editorial_theme": "Thăng trầm và giữ thành quả",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 3,
+      "source_label": "Đại cát",
+      "editorial_theme": "Tiến bộ từng ngày",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 4,
+      "source_label": "Hung",
+      "editorial_theme": "Con đường nhiều trở ngại",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 5,
+      "source_label": "Đại cát",
+      "editorial_theme": "Kết quả và danh tiếng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 6,
+      "source_label": "Cát",
+      "editorial_theme": "Điều kiện thuận lợi",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 7,
+      "source_label": "Cát",
+      "editorial_theme": "Hòa khí và hợp tác",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 8,
+      "source_label": "Cát",
+      "editorial_theme": "Qua khó khăn",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 9,
+      "source_label": "Hung",
+      "editorial_theme": "Một mình gắng sức",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 10,
+      "source_label": "Hung",
+      "editorial_theme": "Công sức và đích đến",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 11,
+      "source_label": "Cát",
+      "editorial_theme": "Đi vững từng bước",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 12,
+      "source_label": "Hung",
+      "editorial_theme": "Nguồn lực chưa đủ",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 13,
+      "source_label": "Cát",
+      "editorial_theme": "Cơ hội được ghi nhận",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 14,
+      "source_label": "Bình",
+      "editorial_theme": "Được–mất xen kẽ",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 15,
+      "source_label": "Cát",
+      "editorial_theme": "Hoàn tất việc lớn",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 16,
+      "source_label": "Đại cát",
+      "editorial_theme": "Thành tựu và trách nhiệm",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 17,
+      "source_label": "Cát",
+      "editorial_theme": "Hỗ trợ phù hợp",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 18,
+      "source_label": "Đại cát",
+      "editorial_theme": "Duy trì thuận lợi",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 19,
+      "source_label": "Hung",
+      "editorial_theme": "Trong–ngoài bất hòa",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 20,
+      "source_label": "Đại hung",
+      "editorial_theme": "Giảm phạm vi lo nghĩ",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 21,
+      "source_label": "Cát",
+      "editorial_theme": "Chuyên tâm và hiểu biết",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 22,
+      "source_label": "Hung",
+      "editorial_theme": "Năng lực và môi trường",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 23,
+      "source_label": "Đại cát",
+      "editorial_theme": "Mở rộng ảnh hưởng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 24,
+      "source_label": "Cát",
+      "editorial_theme": "Tự lập có trách nhiệm",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 25,
+      "source_label": "Cát",
+      "editorial_theme": "Điều kiện và nhân cách",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 26,
+      "source_label": "Hung",
+      "editorial_theme": "Biến động và chuẩn bị",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 27,
+      "source_label": "Cát",
+      "editorial_theme": "Giữ thành quả",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 28,
+      "source_label": "Đại cát",
+      "editorial_theme": "Sử dụng năng lực",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 29,
+      "source_label": "Hung",
+      "editorial_theme": "Được–mất cùng tồn tại",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 30,
+      "source_label": "Đại cát",
+      "editorial_theme": "Kết quả và sự ghi nhận",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 31,
+      "source_label": "Đại cát",
+      "editorial_theme": "Chuẩn bị điều kiện",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 32,
+      "source_label": "Cát",
+      "editorial_theme": "Tư duy dài hạn",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 33,
+      "source_label": "Hung",
+      "editorial_theme": "Trở ngại lặp lại",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 34,
+      "source_label": "Bình",
+      "editorial_theme": "Tiến–lùi thận trọng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": "Câu chữ nguồn còn bất định; cần duyệt."
+    },
+    {
+      "code": 35,
+      "source_label": "Hung",
+      "editorial_theme": "Xây điểm tựa",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 36,
+      "source_label": "Cát",
+      "editorial_theme": "Giảm điều bất lợi",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 37,
+      "source_label": "Bình",
+      "editorial_theme": "Danh và lợi chưa tương xứng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 38,
+      "source_label": "Đại cát",
+      "editorial_theme": "Không gian phát triển",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 39,
+      "source_label": "Bình",
+      "editorial_theme": "Giữ cân bằng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 40,
+      "source_label": "Đại cát",
+      "editorial_theme": "Triển vọng có điều kiện",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 41,
+      "source_label": "Hung",
+      "editorial_theme": "Thiếu chuyên tâm",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 42,
+      "source_label": "Cát",
+      "editorial_theme": "Kiên nhẫn có điều chỉnh",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 43,
+      "source_label": "Cát",
+      "editorial_theme": "Chuẩn bị bắt đầu thể hiện",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 44,
+      "source_label": "Hung",
+      "editorial_theme": "Kỳ vọng và nóng vội",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 45,
+      "source_label": "Hung",
+      "editorial_theme": "Xem lại lộ trình",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 46,
+      "source_label": "Đại cát",
+      "editorial_theme": "Hợp tác để hoàn thành",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 47,
+      "source_label": "Đại cát",
+      "editorial_theme": "Kết quả, uy tín và ổn định",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 48,
+      "source_label": "Bình",
+      "editorial_theme": "Phụ thuộc bối cảnh",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 49,
+      "source_label": "Bình",
+      "editorial_theme": "Giữ phần đang hoạt động",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 50,
+      "source_label": "Bình",
+      "editorial_theme": "Theo dõi dao động",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 51,
+      "source_label": "Cát",
+      "editorial_theme": "Sau trở ngại",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 52,
+      "source_label": "Hung",
+      "editorial_theme": "Khả năng duy trì",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 53,
+      "source_label": "Bình",
+      "editorial_theme": "Hiệu quả công sức",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 54,
+      "source_label": "Hung",
+      "editorial_theme": "Bề ngoài và thông tin chưa rõ",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 55,
+      "source_label": "Đại hung",
+      "editorial_theme": "Mục tiêu và cách làm",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": "Câu chữ nguồn còn bất định; cần duyệt."
+    },
+    {
+      "code": 56,
+      "source_label": "Cát",
+      "editorial_theme": "Chủ động đúng hướng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 57,
+      "source_label": "Bình",
+      "editorial_theme": "Tiến trình cải thiện",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 58,
+      "source_label": "Hung",
+      "editorial_theme": "Giới hạn thời gian quyết định",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 59,
+      "source_label": "Bình",
+      "editorial_theme": "Làm rõ phương hướng",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 60,
+      "source_label": "Hung",
+      "editorial_theme": "Giữ phần chưa biết",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 61,
+      "source_label": "Hung",
+      "editorial_theme": "Từ lo nghĩ đến hành động",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 62,
+      "source_label": "Cát",
+      "editorial_theme": "Đúng hướng trước tăng tốc",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 63,
+      "source_label": "Hung",
+      "editorial_theme": "Nhiều hoạt động ít kết quả",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 64,
+      "source_label": "Cát",
+      "editorial_theme": "Chuẩn bị đón cơ hội",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 65,
+      "source_label": "Bình",
+      "editorial_theme": "Xây sự tin cậy",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 66,
+      "source_label": "Đại cát",
+      "editorial_theme": "Quản lý thuận lợi",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 67,
+      "source_label": "Cát",
+      "editorial_theme": "Nhận ra thời điểm",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 68,
+      "source_label": "Hung",
+      "editorial_theme": "Cân nhắc và trì hoãn",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 69,
+      "source_label": "Hung",
+      "editorial_theme": "Ổn định điều bấp bênh",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 70,
+      "source_label": "Bình",
+      "editorial_theme": "Giữ chủ động",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 71,
+      "source_label": "Hung",
+      "editorial_theme": "Giữ được thành quả",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 72,
+      "source_label": "Cát",
+      "editorial_theme": "An ổn có chủ đích",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 73,
+      "source_label": "Bình",
+      "editorial_theme": "Viết phương án",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 74,
+      "source_label": "Bình",
+      "editorial_theme": "Cân nhắc tiến–lùi",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 75,
+      "source_label": "Đại hung",
+      "editorial_theme": "Giảm phân tán",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 76,
+      "source_label": "Cát",
+      "editorial_theme": "Học qua tiến trình",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 77,
+      "source_label": "Bình",
+      "editorial_theme": "Hình ảnh và thực chất",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 78,
+      "source_label": "Đại cát",
+      "editorial_theme": "Hy vọng thành lựa chọn",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 79,
+      "source_label": "Hung",
+      "editorial_theme": "Nguyên nhân hao hụt",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    },
+    {
+      "code": 80,
+      "source_label": "Đại cát",
+      "editorial_theme": "Hoàn tất và bắt đầu lại",
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "source_status": "USER_SUPPLIED_NOT_HISTORICAL_AUTHORITY_VERIFIED",
+      "editorial_status": "PROPOSED",
+      "note": ""
+    }
+  ]
+}

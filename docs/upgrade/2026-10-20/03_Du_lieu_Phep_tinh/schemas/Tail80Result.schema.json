@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/Tail80Result.json",
+  "title": "Tail80Result",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "method_id": {
+      "const": "lc_tail4_mod80"
+    },
+    "formula_id": {
+      "const": "FC-TAIL80-001"
+    },
+    "formula_version": {
+      "const": "1.0-proposed"
+    },
+    "suffix": {
+      "type": "string",
+      "pattern": "^[0-9]{4}$"
+    },
+    "quotient": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 124
+    },
+    "remainder": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 79
+    },
+    "lookup_code": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 80
+    },
+    "zero_policy": {
+      "enum": [
+        "unmapped",
+        "as80"
+      ]
+    },
+    "table_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "rights_state": {
+      "enum": [
+        "unknown",
+        "pending",
+        "permitted",
+        "restricted",
+        "expired"
+      ]
+    },
+    "source_label": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "is_personalized": {
+      "const": false
+    },
+    "probability": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "method_id",
+    "formula_id",
+    "formula_version",
+    "suffix",
+    "quotient",
+    "remainder",
+    "lookup_code",
+    "zero_policy",
+    "table_version",
+    "source_ref",
+    "rights_state",
+    "source_label",
+    "is_personalized",
+    "probability"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "remainder": {"const": 0},
+          "zero_policy": {"const": "unmapped"}
+        },
+        "required": ["remainder", "zero_policy"]
+      },
+      "then": {
+        "properties": {
+          "lookup_code": {"type": "null"},
+          "source_label": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "remainder": {"const": 0},
+          "zero_policy": {"const": "as80"}
+        },
+        "required": ["remainder", "zero_policy"]
+      },
+      "then": {
+        "properties": {
+          "lookup_code": {"const": 80}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "remainder": {"minimum": 1, "maximum": 79}
+        },
+        "required": ["remainder"]
+      },
+      "then": {
+        "properties": {
+          "lookup_code": {"type": "integer", "minimum": 1, "maximum": 79},
+          "source_label": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ],
+  "$comment": "Backend must additionally enforce int(suffix)=80*quotient+remainder and lookup_code=remainder when remainder is nonzero; JSON Schema cannot express modulo arithmetic."
+}

@@ -1,0 +1,305 @@
+{
+  "status": "PROPOSED_TERMINOLOGY",
+  "items": [
+    {
+      "en": "Account",
+      "vi": "Tài khoản",
+      "definition_vi": "Danh tính đăng nhập và quyền dịch vụ; không đồng nhất với người trong hồ sơ."
+    },
+    {
+      "en": "Subject",
+      "vi": "Chủ thể hồ sơ",
+      "definition_vi": "Người mà thông tin mô tả; có quyền riêng về dữ liệu."
+    },
+    {
+      "en": "Tenant",
+      "vi": "Không gian dữ liệu",
+      "definition_vi": "Ranh giới tổ chức hoặc cá nhân dùng để cách ly dữ liệu."
+    },
+    {
+      "en": "Access grant",
+      "vi": "Quyền được cấp",
+      "definition_vi": "Quyền theo chủ thể, loại dữ liệu, thao tác, mục đích và thời hạn."
+    },
+    {
+      "en": "Consent",
+      "vi": "Sự đồng ý",
+      "definition_vi": "Một hình thức cho phép xử lý; không đồng nghĩa mọi căn cứ xử lý pháp lý."
+    },
+    {
+      "en": "Processing purpose",
+      "vi": "Mục đích xử lý",
+      "definition_vi": "Lý do cụ thể sử dụng dữ liệu; quyền dịch vụ không tự cho phép nghiên cứu hoặc huấn luyện."
+    },
+    {
+      "en": "Entitlement",
+      "vi": "Quyền sử dụng sản phẩm",
+      "definition_vi": "Quyền theo gói hoặc giao dịch; không cho phép đọc hồ sơ người khác."
+    },
+    {
+      "en": "Eligibility",
+      "vi": "Điều kiện thực hiện",
+      "definition_vi": "Quyền, dữ liệu, phương pháp và thị trường đều thỏa điều kiện."
+    },
+    {
+      "en": "Profile version",
+      "vi": "Phiên bản hồ sơ",
+      "definition_vi": "Bản chốt đầu vào có lịch sử; không ghi đè âm thầm."
+    },
+    {
+      "en": "Data hypothesis",
+      "vi": "Phương án dữ liệu",
+      "definition_vi": "Một giả thuyết về đầu vào như hai năm sinh; không tự chọn hoặc lấy trung bình."
+    },
+    {
+      "en": "Source of truth",
+      "vi": "Dữ liệu căn cứ",
+      "definition_vi": "Nguồn đã được chọn cho phạm vi cụ thể; phải giữ tình trạng xác nhận."
+    },
+    {
+      "en": "Provenance",
+      "vi": "Nguồn gốc và quá trình tạo",
+      "definition_vi": "Đường đi từ nguồn/dữ liệu đến phép tính và nhận định."
+    },
+    {
+      "en": "Lineage",
+      "vi": "Quan hệ phụ thuộc dữ liệu",
+      "definition_vi": "Biết thay đổi một dữ liệu ảnh hưởng những kết quả nào."
+    },
+    {
+      "en": "Method",
+      "vi": "Phương pháp",
+      "definition_vi": "Một hệ quy tắc có nguồn, cấu hình, phiên bản và giới hạn."
+    },
+    {
+      "en": "Method passport",
+      "vi": "Hộ chiếu phương pháp",
+      "definition_vi": "Hồ sơ nguồn, quyền sử dụng, đầu vào, quy tắc, kiểm thử và người duyệt."
+    },
+    {
+      "en": "Method release",
+      "vi": "Bản phát hành phương pháp",
+      "definition_vi": "Phiên bản bất biến đã được cho phép cho phạm vi cụ thể."
+    },
+    {
+      "en": "Deterministic",
+      "vi": "Tính xác định",
+      "definition_vi": "Cùng đầu vào và cấu hình cho cùng kết quả; không có nghĩa tiên đoán đúng con người."
+    },
+    {
+      "en": "Symbolic interpretation",
+      "vi": "Diễn giải biểu tượng",
+      "definition_vi": "Ý nghĩa trong quy ước/truyền thống; không tự là dữ kiện."
+    },
+    {
+      "en": "Self-report",
+      "vi": "Thông tin tự khai",
+      "definition_vi": "Lời người dùng cung cấp; giữ nguồn và thời điểm."
+    },
+    {
+      "en": "Observation",
+      "vi": "Quan sát",
+      "definition_vi": "Ghi nhận có điều kiện và phương tiện; không suy tâm lý từ ngoại hình."
+    },
+    {
+      "en": "Derived metric",
+      "vi": "Chỉ số tính từ dữ liệu",
+      "definition_vi": "Đại lượng có công thức, đơn vị, chiều và cửa sổ quan sát."
+    },
+    {
+      "en": "Model probability",
+      "vi": "Xác suất từ mô hình",
+      "definition_vi": "Cần sự kiện mục tiêu, mô hình, phạm vi, đánh giá và điều kiện áp dụng."
+    },
+    {
+      "en": "Confidence",
+      "vi": "Mức chắc chắn theo loại",
+      "definition_vi": "Phải nêu chắc về phép đọc, dữ liệu hay mô hình; không dùng chung tùy ý."
+    },
+    {
+      "en": "Coverage",
+      "vi": "Độ bao phủ",
+      "definition_vi": "Phần dữ liệu/quy tắc đã có trên mẫu số do hệ định nghĩa."
+    },
+    {
+      "en": "Claim",
+      "vi": "Nhận định",
+      "definition_vi": "Mệnh đề có nguồn, loại nội dung, quyền và trạng thái rà soát."
+    },
+    {
+      "en": "Layer",
+      "vi": "Lớp phân tích",
+      "definition_vi": "Một phạm vi của con người; không phải một nghề hoặc cấp bán hàng."
+    },
+    {
+      "en": "Field",
+      "vi": "Trường môi trường",
+      "definition_vi": "Một phần điều kiện sống như thực phẩm, âm thanh hoặc công việc."
+    },
+    {
+      "en": "Level",
+      "vi": "Cấp sản phẩm",
+      "definition_vi": "Phạm vi dịch vụ; trả phí nhiều hơn không làm dữ kiện đúng hơn."
+    },
+    {
+      "en": "Resonance",
+      "vi": "Đồng nhịp sống",
+      "definition_vi": "Khung quan sát sự phù hợp người–môi trường; không mặc định đại lượng vật lý."
+    },
+    {
+      "en": "Mission",
+      "vi": "Hướng sứ mệnh được lựa chọn",
+      "definition_vi": "Giá trị và hướng phụng sự người dùng có thể chọn, thử và thay đổi."
+    },
+    {
+      "en": "Snapshot",
+      "vi": "Bản chốt",
+      "definition_vi": "Nội dung có phiên bản tại một thời điểm; quyền truy cập vẫn có thể thu hồi."
+    },
+    {
+      "en": "Report artifact",
+      "vi": "Tệp báo cáo",
+      "definition_vi": "PDF/Word/HTML được dựng từ cùng nội dung chuẩn."
+    },
+    {
+      "en": "Idempotency",
+      "vi": "Chống lặp hiệu ứng",
+      "definition_vi": "Thực hiện lại cùng yêu cầu hợp lệ không tạo thêm hiệu ứng nghiệp vụ."
+    },
+    {
+      "en": "Outbox",
+      "vi": "Hộp sự kiện giao dịch",
+      "definition_vi": "Lưu việc cần gửi cùng transaction của dữ liệu nghiệp vụ."
+    },
+    {
+      "en": "Dead-letter queue",
+      "vi": "Hàng đợi lỗi",
+      "definition_vi": "Job vượt số lần thử được cách ly để xử lý có quyền."
+    },
+    {
+      "en": "RLS",
+      "vi": "Bảo mật theo hàng",
+      "definition_vi": "Cơ chế cơ sở dữ liệu; không thay toàn bộ phân quyền ứng dụng."
+    },
+    {
+      "en": "BOLA",
+      "vi": "Lỗi quyền cấp đối tượng",
+      "definition_vi": "Có ID hoặc đăng nhập chưa đủ quyền truy cập đối tượng."
+    },
+    {
+      "en": "BFF",
+      "vi": "Backend phục vụ giao diện",
+      "definition_vi": "Lớp máy chủ xử lý phiên và hợp đồng cho frontend."
+    },
+    {
+      "en": "IdP",
+      "vi": "Nhà cung cấp danh tính",
+      "definition_vi": "Dịch vụ xác thực cần được chọn và thẩm định theo phạm vi."
+    },
+    {
+      "en": "CSRF",
+      "vi": "Giả mạo yêu cầu liên trang",
+      "definition_vi": "Rủi ro cần kiểm soát khi browser dùng cookie xác thực."
+    },
+    {
+      "en": "CORS",
+      "vi": "Chính sách chia sẻ nguồn trình duyệt",
+      "definition_vi": "Không phải authentication và không chặn mọi client ngoài trình duyệt."
+    },
+    {
+      "en": "TOCTOU",
+      "vi": "Quyền thay đổi giữa kiểm tra và sử dụng",
+      "definition_vi": "Cần kiểm tra lại khi job bắt đầu, thay đổi và phát hành."
+    },
+    {
+      "en": "SSRF",
+      "vi": "Giả mạo yêu cầu từ máy chủ",
+      "definition_vi": "Chặn URL tùy ý trong upload, retrieval và render."
+    },
+    {
+      "en": "SLO",
+      "vi": "Mục tiêu mức dịch vụ",
+      "definition_vi": "Mục tiêu đo theo phạm vi và cửa sổ; chưa phải cam kết đã đạt."
+    },
+    {
+      "en": "SLA",
+      "vi": "Cam kết dịch vụ",
+      "definition_vi": "Thỏa thuận với khách hàng; chỉ công bố sau khi có nền vận hành."
+    },
+    {
+      "en": "RPO",
+      "vi": "Mức mất dữ liệu tối đa mục tiêu",
+      "definition_vi": "Khoảng dữ liệu chấp nhận mất trong sự cố theo thiết kế."
+    },
+    {
+      "en": "RTO",
+      "vi": "Thời gian khôi phục mục tiêu",
+      "definition_vi": "Thời gian mục tiêu đưa dịch vụ an toàn hoạt động trở lại."
+    },
+    {
+      "en": "Receipt",
+      "vi": "Biên nhận bằng chứng",
+      "definition_vi": "Mã phiên bản, thời gian, môi trường, kết quả và người xác nhận."
+    },
+    {
+      "en": "Gate",
+      "vi": "Cổng nghiệm thu",
+      "definition_vi": "Điều kiện phải có bằng chứng trước khi mở phạm vi dịch vụ."
+    },
+    {
+      "en": "Country pack",
+      "vi": "Bộ điều kiện thị trường",
+      "definition_vi": "Luật, ngôn ngữ, dữ liệu, giá, support và quyền theo thị trường."
+    },
+    {
+      "en": "License",
+      "vi": "Cấp phép",
+      "definition_vi": "Quyền dùng IP/phần mềm theo phạm vi; bản chất hợp đồng có thể vẫn thuộc luật nhượng quyền."
+    },
+    {
+      "en": "Franchise",
+      "vi": "Nhượng quyền",
+      "definition_vi": "Mô hình kinh doanh có điều kiện pháp lý từng nước; không chỉ là bản dịch website."
+    },
+    {
+      "en": "FDD",
+      "vi": "Hồ sơ công bố nhượng quyền",
+      "definition_vi": "Tài liệu theo yêu cầu pháp lý liên quan; không tự coi mẫu nội bộ là đã đáp ứng."
+    },
+    {
+      "en": "DPA",
+      "vi": "Thỏa thuận xử lý dữ liệu",
+      "definition_vi": "Điều khoản vai trò, mục đích, dữ liệu, bảo mật và trách nhiệm các bên."
+    },
+    {
+      "en": "DPIA",
+      "vi": "Đánh giá tác động bảo vệ dữ liệu",
+      "definition_vi": "Thực hiện theo điều kiện pháp lý và hoạt động cụ thể; không chỉ điền tên biểu mẫu."
+    },
+    {
+      "en": "PII",
+      "vi": "Thông tin nhận dạng cá nhân",
+      "definition_vi": "Không log toàn bộ vào telemetry hoặc kho chứng cứ công khai."
+    },
+    {
+      "en": "Break-glass",
+      "vi": "Truy cập khẩn cấp có kiểm soát",
+      "definition_vi": "Phạm vi và thời hạn hẹp; có lý do, phê duyệt và rà soát."
+    },
+    {
+      "en": "Kill switch",
+      "vi": "Cơ chế dừng khẩn cấp",
+      "definition_vi": "Dừng từng hoạt động có rủi ro; không làm mất quyền dữ liệu."
+    },
+    {
+      "en": "SKU",
+      "vi": "Mã sản phẩm thương mại",
+      "definition_vi": "Đơn vị cung cấp có quyền, quota, chi phí và đầu ra rõ."
+    },
+    {
+      "en": "SME",
+      "vi": "Chuyên gia lĩnh vực",
+      "definition_vi": "Người rà soát phạm vi phương pháp; không có quyền truy cập mọi dữ liệu mặc định."
+    }
+  ]
+}

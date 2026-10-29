@@ -1,0 +1,16 @@
+{
+  "release_id": "example-not-deployed",
+  "environment": "staging",
+  "source_sha": "0000000000000000000000000000000000000000",
+  "artifact_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "ci_run_id": "example-only",
+  "worker_version_id": null,
+  "pages_deployment_id": null,
+  "schema_version": "proposed-v2",
+  "method_release_ids": [],
+  "gate_receipts": [],
+  "approved_by": [],
+  "rollback_target": "static-maintenance",
+  "created_at": "2026-10-11T00:00:00Z",
+  "status": "proposed"
+}

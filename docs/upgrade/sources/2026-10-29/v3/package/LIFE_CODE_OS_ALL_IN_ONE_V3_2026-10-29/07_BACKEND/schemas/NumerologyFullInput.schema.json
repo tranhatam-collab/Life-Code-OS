@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v3:NumerologyFullInput",
+  "title": "NumerologyFullInput",
+  "type": "object",
+  "required": [
+    "full_name",
+    "birth_date"
+  ],
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "birth_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "common_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 200
+    },
+    "given_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 200
+    },
+    "y_policy": {
+      "enum": [
+        "unknown",
+        "vowel",
+        "consonant"
+      ]
+    },
+    "reduction_policy": {
+      "enum": [
+        "single_digit",
+        "preserve_11_22_33"
+      ]
+    },
+    "life_path_variant": {
+      "enum": [
+        "all_digits",
+        "reduced_components"
+      ]
+    },
+    "pinnacle_boundary_policy": {
+      "enum": [
+        "last_integer_age_inclusive",
+        "unmapped"
+      ]
+    },
+    "challenge_span_policy": {
+      "enum": [
+        "unmapped",
+        "follow_pinnacles"
+      ]
+    },
+    "period_span_policy": {
+      "enum": [
+        "unmapped",
+        "provided"
+      ]
+    },
+    "period_source_note": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "period_spans": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "start_age",
+          "end_age_exclusive"
+        ],
+        "properties": {
+          "start_age": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 150
+          },
+          "end_age_exclusive": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "maximum": 150
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

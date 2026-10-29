@@ -1,0 +1,43 @@
+{
+  "scope": "Synthetic temporary Git repositories; no network or production write",
+  "tests": [
+    {
+      "name": "dry_run_no_writes",
+      "passed": true
+    },
+    {
+      "name": "apply_copies_and_hashes",
+      "passed": true
+    },
+    {
+      "name": "idempotent_after_commit",
+      "passed": true
+    },
+    {
+      "name": "dirty_rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong_repo_rejected",
+      "passed": true
+    },
+    {
+      "name": "main_rejected",
+      "passed": true
+    },
+    {
+      "name": "tamper_rejected",
+      "passed": true
+    },
+    {
+      "name": "existing_conflict_no_overwrite",
+      "passed": true
+    },
+    {
+      "name": "unlisted_file_rejected",
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "failed": 0
+}

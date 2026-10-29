@@ -1,0 +1,479 @@
+[
+  {
+    "id": "G01",
+    "title": "Remote branches",
+    "url": "https://api.github.com/repos/tranhatam-collab/Life-Code-OS/branches?per_page=100",
+    "access_date": "2026-10-11",
+    "access_scope": "GitHub connector GET; đọc danh sách nhánh",
+    "kind": "repository",
+    "limitations": "Không phải deployed SHA"
+  },
+  {
+    "id": "G02",
+    "title": "Kế hoạch audit 1.096 dòng",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/336ef35a8386a744c6de18a7f7c6e268e89e6dac/docs/audit/LIFE_CODE_OS_COMPREHENSIVE_UPGRADE_PLAN_2026-10-11.md",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc các dải nội dung toàn tài liệu qua GitHub; trạng thái PROPOSED_FOR_TEAM_AUDIT",
+    "kind": "repository",
+    "limitations": "Các kết quả live của tác giả audit là nguồn khai báo, không mặc nhiên là đo lại trong phiên này"
+  },
+  {
+    "id": "G03",
+    "title": "Kiến trúc 9 level cũ",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/docs/LEVELS_ARCHITECTURE_V1.md",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc nội dung",
+    "kind": "repository",
+    "limitations": ""
+  },
+  {
+    "id": "G04",
+    "title": "API routes: profile và session",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/workers/life-code-api/src/index.js#L653-L760",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc nhánh xử lý mã remote",
+    "kind": "repository",
+    "limitations": "Không thử lấy hồ sơ người thật; không xác nhận exploit runtime"
+  },
+  {
+    "id": "G05",
+    "title": "LCI legacy",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/engine/core/lci.js",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trong audit đối chiếu của chuỗi trao đổi, cùng SHA",
+    "kind": "repository",
+    "limitations": ""
+  },
+  {
+    "id": "G06",
+    "title": "Timeline legacy",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/engine/core/timeline.js",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trong audit đối chiếu của chuỗi trao đổi, cùng SHA",
+    "kind": "repository",
+    "limitations": ""
+  },
+  {
+    "id": "G07",
+    "title": "Biểu mẫu Bắt đầu",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/bat-dau.html#L250-L320",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc đoạn gửi payload trong chuỗi audit, cùng SHA",
+    "kind": "repository",
+    "limitations": ""
+  },
+  {
+    "id": "G08",
+    "title": "Migration session",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/workers/life-code-api/migrations/002_create_sessions.sql",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trong chuỗi audit, cùng SHA",
+    "kind": "repository",
+    "limitations": ""
+  },
+  {
+    "id": "G09",
+    "title": "Pages build script",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/scripts/prepare-pages.sh",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trực tiếp",
+    "kind": "repository",
+    "limitations": "Denylist còn có thể để lọt file mới; chưa đo bundle live"
+  },
+  {
+    "id": "G10",
+    "title": "Workflow Pages",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/.github/workflows/deploy-pages.yml",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trực tiếp",
+    "kind": "repository",
+    "limitations": "Có --commit-dirty=true; không có bước smoke/security trong workflow đã đọc"
+  },
+  {
+    "id": "G11",
+    "title": "Report API legacy",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/workers/life-code-api/src/index.js#L1014-L1065",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trong chuỗi audit, cùng SHA",
+    "kind": "repository",
+    "limitations": ""
+  },
+  {
+    "id": "G12",
+    "title": "Audit commit metadata",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/commit/336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc metadata và diff tài liệu",
+    "kind": "repository",
+    "limitations": "Không phải commit sửa P0"
+  },
+  {
+    "id": "S01",
+    "title": "Life Code trang chủ",
+    "url": "https://lifecode.iai.one/",
+    "access_date": "2026-10-11",
+    "access_scope": "Nội dung HTML qua công cụ web; nguồn báo crawled yesterday",
+    "kind": "public_product",
+    "limitations": "Không xác nhận byte hash, HTTP headers hoặc deployed SHA"
+  },
+  {
+    "id": "S02",
+    "title": "Life Code chín tầng",
+    "url": "https://lifecode.iai.one/9-levels-life-code",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc nội dung công khai qua liên kết clean URL",
+    "kind": "public_product",
+    "limitations": ""
+  },
+  {
+    "id": "S03",
+    "title": "Life Code Bắt đầu",
+    "url": "https://lifecode.iai.one/bat-dau",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc giao diện biểu mẫu; không gửi dữ liệu",
+    "kind": "public_product",
+    "limitations": ""
+  },
+  {
+    "id": "S04",
+    "title": "Life Code Dashboard",
+    "url": "https://lifecode.iai.one/dashboard",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc nội dung giao diện public; không đăng nhập",
+    "kind": "public_product",
+    "limitations": ""
+  },
+  {
+    "id": "S05",
+    "title": "Life Code chính sách bảo mật",
+    "url": "https://lifecode.iai.one/chinh-sach-bao-mat",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc nội dung công khai",
+    "kind": "public_product",
+    "limitations": ""
+  },
+  {
+    "id": "S06",
+    "title": "Life Code Engine Lab",
+    "url": "https://lifecode.iai.one/engine-lab",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc giao diện; không gửi POST",
+    "kind": "public_product",
+    "limitations": ""
+  },
+  {
+    "id": "S07",
+    "title": "OWASP API BOLA",
+    "url": "https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S08",
+    "title": "OWASP Session Management",
+    "url": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S09",
+    "title": "PostgreSQL Row Security",
+    "url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Trang current được trả là tài liệu PostgreSQL 18; không coi database dự án đã nâng cấp"
+  },
+  {
+    "id": "S10",
+    "title": "Cloudflare Queues delivery guarantees",
+    "url": "https://developers.cloudflare.com/queues/reference/delivery-guarantees/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S11",
+    "title": "Cloudflare R2 presigned URL",
+    "url": "https://developers.cloudflare.com/r2/api/s3/presigned-urls/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S12",
+    "title": "Hyperdrive query caching",
+    "url": "https://developers.cloudflare.com/hyperdrive/concepts/query-caching/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S13",
+    "title": "Cloudflare Workers versions/deployments",
+    "url": "https://developers.cloudflare.com/workers/versions-and-deployments/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S14",
+    "title": "OpenAPI 3.1.1",
+    "url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S15",
+    "title": "Unicode Normalization",
+    "url": "https://unicode.org/reports/tr15/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S16",
+    "title": "IANA Time Zone Database",
+    "url": "https://www.iana.org/time-zones",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S17",
+    "title": "WCAG 2.2",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S18",
+    "title": "Astro deployment Cloudflare",
+    "url": "https://docs.astro.build/en/guides/deploy/cloudflare/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S19",
+    "title": "React Quick Start",
+    "url": "https://react.dev/learn",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S20",
+    "title": "Stripe webhook guidance",
+    "url": "https://docs.stripe.com/webhooks",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Tham chiếu giao thức; chưa chọn Stripe làm nhà cung cấp khả dụng cho pháp nhân dự án"
+  },
+  {
+    "id": "S21",
+    "title": "NIST AI Risk Management Framework",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S22",
+    "title": "ISO/IEC 42001 overview",
+    "url": "https://www.iso.org/standard/42001",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc trang giới thiệu tiêu chuẩn",
+    "kind": "primary",
+    "limitations": "Chưa đọc toàn văn tiêu chuẩn trả phí; không chứng nhận tuân thủ"
+  },
+  {
+    "id": "S23",
+    "title": "Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15",
+    "url": "https://vanban.chinhphu.vn/?docid=214590&pageid=27160",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc metadata chính thức",
+    "kind": "primary",
+    "limitations": "Hiệu lực 01/01/2026; chưa thay ý kiến pháp lý áp dụng"
+  },
+  {
+    "id": "S24",
+    "title": "Nghị định 356/2025/NĐ-CP",
+    "url": "https://chinhphu.vn/?classid=1&docid=216387&orggroupid=2&pageid=27160",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc metadata chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S25",
+    "title": "Luật Trí tuệ nhân tạo 134/2025/QH15",
+    "url": "https://congbao.chinhphu.vn/van-ban/luat-so-134-2025-qh15-468694/61695.htm",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc metadata chính thức",
+    "kind": "primary",
+    "limitations": "Hiệu lực 01/03/2026"
+  },
+  {
+    "id": "S26",
+    "title": "Nghị định 142/2026/NĐ-CP",
+    "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-142-2026-nd-cp-469480/64703.htm",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc metadata chính thức",
+    "kind": "primary",
+    "limitations": "Hiệu lực 01/05/2026"
+  },
+  {
+    "id": "S27",
+    "title": "Khung pháp lý AI - Cục Công nghệ số và AI",
+    "url": "https://dda.gov.vn/khung-phap-ly-ai",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S28",
+    "title": "Nghị định 248/2026/NĐ-CP",
+    "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-248-2026-nd-cp-469983.htm",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc metadata chính thức",
+    "kind": "primary",
+    "limitations": "Hiệu lực 01/07/2026"
+  },
+  {
+    "id": "S29",
+    "title": "Bộ Công Thương phổ biến Luật TMĐT và Nghị định 248",
+    "url": "https://moit.gov.vn/tin-tuc/bo-cong-thuong-pho-bien-luat-thuong-mai-dien-tu-va-nghi-dinh-so-248-2026-nd-cp.html",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Nguồn xác nhận hiệu lực từ 01/07/2026; cần pháp lý đọc văn bản ký"
+  },
+  {
+    "id": "S30",
+    "title": "EU GDPR",
+    "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+    "access_date": "2026-10-11",
+    "access_scope": "Truy cập văn bản pháp quy; rà soát định nghĩa và quyền",
+    "kind": "primary",
+    "limitations": "Không thay đánh giá tác động hoặc tư vấn thị trường cụ thể"
+  },
+  {
+    "id": "S31",
+    "title": "EU AI Act application timeline",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Trang Ủy ban được kiểm tra 11/10/2026; thể hiện AI Omnibus có hiệu lực 27/07/2026 và lịch high-risk điều chỉnh. Đối chiếu văn bản hợp nhất trước launch"
+  },
+  {
+    "id": "S32",
+    "title": "EU AI Act - bản tiếng Hà Lan",
+    "url": "https://digital-strategy.ec.europa.eu/nl/policies/regulatory-framework-ai",
+    "access_date": "2026-10-11",
+    "access_scope": "Đối chiếu phần lịch áp dụng đa ngôn ngữ",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S33",
+    "title": "FTC Consumer Guide to Buying a Franchise",
+    "url": "https://www.ftc.gov/business-guidance/resources/consumers-guide-buying-franchise",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Thông tin FDD/14 ngày, không phải ý kiến phân loại hợp đồng Life Code"
+  },
+  {
+    "id": "S34",
+    "title": "ACCC Franchising Code",
+    "url": "https://www.accc.gov.au/business/industry-codes/franchising-code-of-conduct",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Bộ quy tắc mới 01/04/2025; một số quy định 01/11/2025"
+  },
+  {
+    "id": "S35",
+    "title": "ACCC franchise disclosure document",
+    "url": "https://www.accc.gov.au/business/industry-codes/franchising-code-of-conduct/franchise-disclosure-document",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": ""
+  },
+  {
+    "id": "S36",
+    "title": "Bộ Công Thương danh mục nhượng quyền",
+    "url": "https://moit.gov.vn/nhuong-quyen-thuong-mai",
+    "access_date": "2026-10-11",
+    "access_scope": "Đọc danh mục công khai",
+    "kind": "primary",
+    "limitations": "Không đủ kết luận thủ tục outbound cho Life Code; pháp lý phải xác minh"
+  },
+  {
+    "id": "S37",
+    "title": "WIPO Madrid filing",
+    "url": "https://www.wipo.int/en/web/madrid-system/how_to/file/index",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Đăng ký quốc tế không bảo đảm được bảo hộ ở mọi thị trường; không xác minh nhãn Life Code đã đăng ký"
+  },
+  {
+    "id": "S38",
+    "title": "IPIP ngân hàng mục hỏi",
+    "url": "https://ipip.ori.org/",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Phải kiểm tra quyền của từng bản dịch và thang; chưa xác nhận giá trị đo trên mẫu Life Code"
+  },
+  {
+    "id": "S39",
+    "title": "O*NET Interest Profiler",
+    "url": "https://www.onetcenter.org/IP.html",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Dùng phạm vi hứng thú nghề; không quyết định nghề bắt buộc"
+  },
+  {
+    "id": "S40",
+    "title": "OAIC privacy rights",
+    "url": "https://www.oaic.gov.au/privacy/your-privacy-rights",
+    "access_date": "2026-10-11",
+    "access_scope": "Đã đọc trang chính thức",
+    "kind": "primary",
+    "limitations": "Điểm xuất phát rà soát Australia; chưa audit nghĩa vụ cụ thể"
+  },
+  {
+    "id": "S41",
+    "title": "Singapore PDPC PDPA",
+    "url": "https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act",
+    "access_date": "2026-10-11",
+    "access_scope": "Trang phản hồi rất ít nội dung",
+    "kind": "primary",
+    "limitations": "Chưa đủ nội dung để khẳng định điều khoản; rà soát trước launch"
+  }
+]

@@ -1,0 +1,1690 @@
+[
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-001",
+    "title": "Bảo toàn nguồn và nối biên nhận nhập liệu",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "PREPARATION",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Governance + Documentation",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [],
+    "decision_dependencies": [
+      "Q21",
+      "Q31",
+      "Q45"
+    ],
+    "gate_dependencies": [
+      "G01"
+    ],
+    "source_task_ids": [
+      "V2-GOV-01",
+      "V3-INT-09"
+    ],
+    "parent_task_id": null,
+    "scope": "Đối chiếu 827 tệp ZIP, ba tệp V2 rời, 216 tệp kế hoạch hiện có; giữ provenance và SHA từng tệp.",
+    "deliverable": "evidence/INT29-001/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Số lượng, SHA và đường dẫn khớp nguồn; không đổi byte cũ; mọi đường dẫn đích ở đúng dự án.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Số lượng, SHA và đường dẫn khớp nguồn; không đổi byte cũ; mọi đường dẫn đích ở đúng dự án."
+      ],
+      "negative": [
+        "Thử tệp thiếu, tệp đích khác byte, traversal, symlink, ZIP lỗi; phải chặn và ghi receipt."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-001/<candidate-digest>/",
+    "rollback_plan": "Chỉ tạo vùng tài liệu mới, lưu manifest; phục hồi bằng danh sách tệp mới có hash và không xóa dữ liệu người dùng.",
+    "effort_low_person_days": 1,
+    "effort_high_person_days": 2,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-GOV-01",
+      "V3-INT-09"
+    ],
+    "clarification_owner_role": "Governance + Documentation",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-002",
+    "title": "Khóa đúng repository và phân biệt source/runtime",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "PREPARATION",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Tech Lead + Release Lead",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-001"
+    ],
+    "decision_dependencies": [
+      "Q10",
+      "Q30",
+      "Q45"
+    ],
+    "gate_dependencies": [
+      "G01",
+      "G07"
+    ],
+    "source_task_ids": [
+      "P0-01",
+      "P0-02",
+      "P0-08",
+      "V2-OPS-01",
+      "V3-INT-10"
+    ],
+    "parent_task_id": null,
+    "scope": "Lập receipt cwd/remote/branch/full HEAD/dirty paths, candidate riêng và deployment mapping nếu sau này có quyền.",
+    "deliverable": "evidence/INT29-002/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Không kế thừa SHA GitHub cũ hoặc demo làm runtime; ghi rõ mọi bằng chứng NOT_CHECKED.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Không kế thừa SHA GitHub cũ hoặc demo làm runtime; ghi rõ mọi bằng chứng NOT_CHECKED."
+      ],
+      "negative": [
+        "Sai remote, dirty tree, target ngoài scope, deployed SHA thiếu hoặc không khớp phải HOLD."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-002/<candidate-digest>/",
+    "rollback_plan": "Không reset/stash/ghi đè worktree; ứng viên tương lai tạo riêng sau khi chọn baseline có authority.",
+    "effort_low_person_days": 1,
+    "effort_high_person_days": 3,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "P0-01",
+      "P0-02",
+      "P0-08",
+      "V2-OPS-01",
+      "V3-INT-10"
+    ],
+    "clarification_owner_role": "Tech Lead + Release Lead",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-003",
+    "title": "Hợp nhất namespace, DAG có kiểu và estimate rollup",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "PREPARATION",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Program Manager + Data/QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-001"
+    ],
+    "decision_dependencies": [
+      "Q20",
+      "Q31"
+    ],
+    "gate_dependencies": [
+      "G01",
+      "G06"
+    ],
+    "source_task_ids": [
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "V2-GOV-01"
+    ],
+    "parent_task_id": null,
+    "scope": "296 ID nguồn +20 work order; bảo toàn 16 UPG; tách task/decision/gate deps và parent rollup.",
+    "deliverable": "evidence/INT29-003/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Không duplicate ID; FK đóng; topo không chu kỳ; giữ P0 đã sửa; bản gốc và proposed graph đều truy vết.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Không duplicate ID; FK đóng; topo không chu kỳ; giữ P0 đã sửa; bản gốc và proposed graph đều truy vết."
+      ],
+      "negative": [
+        "Cố tình tạo vòng, dependency lạ, parent tự tham chiếu, unknown estimate thành 0 và cộng parent+child phải thất bại."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-003/<candidate-digest>/",
+    "rollback_plan": "Chỉ sửa overlay mới; graph nguồn bất biến; loại thay đổi mới bằng inverse manifest có hash.",
+    "effort_low_person_days": 2,
+    "effort_high_person_days": 4,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "V2-GOV-01"
+    ],
+    "clarification_owner_role": "Program Manager + Data/QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-004",
+    "title": "Mở 45 decision packet và phân quyền duyệt",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "PREPARATION",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Founder Office + Functional Leads",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent Program QA + relevant functional authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-003"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q3",
+      "Q4",
+      "Q9",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q20",
+      "Q31"
+    ],
+    "gate_dependencies": [
+      "G04",
+      "G06"
+    ],
+    "source_task_ids": [
+      "V2-GOV-01",
+      "V3-INT-10"
+    ],
+    "parent_task_id": null,
+    "scope": "Giữ nguyên Q1–20; bổ sung Q21–45 với lựa chọn, tác động, chức danh, hạn theo sự kiện và receipt null.",
+    "deliverable": "evidence/INT29-004/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "45 packet duy nhất; mỗi lựa chọn có phạm vi; chưa ký vẫn pending; tài liệu không tự tạo production permission.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "45 packet duy nhất; mỗi lựa chọn có phạm vi; chưa ký vẫn pending; tài liệu không tự tạo production permission."
+      ],
+      "negative": [
+        "Từ chối packet không có approver chức năng, source digest, phạm vi/expiry hoặc dùng Founder thay Method/Legal."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-004/<candidate-digest>/",
+    "rollback_plan": "Lưu mọi quyết định thành phiên bản; không sửa lịch sử và không coi đề xuất A là đã được duyệt.",
+    "effort_low_person_days": 2,
+    "effort_high_person_days": 4,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-GOV-01",
+      "V3-INT-10"
+    ],
+    "clarification_owner_role": "Founder Office + Functional Leads",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-005",
+    "title": "Cấp hộ chiếu nguồn/quyền cho 62 adapter phương pháp",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "PREPARATION",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Method Lead + Rights/Legal + Native Reviewer",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-004"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q12",
+      "Q22",
+      "Q31"
+    ],
+    "gate_dependencies": [
+      "G04",
+      "G06"
+    ],
+    "source_task_ids": [
+      "V2-GOV-02",
+      "V2-BE-14"
+    ],
+    "parent_task_id": null,
+    "scope": "Lập inventory/passport tối thiểu cho62adapter; hoàn thiện source edition, quyền, input/rules/limits/corpus/review/release cho từng adapter thực sự được chọn vào cohort. Phần còn lại giữ research/unreleased.",
+    "deliverable": "evidence/INT29-005/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "62adapter có owner/missing-evidence register; chỉ adapter của cohort được xét dispatch khi passport source/rights/golden/reviewer độc lập đủ. Không đòi nghiên cứu xong62adapter để làm pilot phạm vi hẹp.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "62adapter có owner/missing-evidence register; chỉ adapter của cohort được xét dispatch khi passport source/rights/golden/reviewer độc lập đủ. Không đòi nghiên cứu xong62adapter để làm pilot phạm vi hẹp."
+      ],
+      "negative": [
+        "Thiếu quyền, nguồn sao chép cùng gốc, reviewer cùng tác giả, nguồn mâu thuẫn hoặc phụ thuộc nhạy cảm phải NEEDS_REVIEW."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-005/<candidate-digest>/",
+    "rollback_plan": "Gỡ capability khỏi catalog phát hành bằng feature/version gate; giữ nguyên archive và bản kết quả lịch sử.",
+    "effort_low_person_days": null,
+    "effort_high_person_days": null,
+    "estimate_status": "UNKNOWN_PENDING_DOMAIN_DISCOVERY",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-GOV-02",
+      "V2-BE-14"
+    ],
+    "clarification_owner_role": "Method Lead + Rights/Legal + Native Reviewer",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-006",
+    "title": "Chốt hợp đồng tên, lịch, thời gian và giả thuyết",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Backend Method Engineer + Domain QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-003"
+    ],
+    "decision_dependencies": [
+      "Q23",
+      "Q24",
+      "Q32",
+      "Q39"
+    ],
+    "gate_dependencies": [
+      "G03",
+      "G05",
+      "G06"
+    ],
+    "source_task_ids": [
+      "V2-BE-01",
+      "V2-BE-02",
+      "V2-BE-03",
+      "V2-BE-04",
+      "V3-MTH-001",
+      "V3-MTH-037",
+      "V3-INT-02"
+    ],
+    "parent_task_id": null,
+    "scope": "Đóng schema profile_version/data_hypothesis, raw/normalized name, timezone candidates, calendar/tzdb/config versions, uncertainty.",
+    "deliverable": "evidence/INT29-006/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Unicode NFC/NFD, tên thiếu, Y chưa rõ, DST gap/fold, leap day, date-only và unknown đều có output có trạng thái.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Unicode NFC/NFD, tên thiếu, Y chưa rõ, DST gap/fold, leap day, date-only và unknown đều có output có trạng thái."
+      ],
+      "negative": [
+        "Không tự đoán tên riêng/Y/timezone; không chuẩn hóa mất raw; DOB thiếu không thành 0/ngày mặc định."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-006/<candidate-digest>/",
+    "rollback_plan": "Giữ raw và phiên bản normalize cũ; invalidation chỉ các node phụ thuộc, snapshot đã xuất không đổi.",
+    "effort_low_person_days": 3,
+    "effort_high_person_days": 6,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-BE-01",
+      "V2-BE-02",
+      "V2-BE-03",
+      "V2-BE-04",
+      "V3-MTH-001",
+      "V3-MTH-037",
+      "V3-INT-02"
+    ],
+    "clarification_owner_role": "Backend Method Engineer + Domain QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-007",
+    "title": "Đặc tả và kiểm thử 23 thành phần Numerology",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Method Engineer + Native Reviewer + Independent QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-005",
+      "INT29-006"
+    ],
+    "decision_dependencies": [
+      "Q6",
+      "Q32",
+      "Q38"
+    ],
+    "gate_dependencies": [
+      "G06"
+    ],
+    "source_task_ids": [
+      "V3-MTH-028",
+      "V3-MTH-030",
+      "V2-BE-07",
+      "V2-BE-11"
+    ],
+    "parent_task_id": null,
+    "scope": "Bảng công thức/reduction/master-number/Y/full/common/given name và hợp đồng riêng Pinnacle/Challenge/Period.",
+    "deliverable": "evidence/INT29-007/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "23 thành phần có ví dụ tính tay và boundary; variant versioned; trace từng phép tính; không gọi là đo nhân cách khoa học.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "23 thành phần có ví dụ tính tay và boundary; variant versioned; trace từng phép tính; không gọi là đo nhân cách khoa học."
+      ],
+      "negative": [
+        "Đảo thứ tự reduction, master number, missing vowels/Y và giao mốc B/B+9/B+18 phải được kiểm tra riêng."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-007/<candidate-digest>/",
+    "rollback_plan": "Không thay bản rules đang dùng; tạo method_release mới, dual-run/diff và khả năng khóa release mới.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 8,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V3-MTH-028",
+      "V3-MTH-030",
+      "V2-BE-07",
+      "V2-BE-11"
+    ],
+    "clarification_owner_role": "Method Engineer + Native Reviewer + Independent QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-008",
+    "title": "Đóng hợp đồng Bát Cực, đuôi 80, Psychomatrix",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Method Engineer + Source Reviewer + QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-005",
+      "INT29-006"
+    ],
+    "decision_dependencies": [
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36"
+    ],
+    "gate_dependencies": [
+      "G06"
+    ],
+    "source_task_ids": [
+      "V2-BE-05",
+      "V2-BE-06",
+      "V3-MTH-029",
+      "V3-MTH-032",
+      "V3-MTH-033",
+      "V3-MTH-034",
+      "V3-MTH-035"
+    ],
+    "parent_task_id": null,
+    "scope": "64 cặp/512 triplet alphabet có điều kiện, strict 0/5; modulo 0..79 và policy 0; 17 ô/trục raw/count tách working numbers.",
+    "deliverable": "evidence/INT29-008/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Giữ raw 0/5, chuỗi có 0 đầu, variant trace; nguồn tail80 có quyền; mục mơ hồ bị quarantine; W3 âm theo policy chặn.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Giữ raw 0/5, chuỗi có 0 đầu, variant trace; nguồn tail80 có quyền; mục mơ hồ bị quarantine; W3 âm theo policy chặn."
+      ],
+      "negative": [
+        "Không r+1, không abs(W3), không xóa 0/5 hoặc suy trí nhớ/sức khỏe/đời tư; enumerate 10.000 đuôi với 125 mẫu/bucket."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-008/<candidate-digest>/",
+    "rollback_plan": "Đưa variant chưa đủ nguồn về diagnostic/unreleased; không viết đè bảng nguồn.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 9,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-BE-05",
+      "V2-BE-06",
+      "V3-MTH-029",
+      "V3-MTH-032",
+      "V3-MTH-033",
+      "V3-MTH-034",
+      "V3-MTH-035"
+    ],
+    "clarification_owner_role": "Method Engineer + Source Reviewer + QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-009",
+    "title": "Đặc tả 18 lĩnh vực, chín giai đoạn và timeline",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Product + Method + UX + Privacy",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-004",
+      "INT29-006"
+    ],
+    "decision_dependencies": [
+      "Q26",
+      "Q37",
+      "Q38",
+      "Q41"
+    ],
+    "gate_dependencies": [
+      "G04",
+      "G06",
+      "G08"
+    ],
+    "source_task_ids": [
+      "V3-INT-02",
+      "V3-MTH-056",
+      "V3-MTH-058"
+    ],
+    "parent_task_id": null,
+    "scope": "Timeline age intervals, domains, quan sát đời thực, tự suy ngẫm, kế hoạch và forecast tách loại; quyền riêng từng event.",
+    "deliverable": "evidence/INT29-009/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "0–99 là 100 interval nửa mở; >99 giữ; chín giai đoạn là biên tập, không luật tuổi/định mệnh.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "0–99 là 100 interval nửa mở; >99 giữ; chín giai đoạn là biên tập, không luật tuổi/định mệnh."
+      ],
+      "negative": [
+        "Leap birth, boundary, event chồng lĩnh vực, cùng DOB lặp nhiều cách tính và thiếu dữ liệu phải không nhân chứng cứ."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-009/<candidate-digest>/",
+    "rollback_plan": "Giữ event nguồn; chỉ thay view/config/version, không hồi tố sửa lịch sử người dùng.",
+    "effort_low_person_days": 3,
+    "effort_high_person_days": 6,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V3-INT-02",
+      "V3-MTH-056",
+      "V3-MTH-058"
+    ],
+    "clarification_owner_role": "Product + Method + UX + Privacy",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-010",
+    "title": "Đóng schema dữ liệu và 99 thao tác API đích",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Backend Architect + API QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-003",
+      "INT29-006"
+    ],
+    "decision_dependencies": [
+      "Q25",
+      "Q29",
+      "Q39"
+    ],
+    "gate_dependencies": [
+      "G01",
+      "G03",
+      "G06",
+      "G07"
+    ],
+    "source_task_ids": [
+      "UPG-BE-001",
+      "UPG-BE-002",
+      "V2-BE-10",
+      "V2-BE-15",
+      "V2-BE-16",
+      "V3-INT-04"
+    ],
+    "parent_task_id": null,
+    "scope": "Crosswalk 83+16 operations tới request/response/error/principal/purpose/idempotency/schema version và owner.",
+    "deliverable": "evidence/INT29-010/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "99 operation duy nhất là thiết kế; chỉ route có runtime receipt mới gọi implemented; schema FK tenant/subject kín.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "99 operation duy nhất là thiết kế; chỉ route có runtime receipt mới gọi implemented; schema FK tenant/subject kín."
+      ],
+      "negative": [
+        "Unknown fields/mass assignment, stale revision, null/0 confusion, cross-subject FK, payload lớn hoặc money float phải chặn."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-010/<candidate-digest>/",
+    "rollback_plan": "Migration chỉ lên staging sau review; expand/contract và backup; không chạy SQL với gói tài liệu.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 8,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "UPG-BE-001",
+      "UPG-BE-002",
+      "V2-BE-10",
+      "V2-BE-15",
+      "V2-BE-16",
+      "V3-INT-04"
+    ],
+    "clarification_owner_role": "Backend Architect + API QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-011",
+    "title": "Thiết kế và xác minh identity, quyền và riêng tư",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Security + Backend + Privacy",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-010"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q9",
+      "Q18",
+      "Q23",
+      "Q29",
+      "Q39"
+    ],
+    "gate_dependencies": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G11"
+    ],
+    "source_task_ids": [
+      "V2-SEC-01",
+      "V2-SEC-02",
+      "V2-SEC-03",
+      "V2-SEC-04",
+      "V2-SEC-05",
+      "V2-SEC-06",
+      "V3-MTH-060"
+    ],
+    "parent_task_id": null,
+    "scope": "Object/tenant/subject/purpose grant, consent revision, recovery/revocation/delete/export trong mọi read/write/job/download.",
+    "deliverable": "evidence/INT29-011/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "IdP và principal server-derived; payer/owner/practitioner khác quyền; app DB role không owner/BYPASSRLS.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "IdP và principal server-derived; payer/owner/practitioner khác quyền; app DB role không owner/BYPASSRLS."
+      ],
+      "negative": [
+        "Cross-tenant object access, forged user_id, revoked grant sau enqueue, signed-link replay, stale offline dữ liệu phải bị chặn."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-011/<candidate-digest>/",
+    "rollback_plan": "Kill switch theo capability; revoke token/grant/link, deletion barrier; không hứa thu hồi tệp đã tải.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 9,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-SEC-01",
+      "V2-SEC-02",
+      "V2-SEC-03",
+      "V2-SEC-04",
+      "V2-SEC-05",
+      "V2-SEC-06",
+      "V3-MTH-060"
+    ],
+    "clarification_owner_role": "Security + Backend + Privacy",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-012",
+    "title": "Thiết kế durable jobs, cache và idempotency",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Backend + Platform + Reliability QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-010",
+      "INT29-011"
+    ],
+    "decision_dependencies": [
+      "Q23",
+      "Q29",
+      "Q39"
+    ],
+    "gate_dependencies": [
+      "G03",
+      "G05",
+      "G09",
+      "G10"
+    ],
+    "source_task_ids": [
+      "UPG-BE-005",
+      "V2-JOB-01",
+      "V2-JOB-02",
+      "V2-JOB-03",
+      "V2-JOB-08",
+      "V2-BE-07",
+      "V2-BE-08",
+      "V2-BE-13"
+    ],
+    "parent_task_id": null,
+    "scope": "Transactional run+outbox+idempotency; lease/heartbeat/retry/DLQ/cancel; scoped cache và invalidation DAG.",
+    "deliverable": "evidence/INT29-012/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Tác dụng nghiệp vụ exactly-once theo receipt trong at-least-once delivery; cache đủ tenant/subject/purpose/revision/version.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Tác dụng nghiệp vụ exactly-once theo receipt trong at-least-once delivery; cache đủ tenant/subject/purpose/revision/version."
+      ],
+      "negative": [
+        "Duplicate/reorder/crash, key conflict, revoke/cancel/delete races, restore tombstone và source edition change có chứng cứ."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-012/<candidate-digest>/",
+    "rollback_plan": "Dừng producer/worker bằng switch, drain/quarantine queue; reconcile effects trước replay; restore xong áp deletion.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 8,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "UPG-BE-005",
+      "V2-JOB-01",
+      "V2-JOB-02",
+      "V2-JOB-03",
+      "V2-JOB-08",
+      "V2-BE-07",
+      "V2-BE-08",
+      "V2-BE-13"
+    ],
+    "clarification_owner_role": "Backend + Platform + Reliability QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-013",
+    "title": "Nhận 167 demo vào ma trận kiểm thử có phân hạng",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "QA Lead + Method + UX",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-003",
+      "INT29-006"
+    ],
+    "decision_dependencies": [
+      "Q22",
+      "Q25",
+      "Q32",
+      "Q33",
+      "Q35",
+      "Q36"
+    ],
+    "gate_dependencies": [
+      "G06",
+      "G08",
+      "G11"
+    ],
+    "source_task_ids": [
+      "V2-FE-03",
+      "V3-MTH-062"
+    ],
+    "parent_task_id": null,
+    "scope": "Catalog mỗi demo: source package, fixture synthetic, expected trace/output, category normal/missing/boundary/conflict/denied/stale/failure.",
+    "deliverable": "evidence/INT29-013/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Không cộng các suite kế thừa trùng thành coverage độc lập; demo offline, node HTTP và browser HTTP có nhãn riêng.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Không cộng các suite kế thừa trùng thành coverage độc lập; demo offline, node HTTP và browser HTTP có nhãn riêng."
+      ],
+      "negative": [
+        "Tắt mock để chứng minh HTTP thật; thử partial/unknown, wrong tenant, malformed/timeouts; recording skips và môi trường."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-013/<candidate-digest>/",
+    "rollback_plan": "Chạy bản sao riêng; không chạy script nguồn trên worktree/app; không đổi receipt gốc.",
+    "effort_low_person_days": 3,
+    "effort_high_person_days": 6,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-FE-03",
+      "V3-MTH-062"
+    ],
+    "clarification_owner_role": "QA Lead + Method + UX",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-014",
+    "title": "Đóng chín template báo cáo và shared content tree",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Editorial + AI Lead + Report Engineer",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-007",
+      "INT29-008",
+      "INT29-009",
+      "INT29-010"
+    ],
+    "decision_dependencies": [
+      "Q5",
+      "Q7",
+      "Q27",
+      "Q41"
+    ],
+    "gate_dependencies": [
+      "G06",
+      "G08"
+    ],
+    "source_task_ids": [
+      "UPG-AI-001",
+      "UPG-AI-002",
+      "V2-AI-03",
+      "V2-AI-04",
+      "V2-AI-05",
+      "V3-INT-05",
+      "V3-MTH-061"
+    ],
+    "parent_task_id": null,
+    "scope": "Chung snapshot/content tree Web/PDF/Word; bốn khối; 9 level khác dữ liệu và mục đích; missing-data preview có null.",
+    "deliverable": "evidence/INT29-014/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "L1 ít nhất ba case đủ/thiếu/xung đột; claim gắn source+method+input; không bù trang hoặc bịa life events.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "L1 ít nhất ba case đủ/thiếu/xung đột; claim gắn source+method+input; không bù trang hoặc bịa life events."
+      ],
+      "negative": [
+        "Nguồn hết quyền, snapshot stale, external URL/local file khi render, font/tables/overflow, report bị hủy phải chặn."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-014/<candidate-digest>/",
+    "rollback_plan": "Xuất bản nội dung thành release mới; sandbox renderer; snapshot cũ bất biến, thu hồi quyền tải tương lai.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 8,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "UPG-AI-001",
+      "UPG-AI-002",
+      "V2-AI-03",
+      "V2-AI-04",
+      "V2-AI-05",
+      "V3-INT-05",
+      "V3-MTH-061"
+    ],
+    "clarification_owner_role": "Editorial + AI Lead + Report Engineer",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-015",
+    "title": "Thiết kế 69 màn hình và mobile/web/desktop web",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Product UX + Frontend + Accessibility QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-009",
+      "INT29-010",
+      "INT29-011"
+    ],
+    "decision_dependencies": [
+      "Q13",
+      "Q28",
+      "Q39",
+      "Q40",
+      "Q41"
+    ],
+    "gate_dependencies": [
+      "G03",
+      "G05",
+      "G08"
+    ],
+    "source_task_ids": [
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "V2-FE-06",
+      "V2-FE-07",
+      "V2-FE-08",
+      "V2-FE-09",
+      "V2-FE-10",
+      "V2-FE-11",
+      "V2-FE-12",
+      "V3-INT-01",
+      "V3-INT-06"
+    ],
+    "parent_task_id": null,
+    "scope": "Screen crosswalk 45 gốc+V2+V3, flows shared responsive 360/390/768/1440, keyboard, contrast, states và locale.",
+    "deliverable": "evidence/INT29-015/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Đủ loading/partial/needs-input/denied/unreleased/stale/error; desktop web dễ đọc bảng; mobile form nhập từng bước.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Đủ loading/partial/needs-input/denied/unreleased/stale/error; desktop web dễ đọc bảng; mobile form nhập từng bước."
+      ],
+      "negative": [
+        "Overflow, zoom 200%, keyboard trap, offline revoke conflict, private cache, screenshot leak và screenreader cơ bản."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-015/<candidate-digest>/",
+    "rollback_plan": "Feature switch theo screen/capability; private offline tắt mặc định; native là nhánh sau có budget/owner riêng.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 8,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "V2-FE-06",
+      "V2-FE-07",
+      "V2-FE-08",
+      "V2-FE-09",
+      "V2-FE-10",
+      "V2-FE-11",
+      "V2-FE-12",
+      "V3-INT-01",
+      "V3-INT-06"
+    ],
+    "clarification_owner_role": "Product UX + Frontend + Accessibility QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-016",
+    "title": "Đóng hợp đồng AI theo claim, quyền và ngân sách",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "AI Lead + Security + Editorial",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-011",
+      "INT29-014"
+    ],
+    "decision_dependencies": [
+      "Q16",
+      "Q34",
+      "Q44"
+    ],
+    "gate_dependencies": [
+      "G03",
+      "G06",
+      "G08",
+      "G10",
+      "G11"
+    ],
+    "source_task_ids": [
+      "V2-SEC-07",
+      "V2-AI-01",
+      "V2-AI-02",
+      "V2-AI-03",
+      "V2-AI-06",
+      "V2-AI-07",
+      "V2-AI-08",
+      "V3-INT-03",
+      "V3-MTH-059"
+    ],
+    "parent_task_id": null,
+    "scope": "A0–A3 permission/cost contract; retrieval ACL trước fetch; claim assembler/writer/reviewer và eval corpus versioned.",
+    "deliverable": "evidence/INT29-016/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Không AI phát hành claim method chưa duyệt; provenance một nguồn không thành nhiều chứng cứ; budget/fallback/exception minh bạch.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Không AI phát hành claim method chưa duyệt; provenance một nguồn không thành nhiều chứng cứ; budget/fallback/exception minh bạch."
+      ],
+      "negative": [
+        "Prompt injection nguồn, RAG ACL bypass, fabricated citation, vendor timeout, token cap, fallback sai scope, tool đổi quyền phải chặn."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-016/<candidate-digest>/",
+    "rollback_plan": "Kill switch provider/prompt/tool; human queue; không cho feedback tự phê duyệt quy tắc.",
+    "effort_low_person_days": 4,
+    "effort_high_person_days": 8,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-SEC-07",
+      "V2-AI-01",
+      "V2-AI-02",
+      "V2-AI-03",
+      "V2-AI-06",
+      "V2-AI-07",
+      "V2-AI-08",
+      "V3-INT-03",
+      "V3-MTH-059"
+    ],
+    "clarification_owner_role": "AI Lead + Security + Editorial",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-017",
+    "title": "Đóng thương mại và quyền dùng độc lập",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Commerce Lead + Finance + Backend",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-004",
+      "INT29-011",
+      "INT29-012"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q20",
+      "Q40"
+    ],
+    "gate_dependencies": [
+      "G04",
+      "G09",
+      "G10"
+    ],
+    "source_task_ids": [
+      "V2-GOV-06",
+      "V2-JOB-04",
+      "V2-JOB-05",
+      "V2-JOB-06",
+      "V2-JOB-07"
+    ],
+    "parent_task_id": null,
+    "scope": "Order/payment/refund/entitlement/job/report state machines; pháp nhân/country/currency/provider và phí có nguồn trước giá.",
+    "deliverable": "evidence/INT29-017/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Integer minor units+currency; không tự đổi USD/VND; 23+5 sản phẩm planned, quyền theo capability chứ không mua tuần tự.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Integer minor units+currency; không tự đổi USD/VND; 23+5 sản phẩm planned, quyền theo capability chứ không mua tuần tự."
+      ],
+      "negative": [
+        "Webhook replay/sai amount/currency, paid nhưng no consent, refund sau fulfill, partial cancel, duplicate grant phải có test."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-017/<candidate-digest>/",
+    "rollback_plan": "Sandbox-only đến đủ Finance/Legal/provider receipt; reconcile ledger rồi mới replay; no implicit charge.",
+    "effort_low_person_days": null,
+    "effort_high_person_days": null,
+    "estimate_status": "UNKNOWN_PENDING_DOMAIN_DISCOVERY",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-GOV-06",
+      "V2-JOB-04",
+      "V2-JOB-05",
+      "V2-JOB-06",
+      "V2-JOB-07"
+    ],
+    "clarification_owner_role": "Commerce Lead + Finance + Backend",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-018",
+    "title": "Lập kế hoạch staging, kiểm thử độc lập và phục hồi",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Release Lead + SRE + Independent Security/QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-011",
+      "INT29-012",
+      "INT29-013",
+      "INT29-014",
+      "INT29-015",
+      "INT29-016"
+    ],
+    "decision_dependencies": [
+      "Q10",
+      "Q14",
+      "Q15",
+      "Q29",
+      "Q45"
+    ],
+    "gate_dependencies": [
+      "G01",
+      "G07",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "source_task_ids": [
+      "V2-SEC-08",
+      "V2-SEC-09",
+      "V2-SEC-10",
+      "V2-OPS-01",
+      "V2-OPS-02",
+      "V2-OPS-03",
+      "V2-OPS-04",
+      "V2-OPS-05"
+    ],
+    "parent_task_id": null,
+    "scope": "RC digest/source lock; CI allowlist; migration/RLS actual role; load/cost caps; backup restore+tombstone; rollback drill.",
+    "deliverable": "evidence/INT29-018/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Mỗi receipt đúng candidate/environment; unit/property/contract/browser HTTP/auth/payment/recovery riêng; independent reviewer.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Mỗi receipt đúng candidate/environment; unit/property/contract/browser HTTP/auth/payment/recovery riêng; independent reviewer."
+      ],
+      "negative": [
+        "Dirty deploy, ZIP/docs/SQL trong public artifact, bypass RLS, lost queue/entitlement, restore resurrected delete phải HOLD."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-018/<candidate-digest>/",
+    "rollback_plan": "Không chạy deploy trong work order chuẩn bị; staging execution cần scope/operator/window; rollback drill không viết production.",
+    "effort_low_person_days": null,
+    "effort_high_person_days": null,
+    "estimate_status": "UNKNOWN_PENDING_DOMAIN_DISCOVERY",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-SEC-08",
+      "V2-SEC-09",
+      "V2-SEC-10",
+      "V2-OPS-01",
+      "V2-OPS-02",
+      "V2-OPS-03",
+      "V2-OPS-04",
+      "V2-OPS-05"
+    ],
+    "clarification_owner_role": "Release Lead + SRE + Independent Security/QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-019",
+    "title": "Đóng điều kiện lãnh thổ, Academy và đối tác",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Legal/Privacy + Academy + Partnerships",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-004",
+      "INT29-005"
+    ],
+    "decision_dependencies": [
+      "Q17",
+      "Q19",
+      "Q42",
+      "Q43"
+    ],
+    "gate_dependencies": [
+      "G04",
+      "G06",
+      "G12"
+    ],
+    "source_task_ids": [
+      "V2-GOV-05",
+      "V2-OPS-07",
+      "V2-OPS-08",
+      "V3-INT-07",
+      "V3-INT-08"
+    ],
+    "parent_task_id": null,
+    "scope": "VN/EU/US/AU/SG bảo toàn; CA/UK research; chín buổi120 phút, certification scope/expiry, grievance và territorial rights.",
+    "deliverable": "evidence/INT29-019/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Nguồn luật hiện hành theo từng nước bởi local counsel; license/franchise không cấp quyền hồ sơ toàn cầu.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Nguồn luật hiện hành theo từng nước bởi local counsel; license/franchise không cấp quyền hồ sơ toàn cầu."
+      ],
+      "negative": [
+        "Ngôn ngữ/IP không tự xác định luật; cross-region unauthorized case; expired certificate và unlicensed instrument phải chặn."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-019/<candidate-digest>/",
+    "rollback_plan": "Giữ thị trường/chuyên gia chưa đủ điều kiện NOT_RELEASED; thu hồi enrollment/access độc lập dữ liệu người dùng.",
+    "effort_low_person_days": null,
+    "effort_high_person_days": null,
+    "estimate_status": "UNKNOWN_PENDING_DOMAIN_DISCOVERY",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "V2-GOV-05",
+      "V2-OPS-07",
+      "V2-OPS-08",
+      "V3-INT-07",
+      "V3-INT-08"
+    ],
+    "clarification_owner_role": "Legal/Privacy + Academy + Partnerships",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  },
+  {
+    "work_order_version": "2026-10-29.r1",
+    "task_id": "INT29-020",
+    "title": "Bàn giao trace hai chiều và quyết định pilot",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "phase": "CONDITIONAL_DEV_HANDOFF",
+    "workstream": "INTEGRATION_2026_10_29",
+    "owner_role": "Program Manager + Product + Independent QA",
+    "assignee_name": null,
+    "independent_reviewer_role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+    "reviewer_name": null,
+    "task_dependencies": [
+      "INT29-003",
+      "INT29-004",
+      "INT29-005",
+      "INT29-006",
+      "INT29-007",
+      "INT29-008",
+      "INT29-009",
+      "INT29-010",
+      "INT29-011",
+      "INT29-012",
+      "INT29-013",
+      "INT29-014",
+      "INT29-015",
+      "INT29-016",
+      "INT29-017",
+      "INT29-018"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q3",
+      "Q4",
+      "Q9",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q20",
+      "Q31",
+      "Q40",
+      "Q45"
+    ],
+    "gate_dependencies": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "source_task_ids": [
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "V2-OPS-06",
+      "V3-INT-10"
+    ],
+    "parent_task_id": null,
+    "scope": "Requirement→source→method→API/data→screen/report→work order→test→gate→receipt và uncovered register; pilot adult-self có scope.",
+    "deliverable": "evidence/INT29-020/<candidate-digest>/work-order-receipt.json + reviewed specs/diff/test logs",
+    "acceptance_criteria": [
+      "Không tỷ lệ hoàn thành bằng số tệp/task; đánh giá sản phẩm theo outcome user test, privacy và support; pilot có exit criteria.",
+      "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture."
+    ],
+    "tests": {
+      "positive": [
+        "Không tỷ lệ hoàn thành bằng số tệp/task; đánh giá sản phẩm theo outcome user test, privacy và support; pilot có exit criteria."
+      ],
+      "negative": [
+        "Thiếu backward link, orphan task/claim, report green nhưng staging không có, rollback thiếu và thiếu approver phải NO_GO."
+      ],
+      "verification_mode": "Preparation contracts now; real implementation/integration tests only in separately scoped candidate environment.",
+      "required_categories": [
+        "source_and_contract_trace",
+        "boundary_and_missing_data",
+        "permission_or_failure_path",
+        "independent_review"
+      ]
+    },
+    "evidence_path": "evidence/INT29-020/<candidate-digest>/",
+    "rollback_plan": "Pilot có kill switch/caps/cohort/incident owner; giữ NOT_RELEASED mọi capability không nằm đúng receipt phê duyệt.",
+    "effort_low_person_days": 3,
+    "effort_high_person_days": 6,
+    "estimate_status": "PROPOSAL_NOT_APPROVED",
+    "estimate_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "estimate_scope": "Preparation and integration refinement only; overlap must be reconciled against source tasks before budgeting.",
+    "dispatch_entry_conditions": [
+      "Approved work-order scope and accountable role accepted",
+      "Exact baseline/source bundle selected; existing dirty work left intact",
+      "Required decision options accepted for gated implementation; synthetic reversible design may proceed with pending decisions",
+      "No secret/provider/production access inferred from this document"
+    ],
+    "production_permission": false,
+    "release_authorization": null,
+    "source_refs": [
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "V2-OPS-06",
+      "V3-INT-10"
+    ],
+    "clarification_owner_role": "Program Manager + Product + Independent QA",
+    "blocker_status": "NOT_CHECKED",
+    "dependency_completion_policy": "SCOPED_RECEIPT_REQUIRED_NOT_PORTFOLIO_COMPLETION",
+    "dependency_scope_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+  }
+]

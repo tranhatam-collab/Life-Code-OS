@@ -1,0 +1,8 @@
+{
+  "v2_operations_preserved": 83,
+  "v3_operations_added": 16,
+  "target_operations": 99,
+  "new_schema_count": 10,
+  "actual_demo_api_routes": 3,
+  "production_routes_implemented_by_v3": 0
+}

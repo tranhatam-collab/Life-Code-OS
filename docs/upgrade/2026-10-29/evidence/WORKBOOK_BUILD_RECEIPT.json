@@ -1,0 +1,197 @@
+{
+  "runtime": "bundled @oai/artifact-tool",
+  "sheets": [
+    {
+      "name": "Tasks",
+      "rows": 316,
+      "columns": 7,
+      "last": 320
+    },
+    {
+      "name": "WorkOrders",
+      "rows": 20,
+      "columns": 7,
+      "last": 24
+    },
+    {
+      "name": "Decisions",
+      "rows": 45,
+      "columns": 7,
+      "last": 49
+    },
+    {
+      "name": "Methods",
+      "rows": 62,
+      "columns": 7,
+      "last": 66
+    },
+    {
+      "name": "API",
+      "rows": 99,
+      "columns": 7,
+      "last": 103
+    },
+    {
+      "name": "ProductsUX",
+      "rows": 97,
+      "columns": 7,
+      "last": 101
+    },
+    {
+      "name": "Trace",
+      "rows": 407,
+      "columns": 6,
+      "last": 411
+    },
+    {
+      "name": "Gates",
+      "rows": 12,
+      "columns": 6,
+      "last": 16
+    },
+    {
+      "name": "Capacity",
+      "rows": 8,
+      "columns": 7,
+      "last": 12
+    },
+    {
+      "name": "DOC_TRUOC",
+      "rows": 10,
+      "columns": 3,
+      "last": 14
+    }
+  ],
+  "formula_expected": [
+    296,
+    20,
+    316,
+    45,
+    62,
+    99,
+    97,
+    407,
+    316
+  ],
+  "formula_actual": [
+    296,
+    20,
+    316,
+    45,
+    62,
+    99,
+    97,
+    407,
+    316
+  ],
+  "capacity_tests": [
+    "blank=>unavailable",
+    "legitimatezero=>0",
+    "8rolesx100=>800",
+    "restoredblank=>unavailable"
+  ],
+  "renders": [
+    {
+      "sheet": "Tasks",
+      "range": "A1:G11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Tasks-1.png"
+    },
+    {
+      "sheet": "Tasks",
+      "range": "A315:G320",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Tasks-2.png"
+    },
+    {
+      "sheet": "WorkOrders",
+      "range": "A1:G11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/WorkOrders-1.png"
+    },
+    {
+      "sheet": "WorkOrders",
+      "range": "A19:G24",
+      "file": "/private/tmp/lc-os-oct29-board-qa/WorkOrders-2.png"
+    },
+    {
+      "sheet": "Decisions",
+      "range": "A1:G11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Decisions-1.png"
+    },
+    {
+      "sheet": "Decisions",
+      "range": "A44:G49",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Decisions-2.png"
+    },
+    {
+      "sheet": "Methods",
+      "range": "A1:G11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Methods-1.png"
+    },
+    {
+      "sheet": "Methods",
+      "range": "A61:G66",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Methods-2.png"
+    },
+    {
+      "sheet": "API",
+      "range": "A1:G11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/API-1.png"
+    },
+    {
+      "sheet": "API",
+      "range": "A98:G103",
+      "file": "/private/tmp/lc-os-oct29-board-qa/API-2.png"
+    },
+    {
+      "sheet": "ProductsUX",
+      "range": "A1:G11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/ProductsUX-1.png"
+    },
+    {
+      "sheet": "ProductsUX",
+      "range": "A96:G101",
+      "file": "/private/tmp/lc-os-oct29-board-qa/ProductsUX-2.png"
+    },
+    {
+      "sheet": "Trace",
+      "range": "A1:F11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Trace-1.png"
+    },
+    {
+      "sheet": "Trace",
+      "range": "A406:F411",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Trace-2.png"
+    },
+    {
+      "sheet": "Gates",
+      "range": "A1:F11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Gates-1.png"
+    },
+    {
+      "sheet": "Gates",
+      "range": "A11:F16",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Gates-2.png"
+    },
+    {
+      "sheet": "Capacity",
+      "range": "A1:G11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Capacity-1.png"
+    },
+    {
+      "sheet": "Capacity",
+      "range": "A12:G16",
+      "file": "/private/tmp/lc-os-oct29-board-qa/Capacity-2.png"
+    },
+    {
+      "sheet": "DOC_TRUOC",
+      "range": "A1:C11",
+      "file": "/private/tmp/lc-os-oct29-board-qa/DOC_TRUOC-1.png"
+    },
+    {
+      "sheet": "DOC_TRUOC",
+      "range": "A12:C19",
+      "file": "/private/tmp/lc-os-oct29-board-qa/DOC_TRUOC-2.png"
+    }
+  ],
+  "formula_errors_inspection": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+  "scope": "new operational board; original11/20/21tab workbooks remain immutable source; no formula claims for originalbooks"
+}

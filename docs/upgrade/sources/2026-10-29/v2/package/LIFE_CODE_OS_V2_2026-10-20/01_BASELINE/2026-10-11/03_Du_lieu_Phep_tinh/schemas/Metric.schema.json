@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/Metric.json",
+  "title": "Metric",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "unit": {
+      "type": "string"
+    },
+    "meaning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method_id": {
+      "type": "string"
+    },
+    "window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "higher_means": {
+      "enum": [
+        "more",
+        "less",
+        "not_ordered"
+      ]
+    },
+    "missing_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "value",
+    "unit",
+    "meaning",
+    "method_id",
+    "higher_means"
+  ]
+}

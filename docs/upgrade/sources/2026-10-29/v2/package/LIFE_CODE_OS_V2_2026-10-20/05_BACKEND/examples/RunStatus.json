@@ -1,0 +1,10 @@
+{
+  "run_id": "00000000-0000-4000-8000-000000000001",
+  "state": "review_required",
+  "version": 1,
+  "completed_methods": 2,
+  "total_methods": 2,
+  "missing_inputs": [],
+  "error_code": null,
+  "updated_at": "2026-10-20T00:00:00Z"
+}

@@ -1,0 +1,1408 @@
+{
+  "receipt_id": "LCO-READ-BACKEND-V1-2026-10-29.r1",
+  "observed_date": "2026-10-29",
+  "scope": "All files under four requested original V1 backend/knowledge/calculation/reference-code groups embedded in external V2; byte and semantic reconciliation, no runtime re-test",
+  "files": 53,
+  "entries": [
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+      "sha256": "05a7aca604191fa932a15f813ff2d0d76f312afe47198a10082fce7bb65d53fc",
+      "bytes": 3452,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "sha256": "9004ecb60c97c2429da1af12e0e104d5b88ffa8b8d27cbd13b9b8d5ebf47259a",
+      "bytes": 3494,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "sha256": "cb5010be794223e6799388388e385dbd5b76c29f56df946772ef203d37b00cb8",
+      "bytes": 3270,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+      "sha256": "e81a76c3522bf93599ecc49d451543eafe5dccb7a232c7ea771d2a5602f2a462",
+      "bytes": 12843,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "sha256": "772619f2492d76811118fe2eddaa785c2a1936b813649a8895cd5fbf4e70065b",
+      "bytes": 11500,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 2,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+      "sha256": "5cb8832aa506438c17ab134143aa9a85d8ba8d70aa5c465f7e392dca1179faf6",
+      "bytes": 8166,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "sha256": "0b95e26a6f50d7fa325e2d190f47ca3cfce138c5afee7aa1af7133186d1b2f63",
+      "bytes": 4400,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 4,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/LAYERS_FIELDS_PRESERVED.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "sha256": "370aa37d517d44cc4e4e9008c5a60d32e60d73ac2b316acd58ab207e8ca0784a",
+      "bytes": 3819,
+      "format": "csv",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 20,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "sha256": "b76688b91ab543c4382cc32fa3336fe281cb89c12b8cfb22d353d6253a8fcb54",
+      "bytes": 7338,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 20,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/METHOD_FAMILIES_PRESERVED.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "sha256": "7a286db190565398bb03e7d42a8d598e74523d594ca75fa646c7832a0c30bbe6",
+      "bytes": 13898,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 15,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+      "sha256": "6c204b3f5be2d6e6079f166fcd13113af736b3d1d27f0c0f81ca9716e89b2c30",
+      "bytes": 4235,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "sha256": "fa394fd8e4295167e53d0653fdc15b37feab1c565fd15b5cf80520af7a5d9bee",
+      "bytes": 3324,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "sha256": "685724029478fe6225234bd5b0b89b9d5548487ebc8ff32712e0a0b91768e8c6",
+      "bytes": 3145,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "sha256": "ce204fa6cf1cc38813124384bc2f95774e046d8d3786720dbf9c850147225175",
+      "bytes": 2895,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "sha256": "7a984704e6f410c17a32f885b73e87773ed1518a63c80d1c32b6e22d20d077a2",
+      "bytes": 27383,
+      "format": "csv",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 120,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "sha256": "12036706a99364009c176d6470dd57c1aaebe85f17b8ded36b1f13e194dbffad",
+      "bytes": 55698,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 120,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/DATA_FIELDS_120_PRESERVED.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "sha256": "b8c005e229b4e7aada74c64d2b9f86b0059461f0399a04ee0085f8fe24f54ceb",
+      "bytes": 583,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 11,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "sha256": "3a9a69bcc8914a8db532adf9122fca041a11bed4b50b2f9d2f3a26c49521f040",
+      "bytes": 716,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 15,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "sha256": "8a7a044c24183b23f84cb25a7e35c7042d4b07e961c353effe90403c6d886eac",
+      "bytes": 802,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 20,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "sha256": "0031c755fd9333b6ffb1dc2fc1ae9baca6ccb2f1abe496826c344aceaf687cee",
+      "bytes": 1642,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 18,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "sha256": "77024b90db82edf1ab0914b99d63c950c5a7bd04497d1672238468ff3ddde4a4",
+      "bytes": 240,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "sha256": "e6ea345f0b60c66739400766c7e4168c07df2301cc9fb4765d1d9910d0ba0077",
+      "bytes": 702,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 10,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "sha256": "46fc34bdcc5458b2049d795b088c251218cf477381217226b63c90d229d73845",
+      "bytes": 525,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 14,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "sha256": "0dfee7a649435057267c5a3b150a79090a3c9d08e8598fca80a315f2596308ce",
+      "bytes": 1013,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 14,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "sha256": "6323be63f262cb8e91404fe9f0f7a32dcb180f051dcf4a39f8676671d19b52de",
+      "bytes": 266,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 10,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "sha256": "ddf67830aa8dc32a967fe5829bc88e980d44a66860433a54704edd274d682dd0",
+      "bytes": 2399,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "sha256": "3eed377cc61f981d5384bf3ccf8effc5d989a2b30c237a9b4e06284d98794d24",
+      "bytes": 1778,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "sha256": "b1fd70ae0690e22ae09f3e5bc5085ecc5e14806e994f3cd60891fad078ab81c4",
+      "bytes": 3341,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "sha256": "6ac7a8e060ee48682552b69c7da2faf1e5ca3d974f03b1afdc1ea6c47a0052de",
+      "bytes": 7257,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "sha256": "0631326f54e30dcf8b08b246e01af1a82e524818ae3d2f46c17022c70398d2ba",
+      "bytes": 839,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "sha256": "4bbcfc3c8b857b681107ae14ccfbbeaeec38ec8ca3303f6317b393bf896b0e9d",
+      "bytes": 3190,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "sha256": "6c1743b8ae14be6f2cb5af0c14c39dde1324114f5c9eebf1c0c1299be0a195f9",
+      "bytes": 2550,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "sha256": "0e0d8e6d01bd561ce49bddf7acd254fc5eda01383c2063d5840104aaa6f229de",
+      "bytes": 3595,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "sha256": "e6c48bb7fe55ee74dd70daa70ab24512a359838ad96b04315c2393e230007962",
+      "bytes": 1215,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "sha256": "3e10b6293eb70b068456a4facb6ce85216fae060b848cdab6dd3c460ba0f597e",
+      "bytes": 3419,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "sha256": "c3c53a35d73e129b13174c17e13783a30f2591298d6be8ebe6b7a6f817c243ec",
+      "bytes": 3086,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "sha256": "a9131cb0128cb43f93ce6aef38bae1d487ffe5919de6a28dbbb8b4e9b8a1f019",
+      "bytes": 3292,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/04_API_AND_MIGRATION.md",
+      "sha256": "6231bc4519bbc6c4fb3270ca90c56954f6fb6d24b2666901cb3a09e9070b1f7a",
+      "bytes": 3257,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/API_OPERATIONS.json",
+      "sha256": "a10ace2ed34f5470f172c82b3016bce219d8a5a5a6307454f73fc48a263f3e97",
+      "bytes": 16191,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 64,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ARCHITECTURE.mmd",
+      "sha256": "0a5059f17c321026dfe8fc2c21d55b82ada8f8fd1749bf56c03f1b9eb76d6d19",
+      "bytes": 905,
+      "format": "mmd",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ENTITY_REGISTRY.json",
+      "sha256": "361b942e963b3e6f23d3b9d7264ba6a3b55c13183cbd3f516a642cc5d48db046",
+      "bytes": 16803,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 41,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "sha256": "064602c61f7f5352628d2a8452575b8954686b74df5875277b7394a5bb920c92",
+      "bytes": 29369,
+      "format": "sql",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_README.md",
+      "sha256": "86205fc0e2bac05b90e1670288cb9bddacc326c97ed7d6fa94514b8d061cac7e",
+      "bytes": 1127,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.json",
+      "sha256": "3fbd57337e33747f4d26acb2fd642b46532a73a255615a605aa6124725013825",
+      "bytes": 313322,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 6,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.baseline.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.yaml",
+      "sha256": "b98d0a744253de3b6eb5c950df83f9db3b1912cca73b252a4907c2a21107121e",
+      "bytes": 215983,
+      "format": "yaml",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 6,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/README.md",
+      "sha256": "2336c8c8837e567aa8af025e26b2ce35b8d77e07075ed77aa83d26fa0d5e03fa",
+      "bytes": 1055,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "sha256": "1c5157653ee549532093c7800ff60bb9077ae6f9407fa478ec0ad3afe39266e8",
+      "bytes": 23987,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 4,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/legacy_v2/data/tail80_table.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/package.json",
+      "sha256": "3409425cc3ef9fd98d8f58ed8da5130e9203f98c181d0cd7aef79c759a827b23",
+      "bytes": 339,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "sha256": "5974178a9095e1e5ab976b84ac6c160aa55004ab2acce2a8992bde5354ec3224",
+      "bytes": 2902,
+      "format": "mjs",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "sha256": "58e0f3c4333d69a8d4a70dd17f2b02195366c9f2efeea115020a25aaa6daa972",
+      "bytes": 2766,
+      "format": "mjs",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "sha256": "b09c6b32ff323edf62cc103da0f72f78254514e67b8bedaf1cb27d4f4c9e738f",
+      "bytes": 9957,
+      "format": "tap",
+      "read_mode": "FULL_TEXT_IMPORTED_RECEIPT_REVIEW_NOT_CURRENT_EXECUTION",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 83,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "sha256": "70f38450c69edd9c88d17357c71ec5ebeb7e2b9dcdb9711ea4e6dfc1ac7e8e34",
+      "bytes": 7004,
+      "format": "mjs",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+      "sha256": "18305a2311dcec37c7f97e4414fbe6b07994d03a72a4cb6b55391d20c40365e7",
+      "bytes": 1415,
+      "format": "py",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    }
+  ],
+  "rows": [
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+      "sha256": "05a7aca604191fa932a15f813ff2d0d76f312afe47198a10082fce7bb65d53fc",
+      "bytes": 3452,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "sha256": "9004ecb60c97c2429da1af12e0e104d5b88ffa8b8d27cbd13b9b8d5ebf47259a",
+      "bytes": 3494,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "sha256": "cb5010be794223e6799388388e385dbd5b76c29f56df946772ef203d37b00cb8",
+      "bytes": 3270,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+      "sha256": "e81a76c3522bf93599ecc49d451543eafe5dccb7a232c7ea771d2a5602f2a462",
+      "bytes": 12843,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "sha256": "772619f2492d76811118fe2eddaa785c2a1936b813649a8895cd5fbf4e70065b",
+      "bytes": 11500,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 2,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+      "sha256": "5cb8832aa506438c17ab134143aa9a85d8ba8d70aa5c465f7e392dca1179faf6",
+      "bytes": 8166,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "sha256": "0b95e26a6f50d7fa325e2d190f47ca3cfce138c5afee7aa1af7133186d1b2f63",
+      "bytes": 4400,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 4,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/LAYERS_FIELDS_PRESERVED.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "sha256": "370aa37d517d44cc4e4e9008c5a60d32e60d73ac2b316acd58ab207e8ca0784a",
+      "bytes": 3819,
+      "format": "csv",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 20,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "sha256": "b76688b91ab543c4382cc32fa3336fe281cb89c12b8cfb22d353d6253a8fcb54",
+      "bytes": 7338,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 20,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/METHOD_FAMILIES_PRESERVED.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "sha256": "7a286db190565398bb03e7d42a8d598e74523d594ca75fa646c7832a0c30bbe6",
+      "bytes": 13898,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 15,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+      "sha256": "6c204b3f5be2d6e6079f166fcd13113af736b3d1d27f0c0f81ca9716e89b2c30",
+      "bytes": 4235,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "sha256": "fa394fd8e4295167e53d0653fdc15b37feab1c565fd15b5cf80520af7a5d9bee",
+      "bytes": 3324,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "sha256": "685724029478fe6225234bd5b0b89b9d5548487ebc8ff32712e0a0b91768e8c6",
+      "bytes": 3145,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "sha256": "ce204fa6cf1cc38813124384bc2f95774e046d8d3786720dbf9c850147225175",
+      "bytes": 2895,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "sha256": "7a984704e6f410c17a32f885b73e87773ed1518a63c80d1c32b6e22d20d077a2",
+      "bytes": 27383,
+      "format": "csv",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 120,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "sha256": "12036706a99364009c176d6470dd57c1aaebe85f17b8ded36b1f13e194dbffad",
+      "bytes": 55698,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 120,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/DATA_FIELDS_120_PRESERVED.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "sha256": "b8c005e229b4e7aada74c64d2b9f86b0059461f0399a04ee0085f8fe24f54ceb",
+      "bytes": 583,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 11,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "sha256": "3a9a69bcc8914a8db532adf9122fca041a11bed4b50b2f9d2f3a26c49521f040",
+      "bytes": 716,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 15,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "sha256": "8a7a044c24183b23f84cb25a7e35c7042d4b07e961c353effe90403c6d886eac",
+      "bytes": 802,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 20,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "sha256": "0031c755fd9333b6ffb1dc2fc1ae9baca6ccb2f1abe496826c344aceaf687cee",
+      "bytes": 1642,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 18,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "sha256": "77024b90db82edf1ab0914b99d63c950c5a7bd04497d1672238468ff3ddde4a4",
+      "bytes": 240,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "sha256": "e6ea345f0b60c66739400766c7e4168c07df2301cc9fb4765d1d9910d0ba0077",
+      "bytes": 702,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 10,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "sha256": "46fc34bdcc5458b2049d795b088c251218cf477381217226b63c90d229d73845",
+      "bytes": 525,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 14,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "sha256": "0dfee7a649435057267c5a3b150a79090a3c9d08e8598fca80a315f2596308ce",
+      "bytes": 1013,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 14,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "sha256": "6323be63f262cb8e91404fe9f0f7a32dcb180f051dcf4a39f8676671d19b52de",
+      "bytes": 266,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 10,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "sha256": "ddf67830aa8dc32a967fe5829bc88e980d44a66860433a54704edd274d682dd0",
+      "bytes": 2399,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "sha256": "3eed377cc61f981d5384bf3ccf8effc5d989a2b30c237a9b4e06284d98794d24",
+      "bytes": 1778,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "sha256": "b1fd70ae0690e22ae09f3e5bc5085ecc5e14806e994f3cd60891fad078ab81c4",
+      "bytes": 3341,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "sha256": "6ac7a8e060ee48682552b69c7da2faf1e5ca3d974f03b1afdc1ea6c47a0052de",
+      "bytes": 7257,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "sha256": "0631326f54e30dcf8b08b246e01af1a82e524818ae3d2f46c17022c70398d2ba",
+      "bytes": 839,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "sha256": "4bbcfc3c8b857b681107ae14ccfbbeaeec38ec8ca3303f6317b393bf896b0e9d",
+      "bytes": 3190,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "sha256": "6c1743b8ae14be6f2cb5af0c14c39dde1324114f5c9eebf1c0c1299be0a195f9",
+      "bytes": 2550,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "sha256": "0e0d8e6d01bd561ce49bddf7acd254fc5eda01383c2063d5840104aaa6f229de",
+      "bytes": 3595,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 8,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "sha256": "e6c48bb7fe55ee74dd70daa70ab24512a359838ad96b04315c2393e230007962",
+      "bytes": 1215,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "sha256": "3e10b6293eb70b068456a4facb6ce85216fae060b848cdab6dd3c460ba0f597e",
+      "bytes": 3419,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "sha256": "c3c53a35d73e129b13174c17e13783a30f2591298d6be8ebe6b7a6f817c243ec",
+      "bytes": 3086,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "sha256": "a9131cb0128cb43f93ce6aef38bae1d487ffe5919de6a28dbbb8b4e9b8a1f019",
+      "bytes": 3292,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/04_API_AND_MIGRATION.md",
+      "sha256": "6231bc4519bbc6c4fb3270ca90c56954f6fb6d24b2666901cb3a09e9070b1f7a",
+      "bytes": 3257,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/API_OPERATIONS.json",
+      "sha256": "a10ace2ed34f5470f172c82b3016bce219d8a5a5a6307454f73fc48a263f3e97",
+      "bytes": 16191,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 64,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ARCHITECTURE.mmd",
+      "sha256": "0a5059f17c321026dfe8fc2c21d55b82ada8f8fd1749bf56c03f1b9eb76d6d19",
+      "bytes": 905,
+      "format": "mmd",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ENTITY_REGISTRY.json",
+      "sha256": "361b942e963b3e6f23d3b9d7264ba6a3b55c13183cbd3f516a642cc5d48db046",
+      "bytes": 16803,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 41,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "sha256": "064602c61f7f5352628d2a8452575b8954686b74df5875277b7394a5bb920c92",
+      "bytes": 29369,
+      "format": "sql",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_README.md",
+      "sha256": "86205fc0e2bac05b90e1670288cb9bddacc326c97ed7d6fa94514b8d061cac7e",
+      "bytes": 1127,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.json",
+      "sha256": "3fbd57337e33747f4d26acb2fd642b46532a73a255615a605aa6124725013825",
+      "bytes": 313322,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 6,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.baseline.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.yaml",
+      "sha256": "b98d0a744253de3b6eb5c950df83f9db3b1912cca73b252a4907c2a21107121e",
+      "bytes": 215983,
+      "format": "yaml",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 6,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/README.md",
+      "sha256": "2336c8c8837e567aa8af025e26b2ce35b8d77e07075ed77aa83d26fa0d5e03fa",
+      "bytes": 1055,
+      "format": "md",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "sha256": "1c5157653ee549532093c7800ff60bb9077ae6f9407fa478ec0ad3afe39266e8",
+      "bytes": 23987,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 4,
+      "exact_byte_duplicate_of_already_reviewed": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/legacy_v2/data/tail80_table.json",
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/package.json",
+      "sha256": "3409425cc3ef9fd98d8f58ed8da5130e9203f98c181d0cd7aef79c759a827b23",
+      "bytes": 339,
+      "format": "json",
+      "read_mode": "FULL_PARSE_RECONCILIATION_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 7,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "sha256": "5974178a9095e1e5ab976b84ac6c160aa55004ab2acce2a8992bde5354ec3224",
+      "bytes": 2902,
+      "format": "mjs",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "sha256": "58e0f3c4333d69a8d4a70dd17f2b02195366c9f2efeea115020a25aaa6daa972",
+      "bytes": 2766,
+      "format": "mjs",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "sha256": "b09c6b32ff323edf62cc103da0f72f78254514e67b8bedaf1cb27d4f4c9e738f",
+      "bytes": 9957,
+      "format": "tap",
+      "read_mode": "FULL_TEXT_IMPORTED_RECEIPT_REVIEW_NOT_CURRENT_EXECUTION",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": 83,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "sha256": "70f38450c69edd9c88d17357c71ec5ebeb7e2b9dcdb9711ea4e6dfc1ac7e8e34",
+      "bytes": 7004,
+      "format": "mjs",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+      "sha256": "18305a2311dcec37c7f97e4414fbe6b07994d03a72a4cb6b55391d20c40365e7",
+      "bytes": 1415,
+      "format": "py",
+      "read_mode": "FULL_TEXT_SEMANTIC_REVIEW",
+      "read_status": "ALL_BYTES_DECODED_AND_REVIEWED",
+      "record_count": null,
+      "exact_byte_duplicate_of_already_reviewed": null,
+      "executed": false
+    }
+  ],
+  "total_bytes": 857692,
+  "format_counts": {
+    "md": 15,
+    "json": 28,
+    "csv": 2,
+    "mmd": 1,
+    "sql": 1,
+    "yaml": 1,
+    "mjs": 3,
+    "tap": 1,
+    "py": 1
+  },
+  "old_openapi_operation_count": 64,
+  "old_openapi_exact_equal_external_v2_baseline": true,
+  "old_openapi_yaml_semantic_parity": true,
+  "old_entity_registry_count": 41,
+  "old_sql_table_count": 41,
+  "old_entity_registry_matches_sql_table_names": true,
+  "old_sql_ends_in_commit": true,
+  "old_sql_execution": "NOT_RUN",
+  "old_passport_upgrade_deltas": [
+    {
+      "method_id": "M01",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M02",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M03",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M04",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M05",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M06",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M07",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M08",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M09",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M10",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M11",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M12",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M13",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M14",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    },
+    {
+      "method_id": "M15",
+      "changed_keys": [
+        "version"
+      ],
+      "new_keys": [
+        "approval_required",
+        "baseline_version",
+        "formula_links"
+      ]
+    }
+  ],
+  "regression_checks": [
+    {
+      "id": "V1KEEP-01",
+      "source": "02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "requirement": "Resonance is cross-layer, never Layer13; 144 question cells optional; at most 3 priority actions with visible tradeoffs",
+      "current_scope": "Master/clients should retain this explicit UX rule; 144 cells not a mandatory intake."
+    },
+    {
+      "id": "V1KEEP-02",
+      "source": "03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "requirement": "Year/month-only dates remain ranges; never fill 01-01; observed_after_report events cannot be used as pre-report prediction evidence",
+      "current_scope": "V3 exact-DOB reference is a scoped adapter; preserve partial-date model/backlog."
+    },
+    {
+      "id": "V1KEEP-03",
+      "source": "04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "requirement": "41-entity full-domain model remains design input; V2 9-table transactional core does not replace it",
+      "current_scope": "DDL ends COMMIT and is not safe to execute as a migration; no source SQL executed."
+    },
+    {
+      "id": "V1KEEP-04",
+      "source": "04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "requirement": "Transaction-bound pooled RLS context, personalized query cache disabled, no session-wide user context, non-owner runtime role",
+      "current_scope": "Preserve as acceptance criteria in database/provider work order; no provider behavior verified."
+    },
+    {
+      "id": "V1KEEP-05",
+      "source": "03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "requirement": "Legacy raw/normalized/adjusted LCI quarantined under experimental_legacy; never unlock/price/rank/risk",
+      "current_scope": "No LCI in new reference bundle; retain explicit legacy migration/quarantine requirement."
+    },
+    {
+      "id": "V1KEEP-06",
+      "source": "04_Backend_API/04_API_AND_MIGRATION.md",
+      "requirement": "Migration ledger per record; no merge by same name/DOB; unknown ownership/purpose is quarantine; do not force 100% migration",
+      "current_scope": "WP03/WP12 require concrete rehearsal and exceptions receipt."
+    },
+    {
+      "id": "V1KEEP-07",
+      "source": "10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "requirement": "Old assertClaim only checks model ID structure; old allowed/memoryledger are reference examples and cannot replace hardened registry/RLS/outbox",
+      "current_scope": "New canonical9 and V2 hardened reference kept; old code preserved for historical review only."
+    }
+  ],
+  "remaining_original_source_review": "Original cited books/rights and runtime methods remain separate gates. Preserved TAP not accepted as a current test run."
+}

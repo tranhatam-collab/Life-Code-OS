@@ -1,0 +1,988 @@
+[
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L1",
+    "level": 1,
+    "product_id": "LC-L1",
+    "name": "Self Signal",
+    "template_ref": "templates/LEVEL_1.json",
+    "page_budget_min": 30,
+    "page_budget_max": 50,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "adult self subject",
+      "goal",
+      "permitted name/date inputs",
+      "precision/timezone",
+      "released method"
+    ],
+    "prohibited_inferences": [
+      "arithmetic/date/name mismatch",
+      "fixed-trait or destiny language",
+      "missing source or limitation"
+    ],
+    "output_emphasis": [
+      "three-minute summary",
+      "transparent calculation",
+      "unknowns",
+      "one 30-day action"
+    ],
+    "ai_role": "explain deterministic result and draft sourced self-observation questions",
+    "reviewer_roles": [
+      "Editorial",
+      "Method"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L1-GOLDEN",
+      "FX-RPT-L1-NULL",
+      "FX-RPT-L1-CONFLICT",
+      "FX-RPT-L1-UNAUTHORIZED",
+      "FX-RPT-L1-INJECTION",
+      "FX-RPT-L1-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-02",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L1/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L2",
+    "level": 2,
+    "product_id": "LC-L2",
+    "name": "Inner Architecture",
+    "template_ref": "templates/LEVEL_2.json",
+    "page_budget_min": 40,
+    "page_budget_max": 60,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "released L1 facts",
+      "self-described needs",
+      "values",
+      "roles",
+      "3–5 user-provided situations"
+    ],
+    "prohibited_inferences": [
+      "mind-reading or true-self claim",
+      "inferred event or motive",
+      "hidden contradiction"
+    ],
+    "output_emphasis": [
+      "tensions between stated values and roles",
+      "choice alternatives",
+      "confirm or reject prompts"
+    ],
+    "ai_role": "cluster only user-provided situations and draft alternatives",
+    "reviewer_roles": [
+      "Editorial",
+      "Behavioral-scope reviewer"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L2-GOLDEN",
+      "FX-RPT-L2-NULL",
+      "FX-RPT-L2-CONFLICT",
+      "FX-RPT-L2-UNAUTHORIZED",
+      "FX-RPT-L2-INJECTION",
+      "FX-RPT-L2-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L2/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L3",
+    "level": 3,
+    "product_id": "LC-L3",
+    "name": "Behavior Code",
+    "template_ref": "templates/LEVEL_3.json",
+    "page_budget_min": 50,
+    "page_budget_max": 70,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "contextual journal",
+      "check-ins",
+      "approved questionnaire release",
+      "observation window"
+    ],
+    "prohibited_inferences": [
+      "clinical label",
+      "pattern without sufficient observations",
+      "causal claim from correlation"
+    ],
+    "output_emphasis": [
+      "behavior by context",
+      "frequency and uncertainty",
+      "reversible experiment"
+    ],
+    "ai_role": "summarize patterns with denominator and time window",
+    "reviewer_roles": [
+      "Editorial",
+      "Questionnaire/Method"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L3-GOLDEN",
+      "FX-RPT-L3-NULL",
+      "FX-RPT-L3-CONFLICT",
+      "FX-RPT-L3-UNAUTHORIZED",
+      "FX-RPT-L3-INJECTION",
+      "FX-RPT-L3-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L3/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L4",
+    "level": 4,
+    "product_id": "LC-L4",
+    "name": "Work & Wealth",
+    "template_ref": "templates/LEVEL_4.json",
+    "page_budget_min": 50,
+    "page_budget_max": 80,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "evidenced skills",
+      "work history",
+      "goals",
+      "resources",
+      "user-entered scenarios"
+    ],
+    "prohibited_inferences": [
+      "investment/credit/employment decision",
+      "symbolic cycle as financial evidence",
+      "unstated assumption"
+    ],
+    "output_emphasis": [
+      "role and resource trade-offs",
+      "cash-flow scenarios",
+      "assumption sensitivity"
+    ],
+    "ai_role": "calculate typed scenarios and explain sensitivity",
+    "reviewer_roles": [
+      "Editorial",
+      "Finance-scope reviewer"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L4-GOLDEN",
+      "FX-RPT-L4-NULL",
+      "FX-RPT-L4-CONFLICT",
+      "FX-RPT-L4-UNAUTHORIZED",
+      "FX-RPT-L4-INJECTION",
+      "FX-RPT-L4-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L4/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L5",
+    "level": 5,
+    "product_id": "LC-L5",
+    "name": "Relationship Field",
+    "template_ref": "templates/LEVEL_5.json",
+    "page_budget_min": 50,
+    "page_budget_max": 80,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "each adult consent",
+      "mutually shared facts",
+      "self-reported agreements/conflicts",
+      "active grants"
+    ],
+    "prohibited_inferences": [
+      "loyalty or compatibility destiny claim",
+      "private content disclosure",
+      "coerced joint conclusion"
+    ],
+    "output_emphasis": [
+      "perspective-separated needs",
+      "boundaries",
+      "dialogue plan"
+    ],
+    "ai_role": "synthesize only mutually permitted sections while preserving speaker",
+    "reviewer_roles": [
+      "Editorial",
+      "Relationship/Consent"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L5-GOLDEN",
+      "FX-RPT-L5-NULL",
+      "FX-RPT-L5-CONFLICT",
+      "FX-RPT-L5-UNAUTHORIZED",
+      "FX-RPT-L5-INJECTION",
+      "FX-RPT-L5-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L5/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L6",
+    "level": 6,
+    "product_id": "LC-L6",
+    "name": "Life Timeline",
+    "template_ref": "templates/LEVEL_6.json",
+    "page_budget_min": 60,
+    "page_budget_max": 100,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "dated sourced events",
+      "precision/timezone",
+      "plans",
+      "separately labeled symbolic cycles"
+    ],
+    "prohibited_inferences": [
+      "invented event/date",
+      "lifespan prediction",
+      "symbolic and factual track merged"
+    ],
+    "output_emphasis": [
+      "four tracks",
+      "gaps",
+      "version change",
+      "scenarios"
+    ],
+    "ai_role": "normalize dates, detect conflicts and draft scenario branches",
+    "reviewer_roles": [
+      "Editorial",
+      "Timeline/Method"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L6-GOLDEN",
+      "FX-RPT-L6-NULL",
+      "FX-RPT-L6-CONFLICT",
+      "FX-RPT-L6-UNAUTHORIZED",
+      "FX-RPT-L6-INJECTION",
+      "FX-RPT-L6-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L6/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L7",
+    "level": 7,
+    "product_id": "LC-L7",
+    "name": "Body Intelligence",
+    "template_ref": "templates/LEVEL_7.json",
+    "page_budget_min": 60,
+    "page_budget_max": 120,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "dedicated approval",
+      "explicit purpose/consent",
+      "permitted self-observation",
+      "environment journal"
+    ],
+    "prohibited_inferences": [
+      "disease/hormone/personality/morality inference",
+      "unapproved image/body input",
+      "missing DPIA or specialist gate"
+    ],
+    "output_emphasis": [
+      "environmental/self-care observations",
+      "uncertainty",
+      "referral boundary"
+    ],
+    "ai_role": "summarize permitted diary only; baseline excludes image inference",
+    "reviewer_roles": [
+      "Specialist",
+      "Privacy",
+      "Legal",
+      "Method"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L7-GOLDEN",
+      "FX-RPT-L7-NULL",
+      "FX-RPT-L7-CONFLICT",
+      "FX-RPT-L7-UNAUTHORIZED",
+      "FX-RPT-L7-INJECTION",
+      "FX-RPT-L7-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q15",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L7/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L8",
+    "level": 8,
+    "product_id": "LC-L8",
+    "name": "Mission Path",
+    "template_ref": "templates/LEVEL_8.json",
+    "page_budget_min": 80,
+    "page_budget_max": 150,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "self-chosen values",
+      "evidenced capabilities",
+      "desired service experiments",
+      "responsibilities/resources"
+    ],
+    "prohibited_inferences": [
+      "single destined mission",
+      "unsafe sacrifice pressure",
+      "capability without evidence"
+    ],
+    "output_emphasis": [
+      "multiple service hypotheses",
+      "trade-offs",
+      "90-day experiments"
+    ],
+    "ai_role": "connect evidence to alternatives and expose uncertainty",
+    "reviewer_roles": [
+      "Editorial",
+      "Method",
+      "Relevant domain reviewer"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L8-GOLDEN",
+      "FX-RPT-L8-NULL",
+      "FX-RPT-L8-CONFLICT",
+      "FX-RPT-L8-UNAUTHORIZED",
+      "FX-RPT-L8-INJECTION",
+      "FX-RPT-L8-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L8/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "contract_id": "RPT-L9",
+    "level": 9,
+    "product_id": "LC-L9",
+    "name": "Full Life Code",
+    "template_ref": "templates/LEVEL_9.json",
+    "page_budget_min": 150,
+    "page_budget_max": 600,
+    "page_budget_mandatory": false,
+    "required_inputs": [
+      "released and consented L1–L8 components",
+      "explicit excluded/inapplicable components",
+      "current grants"
+    ],
+    "prohibited_inferences": [
+      "page-count filler",
+      "silent unavailable L7",
+      "flattened contradiction",
+      "complete-life-truth claim"
+    ],
+    "output_emphasis": [
+      "deduplicated synthesis",
+      "version/method disagreements",
+      "priorities",
+      "action system"
+    ],
+    "ai_role": "reconcile references without erasing disagreement and compress repetition",
+    "reviewer_roles": [
+      "Senior Editorial",
+      "Method",
+      "Privacy"
+    ],
+    "deterministic_checks": [
+      "schema_and_types",
+      "null_unknown_withheld_distinction",
+      "decimal_rounding",
+      "date_timezone_precision",
+      "method_release",
+      "claim_lineage",
+      "source_rights",
+      "snapshot_immutability"
+    ],
+    "fixture_ids": [
+      "FX-RPT-L9-GOLDEN",
+      "FX-RPT-L9-NULL",
+      "FX-RPT-L9-CONFLICT",
+      "FX-RPT-L9-UNAUTHORIZED",
+      "FX-RPT-L9-INJECTION",
+      "FX-RPT-L9-CORRECTION"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "workflow_states": [
+      "draft",
+      "automated_checks_failed",
+      "awaiting_human_review",
+      "changes_requested",
+      "approved_for_specific_release",
+      "published",
+      "corrected",
+      "withdrawn"
+    ],
+    "public_auto_publish": false,
+    "evidence_path": "evidence/reports/L9/<template-version>/<sha>/receipt.json",
+    "claim_status": "NOT_CHECKED"
+  }
+]

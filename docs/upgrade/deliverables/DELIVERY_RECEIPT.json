@@ -1,0 +1,27 @@
+{
+  "version": "2026-10-20.r2",
+  "scope": "PORTABLE_LOCAL_HANDOFF_NOT_PRODUCTION_APPROVAL",
+  "file": "Life_Code_OS_Complete_Upgrade_Package_2026-10-20.zip",
+  "sha256": "3e2f1b707f9f9b97af24920735d459dd2aef31d1f444df077c9a588f14f69ba2",
+  "bytes": 6934579,
+  "archive_entries": 438,
+  "current_package_files": 216,
+  "current_manifest_sha256": "b7738d7b334c7edc6783e5b00f604c28cb4f406ff4d1a35806e82e8b430bcdb5",
+  "original_attachment_files_preserved": 149,
+  "integrity_verifier_exit": 0,
+  "zip_crc_and_source_entry_sha256_parity": true,
+  "generated_archive_only_entry": "OPEN_FIRST.html",
+  "production_release_verdict": "HOLD",
+  "portable_extract_smoke": {
+    "fresh_temporary_directory": true,
+    "integrity_verifier_exit_code": 0,
+    "integrity_files_checked": 215,
+    "reference_test_exit_code": 0,
+    "tests": 173,
+    "passed": 173,
+    "failed": 0,
+    "skipped": 0,
+    "todo": 0,
+    "scope": "Extracted ZIP only; no credentials/provider/database/network required"
+  }
+}

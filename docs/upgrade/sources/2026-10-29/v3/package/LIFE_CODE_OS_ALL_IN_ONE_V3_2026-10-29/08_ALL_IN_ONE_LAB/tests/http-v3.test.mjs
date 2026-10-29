@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';import http from 'node:http';
+import {createDemoServer} from '../server.mjs';
+const s=createDemoServer();await new Promise(r=>s.listen(0,'127.0.0.1',r));const port=s.address().port;const base=`http://127.0.0.1:${port}`;
+test.after(()=>new Promise(r=>s.close(r)));
+test('HTTP health explicitly not production-ready',async()=>{const r=await fetch(base+'/health');assert.equal(r.status,200);assert.equal((await r.json()).production_ready,false);});
+test('HTTP catalog preserves 167 cases and nine design levels',async()=>{const r=await fetch(base+'/api/demo/catalog'),d=await r.json();assert.equal(d.cases.length,167);assert.equal(d.levels.length,9);assert.equal(d.domains.length,18);});
+test('HTTP rejects a remote browser origin',async()=>{const r=await fetch(base+'/api/demo/run',{method:'POST',headers:{'Content-Type':'application/json','Origin':'https://example.invalid'},body:'{}'});assert.equal(r.status,403);});
+test('HTTP result has same calculation as local method',async()=>{const r=await fetch(base+'/api/demo/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({method:'bat_cuc',input:{sequence:'4134'}})});assert.equal(r.status,200);const b=await r.json();assert.deepEqual(b.data.calculation.pairs.map(x=>x.group_id),['SK','TY','DN']);});
+test('HTTP malformed JSON gives problem response',async()=>{const r=await fetch(base+'/api/demo/run',{method:'POST',headers:{'Content-Type':'application/json'},body:'{'});assert.equal(r.status,400);assert.match(r.headers.get('content-type'),/problem\+json/);});
+test('HTTP rejects unsupported methods',async()=>{const r=await fetch(base+'/api/demo/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({method:'read_all_users',input:{}})});assert.equal(r.status,422);});
+test('HTTP no persistence/profile endpoint in local lab',async()=>{const r=await fetch(base+'/api/v2/profiles');assert.equal(r.status,404);});
+test('HTTP CSP and cache controls are present',async()=>{const r=await fetch(base+'/');assert.match(r.headers.get('content-security-policy'),/frame-ancestors 'none'/);assert.equal(r.headers.get('cache-control'),'no-store');});

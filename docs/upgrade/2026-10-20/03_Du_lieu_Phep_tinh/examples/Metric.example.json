@@ -1,0 +1,17 @@
+{
+  "metric_id": "goal_completion_ratio",
+  "value": null,
+  "unit": "percent",
+  "meaning": "Dữ liệu chưa đủ để tính tiến độ nhiệm vụ.",
+  "method_id": "goal_progress",
+  "window": null,
+  "higher_means": "more",
+  "scale_min": 0,
+  "scale_max": 100,
+  "direction": "higher_is_more",
+  "formula_version": "FC-TASK-COMPLETION-001@1.0-proposed",
+  "observation_window": null,
+  "decimal_places": 2,
+  "rounding_mode": "half_even",
+  "missing_reason": "no_scheduled_actions"
+}

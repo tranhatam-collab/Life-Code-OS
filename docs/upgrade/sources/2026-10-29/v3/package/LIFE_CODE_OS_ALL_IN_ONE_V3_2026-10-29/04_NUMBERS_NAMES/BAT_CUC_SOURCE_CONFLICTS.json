@@ -1,0 +1,30 @@
+[
+  {
+    "id": "BC-CONFLICT-01",
+    "example": "876",
+    "table_result": [
+      "DN",
+      "SK"
+    ],
+    "public_prose_labels": [
+      "DN",
+      "TY"
+    ],
+    "source_id": "R04",
+    "resolution": "USE_DISCLOSED_PAIR_TABLE; FLAG_PROSE_CONFLICT; NO_FINANCIAL_CLAIM"
+  },
+  {
+    "id": "BC-CONFLICT-02",
+    "example": "678",
+    "table_result": [
+      "SK",
+      "DN"
+    ],
+    "public_prose_labels": [
+      "SK",
+      "TY"
+    ],
+    "source_id": "R04",
+    "resolution": "USE_DISCLOSED_PAIR_TABLE; FLAG_PROSE_CONFLICT; NO_FINANCIAL_CLAIM"
+  }
+]

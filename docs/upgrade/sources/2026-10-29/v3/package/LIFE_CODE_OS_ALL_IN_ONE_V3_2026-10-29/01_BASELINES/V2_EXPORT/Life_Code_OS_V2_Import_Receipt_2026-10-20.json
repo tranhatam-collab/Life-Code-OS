@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-10-20",
+  "package_root": "LIFE_CODE_OS_V2_2026-10-20",
+  "package_files_including_manifest": 304,
+  "baseline_files_preserved": 149,
+  "manifest_sha256": "fef16715ef33376cb189e1c32e85d5af785f118efeae1af536c0e4e9fba96472",
+  "local_full_import_dry_run": {
+    "repository": "tranhatam-collab/life-code-os",
+    "branch": "upgrade/lifecode-v2-backend-lab-2026-10-20",
+    "target": "docs/upgrades/2026-10-20-v2",
+    "mode": "DRY_RUN",
+    "verified_files": 304,
+    "new_files": 304,
+    "identical_files": 0,
+    "overwritten_files": 0,
+    "deleted_files": 0,
+    "committed": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "local_full_import_apply": {
+    "repository": "tranhatam-collab/life-code-os",
+    "branch": "upgrade/lifecode-v2-backend-lab-2026-10-20",
+    "target": "docs/upgrades/2026-10-20-v2",
+    "mode": "APPLIED_FILES_ONLY",
+    "verified_files": 304,
+    "new_files": 304,
+    "identical_files": 0,
+    "overwritten_files": 0,
+    "deleted_files": 0,
+    "committed": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "additive_patch": {
+    "file": "Life_Code_OS_V2_Additive_Import_2026-10-20.patch",
+    "bytes": 8217929,
+    "sha256": "58a2604e047334b8dd9658057772aebaa713e34ab1ae940d9e77663b1f1527d0",
+    "added_paths": 304,
+    "modified_paths": 0,
+    "deleted_paths": 0,
+    "git_apply_check_passed": true,
+    "post_apply_hashes_passed": true
+  },
+  "remote_write_status": "BLOCKED_403",
+  "remote_files_written": 0,
+  "production_changed": false,
+  "scope": "Package integrity and synthetic local import/patch checks only. No remote write, commit, merge or deploy."
+}

@@ -1,0 +1,164 @@
+{
+  "layers": [
+    {
+      "layer_id": "LAYER-01",
+      "name": "Chrono Code",
+      "name_vi": "Thời gian",
+      "first_beta": true,
+      "must_not_infer_from_birth_or_image": false
+    },
+    {
+      "layer_id": "LAYER-02",
+      "name": "Name Code",
+      "name_vi": "Tên gọi",
+      "first_beta": true,
+      "must_not_infer_from_birth_or_image": false
+    },
+    {
+      "layer_id": "LAYER-03",
+      "name": "Birth Matrix",
+      "name_vi": "Bản đồ sinh biểu tượng",
+      "first_beta": true,
+      "must_not_infer_from_birth_or_image": false
+    },
+    {
+      "layer_id": "LAYER-04",
+      "name": "Face Code",
+      "name_vi": "Quan sát khuôn mặt",
+      "first_beta": false,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-05",
+      "name": "Hand Code",
+      "name_vi": "Quan sát bàn tay",
+      "first_beta": false,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-06",
+      "name": "Foot Code",
+      "name_vi": "Quan sát bàn chân",
+      "first_beta": false,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-07",
+      "name": "Behavior Code",
+      "name_vi": "Hành vi",
+      "first_beta": true,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-08",
+      "name": "Social Fate Code",
+      "name_vi": "Điều kiện xã hội",
+      "first_beta": true,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-09",
+      "name": "Relationship Code",
+      "name_vi": "Quan hệ",
+      "first_beta": false,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-10",
+      "name": "Wealth Code",
+      "name_vi": "Nguồn lực tài chính",
+      "first_beta": false,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-11",
+      "name": "Health Risk Code",
+      "name_vi": "Sinh hoạt và thông tin sức khỏe",
+      "first_beta": false,
+      "must_not_infer_from_birth_or_image": true
+    },
+    {
+      "layer_id": "LAYER-12",
+      "name": "Mission Code",
+      "name_vi": "Hướng sống",
+      "first_beta": true,
+      "must_not_infer_from_birth_or_image": true
+    }
+  ],
+  "fields": [
+    {
+      "field_id": "FIELD-01",
+      "name_vi": "Thực phẩm",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-02",
+      "name_vi": "Nước",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-03",
+      "name_vi": "Thời gian",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-04",
+      "name_vi": "Nơi sống",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-05",
+      "name_vi": "Thiên nhiên",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-06",
+      "name_vi": "Giọng nói và âm thanh",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-07",
+      "name_vi": "Con người",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-08",
+      "name_vi": "Công việc",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-09",
+      "name_vi": "Vận động",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-10",
+      "name_vi": "Ngủ và phục hồi",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-11",
+      "name_vi": "Môi trường số",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    },
+    {
+      "field_id": "FIELD-12",
+      "name_vi": "Ý nghĩa sống",
+      "data_type": "self_report_or_observation",
+      "medical_intervention": false
+    }
+  ],
+  "matrix_cells": 144,
+  "meaning": "144 ô tổ chức câu hỏi; không phải đại lượng năng lượng được đo"
+}

@@ -1,0 +1,38 @@
+{
+  "report_id": "00000000-0000-0000-0000-000000000006",
+  "tenant_id": "00000000-0000-0000-0000-000000000003",
+  "subject_ids": [
+    "00000000-0000-0000-0000-000000000002"
+  ],
+  "profile_version_ids": [
+    "00000000-0000-0000-0000-000000000001"
+  ],
+  "product_release_id": "LC-L1-proposed",
+  "method_release_ids": [
+    "M06-v0.1"
+  ],
+  "claim_ids": [
+    "00000000-0000-0000-0000-000000000004"
+  ],
+  "locale": "vi-VN",
+  "content_version": "draft1",
+  "sections": [
+    {
+      "section_id": "analysis.tail80",
+      "block": "analysis",
+      "title": "Mã tham chiếu",
+      "content_type": "calculation",
+      "claim_ids": [
+        "00000000-0000-0000-0000-000000000004"
+      ],
+      "text": "6231 chia 80 dư 71.",
+      "limitations": [
+        "Không luận sức khỏe hoặc tính cách."
+      ]
+    }
+  ],
+  "review_state": "draft",
+  "reviewer_id": null,
+  "snapshot_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "created_at": "2026-10-11T00:00:00Z"
+}

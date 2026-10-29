@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:BirthRecordV2",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "calendar": {
+      "enum": [
+        "gregorian",
+        "julian",
+        "lunisolar",
+        "unknown"
+      ]
+    },
+    "date_original": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date_iso": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "date_precision": {
+      "enum": [
+        "day",
+        "month",
+        "year",
+        "range",
+        "unknown"
+      ]
+    },
+    "time_original": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "time_local": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "time_precision": {
+      "enum": [
+        "exact_reported",
+        "approximate",
+        "range",
+        "unknown"
+      ]
+    },
+    "time_zone": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tzdb_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "utc_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "maxItems": 2
+    },
+    "place_original": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_kind": {
+      "enum": [
+        "self_report",
+        "document_checked",
+        "hypothesis"
+      ]
+    }
+  },
+  "required": [
+    "calendar",
+    "date_original",
+    "date_iso",
+    "date_precision",
+    "time_original",
+    "time_local",
+    "time_precision",
+    "time_zone",
+    "tzdb_version",
+    "utc_candidates",
+    "place_original",
+    "source_kind"
+  ]
+}

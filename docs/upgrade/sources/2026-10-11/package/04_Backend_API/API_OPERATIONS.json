@@ -1,0 +1,578 @@
+[
+  {
+    "method": "GET",
+    "path": "/health",
+    "operation_id": "health",
+    "permission": "public",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/catalog",
+    "operation_id": "catalog",
+    "permission": "public",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/methods",
+    "operation_id": "methods",
+    "permission": "public",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/methods/{methodId}",
+    "operation_id": "methodDetail",
+    "permission": "public",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/MethodRelease",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/auth/login",
+    "operation_id": "login",
+    "permission": "public",
+    "request_schema": null,
+    "response_schema": null,
+    "success": 302
+  },
+  {
+    "method": "GET",
+    "path": "/auth/callback",
+    "operation_id": "authCallback",
+    "permission": "public",
+    "request_schema": null,
+    "response_schema": null,
+    "success": 302
+  },
+  {
+    "method": "POST",
+    "path": "/auth/logout",
+    "operation_id": "logout",
+    "permission": "self",
+    "request_schema": null,
+    "response_schema": null,
+    "success": 204
+  },
+  {
+    "method": "GET",
+    "path": "/subjects",
+    "operation_id": "subjects",
+    "permission": "self",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/subjects",
+    "operation_id": "createSubject",
+    "permission": "self",
+    "request_schema": "#/components/schemas/SubjectCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}",
+    "operation_id": "subject",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/overview",
+    "operation_id": "overview",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/profile-versions",
+    "operation_id": "newProfileVersion",
+    "permission": "subject:write",
+    "request_schema": "#/components/schemas/ProfileCreate",
+    "response_schema": "#/components/schemas/ProfileVersion",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/profile-versions/{versionId}",
+    "operation_id": "profileVersion",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ProfileVersion",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/hypotheses",
+    "operation_id": "newHypothesis",
+    "permission": "subject:write",
+    "request_schema": "#/components/schemas/HypothesisCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/consents",
+    "operation_id": "consents",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/consents",
+    "operation_id": "consentDecision",
+    "permission": "subject:consent",
+    "request_schema": "#/components/schemas/ConsentCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/grants",
+    "operation_id": "grants",
+    "permission": "subject:share",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/grants",
+    "operation_id": "grant",
+    "permission": "subject:share",
+    "request_schema": "#/components/schemas/GrantCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "DELETE",
+    "path": "/grants/{grantId}",
+    "operation_id": "revokeGrant",
+    "permission": "grant:owner",
+    "request_schema": null,
+    "response_schema": null,
+    "success": 204
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/observations",
+    "operation_id": "observations",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/observations",
+    "operation_id": "observation",
+    "permission": "subject:write",
+    "request_schema": "#/components/schemas/ObservationCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/questionnaire-responses",
+    "operation_id": "questionnaireResponse",
+    "permission": "subject:write",
+    "request_schema": "#/components/schemas/QuestionnaireResponse",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/plans",
+    "operation_id": "createPlan",
+    "permission": "subject:write",
+    "request_schema": "#/components/schemas/PlanCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/plans",
+    "operation_id": "plans",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/actions/{actionId}/check-ins",
+    "operation_id": "checkin",
+    "permission": "action:write",
+    "request_schema": "#/components/schemas/CheckinCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/timeline",
+    "operation_id": "timeline",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/analysis-runs",
+    "operation_id": "analyze",
+    "permission": "subject:analyze",
+    "request_schema": "#/components/schemas/AnalysisCreate",
+    "response_schema": "#/components/schemas/JobAccepted",
+    "success": 202
+  },
+  {
+    "method": "GET",
+    "path": "/analysis-runs/{runId}",
+    "operation_id": "analysisStatus",
+    "permission": "run:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/analysis-runs/{runId}/cancel",
+    "operation_id": "cancelAnalysis",
+    "permission": "run:cancel",
+    "request_schema": "#/components/schemas/CancelRequest",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/analysis-runs/{runId}/results",
+    "operation_id": "analysisResults",
+    "permission": "run:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/MethodResultPage",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/results/{resultId}",
+    "operation_id": "methodResult",
+    "permission": "result:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/MethodResult",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/reports",
+    "operation_id": "createReport",
+    "permission": "subject:report",
+    "request_schema": "#/components/schemas/ReportCreate",
+    "response_schema": "#/components/schemas/JobAccepted",
+    "success": 202
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/reports",
+    "operation_id": "reports",
+    "permission": "subject:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/reports/{reportId}",
+    "operation_id": "report",
+    "permission": "report:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ReportSnapshot",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/reports/{reportId}/revisions",
+    "operation_id": "reportRevisions",
+    "permission": "report:read",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/reviews",
+    "operation_id": "review",
+    "permission": "report:review",
+    "request_schema": "#/components/schemas/ReviewCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/publish",
+    "operation_id": "publish",
+    "permission": "report:publish",
+    "request_schema": "#/components/schemas/PublishRequest",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/exports",
+    "operation_id": "exportReport",
+    "permission": "report:export",
+    "request_schema": "#/components/schemas/ExportCreate",
+    "response_schema": "#/components/schemas/JobAccepted",
+    "success": 202
+  },
+  {
+    "method": "GET",
+    "path": "/artifacts/{artifactId}/download",
+    "operation_id": "downloadArtifact",
+    "permission": "artifact:download",
+    "request_schema": null,
+    "response_schema": null,
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/orders",
+    "operation_id": "order",
+    "permission": "self",
+    "request_schema": "#/components/schemas/OrderCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/orders/{orderId}",
+    "operation_id": "orderStatus",
+    "permission": "order:owner",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/orders/{orderId}/checkout",
+    "operation_id": "checkout",
+    "permission": "order:owner",
+    "request_schema": "#/components/schemas/CheckoutCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "POST",
+    "path": "/orders/{orderId}/refund-requests",
+    "operation_id": "requestRefund",
+    "permission": "order:owner",
+    "request_schema": "#/components/schemas/RefundRequest",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "POST",
+    "path": "/webhooks/payments/{providerId}",
+    "operation_id": "paymentWebhook",
+    "permission": "webhook_signature",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/entitlements",
+    "operation_id": "entitlements",
+    "permission": "self",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/support/tickets",
+    "operation_id": "ticket",
+    "permission": "self",
+    "request_schema": "#/components/schemas/TicketCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/support/tickets/{ticketId}",
+    "operation_id": "ticketStatus",
+    "permission": "ticket:owner",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/data-exports",
+    "operation_id": "privacyExport",
+    "permission": "subject:privacy",
+    "request_schema": "#/components/schemas/PrivacyExportRequest",
+    "response_schema": "#/components/schemas/JobAccepted",
+    "success": 202
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/deletion-jobs",
+    "operation_id": "deleteSubject",
+    "permission": "subject:privacy",
+    "request_schema": "#/components/schemas/DeletionRequest",
+    "response_schema": "#/components/schemas/JobAccepted",
+    "success": 202
+  },
+  {
+    "method": "GET",
+    "path": "/deletion-jobs/{jobId}",
+    "operation_id": "deletionStatus",
+    "permission": "job:owner",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/jobs/{jobId}",
+    "operation_id": "jobStatus",
+    "permission": "job:owner",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/automations",
+    "operation_id": "newAutomation",
+    "permission": "subject:automate",
+    "request_schema": "#/components/schemas/AutomationCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "DELETE",
+    "path": "/automations/{automationId}",
+    "operation_id": "stopAutomation",
+    "permission": "automation:owner",
+    "request_schema": null,
+    "response_schema": null,
+    "success": 204
+  },
+  {
+    "method": "GET",
+    "path": "/practice/cases",
+    "operation_id": "cases",
+    "permission": "practitioner:assigned",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/practice/cases/{caseId}",
+    "operation_id": "caseDetail",
+    "permission": "practitioner:assigned",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/academy/courses",
+    "operation_id": "courses",
+    "permission": "public",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/ResourcePage",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/academy/assignments",
+    "operation_id": "assignment",
+    "permission": "enrollment:write",
+    "request_schema": "#/components/schemas/AssignmentCreate",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/certificates/{certificateId}",
+    "operation_id": "verifyCertificate",
+    "permission": "public_minimal",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/organizations/{organizationId}/overview",
+    "operation_id": "organizationOverview",
+    "permission": "organization:member",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/partners/{partnerId}",
+    "operation_id": "partner",
+    "permission": "partner:assigned",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "POST",
+    "path": "/admin/method-releases",
+    "operation_id": "methodReleaseDraft",
+    "permission": "method:editor",
+    "request_schema": "#/components/schemas/MethodRelease",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "POST",
+    "path": "/admin/country-packs",
+    "operation_id": "countryPackReview",
+    "permission": "legal:reviewer",
+    "request_schema": "#/components/schemas/CountryPackDraft",
+    "response_schema": "#/components/schemas/Resource",
+    "success": 201
+  },
+  {
+    "method": "GET",
+    "path": "/admin/quality",
+    "operation_id": "quality",
+    "permission": "quality:reviewer",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  },
+  {
+    "method": "GET",
+    "path": "/admin/operations",
+    "operation_id": "operations",
+    "permission": "ops:reader",
+    "request_schema": null,
+    "response_schema": "#/components/schemas/Resource",
+    "success": 200
+  }
+]

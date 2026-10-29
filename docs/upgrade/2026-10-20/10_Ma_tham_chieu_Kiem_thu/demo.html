@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Life Code OS — Bộ minh họa hợp đồng tổng hợp</title>
+  <style>
+    :root{color-scheme:light;--paper:#f5f2ea;--ink:#202722;--muted:#5f6a62;--line:#cfd6ce;--card:#fffefa;--accent:#175e4b;--warn:#84531d;--bad:#8b2f32}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    header,main,footer{width:min(1120px,calc(100% - 32px));margin-inline:auto}header{padding:48px 0 24px;border-bottom:1px solid var(--line)}
+    h1{font-size:clamp(2rem,6vw,4.8rem);line-height:.98;letter-spacing:-.045em;margin:0 0 18px;max-width:14ch}h2{font-size:1.25rem;margin:0 0 14px}p{max-width:74ch}
+    .eyebrow,.badge{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;font-weight:750}.eyebrow{color:var(--accent)}.badge{display:inline-block;border:1px solid var(--warn);color:var(--warn);padding:5px 9px;border-radius:999px}
+    main{padding:28px 0 56px}.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.72fr);gap:20px;align-items:start}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 24px #1e35240b}.stack{display:grid;gap:14px}
+    .grid>*,.row>*,.stack>*,.family>*,.card,label{min-width:0}h1,h2,p,label,footer,.family>*{overflow-wrap:anywhere}
+    label{font-weight:700;display:grid;gap:6px}input,select,button{display:block;width:100%;min-width:0;max-width:100%;min-height:44px;font:inherit;border-radius:9px;border:1px solid #aab6ac;padding:10px 12px;background:#fff;color:var(--ink)}select{text-overflow:ellipsis}button{background:var(--accent);color:white;border-color:var(--accent);font-weight:750;cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #5ab596;outline-offset:2px}
+    .row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.trace{max-width:100%;min-width:0;margin:0;background:#17221d;color:#eaf4ed;border-radius:12px;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;min-height:170px;font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace}.note{color:var(--muted);font-size:.9rem}.danger{color:var(--bad);font-weight:700}.family{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);align-items:center}.family:last-child{border-bottom:0}.state{font-size:.75rem;color:var(--warn);font-weight:800}
+    footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:.9rem}
+    @media(max-width:760px){header{padding-top:28px}.grid,.row{grid-template-columns:minmax(0,1fr)}.family{grid-template-columns:52px minmax(0,1fr)}.state{grid-column:2}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+    select{appearance:none;-webkit-appearance:none;min-height:44px;padding-right:36px;background-image:linear-gradient(45deg,transparent 50%,#5f6a62 50%),linear-gradient(135deg,#5f6a62 50%,transparent 50%);background-position:calc(100% - 18px) 50%,calc(100% - 13px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Synthetic contract explorer · 2026-10-20</div>
+    <h1>Nhìn thấy từng bước tính, không nhận lời tiên đoán.</h1>
+    <p>Trang này chạy hoàn toàn offline, không gửi dữ liệu và không gọi dịch vụ ngoài. Nó minh họa hợp đồng phần mềm bằng dữ liệu tổng hợp; không chứng minh phương pháp, quyền sử dụng nội dung hay mức sẵn sàng production.</p>
+    <span class="badge">Design approval pending</span>
+  </header>
+  <main class="grid">
+    <section class="card stack" aria-labelledby="demo-title">
+      <div>
+        <h2 id="demo-title">Chọn phép minh họa</h2>
+        <p class="note">Mỗi kết quả gồm input chuẩn hóa, bước tính, output và giới hạn. Bấm Ctrl/⌘ + Enter để chạy.</p>
+      </div>
+      <label>Phép minh họa
+        <select id="mode">
+          <option value="tail80">Mã đuôi 80 — phép dư</option>
+          <option value="ratio">Tỷ lệ decimal chính xác</option>
+          <option value="timeline">Khoảng tuổi theo ngày dân sự</option>
+          <option value="name">Chu kỳ chữ Latin minh họa</option>
+          <option value="pairs">Cặp số chồng lấn</option>
+          <option value="auth">Authorization failure path</option>
+        </select>
+      </label>
+      <div id="fields" class="stack"></div>
+      <button id="run" type="button">Chạy minh họa</button>
+      <pre id="output" class="trace" role="status" aria-live="polite">Chọn input rồi chạy.</pre>
+    </section>
+    <aside class="card" aria-labelledby="family-title">
+      <h2 id="family-title">20 family không đồng nghĩa 20 công thức đã phát hành</h2>
+      <p class="note">Danh sách là inventory nghiên cứu. Chỉ registry source + rights + rule + tests + approval mới mở được method release.</p>
+      <div id="families"></div>
+    </aside>
+  </main>
+  <footer>Không nhập dữ liệu người thật. Không có network request, analytics, storage hay cookie trong trang này. Xem `data/demo_cases.json` và tests để có expected output máy kiểm tra.</footer>
+  <script>
+    'use strict';
+    const $=id=>document.getElementById(id), mode=$('mode'), fields=$('fields'), output=$('output');
+    const familyNames=['Lịch pháp, thiên văn và múi giờ','Bát tự, Tứ trụ, Tử Bình','Tử Vi Đẩu Số và mệnh bàn','Kinh Dịch, Mai Hoa, Lục Hào','Kỳ Môn, Lục Nhâm, Thái Ất','Phong thủy, Vastu, không gian','Jyotish, Nadi, truyền thống Ấn Độ','Chiêm tinh phương Tây và trung đại','Lịch và chiêm nghiệm khu vực','Thần số học, Psychomatrix, chữ–số','Bát Cực Linh Số, Mã đuôi 80, dãy số','Danh học, ngôn ngữ và ký hiệu','Bàn tay, khuôn mặt, bàn chân, hình thái','Tarot, Rune, Ifá, giấc mơ','Human Design, Gene Keys và hệ tổng hợp','Triết học, tôn giáo và nội tâm','Tâm lý học và đo lường','Hành vi, nghề nghiệp, kinh tế, xã hội','Sinh hoạt, môi trường, sức khỏe nền','Toán học, dữ liệu, AI và kỹ thuật'];
+    $('families').innerHTML=familyNames.map((name,i)=>`<div class="family"><strong>K${String(i+1).padStart(2,'0')}</strong><span>${name}</span><span class="state">registry gate</span></div>`).join('');
+    const forms={
+      tail80:`<div class="row"><label>Bốn chữ số<input id="suffix" value="6231" inputmode="numeric" maxlength="4"></label><label>Chính sách dư 0<select id="zero"><option value="unmapped">unmapped</option><option value="as80">as80 (demo opt-in)</option></select></label></div>`,
+      ratio:`<div class="row"><label>Tử số<input id="num" value="1" inputmode="numeric"></label><label>Mẫu số<input id="den" value="8" inputmode="numeric"></label><label>Scale<input id="scale" value="2" type="number" min="0" max="12"></label><label>Rounding<select id="round"><option>half_even</option><option>half_up</option><option>floor</option><option>ceiling</option><option>truncate</option></select></label></div>`,
+      timeline:`<div class="row"><label>Ngày sinh tổng hợp<input id="birth" value="2000-02-29" type="date"></label><label>Tuổi<input id="age" value="1" type="number" min="0" max="198"></label><label>29/02 ở năm không nhuận<select id="leap"><option value="feb28">28/02</option><option value="mar01">01/03</option></select></label></div>`,
+      name:`<label>Tên tổng hợp (Latin/Việt)<input id="personName" value="Trần Hà Tâm" maxlength="200"></label>`,
+      pairs:`<label>Chuỗi 2–32 chữ số<input id="digits" value="876" inputmode="numeric" maxlength="32"></label>`,
+      auth:`<label>Tình huống<select id="scenario"><option value="allow">Đúng principal/tenant/subject/purpose/action/revision</option><option value="wrong_subject">Đoán subject khác</option><option value="wrong_action">Grant read nhưng gọi write</option><option value="stale_revision">Permission revision cũ</option><option value="revoked">Grant đã thu hồi</option></select></label>`
+    };
+    const groups={SK:['14','41','67','76','39','93','28','82'],TY:['13','31','68','86','49','94','27','72'],DN:['19','91','78','87','34','43','26','62'],PV:['11','22','33','44','66','77','88','99'],TM:['12','21','69','96','48','84','37','73'],NQ:['18','81','79','97','36','63','24','42'],LS:['16','61','47','74','38','83','29','92'],HH:['17','71','89','98','46','64','23','32']};
+    const pairMap=Object.fromEntries(Object.entries(groups).flatMap(([g,pairs])=>pairs.map(pair=>[pair,g])));
+    function digitalRoot(n){if(!Number.isSafeInteger(n)||n<0)throw new TypeError('Số nguyên không âm.');return n===0?0:1+(n-1)%9;}
+    function render(){fields.innerHTML=forms[mode.value];output.textContent='Sẵn sàng. Ctrl/⌘ + Enter để chạy.';}
+    function fixed(units,scale,neg){let s=units.toString();if(scale===0)return(neg&&units!==0n?'-':'')+s;s=s.padStart(scale+1,'0');const cut=s.length-scale;return(neg&&units!==0n?'-':'')+s.slice(0,cut)+'.'+s.slice(cut);}
+    function ratio(n,d,scale,rounding){if(d===0n)return{value:null,missing_reason:'division_by_zero'};const neg=(n<0n)!==(d<0n),a=n<0n?-n:n,b=d<0n?-d:d,f=10n**BigInt(scale);let q=a*f/b,r=a*f%b,inc=false;if(rounding==='half_up')inc=r*2n>=b;if(rounding==='half_even')inc=r*2n>b||(r*2n===b&&q%2n===1n);if(rounding==='floor')inc=neg&&r!==0n;if(rounding==='ceiling')inc=!neg&&r!==0n;if(inc)q++;return{value:fixed(q,scale,neg),missing_reason:null,remainder:`${r}/${b}`};}
+    const leap=y=>y%4===0&&(y%100!==0||y%400===0),dim=(y,m)=>[31,leap(y)?29:28,31,30,31,30,31,31,30,31,30,31][m-1]||0,fmt=(y,m,d)=>`${String(y).padStart(4,'0')}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    function dateParts(s){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s);if(!m)throw new Error('Ngày không hợp lệ.');const [y,mo,d]=m.slice(1).map(Number);if(d<1||d>dim(y,mo))throw new Error('Ngày Gregorian không hợp lệ.');return[y,mo,d];}
+    function anniversary(birth,age,policy){let[y,m,d]=dateParts(birth);y+=age;if(m===2&&d===29&&!leap(y)){m=policy==='feb28'?2:3;d=policy==='feb28'?28:1;}return fmt(y,m,d);}
+    function run(){
+      try{
+        let trace;
+        if(mode.value==='tail80'){
+          const s=$('suffix').value;if(!/^[0-9]{4}$/.test(s))throw new Error('Cần đúng bốn chữ số ASCII.');const n=Number(s),q=Math.floor(n/80),r=n%80,lookup=r===0?($('zero').value==='as80'?80:null):r;
+          trace={input:{suffix:s},normalization:'Giữ đúng chuỗi bốn chữ số',formula:`${n} = 80 × ${q} + ${r}`,output:{quotient:q,remainder:r,lookup_code:lookup,probability:null},limitations:['Không cá nhân hóa','Không dự đoán','Bảng nghĩa cần source/rights/release riêng']};
+        }else if(mode.value==='ratio'){
+          const n=BigInt($('num').value),d=BigInt($('den').value),scale=Number($('scale').value),rounding=$('round').value;if(!Number.isInteger(scale)||scale<0||scale>12)throw new Error('Scale 0–12.');
+          trace={input:{numerator:n.toString(),denominator:d.toString()},policy:{scale,rounding},steps:['Dùng BigInt','Nhân tử số với 10^scale','Chia nguyên và áp rounding đã chọn'],output:ratio(n,d,scale,rounding),limitations:['Decimal contract, không phải độ chính xác phương pháp']};
+        }else if(mode.value==='timeline'){
+          const birth=$('birth').value,age=Number($('age').value),policy=$('leap').value;if(!Number.isInteger(age)||age<0||age>198)throw new Error('Tuổi 0–198.');
+          trace={input:{birth_date_civil:birth,age},policy:{leap_day:policy,timezone_conversion:false},output:{start:anniversary(birth,age,policy),end_exclusive:anniversary(birth,age+1,policy),notation:'[start,end)'},limitations:['Khoảng tuổi dân sự, không phải forecast']};
+        }else if(mode.value==='name'){
+          const original=$('personName').value,nfc=original.normalize('NFC').trim().replace(/\s+/g,' '),latin=nfc.normalize('NFD').replace(/\p{M}/gu,'').replace(/[đĐ]/g,'D').toUpperCase();if(!/^[A-Z ]+$/.test(latin))throw new Error('Demo chỉ hỗ trợ chữ Latin/Việt.');const parts=latin.split(' ').map(part=>({part,values:[...part].map(c=>(c.charCodeAt(0)-65)%9+1)}));const sum=parts.flatMap(p=>p.values).reduce((a,b)=>a+b,0);
+          trace={input:{original},normalization:{nfc,latin,policy:'VI_NFC_LATIN_0.1'},steps:parts,output:{sum,root:digitalRoot(sum),prediction:false},limitations:['Quy ước chữ–số biểu tượng','Không áp cho văn tự khác','Không suy tính cách']};
+        }else if(mode.value==='pairs'){
+          const s=$('digits').value;if(!/^[0-9]{2,32}$/.test(s))throw new Error('Cần 2–32 chữ số ASCII.');const pairs=Array.from({length:s.length-1},(_,i)=>({index:i,pair:s.slice(i,i+2),group:pairMap[s.slice(i,i+2)]||null}));
+          trace={input:{digits:s},rule:'Cặp chồng lấn; cặp chứa 0/5 có thể unresolved',output:{pairs,known:pairs.filter(p=>p.group).length,total:pairs.length,probability:null},limitations:['Bảng nhóm chưa là dự đoán đã được kiểm chứng']};
+        }else{
+          const scenario=$('scenario').value;const allow=scenario==='allow';trace={input:{scenario},checks:[{name:'authenticated',result:true},{name:'account_active',result:true},{name:'object_lineage_matches',result:!['wrong_subject'].includes(scenario)},{name:'grant_action_matches',result:!['wrong_action','revoked'].includes(scenario)},{name:'permission_revision_current',result:scenario!=='stale_revision'}],output:{allowed:allow,deny_behavior:allow?null:'404_or_403_by_resource_policy'},limitations:['Minh họa failure path; không phải session/RLS implementation']};
+        }
+        output.textContent=JSON.stringify(trace,null,2);
+      }catch(error){output.textContent=JSON.stringify({error:error.name,code:'invalid_synthetic_input',message:error.message,personal_result:null},null,2);}
+    }
+    mode.addEventListener('change',render);$('run').addEventListener('click',run);document.addEventListener('keydown',event=>{if((event.ctrlKey||event.metaKey)&&event.key==='Enter')run();});render();
+  </script>
+</body>
+</html>
+

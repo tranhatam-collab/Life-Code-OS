@@ -18,11 +18,12 @@ async function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function startSessionWithRetry(payload, attempts = 5) {
+async function startSessionWithRetry(payload, attempts = 5, extraHeaders = {}) {
+  const headers = { "content-type": "application/json", ...extraHeaders };
   for (let i = 0; i < attempts; i += 1) {
     const resp = await jsonFetch("/api/v1/session/start", {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers,
       body: JSON.stringify(payload),
     });
     if (resp.res.status === 200) return resp;
@@ -36,7 +37,7 @@ async function startSessionWithRetry(payload, attempts = 5) {
 
   return jsonFetch("/api/v1/session/start", {
     method: "POST",
-    headers: { "content-type": "application/json" },
+    headers,
     body: JSON.stringify(payload),
   });
 }
@@ -93,13 +94,17 @@ async function run() {
   assert.equal(me.res.status, 200, "/api/v1/me should return 200");
   assert.equal(me.body.profile.id, start.body.user_id, "profile id should match session user");
 
-  const secondSession = await startSessionWithRetry({
-    user_id: start.body.user_id,
-    name: `${uniqueName} 2`,
-    locale: "vi-VN",
-    device_label: "Second smoke device",
-  });
+  const secondSession = await startSessionWithRetry(
+    {
+      name: `${uniqueName} 2`,
+      locale: "vi-VN",
+      device_label: "Second smoke device",
+    },
+    5,
+    { Authorization: `Bearer ${start.body.session_token}` }
+  );
   assert.equal(secondSession.res.status, 200, "second session/start should return 200");
+  assert.equal(secondSession.body.user_id, start.body.user_id, "second session should reuse authenticated user");
 
   const sessionsBeforeRevoke = await jsonFetch("/api/v1/sessions", {
     method: "GET",

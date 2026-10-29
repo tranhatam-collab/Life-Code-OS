@@ -1,0 +1,12 @@
+{
+  "method_id": "lc_tail4_mod80",
+  "suffix": "6231",
+  "quotient": 77,
+  "remainder": 71,
+  "lookup_code": 71,
+  "zero_policy": "unmapped",
+  "table_version": "user_supplied_80_draft1",
+  "source_label": "Hung",
+  "is_personalized": false,
+  "probability": null
+}

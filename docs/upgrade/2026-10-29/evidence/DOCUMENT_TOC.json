@@ -1,0 +1,285 @@
+{
+  "entries": [
+    {
+      "title": "Phần 1 Tổng kế hoạch hợp nhất",
+      "page": 4
+    },
+    {
+      "title": "1. Kết quả hợp nhất và cách áp dụng",
+      "page": 4
+    },
+    {
+      "title": "2. Bản sắc, giá trị và giới hạn sản phẩm",
+      "page": 5
+    },
+    {
+      "title": "3. Nguồn, phiên bản và quyền sử dụng",
+      "page": 5
+    },
+    {
+      "title": "4. Danh mục sản phẩm và chín cấp",
+      "page": 5
+    },
+    {
+      "title": "5. Mô hình đời sống và dữ liệu đầu vào",
+      "page": 6
+    },
+    {
+      "title": "6. Hợp đồng công thức, ma trận và phương pháp",
+      "page": 7
+    },
+    {
+      "title": "7. Bộ số–tên 23 thành phần",
+      "page": 7
+    },
+    {
+      "title": "8. Bát Cực, đuôi 80 và Psychomatrix",
+      "page": 8
+    },
+    {
+      "title": "9. Kiến trúc đích và đối chiếu repository thực",
+      "page": 8
+    },
+    {
+      "title": "10. API và schema cần đóng trước code generation",
+      "page": 9
+    },
+    {
+      "title": "11. Identity, quyền và dữ liệu riêng tư",
+      "page": 9
+    },
+    {
+      "title": "12. Jobs, tính lại, hiệu năng và phục hồi",
+      "page": 9
+    },
+    {
+      "title": "13. Mobile web, desktop web và native",
+      "page": 10
+    },
+    {
+      "title": "14. AI và nhà máy báo cáo",
+      "page": 10
+    },
+    {
+      "title": "15. Thương mại và mô hình chi phí",
+      "page": 11
+    },
+    {
+      "title": "16. Academy, chuyên gia và lãnh thổ",
+      "page": 11
+    },
+    {
+      "title": "17. Chuyển đổi hệ hiện có và P0",
+      "page": 11
+    },
+    {
+      "title": "18. Chương trình DEV, phụ thuộc và nhận việc",
+      "page": 12
+    },
+    {
+      "title": "19. QA, demo và cổng phát hành",
+      "page": 12
+    },
+    {
+      "title": "20. Bàn giao và cập nhật tiếp theo",
+      "page": 13
+    },
+    {
+      "title": "Phần 2 Bàn giao backend và công thức",
+      "page": 14
+    },
+    {
+      "title": "1. Mốc bàn giao và nguồn dùng khi lập trình",
+      "page": 14
+    },
+    {
+      "title": "2. Các vấn đề phải giải quyết trước khi sinh SDK hoặc nối giao diện",
+      "page": 15
+    },
+    {
+      "title": "3. Kiến trúc triển khai và ranh giới trách nhiệm",
+      "page": 15
+    },
+    {
+      "title": "4. Thiết kế dữ liệu, quyền và tính bền vững",
+      "page": 16
+    },
+    {
+      "title": "5. Quy tắc công thức và demo phải bàn giao",
+      "page": 17
+    },
+    {
+      "title": "6. Nguồn, quyền sử dụng và nội dung",
+      "page": 18
+    },
+    {
+      "title": "7. Gói công việc DEV, phụ thuộc và nghiệm thu",
+      "page": 19
+    },
+    {
+      "title": "8. Hợp đồng bàn giao cho mobile web, web app và desktop web",
+      "page": 21
+    },
+    {
+      "title": "9. Kiểm thử đã có và bộ chứng cứ phải bổ sung",
+      "page": 22
+    },
+    {
+      "title": "10. Biên bản nhận bàn giao DEV",
+      "page": 22
+    },
+    {
+      "title": "Phần 3 Sản phẩm và giao diện đa thiết bị",
+      "page": 23
+    },
+    {
+      "title": "Phạm vi đã hợp nhất và những điểm cần quyết định",
+      "page": 23
+    },
+    {
+      "title": "Một tài khoản và các không gian được phép",
+      "page": 24
+    },
+    {
+      "title": "Năm sản phẩm bổ sung và quan hệ với sản phẩm cũ",
+      "page": 24
+    },
+    {
+      "title": "Hợp đồng trải nghiệm trên điện thoại, tablet và desktop",
+      "page": 25
+    },
+    {
+      "title": "Gói việc frontend có thể bàn giao",
+      "page": 26
+    },
+    {
+      "title": "Đường dẫn triển khai và giới hạn sửa đổi",
+      "page": 28
+    },
+    {
+      "title": "Bộ demo và thứ tự nghiệm thu",
+      "page": 28
+    },
+    {
+      "title": "Phần 4 AI báo cáo và Academy",
+      "page": 30
+    },
+    {
+      "title": "Mô hình nội dung dùng chung",
+      "page": 30
+    },
+    {
+      "title": "Phạm vi riêng của từng cấp",
+      "page": 30
+    },
+    {
+      "title": "Hợp đồng AI và quyền",
+      "page": 32
+    },
+    {
+      "title": "Gói việc AI và báo cáo",
+      "page": 33
+    },
+    {
+      "title": "Fixture, tiêu chí chất lượng và receipt",
+      "page": 34
+    },
+    {
+      "title": "Academy chín buổi 120 phút",
+      "page": 35
+    },
+    {
+      "title": "License, thị trường và điều kiện mở rộng",
+      "page": 35
+    },
+    {
+      "title": "Phần 5 Điều hành và nhận việc DEV",
+      "page": 36
+    },
+    {
+      "title": "1. Kết luận và cách sử dụng",
+      "page": 36
+    },
+    {
+      "title": "2. Baseline, nguồn và thứ tự hiệu lực",
+      "page": 37
+    },
+    {
+      "title": "3. Số lượng hợp nhất và chống bỏ sót",
+      "page": 38
+    },
+    {
+      "title": "4. Dependency và DAG đúng kiểu",
+      "page": 38
+    },
+    {
+      "title": "5. Phạm vi đầu tiên và làn nghiên cứu dài hạn",
+      "page": 39
+    },
+    {
+      "title": "6. Cấu trúc backend ưu tiên",
+      "page": 40
+    },
+    {
+      "title": "7. Gói demo và trải nghiệm đa thiết bị",
+      "page": 41
+    },
+    {
+      "title": "8. Báo cáo, AI và biên tập",
+      "page": 42
+    },
+    {
+      "title": "9. Nguồn lực và effort không cộng trùng",
+      "page": 42
+    },
+    {
+      "title": "10. Wave và đường găng có điều kiện",
+      "page": 43
+    },
+    {
+      "title": "11. Dispatch mười ngày làm việc đầu",
+      "page": 44
+    },
+    {
+      "title": "12. Definition of Ready và Done",
+      "page": 45
+    },
+    {
+      "title": "13. Gate, QA claim và vận hành",
+      "page": 45
+    },
+    {
+      "title": "14. Điểm cần con người quyết định, không chặn công việc chuẩn bị",
+      "page": 46
+    },
+    {
+      "title": "15. Bàn giao và nhịp điều hành",
+      "page": 47
+    },
+    {
+      "title": "Phần 6 Đối chiếu API và tra cứu hợp đồng",
+      "page": 48
+    },
+    {
+      "title": "Quyết định hợp nhất",
+      "page": 48
+    },
+    {
+      "title": "Tra cứu đủ 99 operation trong registry API",
+      "page": 48
+    },
+    {
+      "title": "Bàn giao schema và bằng chứng",
+      "page": 48
+    },
+    {
+      "title": "Phần 7 Danh mục hợp đồng và cách nhận bàn giao",
+      "page": 49
+    },
+    {
+      "title": "Nhận việc theo candidate và phạm vi",
+      "page": 50
+    }
+  ],
+  "pdf_pages": 50
+}

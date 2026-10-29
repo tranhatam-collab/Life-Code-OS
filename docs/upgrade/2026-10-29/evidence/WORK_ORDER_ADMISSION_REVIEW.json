@@ -1,0 +1,247 @@
+{
+  "schema_valid_packets": 20,
+  "ready_for_scoped_dev": 0,
+  "approval_fabricated": false,
+  "records": [
+    {
+      "work_order_id": "INT29-001",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-002",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-003",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-004",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-005",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-006",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-007",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-008",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-009",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-010",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-011",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-012",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-013",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-014",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-015",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-016",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-017",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-018",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-019",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    },
+    {
+      "work_order_id": "INT29-020",
+      "schema_valid": true,
+      "ready_for_scoped_dev": false,
+      "reasons": [
+        "named owner/reviewer not assigned",
+        "exact clean candidate/artifact and file allowlist not accepted",
+        "required scoped decisions/rights/schema/cohort receipts pending",
+        "version bundle and fixture/test commands need final scope binding"
+      ],
+      "preparation_authority": "Current user request for local planning preparation only; no application or provider action authorized"
+    }
+  ]
+}

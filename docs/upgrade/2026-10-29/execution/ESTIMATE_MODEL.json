@@ -1,0 +1,22 @@
+{
+  "rules": [
+    "No additive portfolio total until parent/refinement scope and capacity are accepted",
+    "V1 historical ranges preserved, not repriced",
+    "V2 68 records refine parent tasks; not additive",
+    "V3 72 records require estimate",
+    "Local16 preserved; INT20 refine integration scope, not additive",
+    "Calendar durations need actual available role capacity, dependency constraints, parallelism and contingency",
+    "Unknown rates/currency/quotes remain null; never automatically convert USD to VND"
+  ],
+  "groups": {
+    "LOCAL_R2": 156,
+    "V2": 68,
+    "V3": 72,
+    "INTEGRATION_REFINEMENT": 20
+  },
+  "portfolio_total_person_days": null,
+  "committed_delivery_date": null,
+  "budget": null,
+  "budget_currency": null,
+  "approval_status": "PENDING"
+}

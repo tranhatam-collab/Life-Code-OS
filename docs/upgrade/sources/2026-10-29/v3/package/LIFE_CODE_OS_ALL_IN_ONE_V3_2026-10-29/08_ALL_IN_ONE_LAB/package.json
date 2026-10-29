@@ -1,0 +1,16 @@
+{
+  "name": "lifecode-all-in-one-reference-v3",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:legacy": "node --test legacy_v2/tests/*.test.mjs",
+    "demo": "node tools/run-cases.mjs",
+    "start": "node server.mjs"
+  },
+  "description": "Local synthetic reference only; not the production Life Code OS. No external npm dependencies."
+}

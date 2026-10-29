@@ -1,0 +1,302 @@
+[
+  {
+    "screen_id": "V3-UI-058",
+    "key": "UNIFIED_HOME",
+    "title_vi": "Một hồ sơ, các không gian được phép",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-059",
+    "key": "NUM23_RESULT",
+    "title_vi": "23 chỉ số và các bước trung gian",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-060",
+    "key": "NAME_VARIANTS",
+    "title_vi": "Tên gốc, tên thường dùng và chính sách Y",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-061",
+    "key": "BCLC_SEGMENTS",
+    "title_vi": "Dãy số và vị trí cặp",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-062",
+    "key": "BCLC_TRANSITIONS",
+    "title_vi": "Ma trận chuyển nhóm và câu hỏi",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-063",
+    "key": "BCLC_POLICY_COMPARE",
+    "title_vi": "Strict so với diagnostic 0/5",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-064",
+    "key": "TAIL80_FULL",
+    "title_vi": "Mã đuôi 80 và bảng nguồn",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-065",
+    "key": "PSYCHO_RAW_WORKING",
+    "title_vi": "Raw/working matrix và 17 vị trí",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-066",
+    "key": "LIFE_DOMAINS",
+    "title_vi": "18 lĩnh vực tự chọn",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-067",
+    "key": "LIFE_MULTI_TRACK",
+    "title_vi": "Lịch sử, kế hoạch và chu kỳ",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-068",
+    "key": "LEGACY_SHARING",
+    "title_vi": "Di sản tri thức và quyền người nhận",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  },
+  {
+    "screen_id": "V3-UI-069",
+    "key": "RESEARCH_CONFLICTS",
+    "title_vi": "Nguồn khác nhau và phần chưa giải",
+    "viewports": [
+      360,
+      390,
+      768,
+      1440
+    ],
+    "states": [
+      "loading",
+      "ready",
+      "partial",
+      "needs_input",
+      "not_authorized",
+      "method_pending",
+      "error",
+      "stale"
+    ],
+    "primary_action": "Mở dữ liệu, sửa thông tin hoặc chọn bước tiếp theo theo mục đích",
+    "privacy": "No global PII search; scoped subject selection",
+    "production_status": "DESIGN_ONLY",
+    "demo_coverage": "partial_reference_only"
+  }
+]

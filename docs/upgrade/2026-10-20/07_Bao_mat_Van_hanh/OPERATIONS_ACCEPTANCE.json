@@ -1,0 +1,125 @@
+{
+  "version": "2026-10-20.r2",
+  "design_status": "PROPOSED",
+  "measured": false,
+  "objectives": [
+    {
+      "id": "SLO-AVAIL",
+      "target": 0.995,
+      "window": "rolling_30_days",
+      "numerator": "successful_eligible_requests",
+      "denominator": "all_eligible_requests",
+      "empty_population": "UNAVAILABLE",
+      "include_failures": [
+        "timeout",
+        "5xx",
+        "resource_overload_429",
+        "eligible_provider_failure"
+      ],
+      "owner": "SRE"
+    },
+    {
+      "id": "SLO-API",
+      "target_p95_ms": 800,
+      "scope": "eligible ordinary API end-to-end; separate generation",
+      "required_dimensions": [
+        "sample_count",
+        "region",
+        "route_mix",
+        "cache",
+        "cold_start",
+        "payload_bytes"
+      ],
+      "owner": "Backend + SRE"
+    },
+    {
+      "id": "SLO-L1-REPORT",
+      "target_fraction": 0.95,
+      "threshold_seconds": 300,
+      "start": "job accepted",
+      "end": "artifact available",
+      "failed_jobs_count_against_target": true,
+      "owner": "Report Lead"
+    },
+    {
+      "id": "DR-RPO",
+      "maximum_seconds": 3600,
+      "scope": "business data actual restored recovery point",
+      "owner": "Data + SRE"
+    },
+    {
+      "id": "DR-RTO",
+      "maximum_seconds": 14400,
+      "scope": "safe service including deletion/revocation replay",
+      "owner": "SRE"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-AUTH",
+      "trigger": "one confirmed cross-owner/tenant/private cache failure",
+      "severity": "P0",
+      "owner": "Incident Commander + Security + Privacy",
+      "action": "contain surface and preserve minimum evidence"
+    },
+    {
+      "id": "ALT-BURN-FAST",
+      "trigger": "burn >14.4 in 5m AND 1h; >=20 eligible each",
+      "severity": "P1",
+      "owner": "SRE",
+      "action": "check deploy/provider/latency and reduce impact"
+    },
+    {
+      "id": "ALT-BURN-SLOW",
+      "trigger": "burn >6 in 30m AND 6h; >=20 eligible each",
+      "severity": "P2",
+      "owner": "SRE",
+      "action": "ticket and capacity/error-budget review"
+    },
+    {
+      "id": "ALT-QUEUE",
+      "trigger": "oldest age >60sec for 5min OR DLQ age >10min",
+      "severity": "P1",
+      "owner": "Backend + SRE",
+      "action": "stop unsafe replay; inspect redacted job state"
+    },
+    {
+      "id": "ALT-POOL",
+      "trigger": "DB pool saturation >80% for 10min",
+      "severity": "P2",
+      "owner": "Data + SRE",
+      "action": "inspect scoped connections and backpressure"
+    },
+    {
+      "id": "ALT-BUDGET",
+      "trigger": "50/75/90/100 percent of approved cap",
+      "severity": "P2",
+      "owner": "Finance + AI Lead",
+      "action": "degrade optional AI at cap; preserve data rights"
+    }
+  ],
+  "load_profiles": {
+    "concurrency": [
+      1,
+      10,
+      50
+    ],
+    "ramp_minutes": 5,
+    "steady_minutes": 15,
+    "recovery_minutes": 5,
+    "data": "synthetic_only",
+    "cost_permission": "bounded staging scope required"
+  },
+  "drills": [
+    "pre-pilot restore",
+    "before major migration",
+    "after backup/key/provider change",
+    "quarterly restore proposal",
+    "revocation during render",
+    "DLQ after subject deletion",
+    "provider outage degradation",
+    "rollback without revoked method"
+  ],
+  "evidence_status": "NOT_CHECKED",
+  "receipt_ref": null
+}

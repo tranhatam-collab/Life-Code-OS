@@ -1,0 +1,138 @@
+Anh Tâm, đã xuất **bộ kế hoạch nâng cấp hợp nhất Life Code OS**, gồm **149 tệp**, với **bản tổng hợp 47 trang**, **38 chuyên đề**, bảng điều hành thực thi và các hợp đồng kỹ thuật để đội DEV sử dụng.
+
+Bộ này bao quát từ **Huyền Nhân Học, sản phẩm miễn phí, chín cấp cá nhân, AI đồng hành, học viện và chuyên gia** đến **tổ chức, doanh nghiệp, API đối tác và cấp phép/nhượng quyền quốc tế**.
+
+# 1. Tải bộ bàn giao
+
+📦 **Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip[Tải toàn bộ kế hoạch, cấu trúc và mã tham chiếu — ZIP](sandbox:/mnt/data/Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip)**
+
+| Tài liệu | Mục đích | Tải |
+|---|---|---|
+| **Kế hoạch tổng hợp — PDF, 47 trang** | Đọc và duyệt kiến trúc, sản phẩm, phương pháp, công nghệ và lộ trình | Life_Code_OS_Master_Upgrade_Plan.pdf[Mở PDF](sandbox:/mnt/data/LIFE_CODE_OS_UPGRADE_2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.pdf) |
+| **Kế hoạch tổng hợp — Word** | Biên tập, ghi ý kiến và phê duyệt | Life_Code_OS_Master_Upgrade_Plan.docx[Tải Word](sandbox:/mnt/data/LIFE_CODE_OS_UPGRADE_2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.docx) |
+| **Bảng điều hành — Excel, 11 trang tính** | Quản lý công việc, cổng phát hành, quyết định, sản phẩm và ngân sách | Life_Code_OS_Execution_Board.xlsx[Tải Excel](sandbox:/mnt/data/LIFE_CODE_OS_UPGRADE_2026-10-11/00_Doc_truoc/Life_Code_OS_Execution_Board.xlsx) |
+| **Hướng dẫn bắt đầu** | Thứ tự đọc, phạm vi bàn giao và cách giao việc | README.md[Đọc hướng dẫn](sandbox:/mnt/data/LIFE_CODE_OS_UPGRADE_2026-10-11/README.md) |
+
+Sau khi giải nén ZIP, mở **`INDEX.html`** để tìm và truy cập toàn bộ tài liệu ngoại tuyến. Gói có danh mục tệp và **SHA-256 manifest** để kiểm tra tính toàn vẹn.
+
+---
+
+# 2. Căn cứ đã dùng để đồng bộ
+
+Tôi đã đối chiếu nội dung công khai có thể truy xuất với:
+
+**Mã nguồn `main`:**
+```text
+99b402764437f81859fa0cd3a3af860125f7bd52
+```
+
+**Nhánh kế hoạch audit:**
+```text
+audit/lifecode-os-comprehensive-upgrade-plan-2026-10-11
+336ef35a8386a744c6de18a7f7c6e268e89e6dac
+```
+
+Nhánh audit được xác nhận có trên remote; tài liệu trong nhánh vẫn ghi **`PROPOSED_FOR_TEAM_AUDIT`**, không phải biên bản phê duyệt triển khai.  
+
+Bộ bàn giao có **30 mục ánh xạ nguồn/hiện trạng sang hệ đích**, theo cấu trúc:
+
+> **Trang hoặc tệp hiện có → điều đã quan sát → giữ/sửa/cách ly → mô-đun đích → công việc → tiêu chí nghiệm thu.**
+
+**Deployed SHA và receipt Cloudflare hiện hành vẫn chưa được chứng minh.** Vì vậy, tài liệu phân biệt rõ việc đọc mã nguồn, đọc nội dung công khai và kiểm chứng hệ thống đang chạy; không coi ba việc này là một.
+
+---
+
+# 3. Những gì đã có trong bộ kế hoạch
+
+| Nhóm | Nội dung bàn giao |
+|---|---|
+| **Triết lý và phương pháp HNH** | Ngôn ngữ chuẩn, ngữ pháp tổng hợp, 20 họ tri thức, giới hạn nhận định và chương trình nghiên cứu |
+| **Chuỗi sản phẩm** | **23 sản phẩm/gói**, hợp đồng chín cấp, miễn phí, Companion, Practice, Academy, Family, Workspace và API |
+| **Kho tri thức** | **15 hộ chiếu phương pháp dự kiến**, danh mục nguồn, trạng thái tiếp cận và từ điển **60 thuật ngữ Việt–Anh** |
+| **Dữ liệu và tính toán** | **120 trường dữ liệu tùy chọn**, chín JSON Schema cùng ví dụ; bộ số, Mã đuôi 80, dòng thời gian và các loại nhận định |
+| **Backend** | Modular monolith, danh tính, phân quyền, purpose/consent, PostgreSQL, R2, Queues, idempotency và migration |
+| **API** | **64 thao tác OpenAPI 3.1.1 đề xuất**, quy tắc quyền, lỗi, phân trang và kiểm soát cập nhật đồng thời |
+| **Frontend/UI** | **45 màn hình mục tiêu**, trạng thái thiếu dữ liệu/lỗi/bị chặn, design tokens, khả năng tiếp cận và kế hoạch giữ URL/SEO |
+| **AI và tự động hóa** | Phân vai AI, bốn mức tự chủ **A0–A3**, mười luồng tự động hóa, kiểm soát chi phí và quyền dừng |
+| **Báo cáo** | Chín mẫu cấu trúc riêng, một nguồn nội dung chuẩn cho Web/PDF/Word, quy trình biên tập và thu hồi bản sai |
+| **Bảo mật và vận hành** | Gói P0 tám tệp, mô hình đe dọa, retention/deletion, backup/restore, sự cố và 12 cổng phát hành |
+| **Quốc tế và nhượng quyền** | Bốn mô hình đối tác, điều kiện quyền thương hiệu, đào tạo, dữ liệu, hỗ trợ và năm bộ điều kiện thị trường |
+| **Thực thi** | **140 công việc**, phụ thuộc, người chủ trì theo vai trò, ước lượng ngày công, đầu ra và tiêu chí nghiệm thu |
+
+**120 trường dữ liệu không phải 120 thông tin bắt buộc phải thu.** Tài liệu quy định chỉ yêu cầu dữ liệu cần cho mục tiêu và phương pháp người dùng đã chọn.
+
+---
+
+# 4. Những phần được mở rộng rõ hơn so với kế hoạch trước
+
+## Miễn phí có giá trị sử dụng thực tế
+
+Kế hoạch tách **khách dùng công cụ miễn phí** và **người có hồ sơ Free Essentials**. Người dùng có thể tìm hiểu phương pháp, làm phép tính được hỗ trợ, đặt mục tiêu và ghi nhật ký trong phạm vi phù hợp.
+
+Quyền xem, sửa, xuất hoặc yêu cầu xóa dữ liệu **không bị đặt sau việc mua gói cao hơn**. Hạn mức AI được thiết kế riêng để dịch vụ miễn phí vẫn có thể duy trì mà không cần bán dữ liệu cá nhân.
+
+## Chuyên gia, học viện và tổ chức là những sản phẩm riêng
+
+Không chỉ thêm một tài khoản “admin”. Bộ kế hoạch xác định luồng quản lý ca, chia sẻ dữ liệu có thời hạn, ghi chú, bản nháp, rà soát và kết thúc ca.
+
+Academy có tuyến tự ứng dụng, thực hành có giám sát và đào tạo giảng viên/nghiên cứu. Chứng nhận nội bộ được xác định phạm vi, không trình bày như giấy phép hành nghề y khoa hoặc tâm lý.
+
+Workspace tập trung vào **mục tiêu, vai trò, phối hợp và năng lực có minh chứng**; người trả tiền cho tổ chức không tự có quyền đọc nhật ký, sức khỏe hoặc đời sống riêng của thành viên.
+
+## Cấp phép quốc tế không chỉ là dịch website
+
+Bộ kế hoạch phân biệt:
+
+**Giới thiệu khách hàng — Chuyên gia được cấp phạm vi — Cấp phép tổ chức — Cấp phép khu vực/nhượng quyền.**
+
+Năm bộ điều kiện thị trường gồm **Việt Nam, EU/EEA, Hoa Kỳ, Australia và Singapore**. Tất cả đang ở trạng thái **chưa phê duyệt mở bán**, kèm các đầu việc về pháp nhân, dữ liệu, hợp đồng, ngôn ngữ, hỗ trợ, quyền thương hiệu và chất lượng phương pháp.
+
+## AI giảm thao tác, không xóa trách nhiệm
+
+AI có thể hỗ trợ kiểm tra đầu vào, tính toán, truy xuất nguồn, tạo bản nháp, rà chính tả, nhắc hành động đã đăng ký, giải thích quy trình và tổng hợp vận hành.
+
+Những việc như **phát hành phương pháp mới, mở quyền dữ liệu, xử lý ngoại lệ nhạy cảm, ký hợp đồng lãnh thổ hoặc triển khai production** vẫn có cơ chế phê duyệt riêng. Đội ngũ tập trung xử lý ngoại lệ thay vì phải thao tác thủ công mọi bước.
+
+---
+
+# 5. Công nghệ đích và mã tham chiếu
+
+Phương án công nghệ được đặc tả là:
+
+**Astro cho nội dung công khai + React/Vite cho ứng dụng + Worker/BFF + lõi Node/TypeScript + PostgreSQL + private R2 + Queues/transactional outbox.**
+
+P0 giữ nền hiện có để hạn chế thay đổi. Việc chuyển kiến trúc thực hiện sau khi chặn rủi ro và khóa căn cứ triển khai.
+
+Gói kỹ thuật có **41 thực thể dữ liệu tham chiếu**, nhưng SQL được ghi rõ là **thiết kế chưa thực thi**, không phải migration có thể chạy ngay lên cơ sở dữ liệu đang sống.
+
+Nhà cung cấp danh tính, PostgreSQL, thanh toán và AI vẫn là các quyết định cần chọn theo pháp nhân, vùng xử lý dữ liệu, điều kiện dịch vụ và ngân sách. Tôi không giả định dự án đã ký hợp đồng với một nhà cung cấp cụ thể.
+
+---
+
+# 6. Kết quả kiểm tra bộ bàn giao
+
+| Kiểm tra đã thực hiện | Kết quả |
+|---|---:|
+| Kiểm thử mã tham chiếu | **83 đạt, 0 lỗi** |
+| Miền Mã đuôi 80 được kiểm tra | **10.000 đuôi số** |
+| Kiểm tra nhất quán cục bộ của gói | **186 đạt, 0 lỗi** |
+| PDF | **47 trang**, có mục lục và dấu trang |
+| Kiểm tra bố cục PDF/Word | Đã rà soát toàn bộ trang; không phát hiện chữ vượt trang, trang trống hoặc ký tự thay thế |
+| Excel | Công thức chính đã được tính và kiểm tra; không phát hiện lỗi công thức trong lần rà soát |
+| Gói ZIP | Đã kiểm tra giải nén và đối chiếu **148 checksum**, không tính manifest tự băm chính nó |
+
+Những kiểm tra này xác nhận **chất lượng tệp, tính nhất quán thiết kế và logic tham chiếu**. Chúng không thay cho kiểm thử đăng nhập, thanh toán, phân quyền cơ sở dữ liệu, migration, khôi phục hoặc bảo mật trên staging/production.
+
+Các đơn giá chưa có báo giá được để trống trong workbook. Tổng ngân sách hiển thị **“CHƯA ĐỦ GIẢ ĐỊNH”**, không giả thành chi phí bằng 0.
+
+---
+
+# 7. Thứ tự sử dụng bộ này
+
+Anh đọc **bản PDF tổng hợp**, sau đó xem **Q1–Q20** trong workbook để chốt phạm vi, sản phẩm và những quyết định nền.
+
+Đội kỹ thuật bắt đầu từ **P0_PACKET và bảng SOURCE_TO_TARGET_MATRIX**, rồi mới nhận các công việc theo phụ thuộc trong backlog. Không bắt đầu bằng thay giao diện hoặc mở thêm thu thập dữ liệu.
+
+**Toàn bộ công việc production vẫn để `NOT_STARTED`; các cổng phát hành chưa được tự đánh dấu đạt.** Trong bước này, tôi không sửa repository, không commit, không triển khai, không di chuyển dữ liệu và không vô hiệu phiên người dùng thật.
+
+Bộ bàn giao đã được xuất để anh và đội triển khai dùng chung một căn cứ: **sản phẩm cần tạo là gì, dữ liệu nào được dùng, công thức nào được phép chạy, AI được làm đến đâu và bằng chứng nào cần có trước khi mở cho người dùng.**

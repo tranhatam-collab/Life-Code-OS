@@ -1,0 +1,20 @@
+{
+  "method_id": "tail80",
+  "release": "demo.v2",
+  "status": "reference_tested",
+  "source_ids": [
+    "user-supplied-table"
+  ],
+  "source_read_status": "excerpt_read",
+  "rights_status": "restricted",
+  "input_schema_id": "Tail80Input",
+  "output_schema_id": "Tail80Result",
+  "rule_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "golden_case_ids": [
+    "DEMO-001"
+  ],
+  "limitations": [
+    "Không dự báo đời sống."
+  ],
+  "approvers": []
+}

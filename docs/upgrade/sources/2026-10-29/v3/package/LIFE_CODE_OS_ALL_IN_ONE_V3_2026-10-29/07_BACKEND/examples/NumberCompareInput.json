@@ -1,0 +1,13 @@
+{
+  "context": "generic_sequence",
+  "sequences": [
+    {
+      "id": "a",
+      "sequence": "4134"
+    },
+    {
+      "id": "b",
+      "sequence": "4314"
+    }
+  ]
+}

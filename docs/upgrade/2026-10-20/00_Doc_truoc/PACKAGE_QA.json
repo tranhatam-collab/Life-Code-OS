@@ -1,0 +1,7080 @@
+{
+  "checked_at": "2026-10-20",
+  "scope": "LOCAL_PLANNING_ARTIFACT_ONLY",
+  "total": 1414,
+  "passed": 1414,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "source preserved 00_Doc_truoc/CHANGELOG.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/CHANGELOG.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/DOCUMENT_INDEX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/DOCUMENT_INDEX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/EIGHT_BUNDLES_MAP.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/EIGHT_BUNDLES_MAP.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/EXPORT_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/EXPORT_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/KNOWN_LIMITATIONS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/KNOWN_LIMITATIONS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/Life_Code_OS_Execution_Board.xlsx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/Life_Code_OS_Execution_Board.xlsx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.docx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.docx",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.pdf",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/PACKAGE_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/PACKAGE_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 00_Doc_truoc/WORKBOOK_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 00_Doc_truoc/WORKBOOK_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/01_MASTER_VISION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/01_MASTER_VISION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/04_USER_JOURNEYS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/04_USER_JOURNEYS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/04_API_AND_MIGRATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/04_API_AND_MIGRATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/API_OPERATIONS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/API_OPERATIONS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/ARCHITECTURE.mmd",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/ARCHITECTURE.mmd",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/ENTITY_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/ENTITY_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/SCHEMA_README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/SCHEMA_README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/openapi.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/openapi.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 04_Backend_API/openapi.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 04_Backend_API/openapi.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 05_Frontend_UI/DESIGN_TOKENS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 05_Frontend_UI/DESIGN_TOKENS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 05_Frontend_UI/SCREEN_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 05_Frontend_UI/SCREEN_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 05_Frontend_UI/SCREEN_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 05_Frontend_UI/SCREEN_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/01_AI_ORCHESTRATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/01_AI_ORCHESTRATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/03_REPORT_FACTORY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/03_REPORT_FACTORY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/AUTONOMY_POLICY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/AUTONOMY_POLICY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_2.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_2.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_3.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_3.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_4.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_4.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_6.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_6.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_6.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_6.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_7.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_7.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_7.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_7.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_8.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_8.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_8.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_8.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_9.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_9.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 06_AI_Bao_cao/templates/LEVEL_9.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 06_AI_Bao_cao/templates/LEVEL_9.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/01_P0_CONTAINMENT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/01_P0_CONTAINMENT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/02_PRIVACY_AND_DELETION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/02_PRIVACY_AND_DELETION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/03_SECURITY_THREAT_MODEL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/03_SECURITY_THREAT_MODEL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/04_OPERATIONS_SRE_AND_COST.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/04_OPERATIONS_SRE_AND_COST.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/05_VIETNAM_LEGAL_READINESS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/05_VIETNAM_LEGAL_READINESS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/06_RELEASE_GATES.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/06_RELEASE_GATES.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/CI_RELEASE_POLICY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/CI_RELEASE_POLICY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/00_SCOPE_AND_AUTHORITY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/00_SCOPE_AND_AUTHORITY.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/01_EVIDENCE_BASELINE.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/01_EVIDENCE_BASELINE.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/02_SURFACE_INVENTORY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/02_SURFACE_INVENTORY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/03_PATCH_PLAN.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/03_PATCH_PLAN.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/04_NEGATIVE_TEST_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/04_NEGATIVE_TEST_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/05_DEPLOYMENT_AND_ROLLBACK.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/05_DEPLOYMENT_AND_ROLLBACK.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/06_LEGACY_AND_INCIDENT_TRIAGE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/06_LEGACY_AND_INCIDENT_TRIAGE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/P0_PACKET/07_EXIT_REVIEW.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/P0_PACKET/07_EXIT_REVIEW.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 07_Bao_mat_Van_hanh/RETENTION_SCHEDULE_PROPOSED.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 07_Bao_mat_Van_hanh/RETENTION_SCHEDULE_PROPOSED.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/01_CURRENT_STATE_AUDIT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/01_CURRENT_STATE_AUDIT.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/BASELINE_LOCK.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/BASELINE_LOCK.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/package.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/package.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved 10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart 10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved FILE_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart FILE_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved FILE_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart FILE_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved INDEX.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart INDEX.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved REFERENCE_USE_AND_RIGHTS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart REFERENCE_USE_AND_RIGHTS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved VERIFY_PACKAGE.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart VERIFY_PACKAGE.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source preserved manifest.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "current counterpart manifest.txt",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 00_Doc_truoc/BROWSER_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 00_Doc_truoc/DOCUMENT_INDEX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 00_Doc_truoc/EXPORT_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 00_Doc_truoc/MASTER_ASSEMBLY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 00_Doc_truoc/PACKAGE_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 00_Doc_truoc/READ_COVERAGE.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 00_Doc_truoc/WORKBOOK_QA.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 02_Tri_thuc_HNH/METHOD_FAMILY_READINESS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 02_Tri_thuc_HNH/METHOD_RELEASE_REGISTRY_V2.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 02_Tri_thuc_HNH/SOURCE_RIGHTS_REGISTER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/FORMULA_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/METHOD_DEPENDENCY_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/RESULT_CONTRACT_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 04_Backend_API/API_OPERATIONS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 04_Backend_API/API_RESPONSE_DESIGN_PACKETS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 04_Backend_API/AUTHORIZATION_POLICY_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 04_Backend_API/ENTITY_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 04_Backend_API/READ_COVERAGE.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 04_Backend_API/openapi.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 04_Backend_API/openapi.resolved.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 05_Frontend_UI/DESIGN_TOKENS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 05_Frontend_UI/SCREEN_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/AUTONOMY_POLICY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_1.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_2.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_3.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_4.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_5.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_6.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_7.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_8.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 06_AI_Bao_cao/templates/LEVEL_9.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 07_Bao_mat_Van_hanh/FPOS_GATE_MAPPING.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 07_Bao_mat_Van_hanh/LEGAL_ACTIVITY_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 07_Bao_mat_Van_hanh/OPERATIONS_ACCEPTANCE.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 07_Bao_mat_Van_hanh/P0_PACKET/01_EVIDENCE_BASELINE.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 07_Bao_mat_Van_hanh/P0_PACKET/07_EXIT_REVIEW.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 07_Bao_mat_Van_hanh/RETENTION_SCHEDULE_PROPOSED.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 07_Bao_mat_Van_hanh/SERVICE_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/DECISION_EXECUTION_PACKETS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/READ_COVERAGE.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/REQUIREMENT_TRACE_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 08_Thuc_thi_Kinh_doanh/TASK_EXECUTION_CONTRACTS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 09_Doi_chieu_Bang_chung/BASELINE_LOCK.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 09_Doi_chieu_Bang_chung/RESEARCH_UPDATE_2026-10-20.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 09_Doi_chieu_Bang_chung/SOURCE_FILE_TRANSFORMATIONS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 10_Ma_tham_chieu_Kiem_thu/data/demo_cases.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON 10_Ma_tham_chieu_Kiem_thu/package.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON FILE_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "JSON MANIFEST.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 05_Frontend_UI/SCREEN_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 05_Frontend_UI/SCREEN_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No lost IDs 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unique IDs 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 05_Frontend_UI/SCREEN_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 05_Frontend_UI/SCREEN_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 08_Thuc_thi_Kinh_doanh/DECISION_EXECUTION_PACKETS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 08_Thuc_thi_Kinh_doanh/DECISION_EXECUTION_PACKETS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 08_Thuc_thi_Kinh_doanh/REQUIREMENT_TRACE_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 08_Thuc_thi_Kinh_doanh/REQUIREMENT_TRACE_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 08_Thuc_thi_Kinh_doanh/TASK_EXECUTION_CONTRACTS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 08_Thuc_thi_Kinh_doanh/TASK_EXECUTION_CONTRACTS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 09_Doi_chieu_Bang_chung/SOURCE_FILE_TRANSFORMATIONS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 09_Doi_chieu_Bang_chung/SOURCE_FILE_TRANSFORMATIONS.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values 09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV count FILE_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "CSV values FILE_CATALOG.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "OpenAPI JSON YAML parity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "All original64 API operations preserved",
+      "passed": true,
+      "detail": "64 original; 64 current"
+    },
+    {
+      "check": "Unique OpenAPI operationId",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /health",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /catalog",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /methods",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /methods/{methodId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /auth/login",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /auth/callback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /auth/logout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/overview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/profile-versions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/profile-versions/{versionId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/hypotheses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/consents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/consents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/grants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/grants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses delete /grants/{grantId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/questionnaire-responses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/plans",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/plans",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /actions/{actionId}/check-ins",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /analysis-runs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /analysis-runs/{runId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /analysis-runs/{runId}/cancel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /analysis-runs/{runId}/results",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /results/{resultId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /reports",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /subjects/{subjectId}/reports",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /reports/{reportId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /reports/{reportId}/revisions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /reports/{reportId}/reviews",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /reports/{reportId}/publish",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /reports/{reportId}/exports",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /artifacts/{artifactId}/download",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /orders",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /orders/{orderId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /orders/{orderId}/checkout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /orders/{orderId}/refund-requests",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /webhooks/payments/{providerId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /entitlements",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /support/tickets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /support/tickets/{ticketId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/data-exports",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /subjects/{subjectId}/deletion-jobs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /deletion-jobs/{jobId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /jobs/{jobId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /automations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses delete /automations/{automationId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /practice/cases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /practice/cases/{caseId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /academy/courses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /academy/assignments",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /certificates/{certificateId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /organizations/{organizationId}/overview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /partners/{partnerId}",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /admin/method-releases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses post /admin/country-packs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /admin/quality",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "API responses get /admin/operations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta Claim.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example Claim.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta JobEnvelope.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example JobEnvelope.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta MethodRelease.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example MethodRelease.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta MethodResult.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example MethodResult.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta Metric.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example Metric.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta ProfileVersion.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example ProfileVersion.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta ReleaseReceipt.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example ReleaseReceipt.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta ReportSnapshot.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example ReportSnapshot.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema meta Tail80Result.schema.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema example Tail80Result.example.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-01",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "No self dependency P0-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-02",
+      "passed": true,
+      "detail": "['P0-08']"
+    },
+    {
+      "check": "No self dependency P0-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-03",
+      "passed": true,
+      "detail": "['P0-02']"
+    },
+    {
+      "check": "No self dependency P0-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-04",
+      "passed": true,
+      "detail": "['P0-03']"
+    },
+    {
+      "check": "No self dependency P0-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-05",
+      "passed": true,
+      "detail": "['P0-03']"
+    },
+    {
+      "check": "No self dependency P0-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-06",
+      "passed": true,
+      "detail": "['P0-03']"
+    },
+    {
+      "check": "No self dependency P0-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-07",
+      "passed": true,
+      "detail": "['P0-02']"
+    },
+    {
+      "check": "No self dependency P0-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-08",
+      "passed": true,
+      "detail": "['P0-01']"
+    },
+    {
+      "check": "No self dependency P0-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-09",
+      "passed": true,
+      "detail": "['P0-08']"
+    },
+    {
+      "check": "No self dependency P0-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists P0-10",
+      "passed": true,
+      "detail": "['P0-03', 'P0-04', 'P0-05', 'P0-06', 'P0-07', 'P0-09']"
+    },
+    {
+      "check": "No self dependency P0-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-01",
+      "passed": true,
+      "detail": "['P0-02']"
+    },
+    {
+      "check": "No self dependency GOV-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-02",
+      "passed": true,
+      "detail": "['GOV-01']"
+    },
+    {
+      "check": "No self dependency GOV-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-03",
+      "passed": true,
+      "detail": "['GOV-02']"
+    },
+    {
+      "check": "No self dependency GOV-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-04",
+      "passed": true,
+      "detail": "['GOV-03']"
+    },
+    {
+      "check": "No self dependency GOV-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-05",
+      "passed": true,
+      "detail": "['GOV-04']"
+    },
+    {
+      "check": "No self dependency GOV-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-06",
+      "passed": true,
+      "detail": "['GOV-05']"
+    },
+    {
+      "check": "No self dependency GOV-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-07",
+      "passed": true,
+      "detail": "['GOV-06']"
+    },
+    {
+      "check": "No self dependency GOV-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-08",
+      "passed": true,
+      "detail": "['GOV-07']"
+    },
+    {
+      "check": "No self dependency GOV-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-09",
+      "passed": true,
+      "detail": "['GOV-08']"
+    },
+    {
+      "check": "No self dependency GOV-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GOV-10",
+      "passed": true,
+      "detail": "['GOV-09']"
+    },
+    {
+      "check": "No self dependency GOV-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-01",
+      "passed": true,
+      "detail": "['P0-10', 'GOV-04']"
+    },
+    {
+      "check": "No self dependency TRUST-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-02",
+      "passed": true,
+      "detail": "['TRUST-01']"
+    },
+    {
+      "check": "No self dependency TRUST-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-03",
+      "passed": true,
+      "detail": "['TRUST-02']"
+    },
+    {
+      "check": "No self dependency TRUST-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-04",
+      "passed": true,
+      "detail": "['TRUST-03']"
+    },
+    {
+      "check": "No self dependency TRUST-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-05",
+      "passed": true,
+      "detail": "['TRUST-04']"
+    },
+    {
+      "check": "No self dependency TRUST-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-06",
+      "passed": true,
+      "detail": "['TRUST-05']"
+    },
+    {
+      "check": "No self dependency TRUST-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-07",
+      "passed": true,
+      "detail": "['TRUST-06']"
+    },
+    {
+      "check": "No self dependency TRUST-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-08",
+      "passed": true,
+      "detail": "['TRUST-07']"
+    },
+    {
+      "check": "No self dependency TRUST-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-09",
+      "passed": true,
+      "detail": "['TRUST-08']"
+    },
+    {
+      "check": "No self dependency TRUST-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists TRUST-10",
+      "passed": true,
+      "detail": "['TRUST-09']"
+    },
+    {
+      "check": "No self dependency TRUST-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-01",
+      "passed": true,
+      "detail": "['TRUST-03']"
+    },
+    {
+      "check": "No self dependency DATA-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-02",
+      "passed": true,
+      "detail": "['DATA-01']"
+    },
+    {
+      "check": "No self dependency DATA-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-03",
+      "passed": true,
+      "detail": "['DATA-02']"
+    },
+    {
+      "check": "No self dependency DATA-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-04",
+      "passed": true,
+      "detail": "['DATA-03']"
+    },
+    {
+      "check": "No self dependency DATA-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-05",
+      "passed": true,
+      "detail": "['DATA-04']"
+    },
+    {
+      "check": "No self dependency DATA-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-06",
+      "passed": true,
+      "detail": "['DATA-05']"
+    },
+    {
+      "check": "No self dependency DATA-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-07",
+      "passed": true,
+      "detail": "['DATA-06']"
+    },
+    {
+      "check": "No self dependency DATA-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-08",
+      "passed": true,
+      "detail": "['DATA-07']"
+    },
+    {
+      "check": "No self dependency DATA-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-09",
+      "passed": true,
+      "detail": "['DATA-08']"
+    },
+    {
+      "check": "No self dependency DATA-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists DATA-10",
+      "passed": true,
+      "detail": "['DATA-09']"
+    },
+    {
+      "check": "No self dependency DATA-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-01",
+      "passed": true,
+      "detail": "['GOV-07']"
+    },
+    {
+      "check": "No self dependency METHOD-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-02",
+      "passed": true,
+      "detail": "['METHOD-01']"
+    },
+    {
+      "check": "No self dependency METHOD-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-03",
+      "passed": true,
+      "detail": "['METHOD-02']"
+    },
+    {
+      "check": "No self dependency METHOD-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-04",
+      "passed": true,
+      "detail": "['METHOD-03']"
+    },
+    {
+      "check": "No self dependency METHOD-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-05",
+      "passed": true,
+      "detail": "['METHOD-04']"
+    },
+    {
+      "check": "No self dependency METHOD-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-06",
+      "passed": true,
+      "detail": "['METHOD-05']"
+    },
+    {
+      "check": "No self dependency METHOD-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-07",
+      "passed": true,
+      "detail": "['METHOD-06']"
+    },
+    {
+      "check": "No self dependency METHOD-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-08",
+      "passed": true,
+      "detail": "['METHOD-07']"
+    },
+    {
+      "check": "No self dependency METHOD-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-09",
+      "passed": true,
+      "detail": "['METHOD-08']"
+    },
+    {
+      "check": "No self dependency METHOD-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists METHOD-10",
+      "passed": true,
+      "detail": "['METHOD-09']"
+    },
+    {
+      "check": "No self dependency METHOD-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-01",
+      "passed": true,
+      "detail": "['GOV-02', 'TRUST-03']"
+    },
+    {
+      "check": "No self dependency WEB-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-02",
+      "passed": true,
+      "detail": "['WEB-01']"
+    },
+    {
+      "check": "No self dependency WEB-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-03",
+      "passed": true,
+      "detail": "['WEB-02']"
+    },
+    {
+      "check": "No self dependency WEB-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-04",
+      "passed": true,
+      "detail": "['WEB-03']"
+    },
+    {
+      "check": "No self dependency WEB-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-05",
+      "passed": true,
+      "detail": "['WEB-04']"
+    },
+    {
+      "check": "No self dependency WEB-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-06",
+      "passed": true,
+      "detail": "['WEB-05']"
+    },
+    {
+      "check": "No self dependency WEB-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-07",
+      "passed": true,
+      "detail": "['WEB-06']"
+    },
+    {
+      "check": "No self dependency WEB-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-08",
+      "passed": true,
+      "detail": "['WEB-07']"
+    },
+    {
+      "check": "No self dependency WEB-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-09",
+      "passed": true,
+      "detail": "['WEB-08']"
+    },
+    {
+      "check": "No self dependency WEB-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists WEB-10",
+      "passed": true,
+      "detail": "['WEB-09']"
+    },
+    {
+      "check": "No self dependency WEB-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-01",
+      "passed": true,
+      "detail": "['TRUST-04', 'DATA-01']"
+    },
+    {
+      "check": "No self dependency API-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-02",
+      "passed": true,
+      "detail": "['API-01']"
+    },
+    {
+      "check": "No self dependency API-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-03",
+      "passed": true,
+      "detail": "['API-02']"
+    },
+    {
+      "check": "No self dependency API-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-04",
+      "passed": true,
+      "detail": "['API-03']"
+    },
+    {
+      "check": "No self dependency API-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-05",
+      "passed": true,
+      "detail": "['API-04']"
+    },
+    {
+      "check": "No self dependency API-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-06",
+      "passed": true,
+      "detail": "['API-05']"
+    },
+    {
+      "check": "No self dependency API-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-07",
+      "passed": true,
+      "detail": "['API-06']"
+    },
+    {
+      "check": "No self dependency API-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-08",
+      "passed": true,
+      "detail": "['API-07']"
+    },
+    {
+      "check": "No self dependency API-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-09",
+      "passed": true,
+      "detail": "['API-08']"
+    },
+    {
+      "check": "No self dependency API-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists API-10",
+      "passed": true,
+      "detail": "['API-09']"
+    },
+    {
+      "check": "No self dependency API-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-01",
+      "passed": true,
+      "detail": "['GOV-06', 'METHOD-10']"
+    },
+    {
+      "check": "No self dependency AI-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-02",
+      "passed": true,
+      "detail": "['AI-01']"
+    },
+    {
+      "check": "No self dependency AI-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-03",
+      "passed": true,
+      "detail": "['AI-02']"
+    },
+    {
+      "check": "No self dependency AI-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-04",
+      "passed": true,
+      "detail": "['AI-03']"
+    },
+    {
+      "check": "No self dependency AI-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-05",
+      "passed": true,
+      "detail": "['AI-04']"
+    },
+    {
+      "check": "No self dependency AI-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-06",
+      "passed": true,
+      "detail": "['AI-05']"
+    },
+    {
+      "check": "No self dependency AI-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-07",
+      "passed": true,
+      "detail": "['AI-06']"
+    },
+    {
+      "check": "No self dependency AI-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-08",
+      "passed": true,
+      "detail": "['AI-07']"
+    },
+    {
+      "check": "No self dependency AI-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-09",
+      "passed": true,
+      "detail": "['AI-08']"
+    },
+    {
+      "check": "No self dependency AI-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists AI-10",
+      "passed": true,
+      "detail": "['AI-09']"
+    },
+    {
+      "check": "No self dependency AI-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-01",
+      "passed": true,
+      "detail": "['AI-05', 'API-06']"
+    },
+    {
+      "check": "No self dependency REPORT-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-02",
+      "passed": true,
+      "detail": "['REPORT-01']"
+    },
+    {
+      "check": "No self dependency REPORT-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-03",
+      "passed": true,
+      "detail": "['REPORT-02']"
+    },
+    {
+      "check": "No self dependency REPORT-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-04",
+      "passed": true,
+      "detail": "['REPORT-03']"
+    },
+    {
+      "check": "No self dependency REPORT-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-05",
+      "passed": true,
+      "detail": "['REPORT-04']"
+    },
+    {
+      "check": "No self dependency REPORT-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-06",
+      "passed": true,
+      "detail": "['REPORT-05']"
+    },
+    {
+      "check": "No self dependency REPORT-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-07",
+      "passed": true,
+      "detail": "['REPORT-06']"
+    },
+    {
+      "check": "No self dependency REPORT-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-08",
+      "passed": true,
+      "detail": "['REPORT-07']"
+    },
+    {
+      "check": "No self dependency REPORT-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-09",
+      "passed": true,
+      "detail": "['REPORT-08']"
+    },
+    {
+      "check": "No self dependency REPORT-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists REPORT-10",
+      "passed": true,
+      "detail": "['REPORT-09']"
+    },
+    {
+      "check": "No self dependency REPORT-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-01",
+      "passed": true,
+      "detail": "['TRUST-04', 'GOV-03']"
+    },
+    {
+      "check": "No self dependency COMMERCE-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-02",
+      "passed": true,
+      "detail": "['COMMERCE-01']"
+    },
+    {
+      "check": "No self dependency COMMERCE-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-03",
+      "passed": true,
+      "detail": "['COMMERCE-02']"
+    },
+    {
+      "check": "No self dependency COMMERCE-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-04",
+      "passed": true,
+      "detail": "['COMMERCE-03']"
+    },
+    {
+      "check": "No self dependency COMMERCE-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-05",
+      "passed": true,
+      "detail": "['COMMERCE-04']"
+    },
+    {
+      "check": "No self dependency COMMERCE-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-06",
+      "passed": true,
+      "detail": "['COMMERCE-05']"
+    },
+    {
+      "check": "No self dependency COMMERCE-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-07",
+      "passed": true,
+      "detail": "['COMMERCE-06']"
+    },
+    {
+      "check": "No self dependency COMMERCE-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-08",
+      "passed": true,
+      "detail": "['COMMERCE-07']"
+    },
+    {
+      "check": "No self dependency COMMERCE-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-09",
+      "passed": true,
+      "detail": "['COMMERCE-08']"
+    },
+    {
+      "check": "No self dependency COMMERCE-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists COMMERCE-10",
+      "passed": true,
+      "detail": "['COMMERCE-09']"
+    },
+    {
+      "check": "No self dependency COMMERCE-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-01",
+      "passed": true,
+      "detail": "['P0-10']"
+    },
+    {
+      "check": "No self dependency OPS-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-02",
+      "passed": true,
+      "detail": "['OPS-01']"
+    },
+    {
+      "check": "No self dependency OPS-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-03",
+      "passed": true,
+      "detail": "['OPS-02']"
+    },
+    {
+      "check": "No self dependency OPS-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-04",
+      "passed": true,
+      "detail": "['OPS-03']"
+    },
+    {
+      "check": "No self dependency OPS-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-05",
+      "passed": true,
+      "detail": "['OPS-04']"
+    },
+    {
+      "check": "No self dependency OPS-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-06",
+      "passed": true,
+      "detail": "['OPS-05']"
+    },
+    {
+      "check": "No self dependency OPS-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-07",
+      "passed": true,
+      "detail": "['OPS-06']"
+    },
+    {
+      "check": "No self dependency OPS-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-08",
+      "passed": true,
+      "detail": "['OPS-07']"
+    },
+    {
+      "check": "No self dependency OPS-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-09",
+      "passed": true,
+      "detail": "['OPS-08']"
+    },
+    {
+      "check": "No self dependency OPS-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists OPS-10",
+      "passed": true,
+      "detail": "['OPS-09']"
+    },
+    {
+      "check": "No self dependency OPS-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-01",
+      "passed": true,
+      "detail": "['GOV-07', 'REPORT-01']"
+    },
+    {
+      "check": "No self dependency ACADEMY-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-02",
+      "passed": true,
+      "detail": "['ACADEMY-01']"
+    },
+    {
+      "check": "No self dependency ACADEMY-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-03",
+      "passed": true,
+      "detail": "['ACADEMY-02']"
+    },
+    {
+      "check": "No self dependency ACADEMY-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-04",
+      "passed": true,
+      "detail": "['ACADEMY-03']"
+    },
+    {
+      "check": "No self dependency ACADEMY-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-05",
+      "passed": true,
+      "detail": "['ACADEMY-04']"
+    },
+    {
+      "check": "No self dependency ACADEMY-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-06",
+      "passed": true,
+      "detail": "['ACADEMY-05']"
+    },
+    {
+      "check": "No self dependency ACADEMY-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-07",
+      "passed": true,
+      "detail": "['ACADEMY-06']"
+    },
+    {
+      "check": "No self dependency ACADEMY-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-08",
+      "passed": true,
+      "detail": "['ACADEMY-07']"
+    },
+    {
+      "check": "No self dependency ACADEMY-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-09",
+      "passed": true,
+      "detail": "['ACADEMY-08']"
+    },
+    {
+      "check": "No self dependency ACADEMY-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists ACADEMY-10",
+      "passed": true,
+      "detail": "['ACADEMY-09']"
+    },
+    {
+      "check": "No self dependency ACADEMY-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-01",
+      "passed": true,
+      "detail": "['OPS-10']"
+    },
+    {
+      "check": "No self dependency EXPAND-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-02",
+      "passed": true,
+      "detail": "['EXPAND-01']"
+    },
+    {
+      "check": "No self dependency EXPAND-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-03",
+      "passed": true,
+      "detail": "['EXPAND-02']"
+    },
+    {
+      "check": "No self dependency EXPAND-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-04",
+      "passed": true,
+      "detail": "['EXPAND-03']"
+    },
+    {
+      "check": "No self dependency EXPAND-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-05",
+      "passed": true,
+      "detail": "['EXPAND-04']"
+    },
+    {
+      "check": "No self dependency EXPAND-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-06",
+      "passed": true,
+      "detail": "['EXPAND-05']"
+    },
+    {
+      "check": "No self dependency EXPAND-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-07",
+      "passed": true,
+      "detail": "['EXPAND-06']"
+    },
+    {
+      "check": "No self dependency EXPAND-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-08",
+      "passed": true,
+      "detail": "['EXPAND-07']"
+    },
+    {
+      "check": "No self dependency EXPAND-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-09",
+      "passed": true,
+      "detail": "['EXPAND-08']"
+    },
+    {
+      "check": "No self dependency EXPAND-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists EXPAND-10",
+      "passed": true,
+      "detail": "['EXPAND-09']"
+    },
+    {
+      "check": "No self dependency EXPAND-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-01",
+      "passed": true,
+      "detail": "['OPS-10', 'GOV-03']"
+    },
+    {
+      "check": "No self dependency GLOBAL-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-02",
+      "passed": true,
+      "detail": "['GLOBAL-01']"
+    },
+    {
+      "check": "No self dependency GLOBAL-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-03",
+      "passed": true,
+      "detail": "['GLOBAL-02']"
+    },
+    {
+      "check": "No self dependency GLOBAL-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-04",
+      "passed": true,
+      "detail": "['GLOBAL-03']"
+    },
+    {
+      "check": "No self dependency GLOBAL-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-05",
+      "passed": true,
+      "detail": "['GLOBAL-04']"
+    },
+    {
+      "check": "No self dependency GLOBAL-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-06",
+      "passed": true,
+      "detail": "['GLOBAL-05']"
+    },
+    {
+      "check": "No self dependency GLOBAL-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-07",
+      "passed": true,
+      "detail": "['GLOBAL-06']"
+    },
+    {
+      "check": "No self dependency GLOBAL-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-08",
+      "passed": true,
+      "detail": "['GLOBAL-07']"
+    },
+    {
+      "check": "No self dependency GLOBAL-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-09",
+      "passed": true,
+      "detail": "['GLOBAL-08']"
+    },
+    {
+      "check": "No self dependency GLOBAL-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists GLOBAL-10",
+      "passed": true,
+      "detail": "['GLOBAL-09']"
+    },
+    {
+      "check": "No self dependency GLOBAL-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-PRD-001",
+      "passed": true,
+      "detail": "['GOV-01']"
+    },
+    {
+      "check": "No self dependency UPG-PRD-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-PRD-002",
+      "passed": true,
+      "detail": "['UPG-PRD-001']"
+    },
+    {
+      "check": "No self dependency UPG-PRD-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-UX-001",
+      "passed": true,
+      "detail": "['WEB-09', 'UPG-BE-006']"
+    },
+    {
+      "check": "No self dependency UPG-UX-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-UX-002",
+      "passed": true,
+      "detail": "['UPG-UX-001', 'UPG-AI-001']"
+    },
+    {
+      "check": "No self dependency UPG-UX-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-UX-003",
+      "passed": true,
+      "detail": "['UPG-UX-001', 'WEB-10']"
+    },
+    {
+      "check": "No self dependency UPG-UX-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-AI-001",
+      "passed": true,
+      "detail": "['AI-06', 'REPORT-01', 'METHOD-10']"
+    },
+    {
+      "check": "No self dependency UPG-AI-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-AI-002",
+      "passed": true,
+      "detail": "['UPG-AI-001', 'AI-07', 'AI-08']"
+    },
+    {
+      "check": "No self dependency UPG-AI-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-PM-001",
+      "passed": true,
+      "detail": "['UPG-PRD-002', 'UPG-UX-001', 'UPG-AI-001', 'UPG-BE-006']"
+    },
+    {
+      "check": "No self dependency UPG-PM-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-PM-002",
+      "passed": true,
+      "detail": "['UPG-PM-001']"
+    },
+    {
+      "check": "No self dependency UPG-PM-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-BE-001",
+      "passed": true,
+      "detail": "['METHOD-10', 'GOV-07']"
+    },
+    {
+      "check": "No self dependency UPG-BE-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-BE-002",
+      "passed": true,
+      "detail": "['API-01', 'METHOD-07']"
+    },
+    {
+      "check": "No self dependency UPG-BE-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-BE-003",
+      "passed": true,
+      "detail": "['TRUST-05', 'API-01']"
+    },
+    {
+      "check": "No self dependency UPG-BE-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-BE-004",
+      "passed": true,
+      "detail": "['DATA-06', 'COMMERCE-04', 'API-01']"
+    },
+    {
+      "check": "No self dependency UPG-BE-004",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-BE-005",
+      "passed": true,
+      "detail": "['DATA-03', 'UPG-BE-002', 'UPG-BE-003']"
+    },
+    {
+      "check": "No self dependency UPG-BE-005",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-BE-006",
+      "passed": true,
+      "detail": "['API-01', 'UPG-BE-002', 'UPG-BE-003']"
+    },
+    {
+      "check": "No self dependency UPG-BE-006",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task dependency exists UPG-BE-007",
+      "passed": true,
+      "detail": "['UPG-BE-002', 'UPG-BE-006', 'UPG-UX-002', 'UPG-AI-002']"
+    },
+    {
+      "check": "No self dependency UPG-BE-007",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Backlog acyclic",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "check": "Exact task contract ID set",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity P0-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields P0-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GOV-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GOV-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity TRUST-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields TRUST-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity DATA-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields DATA-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity METHOD-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields METHOD-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity WEB-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields WEB-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity API-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields API-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity AI-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields AI-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity REPORT-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields REPORT-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity COMMERCE-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields COMMERCE-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity OPS-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields OPS-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity ACADEMY-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields ACADEMY-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity EXPAND-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields EXPAND-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity GLOBAL-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields GLOBAL-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-PRD-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-PRD-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-PRD-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-PRD-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-UX-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-UX-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-UX-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-UX-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-UX-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-UX-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-AI-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-AI-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-AI-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-AI-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-PM-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-PM-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-PM-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-PM-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-BE-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-BE-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-BE-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-BE-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-BE-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-BE-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-BE-004",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-BE-004",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-BE-005",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-BE-005",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-BE-006",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-BE-006",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract dependency parity UPG-BE-007",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task contract acceptance fields UPG-BE-007",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exact20 decision packets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q6",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q7",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q8",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision options and unapproved state Q20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Decision exact affected task set Q20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "P0 packet current dependency parity P0-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs P0-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GOV-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs TRUST-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs DATA-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs METHOD-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs WEB-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs API-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs AI-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs REPORT-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs COMMERCE-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs OPS-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs ACADEMY-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs EXPAND-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs GLOBAL-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-PRD-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-PRD-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-UX-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-UX-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-UX-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-AI-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-AI-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-PM-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-PM-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-BE-001",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-BE-002",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-BE-003",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-BE-004",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-BE-005",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-BE-006",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Task source refs UPG-BE-007",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Resolved OpenAPI YAML JSON parity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Resolved preserves all64 unique operations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exact46 generic response design packets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response proposals not falsely codegen approved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs catalog",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs methods",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs subjects",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs createSubject",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs subject",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs overview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs newHypothesis",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs consents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs consentDecision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs grants",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs grant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs observation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs questionnaireResponse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs createPlan",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs plans",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs checkin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs analysisStatus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs cancelAnalysis",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs reports",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs reportRevisions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs review",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs publish",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs orderStatus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs checkout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs requestRefund",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs paymentWebhook",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs entitlements",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs ticket",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs ticketStatus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs deletionStatus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs jobStatus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs newAutomation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs cases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs caseDetail",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs courses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs assignment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs verifyCertificate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs organizationOverview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs partner",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs methodReleaseDraft",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs countryPackReview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs quality",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Response packet task refs operations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Read coverage exact149 source paths",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "FPOS RG0-RG13 exact coverage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "FPOS evidence statuses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No invented production approval",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "production_release_verdict": "HOLD"
+}

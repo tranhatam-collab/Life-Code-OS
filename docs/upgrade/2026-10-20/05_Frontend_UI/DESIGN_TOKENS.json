@@ -1,0 +1,83 @@
+{
+  "version": "0.1-proposed",
+  "colors": {
+    "ink": "#142E37",
+    "paper": "#F7F7F2",
+    "surface": "#FFFFFF",
+    "accent": "#176A61",
+    "warning": "#865900",
+    "error": "#A22E2E",
+    "muted": "#526571",
+    "border": "#D7E0DF"
+  },
+  "type": {
+    "body": "system-ui, sans-serif",
+    "body_min_px": 16,
+    "line_height": 1.55,
+    "mono": "ui-monospace, monospace"
+  },
+  "space_px": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius_px": 12,
+  "motion": {
+    "respect_reduced_motion": true,
+    "decorative_auto_animation": false
+  },
+  "semantics": {
+    "no_person_worth_color_scale": true,
+    "unknown_not_red_failure": true,
+    "critical_requires_text_not_color_only": true
+  },
+  "review": "Contrast and assistive technology testing required before production",
+  "amendment_2026_10_20": {
+    "claim_status": "NOT_CHECKED",
+    "responsive": {
+      "test_viewports_css_px": [
+        "320x568",
+        "390x844",
+        "768x1024",
+        "1280x800",
+        "1440x900"
+      ],
+      "content_max_width_px": 1180,
+      "prose_max_ch": 72,
+      "container_query_preferred": true,
+      "orientation_lock_allowed": false,
+      "safe_area_insets_required": true
+    },
+    "interaction": {
+      "target_preferred_css_px": 44,
+      "wcag_2_2_minimum_target_reference_css_px": 24,
+      "minimum_rule_exceptions_apply": true,
+      "pointer_alternative_for_drag_required": true,
+      "keyboard_equivalence_required": true
+    },
+    "focus": {
+      "visible": true,
+      "never_fully_obscured": true,
+      "minimum_outline_css_px": 2,
+      "offset_css_px": 2,
+      "restore_after_dialog": true
+    },
+    "motion": {
+      "no_required_motion_interaction": true,
+      "pause_or_remove_nonessential_animation": true
+    },
+    "pwa": {
+      "install_is_progressive_enhancement": true,
+      "explicit_manifest_scope": true,
+      "private_cache_default": "network_only",
+      "safe_update_prompt": true,
+      "offline_success_requires_server_receipt": true
+    },
+    "evidence_ref": "04_PWA_RESPONSIVE_EXECUTION_PLAN_2026-10-20.md"
+  }
+}

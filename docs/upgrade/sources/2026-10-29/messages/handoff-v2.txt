@@ -1,0 +1,197 @@
+Audit, đối chiếu toàn bộ với tổng kế hoạch và nâng cấp toàn bộ kế hoạch theo yêu cầu: - Anh Tâm, tôi đã hoàn thành **bộ nâng cấp Life Code OS V2**, giữ nguyên bộ kế hoạch cũ và bổ sung tài liệu kỹ thuật, hợp đồng dữ liệu, mã tham chiếu, bộ kiểm thử cùng giao diện demo chạy cục bộ.
+
+**Phần backend đã được làm sâu hơn thành một bộ riêng**, không chỉ còn là sơ đồ: có danh mục công thức, quy tắc dữ liệu thiếu, nhiều giả thuyết ngày sinh, lịch sử nguồn, điều phối tính toán, kiểm soát quyền, xử lý yêu cầu trùng và các tình huống chạy thử.
+
+**Một phần chưa hoàn tất là ghi toàn bộ gói lên GitHub:** kết nối cho phép đọc đúng repository, nhưng cả thao tác tạo cây tệp và tạo nhánh đều bị từ chối với **HTTP 403 — Resource not accessible by integration**. Tôi đã chuẩn bị **bản vá chỉ bổ sung tệp và công cụ nhập có kiểm tra checksum**; chưa có thay đổi nào lên `main` hoặc production.
+
+# 1. Tải bộ bàn giao V2
+
+📦 **Life_Code_OS_V2_Complete_Upgrade_2026-10-20.zip[Tải toàn bộ Life Code OS V2 — kế hoạch cũ, bản nâng cấp, backend, demo và công cụ nhập dự án](sandbox:/mnt/data/Life_Code_OS_V2_Complete_Upgrade_2026-10-20.zip)**
+
+| Tài liệu | Công dụng | Tải |
+|---|---|---|
+| **Kế hoạch hợp nhất V2 — 21 trang** | Đọc phần nâng cấp sản phẩm, kiến trúc, trải nghiệm và thực thi | Life_Code_OS_Master_Upgrade_V2.pdf[PDF](sandbox:/mnt/data/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.pdf) · Life_Code_OS_Master_Upgrade_V2.docx[Word](sandbox:/mnt/data/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.docx) |
+| **Backend, công thức và demo — 36 trang** | Tài liệu trọng tâm cho Tech Lead, backend và QA | Life_Code_OS_Backend_Formula_Demo_V2.pdf[PDF](sandbox:/mnt/data/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.pdf) · Life_Code_OS_Backend_Formula_Demo_V2.docx[Word](sandbox:/mnt/data/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.docx) |
+| **Bảng điều hành V2 — 20 trang tính** | Công việc, công thức, API, demo, quyết định và đối chiếu tệp | Life_Code_OS_Execution_Board_V2.xlsx[Excel](sandbox:/mnt/data/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Execution_Board_V2.xlsx) |
+| **Hướng dẫn bắt đầu** | Thứ tự đọc, chạy demo, kiểm tra và nhập repository | START_HERE_V2.md[Đọc hướng dẫn](sandbox:/mnt/data/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/START_HERE_V2.md) |
+| **Bản vá bổ sung vào dự án** | Đưa bộ tài liệu vào đúng đường dẫn, không sửa mã ứng dụng hiện tại | Life_Code_OS_V2_Additive_Import_2026-10-20.patch[Tải patch](sandbox:/mnt/data/Life_Code_OS_V2_Additive_Import_2026-10-20.patch) |
+
+Sau khi giải nén ZIP, mở **`INDEX.html`** để tìm tài liệu theo tên hoặc thư mục.
+
+---
+
+# 2. Bộ cũ được bảo toàn như thế nào?
+
+**Toàn bộ 149 tệp của bộ ngày 11/10/2026 được giữ nguyên từng byte**, cùng bản ZIP gốc. Bốn tài liệu đính kèm riêng đã được đối chiếu với bản tương ứng trong ZIP.
+
+Trong gói mới:
+
+```text
+01_BASELINE/
+├── 2026-10-11/                  ← 149 tệp gốc
+├── Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip
+└── PRESERVATION.json            ← danh sách và SHA-256
+```
+
+Bản tổng hợp cũ **47 trang** vẫn nằm trong thư mục này. Hai tài liệu V2 mới là **phần nâng cấp bổ sung**, không thay thế hoặc rút bỏ nội dung cũ.
+
+Bảng `NO_LOSS_UPGRADE_MATRIX` ánh xạ từng tệp gốc sang phần liên quan của V2. Trong workbook mới, **dữ liệu nhập và công thức của 11 trang tính cũ được giữ nguyên**, thêm chín trang tính mới.
+
+Những phần tiếp tục được bảo toàn gồm **23 sản phẩm/gói, chín cấp, 20 họ tri thức, 12 lớp phân tích, 12 trường đồng nhịp, 120 trường dữ liệu tùy chọn, 140 công việc và Q1–Q20**. V2 bổ sung **68 công việc làm rõ phạm vi và Q21–Q30**.
+
+---
+
+# 3. Backend đã được nâng cấp ở những điểm nào?
+
+## 3.1. Danh mục công thức có đầu vào, đầu ra và giới hạn
+
+Bộ mới có **32 bản ghi công thức/adapter**:
+
+| Trạng thái | Số lượng | Ý nghĩa |
+|---|---:|---|
+| **Có mã tham chiếu và kiểm thử cục bộ** | **16** | Có thể chạy, xem dấu vết và đối chiếu kết quả |
+| **Thiết kế hoặc nghiên cứu còn phải thực hiện** | **16** | Đã có phạm vi, yêu cầu nguồn và điều kiện triển khai; chưa gọi là bộ máy hoàn chỉnh |
+
+Các nhóm chạy được bao gồm Mã đuôi 80, cặp số chồng lấn, ma trận chữ số, quy đổi tên Việt–Latin, các cách rút gọn ngày sinh, chu kỳ, khoảng tuổi, quy đổi thời gian, nhiều giả thuyết ngày sinh, độ đầy đủ dữ liệu, tiến độ hành động, dòng tiền theo đơn vị tiền tệ và thống kê nhật ký.
+
+**Các phần Bát tự, Tử vi, thiên văn chuyên sâu, Jyotish và những phương pháp nâng cao vẫn có vị trí trong kế hoạch, nhưng chưa bị trình bày sai thành những engine đã hoàn thành.**
+
+## 3.2. Xử lý những trường hợp dễ làm sai toàn hệ
+
+Bộ demo và đặc tả đã bổ sung:
+
+- Ngày sinh thiếu giờ, chỉ có năm hoặc có hai nguồn khác nhau: **không tự chọn, không tự điền**.
+- Ngày 29/02, khoảng tuổi và thời điểm đổi năm cá nhân: có quy tắc rõ.
+- Giờ mùa hè: phân biệt thời điểm không tồn tại, một thời điểm hoặc hai khả năng UTC.
+- Tên có dấu, Unicode và tên ngoài bảng hỗ trợ: giữ bản gốc, không âm thầm quy đổi sai.
+- Số dư 0 của Mã đuôi 80: phải chọn chính sách rõ.
+- Cặp có 0 hoặc 5: phần chưa có quy tắc vẫn hiển thị là chưa xử lý.
+- Thiếu dữ liệu trong bảng so sánh: không làm một phương án trông tốt hơn chỉ vì bỏ qua tiêu chí thiếu.
+- Dòng tiền: dùng số nguyên cho đơn vị nhỏ nhất và **không cộng lẫn các loại tiền**.
+
+## 3.3. Điều phối và truy vết
+
+Đã có đặc tả và mô phỏng tham chiếu cho **đồ thị phụ thuộc tính toán — DAG**: kiểm tra nút trùng, phụ thuộc thiếu, vòng lặp và các nhóm việc có thể chạy song song.
+
+Mỗi kết quả phải gắn với phiên bản hồ sơ, phương pháp, bảng nguồn và cấu hình. Khi thay một quy tắc, hệ thống xác định phần bị ảnh hưởng thay vì âm thầm đổi báo cáo cũ.
+
+Kế hoạch cũng làm rõ **hủy tác vụ, dữ liệu hết hiệu lực, quyền vừa bị thu hồi, khóa cache theo chủ thể và chống xử lý trùng**.
+
+## 3.4. Hợp đồng dữ liệu và API
+
+Gói có **17 JSON Schema kèm ví dụ** và **83 thao tác API đích**, giữ lại phạm vi 64 thao tác của bộ trước.
+
+Cần phân biệt rõ:
+
+> **83 thao tác là đặc tả hệ thống đích. Máy chủ demo hiện thực hiện ba route, không phải toàn bộ backend production.**
+
+SQL, RLS, danh tính thật, PostgreSQL, R2, thanh toán và hàng đợi cloud đã được đặc tả sâu hơn, nhưng chưa được ghi là đã triển khai.
+
+---
+
+# 4. Phòng thử với 90 tình huống
+
+Đội DEV không chỉ đọc tài liệu mà có thể chạy **90 trường hợp có đầu vào, kết quả kỳ vọng, thông báo lỗi và giải thích**.
+
+Ba hồ sơ minh họa xuyên suốt được bổ sung riêng:
+
+| Hồ sơ demo | Điều cần thể hiện |
+|---|---|
+| **Đủ dữ liệu nền** | Đi qua các phép tính và dựng bốn lớp nội dung báo cáo |
+| **Thiếu giờ sinh** | Hoàn thành phần tính được, giữ rõ phần chưa biết |
+| **Hai giả thuyết ngày sinh** | Trả hai nhánh, không chọn thay người dùng |
+
+Các demo khác kiểm tra quyền bị từ chối, yêu cầu trùng, phiên bản hồ sơ xung đột, phương pháp chưa phát hành và nhận định vượt phạm vi.
+
+### Chạy cục bộ
+
+Sau khi giải nén, với Node.js 22 trở lên phù hợp môi trường của đội:
+
+```bash
+cd LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB
+
+npm test
+npm run demo
+npm start
+```
+
+Mở:
+
+```text
+http://127.0.0.1:8788
+```
+
+Demo không cần tải thư viện npm. Có thể chọn tình huống, xem dữ liệu giả lập, bấm **“Tính và giải thích”**, đọc kết quả, mở dấu vết phương pháp và lưu JSON.
+
+**Không nhập dữ liệu cá nhân thật.** Máy chủ này chưa có tài khoản, cơ sở dữ liệu, thanh toán hoặc nhà cung cấp AI; chỉ phục vụ phòng thử cục bộ.
+
+---
+
+# 5. Mobile, web và desktop
+
+Đã bổ sung giao diện demo đáp ứng bốn kích thước **360, 390, 768 và 1440 px**, cùng danh mục **57 màn hình mục tiêu** — giữ 45 màn hình cũ và thêm 12 màn hình.
+
+Trải nghiệm tập trung vào ba thao tác: **chọn điều muốn làm → xem dữ liệu được dùng → hiểu kết quả và bước tiếp theo**. Thông tin kỹ thuật được đặt trong phần mở rộng, không che kết quả bằng một khối JSON.
+
+Giao diện hiện đã có bộ tình huống, tìm kiếm, lọc nhóm, nhập thử, trạng thái xử lý, kết quả đọc được và thông báo giới hạn.
+
+**Đây là web demo responsive, chưa phải ứng dụng native iOS/Android.** Camera, thông báo, lưu ngoại tuyến, xác thực và đồng bộ nhiều thiết bị vẫn có kế hoạch triển khai riêng; không được tự coi là đã hoàn thành từ việc giao diện co giãn tốt.
+
+---
+
+# 6. Chuỗi sản phẩm và AI vẫn được giữ đầy đủ
+
+Bản V2 không thu hẹp Life Code thành một công cụ xem số. Các hướng **miễn phí, chín cấp cá nhân, AI Companion, chuyên gia, Academy, Family, Workspace, xuất bản, API và cấp phép quốc tế** được giữ và nối với hợp đồng dữ liệu, quyền truy cập, điều kiện mở bán.
+
+AI được thiết kế để giảm việc lặp: hướng dẫn nhập, phát hiện phần thiếu, giải thích phép tính, truy xuất nguồn, tạo bản nháp, rà ngôn ngữ, hỗ trợ nhật ký và tổng hợp vận hành.
+
+Những quyết định về **phát hành phương pháp, dữ liệu nhạy cảm, quyền truy cập, ngoại lệ thương mại và triển khai production** vẫn có người chịu trách nhiệm. Mục tiêu là giảm thao tác quản trị, không làm mất khả năng kiểm soát và sửa sai.
+
+---
+
+# 7. Kết quả kiểm tra thực tế
+
+| Phạm vi | Kết quả |
+|---|---:|
+| Bảo toàn tệp gốc | **149/149 khớp SHA-256** |
+| Kiểm thử Node/HTTP của V2 | **125 đạt, 0 lỗi** |
+| Bộ kiểm thử tham chiếu cũ chạy lại | **83 đạt, 0 lỗi** |
+| Tình huống demo | **90 có kết quả** |
+| Kiểm thử công cụ nhập | **9 đạt** |
+| Kiểm tra toàn vẹn và nhất quán gói | **1.659 kiểm tra đạt, 0 lỗi** |
+| Hai tài liệu mới | **57 trang đã render và rà soát trực quan** |
+| Workbook V2 | **20 trang tính; không phát hiện lỗi công thức trong lần quét cuối** |
+| Patch | **Chỉ thêm tệp; đã thử `git apply --check` và đối chiếu hash sau áp dụng** |
+
+Có kiểm thử toàn miền **10.000 đuôi số**, bảng **64 cặp** và các phép biến đổi hào trong bộ tham chiếu. Những kiểm thử này xác nhận logic tính toán tương ứng, **không phải kiểm chứng trên 10.000 cuộc đời**.
+
+Biên bản chi tiết đã nằm trong ZIP:
+
+Life_Code_OS_V2_Verification_2026-10-20.json[Kiểm tra gói](sandbox:/mnt/data/Life_Code_OS_V2_Verification_2026-10-20.json) · Life_Code_OS_V2_Import_Receipt_2026-10-20.json[Kiểm tra nhập và patch](sandbox:/mnt/data/Life_Code_OS_V2_Import_Receipt_2026-10-20.json)
+
+---
+
+# 8. Đưa vào đúng dự án mà không ghi đè
+
+Đích đã khóa:
+
+```text
+Repository: tranhatam-collab/Life-Code-OS
+Thư mục:   docs/upgrades/2026-10-20-v2/
+```
+
+Công cụ nhập mặc định chỉ **dry-run**. Nó kiểm tra đúng remote, nhánh review, worktree sạch, manifest, checksum và xung đột; từ chối nhập trực tiếp vào `main`, `master` hoặc `production`.
+
+Khi thêm `--apply`, công cụ chỉ sao chép các tệp còn thiếu. **Không ghi đè, không xóa, không tự commit, push hoặc deploy.** Patch là phương án thay thế; chỉ chọn một cách nhập rồi đối soát.
+
+Do GitHub từ chối quyền ghi, **toàn bộ đồng bộ remote vẫn đang chờ người có quyền thực hiện**. Bộ bàn giao không che phần còn thiếu này bằng trạng thái “đã lên dự án”.
+
+---
+
+## Thứ tự áp dụng
+
+Anh duyệt **kế hoạch hợp nhất V2 và Q21–Q30** trước. Tech Lead đọc **bộ backend**, chạy **90 tình huống**, rồi đối chiếu công việc bổ sung với công việc cha trong backlog để tránh tính trùng phạm vi và ngày công.
+
+Sau khi nhập đúng repository, đội triển khai bắt đầu từ **P0 và Trust Core**, không mở bán hoặc thu thêm dữ liệu sâu chỉ vì đã có demo.
+
+**Bộ bàn giao đã hoàn tất ở mức kế hoạch nâng cấp, đặc tả và mã tham chiếu có kiểm thử. Việc triển khai production, migration dữ liệu, xác thực thật, thanh toán, kiểm thử bảo mật độc lập và phê duyệt phát hành vẫn là các bước phải thực hiện tiếp — chưa được đánh dấu hoàn thành.**

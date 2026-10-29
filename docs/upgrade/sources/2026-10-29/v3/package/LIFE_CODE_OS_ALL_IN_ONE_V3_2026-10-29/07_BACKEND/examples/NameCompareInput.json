@@ -1,0 +1,15 @@
+{
+  "base": {
+    "birth_date": "1990-01-02"
+  },
+  "variants": [
+    {
+      "id": "a",
+      "name": "AN BINH"
+    },
+    {
+      "id": "b",
+      "name": "BINH AN"
+    }
+  ]
+}

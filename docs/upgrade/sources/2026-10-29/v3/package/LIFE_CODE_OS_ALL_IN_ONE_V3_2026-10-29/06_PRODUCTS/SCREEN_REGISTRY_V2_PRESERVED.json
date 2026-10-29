@@ -1,0 +1,830 @@
+[
+  {
+    "screen_id": "UI-01",
+    "name_vi": "Trang chủ",
+    "target_route": "/",
+    "principal": "guest",
+    "data": "Public content",
+    "api": "GET /catalog",
+    "task_id": "WEB-01",
+    "states_acceptance": "educational-first; release badge",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-02",
+    "name_vi": "Giới thiệu HNH",
+    "target_route": "/gioi-thieu",
+    "principal": "guest",
+    "data": "Doctrine/source pages",
+    "api": "static",
+    "task_id": "WEB-01",
+    "states_acceptance": "No endorsement/clinicalclaims",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-03",
+    "name_vi": "Danh mục9cấp",
+    "target_route": "/9-levels-life-code",
+    "principal": "guest",
+    "data": "Catalog/eligibility",
+    "api": "GET /catalog",
+    "task_id": "GOV-09",
+    "states_acceptance": "Available/planned/delayed states",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-04",
+    "name_vi": "Thư viện phương pháp",
+    "target_route": "/research/methods",
+    "principal": "guest",
+    "data": "Published method passports",
+    "api": "GET /methods",
+    "task_id": "METHOD-10",
+    "states_acceptance": "Readstatus andsourceversion",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-05",
+    "name_vi": "Tra bộ số miễn phí",
+    "target_route": "/numbers",
+    "principal": "guest",
+    "data": "Suffix/name local",
+    "api": "local deterministic",
+    "task_id": "WEB-02",
+    "states_acceptance": "Invalid/unresolved/tablechanged; noPIanalytics",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-06",
+    "name_vi": "Giá và phạm vi",
+    "target_route": "/pricing",
+    "principal": "guest",
+    "data": "Versioned product offer",
+    "api": "GET /catalog",
+    "task_id": "COMMERCE-01",
+    "states_acceptance": "No hiddendatafee",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-07",
+    "name_vi": "Bắt đầu theo nhu cầu",
+    "target_route": "/app/start",
+    "principal": "user",
+    "data": "Goal/required fields",
+    "api": "POST /subjects",
+    "task_id": "WEB-03",
+    "states_acceptance": "Draft/partial/authneeded",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-08",
+    "name_vi": "Đăng nhập",
+    "target_route": "/app/login",
+    "principal": "guest",
+    "data": "Identity provider",
+    "api": "GET /auth/login",
+    "task_id": "TRUST-01",
+    "states_acceptance": "Failure/recovery/accountlock",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-09",
+    "name_vi": "Tổng quan",
+    "target_route": "/app/dashboard",
+    "principal": "user",
+    "data": "Goals/tasks/reports",
+    "api": "GET /subjects/{subjectId}/overview",
+    "task_id": "WEB-06",
+    "states_acceptance": "Nullmetric notzero, nextaction",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-10",
+    "name_vi": "Hồ sơ",
+    "target_route": "/app/profiles",
+    "principal": "user",
+    "data": "Subject list",
+    "api": "GET /subjects",
+    "task_id": "API-02",
+    "states_acceptance": "Empty/shared/revoked",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-11",
+    "name_vi": "Chỉnh hồ sơ",
+    "target_route": "/app/profiles/:id",
+    "principal": "user",
+    "data": "Profileversion",
+    "api": "POST /subjects/{subjectId}/profile-versions",
+    "task_id": "DATA-01",
+    "states_acceptance": "IfMatch conflict/missingDOB",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-12",
+    "name_vi": "Giả thuyết dữ liệu",
+    "target_route": "/app/profiles/:id/hypotheses",
+    "principal": "user",
+    "data": "Datahypotheses",
+    "api": "POST /subjects/{subjectId}/hypotheses",
+    "task_id": "DATA-01",
+    "states_acceptance": "Conflicting birthyears never merge",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-13",
+    "name_vi": "Sự đồng ý",
+    "target_route": "/app/privacy",
+    "principal": "user",
+    "data": "Purposes/consents",
+    "api": "POST /subjects/{subjectId}/consents",
+    "task_id": "TRUST-08",
+    "states_acceptance": "Withdraw/processingpaused",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-14",
+    "name_vi": "Chia sẻ",
+    "target_route": "/app/sharing",
+    "principal": "user",
+    "data": "Accessgrants",
+    "api": "POST /subjects/{subjectId}/grants",
+    "task_id": "TRUST-07",
+    "states_acceptance": "Scope/expiry/revoke",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-15",
+    "name_vi": "Nhật ký",
+    "target_route": "/app/journal",
+    "principal": "user",
+    "data": "Observation",
+    "api": "POST /subjects/{subjectId}/observations",
+    "task_id": "WEB-07",
+    "states_acceptance": "Offline/draft/saveerror",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-16",
+    "name_vi": "Đồng nhịp",
+    "target_route": "/app/resonance",
+    "principal": "user",
+    "data": "Resonance observations",
+    "api": "GET /subjects/{subjectId}/observations",
+    "task_id": "EXPAND-04",
+    "states_acceptance": "No causal/medical inference",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-17",
+    "name_vi": "Mục tiêu",
+    "target_route": "/app/goals",
+    "principal": "user",
+    "data": "Plans/actions",
+    "api": "POST /subjects/{subjectId}/plans",
+    "task_id": "API-05",
+    "states_acceptance": "No goal/start/archive",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-18",
+    "name_vi": "Check-in",
+    "target_route": "/app/actions/:id",
+    "principal": "user",
+    "data": "Actionoutcome",
+    "api": "POST /actions/{actionId}/check-ins",
+    "task_id": "API-05",
+    "states_acceptance": "Retry-idempotent/cancelled",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-19",
+    "name_vi": "Dòng thời gian",
+    "target_route": "/app/timeline",
+    "principal": "user",
+    "data": "Events/scenarios",
+    "api": "GET /subjects/{subjectId}/timeline",
+    "task_id": "METHOD-08",
+    "states_acceptance": "Fourtracks/unknown dates",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-20",
+    "name_vi": "Khảo sát",
+    "target_route": "/app/questionnaires/:code",
+    "principal": "user",
+    "data": "Licensedinstrument",
+    "api": "POST /subjects/{subjectId}/questionnaire-responses",
+    "task_id": "EXPAND-01",
+    "states_acceptance": "Incomplete/localeunsupported",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-21",
+    "name_vi": "Tính phân tích",
+    "target_route": "/app/analysis/new",
+    "principal": "user",
+    "data": "Releasedmethods",
+    "api": "POST /analysis-runs",
+    "task_id": "API-03",
+    "states_acceptance": "Missing/grantdenied/methodretired",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-22",
+    "name_vi": "Tiến độ",
+    "target_route": "/app/analysis/:id",
+    "principal": "user",
+    "data": "Analysisrun",
+    "api": "GET /analysis-runs/{runId}",
+    "task_id": "API-03",
+    "states_acceptance": "Queued/running/failed/cancelled",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-23",
+    "name_vi": "Thư viện báo cáo",
+    "target_route": "/app/reports",
+    "principal": "user",
+    "data": "Reportmetadata",
+    "api": "GET /subjects/{subjectId}/reports",
+    "task_id": "WEB-08",
+    "states_acceptance": "No report/stale/withdrawn",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-24",
+    "name_vi": "Đọc báo cáo",
+    "target_route": "/app/reports/:id",
+    "principal": "user",
+    "data": "Authorizedsnapshot",
+    "api": "GET /reports/{reportId}",
+    "task_id": "REPORT-05",
+    "states_acceptance": "Typedclaim/commoncontent separated",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-25",
+    "name_vi": "So sánh revisions",
+    "target_route": "/app/reports/:id/versions",
+    "principal": "user",
+    "data": "Reportrevisions",
+    "api": "GET /reports/{reportId}/revisions",
+    "task_id": "REPORT-09",
+    "states_acceptance": "Changed/notcomparable",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-26",
+    "name_vi": "Xuất/tải",
+    "target_route": "/app/reports/:id/export",
+    "principal": "user",
+    "data": "Exportartifact",
+    "api": "POST /reports/{reportId}/exports",
+    "task_id": "REPORT-06",
+    "states_acceptance": "Queued/ready/expired/denied",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-27",
+    "name_vi": "Đơn hàng",
+    "target_route": "/app/orders",
+    "principal": "user",
+    "data": "Order",
+    "api": "POST /orders",
+    "task_id": "COMMERCE-01",
+    "states_acceptance": "Pricechanged/missingdata",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-28",
+    "name_vi": "Thanh toán",
+    "target_route": "/app/checkout/:id",
+    "principal": "user",
+    "data": "Payment intent",
+    "api": "POST /orders/{orderId}/checkout",
+    "task_id": "COMMERCE-03",
+    "states_acceptance": "Pending/failed/serverconfirmed",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-29",
+    "name_vi": "Quyền dịch vụ",
+    "target_route": "/app/subscription",
+    "principal": "user",
+    "data": "Entitlements",
+    "api": "GET /entitlements",
+    "task_id": "COMMERCE-05",
+    "states_acceptance": "Expired/cancelled/freefallback",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-30",
+    "name_vi": "Hỗ trợ",
+    "target_route": "/app/support",
+    "principal": "user",
+    "data": "Scopedticket",
+    "api": "POST /support/tickets",
+    "task_id": "COMMERCE-08",
+    "states_acceptance": "Escalated/noPIneeded",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-31",
+    "name_vi": "Xuất dữ liệu",
+    "target_route": "/app/privacy/export",
+    "principal": "user",
+    "data": "Privacyexport",
+    "api": "POST /subjects/{subjectId}/data-exports",
+    "task_id": "DATA-09",
+    "states_acceptance": "Alwaysfree/progress",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-32",
+    "name_vi": "Yêu cầu xóa",
+    "target_route": "/app/privacy/delete",
+    "principal": "user",
+    "data": "Deletionjob",
+    "api": "POST /subjects/{subjectId}/deletion-jobs",
+    "task_id": "DATA-07",
+    "states_acceptance": "Hold/pending/complete/backupexpiry",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-33",
+    "name_vi": "Trung tâm tự động",
+    "target_route": "/app/automations",
+    "principal": "user",
+    "data": "Authorizationpolicies",
+    "api": "POST /automations",
+    "task_id": "AI-10",
+    "states_acceptance": "Off/optin/capped/stopped",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-34",
+    "name_vi": "Gia đình",
+    "target_route": "/family",
+    "principal": "authorized_adults",
+    "data": "Sharedsubjectgrants",
+    "api": "GET /subjects",
+    "task_id": "EXPAND-05",
+    "states_acceptance": "No blanketguardianaccess",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-35",
+    "name_vi": "Case chuyên gia",
+    "target_route": "/practice/cases",
+    "principal": "practitioner",
+    "data": "Assignedcases",
+    "api": "GET /practice/cases",
+    "task_id": "ACADEMY-05",
+    "states_acceptance": "Grantmissing/expired/closed",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-36",
+    "name_vi": "Duyệt báo cáo",
+    "target_route": "/practice/reviews/:id",
+    "principal": "reviewer",
+    "data": "Minimumclaimpackage",
+    "api": "POST /reports/{reportId}/reviews",
+    "task_id": "REPORT-10",
+    "states_acceptance": "Draft/revise/approved no direct publish",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-37",
+    "name_vi": "Academy",
+    "target_route": "/academy",
+    "principal": "guest/user",
+    "data": "Releasedcurriculum",
+    "api": "GET /academy/courses",
+    "task_id": "ACADEMY-01",
+    "states_acceptance": "Planned/open/closedcohort",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-38",
+    "name_vi": "Học bài",
+    "target_route": "/academy/learn/:id",
+    "principal": "enrolled",
+    "data": "Lessons/assignments",
+    "api": "POST /academy/assignments",
+    "task_id": "ACADEMY-03",
+    "states_acceptance": "Lockedbyenrollment notprivateprofile",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-39",
+    "name_vi": "Chứng nhận",
+    "target_route": "/academy/verify/:id",
+    "principal": "public_minimal",
+    "data": "Certificatepublicview",
+    "api": "GET /certificates/{certificateId}",
+    "task_id": "ACADEMY-06",
+    "states_acceptance": "Valid/expired/revoked minimumPI",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-40",
+    "name_vi": "Workspace",
+    "target_route": "/workspace",
+    "principal": "organization_member",
+    "data": "Workprofiles/goals",
+    "api": "GET /organizations/{organizationId}/overview",
+    "task_id": "EXPAND-08",
+    "states_acceptance": "No journal/morphology analytics",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-41",
+    "name_vi": "Partner",
+    "target_route": "/partner",
+    "principal": "licensed_partner",
+    "data": "Countrylicense/quotas",
+    "api": "GET /partners/{partnerId}",
+    "task_id": "GLOBAL-05",
+    "states_acceptance": "Suspended/countrynotapproved",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-42",
+    "name_vi": "Nguồn/phương pháp Admin",
+    "target_route": "/admin/methods",
+    "principal": "method_editor",
+    "data": "Methoddraft/releases",
+    "api": "POST /admin/method-releases",
+    "task_id": "METHOD-10",
+    "states_acceptance": "Reviewer segregation required",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-43",
+    "name_vi": "Quality center",
+    "target_route": "/admin/quality",
+    "principal": "quality_reviewer",
+    "data": "Sanitizedtest/outcomes",
+    "api": "GET /admin/quality",
+    "task_id": "OPS-08",
+    "states_acceptance": "No universalPIaccess",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-44",
+    "name_vi": "Ops center",
+    "target_route": "/admin/operations",
+    "principal": "ops",
+    "data": "Metrics/errors/jobs",
+    "api": "GET /admin/operations",
+    "task_id": "OPS-04",
+    "states_acceptance": "Kill switches A3approval",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "UI-45",
+    "name_vi": "Rights/legal center",
+    "target_route": "/admin/rights",
+    "principal": "legal",
+    "data": "Source/country policy",
+    "api": "POST /admin/country-packs",
+    "task_id": "GLOBAL-01",
+    "states_acceptance": "Pending/expired/restricted",
+    "common_a11y": "keyboard/focus/errors/labels/contrast/reducedmotion",
+    "release_status": "TARGET_NOT_DEPLOYED"
+  },
+  {
+    "screen_id": "V2-S01",
+    "name": "Thư viện demo",
+    "route": "/lab/cases",
+    "user_goal": "Tìm và chạy tình huống tổng hợp",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "REFERENCE_UI_ONLY"
+  },
+  {
+    "screen_id": "V2-S02",
+    "name": "So sánh phương án ngày sinh",
+    "route": "/app/profiles/:id/hypotheses",
+    "user_goal": "Không tự chọn ngày theo lời luận",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S03",
+    "name": "Giải thích từng bước",
+    "route": "/app/runs/:id/trace",
+    "user_goal": "Đọc công thức và bảng nguồn",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S04",
+    "name": "So sánh run",
+    "route": "/app/runs/compare",
+    "user_goal": "Thấy thay đổi do input/rule",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S05",
+    "name": "Xung đột đồng bộ",
+    "route": "/app/sync/conflicts",
+    "user_goal": "Không ghi đè offline âm thầm",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S06",
+    "name": "Bản đồ phụ thuộc",
+    "route": "/practice/methods/:id/dependencies",
+    "user_goal": "Biết tác động khi thay nguồn",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S07",
+    "name": "Hàng chờ phương pháp",
+    "route": "/ops/methods/review",
+    "user_goal": "Tách nghiên cứu và release",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S08",
+    "name": "Tác động thu hồi",
+    "route": "/ops/releases/:id/impact",
+    "user_goal": "Tìm report liên quan",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S09",
+    "name": "Quyền đang chia sẻ",
+    "route": "/app/privacy/sharing",
+    "user_goal": "Thu hồi theo từng mục đích",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S10",
+    "name": "Trạng thái xóa dữ liệu",
+    "route": "/app/privacy/deletions/:id",
+    "user_goal": "Biết phần hoàn tất và chờ",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S11",
+    "name": "Điều kiện quốc gia",
+    "route": "/partners/countries/:code",
+    "user_goal": "Không mở thị trường trước legal gate",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S12",
+    "name": "Mẫu sách có dữ liệu thiếu",
+    "route": "/lab/reports",
+    "user_goal": "Thấy nội dung chưa đủ thay vì lời giả",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "REFERENCE_UI_ONLY"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v3:BatCucInput",
+  "title": "BatCucInput",
+  "type": "object",
+  "required": [
+    "sequence"
+  ],
+  "properties": {
+    "sequence": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 40
+    },
+    "context": {
+      "enum": [
+        "phone_vn",
+        "generic_sequence",
+        "identifier_suffix4"
+      ]
+    },
+    "policy": {
+      "enum": [
+        "strict_adjacent_v3",
+        "bridge_single_0_5_diagnostic_v3"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

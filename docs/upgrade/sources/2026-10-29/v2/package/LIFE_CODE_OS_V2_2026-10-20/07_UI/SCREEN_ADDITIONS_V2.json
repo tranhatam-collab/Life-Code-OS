@@ -1,0 +1,290 @@
+[
+  {
+    "screen_id": "V2-S01",
+    "name": "Thư viện demo",
+    "route": "/lab/cases",
+    "user_goal": "Tìm và chạy tình huống tổng hợp",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "REFERENCE_UI_ONLY"
+  },
+  {
+    "screen_id": "V2-S02",
+    "name": "So sánh phương án ngày sinh",
+    "route": "/app/profiles/:id/hypotheses",
+    "user_goal": "Không tự chọn ngày theo lời luận",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S03",
+    "name": "Giải thích từng bước",
+    "route": "/app/runs/:id/trace",
+    "user_goal": "Đọc công thức và bảng nguồn",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S04",
+    "name": "So sánh run",
+    "route": "/app/runs/compare",
+    "user_goal": "Thấy thay đổi do input/rule",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S05",
+    "name": "Xung đột đồng bộ",
+    "route": "/app/sync/conflicts",
+    "user_goal": "Không ghi đè offline âm thầm",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S06",
+    "name": "Bản đồ phụ thuộc",
+    "route": "/practice/methods/:id/dependencies",
+    "user_goal": "Biết tác động khi thay nguồn",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S07",
+    "name": "Hàng chờ phương pháp",
+    "route": "/ops/methods/review",
+    "user_goal": "Tách nghiên cứu và release",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S08",
+    "name": "Tác động thu hồi",
+    "route": "/ops/releases/:id/impact",
+    "user_goal": "Tìm report liên quan",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S09",
+    "name": "Quyền đang chia sẻ",
+    "route": "/app/privacy/sharing",
+    "user_goal": "Thu hồi theo từng mục đích",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S10",
+    "name": "Trạng thái xóa dữ liệu",
+    "route": "/app/privacy/deletions/:id",
+    "user_goal": "Biết phần hoàn tất và chờ",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S11",
+    "name": "Điều kiện quốc gia",
+    "route": "/partners/countries/:code",
+    "user_goal": "Không mở thị trường trước legal gate",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "DESIGN_ONLY"
+  },
+  {
+    "screen_id": "V2-S12",
+    "name": "Mẫu sách có dữ liệu thiếu",
+    "route": "/lab/reports",
+    "user_goal": "Thấy nội dung chưa đủ thay vì lời giả",
+    "surfaces": [
+      "mobile_web",
+      "tablet_web",
+      "desktop_web"
+    ],
+    "states": [
+      "empty",
+      "loading",
+      "ready",
+      "partial",
+      "error",
+      "revoked",
+      "unsupported",
+      "quota"
+    ],
+    "accessibility": "Keyboard, labels, focus, non-color-only state, reduced motion",
+    "native_status": "NOT_IMPLEMENTED",
+    "implementation_status": "REFERENCE_UI_ONLY"
+  }
+]

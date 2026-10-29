@@ -1,0 +1,194 @@
+{
+  "baseline_sheets": [
+    {
+      "sheet": "DOC_TRUOC",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Backlog",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Gates",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Decisions",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Products",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "SourceMap",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Sources",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Screens",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Countries",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Costs",
+      "values_unchanged": false,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    },
+    {
+      "sheet": "Dashboard",
+      "values_unchanged": true,
+      "formulas_unchanged": true,
+      "input_values_unchanged": true
+    }
+  ],
+  "cache_changes_only": [
+    {
+      "cell": "E5",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D5),B5*C5*D5,\"\")"
+    },
+    {
+      "cell": "E6",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D6),B6*C6*D6,\"\")"
+    },
+    {
+      "cell": "E7",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D7),B7*C7*D7,\"\")"
+    },
+    {
+      "cell": "E8",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D8),B8*C8*D8,\"\")"
+    },
+    {
+      "cell": "E9",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D9),B9*C9*D9,\"\")"
+    },
+    {
+      "cell": "E10",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D10),B10*C10*D10,\"\")"
+    },
+    {
+      "cell": "E11",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D11),B11*C11*D11,\"\")"
+    },
+    {
+      "cell": "E12",
+      "before": null,
+      "after": "",
+      "formula": "=IF(ISNUMBER(D12),B12*C12*D12,\"\")"
+    }
+  ],
+  "new_sheets": 9,
+  "total_sheets": 20,
+  "authoring_tool": "artifact_tool",
+  "formula_error_matches": 0,
+  "production_completed": false,
+  "final_comparison": [
+    {
+      "sheet": "DOC_TRUOC",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Backlog",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Gates",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Decisions",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Products",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "SourceMap",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Sources",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Screens",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Countries",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Costs",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    },
+    {
+      "sheet": "Dashboard",
+      "inputs_match": true,
+      "formulas_match": true,
+      "input_differences": []
+    }
+  ],
+  "final_scan_at": "2026-10-20"
+}

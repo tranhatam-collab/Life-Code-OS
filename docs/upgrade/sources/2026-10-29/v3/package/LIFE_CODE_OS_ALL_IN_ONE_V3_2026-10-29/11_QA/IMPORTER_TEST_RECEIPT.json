@@ -1,0 +1,59 @@
+{
+  "checked_on": "2026-10-29",
+  "mode": "temporary_local_git_repositories_only",
+  "tests": 12,
+  "passed": 12,
+  "failed": 0,
+  "results": [
+    {
+      "case": "dry_run_and_add_only",
+      "passed": true
+    },
+    {
+      "case": "reject_main",
+      "passed": true
+    },
+    {
+      "case": "reject_master",
+      "passed": true
+    },
+    {
+      "case": "reject_production",
+      "passed": true
+    },
+    {
+      "case": "reject_wrong_project",
+      "passed": true
+    },
+    {
+      "case": "reject_dirty_tree",
+      "passed": true
+    },
+    {
+      "case": "reject_checksum_change",
+      "passed": true
+    },
+    {
+      "case": "reject_existing_different",
+      "passed": true
+    },
+    {
+      "case": "skip_existing_identical",
+      "passed": true
+    },
+    {
+      "case": "reject_path_traversal",
+      "passed": true
+    },
+    {
+      "case": "reject_destination_symlink",
+      "passed": true
+    },
+    {
+      "case": "reject_credentials_in_remote",
+      "passed": true
+    }
+  ],
+  "remote_mutations": false,
+  "production_mutations": false
+}

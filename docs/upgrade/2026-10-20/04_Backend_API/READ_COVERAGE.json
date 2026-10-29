@@ -1,0 +1,911 @@
+{
+  "document_id": "LCOS-UPGRADE-READ-COVERAGE-BACKEND-2026-10-20",
+  "status": "LOCAL_PLANNING_ARTIFACT_ONLY",
+  "checked_at": "2026-10-20T11:38:53.520230Z",
+  "baseline": {
+    "canonical_remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+    "source_package_root": "docs/upgrade/sources/2026-10-11/package",
+    "working_copy_root": "docs/upgrade/2026-10-20",
+    "source_baseline_commit": "99b402764437f81859fa0cd3a3af860125f7bd52",
+    "planning_baseline_commit": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+    "source_instructions_authority": "REFERENCE_CONTENT_ONLY"
+  },
+  "coverage": {
+    "assigned_original_files_expected": 53,
+    "assigned_original_files_read_complete": 53,
+    "unreadable_or_partial": 0,
+    "by_section": {
+      "02_Tri_thuc_HNH": {
+        "expected": 10,
+        "read_complete": 10
+      },
+      "03_Du_lieu_Phep_tinh": {
+        "expected": 24,
+        "read_complete": 24
+      },
+      "04_Backend_API": {
+        "expected": 11,
+        "read_complete": 11
+      },
+      "10_Ma_tham_chieu_Kiem_thu": {
+        "expected": 8,
+        "read_complete": 8
+      }
+    },
+    "relevant_master_markdown": {
+      "path": "00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.md",
+      "lines_read_inclusive": "151-454",
+      "sections": [
+        "D07 HNH doctrine",
+        "D08 20 knowledge families",
+        "D37 K01-K20 research programme",
+        "D09 resonance/life design data",
+        "D10 domain model",
+        "D11 result and metric contract",
+        "D12 number/tail80 engine",
+        "D13 timeline",
+        "D14 target backend",
+        "D15 identity/session/object authorization",
+        "D16 jobs/commerce",
+        "D17 API v2 and D1-to-PostgreSQL migration"
+      ],
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    }
+  },
+  "substantive_change_groups": [
+    {
+      "group": "method_source_rights_release",
+      "scope": [
+        "02_Tri_thuc_HNH"
+      ],
+      "summary": "Bổ sung registry readiness cho 20 họ tri thức, release registry tách computation/evidence/product, sổ nguồn-quyền và gate fail-closed; không biến thiếu nguồn thành công thức."
+    },
+    {
+      "group": "typed_formula_data_result_contracts",
+      "scope": [
+        "03_Du_lieu_Phep_tinh"
+      ],
+      "summary": "Bổ sung formula catalog, dependency/result matrices; khóa null/missing reason, decimal string, range/unit/timezone/date precision và xác suất có model/evaluation/applicability."
+    },
+    {
+      "group": "backend_auth_migration_openapi",
+      "scope": [
+        "04_Backend_API"
+      ],
+      "summary": "Bổ sung execution contract, policy matrix cho đủ 64 operationId, object/tenant/subject authorization, session/CSRF/RLS, durable jobs/outbox/idempotency, D1-to-PostgreSQL reconciliation/rollback, schema delta, resolved OpenAPI tất định và 46 response design packet fail-closed."
+    },
+    {
+      "group": "reference_engine_and_offline_demo",
+      "scope": [
+        "10_Ma_tham_chieu_Kiem_thu"
+      ],
+      "summary": "Bổ sung decimal/timeline reference engines, 64 synthetic cases có expected output/error, contract tests và trình khám phá HTML offline không network/storage."
+    }
+  ],
+  "original_files": [
+    {
+      "path": "02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+      "source_sha256": "05a7aca604191fa932a15f813ff2d0d76f312afe47198a10082fce7bb65d53fc",
+      "bytes": 3452,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "source_sha256": "9004ecb60c97c2429da1af12e0e104d5b88ffa8b8d27cbd13b9b8d5ebf47259a",
+      "bytes": 3494,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "source_sha256": "cb5010be794223e6799388388e385dbd5b76c29f56df946772ef203d37b00cb8",
+      "bytes": 3270,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+      "source_sha256": "e81a76c3522bf93599ecc49d451543eafe5dccb7a232c7ea771d2a5602f2a462",
+      "bytes": 12843,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "source_sha256": "772619f2492d76811118fe2eddaa785c2a1936b813649a8895cd5fbf4e70065b",
+      "bytes": 11500,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+      "source_sha256": "5cb8832aa506438c17ab134143aa9a85d8ba8d70aa5c465f7e392dca1179faf6",
+      "bytes": 8166,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "source_sha256": "0b95e26a6f50d7fa325e2d190f47ca3cfce138c5afee7aa1af7133186d1b2f63",
+      "bytes": 4400,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "source_sha256": "370aa37d517d44cc4e4e9008c5a60d32e60d73ac2b316acd58ab207e8ca0784a",
+      "bytes": 3819,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "source_sha256": "b76688b91ab543c4382cc32fa3336fe281cb89c12b8cfb22d353d6253a8fcb54",
+      "bytes": 7338,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "source_sha256": "7a286db190565398bb03e7d42a8d598e74523d594ca75fa646c7832a0c30bbe6",
+      "bytes": 13898,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+      "source_sha256": "6c204b3f5be2d6e6079f166fcd13113af736b3d1d27f0c0f81ca9716e89b2c30",
+      "bytes": 4235,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "source_sha256": "fa394fd8e4295167e53d0653fdc15b37feab1c565fd15b5cf80520af7a5d9bee",
+      "bytes": 3324,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "source_sha256": "685724029478fe6225234bd5b0b89b9d5548487ebc8ff32712e0a0b91768e8c6",
+      "bytes": 3145,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "source_sha256": "ce204fa6cf1cc38813124384bc2f95774e046d8d3786720dbf9c850147225175",
+      "bytes": 2895,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "source_sha256": "7a984704e6f410c17a32f885b73e87773ed1518a63c80d1c32b6e22d20d077a2",
+      "bytes": 27383,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "source_sha256": "12036706a99364009c176d6470dd57c1aaebe85f17b8ded36b1f13e194dbffad",
+      "bytes": 55698,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "source_sha256": "b8c005e229b4e7aada74c64d2b9f86b0059461f0399a04ee0085f8fe24f54ceb",
+      "bytes": 583,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "source_sha256": "3a9a69bcc8914a8db532adf9122fca041a11bed4b50b2f9d2f3a26c49521f040",
+      "bytes": 716,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "source_sha256": "8a7a044c24183b23f84cb25a7e35c7042d4b07e961c353effe90403c6d886eac",
+      "bytes": 802,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "source_sha256": "0031c755fd9333b6ffb1dc2fc1ae9baca6ccb2f1abe496826c344aceaf687cee",
+      "bytes": 1642,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "source_sha256": "77024b90db82edf1ab0914b99d63c950c5a7bd04497d1672238468ff3ddde4a4",
+      "bytes": 240,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "source_sha256": "e6ea345f0b60c66739400766c7e4168c07df2301cc9fb4765d1d9910d0ba0077",
+      "bytes": 702,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "source_sha256": "46fc34bdcc5458b2049d795b088c251218cf477381217226b63c90d229d73845",
+      "bytes": 525,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "source_sha256": "0dfee7a649435057267c5a3b150a79090a3c9d08e8598fca80a315f2596308ce",
+      "bytes": 1013,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "source_sha256": "6323be63f262cb8e91404fe9f0f7a32dcb180f051dcf4a39f8676671d19b52de",
+      "bytes": 266,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "source_sha256": "ddf67830aa8dc32a967fe5829bc88e980d44a66860433a54704edd274d682dd0",
+      "bytes": 2399,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "source_sha256": "3eed377cc61f981d5384bf3ccf8effc5d989a2b30c237a9b4e06284d98794d24",
+      "bytes": 1778,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "source_sha256": "b1fd70ae0690e22ae09f3e5bc5085ecc5e14806e994f3cd60891fad078ab81c4",
+      "bytes": 3341,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "source_sha256": "6ac7a8e060ee48682552b69c7da2faf1e5ca3d974f03b1afdc1ea6c47a0052de",
+      "bytes": 7257,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "source_sha256": "0631326f54e30dcf8b08b246e01af1a82e524818ae3d2f46c17022c70398d2ba",
+      "bytes": 839,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "source_sha256": "4bbcfc3c8b857b681107ae14ccfbbeaeec38ec8ca3303f6317b393bf896b0e9d",
+      "bytes": 3190,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "source_sha256": "6c1743b8ae14be6f2cb5af0c14c39dde1324114f5c9eebf1c0c1299be0a195f9",
+      "bytes": 2550,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "source_sha256": "0e0d8e6d01bd561ce49bddf7acd254fc5eda01383c2063d5840104aaa6f229de",
+      "bytes": 3595,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "source_sha256": "e6c48bb7fe55ee74dd70daa70ab24512a359838ad96b04315c2393e230007962",
+      "bytes": 1215,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims/hnh_data_audit"
+    },
+    {
+      "path": "04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "source_sha256": "3e10b6293eb70b068456a4facb6ce85216fae060b848cdab6dd3c460ba0f597e",
+      "bytes": 3419,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "source_sha256": "c3c53a35d73e129b13174c17e13783a30f2591298d6be8ebe6b7a6f817c243ec",
+      "bytes": 3086,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "source_sha256": "a9131cb0128cb43f93ce6aef38bae1d487ffe5919de6a28dbbb8b4e9b8a1f019",
+      "bytes": 3292,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/04_API_AND_MIGRATION.md",
+      "source_sha256": "6231bc4519bbc6c4fb3270ca90c56954f6fb6d24b2666901cb3a09e9070b1f7a",
+      "bytes": 3257,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/API_OPERATIONS.json",
+      "source_sha256": "a10ace2ed34f5470f172c82b3016bce219d8a5a5a6307454f73fc48a263f3e97",
+      "bytes": 16191,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/ARCHITECTURE.mmd",
+      "source_sha256": "0a5059f17c321026dfe8fc2c21d55b82ada8f8fd1749bf56c03f1b9eb76d6d19",
+      "bytes": 905,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/ENTITY_REGISTRY.json",
+      "source_sha256": "361b942e963b3e6f23d3b9d7264ba6a3b55c13183cbd3f516a642cc5d48db046",
+      "bytes": 16803,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "source_sha256": "064602c61f7f5352628d2a8452575b8954686b74df5875277b7394a5bb920c92",
+      "bytes": 29369,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/SCHEMA_README.md",
+      "source_sha256": "86205fc0e2bac05b90e1670288cb9bddacc326c97ed7d6fa94514b8d061cac7e",
+      "bytes": 1127,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/openapi.json",
+      "source_sha256": "3fbd57337e33747f4d26acb2fd642b46532a73a255615a605aa6124725013825",
+      "bytes": 313322,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "04_Backend_API/openapi.yaml",
+      "source_sha256": "b98d0a744253de3b6eb5c950df83f9db3b1912cca73b252a4907c2a21107121e",
+      "bytes": 215983,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/README.md",
+      "source_sha256": "2336c8c8837e567aa8af025e26b2ce35b8d77e07075ed77aa83d26fa0d5e03fa",
+      "bytes": 1055,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "source_sha256": "1c5157653ee549532093c7800ff60bb9077ae6f9407fa478ec0ad3afe39266e8",
+      "bytes": 23987,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/package.json",
+      "source_sha256": "3409425cc3ef9fd98d8f58ed8da5130e9203f98c181d0cd7aef79c759a827b23",
+      "bytes": 339,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "source_sha256": "5974178a9095e1e5ab976b84ac6c160aa55004ab2acce2a8992bde5354ec3224",
+      "bytes": 2902,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "source_sha256": "58e0f3c4333d69a8d4a70dd17f2b02195366c9f2efeea115020a25aaa6daa972",
+      "bytes": 2766,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "source_sha256": "b09c6b32ff323edf62cc103da0f72f78254514e67b8bedaf1cb27d4f4c9e738f",
+      "bytes": 9957,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "source_sha256": "70f38450c69edd9c88d17357c71ec5ebeb7e2b9dcdb9711ea4e6dfc1ac7e8e34",
+      "bytes": 7004,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+      "source_sha256": "18305a2311dcec37c7f97e4414fbe6b07994d03a72a4cb6b55391d20c40365e7",
+      "bytes": 1415,
+      "read_status": "COMPLETE",
+      "read_by": "/root/code_claims"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "9004ecb60c97c2429da1af12e0e104d5b88ffa8b8d27cbd13b9b8d5ebf47259a",
+      "working_sha256": "78eeff5825a8ca4f29d979039f37b27b948f56502fcfd179c865d13a68d3f905"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/METHOD_FAMILY_READINESS.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "fb282da1b8c0de1de9f9f194ad814a9ced21e07ff31e157e419e416eafa216f8"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/METHOD_RELEASE_REGISTRY_V2.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "24d75fd1b73675a649da28996a2a6e9318d1bc59c76d4fab59839e4062f0363b"
+    },
+    {
+      "path": "02_Tri_thuc_HNH/SOURCE_RIGHTS_REGISTER.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "7148b191ec2199d3bf69efdfe59b0946ad01b45e89498d80ebe4f23ef45b1b6f"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "fa394fd8e4295167e53d0653fdc15b37feab1c565fd15b5cf80520af7a5d9bee",
+      "working_sha256": "8bee132b669fc3a9ceaeb269035d5d3170e3186d2c78e96e60f03c1b4630a543"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "685724029478fe6225234bd5b0b89b9d5548487ebc8ff32712e0a0b91768e8c6",
+      "working_sha256": "faebaf8ce9df435eb69dfe7a6725220ade1dea175e2b596923ad0f667f260aac"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "ce204fa6cf1cc38813124384bc2f95774e046d8d3786720dbf9c850147225175",
+      "working_sha256": "1067e80da92af8b731aa29fe6a878f5bbaa0279442d449d5c66f256f0a45dc60"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/FORMULA_CATALOG.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "49cfdb9109ad5710655c52d3c4bae5450c7468366c3895c807066d375ebb1c3b"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/METHOD_DEPENDENCY_MATRIX.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "67ffe86397b178881a95779d1e8204344eda6570a244074166fc28edf0941c91"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/RESULT_CONTRACT_MATRIX.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "4f625e90f3428e5c3d0e8a0a256da5a80ec9a6059f7b805ae48cb6e75c52b71a"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "b8c005e229b4e7aada74c64d2b9f86b0059461f0399a04ee0085f8fe24f54ceb",
+      "working_sha256": "43f09ab5c201eea585762984f0a857ba4a5ba3f3c960647fde1dce44b334e107"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "3a9a69bcc8914a8db532adf9122fca041a11bed4b50b2f9d2f3a26c49521f040",
+      "working_sha256": "b4e263bbd71f60216b3e67bff7e16e734ab97e94cc5d7356c89a021e81e8c3a0"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "8a7a044c24183b23f84cb25a7e35c7042d4b07e961c353effe90403c6d886eac",
+      "working_sha256": "e90ef26d66c9a78d54e95a64cc19e03d8f77f550ea307b1274eb9a4aa76e2603"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "0031c755fd9333b6ffb1dc2fc1ae9baca6ccb2f1abe496826c344aceaf687cee",
+      "working_sha256": "586682468ebbcde8ac3debb8a5e9c5abd63f42e0eaf17a89e194af4d78f9bf9b"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "77024b90db82edf1ab0914b99d63c950c5a7bd04497d1672238468ff3ddde4a4",
+      "working_sha256": "4fc3e3d012c12a595d5f7271fd89b3e96e50d43df2b948bef1fd023da62e71f5"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "e6ea345f0b60c66739400766c7e4168c07df2301cc9fb4765d1d9910d0ba0077",
+      "working_sha256": "b17104294f76b9645b90a7e6458e56942f59598151f1dd9c37156cc110595598"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "46fc34bdcc5458b2049d795b088c251218cf477381217226b63c90d229d73845",
+      "working_sha256": "bc0aca0de98566b3bd483394663fce9871b197d5fe429d39c8c39c6e9f922388"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "0dfee7a649435057267c5a3b150a79090a3c9d08e8598fca80a315f2596308ce",
+      "working_sha256": "829389c1df83c87bd72866db893241563908e484b8e473c6b0615beb24efd61f"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "6323be63f262cb8e91404fe9f0f7a32dcb180f051dcf4a39f8676671d19b52de",
+      "working_sha256": "c7e733ba180d3eb0617fa1c350b3ab49f3404d4657f52ccc739bf346f25c7c2e"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "ddf67830aa8dc32a967fe5829bc88e980d44a66860433a54704edd274d682dd0",
+      "working_sha256": "5105e0bd8d6b1ac5f8b72371217b78cdfe16fdf18ed702df1dfcd54e89a169eb"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "3eed377cc61f981d5384bf3ccf8effc5d989a2b30c237a9b4e06284d98794d24",
+      "working_sha256": "111a83a5782bfa30d68ca9169f1ad129af03921cad9bda94dbc830ad58688382"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "b1fd70ae0690e22ae09f3e5bc5085ecc5e14806e994f3cd60891fad078ab81c4",
+      "working_sha256": "0cde37e13a0ed82a3da9f338909ea5ae3ea35234f084398526150577c84dda0f"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "6ac7a8e060ee48682552b69c7da2faf1e5ca3d974f03b1afdc1ea6c47a0052de",
+      "working_sha256": "04d3b051cd8611ef3e7286e810856ae9e5d031378d1a918f04e30f69714533a8"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "0631326f54e30dcf8b08b246e01af1a82e524818ae3d2f46c17022c70398d2ba",
+      "working_sha256": "45641bd50dc72df60dbeea785f33c17e0827231918f1668d1eee5ae30db61dc6"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "4bbcfc3c8b857b681107ae14ccfbbeaeec38ec8ca3303f6317b393bf896b0e9d",
+      "working_sha256": "4d916e423cd99fbc4f1d3c202f2709c48c23fc9d7d44f25b85aa56b848599403"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "6c1743b8ae14be6f2cb5af0c14c39dde1324114f5c9eebf1c0c1299be0a195f9",
+      "working_sha256": "aa20c32a7f5b515f1ee49ed51d632b9f19c7ac04dd1ac41bdf89a220b5616030"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "0e0d8e6d01bd561ce49bddf7acd254fc5eda01383c2063d5840104aaa6f229de",
+      "working_sha256": "29f0abed150e90ada05d2408631b8789d5545c4218034710713676cac45ddc38"
+    },
+    {
+      "path": "03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "e6c48bb7fe55ee74dd70daa70ab24512a359838ad96b04315c2393e230007962",
+      "working_sha256": "f8c3269a4ac8e52cc9a07bf0a953fc47ea4b87aea17fc17ad1000dc82b363a45"
+    },
+    {
+      "path": "04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "3e10b6293eb70b068456a4facb6ce85216fae060b848cdab6dd3c460ba0f597e",
+      "working_sha256": "dcd0687a550727631266203c63220c16f5389cdafd1723db1bc1c8497593563f"
+    },
+    {
+      "path": "04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "c3c53a35d73e129b13174c17e13783a30f2591298d6be8ebe6b7a6f817c243ec",
+      "working_sha256": "8a18ebfafa8b4cc68bba9660fe799a0473dc7dcc4c6f380beac12d4da5fb5f34"
+    },
+    {
+      "path": "04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "a9131cb0128cb43f93ce6aef38bae1d487ffe5919de6a28dbbb8b4e9b8a1f019",
+      "working_sha256": "a09cb36f194aaf422d231f804463094181228480a5eb797938fd2a1392476982"
+    },
+    {
+      "path": "04_Backend_API/04_API_AND_MIGRATION.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "6231bc4519bbc6c4fb3270ca90c56954f6fb6d24b2666901cb3a09e9070b1f7a",
+      "working_sha256": "7a04b6bcd9e560d3f30afb65fc6ac1b7f712889ab5672794b2d781468ed4f7b8"
+    },
+    {
+      "path": "04_Backend_API/05_METHOD_EXECUTION_AND_RESULT_CONTRACT.md",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "ee3444013cbf2dabd29a787601a5364ad59cc64ab9ffed702cf07b4854a4cb52"
+    },
+    {
+      "path": "04_Backend_API/06_AUTHORIZATION_POLICY_AND_NEGATIVE_MATRIX.md",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "deabdbc3f1513bc8d7402797046626d8e72898b7047a8c00495ca2f1a26e5ef5"
+    },
+    {
+      "path": "04_Backend_API/07_MIGRATION_AND_RECONCILIATION_RUNBOOK.md",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "835ed9f1ce153c60a772535007232d1feaab9f82a4b0129b6ba4d0ef9a89ba2d"
+    },
+    {
+      "path": "04_Backend_API/API_OPERATIONS.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "a10ace2ed34f5470f172c82b3016bce219d8a5a5a6307454f73fc48a263f3e97",
+      "working_sha256": "220d3ade3835de90f5e3de6ead913f6ca4b6c4f4e0e3d1e82da18523ba344e3e"
+    },
+    {
+      "path": "04_Backend_API/API_RESPONSE_DESIGN_PACKETS.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "5bd16cff053dc546deb91adca679e1614f12581183a368a91c5d0c05f62855e8"
+    },
+    {
+      "path": "04_Backend_API/API_RESPONSE_DESIGN_PACKETS.md",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "a27ef5bfdc055491f3e5531172fc2a4f8cac628a032558dd0175b8bc59e9407d"
+    },
+    {
+      "path": "04_Backend_API/AUTHORIZATION_POLICY_MATRIX.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "7792e676b52fd1ff53ffd1d4d13e68fee069486f4e1de154b93c5b2c50d94607"
+    },
+    {
+      "path": "04_Backend_API/MIGRATION_RECONCILIATION_MATRIX.csv",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "b8853a403b1c7dd59d73ee23d915b0ec193013d82bb025bc46eb8ea7fa99732e"
+    },
+    {
+      "path": "04_Backend_API/OPENAPI_UPGRADE_NOTES.md",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "8045204478a086183ffd0b48d74bbc02c159523c01f8526c0387888b89bcbe09"
+    },
+    {
+      "path": "04_Backend_API/SCHEMA_DELTA_REFERENCE_2026_10_20.sql",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "357b02175a24e6d64efc4e8bce9ec5b85ed82a0d58b838ea8037145af006d902"
+    },
+    {
+      "path": "04_Backend_API/SCHEMA_README.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "86205fc0e2bac05b90e1670288cb9bddacc326c97ed7d6fa94514b8d061cac7e",
+      "working_sha256": "bf5c45e4b46c9b72246ab1b09bf7571eb08b8c4370e1d1c57102c4d437c29d21"
+    },
+    {
+      "path": "04_Backend_API/openapi.resolved.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "5dbe0ab7847a4d08e447031cf2ee3b896cdc2edb0476f716a7ccf4f7251e8b49"
+    },
+    {
+      "path": "04_Backend_API/openapi.resolved.yaml",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "4a1587b6f863b60a6abd5ca4955cb25f3c62d4abb0e1f447ff2e612ea4c76a25"
+    },
+    {
+      "path": "04_Backend_API/openapi.upgrade.overlay.yaml",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "eed6134c5f08601a30be601996b79b61f17871d450c8c2a5e4b563d24986fb2e"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/README.md",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "2336c8c8837e567aa8af025e26b2ce35b8d77e07075ed77aa83d26fa0d5e03fa",
+      "working_sha256": "e2aef4de5e81cefb3b5b44259d96780132260b00f6ef44919ebc53265ef20eaf"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/data/demo_cases.json",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "58cfde2a6b595d71bd7dd52b07499c19f81087031c0dc5be0a11321fd71d1544"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/demo.html",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "8d55563db4910f67b2d36b45a8e324e624a9b63fc7e19c365b052dd126cdef23"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/package.json",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "3409425cc3ef9fd98d8f58ed8da5130e9203f98c181d0cd7aef79c759a827b23",
+      "working_sha256": "bb7a513c51aaccc54bbd0c1ea0adeb6f59a95638f355c9ec69aef2f6e71d7a7e"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/requirements-openapi-resolver.txt",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/src/decimal.mjs",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "ccdfd4b15cec2da1b3285f6d32afbec684e77c05d79406053f782001f47bac5d"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "5974178a9095e1e5ab976b84ac6c160aa55004ab2acce2a8992bde5354ec3224",
+      "working_sha256": "6cb0f0470648b32618fc2217ea1c1a7b449e91348f15677b85a3098a47b77c97"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "58e0f3c4333d69a8d4a70dd17f2b02195366c9f2efeea115020a25aaa6daa972",
+      "working_sha256": "02d209581296aaf34cd59150b6c5639f0d351e3b7b71650962071bea2da654d1"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/src/timeline.mjs",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "fb880fc58df331c2e4330a0c73e6aaa91f7572f381593fe8834a3d9df2de25d2"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "b09c6b32ff323edf62cc103da0f72f78254514e67b8bedaf1cb27d4f4c9e738f",
+      "working_sha256": "742a30335e9a087a4e5ac0387f4d8d705ba904ed3f3b041174a6efa493685a01"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/tests/backend-contract.test.mjs",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "81406d02ace4666f2515deee372a994738cbb56eb39e5832df06d486cb341a22"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/tests/demo-suite.test.mjs",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "d63c63342c8feaaa25f477cdaa90b4917c0e17c0b1000f7c3404bbc172e7a758"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "change_kind": "AMENDED_COPY",
+      "source_sha256": "70f38450c69edd9c88d17357c71ec5ebeb7e2b9dcdb9711ea4e6dfc1ac7e8e34",
+      "working_sha256": "97edf211431467a045b6f74148373226b9696d7557a2f363d7e711a3b78ca1db"
+    },
+    {
+      "path": "10_Ma_tham_chieu_Kiem_thu/tools/resolve_openapi.py",
+      "change_kind": "NEW",
+      "source_sha256": null,
+      "working_sha256": "61dd27f03188e223d1d91dc767bb10d5ff014a77bbf91095d38be9e95620f7db"
+    }
+  ],
+  "change_receipt_notes": {
+    "changed_files_excludes_this_receipt_to_avoid_self_hash_recursion": true,
+    "source_files_were_not_modified": true,
+    "production_code_changed": false,
+    "database_or_network_side_effects_run": false
+  },
+  "validation": {
+    "json_schemas_metaschema": {
+      "total": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "schema_examples": {
+      "total": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "negative_schema_probes": {
+      "total": 13,
+      "rejected_as_expected": 13,
+      "failed": 0
+    },
+    "global_package_validation": "REQUIRES_ROOT_RERUN_AFTER_LANE_STABILIZATION",
+    "lane_npm_tests_final": {
+      "command": "npm test",
+      "total": 173,
+      "passed": 173,
+      "failed": 0,
+      "skipped": 0,
+      "todo": 0,
+      "exit_code": 0
+    },
+    "current_tap": {
+      "path": "10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "command": "node --test --test-reporter=tap tests/*.test.mjs",
+      "total": 173,
+      "passed": 173,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0,
+      "exit_code": 0,
+      "historical_83_test_tap_preserved_in_source_package": true
+    },
+    "resolved_openapi": {
+      "canonical_current_contract": "04_Backend_API/openapi.resolved.yaml",
+      "json_semantic_mirror": "04_Backend_API/openapi.resolved.json",
+      "check_command_from_working_copy_root": "python3 10_Ma_tham_chieu_Kiem_thu/tools/resolve_openapi.py --check",
+      "dependency_contract": "10_Ma_tham_chieu_Kiem_thu/requirements-openapi-resolver.txt",
+      "overlay_actions_applied": 17,
+      "operation_ids": 64,
+      "registry_records_fully_matched": 64,
+      "canonical_schemas_bundled_exact": 9,
+      "local_refs_resolved": 655,
+      "external_refs_remaining": 0,
+      "generic_response_blockers": 46,
+      "json_yaml_semantic_parity": true,
+      "check_exit_code": 0
+    },
+    "api_response_design_packets": {
+      "json": "04_Backend_API/API_RESPONSE_DESIGN_PACKETS.json",
+      "markdown": "04_Backend_API/API_RESPONSE_DESIGN_PACKETS.md",
+      "packets": 46,
+      "source_model_gaps": 9,
+      "codegen_ready": 0,
+      "included_in_resolved_openapi": 0,
+      "test_status": "PASS"
+    },
+    "offline_demo_browser": {
+      "status": "VERIFIED_WORKTREE_ONLY",
+      "executed_by": "/root",
+      "browser": "WebKit",
+      "transport": "file_url_offline",
+      "calculation_flows_checked": 9,
+      "keyboard_control_enter": "PASS",
+      "viewports_checked": 4,
+      "horizontal_overflow_failures": 0,
+      "input_select_button_min_height_css_px": 44,
+      "network_or_storage_required": false
+    }
+  },
+  "approvals_and_release": {
+    "design_approval": "PENDING",
+    "method_approval": "PENDING",
+    "source_rights_approval": "PENDING",
+    "production_deploy_authorized": false,
+    "production_migration_authorized": false
+  }
+}
+
+

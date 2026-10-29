@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v3:ReferenceResult",
+  "title": "ReferenceResult",
+  "type": "object",
+  "required": [
+    "method_id",
+    "method_version",
+    "status",
+    "claim_type",
+    "input_digest",
+    "configuration",
+    "calculation",
+    "score",
+    "confidence",
+    "probability"
+  ],
+  "properties": {
+    "method_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "method_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "status": {
+      "const": "REFERENCE_ONLY"
+    },
+    "claim_type": {
+      "enum": [
+        "derived_metric"
+      ]
+    },
+    "input_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "configuration": {
+      "type": "object"
+    },
+    "calculation": {
+      "type": "object"
+    },
+    "score": {
+      "type": "null"
+    },
+    "confidence": {
+      "type": "null"
+    },
+    "probability": {
+      "type": "null"
+    },
+    "trace": {
+      "type": "array"
+    },
+    "warnings": {
+      "type": "array"
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "digest_scope": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

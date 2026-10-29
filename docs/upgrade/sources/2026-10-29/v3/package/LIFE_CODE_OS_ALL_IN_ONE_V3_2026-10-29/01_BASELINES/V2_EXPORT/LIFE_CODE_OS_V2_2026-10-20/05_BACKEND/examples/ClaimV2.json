@@ -1,0 +1,13 @@
+{
+  "id": "00000000-0000-4000-8000-000000000001",
+  "type": "symbolic_interpretation",
+  "text": "Nhãn thuộc bảng nguồn, không phải phán quyết về người dùng.",
+  "evidence_ids": [
+    "rule.tail80.v1.row69"
+  ],
+  "probability": null,
+  "model_release_id": null,
+  "target": null,
+  "horizon": null,
+  "review_status": "draft"
+}

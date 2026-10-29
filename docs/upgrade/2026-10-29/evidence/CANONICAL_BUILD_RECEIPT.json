@@ -1,0 +1,89 @@
+{
+  "source_tasks": 296,
+  "integration_refinements": 20,
+  "total_planning_records": 316,
+  "source_counts": {
+    "LOCAL_R2": 156,
+    "V2": 68,
+    "V3": 72,
+    "INTEGRATION_REFINEMENT": 20
+  },
+  "task_contracts": 316,
+  "trace_rows": 407,
+  "trace_origins": {
+    "LOCAL_R2": 87,
+    "INCOMING_V3": 62,
+    "CANONICAL_REGISTRY": 258
+  },
+  "task_cycles": 0,
+  "missing_task_refs": 0,
+  "dependency_corrections": [
+    {
+      "task_id": "P0-02",
+      "retained_local_dependencies": [
+        "P0-08"
+      ],
+      "incoming_dependencies": [
+        "P0-01"
+      ],
+      "reason": "Preserve local P0 containment/source authority order; incoming raw edge retained for audit"
+    },
+    {
+      "task_id": "P0-05",
+      "retained_local_dependencies": [
+        "P0-03"
+      ],
+      "incoming_dependencies": [
+        "P0-04"
+      ],
+      "reason": "Preserve local P0 containment/source authority order; incoming raw edge retained for audit"
+    },
+    {
+      "task_id": "P0-06",
+      "retained_local_dependencies": [
+        "P0-03"
+      ],
+      "incoming_dependencies": [
+        "P0-05"
+      ],
+      "reason": "Preserve local P0 containment/source authority order; incoming raw edge retained for audit"
+    },
+    {
+      "task_id": "P0-07",
+      "retained_local_dependencies": [
+        "P0-02"
+      ],
+      "incoming_dependencies": [
+        "P0-06"
+      ],
+      "reason": "Preserve local P0 containment/source authority order; incoming raw edge retained for audit"
+    },
+    {
+      "task_id": "P0-08",
+      "retained_local_dependencies": [
+        "P0-01"
+      ],
+      "incoming_dependencies": [
+        "P0-07"
+      ],
+      "reason": "Preserve local P0 containment/source authority order; incoming raw edge retained for audit"
+    },
+    {
+      "task_id": "P0-10",
+      "retained_local_dependencies": [
+        "P0-03",
+        "P0-04",
+        "P0-05",
+        "P0-06",
+        "P0-07",
+        "P0-09"
+      ],
+      "incoming_dependencies": [
+        "P0-09"
+      ],
+      "reason": "Preserve local P0 containment/source authority order; incoming raw edge retained for audit"
+    }
+  ],
+  "release_status": "HOLD",
+  "application_modified_by_builder": false
+}

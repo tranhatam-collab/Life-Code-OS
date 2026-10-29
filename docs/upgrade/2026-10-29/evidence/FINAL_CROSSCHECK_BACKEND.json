@@ -1,0 +1,1763 @@
+{
+  "date": "2026-10-29",
+  "scope": "Independent provenance and backward trace; no runtime tests",
+  "source_crosswalk_rows": 827,
+  "source_crosswalk_issues": [],
+  "local_old_contract_count": 156,
+  "local_old_field_changes": [
+    {
+      "task_id": "P0-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "P0-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GOV-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "TRUST-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "DATA-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "METHOD-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "WEB-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "API-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "AI-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "REPORT-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "COMMERCE-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "OPS-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "ACADEMY-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "EXPAND-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-01",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-02",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-03",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-04",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-05",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-06",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-07",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-08",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-09",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "GLOBAL-10",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-PRD-001",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-PRD-002",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-UX-001",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-UX-002",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-UX-003",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-AI-001",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-AI-002",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-PM-001",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-PM-002",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-BE-001",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-BE-002",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-BE-003",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-BE-004",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-BE-005",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-BE-006",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    },
+    {
+      "task_id": "UPG-BE-007",
+      "key": "production_permission",
+      "old": "SEPARATE_APPROVAL_REQUIRED",
+      "new": false
+    }
+  ],
+  "method_contract_mapped_unique": 62,
+  "method_contract_missing_ids": [],
+  "method_contract_unknown_ids": [],
+  "method_snapshot_stale_rows": [
+    {
+      "task_id": "V3-MTH-001",
+      "method_id": "CAL-CIVIL",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-002",
+      "method_id": "CAL-TERMS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-003",
+      "method_id": "CAL-LUNAR",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-004",
+      "method_id": "BAZI-PILLARS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-005",
+      "method_id": "BAZI-RELATIONS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-006",
+      "method_id": "BAZI-LUCK",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-007",
+      "method_id": "ZIWEI-CHART",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-008",
+      "method_id": "ZIWEI-TRANSFORM",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-009",
+      "method_id": "HELAC-IRON",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-010",
+      "method_id": "ICHING-LINES",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-011",
+      "method_id": "ICHING-TEXT",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-012",
+      "method_id": "LIUYAO-MAIHOA",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-013",
+      "method_id": "QIMEN",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-014",
+      "method_id": "LIUREN",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-015",
+      "method_id": "TAIYI",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-016",
+      "method_id": "FENGSHUI",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-017",
+      "method_id": "VASTU",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-018",
+      "method_id": "PLACE-OBSERVE",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-019",
+      "method_id": "JYOTISH",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-020",
+      "method_id": "DASHA",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-021",
+      "method_id": "NADI",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-022",
+      "method_id": "ASTRO-EPHEMERIS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-023",
+      "method_id": "ASTRO-CYCLES",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-024",
+      "method_id": "ASTRO-HISTORICAL",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-025",
+      "method_id": "REGIONAL-ASIAN",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-026",
+      "method_id": "REGIONAL-SEA",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-027",
+      "method_id": "MAYA",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-028",
+      "method_id": "NUM23",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-029",
+      "method_id": "PSYCHO17",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-030",
+      "method_id": "NUM-LIFE-CYCLES",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-031",
+      "method_id": "LETTER-NONLATIN",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-032",
+      "method_id": "BCLC64",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-033",
+      "method_id": "BCLC-MODIFIERS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-034",
+      "method_id": "BCLC-COMBINATION",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-035",
+      "method_id": "TAIL80",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-036",
+      "method_id": "NUMBER-CONTEXT",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-037",
+      "method_id": "NAME-UNICODE",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-038",
+      "method_id": "NAME-SEMANTICS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-039",
+      "method_id": "NAME-BRAND",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-040",
+      "method_id": "HAND",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-041",
+      "method_id": "FACE",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-042",
+      "method_id": "FOOT-VOICE",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-043",
+      "method_id": "TAROT",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-044",
+      "method_id": "RUNE-GEOMANCY",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-045",
+      "method_id": "IFA-DREAM",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-046",
+      "method_id": "HUMAN-DESIGN",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-047",
+      "method_id": "GENE-KEYS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-048",
+      "method_id": "HNH-REFLECTION",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "mapping_status",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-049",
+      "method_id": "CONTEMPLATION",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "mapping_status",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-050",
+      "method_id": "IPIP",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-051",
+      "method_id": "VALUES-INTEREST",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-052",
+      "method_id": "PSYCHOMETRIC",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-053",
+      "method_id": "CAREER",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "mapping_status",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-054",
+      "method_id": "CASHFLOW",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-055",
+      "method_id": "RELATIONSHIPS",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": [
+        "legacy_method_ids_proposed",
+        "mapping_status",
+        "old_passport_snapshots"
+      ]
+    },
+    {
+      "task_id": "V3-MTH-056",
+      "method_id": "RESONANCE",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-057",
+      "method_id": "NUTRITION-LIFESTYLE",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-058",
+      "method_id": "LIFE-DESIGN",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-059",
+      "method_id": "LINEAGE",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-060",
+      "method_id": "POLICY",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-061",
+      "method_id": "REPORT",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    },
+    {
+      "task_id": "V3-MTH-062",
+      "method_id": "EVALUATION",
+      "missing_current_fields": [
+        "reference_result_ids"
+      ],
+      "changed_fields": []
+    }
+  ],
+  "source_or_integration_reference_issues": [],
+  "openapi_source_path_issues": [],
+  "direct_requirement_trace_task_count": 149,
+  "direct_requirement_trace_gap_count": 167,
+  "direct_requirement_trace_gap_by_origin": {
+    "LOCAL_R2": 87,
+    "INTEGRATION_REFINEMENT": 2,
+    "V2": 68,
+    "V3": 10
+  },
+  "direct_requirement_trace_gap_ids": [
+    "ACADEMY-02",
+    "ACADEMY-04",
+    "ACADEMY-07",
+    "ACADEMY-08",
+    "ACADEMY-09",
+    "ACADEMY-10",
+    "AI-01",
+    "AI-02",
+    "AI-03",
+    "AI-04",
+    "AI-05",
+    "AI-06",
+    "AI-07",
+    "AI-08",
+    "AI-09",
+    "API-04",
+    "API-06",
+    "API-07",
+    "API-08",
+    "API-09",
+    "COMMERCE-02",
+    "COMMERCE-06",
+    "COMMERCE-07",
+    "COMMERCE-10",
+    "DATA-02",
+    "DATA-05",
+    "DATA-08",
+    "DATA-10",
+    "EXPAND-02",
+    "EXPAND-03",
+    "EXPAND-06",
+    "EXPAND-07",
+    "EXPAND-09",
+    "EXPAND-10",
+    "GLOBAL-02",
+    "GLOBAL-03",
+    "GLOBAL-04",
+    "GLOBAL-06",
+    "GLOBAL-07",
+    "GLOBAL-08",
+    "GLOBAL-09",
+    "GLOBAL-10",
+    "GOV-01",
+    "GOV-02",
+    "GOV-03",
+    "GOV-04",
+    "GOV-05",
+    "GOV-06",
+    "GOV-07",
+    "GOV-08",
+    "GOV-10",
+    "INT29-012",
+    "INT29-018",
+    "METHOD-01",
+    "METHOD-02",
+    "METHOD-03",
+    "METHOD-04",
+    "METHOD-05",
+    "METHOD-06",
+    "METHOD-09",
+    "OPS-01",
+    "OPS-02",
+    "OPS-03",
+    "OPS-05",
+    "OPS-06",
+    "OPS-07",
+    "OPS-09",
+    "OPS-10",
+    "P0-01",
+    "P0-02",
+    "P0-03",
+    "P0-04",
+    "P0-05",
+    "P0-06",
+    "P0-07",
+    "P0-08",
+    "P0-09",
+    "P0-10",
+    "REPORT-01",
+    "TRUST-02",
+    "TRUST-03",
+    "TRUST-06",
+    "TRUST-09",
+    "TRUST-10",
+    "UPG-PM-001",
+    "UPG-PRD-001",
+    "V2-AI-01",
+    "V2-AI-02",
+    "V2-AI-03",
+    "V2-AI-04",
+    "V2-AI-05",
+    "V2-AI-06",
+    "V2-AI-07",
+    "V2-AI-08",
+    "V2-BE-01",
+    "V2-BE-02",
+    "V2-BE-03",
+    "V2-BE-04",
+    "V2-BE-05",
+    "V2-BE-06",
+    "V2-BE-07",
+    "V2-BE-08",
+    "V2-BE-09",
+    "V2-BE-10",
+    "V2-BE-11",
+    "V2-BE-12",
+    "V2-BE-13",
+    "V2-BE-14",
+    "V2-BE-15",
+    "V2-BE-16",
+    "V2-FE-01",
+    "V2-FE-02",
+    "V2-FE-03",
+    "V2-FE-04",
+    "V2-FE-05",
+    "V2-FE-06",
+    "V2-FE-07",
+    "V2-FE-08",
+    "V2-FE-09",
+    "V2-FE-10",
+    "V2-FE-11",
+    "V2-FE-12",
+    "V2-GOV-01",
+    "V2-GOV-02",
+    "V2-GOV-03",
+    "V2-GOV-04",
+    "V2-GOV-05",
+    "V2-GOV-06",
+    "V2-JOB-01",
+    "V2-JOB-02",
+    "V2-JOB-03",
+    "V2-JOB-04",
+    "V2-JOB-05",
+    "V2-JOB-06",
+    "V2-JOB-07",
+    "V2-JOB-08",
+    "V2-OPS-01",
+    "V2-OPS-02",
+    "V2-OPS-03",
+    "V2-OPS-04",
+    "V2-OPS-05",
+    "V2-OPS-06",
+    "V2-OPS-07",
+    "V2-OPS-08",
+    "V2-SEC-01",
+    "V2-SEC-02",
+    "V2-SEC-03",
+    "V2-SEC-04",
+    "V2-SEC-05",
+    "V2-SEC-06",
+    "V2-SEC-07",
+    "V2-SEC-08",
+    "V2-SEC-09",
+    "V2-SEC-10",
+    "V3-INT-01",
+    "V3-INT-02",
+    "V3-INT-03",
+    "V3-INT-04",
+    "V3-INT-05",
+    "V3-INT-06",
+    "V3-INT-07",
+    "V3-INT-08",
+    "V3-INT-09",
+    "V3-INT-10",
+    "WEB-04",
+    "WEB-05",
+    "WEB-09"
+  ],
+  "unmapped_even_via_integration_sources": [
+    "ACADEMY-02",
+    "ACADEMY-04",
+    "ACADEMY-07",
+    "ACADEMY-08",
+    "ACADEMY-09",
+    "ACADEMY-10",
+    "AI-01",
+    "AI-02",
+    "AI-03",
+    "AI-04",
+    "AI-05",
+    "AI-06",
+    "AI-07",
+    "AI-08",
+    "AI-09",
+    "API-04",
+    "API-06",
+    "API-07",
+    "API-08",
+    "API-09",
+    "COMMERCE-02",
+    "COMMERCE-06",
+    "COMMERCE-07",
+    "COMMERCE-10",
+    "DATA-02",
+    "DATA-05",
+    "DATA-08",
+    "DATA-10",
+    "EXPAND-02",
+    "EXPAND-03",
+    "EXPAND-06",
+    "EXPAND-07",
+    "EXPAND-09",
+    "EXPAND-10",
+    "GLOBAL-02",
+    "GLOBAL-03",
+    "GLOBAL-04",
+    "GLOBAL-06",
+    "GLOBAL-07",
+    "GLOBAL-08",
+    "GLOBAL-09",
+    "GLOBAL-10",
+    "GOV-01",
+    "GOV-02",
+    "GOV-03",
+    "GOV-04",
+    "GOV-05",
+    "GOV-06",
+    "GOV-07",
+    "GOV-08",
+    "GOV-10",
+    "METHOD-01",
+    "METHOD-02",
+    "METHOD-03",
+    "METHOD-04",
+    "METHOD-05",
+    "METHOD-06",
+    "METHOD-09",
+    "OPS-01",
+    "OPS-02",
+    "OPS-03",
+    "OPS-05",
+    "OPS-06",
+    "OPS-07",
+    "OPS-09",
+    "OPS-10",
+    "P0-03",
+    "P0-04",
+    "P0-05",
+    "P0-06",
+    "P0-07",
+    "P0-09",
+    "P0-10",
+    "REPORT-01",
+    "TRUST-02",
+    "TRUST-03",
+    "TRUST-06",
+    "TRUST-09",
+    "TRUST-10",
+    "UPG-PRD-001",
+    "V2-BE-09",
+    "V2-BE-12",
+    "V2-FE-01",
+    "V2-FE-02",
+    "V2-FE-04",
+    "V2-FE-05",
+    "V2-GOV-03",
+    "V2-GOV-04",
+    "WEB-04",
+    "WEB-05",
+    "WEB-09"
+  ],
+  "repair_suggestion": "Do not invent fulfilled requirements. Add a supplemental task-to-source/work-order backward index for retained source tasks; show direct requirement trace vs indirect integration scope separately. Regenerate copied method_contract snapshots after backend matrix stabilizes.",
+  "declared_existing_path_missing": [],
+  "relative_path_resolution_rules": {
+    "source_crosswalk.path": "repository_root",
+    "source_crosswalk.canonical_destination": "repository_root",
+    "task.source_record_refs.path": "repository_root",
+    "method_contracts.registry": "docs/upgrade/2026-10-29 canonical root",
+    "method_matrix.implementation_path": "repository_root",
+    "method_matrix.formula_snapshots.implementation_path": "immutable original V2 package root, preserved source field; not repository-root target",
+    "openapi.x-lc-source-contract.file": "repository_root",
+    "proposed_new_paths": "future work allowlist, not existence proof"
+  },
+  "source_method_task_binding_rows_checked": 62,
+  "source_method_task_binding_issues": []
+}

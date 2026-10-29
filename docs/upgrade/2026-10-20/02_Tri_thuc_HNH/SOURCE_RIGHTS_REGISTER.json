@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0-proposed",
+  "as_of": "2026-10-20",
+  "status": "PROPOSED_NOT_APPROVED",
+  "policy": {
+    "default_rights_state": "unknown",
+    "page_read_is_not_commercial_permission": true,
+    "user_supplied_is_not_historical_authority_or_rights_receipt": true,
+    "release_requires_separate_rights_receipt": true
+  },
+  "sources": [
+    {
+      "source_id": "G02",
+      "title": "Kế hoạch audit 1.096 dòng",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#G02",
+      "source_kind": "internal_repository_plan",
+      "access_state": "read_in_package_audit",
+      "full_text_state": "reported_read",
+      "rights_state": "unknown",
+      "method_authority": "none",
+      "notes": ["Internal plan and audit claims are not independent method evidence."]
+    },
+    {
+      "source_id": "G05",
+      "title": "LCI legacy",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#G05",
+      "source_kind": "repository_source_code",
+      "access_state": "read_at_recorded_sha",
+      "full_text_state": "reported_read",
+      "rights_state": "unknown",
+      "method_authority": "legacy_implementation_only",
+      "notes": ["Does not validate the construct, outcome, or product claim."]
+    },
+    {
+      "source_id": "G06",
+      "title": "Timeline legacy",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#G06",
+      "source_kind": "repository_source_code",
+      "access_state": "read_at_recorded_sha",
+      "full_text_state": "reported_read",
+      "rights_state": "unknown",
+      "method_authority": "legacy_implementation_only",
+      "notes": ["Does not authorize pseudo-random or predictive timeline claims."]
+    },
+    {
+      "source_id": "S09",
+      "title": "PostgreSQL Row Security",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#S09",
+      "source_kind": "official_technical_documentation",
+      "access_state": "official_page_read",
+      "full_text_state": "page_read",
+      "rights_state": "unknown",
+      "method_authority": "database_security_reference_only",
+      "notes": ["Does not prove the project database version or configuration."]
+    },
+    {
+      "source_id": "S14",
+      "title": "OpenAPI 3.1.1",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#S14",
+      "source_kind": "official_technical_specification",
+      "access_state": "official_page_read",
+      "full_text_state": "page_read",
+      "rights_state": "unknown",
+      "method_authority": "contract_syntax_reference_only",
+      "notes": ["Does not validate Life Code metrics or claims."]
+    },
+    {
+      "source_id": "S15",
+      "title": "Unicode Normalization",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#S15",
+      "source_kind": "official_technical_standard",
+      "access_state": "official_page_read",
+      "full_text_state": "page_read",
+      "rights_state": "unknown",
+      "method_authority": "unicode_normalization_only",
+      "notes": ["Does not support symbolic name interpretation or cross-script transliteration."]
+    },
+    {
+      "source_id": "S16",
+      "title": "IANA Time Zone Database",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#S16",
+      "source_kind": "official_technical_data_reference",
+      "access_state": "official_page_read",
+      "full_text_state": "page_read",
+      "rights_state": "unknown",
+      "method_authority": "timezone_identifier_and_version_reference_only",
+      "notes": ["A tzdb reference does not select calendar, leap-day, or historical-location policy."]
+    },
+    {
+      "source_id": "S38",
+      "title": "IPIP item pool",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#S38",
+      "source_kind": "official_instrument_resource",
+      "access_state": "official_page_read",
+      "full_text_state": "page_read",
+      "rights_state": "review_required",
+      "method_authority": "instrument_lead_only",
+      "notes": ["Instrument, translation, scoring, population, and validation must be selected and reviewed separately."]
+    },
+    {
+      "source_id": "S39",
+      "title": "O*NET Interest Profiler",
+      "locator": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv#S39",
+      "source_kind": "official_instrument_resource",
+      "access_state": "official_page_read",
+      "full_text_state": "page_read",
+      "rights_state": "review_required",
+      "method_authority": "vocational_interest_structure_only",
+      "notes": ["Does not determine a required career or validate a new Vietnamese translation."]
+    },
+    {
+      "source_id": "USER_TABLE80",
+      "title": "Tail80 table identifier used by examples",
+      "locator": "03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "source_kind": "user_supplied_reference_alias",
+      "access_state": "identifier_present",
+      "full_text_state": "alias_not_reconciled",
+      "rights_state": "unknown",
+      "method_authority": "none_until_reconciled",
+      "notes": ["Does not match USER_TABLE80_CONVERSATION used by the packaged table records."]
+    },
+    {
+      "source_id": "USER_TABLE80_CONVERSATION",
+      "title": "User-supplied 80-item table in package",
+      "locator": "10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "source_kind": "user_supplied_table",
+      "access_state": "table_present_in_package",
+      "full_text_state": "present_with_80_records",
+      "rights_state": "unknown",
+      "method_authority": "symbolic_table_unverified",
+      "notes": ["Historical authority and commercial rights are not verified.", "Entries 34 and 55 are flagged as textually uncertain in the package."]
+    }
+  ]
+}

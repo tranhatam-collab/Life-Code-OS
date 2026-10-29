@@ -1,0 +1,51 @@
+{
+  "version": "2026-10-20.r2",
+  "checked_at": "2026-10-20",
+  "scope": "LOCAL_PLANNING_PORTAL_AND_SYNTHETIC_DEMO_NOT_PRODUCT_E2E_OR_WCAG_CERTIFICATION",
+  "evidence_status": "VERIFIED_WORKTREE_ONLY",
+  "browser_engine": "Installed Playwright WebKit",
+  "delivery_modes_checked": ["http://127.0.0.1:8769", "file:// with no HTTP requests"],
+  "final_run_exit_code": 0,
+  "final_run_tool": "Playwright CLI session lifecode-plan run-code; assertions and screenshots",
+  "synthetic_browser_cases_passed": 9,
+  "synthetic_browser_cases": [
+    "tail80 6231 remainder71",
+    "tail80 0000 lookup null under unmapped policy",
+    "tail80 invalid two-digit input rejected",
+    "decimal 1/8 scale2 half-even returns0.12",
+    "decimal division by zero returns missing reason",
+    "civil leap-day birthday age1 starts2001-02-28",
+    "Vietnamese name normalization returns TRAN HA TAM",
+    "overlapping pairs876 returns2 pairs",
+    "wrong-subject authorization denied"
+  ],
+  "viewports_checked_css_px": [320, 390, 768, 1440],
+  "demo_document_scroll_widths": [320, 390, 768, 1440],
+  "portal_long_backend_document_scroll_widths": [320, 390, 768, 1440],
+  "horizontal_overflow_final": false,
+  "initial_demo_input_select_button_heights_css_px": [46.796875, 46.796875, 46.796875, 46.796875],
+  "keyboard_checked": "Control+Enter executes selected decimal demo",
+  "offline_file_demo_calculation": true,
+  "offline_file_portal_search_filter_and_document_selection": true,
+  "backend_group_files_in_final_run": 24,
+  "final_run_page_errors": [],
+  "final_run_http_requests": [],
+  "resolved_findings": [
+    "Demo grid/controls min-content overflow at320/390 fixed with min-width and wrapping, not hidden overflow",
+    "WebKit native selects ignored min-height; appearance-free selects with CSS arrow now exceed44px",
+    "Portal long metadata path overflow fixed by explicit metadata wrapping"
+  ],
+  "screenshots": [
+    "qa-browser/portal-mobile.png",
+    "qa-browser/portal-desktop.png",
+    "qa-browser/demo-mobile.png",
+    "qa-browser/demo-desktop.png"
+  ],
+  "not_checked": [
+    "Native iOS/Android/desktop application",
+    "Other browser engines and physical devices",
+    "Screen-reader audit or full WCAG certification",
+    "Production API/auth/payment/database/report export flows"
+  ],
+  "production_release_verdict": "HOLD"
+}

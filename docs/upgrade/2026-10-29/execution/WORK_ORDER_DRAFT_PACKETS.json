@@ -1,0 +1,4572 @@
+[
+  {
+    "work_order_id": "INT29-001",
+    "source_task_ids": [
+      "V2-GOV-01",
+      "V3-INT-09"
+    ],
+    "title": "Bảo toàn nguồn và nối biên nhận nhập liệu",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Đối chiếu 827 tệp ZIP, ba tệp V2 rời, 216 tệp kế hoạch hiện có; giữ provenance và SHA từng tệp."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Governance + Documentation",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-001"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-GOV-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-09"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [],
+      "decision_dependencies": [
+        "Q21",
+        "Q31",
+        "Q45"
+      ],
+      "gate_dependencies": [
+        "G01"
+      ],
+      "parent_rollup_ids": [
+        "V2-GOV-01",
+        "V3-INT-09"
+      ],
+      "raw_source_dependencies": [
+        "V2-GOV-01",
+        "V3-INT-09"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-001/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Số lượng, SHA và đường dẫn khớp nguồn; không đổi byte cũ; mọi đường dẫn đích ở đúng dự án.",
+        "expected_result": "Số lượng, SHA và đường dẫn khớp nguồn; không đổi byte cũ; mọi đường dẫn đích ở đúng dự án.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-001"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-001"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Số lượng, SHA và đường dẫn khớp nguồn; không đổi byte cũ; mọi đường dẫn đích ở đúng dự án."
+      ],
+      "negative": [
+        "Thử tệp thiếu, tệp đích khác byte, traversal, symlink, ZIP lỗi; phải chặn và ghi receipt."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Chỉ tạo vùng tài liệu mới, lưu manifest; phục hồi bằng danh sách tệp mới có hash và không xóa dữ liệu người dùng."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-001/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Governance + Documentation",
+      "procedure": "Chỉ tạo vùng tài liệu mới, lưu manifest; phục hồi bằng danh sách tệp mới có hash và không xóa dữ liệu người dùng.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 1,
+      "high_person_days": 2,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-GOV-01",
+        "V3-INT-09"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-002",
+    "source_task_ids": [
+      "P0-01",
+      "P0-02",
+      "P0-08",
+      "V2-OPS-01",
+      "V3-INT-10"
+    ],
+    "title": "Khóa đúng repository và phân biệt source/runtime",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Lập receipt cwd/remote/branch/full HEAD/dirty paths, candidate riêng và deployment mapping nếu sau này có quyền."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Tech Lead + Release Lead",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-002"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "P0-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "P0-01"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "P0-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "P0-02"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "P0-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "P0-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-10"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-001"
+      ],
+      "decision_dependencies": [
+        "Q10",
+        "Q30",
+        "Q45"
+      ],
+      "gate_dependencies": [
+        "G01",
+        "G07"
+      ],
+      "parent_rollup_ids": [
+        "P0-01",
+        "P0-02",
+        "P0-08",
+        "V2-OPS-01",
+        "V3-INT-10"
+      ],
+      "raw_source_dependencies": [
+        "P0-01",
+        "P0-02",
+        "P0-08",
+        "V2-OPS-01",
+        "V3-INT-10"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-002/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Không kế thừa SHA GitHub cũ hoặc demo làm runtime; ghi rõ mọi bằng chứng NOT_CHECKED.",
+        "expected_result": "Không kế thừa SHA GitHub cũ hoặc demo làm runtime; ghi rõ mọi bằng chứng NOT_CHECKED.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-002"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-002"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Không kế thừa SHA GitHub cũ hoặc demo làm runtime; ghi rõ mọi bằng chứng NOT_CHECKED."
+      ],
+      "negative": [
+        "Sai remote, dirty tree, target ngoài scope, deployed SHA thiếu hoặc không khớp phải HOLD."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Không reset/stash/ghi đè worktree; ứng viên tương lai tạo riêng sau khi chọn baseline có authority."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-002/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Tech Lead + Release Lead",
+      "procedure": "Không reset/stash/ghi đè worktree; ứng viên tương lai tạo riêng sau khi chọn baseline có authority.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 1,
+      "high_person_days": 3,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "P0-01",
+        "P0-02",
+        "P0-08",
+        "V2-OPS-01",
+        "V3-INT-10"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-003",
+    "source_task_ids": [
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "V2-GOV-01"
+    ],
+    "title": "Hợp nhất namespace, DAG có kiểu và estimate rollup",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "296 ID nguồn +20 work order; bảo toàn 16 UPG; tách task/decision/gate deps và parent rollup."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Program Manager + Data/QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-003"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-PM-001"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-PM-002"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-GOV-01"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-001"
+      ],
+      "decision_dependencies": [
+        "Q20",
+        "Q31"
+      ],
+      "gate_dependencies": [
+        "G01",
+        "G06"
+      ],
+      "parent_rollup_ids": [
+        "UPG-PM-001",
+        "UPG-PM-002",
+        "V2-GOV-01"
+      ],
+      "raw_source_dependencies": [
+        "UPG-PM-001",
+        "UPG-PM-002",
+        "V2-GOV-01"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-003/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Không duplicate ID; FK đóng; topo không chu kỳ; giữ P0 đã sửa; bản gốc và proposed graph đều truy vết.",
+        "expected_result": "Không duplicate ID; FK đóng; topo không chu kỳ; giữ P0 đã sửa; bản gốc và proposed graph đều truy vết.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-003"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-003"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Không duplicate ID; FK đóng; topo không chu kỳ; giữ P0 đã sửa; bản gốc và proposed graph đều truy vết."
+      ],
+      "negative": [
+        "Cố tình tạo vòng, dependency lạ, parent tự tham chiếu, unknown estimate thành 0 và cộng parent+child phải thất bại."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Chỉ sửa overlay mới; graph nguồn bất biến; loại thay đổi mới bằng inverse manifest có hash."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-003/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Program Manager + Data/QA",
+      "procedure": "Chỉ sửa overlay mới; graph nguồn bất biến; loại thay đổi mới bằng inverse manifest có hash.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 2,
+      "high_person_days": 4,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "UPG-PM-001",
+        "UPG-PM-002",
+        "V2-GOV-01"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-004",
+    "source_task_ids": [
+      "V2-GOV-01",
+      "V3-INT-10"
+    ],
+    "title": "Mở 45 decision packet và phân quyền duyệt",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Giữ nguyên Q1–20; bổ sung Q21–45 với lựa chọn, tác động, chức danh, hạn theo sự kiện và receipt null."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Founder Office + Functional Leads",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent Program QA + relevant functional authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-004"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-GOV-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-10"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-003"
+      ],
+      "decision_dependencies": [
+        "Q1",
+        "Q3",
+        "Q4",
+        "Q9",
+        "Q12",
+        "Q14",
+        "Q15",
+        "Q20",
+        "Q31"
+      ],
+      "gate_dependencies": [
+        "G04",
+        "G06"
+      ],
+      "parent_rollup_ids": [
+        "V2-GOV-01",
+        "V3-INT-10"
+      ],
+      "raw_source_dependencies": [
+        "V2-GOV-01",
+        "V3-INT-10"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-004/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "45 packet duy nhất; mỗi lựa chọn có phạm vi; chưa ký vẫn pending; tài liệu không tự tạo production permission.",
+        "expected_result": "45 packet duy nhất; mỗi lựa chọn có phạm vi; chưa ký vẫn pending; tài liệu không tự tạo production permission.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-004"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-004"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "45 packet duy nhất; mỗi lựa chọn có phạm vi; chưa ký vẫn pending; tài liệu không tự tạo production permission."
+      ],
+      "negative": [
+        "Từ chối packet không có approver chức năng, source digest, phạm vi/expiry hoặc dùng Founder thay Method/Legal."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Lưu mọi quyết định thành phiên bản; không sửa lịch sử và không coi đề xuất A là đã được duyệt."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-004/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Founder Office + Functional Leads",
+      "procedure": "Lưu mọi quyết định thành phiên bản; không sửa lịch sử và không coi đề xuất A là đã được duyệt.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 2,
+      "high_person_days": 4,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-GOV-01",
+        "V3-INT-10"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-005",
+    "source_task_ids": [
+      "V2-GOV-02",
+      "V2-BE-14"
+    ],
+    "title": "Cấp hộ chiếu nguồn/quyền cho 62 adapter phương pháp",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Lập inventory/passport tối thiểu cho62adapter; hoàn thiện source edition, quyền, input/rules/limits/corpus/review/release cho từng adapter thực sự được chọn vào cohort. Phần còn lại giữ research/unreleased."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Method Lead + Rights/Legal + Native Reviewer",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-005"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-GOV-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-14"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-004"
+      ],
+      "decision_dependencies": [
+        "Q3",
+        "Q12",
+        "Q22",
+        "Q31"
+      ],
+      "gate_dependencies": [
+        "G04",
+        "G06"
+      ],
+      "parent_rollup_ids": [
+        "V2-GOV-02",
+        "V2-BE-14"
+      ],
+      "raw_source_dependencies": [
+        "V2-GOV-02",
+        "V2-BE-14"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-005/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "62adapter có owner/missing-evidence register; chỉ adapter của cohort được xét dispatch khi passport source/rights/golden/reviewer độc lập đủ. Không đòi nghiên cứu xong62adapter để làm pilot phạm vi hẹp.",
+        "expected_result": "62adapter có owner/missing-evidence register; chỉ adapter của cohort được xét dispatch khi passport source/rights/golden/reviewer độc lập đủ. Không đòi nghiên cứu xong62adapter để làm pilot phạm vi hẹp.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-005"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-005"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "62adapter có owner/missing-evidence register; chỉ adapter của cohort được xét dispatch khi passport source/rights/golden/reviewer độc lập đủ. Không đòi nghiên cứu xong62adapter để làm pilot phạm vi hẹp."
+      ],
+      "negative": [
+        "Thiếu quyền, nguồn sao chép cùng gốc, reviewer cùng tác giả, nguồn mâu thuẫn hoặc phụ thuộc nhạy cảm phải NEEDS_REVIEW."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Gỡ capability khỏi catalog phát hành bằng feature/version gate; giữ nguyên archive và bản kết quả lịch sử."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-005/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Method Lead + Rights/Legal + Native Reviewer",
+      "procedure": "Gỡ capability khỏi catalog phát hành bằng feature/version gate; giữ nguyên archive và bản kết quả lịch sử.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": null,
+      "high_person_days": null,
+      "status": "UNKNOWN",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-GOV-02",
+        "V2-BE-14"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-006",
+    "source_task_ids": [
+      "V2-BE-01",
+      "V2-BE-02",
+      "V2-BE-03",
+      "V2-BE-04",
+      "V3-MTH-001",
+      "V3-MTH-037",
+      "V3-INT-02"
+    ],
+    "title": "Chốt hợp đồng tên, lịch, thời gian và giả thuyết",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Đóng schema profile_version/data_hypothesis, raw/normalized name, timezone candidates, calendar/tzdb/config versions, uncertainty."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Backend Method Engineer + Domain QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-006"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-04"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-001"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-037"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-02"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-003"
+      ],
+      "decision_dependencies": [
+        "Q23",
+        "Q24",
+        "Q32",
+        "Q39"
+      ],
+      "gate_dependencies": [
+        "G03",
+        "G05",
+        "G06"
+      ],
+      "parent_rollup_ids": [
+        "V2-BE-01",
+        "V2-BE-02",
+        "V2-BE-03",
+        "V2-BE-04",
+        "V3-MTH-001",
+        "V3-MTH-037",
+        "V3-INT-02"
+      ],
+      "raw_source_dependencies": [
+        "V2-BE-01",
+        "V2-BE-02",
+        "V2-BE-03",
+        "V2-BE-04",
+        "V3-MTH-001",
+        "V3-MTH-037",
+        "V3-INT-02"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-006/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Unicode NFC/NFD, tên thiếu, Y chưa rõ, DST gap/fold, leap day, date-only và unknown đều có output có trạng thái.",
+        "expected_result": "Unicode NFC/NFD, tên thiếu, Y chưa rõ, DST gap/fold, leap day, date-only và unknown đều có output có trạng thái.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-006"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-006"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Unicode NFC/NFD, tên thiếu, Y chưa rõ, DST gap/fold, leap day, date-only và unknown đều có output có trạng thái."
+      ],
+      "negative": [
+        "Không tự đoán tên riêng/Y/timezone; không chuẩn hóa mất raw; DOB thiếu không thành 0/ngày mặc định."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Giữ raw và phiên bản normalize cũ; invalidation chỉ các node phụ thuộc, snapshot đã xuất không đổi."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-006/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Backend Method Engineer + Domain QA",
+      "procedure": "Giữ raw và phiên bản normalize cũ; invalidation chỉ các node phụ thuộc, snapshot đã xuất không đổi.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 3,
+      "high_person_days": 6,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-BE-01",
+        "V2-BE-02",
+        "V2-BE-03",
+        "V2-BE-04",
+        "V3-MTH-001",
+        "V3-MTH-037",
+        "V3-INT-02"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-007",
+    "source_task_ids": [
+      "V3-MTH-028",
+      "V3-MTH-030",
+      "V2-BE-07",
+      "V2-BE-11"
+    ],
+    "title": "Đặc tả và kiểm thử 23 thành phần Numerology",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Bảng công thức/reduction/master-number/Y/full/common/given name và hợp đồng riêng Pinnacle/Challenge/Period."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Method Engineer + Native Reviewer + Independent QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-007"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-028"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-030"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-07"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-11"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-005",
+        "INT29-006"
+      ],
+      "decision_dependencies": [
+        "Q6",
+        "Q32",
+        "Q38"
+      ],
+      "gate_dependencies": [
+        "G06"
+      ],
+      "parent_rollup_ids": [
+        "V3-MTH-028",
+        "V3-MTH-030",
+        "V2-BE-07",
+        "V2-BE-11"
+      ],
+      "raw_source_dependencies": [
+        "V3-MTH-028",
+        "V3-MTH-030",
+        "V2-BE-07",
+        "V2-BE-11"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-007/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "23 thành phần có ví dụ tính tay và boundary; variant versioned; trace từng phép tính; không gọi là đo nhân cách khoa học.",
+        "expected_result": "23 thành phần có ví dụ tính tay và boundary; variant versioned; trace từng phép tính; không gọi là đo nhân cách khoa học.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-007"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-007"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "23 thành phần có ví dụ tính tay và boundary; variant versioned; trace từng phép tính; không gọi là đo nhân cách khoa học."
+      ],
+      "negative": [
+        "Đảo thứ tự reduction, master number, missing vowels/Y và giao mốc B/B+9/B+18 phải được kiểm tra riêng."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Không thay bản rules đang dùng; tạo method_release mới, dual-run/diff và khả năng khóa release mới."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-007/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Method Engineer + Native Reviewer + Independent QA",
+      "procedure": "Không thay bản rules đang dùng; tạo method_release mới, dual-run/diff và khả năng khóa release mới.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 8,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V3-MTH-028",
+        "V3-MTH-030",
+        "V2-BE-07",
+        "V2-BE-11"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-008",
+    "source_task_ids": [
+      "V2-BE-05",
+      "V2-BE-06",
+      "V3-MTH-029",
+      "V3-MTH-032",
+      "V3-MTH-033",
+      "V3-MTH-034",
+      "V3-MTH-035"
+    ],
+    "title": "Đóng hợp đồng Bát Cực, đuôi 80, Psychomatrix",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "64 cặp/512 triplet alphabet có điều kiện, strict 0/5; modulo 0..79 và policy 0; 17 ô/trục raw/count tách working numbers."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Method Engineer + Source Reviewer + QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-008"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-05"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-06"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-029"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-032"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-033"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-034"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-035"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-005",
+        "INT29-006"
+      ],
+      "decision_dependencies": [
+        "Q33",
+        "Q34",
+        "Q35",
+        "Q36"
+      ],
+      "gate_dependencies": [
+        "G06"
+      ],
+      "parent_rollup_ids": [
+        "V2-BE-05",
+        "V2-BE-06",
+        "V3-MTH-029",
+        "V3-MTH-032",
+        "V3-MTH-033",
+        "V3-MTH-034",
+        "V3-MTH-035"
+      ],
+      "raw_source_dependencies": [
+        "V2-BE-05",
+        "V2-BE-06",
+        "V3-MTH-029",
+        "V3-MTH-032",
+        "V3-MTH-033",
+        "V3-MTH-034",
+        "V3-MTH-035"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-008/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Giữ raw 0/5, chuỗi có 0 đầu, variant trace; nguồn tail80 có quyền; mục mơ hồ bị quarantine; W3 âm theo policy chặn.",
+        "expected_result": "Giữ raw 0/5, chuỗi có 0 đầu, variant trace; nguồn tail80 có quyền; mục mơ hồ bị quarantine; W3 âm theo policy chặn.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-008"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-008"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Giữ raw 0/5, chuỗi có 0 đầu, variant trace; nguồn tail80 có quyền; mục mơ hồ bị quarantine; W3 âm theo policy chặn."
+      ],
+      "negative": [
+        "Không r+1, không abs(W3), không xóa 0/5 hoặc suy trí nhớ/sức khỏe/đời tư; enumerate 10.000 đuôi với 125 mẫu/bucket."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Đưa variant chưa đủ nguồn về diagnostic/unreleased; không viết đè bảng nguồn."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-008/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Method Engineer + Source Reviewer + QA",
+      "procedure": "Đưa variant chưa đủ nguồn về diagnostic/unreleased; không viết đè bảng nguồn.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 9,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-BE-05",
+        "V2-BE-06",
+        "V3-MTH-029",
+        "V3-MTH-032",
+        "V3-MTH-033",
+        "V3-MTH-034",
+        "V3-MTH-035"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-009",
+    "source_task_ids": [
+      "V3-INT-02",
+      "V3-MTH-056",
+      "V3-MTH-058"
+    ],
+    "title": "Đặc tả 18 lĩnh vực, chín giai đoạn và timeline",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Timeline age intervals, domains, quan sát đời thực, tự suy ngẫm, kế hoạch và forecast tách loại; quyền riêng từng event."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Product + Method + UX + Privacy",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-009"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-056"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-058"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-004",
+        "INT29-006"
+      ],
+      "decision_dependencies": [
+        "Q26",
+        "Q37",
+        "Q38",
+        "Q41"
+      ],
+      "gate_dependencies": [
+        "G04",
+        "G06",
+        "G08"
+      ],
+      "parent_rollup_ids": [
+        "V3-INT-02",
+        "V3-MTH-056",
+        "V3-MTH-058"
+      ],
+      "raw_source_dependencies": [
+        "V3-INT-02",
+        "V3-MTH-056",
+        "V3-MTH-058"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-009/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "0–99 là 100 interval nửa mở; >99 giữ; chín giai đoạn là biên tập, không luật tuổi/định mệnh.",
+        "expected_result": "0–99 là 100 interval nửa mở; >99 giữ; chín giai đoạn là biên tập, không luật tuổi/định mệnh.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-009"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-009"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "0–99 là 100 interval nửa mở; >99 giữ; chín giai đoạn là biên tập, không luật tuổi/định mệnh."
+      ],
+      "negative": [
+        "Leap birth, boundary, event chồng lĩnh vực, cùng DOB lặp nhiều cách tính và thiếu dữ liệu phải không nhân chứng cứ."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Giữ event nguồn; chỉ thay view/config/version, không hồi tố sửa lịch sử người dùng."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-009/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Product + Method + UX + Privacy",
+      "procedure": "Giữ event nguồn; chỉ thay view/config/version, không hồi tố sửa lịch sử người dùng.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 3,
+      "high_person_days": 6,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V3-INT-02",
+        "V3-MTH-056",
+        "V3-MTH-058"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-010",
+    "source_task_ids": [
+      "UPG-BE-001",
+      "UPG-BE-002",
+      "V2-BE-10",
+      "V2-BE-15",
+      "V2-BE-16",
+      "V3-INT-04"
+    ],
+    "title": "Đóng schema dữ liệu và 99 thao tác API đích",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Crosswalk 83+16 operations tới request/response/error/principal/purpose/idempotency/schema version và owner."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Backend Architect + API QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-010"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-BE-001"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-BE-002"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-10"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-15"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-16"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-04"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-003",
+        "INT29-006"
+      ],
+      "decision_dependencies": [
+        "Q25",
+        "Q29",
+        "Q39"
+      ],
+      "gate_dependencies": [
+        "G01",
+        "G03",
+        "G06",
+        "G07"
+      ],
+      "parent_rollup_ids": [
+        "UPG-BE-001",
+        "UPG-BE-002",
+        "V2-BE-10",
+        "V2-BE-15",
+        "V2-BE-16",
+        "V3-INT-04"
+      ],
+      "raw_source_dependencies": [
+        "UPG-BE-001",
+        "UPG-BE-002",
+        "V2-BE-10",
+        "V2-BE-15",
+        "V2-BE-16",
+        "V3-INT-04"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-010/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "99 operation duy nhất là thiết kế; chỉ route có runtime receipt mới gọi implemented; schema FK tenant/subject kín.",
+        "expected_result": "99 operation duy nhất là thiết kế; chỉ route có runtime receipt mới gọi implemented; schema FK tenant/subject kín.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-010"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-010"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "99 operation duy nhất là thiết kế; chỉ route có runtime receipt mới gọi implemented; schema FK tenant/subject kín."
+      ],
+      "negative": [
+        "Unknown fields/mass assignment, stale revision, null/0 confusion, cross-subject FK, payload lớn hoặc money float phải chặn."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Migration chỉ lên staging sau review; expand/contract và backup; không chạy SQL với gói tài liệu."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-010/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Backend Architect + API QA",
+      "procedure": "Migration chỉ lên staging sau review; expand/contract và backup; không chạy SQL với gói tài liệu.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 8,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "UPG-BE-001",
+        "UPG-BE-002",
+        "V2-BE-10",
+        "V2-BE-15",
+        "V2-BE-16",
+        "V3-INT-04"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-011",
+    "source_task_ids": [
+      "V2-SEC-01",
+      "V2-SEC-02",
+      "V2-SEC-03",
+      "V2-SEC-04",
+      "V2-SEC-05",
+      "V2-SEC-06",
+      "V3-MTH-060"
+    ],
+    "title": "Thiết kế và xác minh identity, quyền và riêng tư",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Object/tenant/subject/purpose grant, consent revision, recovery/revocation/delete/export trong mọi read/write/job/download."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Security + Backend + Privacy",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-011"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-04"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-05"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-06"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-060"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-010"
+      ],
+      "decision_dependencies": [
+        "Q4",
+        "Q9",
+        "Q18",
+        "Q23",
+        "Q29",
+        "Q39"
+      ],
+      "gate_dependencies": [
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G11"
+      ],
+      "parent_rollup_ids": [
+        "V2-SEC-01",
+        "V2-SEC-02",
+        "V2-SEC-03",
+        "V2-SEC-04",
+        "V2-SEC-05",
+        "V2-SEC-06",
+        "V3-MTH-060"
+      ],
+      "raw_source_dependencies": [
+        "V2-SEC-01",
+        "V2-SEC-02",
+        "V2-SEC-03",
+        "V2-SEC-04",
+        "V2-SEC-05",
+        "V2-SEC-06",
+        "V3-MTH-060"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-011/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "IdP và principal server-derived; payer/owner/practitioner khác quyền; app DB role không owner/BYPASSRLS.",
+        "expected_result": "IdP và principal server-derived; payer/owner/practitioner khác quyền; app DB role không owner/BYPASSRLS.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-011"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-011"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "IdP và principal server-derived; payer/owner/practitioner khác quyền; app DB role không owner/BYPASSRLS."
+      ],
+      "negative": [
+        "Cross-tenant object access, forged user_id, revoked grant sau enqueue, signed-link replay, stale offline dữ liệu phải bị chặn."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Kill switch theo capability; revoke token/grant/link, deletion barrier; không hứa thu hồi tệp đã tải."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-011/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Security + Backend + Privacy",
+      "procedure": "Kill switch theo capability; revoke token/grant/link, deletion barrier; không hứa thu hồi tệp đã tải.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 9,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-SEC-01",
+        "V2-SEC-02",
+        "V2-SEC-03",
+        "V2-SEC-04",
+        "V2-SEC-05",
+        "V2-SEC-06",
+        "V3-MTH-060"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-012",
+    "source_task_ids": [
+      "UPG-BE-005",
+      "V2-JOB-01",
+      "V2-JOB-02",
+      "V2-JOB-03",
+      "V2-JOB-08",
+      "V2-BE-07",
+      "V2-BE-08",
+      "V2-BE-13"
+    ],
+    "title": "Thiết kế durable jobs, cache và idempotency",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Transactional run+outbox+idempotency; lease/heartbeat/retry/DLQ/cancel; scoped cache và invalidation DAG."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Backend + Platform + Reliability QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-012"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-BE-005"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-07"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-BE-13"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-010",
+        "INT29-011"
+      ],
+      "decision_dependencies": [
+        "Q23",
+        "Q29",
+        "Q39"
+      ],
+      "gate_dependencies": [
+        "G03",
+        "G05",
+        "G09",
+        "G10"
+      ],
+      "parent_rollup_ids": [
+        "UPG-BE-005",
+        "V2-JOB-01",
+        "V2-JOB-02",
+        "V2-JOB-03",
+        "V2-JOB-08",
+        "V2-BE-07",
+        "V2-BE-08",
+        "V2-BE-13"
+      ],
+      "raw_source_dependencies": [
+        "UPG-BE-005",
+        "V2-JOB-01",
+        "V2-JOB-02",
+        "V2-JOB-03",
+        "V2-JOB-08",
+        "V2-BE-07",
+        "V2-BE-08",
+        "V2-BE-13"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-012/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Tác dụng nghiệp vụ exactly-once theo receipt trong at-least-once delivery; cache đủ tenant/subject/purpose/revision/version.",
+        "expected_result": "Tác dụng nghiệp vụ exactly-once theo receipt trong at-least-once delivery; cache đủ tenant/subject/purpose/revision/version.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-012"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-012"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Tác dụng nghiệp vụ exactly-once theo receipt trong at-least-once delivery; cache đủ tenant/subject/purpose/revision/version."
+      ],
+      "negative": [
+        "Duplicate/reorder/crash, key conflict, revoke/cancel/delete races, restore tombstone và source edition change có chứng cứ."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Dừng producer/worker bằng switch, drain/quarantine queue; reconcile effects trước replay; restore xong áp deletion."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-012/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Backend + Platform + Reliability QA",
+      "procedure": "Dừng producer/worker bằng switch, drain/quarantine queue; reconcile effects trước replay; restore xong áp deletion.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 8,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "UPG-BE-005",
+        "V2-JOB-01",
+        "V2-JOB-02",
+        "V2-JOB-03",
+        "V2-JOB-08",
+        "V2-BE-07",
+        "V2-BE-08",
+        "V2-BE-13"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-013",
+    "source_task_ids": [
+      "V2-FE-03",
+      "V3-MTH-062"
+    ],
+    "title": "Nhận 167 demo vào ma trận kiểm thử có phân hạng",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Catalog mỗi demo: source package, fixture synthetic, expected trace/output, category normal/missing/boundary/conflict/denied/stale/failure."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "QA Lead + Method + UX",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-013"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-062"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-003",
+        "INT29-006"
+      ],
+      "decision_dependencies": [
+        "Q22",
+        "Q25",
+        "Q32",
+        "Q33",
+        "Q35",
+        "Q36"
+      ],
+      "gate_dependencies": [
+        "G06",
+        "G08",
+        "G11"
+      ],
+      "parent_rollup_ids": [
+        "V2-FE-03",
+        "V3-MTH-062"
+      ],
+      "raw_source_dependencies": [
+        "V2-FE-03",
+        "V3-MTH-062"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-013/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Không cộng các suite kế thừa trùng thành coverage độc lập; demo offline, node HTTP và browser HTTP có nhãn riêng.",
+        "expected_result": "Không cộng các suite kế thừa trùng thành coverage độc lập; demo offline, node HTTP và browser HTTP có nhãn riêng.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-013"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-013"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Không cộng các suite kế thừa trùng thành coverage độc lập; demo offline, node HTTP và browser HTTP có nhãn riêng."
+      ],
+      "negative": [
+        "Tắt mock để chứng minh HTTP thật; thử partial/unknown, wrong tenant, malformed/timeouts; recording skips và môi trường."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Chạy bản sao riêng; không chạy script nguồn trên worktree/app; không đổi receipt gốc."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-013/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "QA Lead + Method + UX",
+      "procedure": "Chạy bản sao riêng; không chạy script nguồn trên worktree/app; không đổi receipt gốc.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 3,
+      "high_person_days": 6,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-FE-03",
+        "V3-MTH-062"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-014",
+    "source_task_ids": [
+      "UPG-AI-001",
+      "UPG-AI-002",
+      "V2-AI-03",
+      "V2-AI-04",
+      "V2-AI-05",
+      "V3-INT-05",
+      "V3-MTH-061"
+    ],
+    "title": "Đóng chín template báo cáo và shared content tree",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Chung snapshot/content tree Web/PDF/Word; bốn khối; 9 level khác dữ liệu và mục đích; missing-data preview có null."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Editorial + AI Lead + Report Engineer",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-014"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-AI-001"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-AI-002"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-04"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-05"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-05"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-061"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-007",
+        "INT29-008",
+        "INT29-009",
+        "INT29-010"
+      ],
+      "decision_dependencies": [
+        "Q5",
+        "Q7",
+        "Q27",
+        "Q41"
+      ],
+      "gate_dependencies": [
+        "G06",
+        "G08"
+      ],
+      "parent_rollup_ids": [
+        "UPG-AI-001",
+        "UPG-AI-002",
+        "V2-AI-03",
+        "V2-AI-04",
+        "V2-AI-05",
+        "V3-INT-05",
+        "V3-MTH-061"
+      ],
+      "raw_source_dependencies": [
+        "UPG-AI-001",
+        "UPG-AI-002",
+        "V2-AI-03",
+        "V2-AI-04",
+        "V2-AI-05",
+        "V3-INT-05",
+        "V3-MTH-061"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-014/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "L1 ít nhất ba case đủ/thiếu/xung đột; claim gắn source+method+input; không bù trang hoặc bịa life events.",
+        "expected_result": "L1 ít nhất ba case đủ/thiếu/xung đột; claim gắn source+method+input; không bù trang hoặc bịa life events.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-014"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-014"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "L1 ít nhất ba case đủ/thiếu/xung đột; claim gắn source+method+input; không bù trang hoặc bịa life events."
+      ],
+      "negative": [
+        "Nguồn hết quyền, snapshot stale, external URL/local file khi render, font/tables/overflow, report bị hủy phải chặn."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Xuất bản nội dung thành release mới; sandbox renderer; snapshot cũ bất biến, thu hồi quyền tải tương lai."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-014/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Editorial + AI Lead + Report Engineer",
+      "procedure": "Xuất bản nội dung thành release mới; sandbox renderer; snapshot cũ bất biến, thu hồi quyền tải tương lai.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 8,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "UPG-AI-001",
+        "UPG-AI-002",
+        "V2-AI-03",
+        "V2-AI-04",
+        "V2-AI-05",
+        "V3-INT-05",
+        "V3-MTH-061"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-015",
+    "source_task_ids": [
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "V2-FE-06",
+      "V2-FE-07",
+      "V2-FE-08",
+      "V2-FE-09",
+      "V2-FE-10",
+      "V2-FE-11",
+      "V2-FE-12",
+      "V3-INT-01",
+      "V3-INT-06"
+    ],
+    "title": "Thiết kế 69 màn hình và mobile/web/desktop web",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Screen crosswalk 45 gốc+V2+V3, flows shared responsive 360/390/768/1440, keyboard, contrast, states và locale."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Product UX + Frontend + Accessibility QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-015"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-UX-001"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-UX-002"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-UX-003"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-06"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-07"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-09"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-10"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-11"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-FE-12"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-06"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-009",
+        "INT29-010",
+        "INT29-011"
+      ],
+      "decision_dependencies": [
+        "Q13",
+        "Q28",
+        "Q39",
+        "Q40",
+        "Q41"
+      ],
+      "gate_dependencies": [
+        "G03",
+        "G05",
+        "G08"
+      ],
+      "parent_rollup_ids": [
+        "UPG-UX-001",
+        "UPG-UX-002",
+        "UPG-UX-003",
+        "V2-FE-06",
+        "V2-FE-07",
+        "V2-FE-08",
+        "V2-FE-09",
+        "V2-FE-10",
+        "V2-FE-11",
+        "V2-FE-12",
+        "V3-INT-01",
+        "V3-INT-06"
+      ],
+      "raw_source_dependencies": [
+        "UPG-UX-001",
+        "UPG-UX-002",
+        "UPG-UX-003",
+        "V2-FE-06",
+        "V2-FE-07",
+        "V2-FE-08",
+        "V2-FE-09",
+        "V2-FE-10",
+        "V2-FE-11",
+        "V2-FE-12",
+        "V3-INT-01",
+        "V3-INT-06"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-015/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Đủ loading/partial/needs-input/denied/unreleased/stale/error; desktop web dễ đọc bảng; mobile form nhập từng bước.",
+        "expected_result": "Đủ loading/partial/needs-input/denied/unreleased/stale/error; desktop web dễ đọc bảng; mobile form nhập từng bước.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-015"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-015"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Đủ loading/partial/needs-input/denied/unreleased/stale/error; desktop web dễ đọc bảng; mobile form nhập từng bước."
+      ],
+      "negative": [
+        "Overflow, zoom 200%, keyboard trap, offline revoke conflict, private cache, screenshot leak và screenreader cơ bản."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Feature switch theo screen/capability; private offline tắt mặc định; native là nhánh sau có budget/owner riêng."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-015/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Product UX + Frontend + Accessibility QA",
+      "procedure": "Feature switch theo screen/capability; private offline tắt mặc định; native là nhánh sau có budget/owner riêng.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 8,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "UPG-UX-001",
+        "UPG-UX-002",
+        "UPG-UX-003",
+        "V2-FE-06",
+        "V2-FE-07",
+        "V2-FE-08",
+        "V2-FE-09",
+        "V2-FE-10",
+        "V2-FE-11",
+        "V2-FE-12",
+        "V3-INT-01",
+        "V3-INT-06"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-016",
+    "source_task_ids": [
+      "V2-SEC-07",
+      "V2-AI-01",
+      "V2-AI-02",
+      "V2-AI-03",
+      "V2-AI-06",
+      "V2-AI-07",
+      "V2-AI-08",
+      "V3-INT-03",
+      "V3-MTH-059"
+    ],
+    "title": "Đóng hợp đồng AI theo claim, quyền và ngân sách",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "A0–A3 permission/cost contract; retrieval ACL trước fetch; claim assembler/writer/reviewer và eval corpus versioned."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "AI Lead + Security + Editorial",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-016"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-07"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-06"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-07"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-AI-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-MTH-059"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-011",
+        "INT29-014"
+      ],
+      "decision_dependencies": [
+        "Q16",
+        "Q34",
+        "Q44"
+      ],
+      "gate_dependencies": [
+        "G03",
+        "G06",
+        "G08",
+        "G10",
+        "G11"
+      ],
+      "parent_rollup_ids": [
+        "V2-SEC-07",
+        "V2-AI-01",
+        "V2-AI-02",
+        "V2-AI-03",
+        "V2-AI-06",
+        "V2-AI-07",
+        "V2-AI-08",
+        "V3-INT-03",
+        "V3-MTH-059"
+      ],
+      "raw_source_dependencies": [
+        "V2-SEC-07",
+        "V2-AI-01",
+        "V2-AI-02",
+        "V2-AI-03",
+        "V2-AI-06",
+        "V2-AI-07",
+        "V2-AI-08",
+        "V3-INT-03",
+        "V3-MTH-059"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-016/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Không AI phát hành claim method chưa duyệt; provenance một nguồn không thành nhiều chứng cứ; budget/fallback/exception minh bạch.",
+        "expected_result": "Không AI phát hành claim method chưa duyệt; provenance một nguồn không thành nhiều chứng cứ; budget/fallback/exception minh bạch.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-016"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-016"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Không AI phát hành claim method chưa duyệt; provenance một nguồn không thành nhiều chứng cứ; budget/fallback/exception minh bạch."
+      ],
+      "negative": [
+        "Prompt injection nguồn, RAG ACL bypass, fabricated citation, vendor timeout, token cap, fallback sai scope, tool đổi quyền phải chặn."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Kill switch provider/prompt/tool; human queue; không cho feedback tự phê duyệt quy tắc."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-016/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "AI Lead + Security + Editorial",
+      "procedure": "Kill switch provider/prompt/tool; human queue; không cho feedback tự phê duyệt quy tắc.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 4,
+      "high_person_days": 8,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-SEC-07",
+        "V2-AI-01",
+        "V2-AI-02",
+        "V2-AI-03",
+        "V2-AI-06",
+        "V2-AI-07",
+        "V2-AI-08",
+        "V3-INT-03",
+        "V3-MTH-059"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-017",
+    "source_task_ids": [
+      "V2-GOV-06",
+      "V2-JOB-04",
+      "V2-JOB-05",
+      "V2-JOB-06",
+      "V2-JOB-07"
+    ],
+    "title": "Đóng thương mại và quyền dùng độc lập",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Order/payment/refund/entitlement/job/report state machines; pháp nhân/country/currency/provider và phí có nguồn trước giá."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Commerce Lead + Finance + Backend",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-017"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-GOV-06"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-04"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-05"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-06"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-JOB-07"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-004",
+        "INT29-011",
+        "INT29-012"
+      ],
+      "decision_dependencies": [
+        "Q4",
+        "Q8",
+        "Q13",
+        "Q14",
+        "Q15",
+        "Q20",
+        "Q40"
+      ],
+      "gate_dependencies": [
+        "G04",
+        "G09",
+        "G10"
+      ],
+      "parent_rollup_ids": [
+        "V2-GOV-06",
+        "V2-JOB-04",
+        "V2-JOB-05",
+        "V2-JOB-06",
+        "V2-JOB-07"
+      ],
+      "raw_source_dependencies": [
+        "V2-GOV-06",
+        "V2-JOB-04",
+        "V2-JOB-05",
+        "V2-JOB-06",
+        "V2-JOB-07"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-017/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Integer minor units+currency; không tự đổi USD/VND; 23+5 sản phẩm planned, quyền theo capability chứ không mua tuần tự.",
+        "expected_result": "Integer minor units+currency; không tự đổi USD/VND; 23+5 sản phẩm planned, quyền theo capability chứ không mua tuần tự.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-017"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-017"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Integer minor units+currency; không tự đổi USD/VND; 23+5 sản phẩm planned, quyền theo capability chứ không mua tuần tự."
+      ],
+      "negative": [
+        "Webhook replay/sai amount/currency, paid nhưng no consent, refund sau fulfill, partial cancel, duplicate grant phải có test."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Sandbox-only đến đủ Finance/Legal/provider receipt; reconcile ledger rồi mới replay; no implicit charge."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-017/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Commerce Lead + Finance + Backend",
+      "procedure": "Sandbox-only đến đủ Finance/Legal/provider receipt; reconcile ledger rồi mới replay; no implicit charge.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": null,
+      "high_person_days": null,
+      "status": "UNKNOWN",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-GOV-06",
+        "V2-JOB-04",
+        "V2-JOB-05",
+        "V2-JOB-06",
+        "V2-JOB-07"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-018",
+    "source_task_ids": [
+      "V2-SEC-08",
+      "V2-SEC-09",
+      "V2-SEC-10",
+      "V2-OPS-01",
+      "V2-OPS-02",
+      "V2-OPS-03",
+      "V2-OPS-04",
+      "V2-OPS-05"
+    ],
+    "title": "Lập kế hoạch staging, kiểm thử độc lập và phục hồi",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "RC digest/source lock; CI allowlist; migration/RLS actual role; load/cost caps; backup restore+tombstone; rollback drill."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Release Lead + SRE + Independent Security/QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-018"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-09"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-SEC-10"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-01"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-02"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-03"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-04"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-05"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-011",
+        "INT29-012",
+        "INT29-013",
+        "INT29-014",
+        "INT29-015",
+        "INT29-016"
+      ],
+      "decision_dependencies": [
+        "Q10",
+        "Q14",
+        "Q15",
+        "Q29",
+        "Q45"
+      ],
+      "gate_dependencies": [
+        "G01",
+        "G07",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "parent_rollup_ids": [
+        "V2-SEC-08",
+        "V2-SEC-09",
+        "V2-SEC-10",
+        "V2-OPS-01",
+        "V2-OPS-02",
+        "V2-OPS-03",
+        "V2-OPS-04",
+        "V2-OPS-05"
+      ],
+      "raw_source_dependencies": [
+        "V2-SEC-08",
+        "V2-SEC-09",
+        "V2-SEC-10",
+        "V2-OPS-01",
+        "V2-OPS-02",
+        "V2-OPS-03",
+        "V2-OPS-04",
+        "V2-OPS-05"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-018/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Mỗi receipt đúng candidate/environment; unit/property/contract/browser HTTP/auth/payment/recovery riêng; independent reviewer.",
+        "expected_result": "Mỗi receipt đúng candidate/environment; unit/property/contract/browser HTTP/auth/payment/recovery riêng; independent reviewer.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-018"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-018"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Mỗi receipt đúng candidate/environment; unit/property/contract/browser HTTP/auth/payment/recovery riêng; independent reviewer."
+      ],
+      "negative": [
+        "Dirty deploy, ZIP/docs/SQL trong public artifact, bypass RLS, lost queue/entitlement, restore resurrected delete phải HOLD."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Không chạy deploy trong work order chuẩn bị; staging execution cần scope/operator/window; rollback drill không viết production."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-018/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Release Lead + SRE + Independent Security/QA",
+      "procedure": "Không chạy deploy trong work order chuẩn bị; staging execution cần scope/operator/window; rollback drill không viết production.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": null,
+      "high_person_days": null,
+      "status": "UNKNOWN",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-SEC-08",
+        "V2-SEC-09",
+        "V2-SEC-10",
+        "V2-OPS-01",
+        "V2-OPS-02",
+        "V2-OPS-03",
+        "V2-OPS-04",
+        "V2-OPS-05"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-019",
+    "source_task_ids": [
+      "V2-GOV-05",
+      "V2-OPS-07",
+      "V2-OPS-08",
+      "V3-INT-07",
+      "V3-INT-08"
+    ],
+    "title": "Đóng điều kiện lãnh thổ, Academy và đối tác",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "VN/EU/US/AU/SG bảo toàn; CA/UK research; chín buổi120 phút, certification scope/expiry, grievance và territorial rights."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Legal/Privacy + Academy + Partnerships",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-019"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-GOV-05"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-07"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-08"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-07"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-08"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-004",
+        "INT29-005"
+      ],
+      "decision_dependencies": [
+        "Q17",
+        "Q19",
+        "Q42",
+        "Q43"
+      ],
+      "gate_dependencies": [
+        "G04",
+        "G06",
+        "G12"
+      ],
+      "parent_rollup_ids": [
+        "V2-GOV-05",
+        "V2-OPS-07",
+        "V2-OPS-08",
+        "V3-INT-07",
+        "V3-INT-08"
+      ],
+      "raw_source_dependencies": [
+        "V2-GOV-05",
+        "V2-OPS-07",
+        "V2-OPS-08",
+        "V3-INT-07",
+        "V3-INT-08"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-019/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Nguồn luật hiện hành theo từng nước bởi local counsel; license/franchise không cấp quyền hồ sơ toàn cầu.",
+        "expected_result": "Nguồn luật hiện hành theo từng nước bởi local counsel; license/franchise không cấp quyền hồ sơ toàn cầu.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-019"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-019"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Nguồn luật hiện hành theo từng nước bởi local counsel; license/franchise không cấp quyền hồ sơ toàn cầu."
+      ],
+      "negative": [
+        "Ngôn ngữ/IP không tự xác định luật; cross-region unauthorized case; expired certificate và unlicensed instrument phải chặn."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Giữ thị trường/chuyên gia chưa đủ điều kiện NOT_RELEASED; thu hồi enrollment/access độc lập dữ liệu người dùng."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-019/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Legal/Privacy + Academy + Partnerships",
+      "procedure": "Giữ thị trường/chuyên gia chưa đủ điều kiện NOT_RELEASED; thu hồi enrollment/access độc lập dữ liệu người dùng.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": null,
+      "high_person_days": null,
+      "status": "UNKNOWN",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "V2-GOV-05",
+        "V2-OPS-07",
+        "V2-OPS-08",
+        "V3-INT-07",
+        "V3-INT-08"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  },
+  {
+    "work_order_id": "INT29-020",
+    "source_task_ids": [
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "V2-OPS-06",
+      "V3-INT-10"
+    ],
+    "title": "Bàn giao trace hai chiều và quyết định pilot",
+    "status": "PROPOSED_NOT_DISPATCHED",
+    "scope": {
+      "capabilities": [
+        "Requirement→source→method→API/data→screen/report→work order→test→gate→receipt và uncovered register; pilot adult-self có scope."
+      ],
+      "cohort": "SYNTHETIC_PREPARATION_ONLY; actual product cohort pending acceptance",
+      "environment": "DOCUMENTATION",
+      "purpose": "Chuẩn bị đặc tả, tiêu chí và bằng chứng cho work order; chưa cấp quyền sửa ứng dụng hoặc tích hợp provider",
+      "data_classes": [
+        "public_planning_sources",
+        "synthetic_fixture_design"
+      ]
+    },
+    "exclusions": [
+      "application/runtime edits until a scoped candidate work order is accepted",
+      "production/provider/database writes",
+      "real personal data",
+      "implicit approval of methods/pricing/territory"
+    ],
+    "owner": {
+      "role": "Program Manager + Product + Independent QA",
+      "name": null,
+      "accepted_at": null
+    },
+    "reviewer": {
+      "role": "Independent QA + relevant Method/Security/Privacy/Legal authority",
+      "name": null,
+      "accepted_at": null
+    },
+    "authority": {
+      "work_scope_authorized": true,
+      "decision_receipts": [],
+      "provider_access_authorized": false,
+      "production_action_authorized": false
+    },
+    "baseline": {
+      "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+      "remote": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+      "branch": "codex/complete-upgrade-plan-2026-10-20",
+      "full_head_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "worktree_status_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "candidate_artifact_sha256": null,
+      "source_bundle_receipt": "docs/upgrade/sources/2026-10-29/SOURCE_RECEIPT.json",
+      "target_environment": "DOCUMENTATION_ONLY_UNTIL_SCOPED_DISPATCH"
+    },
+    "source_refs": [
+      {
+        "package_id": "LOCAL_2026_10_29",
+        "path": "docs/upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json",
+        "sha256": "1d13c0ff0bc79aab1f06370ed124fd9a75125d281e5ec992106e559aa613e3c3",
+        "source_record_id": "INT29-020"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-PM-001"
+      },
+      {
+        "package_id": "LOCAL_R2",
+        "path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "sha256": "5fc93436d948ab039f95dc9f5ec6c9ebe5b746820161c724024d20313cdf5c27",
+        "source_record_id": "UPG-PM-002"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V2-OPS-06"
+      },
+      {
+        "package_id": "V3_INCOMING",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "sha256": "537762818003b07d58a1cb3ce0ac44f498cc011d79ffef402730af8f59d02ee1",
+        "source_record_id": "V3-INT-10"
+      }
+    ],
+    "dependencies": {
+      "task_dependencies": [
+        "INT29-003",
+        "INT29-004",
+        "INT29-005",
+        "INT29-006",
+        "INT29-007",
+        "INT29-008",
+        "INT29-009",
+        "INT29-010",
+        "INT29-011",
+        "INT29-012",
+        "INT29-013",
+        "INT29-014",
+        "INT29-015",
+        "INT29-016",
+        "INT29-017",
+        "INT29-018"
+      ],
+      "decision_dependencies": [
+        "Q1",
+        "Q3",
+        "Q4",
+        "Q9",
+        "Q12",
+        "Q14",
+        "Q15",
+        "Q20",
+        "Q31",
+        "Q40",
+        "Q45"
+      ],
+      "gate_dependencies": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12"
+      ],
+      "parent_rollup_ids": [
+        "UPG-PM-001",
+        "UPG-PM-002",
+        "V2-OPS-06",
+        "V3-INT-10"
+      ],
+      "raw_source_dependencies": [
+        "UPG-PM-001",
+        "UPG-PM-002",
+        "V2-OPS-06",
+        "V3-INT-10"
+      ],
+      "scoped_completion_rule": "Mỗi dependency được đóng cho capability/cohort/candidate của work order; chưa phát hành phương pháp khác không ép hoàn tất toàn portfolio. Mọi non-applicable phải có người duyệt và lý do; không bỏ core auth/privacy/rights."
+    },
+    "version_bundle": {
+      "profile_version": null,
+      "hypothesis_version": null,
+      "schema_version": null,
+      "method_release": null,
+      "source_edition_digest": null,
+      "rights_receipt": null,
+      "formula_config_digest": null,
+      "consent_revision": null,
+      "purpose": null,
+      "locale_release": null,
+      "claim_policy": null,
+      "model_prompt_release": null
+    },
+    "deliverables": [
+      {
+        "path": "evidence/INT29-020/<candidate-digest>/",
+        "artifact_kind": "scoped work-order receipt + spec/diff/tests",
+        "review_method": "Compare acceptance with source, positive/negative cases, independent review and rollback evidence"
+      }
+    ],
+    "acceptance": [
+      {
+        "criterion": "Không tỷ lệ hoàn thành bằng số tệp/task; đánh giá sản phẩm theo outcome user test, privacy và support; pilot có exit criteria.",
+        "expected_result": "Không tỷ lệ hoàn thành bằng số tệp/task; đánh giá sản phẩm theo outcome user test, privacy và support; pilot có exit criteria.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-020"
+      },
+      {
+        "criterion": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "expected_result": "Mọi receipt ghi source/candidate/artifact digest, môi trường, lệnh, exit code, số pass/fail/skip và người review; dữ liệu thật không đưa vào fixture.",
+        "source_or_decision_ref": "execution/INTEGRATION_WORK_ORDERS.json#INT29-020"
+      }
+    ],
+    "tests": {
+      "positive": [
+        "Không tỷ lệ hoàn thành bằng số tệp/task; đánh giá sản phẩm theo outcome user test, privacy và support; pilot có exit criteria."
+      ],
+      "negative": [
+        "Thiếu backward link, orphan task/claim, report green nhưng staging không có, rollback thiếu và thiếu approver phải NO_GO."
+      ],
+      "boundary": [
+        "Check missing/ambiguous/stale input within this exact work-order scope; final fixture IDs selected at dispatch"
+      ],
+      "privacy_and_auth": [
+        "Synthetic data only in preparation; permission-negative scenarios required before integration"
+      ],
+      "failure_and_recovery": [
+        "Pilot có kill switch/caps/cohort/incident owner; giữ NOT_RELEASED mọi capability không nằm đúng receipt phê duyệt."
+      ],
+      "performance_class": null,
+      "fixture_provenance": "Source corpus versions preserved; new fixtures must carry synthetic label, source/rule/config digest and expected result",
+      "skips_with_reasons": []
+    },
+    "evidence": {
+      "directory": "evidence/INT29-020/<candidate-digest>/",
+      "receipt_fields": [
+        "candidate SHA",
+        "artifact/source/config digests",
+        "commands/env/exit status",
+        "pass/fail/skip and expected/actual",
+        "independent reviewer",
+        "decision/gate scope",
+        "rollback proof"
+      ],
+      "independent_review_receipt": null,
+      "status": "NOT_CHECKED"
+    },
+    "rollback": {
+      "trigger": "Acceptance, authorization, source identity or reconciliation fails",
+      "operator_role": "Program Manager + Product + Independent QA",
+      "procedure": "Pilot có kill switch/caps/cohort/incident owner; giữ NOT_RELEASED mọi capability không nằm đúng receipt phê duyệt.",
+      "data_reconciliation": "Record exact affected scope; quarantine unknown records; never merge only by name/DOB",
+      "restore_deletion_barrier": "Apply deletion/revocation tombstones before restored private data can be accessed",
+      "verification": "Independent reviewer checks rollback on the same scoped candidate or synthetic fixture"
+    },
+    "estimate": {
+      "low_person_days": 3,
+      "high_person_days": 6,
+      "status": "PROPOSAL_NOT_APPROVED",
+      "rollup_policy": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+      "overlaps_source_task_ids": [
+        "UPG-PM-001",
+        "UPG-PM-002",
+        "V2-OPS-06",
+        "V3-INT-10"
+      ],
+      "currency": null,
+      "monetary_value": null
+    },
+    "release": {
+      "production_permission": false,
+      "approver_names": null,
+      "gate_receipts": [],
+      "expires_or_revisit": "Before any change from documentation preparation to scoped DEV/staging"
+    }
+  }
+]

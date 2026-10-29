@@ -1,0 +1,360 @@
+{
+  "checked_at_utc": "2026-10-29T13:02:38.696873+00:00",
+  "node": "v24.19.0",
+  "temp_directory": "/private/tmp/lc-os-oct29-backend-h_oompiw",
+  "source_files_checked_unchanged": 102,
+  "source_mutation_paths": [],
+  "suites": [
+    {
+      "name": "v2_supplied",
+      "command": [
+        "/Users/tranhatam/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "--test-timeout=15000",
+        "tests/core.test.mjs",
+        "tests/http.test.mjs"
+      ],
+      "cwd": "/private/tmp/lc-os-oct29-backend-h_oompiw/v2",
+      "exit_code": 0,
+      "statistics": {
+        "tests": 125,
+        "pass": 125,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "log": "docs/upgrade/2026-10-29/evidence/backend-tests/v2_supplied.log",
+      "scope": "LOCAL_SYNTHETIC_REFERENCE_ONLY",
+      "production_calls": 0
+    },
+    {
+      "name": "v3_supplied",
+      "command": [
+        "/Users/tranhatam/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "--test-timeout=15000",
+        "tests/http-v3.test.mjs",
+        "tests/v3.test.mjs"
+      ],
+      "cwd": "/private/tmp/lc-os-oct29-backend-h_oompiw/v3",
+      "exit_code": 0,
+      "statistics": {
+        "tests": 192,
+        "pass": 192,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "log": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_supplied.log",
+      "scope": "LOCAL_SYNTHETIC_REFERENCE_ONLY",
+      "production_calls": 0
+    },
+    {
+      "name": "v3_legacy_supplied",
+      "command": [
+        "/Users/tranhatam/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "--test-timeout=15000",
+        "legacy_v2/tests/core.test.mjs",
+        "legacy_v2/tests/http.test.mjs"
+      ],
+      "cwd": "/private/tmp/lc-os-oct29-backend-h_oompiw/v3",
+      "exit_code": 0,
+      "statistics": {
+        "tests": 125,
+        "pass": 125,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "log": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_legacy_supplied.log",
+      "scope": "LOCAL_SYNTHETIC_REFERENCE_ONLY",
+      "production_calls": 0
+    },
+    {
+      "name": "v2_demo_replay",
+      "command": [
+        "/Users/tranhatam/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tools/run-demos.mjs"
+      ],
+      "cwd": "/private/tmp/lc-os-oct29-backend-h_oompiw/v2",
+      "exit_code": 0,
+      "statistics": {},
+      "log": "docs/upgrade/2026-10-29/evidence/backend-tests/v2_demo_replay.log",
+      "scope": "LOCAL_SYNTHETIC_REFERENCE_ONLY",
+      "production_calls": 0
+    },
+    {
+      "name": "v3_demo_replay",
+      "command": [
+        "/Users/tranhatam/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "tools/run-cases.mjs"
+      ],
+      "cwd": "/private/tmp/lc-os-oct29-backend-h_oompiw/v3",
+      "exit_code": 0,
+      "statistics": {},
+      "log": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_demo_replay.log",
+      "scope": "LOCAL_SYNTHETIC_REFERENCE_ONLY",
+      "production_calls": 0
+    }
+  ],
+  "schema_examples": {
+    "status": "EXECUTED",
+    "validator": "jsonschema Draft202012Validator with FormatChecker",
+    "rows": [
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/AccessDecision.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/AccessDecision.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/BirthRecordV2.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/BirthRecordV2.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ClaimV2.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ClaimV2.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ConflictResolution.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ConflictResolution.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/DeletionRequestV2.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/DeletionRequestV2.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodFreeze.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodFreeze.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPassportV2.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodPassportV2.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPreview.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodPreview.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OfflineBatch.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/OfflineBatch.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OutboxEvent.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/OutboxEvent.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/Problem.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/Problem.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ProfilePipelineInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ProfilePipelineInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReportSectionV2.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ReportSectionV2.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReviewDecision.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ReviewDecision.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCompare.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunCompare.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCreate.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunCreate.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V2",
+        "schema": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunStatus.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunStatus.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/AllInOneInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/AllInOneInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/BatCucInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/BatCucInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/BundleCancelInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/BundleCancelInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/KnowledgeTransferInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/KnowledgeTransferInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/LifetimeInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/LifetimeInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NameCompareInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/NameCompareInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NumberCompareInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/NumberCompareInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NumerologyFullInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/NumerologyFullInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/PsychomatrixInput.schema.json",
+        "example": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/examples/PsychomatrixInput.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "source": "V3",
+        "schema": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/ReferenceResult.schema.json",
+        "status": "NO_SUPPLIED_EXAMPLE"
+      }
+    ],
+    "passed_examples": 26,
+    "failed_examples": 0,
+    "missing_examples": 1
+  },
+  "replay_receipts": [
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v2_demo_results_current.json",
+      "sha256": "96910eba1ecc253bc9df5054ffaa85287cd046e2f4eb8043c612ee673d6b1194"
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_demo_results_current.json",
+      "sha256": "7558ffd5ad788cbc5eb169ff5b7a46b91168ad49e460d973ca2fec1e50f337cc"
+    }
+  ],
+  "production_ready": false,
+  "evidence_scope": "Fresh local synthetic test execution; no database, provider, production, source licensing or predictive validity evidence.",
+  "earlier_attempt": {
+    "status": "TIMED_OUT",
+    "scope": "Initial combined V2 core/http invocation under restricted sandbox",
+    "timeout_seconds": 90,
+    "detail": "Core-only follow-up passed 118/118. Initial combined HTTP result was not accepted as a pass. Final execution is bounded with explicit TAP reporter."
+  },
+  "not_run": [
+    "Production/staging database migrations",
+    "Real runtime RLS/tenant isolation",
+    "Queue crash/recovery and durable idempotency",
+    "AI provider or payment integration",
+    "Independent method source review",
+    "Device/browser visual or load/SLA tests"
+  ],
+  "incorporation_scope": "Copied immutable test output from temp into authorized local planning docs; no new execution implied",
+  "logs": [
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v2_demo_replay.log",
+      "sha256": "5d49ab7ea2d8617e29dc60643a5634fe1e0a2a2be1a1c802a340effb88f8c0af"
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v2_demo_results_current.json",
+      "sha256": "96910eba1ecc253bc9df5054ffaa85287cd046e2f4eb8043c612ee673d6b1194"
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v2_supplied.log",
+      "sha256": "542652138740dd4905e361c1867753d766bb957d334bd72c227fecdf937997f8"
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_demo_replay.log",
+      "sha256": "1e0342c56359b38390b8e0814476c3631e4390d91aed6a420d9eb42833032139"
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_demo_results_current.json",
+      "sha256": "7558ffd5ad788cbc5eb169ff5b7a46b91168ad49e460d973ca2fec1e50f337cc"
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_legacy_supplied.log",
+      "sha256": "75b2af2bd929590015d765c3a7f64fe1b75ea32c64a688083a7c8cee29194478"
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/evidence/backend-tests/v3_supplied.log",
+      "sha256": "7885fa7d765490ca15260f468372fe52e14eb035afc55fed01f94c8b00147d2e"
+    }
+  ]
+}

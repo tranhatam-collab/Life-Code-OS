@@ -1,0 +1,52 @@
+[
+  {
+    "decision_id": "Q21",
+    "proposal": "Giữ nguyên 149 tệp và quản thay đổi bằng overlay/hash",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q22",
+    "proposal": "Duyệt 16 họ công thức tham chiếu, không gọi là production release",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q23",
+    "proposal": "Chính sách canonical digest và không coi hash PII là ẩn danh",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q24",
+    "proposal": "Chính sách thời gian: timezone/hypothesis/ngày nhuận",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q25",
+    "proposal": "Tách demoAPI local khỏi targetAPI có quyền",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q26",
+    "proposal": "Duyệt ma trận 144 câu hỏi, không phải năng lượng đo được",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q27",
+    "proposal": "Duyệt previewthiếudữ liệu cho 9 level, không viết bù",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q28",
+    "proposal": "Chốt blueprintmobile/PWA/offlinesync trước native",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q29",
+    "proposal": "Chốt contract review, migration và RLS staging",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  },
+  {
+    "decision_id": "Q30",
+    "proposal": "Duyệt importer không ghiđè và nhánhreview, không deploy",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW"
+  }
+]

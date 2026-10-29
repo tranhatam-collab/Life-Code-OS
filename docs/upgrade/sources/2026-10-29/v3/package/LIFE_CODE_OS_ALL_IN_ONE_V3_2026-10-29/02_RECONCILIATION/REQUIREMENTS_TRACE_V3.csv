@@ -1,0 +1,63 @@
+﻿request_id,requirement,artifact,delivery_state,remaining_boundary,production_state
+REQ-V3-001,Bảo toàn toàn bộ tệp V1 và V2,01_BASELINES/PRESERVATION_MANIFEST.json,BYTE_PRESERVATION,Archive does not approve unsafe old claims,NOT_RELEASED
+REQ-V3-002,Đối chiếu GitHub và nhánh rescue,02_RECONCILIATION/GITHUB_BASELINE_2026-10-29.json,SOURCE_CHECKED,Deployed SHA and import not verified,NOT_RELEASED
+REQ-V3-003,Hai mươi họ tri thức thế giới,03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json,DESIGN_REGISTER,Not all full texts read or engines implemented,NOT_RELEASED
+REQ-V3-004,Mười hai lớp và mười hai trường đồng nhịp,03_KNOWLEDGE/LAYERS_FIELDS_PRESERVED.json,PRESERVED_AND_MAPPED,"144cells are organization, not measured energies",NOT_RELEASED
+REQ-V3-005,Đủ 23 chỉ số số–tên,04_NUMBERS_NAMES/NUMEROLOGY_23_COMPONENTS.json,REFERENCE_CODE,No personality measurement,NOT_RELEASED
+REQ-V3-006,Bát Cực: tám nhóm và 64 cặp,04_NUMBERS_NAMES/BAT_CUC_64_PAIRS.json,REFERENCE_CODE,No physical-field claims,NOT_RELEASED
+REQ-V3-007,"Bát Cực: chuỗi, tổ hợp và vị trí",04_NUMBERS_NAMES/BAT_CUC_TRANSITION_8X8.json,REFERENCE_PLUS_EDITORIAL,Transition reflections are original draft not ancient doctrine,NOT_RELEASED
+REQ-V3-008,Bát Cực: chính sách số 0 và số 5,04_NUMBERS_NAMES/BAT_CUC_POLICY_VARIANTS.json,REFERENCE_DIAGNOSTIC,Full school-specific modifier policy pending,NOT_RELEASED
+REQ-V3-009,Psychomatrix: 17 vị trí,04_NUMBERS_NAMES/PSYCHOMATRIX_17_POSITIONS.json,REFERENCE_CODE,"No health,intellect or intimate inference",NOT_RELEASED
+REQ-V3-010,Số lặp và trục 2–5–8,04_NUMBERS_NAMES/REPEATED_SEQUENCES_70.json,DESCRIPTIVE_CATALOG,Not life-energy magnitude,NOT_RELEASED
+REQ-V3-011,Mã đuôi 80 đủ nguyên văn và nhãn nguồn,04_NUMBERS_NAMES/TAIL80_COMPLETE.json,TABLE_AND_CODE,Source80 not automatically equivalent81,NOT_RELEASED
+REQ-V3-012,"Tên đầy đủ, tên ngắn và nguyên âm Y",08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,UndefinedY=null,NOT_RELEASED
+REQ-V3-013,"Chu kỳ đỉnh cao, thử thách và ba thời kỳ",08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Periodspans need explicit config,NOT_RELEASED
+REQ-V3-014,Bản đồ đời sống 18 lĩnh vực,05_LIFETIME/LIFE_DOMAINS_18.json,DESIGN_CONTRACT,Not all life secrets known,NOT_RELEASED
+REQ-V3-015,Từ đầu đời đến 99 và tiếp nối,05_LIFETIME/LIFE_STAGE_ROUTING_9.json,DESIGN_PLUS_CALENDAR_CODE,Not lifespanprediction,NOT_RELEASED
+REQ-V3-016,"Lịch sử thật, kế hoạch và chu kỳ biểu tượng",08_ALL_IN_ONE_LAB/src/lifetime.mjs,REFERENCE_CODE,No fabricatedfutureevents,NOT_RELEASED
+REQ-V3-017,Đủ hợp đồng chín cấp sản phẩm,06_PRODUCTS/NINE_LEVELS_INTEGRATED_V3.json,DESIGN_CONTRACT,Full paidproducts not implemented,NOT_RELEASED
+REQ-V3-018,Từ miễn phí đến tổ chức và doanh nghiệp,06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json,PRODUCT_DESIGN,Prices/providerspending,NOT_RELEASED
+REQ-V3-019,"Mobile, web và desktop dùng chung lõi",08_ALL_IN_ONE_LAB/public/index.html,LOCAL_UI,Not nativeapps,NOT_RELEASED
+REQ-V3-020,"Backend, API và dấu vết dữ liệu",07_BACKEND/openapi.v3.target.json,CONTRACT,TargetAPI not all routes implemented,NOT_RELEASED
+REQ-V3-021,"AI hỗ trợ, giảm thao tác quản trị",07_BACKEND/AI_AND_AUTOMATION.md,DESIGN_CONTRACT,Humanapproval for highimpact changes,NOT_RELEASED
+REQ-V3-022,"Academy, chuyển giao và cấp phép quốc tế",10_GLOBAL_ACADEMY/ACADEMY_AND_LICENSING.md,DESIGN_CONTRACT,No territorystoreopened,NOT_RELEASED
+REQ-V3-023,Bảng công việc hợp nhất,09_EXECUTION/BACKLOG_UNIFIED.json,EXECUTION_PLAN,Estimaterefinementsnotblindsum,NOT_RELEASED
+REQ-V3-024,Không bỏ kế hoạch và Q1–Q30,09_EXECUTION/DECISION_LEDGER_ALL.json,PRESERVED_EXTENDED,Allpending approvals,NOT_RELEASED
+REQ-V3-025,Nguồn đa ngôn ngữ và quyền sử dụng,13_SOURCES/SOURCES_V3.json,SOURCE_REGISTER,Not all books read or translated,NOT_RELEASED
+REQ-V3-026,Tính đúng và không tạo điểm giả,11_QA/VERIFICATION_REPORT.json,LOCAL_VERIFICATION,No scientificpredictionclaim,NOT_RELEASED
+REQ-V3-027,Một cửa từ hồ sơ đến bản xem trước,08_ALL_IN_ONE_LAB/src/all_in_one.mjs,REFERENCE_PREVIEW,Onlypreviewnoauthstorage,NOT_RELEASED
+REQ-V3-028,Nhập đúng repository theo cách bổ sung,12_IMPORT/import_into_repo.py,IMPORT_TOOL,"Dryrunbydefault,noauto deploy",NOT_RELEASED
+REQ-V3-029,"Quyền dữ liệu trẻ em, ảnh và sức khỏe",07_BACKEND/TRUST_PRIVACY_AND_CHILDREN.md,DESIGN_POLICY,Sensitiveproductionfeaturesgated,NOT_RELEASED
+REQ-V3-030,"PDF, Word và bảng điều hành",00_START/START_HERE.md,ARTIFACT_PACKAGE,Plan not fullproductionOS,NOT_RELEASED
+REQ-V3-031,NUM-01 — Đường đời,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Tổng trung gian có thể khác dù căn giống nhau; lưu trace.,NOT_RELEASED
+REQ-V3-032,NUM-02 — Ngày sinh,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Giữ ngày 1–31 cùng kết quả rút gọn.,NOT_RELEASED
+REQ-V3-033,NUM-03 — Dấu số truyền thống 13/14/16/19,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,"Không gán lỗi đạo đức, nghiệp xấu hay nợ kiếp trước.",NOT_RELEASED
+REQ-V3-034,NUM-04 — Biểu đạt theo tên đầy đủ,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Giữ nguyên tên Unicode; không suy năng lực từ số.,NOT_RELEASED
+REQ-V3-035,NUM-05 — Biểu đạt theo tên thường dùng,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Không có tên thường dùng thì null; không tự lấy tên cuối.,NOT_RELEASED
+REQ-V3-036,NUM-06 — Tổng nguyên âm tên đầy đủ,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,"Có Y chưa phân loại thì null cho phần này, không chặn tổng tên.",NOT_RELEASED
+REQ-V3-037,NUM-07 — Tổng nguyên âm tên thường dùng,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Dùng đúng chính sách của lần chạy.,NOT_RELEASED
+REQ-V3-038,NUM-08 — Số ghép và các bước rút gọn,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Không áp một nghĩa cố định cho 11/22/33 trên mọi vị trí.,NOT_RELEASED
+REQ-V3-039,NUM-09 — Tổng phụ âm tên đầy đủ,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,"Là chỉ số quy ước, không phải đo nhân cách.",NOT_RELEASED
+REQ-V3-040,NUM-10 — Tổng phụ âm tên thường dùng,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Không có dữ liệu thì null.,NOT_RELEASED
+REQ-V3-041,NUM-11 — Chỉ số trưởng thành quy ước,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Không kết luận sứ mệnh hay tuổi trưởng thành thật.,NOT_RELEASED
+REQ-V3-042,NUM-12 — Chỉ số tên riêng và ngày sinh,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Tên Việt có thể nhiều âm tiết; không tự dùng first token.,NOT_RELEASED
+REQ-V3-043,NUM-13 — Nhóm số không xuất hiện trong tên,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Thiếu chữ số không có nghĩa thiếu năng lực.,NOT_RELEASED
+REQ-V3-044,NUM-14 — Tổng chữ đầu các thành phần tên,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Không đo cân bằng tâm lý.,NOT_RELEASED
+REQ-V3-045,NUM-15 — Nhóm số lặp nhiều nhất trong tên,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Không chọn tùy ý một số khi hòa.,NOT_RELEASED
+REQ-V3-046,NUM-16 — Số nhóm chữ có mặt,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Không quy đổi thành confidence xác suất.,NOT_RELEASED
+REQ-V3-047,NUM-17 — Bốn hiệu số thử thách,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Số 0 được giữ; không có nghĩa không khó khăn.,NOT_RELEASED
+REQ-V3-048,NUM-18 — Phạm vi thời gian thử thách,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Mặc định chưa suy ra tuổi nếu chưa chọn chính sách.,NOT_RELEASED
+REQ-V3-049,NUM-19 — Bốn tổng đỉnh cao,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,"P3 dùng đúng P1,P2 của phiên bản đã chọn.",NOT_RELEASED
+REQ-V3-050,NUM-20 — Phạm vi tuổi đỉnh cao,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Demo chọn last-integer-age-inclusive; lưu rõ điểm chuyển.,NOT_RELEASED
+REQ-V3-051,NUM-21 — Ba chu kỳ tháng–ngày–năm,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Giá trị tính được; tuổi chu kỳ không mặc nhiên bằng pinnacle.,NOT_RELEASED
+REQ-V3-052,NUM-22 — Cầu nối đường đời–tên,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,"Hiệu số mô tả, không phải mức hợp khoa học.",NOT_RELEASED
+REQ-V3-053,NUM-23 — Cầu nối nguyên âm–phụ âm,08_ALL_IN_ONE_LAB/src/numerology_full.mjs,REFERENCE_CODE,Y chưa rõ thì bridge=null.,NOT_RELEASED
+REQ-V3-054,Level 1 — Self Signal,06_PRODUCTS/LEVEL_1_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-055,Level 2 — Inner Architecture,06_PRODUCTS/LEVEL_2_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-056,Level 3 — Behavior Code,06_PRODUCTS/LEVEL_3_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-057,Level 4 — Work & Wealth Code,06_PRODUCTS/LEVEL_4_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-058,Level 5 — Relationship Field,06_PRODUCTS/LEVEL_5_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-059,Level 6 — Life Timeline,06_PRODUCTS/LEVEL_6_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-060,Level 7 — Body Intelligence,06_PRODUCTS/LEVEL_7_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-061,Level 8 — Mission Path,06_PRODUCTS/LEVEL_8_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED
+REQ-V3-062,Level 9 — Full Life Code,06_PRODUCTS/LEVEL_9_REPORT_CONTRACT.md,DESIGN_CONTRACT,Approved scope and input required before paidrelease,NOT_RELEASED

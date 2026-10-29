@@ -1,0 +1,6557 @@
+{
+  "generated_at": "2026-10-29T13:02:38.629Z",
+  "node": "24.19.0",
+  "icu": "78.3",
+  "tzdb": "2026b",
+  "case_count": 90,
+  "production_calls": 0,
+  "receipts": [
+    {
+      "id": "DEMO-001",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "7791b8b1c4759e82b4a0e680442198d08ed829b1b2d4945b7499005c0c0084fa",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "unmapped",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "6789",
+          "quotient": 84,
+          "remainder": 69,
+          "lookup_code": 69,
+          "source_label": "Hung",
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "6789 = 80*84 + 69"
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-002",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "79857dcbeeaaacc23d8654960d953159911893925e61430408c2162614d6fd99",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "unmapped",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "0000",
+          "quotient": 0,
+          "remainder": 0,
+          "lookup_code": null,
+          "source_label": null,
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "0 = 80*0 + 0"
+          }
+        ],
+        "warnings": [
+          "ZERO_POLICY_NOT_APPROVED"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-003",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "960f17188157d9d202d3c817ff6a02950914fa42fef485b3518daefced19e125",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "as80",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "0080",
+          "quotient": 1,
+          "remainder": 0,
+          "lookup_code": 80,
+          "source_label": "Đại cát",
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "80 = 80*1 + 0"
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-004",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "5fd4ae473e24b1bcbbe6aa0c731429fa1f426f06fd3ff43e614cad6efa5b40f1",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "unmapped",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "0001",
+          "quotient": 0,
+          "remainder": 1,
+          "lookup_code": 1,
+          "source_label": "Cát",
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "1 = 80*0 + 1"
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-005",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "43ffcb094487026406c0f0654a667c084c51744c54c565eca815b16f300a59a9",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "unmapped",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "9999",
+          "quotient": 124,
+          "remainder": 79,
+          "lookup_code": 79,
+          "source_label": "Hung",
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "9999 = 80*124 + 79"
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-006",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "2ac43276f026dbc6f48d45ed84b4035fdfaa034fa1b696519fc16d7c5347f5d7",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "unmapped",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "6231",
+          "quotient": 77,
+          "remainder": 71,
+          "lookup_code": 71,
+          "source_label": "Hung",
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "6231 = 80*77 + 71"
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-007",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "2f1805576fc0ad9fdcf4743a085539feb49fc815ab97a4d199e4937fae2007f3",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "unmapped",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "1986",
+          "quotient": 24,
+          "remainder": 66,
+          "lookup_code": 66,
+          "source_label": "Đại cát",
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "1986 = 80*24 + 66"
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-008",
+      "method": "tail80",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-01",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "3271e3109053eb415820399a88eb719a7dd179c90a14738f712ac83f80ec30bb",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "zero_policy": "unmapped",
+          "table_version": "user_supplied_80_draft1"
+        },
+        "calculation": {
+          "suffix": "3468",
+          "quotient": 43,
+          "remainder": 28,
+          "lookup_code": 28,
+          "source_label": "Đại cát",
+          "is_personalized": false
+        },
+        "trace": [
+          {
+            "formula": "N = 80*q + r",
+            "substitution": "3468 = 80*43 + 28"
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ],
+        "symbolic_source_text": null
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-009",
+      "method": "tail80",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "INVALID_SUFFIX",
+        "message": "Nhập đúng bốn chữ số, giữ số 0 ở đầu."
+      }
+    },
+    {
+      "id": "DEMO-010",
+      "method": "pairs",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-02",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "862d7b44df765c14ff33f29df7eccf069b0ad73f220bf62308dd13dd80b63979",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "strict",
+          "table_version": "legacy64-preserved-v1"
+        },
+        "calculation": {
+          "original_digits": "1234",
+          "evaluated_digits": "1234",
+          "pairs": [
+            {
+              "index": 0,
+              "pair": "12",
+              "group": "TM"
+            },
+            {
+              "index": 1,
+              "pair": "23",
+              "group": "HH"
+            },
+            {
+              "index": 2,
+              "pair": "34",
+              "group": "DN"
+            }
+          ],
+          "strict_pairs": [
+            {
+              "index": 0,
+              "pair": "12",
+              "group": "TM"
+            },
+            {
+              "index": 1,
+              "pair": "23",
+              "group": "HH"
+            },
+            {
+              "index": 2,
+              "pair": "34",
+              "group": "DN"
+            }
+          ],
+          "counts": {
+            "SK": 0,
+            "TY": 0,
+            "DN": 1,
+            "PV": 0,
+            "TM": 1,
+            "NQ": 0,
+            "LS": 0,
+            "HH": 1
+          },
+          "known": 3,
+          "total": 3,
+          "unresolved": []
+        },
+        "trace": [
+          {
+            "step": "Tách cặp liền nhau có chồng lấn; vị trí tính từ 0."
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-011",
+      "method": "pairs",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-02",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "b3148df638136ab2aac06701e24990a828b790b187e433742e2031f7444bfdef",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "strict",
+          "table_version": "legacy64-preserved-v1"
+        },
+        "calculation": {
+          "original_digits": "1819",
+          "evaluated_digits": "1819",
+          "pairs": [
+            {
+              "index": 0,
+              "pair": "18",
+              "group": "NQ"
+            },
+            {
+              "index": 1,
+              "pair": "81",
+              "group": "NQ"
+            },
+            {
+              "index": 2,
+              "pair": "19",
+              "group": "DN"
+            }
+          ],
+          "strict_pairs": [
+            {
+              "index": 0,
+              "pair": "18",
+              "group": "NQ"
+            },
+            {
+              "index": 1,
+              "pair": "81",
+              "group": "NQ"
+            },
+            {
+              "index": 2,
+              "pair": "19",
+              "group": "DN"
+            }
+          ],
+          "counts": {
+            "SK": 0,
+            "TY": 0,
+            "DN": 1,
+            "PV": 0,
+            "TM": 0,
+            "NQ": 2,
+            "LS": 0,
+            "HH": 0
+          },
+          "known": 3,
+          "total": 3,
+          "unresolved": []
+        },
+        "trace": [
+          {
+            "step": "Tách cặp liền nhau có chồng lấn; vị trí tính từ 0."
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-012",
+      "method": "pairs",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-02",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "99b84ba5b060f30a3a603d7269e359f15177cdb6dce4a2b7fb344dcb09647bb4",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "strict",
+          "table_version": "legacy64-preserved-v1"
+        },
+        "calculation": {
+          "original_digits": "1413",
+          "evaluated_digits": "1413",
+          "pairs": [
+            {
+              "index": 0,
+              "pair": "14",
+              "group": "SK"
+            },
+            {
+              "index": 1,
+              "pair": "41",
+              "group": "SK"
+            },
+            {
+              "index": 2,
+              "pair": "13",
+              "group": "TY"
+            }
+          ],
+          "strict_pairs": [
+            {
+              "index": 0,
+              "pair": "14",
+              "group": "SK"
+            },
+            {
+              "index": 1,
+              "pair": "41",
+              "group": "SK"
+            },
+            {
+              "index": 2,
+              "pair": "13",
+              "group": "TY"
+            }
+          ],
+          "counts": {
+            "SK": 2,
+            "TY": 1,
+            "DN": 0,
+            "PV": 0,
+            "TM": 0,
+            "NQ": 0,
+            "LS": 0,
+            "HH": 0
+          },
+          "known": 3,
+          "total": 3,
+          "unresolved": []
+        },
+        "trace": [
+          {
+            "step": "Tách cặp liền nhau có chồng lấn; vị trí tính từ 0."
+          }
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-013",
+      "method": "pairs",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-02",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "be9e5533ac45461bb810f7565b8e5eec2c586f9db5115db2fc351e3cf7f643ef",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "strict",
+          "table_version": "legacy64-preserved-v1"
+        },
+        "calculation": {
+          "original_digits": "5555",
+          "evaluated_digits": "5555",
+          "pairs": [
+            {
+              "index": 0,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "55",
+              "group": null
+            }
+          ],
+          "strict_pairs": [
+            {
+              "index": 0,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "55",
+              "group": null
+            }
+          ],
+          "counts": {
+            "SK": 0,
+            "TY": 0,
+            "DN": 0,
+            "PV": 0,
+            "TM": 0,
+            "NQ": 0,
+            "LS": 0,
+            "HH": 0
+          },
+          "known": 0,
+          "total": 3,
+          "unresolved": [
+            {
+              "index": 0,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "55",
+              "group": null
+            }
+          ]
+        },
+        "trace": [
+          {
+            "step": "Tách cặp liền nhau có chồng lấn; vị trí tính từ 0."
+          }
+        ],
+        "warnings": [
+          "ZERO_FIVE_UNRESOLVED"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-014",
+      "method": "pairs",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-02",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "5c73a1996f4c27d6478ee516ee3aecd95741518e91688ea0f5ebc6c7a1372a8b",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "strict",
+          "table_version": "legacy64-preserved-v1"
+        },
+        "calculation": {
+          "original_digits": "8553",
+          "evaluated_digits": "8553",
+          "pairs": [
+            {
+              "index": 0,
+              "pair": "85",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "53",
+              "group": null
+            }
+          ],
+          "strict_pairs": [
+            {
+              "index": 0,
+              "pair": "85",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "53",
+              "group": null
+            }
+          ],
+          "counts": {
+            "SK": 0,
+            "TY": 0,
+            "DN": 0,
+            "PV": 0,
+            "TM": 0,
+            "NQ": 0,
+            "LS": 0,
+            "HH": 0
+          },
+          "known": 0,
+          "total": 3,
+          "unresolved": [
+            {
+              "index": 0,
+              "pair": "85",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "53",
+              "group": null
+            }
+          ]
+        },
+        "trace": [
+          {
+            "step": "Tách cặp liền nhau có chồng lấn; vị trí tính từ 0."
+          }
+        ],
+        "warnings": [
+          "ZERO_FIVE_UNRESOLVED"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-015",
+      "method": "pairs",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-02",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "a1b1052f675fcb57c7a7a6d8d90fbaa82cebb610f094d88d9e6d578f775712de",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "strict",
+          "table_version": "legacy64-preserved-v1"
+        },
+        "calculation": {
+          "original_digits": "0000",
+          "evaluated_digits": "0000",
+          "pairs": [
+            {
+              "index": 0,
+              "pair": "00",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "00",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "00",
+              "group": null
+            }
+          ],
+          "strict_pairs": [
+            {
+              "index": 0,
+              "pair": "00",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "00",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "00",
+              "group": null
+            }
+          ],
+          "counts": {
+            "SK": 0,
+            "TY": 0,
+            "DN": 0,
+            "PV": 0,
+            "TM": 0,
+            "NQ": 0,
+            "LS": 0,
+            "HH": 0
+          },
+          "known": 0,
+          "total": 3,
+          "unresolved": [
+            {
+              "index": 0,
+              "pair": "00",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "00",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "00",
+              "group": null
+            }
+          ]
+        },
+        "trace": [
+          {
+            "step": "Tách cặp liền nhau có chồng lấn; vị trí tính từ 0."
+          }
+        ],
+        "warnings": [
+          "ZERO_FIVE_UNRESOLVED"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-016",
+      "method": "pairs",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-02",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "3bd17fd58a0884d6504fdd33c34792eafe368b405204b2e8fb08d9a6c1d76137",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "bridge5_diagnostic",
+          "table_version": "legacy64-preserved-v1"
+        },
+        "calculation": {
+          "original_digits": "8553",
+          "evaluated_digits": "83",
+          "pairs": [
+            {
+              "index": 0,
+              "pair": "83",
+              "group": "LS"
+            }
+          ],
+          "strict_pairs": [
+            {
+              "index": 0,
+              "pair": "85",
+              "group": null
+            },
+            {
+              "index": 1,
+              "pair": "55",
+              "group": null
+            },
+            {
+              "index": 2,
+              "pair": "53",
+              "group": null
+            }
+          ],
+          "counts": {
+            "SK": 0,
+            "TY": 0,
+            "DN": 0,
+            "PV": 0,
+            "TM": 0,
+            "NQ": 0,
+            "LS": 1,
+            "HH": 0
+          },
+          "known": 1,
+          "total": 1,
+          "unresolved": []
+        },
+        "trace": [
+          {
+            "step": "Tách cặp liền nhau có chồng lấn; vị trí tính từ 0."
+          }
+        ],
+        "warnings": [
+          "DIAGNOSTIC_ONLY_NOT_AN_APPROVED_TRADITIONAL_RULE"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-017",
+      "method": "digit_matrix",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-03",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "5b3d8453f06948f0b5849b3ed57c9efaa2a11c7dcbee41eb55e0f2b201eac651",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "raw_frequency_only"
+        },
+        "calculation": {
+          "counts": {
+            "0": 4,
+            "1": 0,
+            "2": 3,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 1
+          },
+          "axes": [
+            {
+              "digits": [
+                1,
+                4,
+                7
+              ],
+              "count": 0
+            },
+            {
+              "digits": [
+                2,
+                5,
+                8
+              ],
+              "count": 3
+            },
+            {
+              "digits": [
+                3,
+                6,
+                9
+              ],
+              "count": 1
+            },
+            {
+              "digits": [
+                1,
+                2,
+                3
+              ],
+              "count": 3
+            },
+            {
+              "digits": [
+                4,
+                5,
+                6
+              ],
+              "count": 0
+            },
+            {
+              "digits": [
+                7,
+                8,
+                9
+              ],
+              "count": 1
+            },
+            {
+              "digits": [
+                1,
+                5,
+                9
+              ],
+              "count": 1
+            },
+            {
+              "digits": [
+                3,
+                5,
+                7
+              ],
+              "count": 0
+            }
+          ],
+          "zero_count": 4
+        },
+        "trace": [],
+        "warnings": [
+          "Không tạo số phụ Psychomatrix khi chưa khóa trường phái.",
+          "Ô trống không có nghĩa thiếu trí nhớ, sức khỏe, may mắn hoặc đạo đức."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-018",
+      "method": "sequence",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-04",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "a09a97f4935a581bf35befdaffa77f380ff92d503bd23e484dcb29ddf4863c49",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "descriptive"
+        },
+        "calculation": {
+          "length": 8,
+          "unique_digits": 4,
+          "palindrome": true,
+          "runs": [
+            {
+              "digit": "1",
+              "length": 1
+            },
+            {
+              "digit": "2",
+              "length": 1
+            },
+            {
+              "digit": "3",
+              "length": 1
+            },
+            {
+              "digit": "4",
+              "length": 2
+            },
+            {
+              "digit": "3",
+              "length": 1
+            },
+            {
+              "digit": "2",
+              "length": 1
+            },
+            {
+              "digit": "1",
+              "length": 1
+            }
+          ],
+          "digit_sum": 20,
+          "root": 2
+        },
+        "trace": [],
+        "warnings": [
+          "Không suy khả năng ghi nhớ của người dùng từ đặc điểm chuỗi."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-019",
+      "method": "phone",
+      "synthetic": true,
+      "result": {
+        "raw": "0900 000 001",
+        "canonical": "0900000001",
+        "policy": "VN_DOMESTIC_10_V1",
+        "assigned_number_verified": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-020",
+      "method": "phone",
+      "synthetic": true,
+      "result": {
+        "raw": "+84 900 000 001",
+        "canonical": "0900000001",
+        "policy": "VN_DOMESTIC_10_V1",
+        "assigned_number_verified": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-021",
+      "method": "name",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-05",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "a7c8e47067ee414f4b333cccead4ae5169fbdcaa8fb411673fbd55bbf99d667f",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "table": "LATIN_CYCLE_1_9",
+          "reduction_policy": "single_digit",
+          "y_policy": "exclude"
+        },
+        "calculation": {
+          "original": "Đỗ An",
+          "nfc": "Đỗ An",
+          "latin": "DO AN",
+          "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+          "parts": [
+            {
+              "text": "DO",
+              "letters": [
+                {
+                  "letter": "D",
+                  "value": 4
+                },
+                {
+                  "letter": "O",
+                  "value": 6
+                }
+              ],
+              "sum": 10
+            },
+            {
+              "text": "AN",
+              "letters": [
+                {
+                  "letter": "A",
+                  "value": 1
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                }
+              ],
+              "sum": 6
+            }
+          ],
+          "sum": 16,
+          "reduction": {
+            "value": 7,
+            "path": [
+              16,
+              7
+            ],
+            "root": 7
+          },
+          "vowel_sum": 7,
+          "consonant_sum": 9,
+          "initial_sum": 5
+        },
+        "trace": [
+          {
+            "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+          }
+        ],
+        "warnings": [
+          "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+          "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-022",
+      "method": "name",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-05",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "9fcaa0f61b481ddcac10eb266e14f9fa2a9b7a588120ae93a177bfcc6364afbb",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "table": "LATIN_CYCLE_1_9",
+          "reduction_policy": "single_digit",
+          "y_policy": "exclude"
+        },
+        "calculation": {
+          "original": "ĐỖ AN",
+          "nfc": "ĐỖ AN",
+          "latin": "DO AN",
+          "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+          "parts": [
+            {
+              "text": "DO",
+              "letters": [
+                {
+                  "letter": "D",
+                  "value": 4
+                },
+                {
+                  "letter": "O",
+                  "value": 6
+                }
+              ],
+              "sum": 10
+            },
+            {
+              "text": "AN",
+              "letters": [
+                {
+                  "letter": "A",
+                  "value": 1
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                }
+              ],
+              "sum": 6
+            }
+          ],
+          "sum": 16,
+          "reduction": {
+            "value": 7,
+            "path": [
+              16,
+              7
+            ],
+            "root": 7
+          },
+          "vowel_sum": 7,
+          "consonant_sum": 9,
+          "initial_sum": 5
+        },
+        "trace": [
+          {
+            "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+          }
+        ],
+        "warnings": [
+          "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+          "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-023",
+      "method": "name",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-05",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "f1889cad1f00da221b2d3af6c5430ee52e34ab38a6dd822bb0ce49ad11bceef4",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "table": "LATIN_CYCLE_1_9",
+          "reduction_policy": "single_digit",
+          "y_policy": "exclude"
+        },
+        "calculation": {
+          "original": "Lê Bình",
+          "nfc": "Lê Bình",
+          "latin": "LE BINH",
+          "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+          "parts": [
+            {
+              "text": "LE",
+              "letters": [
+                {
+                  "letter": "L",
+                  "value": 3
+                },
+                {
+                  "letter": "E",
+                  "value": 5
+                }
+              ],
+              "sum": 8
+            },
+            {
+              "text": "BINH",
+              "letters": [
+                {
+                  "letter": "B",
+                  "value": 2
+                },
+                {
+                  "letter": "I",
+                  "value": 9
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                },
+                {
+                  "letter": "H",
+                  "value": 8
+                }
+              ],
+              "sum": 24
+            }
+          ],
+          "sum": 32,
+          "reduction": {
+            "value": 5,
+            "path": [
+              32,
+              5
+            ],
+            "root": 5
+          },
+          "vowel_sum": 14,
+          "consonant_sum": 18,
+          "initial_sum": 5
+        },
+        "trace": [
+          {
+            "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+          }
+        ],
+        "warnings": [
+          "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+          "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-024",
+      "method": "name",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-05",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "980dd16e6c95bdbcf5fa28f77feda64cc2dc8c09ec095ae87cf1899a29b10211",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "table": "LATIN_CYCLE_1_9",
+          "reduction_policy": "single_digit",
+          "y_policy": "exclude"
+        },
+        "calculation": {
+          "original": "Nguyễn An",
+          "nfc": "Nguyễn An",
+          "latin": "NGUYEN AN",
+          "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+          "parts": [
+            {
+              "text": "NGUYEN",
+              "letters": [
+                {
+                  "letter": "N",
+                  "value": 5
+                },
+                {
+                  "letter": "G",
+                  "value": 7
+                },
+                {
+                  "letter": "U",
+                  "value": 3
+                },
+                {
+                  "letter": "Y",
+                  "value": 7
+                },
+                {
+                  "letter": "E",
+                  "value": 5
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                }
+              ],
+              "sum": 32
+            },
+            {
+              "text": "AN",
+              "letters": [
+                {
+                  "letter": "A",
+                  "value": 1
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                }
+              ],
+              "sum": 6
+            }
+          ],
+          "sum": 38,
+          "reduction": {
+            "value": 2,
+            "path": [
+              38,
+              11,
+              2
+            ],
+            "root": 2
+          },
+          "vowel_sum": 9,
+          "consonant_sum": 29,
+          "initial_sum": 6
+        },
+        "trace": [
+          {
+            "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+          }
+        ],
+        "warnings": [
+          "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+          "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-025",
+      "method": "name",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-05",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "e15de954c222c30cc564080d03fe6fbc0dec1893bbc501ea9a33f064d3a10768",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "table": "LATIN_CYCLE_1_9",
+          "reduction_policy": "single_digit",
+          "y_policy": "exclude"
+        },
+        "calculation": {
+          "original": "Demo An",
+          "nfc": "Demo An",
+          "latin": "DEMO AN",
+          "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+          "parts": [
+            {
+              "text": "DEMO",
+              "letters": [
+                {
+                  "letter": "D",
+                  "value": 4
+                },
+                {
+                  "letter": "E",
+                  "value": 5
+                },
+                {
+                  "letter": "M",
+                  "value": 4
+                },
+                {
+                  "letter": "O",
+                  "value": 6
+                }
+              ],
+              "sum": 19
+            },
+            {
+              "text": "AN",
+              "letters": [
+                {
+                  "letter": "A",
+                  "value": 1
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                }
+              ],
+              "sum": 6
+            }
+          ],
+          "sum": 25,
+          "reduction": {
+            "value": 7,
+            "path": [
+              25,
+              7
+            ],
+            "root": 7
+          },
+          "vowel_sum": 12,
+          "consonant_sum": 13,
+          "initial_sum": 5
+        },
+        "trace": [
+          {
+            "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+          }
+        ],
+        "warnings": [
+          "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+          "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-026",
+      "method": "name",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-05",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "ef1ad73c9f5a58030f797d420c07af8b35c87d347ddb4283455d59e1fc8de8ee",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "table": "LATIN_CYCLE_1_9",
+          "reduction_policy": "single_digit",
+          "y_policy": "include"
+        },
+        "calculation": {
+          "original": "Ly An",
+          "nfc": "Ly An",
+          "latin": "LY AN",
+          "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+          "parts": [
+            {
+              "text": "LY",
+              "letters": [
+                {
+                  "letter": "L",
+                  "value": 3
+                },
+                {
+                  "letter": "Y",
+                  "value": 7
+                }
+              ],
+              "sum": 10
+            },
+            {
+              "text": "AN",
+              "letters": [
+                {
+                  "letter": "A",
+                  "value": 1
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                }
+              ],
+              "sum": 6
+            }
+          ],
+          "sum": 16,
+          "reduction": {
+            "value": 7,
+            "path": [
+              16,
+              7
+            ],
+            "root": 7
+          },
+          "vowel_sum": 8,
+          "consonant_sum": 8,
+          "initial_sum": 4
+        },
+        "trace": [
+          {
+            "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+          }
+        ],
+        "warnings": [
+          "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+          "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-027",
+      "method": "name",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-05",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "05cf396075d5e6ed4a7b1e8eaf703c5e67327304d3f40087adfe472a8d0fd730",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "table": "LATIN_CYCLE_1_9",
+          "reduction_policy": "single_digit",
+          "y_policy": "exclude"
+        },
+        "calculation": {
+          "original": "Ly An",
+          "nfc": "Ly An",
+          "latin": "LY AN",
+          "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+          "parts": [
+            {
+              "text": "LY",
+              "letters": [
+                {
+                  "letter": "L",
+                  "value": 3
+                },
+                {
+                  "letter": "Y",
+                  "value": 7
+                }
+              ],
+              "sum": 10
+            },
+            {
+              "text": "AN",
+              "letters": [
+                {
+                  "letter": "A",
+                  "value": 1
+                },
+                {
+                  "letter": "N",
+                  "value": 5
+                }
+              ],
+              "sum": 6
+            }
+          ],
+          "sum": 16,
+          "reduction": {
+            "value": 7,
+            "path": [
+              16,
+              7
+            ],
+            "root": 7
+          },
+          "vowel_sum": 1,
+          "consonant_sum": 15,
+          "initial_sum": 4
+        },
+        "trace": [
+          {
+            "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+          }
+        ],
+        "warnings": [
+          "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+          "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-028",
+      "method": "name",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "UNSUPPORTED_SCRIPT",
+        "message": "Chính sách VI-Latin chưa hỗ trợ văn tự hoặc dấu câu này; không đoán cách chuyển tự."
+      }
+    },
+    {
+      "id": "DEMO-029",
+      "method": "name",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "INVALID_NAME",
+        "message": "Tên có ký tự điều khiển."
+      }
+    },
+    {
+      "id": "DEMO-030",
+      "method": "birth",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-07",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "cf93d508e454c4f4147b01528dceaba007e2ddefde3369c9d94f08130b5f5494",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "variant": "all_digits",
+          "reduction_policy": "single_digit"
+        },
+        "calculation": {
+          "raw_digit_sum": 15,
+          "components": {
+            "day": {
+              "value": 2,
+              "path": [
+                29,
+                11,
+                2
+              ],
+              "root": 2
+            },
+            "month": {
+              "value": 2,
+              "path": [
+                2
+              ],
+              "root": 2
+            },
+            "year": {
+              "value": 2,
+              "path": [
+                2
+              ],
+              "root": 2
+            }
+          },
+          "calculation_sum": 15,
+          "reduction": {
+            "value": 6,
+            "path": [
+              15,
+              6
+            ],
+            "root": 6
+          }
+        },
+        "trace": [],
+        "warnings": [
+          "Các số trung gian thay đổi theo trường phái; không gộp ngầm."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-031",
+      "method": "birth",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "INVALID_INTEGER",
+        "message": "ngày: yêu cầu số nguyên từ 1 đến 28."
+      }
+    },
+    {
+      "id": "DEMO-032",
+      "method": "birth",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "INVALID_DATE",
+        "message": "Ngày phải là YYYY-MM-DD, không đoán DD/MM hoặc MM/DD."
+      }
+    },
+    {
+      "id": "DEMO-033",
+      "method": "birth",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-07",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "c3ff278daae11d68aa916091b9edacacc9f675593ec05b241e492dc1288115ef",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "variant": "all_digits",
+          "reduction_policy": "preserve_11_22_33"
+        },
+        "calculation": {
+          "raw_digit_sum": 24,
+          "components": {
+            "day": {
+              "value": 11,
+              "path": [
+                29,
+                11
+              ],
+              "root": 2
+            },
+            "month": {
+              "value": 11,
+              "path": [
+                11
+              ],
+              "root": 2
+            },
+            "year": {
+              "value": 11,
+              "path": [
+                11
+              ],
+              "root": 2
+            }
+          },
+          "calculation_sum": 24,
+          "reduction": {
+            "value": 6,
+            "path": [
+              24,
+              6
+            ],
+            "root": 6
+          }
+        },
+        "trace": [],
+        "warnings": [
+          "Các số trung gian thay đổi theo trường phái; không gộp ngầm."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-034",
+      "method": "birth",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-07",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "d7137aa3b16d73f0bf353117ba1e8d8137ed6b126fe9b6a74f071182543b3249",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "variant": "reduced_components",
+          "reduction_policy": "preserve_11_22_33"
+        },
+        "calculation": {
+          "raw_digit_sum": 24,
+          "components": {
+            "day": {
+              "value": 11,
+              "path": [
+                29,
+                11
+              ],
+              "root": 2
+            },
+            "month": {
+              "value": 11,
+              "path": [
+                11
+              ],
+              "root": 2
+            },
+            "year": {
+              "value": 11,
+              "path": [
+                11
+              ],
+              "root": 2
+            }
+          },
+          "calculation_sum": 33,
+          "reduction": {
+            "value": 33,
+            "path": [
+              33
+            ],
+            "root": 6
+          }
+        },
+        "trace": [],
+        "warnings": [
+          "Các số trung gian thay đổi theo trường phái; không gộp ngầm."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-035",
+      "method": "cycle",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-08",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "56131c2e2c8411ee56f79ea7442761aefc27f6fe27b15ffe71412822fc5235cc",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "boundary": "calendar",
+          "reduction": "single_digit",
+          "birthday_leap_policy": "feb28"
+        },
+        "calculation": {
+          "effective_year": 2026,
+          "personal_year": 9,
+          "personal_month": 1,
+          "sum": 9
+        },
+        "trace": [],
+        "warnings": [
+          "Chu kỳ biểu tượng không dự báo sự kiện."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-036",
+      "method": "cycle",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-08",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "bd7f9ee84c6ad8d16f5ccfb916b17cf4e31543510206647b90955d28542f5b6b",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "boundary": "birthday",
+          "reduction": "single_digit",
+          "birthday_leap_policy": "feb28"
+        },
+        "calculation": {
+          "effective_year": 2025,
+          "personal_year": 8,
+          "personal_month": null,
+          "sum": 17
+        },
+        "trace": [],
+        "warnings": [
+          "Chu kỳ biểu tượng không dự báo sự kiện."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-037",
+      "method": "timeline",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-06",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "10776173e67564f276852eb19c40e9dd1f04093e0cdb8e54725a8cf212e4e62d",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "leap_policy": "feb28",
+          "interval": "[start,end)"
+        },
+        "calculation": {
+          "age_at_as_of": 26,
+          "intervals": [
+            {
+              "age": 0,
+              "start": "2000-02-29",
+              "end_exclusive": "2001-02-28",
+              "events": []
+            },
+            {
+              "age": 1,
+              "start": "2001-02-28",
+              "end_exclusive": "2002-02-28",
+              "events": []
+            },
+            {
+              "age": 2,
+              "start": "2002-02-28",
+              "end_exclusive": "2003-02-28",
+              "events": []
+            },
+            {
+              "age": 3,
+              "start": "2003-02-28",
+              "end_exclusive": "2004-02-29",
+              "events": []
+            },
+            {
+              "age": 4,
+              "start": "2004-02-29",
+              "end_exclusive": "2005-02-28",
+              "events": []
+            },
+            {
+              "age": 5,
+              "start": "2005-02-28",
+              "end_exclusive": "2006-02-28",
+              "events": []
+            },
+            {
+              "age": 6,
+              "start": "2006-02-28",
+              "end_exclusive": "2007-02-28",
+              "events": []
+            },
+            {
+              "age": 7,
+              "start": "2007-02-28",
+              "end_exclusive": "2008-02-29",
+              "events": []
+            },
+            {
+              "age": 8,
+              "start": "2008-02-29",
+              "end_exclusive": "2009-02-28",
+              "events": []
+            },
+            {
+              "age": 9,
+              "start": "2009-02-28",
+              "end_exclusive": "2010-02-28",
+              "events": []
+            },
+            {
+              "age": 10,
+              "start": "2010-02-28",
+              "end_exclusive": "2011-02-28",
+              "events": []
+            },
+            {
+              "age": 11,
+              "start": "2011-02-28",
+              "end_exclusive": "2012-02-29",
+              "events": []
+            },
+            {
+              "age": 12,
+              "start": "2012-02-29",
+              "end_exclusive": "2013-02-28",
+              "events": []
+            },
+            {
+              "age": 13,
+              "start": "2013-02-28",
+              "end_exclusive": "2014-02-28",
+              "events": []
+            },
+            {
+              "age": 14,
+              "start": "2014-02-28",
+              "end_exclusive": "2015-02-28",
+              "events": []
+            },
+            {
+              "age": 15,
+              "start": "2015-02-28",
+              "end_exclusive": "2016-02-29",
+              "events": []
+            },
+            {
+              "age": 16,
+              "start": "2016-02-29",
+              "end_exclusive": "2017-02-28",
+              "events": []
+            },
+            {
+              "age": 17,
+              "start": "2017-02-28",
+              "end_exclusive": "2018-02-28",
+              "events": []
+            },
+            {
+              "age": 18,
+              "start": "2018-02-28",
+              "end_exclusive": "2019-02-28",
+              "events": []
+            },
+            {
+              "age": 19,
+              "start": "2019-02-28",
+              "end_exclusive": "2020-02-29",
+              "events": []
+            },
+            {
+              "age": 20,
+              "start": "2020-02-29",
+              "end_exclusive": "2021-02-28",
+              "events": []
+            },
+            {
+              "age": 21,
+              "start": "2021-02-28",
+              "end_exclusive": "2022-02-28",
+              "events": []
+            },
+            {
+              "age": 22,
+              "start": "2022-02-28",
+              "end_exclusive": "2023-02-28",
+              "events": []
+            },
+            {
+              "age": 23,
+              "start": "2023-02-28",
+              "end_exclusive": "2024-02-29",
+              "events": []
+            },
+            {
+              "age": 24,
+              "start": "2024-02-29",
+              "end_exclusive": "2025-02-28",
+              "events": []
+            },
+            {
+              "age": 25,
+              "start": "2025-02-28",
+              "end_exclusive": "2026-02-28",
+              "events": []
+            },
+            {
+              "age": 26,
+              "start": "2026-02-28",
+              "end_exclusive": "2027-02-28",
+              "events": []
+            },
+            {
+              "age": 27,
+              "start": "2027-02-28",
+              "end_exclusive": "2028-02-29",
+              "events": []
+            },
+            {
+              "age": 28,
+              "start": "2028-02-29",
+              "end_exclusive": "2029-02-28",
+              "events": []
+            },
+            {
+              "age": 29,
+              "start": "2029-02-28",
+              "end_exclusive": "2030-02-28",
+              "events": []
+            },
+            {
+              "age": 30,
+              "start": "2030-02-28",
+              "end_exclusive": "2031-02-28",
+              "events": []
+            },
+            {
+              "age": 31,
+              "start": "2031-02-28",
+              "end_exclusive": "2032-02-29",
+              "events": []
+            },
+            {
+              "age": 32,
+              "start": "2032-02-29",
+              "end_exclusive": "2033-02-28",
+              "events": []
+            },
+            {
+              "age": 33,
+              "start": "2033-02-28",
+              "end_exclusive": "2034-02-28",
+              "events": []
+            },
+            {
+              "age": 34,
+              "start": "2034-02-28",
+              "end_exclusive": "2035-02-28",
+              "events": []
+            },
+            {
+              "age": 35,
+              "start": "2035-02-28",
+              "end_exclusive": "2036-02-29",
+              "events": []
+            },
+            {
+              "age": 36,
+              "start": "2036-02-29",
+              "end_exclusive": "2037-02-28",
+              "events": []
+            },
+            {
+              "age": 37,
+              "start": "2037-02-28",
+              "end_exclusive": "2038-02-28",
+              "events": []
+            },
+            {
+              "age": 38,
+              "start": "2038-02-28",
+              "end_exclusive": "2039-02-28",
+              "events": []
+            },
+            {
+              "age": 39,
+              "start": "2039-02-28",
+              "end_exclusive": "2040-02-29",
+              "events": []
+            },
+            {
+              "age": 40,
+              "start": "2040-02-29",
+              "end_exclusive": "2041-02-28",
+              "events": []
+            },
+            {
+              "age": 41,
+              "start": "2041-02-28",
+              "end_exclusive": "2042-02-28",
+              "events": []
+            },
+            {
+              "age": 42,
+              "start": "2042-02-28",
+              "end_exclusive": "2043-02-28",
+              "events": []
+            },
+            {
+              "age": 43,
+              "start": "2043-02-28",
+              "end_exclusive": "2044-02-29",
+              "events": []
+            },
+            {
+              "age": 44,
+              "start": "2044-02-29",
+              "end_exclusive": "2045-02-28",
+              "events": []
+            },
+            {
+              "age": 45,
+              "start": "2045-02-28",
+              "end_exclusive": "2046-02-28",
+              "events": []
+            },
+            {
+              "age": 46,
+              "start": "2046-02-28",
+              "end_exclusive": "2047-02-28",
+              "events": []
+            },
+            {
+              "age": 47,
+              "start": "2047-02-28",
+              "end_exclusive": "2048-02-29",
+              "events": []
+            },
+            {
+              "age": 48,
+              "start": "2048-02-29",
+              "end_exclusive": "2049-02-28",
+              "events": []
+            },
+            {
+              "age": 49,
+              "start": "2049-02-28",
+              "end_exclusive": "2050-02-28",
+              "events": []
+            },
+            {
+              "age": 50,
+              "start": "2050-02-28",
+              "end_exclusive": "2051-02-28",
+              "events": []
+            },
+            {
+              "age": 51,
+              "start": "2051-02-28",
+              "end_exclusive": "2052-02-29",
+              "events": []
+            },
+            {
+              "age": 52,
+              "start": "2052-02-29",
+              "end_exclusive": "2053-02-28",
+              "events": []
+            },
+            {
+              "age": 53,
+              "start": "2053-02-28",
+              "end_exclusive": "2054-02-28",
+              "events": []
+            },
+            {
+              "age": 54,
+              "start": "2054-02-28",
+              "end_exclusive": "2055-02-28",
+              "events": []
+            },
+            {
+              "age": 55,
+              "start": "2055-02-28",
+              "end_exclusive": "2056-02-29",
+              "events": []
+            },
+            {
+              "age": 56,
+              "start": "2056-02-29",
+              "end_exclusive": "2057-02-28",
+              "events": []
+            },
+            {
+              "age": 57,
+              "start": "2057-02-28",
+              "end_exclusive": "2058-02-28",
+              "events": []
+            },
+            {
+              "age": 58,
+              "start": "2058-02-28",
+              "end_exclusive": "2059-02-28",
+              "events": []
+            },
+            {
+              "age": 59,
+              "start": "2059-02-28",
+              "end_exclusive": "2060-02-29",
+              "events": []
+            },
+            {
+              "age": 60,
+              "start": "2060-02-29",
+              "end_exclusive": "2061-02-28",
+              "events": []
+            },
+            {
+              "age": 61,
+              "start": "2061-02-28",
+              "end_exclusive": "2062-02-28",
+              "events": []
+            },
+            {
+              "age": 62,
+              "start": "2062-02-28",
+              "end_exclusive": "2063-02-28",
+              "events": []
+            },
+            {
+              "age": 63,
+              "start": "2063-02-28",
+              "end_exclusive": "2064-02-29",
+              "events": []
+            },
+            {
+              "age": 64,
+              "start": "2064-02-29",
+              "end_exclusive": "2065-02-28",
+              "events": []
+            },
+            {
+              "age": 65,
+              "start": "2065-02-28",
+              "end_exclusive": "2066-02-28",
+              "events": []
+            },
+            {
+              "age": 66,
+              "start": "2066-02-28",
+              "end_exclusive": "2067-02-28",
+              "events": []
+            },
+            {
+              "age": 67,
+              "start": "2067-02-28",
+              "end_exclusive": "2068-02-29",
+              "events": []
+            },
+            {
+              "age": 68,
+              "start": "2068-02-29",
+              "end_exclusive": "2069-02-28",
+              "events": []
+            },
+            {
+              "age": 69,
+              "start": "2069-02-28",
+              "end_exclusive": "2070-02-28",
+              "events": []
+            },
+            {
+              "age": 70,
+              "start": "2070-02-28",
+              "end_exclusive": "2071-02-28",
+              "events": []
+            },
+            {
+              "age": 71,
+              "start": "2071-02-28",
+              "end_exclusive": "2072-02-29",
+              "events": []
+            },
+            {
+              "age": 72,
+              "start": "2072-02-29",
+              "end_exclusive": "2073-02-28",
+              "events": []
+            },
+            {
+              "age": 73,
+              "start": "2073-02-28",
+              "end_exclusive": "2074-02-28",
+              "events": []
+            },
+            {
+              "age": 74,
+              "start": "2074-02-28",
+              "end_exclusive": "2075-02-28",
+              "events": []
+            },
+            {
+              "age": 75,
+              "start": "2075-02-28",
+              "end_exclusive": "2076-02-29",
+              "events": []
+            },
+            {
+              "age": 76,
+              "start": "2076-02-29",
+              "end_exclusive": "2077-02-28",
+              "events": []
+            },
+            {
+              "age": 77,
+              "start": "2077-02-28",
+              "end_exclusive": "2078-02-28",
+              "events": []
+            },
+            {
+              "age": 78,
+              "start": "2078-02-28",
+              "end_exclusive": "2079-02-28",
+              "events": []
+            },
+            {
+              "age": 79,
+              "start": "2079-02-28",
+              "end_exclusive": "2080-02-29",
+              "events": []
+            },
+            {
+              "age": 80,
+              "start": "2080-02-29",
+              "end_exclusive": "2081-02-28",
+              "events": []
+            },
+            {
+              "age": 81,
+              "start": "2081-02-28",
+              "end_exclusive": "2082-02-28",
+              "events": []
+            },
+            {
+              "age": 82,
+              "start": "2082-02-28",
+              "end_exclusive": "2083-02-28",
+              "events": []
+            },
+            {
+              "age": 83,
+              "start": "2083-02-28",
+              "end_exclusive": "2084-02-29",
+              "events": []
+            },
+            {
+              "age": 84,
+              "start": "2084-02-29",
+              "end_exclusive": "2085-02-28",
+              "events": []
+            },
+            {
+              "age": 85,
+              "start": "2085-02-28",
+              "end_exclusive": "2086-02-28",
+              "events": []
+            },
+            {
+              "age": 86,
+              "start": "2086-02-28",
+              "end_exclusive": "2087-02-28",
+              "events": []
+            },
+            {
+              "age": 87,
+              "start": "2087-02-28",
+              "end_exclusive": "2088-02-29",
+              "events": []
+            },
+            {
+              "age": 88,
+              "start": "2088-02-29",
+              "end_exclusive": "2089-02-28",
+              "events": []
+            },
+            {
+              "age": 89,
+              "start": "2089-02-28",
+              "end_exclusive": "2090-02-28",
+              "events": []
+            },
+            {
+              "age": 90,
+              "start": "2090-02-28",
+              "end_exclusive": "2091-02-28",
+              "events": []
+            },
+            {
+              "age": 91,
+              "start": "2091-02-28",
+              "end_exclusive": "2092-02-29",
+              "events": []
+            },
+            {
+              "age": 92,
+              "start": "2092-02-29",
+              "end_exclusive": "2093-02-28",
+              "events": []
+            },
+            {
+              "age": 93,
+              "start": "2093-02-28",
+              "end_exclusive": "2094-02-28",
+              "events": []
+            },
+            {
+              "age": 94,
+              "start": "2094-02-28",
+              "end_exclusive": "2095-02-28",
+              "events": []
+            },
+            {
+              "age": 95,
+              "start": "2095-02-28",
+              "end_exclusive": "2096-02-29",
+              "events": []
+            },
+            {
+              "age": 96,
+              "start": "2096-02-29",
+              "end_exclusive": "2097-02-28",
+              "events": []
+            },
+            {
+              "age": 97,
+              "start": "2097-02-28",
+              "end_exclusive": "2098-02-28",
+              "events": []
+            },
+            {
+              "age": 98,
+              "start": "2098-02-28",
+              "end_exclusive": "2099-02-28",
+              "events": []
+            },
+            {
+              "age": 99,
+              "start": "2099-02-28",
+              "end_exclusive": "2100-02-28",
+              "events": []
+            }
+          ]
+        },
+        "trace": [],
+        "warnings": [
+          "Khoảng tuổi là lịch, không phải tuổi thọ hoặc lịch biến cố."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-038",
+      "method": "timeline",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-06",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "abdce174e48afc7ba0fbe29f7bb48da094f71a6b1bf1d7a810492015cbd10364",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "leap_policy": "mar01",
+          "interval": "[start,end)"
+        },
+        "calculation": {
+          "age_at_as_of": 24,
+          "intervals": [
+            {
+              "age": 0,
+              "start": "2000-02-29",
+              "end_exclusive": "2001-03-01",
+              "events": []
+            },
+            {
+              "age": 1,
+              "start": "2001-03-01",
+              "end_exclusive": "2002-03-01",
+              "events": []
+            },
+            {
+              "age": 2,
+              "start": "2002-03-01",
+              "end_exclusive": "2003-03-01",
+              "events": []
+            },
+            {
+              "age": 3,
+              "start": "2003-03-01",
+              "end_exclusive": "2004-02-29",
+              "events": []
+            },
+            {
+              "age": 4,
+              "start": "2004-02-29",
+              "end_exclusive": "2005-03-01",
+              "events": []
+            },
+            {
+              "age": 5,
+              "start": "2005-03-01",
+              "end_exclusive": "2006-03-01",
+              "events": []
+            },
+            {
+              "age": 6,
+              "start": "2006-03-01",
+              "end_exclusive": "2007-03-01",
+              "events": []
+            },
+            {
+              "age": 7,
+              "start": "2007-03-01",
+              "end_exclusive": "2008-02-29",
+              "events": []
+            },
+            {
+              "age": 8,
+              "start": "2008-02-29",
+              "end_exclusive": "2009-03-01",
+              "events": []
+            },
+            {
+              "age": 9,
+              "start": "2009-03-01",
+              "end_exclusive": "2010-03-01",
+              "events": []
+            },
+            {
+              "age": 10,
+              "start": "2010-03-01",
+              "end_exclusive": "2011-03-01",
+              "events": []
+            },
+            {
+              "age": 11,
+              "start": "2011-03-01",
+              "end_exclusive": "2012-02-29",
+              "events": []
+            },
+            {
+              "age": 12,
+              "start": "2012-02-29",
+              "end_exclusive": "2013-03-01",
+              "events": []
+            },
+            {
+              "age": 13,
+              "start": "2013-03-01",
+              "end_exclusive": "2014-03-01",
+              "events": []
+            },
+            {
+              "age": 14,
+              "start": "2014-03-01",
+              "end_exclusive": "2015-03-01",
+              "events": []
+            },
+            {
+              "age": 15,
+              "start": "2015-03-01",
+              "end_exclusive": "2016-02-29",
+              "events": []
+            },
+            {
+              "age": 16,
+              "start": "2016-02-29",
+              "end_exclusive": "2017-03-01",
+              "events": []
+            },
+            {
+              "age": 17,
+              "start": "2017-03-01",
+              "end_exclusive": "2018-03-01",
+              "events": []
+            },
+            {
+              "age": 18,
+              "start": "2018-03-01",
+              "end_exclusive": "2019-03-01",
+              "events": []
+            },
+            {
+              "age": 19,
+              "start": "2019-03-01",
+              "end_exclusive": "2020-02-29",
+              "events": []
+            },
+            {
+              "age": 20,
+              "start": "2020-02-29",
+              "end_exclusive": "2021-03-01",
+              "events": []
+            },
+            {
+              "age": 21,
+              "start": "2021-03-01",
+              "end_exclusive": "2022-03-01",
+              "events": []
+            },
+            {
+              "age": 22,
+              "start": "2022-03-01",
+              "end_exclusive": "2023-03-01",
+              "events": []
+            },
+            {
+              "age": 23,
+              "start": "2023-03-01",
+              "end_exclusive": "2024-02-29",
+              "events": []
+            },
+            {
+              "age": 24,
+              "start": "2024-02-29",
+              "end_exclusive": "2025-03-01",
+              "events": []
+            },
+            {
+              "age": 25,
+              "start": "2025-03-01",
+              "end_exclusive": "2026-03-01",
+              "events": []
+            },
+            {
+              "age": 26,
+              "start": "2026-03-01",
+              "end_exclusive": "2027-03-01",
+              "events": []
+            },
+            {
+              "age": 27,
+              "start": "2027-03-01",
+              "end_exclusive": "2028-02-29",
+              "events": []
+            },
+            {
+              "age": 28,
+              "start": "2028-02-29",
+              "end_exclusive": "2029-03-01",
+              "events": []
+            },
+            {
+              "age": 29,
+              "start": "2029-03-01",
+              "end_exclusive": "2030-03-01",
+              "events": []
+            },
+            {
+              "age": 30,
+              "start": "2030-03-01",
+              "end_exclusive": "2031-03-01",
+              "events": []
+            }
+          ]
+        },
+        "trace": [],
+        "warnings": [
+          "Khoảng tuổi là lịch, không phải tuổi thọ hoặc lịch biến cố."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-039",
+      "method": "hypotheses",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-10",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "a5f468fb62c066dd2879a8b47bac1d5b2ac930cf58444a485143cb14c088dc57",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "policy": "no_preferred_hypothesis"
+        },
+        "calculation": {
+          "alternatives": [
+            {
+              "id": "paper",
+              "birth_date": "1970-05-10",
+              "result": {
+                "raw_digit_sum": 23,
+                "components": {
+                  "day": {
+                    "value": 1,
+                    "path": [
+                      10,
+                      1
+                    ],
+                    "root": 1
+                  },
+                  "month": {
+                    "value": 5,
+                    "path": [
+                      5
+                    ],
+                    "root": 5
+                  },
+                  "year": {
+                    "value": 8,
+                    "path": [
+                      17,
+                      8
+                    ],
+                    "root": 8
+                  }
+                },
+                "calculation_sum": 23,
+                "reduction": {
+                  "value": 5,
+                  "path": [
+                    23,
+                    5
+                  ],
+                  "root": 5
+                }
+              }
+            },
+            {
+              "id": "family",
+              "birth_date": "1972-05-10",
+              "result": {
+                "raw_digit_sum": 25,
+                "components": {
+                  "day": {
+                    "value": 1,
+                    "path": [
+                      10,
+                      1
+                    ],
+                    "root": 1
+                  },
+                  "month": {
+                    "value": 5,
+                    "path": [
+                      5
+                    ],
+                    "root": 5
+                  },
+                  "year": {
+                    "value": 1,
+                    "path": [
+                      19,
+                      10,
+                      1
+                    ],
+                    "root": 1
+                  }
+                },
+                "calculation_sum": 25,
+                "reduction": {
+                  "value": 7,
+                  "path": [
+                    25,
+                    7
+                  ],
+                  "root": 7
+                }
+              }
+            }
+          ],
+          "selected": null
+        },
+        "trace": [],
+        "warnings": [
+          "Không lấy trung bình hai ngày sinh; không chọn phương án theo lời luận nghe hợp."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-040",
+      "method": "time",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-09",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "452cb166aa78ffad7819938b69da2164b5d7f13b4ce6fe05f36b49e38dadfb98",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "provider": "Intl/ICU",
+          "node": "24.19.0",
+          "icu": "78.3",
+          "tzdb": "2026b",
+          "policy": "enumerate_candidates_no_silent_pick"
+        },
+        "calculation": {
+          "candidates": [
+            {
+              "utc": "2000-02-28T21:25:00.000Z",
+              "offset_seconds": 25200
+            }
+          ],
+          "state": "exact"
+        },
+        "trace": [],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-041",
+      "method": "time",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-09",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "b4b229d82b0f42346e0a7684d532c4b520a41ea402d2b82eeee46966184fb739",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "provider": "Intl/ICU",
+          "node": "24.19.0",
+          "icu": "78.3",
+          "tzdb": "2026b",
+          "policy": "enumerate_candidates_no_silent_pick"
+        },
+        "calculation": {
+          "candidates": [
+            {
+              "utc": "2026-10-25T00:30:00.000Z",
+              "offset_seconds": 7200
+            },
+            {
+              "utc": "2026-10-25T01:30:00.000Z",
+              "offset_seconds": 3600
+            }
+          ],
+          "state": "ambiguous"
+        },
+        "trace": [],
+        "warnings": [
+          "DST_FOLD_REQUIRES_CHOICE"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-042",
+      "method": "time",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-09",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "e0b31dce9fbcd33c27666da3d6fc1a40785c00139daf4f31a1dad1c2850d775c",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "provider": "Intl/ICU",
+          "node": "24.19.0",
+          "icu": "78.3",
+          "tzdb": "2026b",
+          "policy": "enumerate_candidates_no_silent_pick"
+        },
+        "calculation": {
+          "candidates": [],
+          "state": "nonexistent"
+        },
+        "trace": [],
+        "warnings": [
+          "DST_GAP_REQUIRES_CORRECTION"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-043",
+      "method": "time",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-09",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "9c5ee986912afb4fe6bc13ec5f693131ae1a76ecc521ee802b3d41dc57f8c9a8",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "provider": "Intl/ICU",
+          "node": "24.19.0",
+          "icu": "78.3",
+          "tzdb": "2026b",
+          "policy": "enumerate_candidates_no_silent_pick"
+        },
+        "calculation": {
+          "candidates": [
+            {
+              "utc": "2026-11-01T05:30:00.000Z",
+              "offset_seconds": -14400
+            },
+            {
+              "utc": "2026-11-01T06:30:00.000Z",
+              "offset_seconds": -18000
+            }
+          ],
+          "state": "ambiguous"
+        },
+        "trace": [],
+        "warnings": [
+          "DST_FOLD_REQUIRES_CHOICE"
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-044",
+      "method": "time",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "TIMEZONE_REQUIRED",
+        "message": "Cần tên múi giờ IANA rõ ràng."
+      }
+    },
+    {
+      "id": "DEMO-045",
+      "method": "coverage",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-11",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "ba30275ca10b1d288438d4e76f5c6a54e9b647902f9fda156dda2aa708aca39d",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "requirements_source": "server_registry"
+        },
+        "calculation": {
+          "numerator": 1,
+          "denominator": 3,
+          "ratio": 0.3333333333333333,
+          "missing": [
+            "birth_date",
+            "goal"
+          ],
+          "meaning": "input_coverage_not_accuracy"
+        },
+        "trace": [],
+        "warnings": [
+          "Danh sách valid_field_ids chỉ là mô phỏng; production phải lấy từ server-side validators."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-046",
+      "method": "coverage",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "CLIENT_SCORES_FORBIDDEN",
+        "message": "Không nhận trọng số hoặc điểm do client quyết định."
+      }
+    },
+    {
+      "id": "DEMO-047",
+      "method": "actions",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-12",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "41ee4fee77269ff3ce36137f306ef0d7393e71b185767d343a3f0790ede2cef3",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "window": "inclusive_due_date",
+          "cancelled": "excluded"
+        },
+        "calculation": {
+          "completed": 1,
+          "due": 2,
+          "ratio": 0.5,
+          "reason": null
+        },
+        "trace": [],
+        "warnings": [
+          "Không phải điểm kỷ luật hoặc giá trị con người; trạng thái done do người dùng tự khai."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-048",
+      "method": "actions",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-12",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "7fa7a165012f3cc9a89edc6f1e13234d73d0b672c9d7a3f337c0a9e13ae2823e",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "window": "inclusive_due_date",
+          "cancelled": "excluded"
+        },
+        "calculation": {
+          "completed": 0,
+          "due": 0,
+          "ratio": null,
+          "reason": "no_due_actions"
+        },
+        "trace": [],
+        "warnings": [
+          "Không phải điểm kỷ luật hoặc giá trị con người; trạng thái done do người dùng tự khai."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-049",
+      "method": "cashflow",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-13",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "75d52b786ba729d73350aa3c12c79d7504139e6fdb1be3c61b56dc9811f5be6c",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "money": "integer_minor_units_no_fx"
+        },
+        "calculation": {
+          "currency": "VND",
+          "inflows_minor": "12000000",
+          "outflows_minor": "7500000",
+          "net_minor": "4500000"
+        },
+        "trace": [],
+        "warnings": [
+          "Dữ liệu tự khai; không phải tư vấn đầu tư, thuế hoặc kế toán đã kiểm toán."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-050",
+      "method": "cashflow",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "MIXED_CURRENCY",
+        "message": "Không cộng nhiều tiền tệ khi chưa có chính sách tỷ giá."
+      }
+    },
+    {
+      "id": "DEMO-051",
+      "method": "resonance",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-14",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "5d1edf77dafca50f08e73c7e40d49680528d364ea372994ca4d3bd69ccde1e82",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "rating": "self_report_0_10",
+          "aggregation": "descriptive_only"
+        },
+        "calculation": {
+          "summaries": [
+            {
+              "field": "work",
+              "count": 2,
+              "sum": 14,
+              "mean": 7,
+              "median": 7
+            },
+            {
+              "field": "sound",
+              "count": 1,
+              "sum": 4,
+              "mean": 4,
+              "median": 4
+            }
+          ]
+        },
+        "trace": [],
+        "warnings": [
+          "Không kết luận nguyên nhân chữa lành từ tương quan hoặc điểm cảm nhận.",
+          "Không chẩn đoán sức khỏe."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-052",
+      "method": "preference",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-15",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "f68dccbeb540f61001ef1e8a17379ac8669741b0ead8b8338c98e194cf63458e",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "scoring": "declared_user_preference_not_destiny"
+        },
+        "calculation": {
+          "options": [
+            {
+              "id": "A",
+              "weighted_points": 76,
+              "covered_weight": 100,
+              "missing": [],
+              "complete": true
+            },
+            {
+              "id": "B",
+              "weighted_points": 72,
+              "covered_weight": 100,
+              "missing": [],
+              "complete": true
+            }
+          ],
+          "ranking_allowed": true
+        },
+        "trace": [],
+        "warnings": [
+          "Không chuẩn hóa phần thiếu thành điểm cao hơn; không xếp hạng cuối khi thiếu tiêu chí."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-053",
+      "method": "preference",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-15",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "f4f97c700457bcd637425c465223742ac70890cb91c0398124df2e049edddd79",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "scoring": "declared_user_preference_not_destiny"
+        },
+        "calculation": {
+          "options": [
+            {
+              "id": "A",
+              "weighted_points": 28,
+              "covered_weight": 40,
+              "missing": [
+                "time"
+              ],
+              "complete": false
+            }
+          ],
+          "ranking_allowed": false
+        },
+        "trace": [],
+        "warnings": [
+          "Không chuẩn hóa phần thiếu thành điểm cao hơn; không xếp hạng cuối khi thiếu tiêu chí."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-054",
+      "method": "hexagram",
+      "synthetic": true,
+      "result": {
+        "method_id": "LCF-16",
+        "method_version": "2.0",
+        "status": "REFERENCE_ONLY",
+        "claim_type": "derived_metric",
+        "input_digest": "d3cbdd2e35dff5a16341bcd5449f4e0c1c2bf22a87d7eed000d527d70d09dd8b",
+        "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+        "configuration": {
+          "orientation": "bottom_up",
+          "yin": 0,
+          "yang": 1,
+          "numbering": "binary_not_king_wen"
+        },
+        "calculation": {
+          "original_lines": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "changed_lines": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "original_binary_index": 17,
+          "changed_binary_index": 49
+        },
+        "trace": [],
+        "warnings": [
+          "Chỉ biến đổi cấu trúc sáu hào; chưa gán tên quẻ, lời quẻ hoặc dự đoán."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "limitations": [
+          "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+          "Không được mở production chỉ dựa vào demo."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-055",
+      "method": "blocked",
+      "synthetic": true,
+      "result": {
+        "method_id": "bazi.full",
+        "status": "METHOD_NOT_RELEASED",
+        "claim_type": "symbolic_interpretation",
+        "calculation": null,
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "missing_requirements": [
+          "approved_source_edition",
+          "licensed_rule_spec",
+          "independent_golden_cases",
+          "human_release_approval"
+        ],
+        "limitations": [
+          "Danh mục nghiên cứu được giữ; không sinh kết quả thay thế bằng suy đoán."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-056",
+      "method": "blocked",
+      "synthetic": true,
+      "result": {
+        "method_id": "ziwei.full",
+        "status": "METHOD_NOT_RELEASED",
+        "claim_type": "symbolic_interpretation",
+        "calculation": null,
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "missing_requirements": [
+          "approved_source_edition",
+          "licensed_rule_spec",
+          "independent_golden_cases",
+          "human_release_approval"
+        ],
+        "limitations": [
+          "Danh mục nghiên cứu được giữ; không sinh kết quả thay thế bằng suy đoán."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-057",
+      "method": "blocked",
+      "synthetic": true,
+      "result": {
+        "method_id": "nadi.record_lookup",
+        "status": "METHOD_NOT_RELEASED",
+        "claim_type": "symbolic_interpretation",
+        "calculation": null,
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "missing_requirements": [
+          "approved_source_edition",
+          "licensed_rule_spec",
+          "independent_golden_cases",
+          "human_release_approval"
+        ],
+        "limitations": [
+          "Danh mục nghiên cứu được giữ; không sinh kết quả thay thế bằng suy đoán."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-058",
+      "method": "blocked",
+      "synthetic": true,
+      "result": {
+        "method_id": "face.personality",
+        "status": "POLICY_BLOCKED",
+        "claim_type": "symbolic_interpretation",
+        "calculation": null,
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "missing_requirements": [],
+        "limitations": [
+          "Loại suy luận cá nhân này nằm ngoài phạm vi sản phẩm; không chỉ là thiếu dữ liệu."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-059",
+      "method": "blocked",
+      "synthetic": true,
+      "result": {
+        "method_id": "medical_risk_from_palm",
+        "status": "POLICY_BLOCKED",
+        "claim_type": "symbolic_interpretation",
+        "calculation": null,
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "missing_requirements": [],
+        "limitations": [
+          "Loại suy luận cá nhân này nằm ngoài phạm vi sản phẩm; không chỉ là thiếu dữ liệu."
+        ]
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-060",
+      "method": "authorization",
+      "synthetic": true,
+      "result": {
+        "allowed": true,
+        "reason": "AUTHORIZED_FOR_THIS_RESOURCE_AND_PURPOSE"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-061",
+      "method": "authorization",
+      "synthetic": true,
+      "result": {
+        "allowed": false,
+        "reason": "SCOPE_MISMATCH"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-062",
+      "method": "authorization",
+      "synthetic": true,
+      "result": {
+        "allowed": false,
+        "reason": "GRANT_INACTIVE"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-063",
+      "method": "authorization",
+      "synthetic": true,
+      "result": {
+        "allowed": false,
+        "reason": "PURPOSE_MISMATCH"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-064",
+      "method": "authorization",
+      "synthetic": true,
+      "result": {
+        "allowed": false,
+        "reason": "STALE_PERMISSION"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-065",
+      "method": "authorization",
+      "synthetic": true,
+      "result": {
+        "allowed": false,
+        "reason": "UNAUTHENTICATED"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-066",
+      "method": "claim",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "PROBABILITY_NOT_ALLOWED",
+        "message": "Không gán xác suất cho nội dung không phải mô hình xác suất."
+      }
+    },
+    {
+      "id": "DEMO-067",
+      "method": "claim",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "MODEL_NOT_APPROVED",
+        "message": "Không chỉ tin model ID do client nhập."
+      }
+    },
+    {
+      "id": "DEMO-068",
+      "method": "optimistic",
+      "synthetic": true,
+      "result": {
+        "version": 5,
+        "patch": {
+          "goal": "Viết bản nháp"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-069",
+      "method": "optimistic",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "VERSION_CONFLICT",
+        "message": "Phiên bản đã thay đổi; cần đọc lại trước khi cập nhật."
+      }
+    },
+    {
+      "id": "DEMO-070",
+      "method": "transition",
+      "synthetic": true,
+      "result": {
+        "kind": "order",
+        "previous": "pending_payment",
+        "event": "verified_payment",
+        "next": "paid"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-071",
+      "method": "transition",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "INVALID_STATE_TRANSITION",
+        "message": "Không cho phép order: draft → complete."
+      }
+    },
+    {
+      "id": "DEMO-072",
+      "method": "transition",
+      "synthetic": true,
+      "result": {
+        "kind": "deletion",
+        "previous": "verified",
+        "event": "restrict",
+        "next": "restricted"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-073",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 1,
+        "level_name": "Self Signal",
+        "subject_alias": "Hồ sơ giả lập 01",
+        "state": "DRAFT_REFERENCE_ONLY",
+        "content_digest": "6d8c0796a15b05672ee48c11cc211a5991bec74fa7938d1e4f25f1c918e076bc",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 01 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-074",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 2,
+        "level_name": "Inner Architecture",
+        "subject_alias": "Hồ sơ giả lập 02",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "a90d85724fa47e2884466871a219be87ab2e7a4b8d83cd2d9a20b5523a92f6ee",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 02 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "values_and_real_examples"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-075",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 3,
+        "level_name": "Behavior Code",
+        "subject_alias": "Hồ sơ giả lập 03",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "f7dcfb1fbdfd0cee252c742f96c570613ee0580416cf64d4830dd9dc24040d63",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 03 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "behavior_journal"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-076",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 4,
+        "level_name": "Work & Wealth Code",
+        "subject_alias": "Hồ sơ giả lập 04",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "9c030ee66016f2e1ecfabcdb324084c23e4d76bfd734a5bdc48cc59669ca0232",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 04 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "work_and_cashflow_data"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-077",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 5,
+        "level_name": "Relationship Field",
+        "subject_alias": "Hồ sơ giả lập 05",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "e3d05e086aa04a6c0a34d84897dcede951ef7012cd572c7c3d7399dbfdfaa06d",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 05 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "each_subject_sharing_grant"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-078",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 6,
+        "level_name": "Life Timeline",
+        "subject_alias": "Hồ sơ giả lập 06",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "db296c53a6a3fd8fff0351f5b4b771b901e854d973d7a0c9e0c3195984e26b7c",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 06 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "verified_event_history"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-079",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 7,
+        "level_name": "Body Intelligence",
+        "subject_alias": "Hồ sơ giả lập 07",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "205a78f08587fed6b6f26103df3f4789f7cc8b545498363d5035fca4b751171d",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 07 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "specialist_scope_and_image_permission"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-080",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 8,
+        "level_name": "Mission Path",
+        "subject_alias": "Hồ sơ giả lập 08",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "c54606b0a46797eb58b540ec42848d39a767e0deec62dfa379653bb1d405febb",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 08 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "chosen_values_and_service_experiment"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-081",
+      "method": "report",
+      "synthetic": true,
+      "result": {
+        "report_schema_version": "2.0",
+        "level": 9,
+        "level_name": "Full Life Code",
+        "subject_alias": "Hồ sơ giả lập 09",
+        "state": "BLOCKED_TEMPLATE_PREVIEW",
+        "content_digest": "dd821e2c96ef4f9c7ff5d30b163bc8a0970df4ed2da89be555d43bf94b5fe291",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu căn cứ",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ giả lập 09 là tên giả trong môi trường thử. Mục tiêu đang chọn: Hoàn thành một dự án học tập có phạm vi rõ.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả và giới hạn",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Có 0 kết quả tham chiếu. Các phép tính được trình bày riêng, không hợp nhất thành điểm số phận.",
+            "evidence_ids": []
+          },
+          {
+            "id": "timeline",
+            "title": "Hiện tại và bước tiếp theo",
+            "block": "timeline",
+            "content_role": "scope_explanation",
+            "text": "Lịch hành động do người dùng lựa chọn. Chưa có mô hình dự báo biến cố; không tạo năm rủi ro hoặc thời điểm sứ mệnh.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Kế hoạch 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: ghi dữ liệu ban đầu. Tuần 2: chọn một thay đổi nhỏ. Tuần 3: thực hiện và ghi nhận. Tuần 4: xem lại điều phù hợp và điều cần đổi.",
+            "evidence_ids": [
+              "demo.input"
+            ]
+          }
+        ],
+        "method_results": [],
+        "missing_requirements": [
+          "approved_relevant_level_outputs"
+        ],
+        "score": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-082",
+      "method": "profile_pipeline",
+      "synthetic": true,
+      "result": {
+        "pipeline_version": "2.0.reference",
+        "level": 1,
+        "subject_alias": "Hồ sơ tổng hợp A",
+        "state": "DRAFT_REFERENCE_ONLY",
+        "input_digest": "9e6de69f4c2edd603d9f4e0cdaacc116db231086bf6bd98aa782da273978999a",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu được sử dụng",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ tổng hợp A là hồ sơ tổng hợp dùng để kiểm tra luồng. Mục tiêu do người dùng lựa chọn: Hoàn thành bản mô tả một sản phẩm. Không nhận diện người thật hoặc suy đoán giới tính.",
+            "evidence_ids": [
+              "input.profile",
+              "input.goal"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả tính và cách đọc",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Theo bảng Latin demo, tổng tên là 25. Tổng chữ số ngày sinh là 31; chuỗi rút gọn: 31 → 4. Những kết quả này là phép quy đổi theo cấu hình, không đo trí tuệ, đạo đức, sức khỏe hoặc giá trị con người.",
+            "evidence_ids": [
+              "LCF-05",
+              "LCF-07",
+              "LCF-08",
+              "LCF-06",
+              "LCF-09"
+            ]
+          },
+          {
+            "id": "timeline",
+            "title": "Thời gian và phạm vi",
+            "block": "timeline",
+            "content_role": "symbolic_context",
+            "text": "Chu kỳ số theo năm dương lịch đang cho mã 4 ở năm 2026. Mã được trình bày riêng với lịch hành động, không biến thành năm thành công hoặc tai họa. Khung tuổi chỉ là các khoảng lịch không kèm biến cố.",
+            "evidence_ids": [
+              "LCF-08",
+              "LCF-06"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Một bước thực tế trong 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: viết đầu ra cụ thể của mục tiêu “Hoàn thành bản mô tả một sản phẩm”. Tuần 2: chọn lịch thực hiện vừa sức. Tuần 3: ghi việc đã làm và điều cản trở. Tuần 4: xem lại kết quả theo tiêu chí tự chọn; sửa kế hoạch thay vì cố làm cho trải nghiệm khớp một lời luận.",
+            "evidence_ids": [
+              "input.goal"
+            ]
+          }
+        ],
+        "method_results": [
+          {
+            "method_id": "LCF-05",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "251b52dc6e3e042bbbc7c0061e633bdf0eb2825b4e346bf22ed6e5cf33cd595a",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "table": "LATIN_CYCLE_1_9",
+              "reduction_policy": "single_digit",
+              "y_policy": "exclude"
+            },
+            "calculation": {
+              "original": "Demo An",
+              "nfc": "Demo An",
+              "latin": "DEMO AN",
+              "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+              "parts": [
+                {
+                  "text": "DEMO",
+                  "letters": [
+                    {
+                      "letter": "D",
+                      "value": 4
+                    },
+                    {
+                      "letter": "E",
+                      "value": 5
+                    },
+                    {
+                      "letter": "M",
+                      "value": 4
+                    },
+                    {
+                      "letter": "O",
+                      "value": 6
+                    }
+                  ],
+                  "sum": 19
+                },
+                {
+                  "text": "AN",
+                  "letters": [
+                    {
+                      "letter": "A",
+                      "value": 1
+                    },
+                    {
+                      "letter": "N",
+                      "value": 5
+                    }
+                  ],
+                  "sum": 6
+                }
+              ],
+              "sum": 25,
+              "reduction": {
+                "value": 7,
+                "path": [
+                  25,
+                  7
+                ],
+                "root": 7
+              },
+              "vowel_sum": 12,
+              "consonant_sum": 13,
+              "initial_sum": 5
+            },
+            "trace": [
+              {
+                "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+              }
+            ],
+            "warnings": [
+              "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+              "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-07",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "e429d816ebbef5d5b761cc53a61765a2425a811ce149fdfc72607ae048493ced",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "variant": "all_digits",
+              "reduction_policy": "single_digit"
+            },
+            "calculation": {
+              "raw_digit_sum": 31,
+              "components": {
+                "day": {
+                  "value": 6,
+                  "path": [
+                    15,
+                    6
+                  ],
+                  "root": 6
+                },
+                "month": {
+                  "value": 6,
+                  "path": [
+                    6
+                  ],
+                  "root": 6
+                },
+                "year": {
+                  "value": 1,
+                  "path": [
+                    19,
+                    10,
+                    1
+                  ],
+                  "root": 1
+                }
+              },
+              "calculation_sum": 31,
+              "reduction": {
+                "value": 4,
+                "path": [
+                  31,
+                  4
+                ],
+                "root": 4
+              }
+            },
+            "trace": [],
+            "warnings": [
+              "Các số trung gian thay đổi theo trường phái; không gộp ngầm."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-08",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "45e6a77d40b34a737aa75ab2347e6ec041509f869b5eab8bcc8ba6b7bdbdd707",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "boundary": "calendar",
+              "reduction": "single_digit",
+              "birthday_leap_policy": "feb28"
+            },
+            "calculation": {
+              "effective_year": 2026,
+              "personal_year": 4,
+              "personal_month": null,
+              "sum": 13
+            },
+            "trace": [],
+            "warnings": [
+              "Chu kỳ biểu tượng không dự báo sự kiện."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-06",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "01e1d664d1d928875ea54cd70de535f2669b2619238306aaa99f8ceee66df411",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "leap_policy": "feb28",
+              "interval": "[start,end)"
+            },
+            "calculation": {
+              "age_at_as_of": 36,
+              "intervals": [
+                {
+                  "age": 0,
+                  "start": "1990-06-15",
+                  "end_exclusive": "1991-06-15",
+                  "events": []
+                },
+                {
+                  "age": 1,
+                  "start": "1991-06-15",
+                  "end_exclusive": "1992-06-15",
+                  "events": []
+                },
+                {
+                  "age": 2,
+                  "start": "1992-06-15",
+                  "end_exclusive": "1993-06-15",
+                  "events": []
+                },
+                {
+                  "age": 3,
+                  "start": "1993-06-15",
+                  "end_exclusive": "1994-06-15",
+                  "events": []
+                },
+                {
+                  "age": 4,
+                  "start": "1994-06-15",
+                  "end_exclusive": "1995-06-15",
+                  "events": []
+                },
+                {
+                  "age": 5,
+                  "start": "1995-06-15",
+                  "end_exclusive": "1996-06-15",
+                  "events": []
+                },
+                {
+                  "age": 6,
+                  "start": "1996-06-15",
+                  "end_exclusive": "1997-06-15",
+                  "events": []
+                },
+                {
+                  "age": 7,
+                  "start": "1997-06-15",
+                  "end_exclusive": "1998-06-15",
+                  "events": []
+                },
+                {
+                  "age": 8,
+                  "start": "1998-06-15",
+                  "end_exclusive": "1999-06-15",
+                  "events": []
+                },
+                {
+                  "age": 9,
+                  "start": "1999-06-15",
+                  "end_exclusive": "2000-06-15",
+                  "events": []
+                },
+                {
+                  "age": 10,
+                  "start": "2000-06-15",
+                  "end_exclusive": "2001-06-15",
+                  "events": []
+                },
+                {
+                  "age": 11,
+                  "start": "2001-06-15",
+                  "end_exclusive": "2002-06-15",
+                  "events": []
+                },
+                {
+                  "age": 12,
+                  "start": "2002-06-15",
+                  "end_exclusive": "2003-06-15",
+                  "events": []
+                },
+                {
+                  "age": 13,
+                  "start": "2003-06-15",
+                  "end_exclusive": "2004-06-15",
+                  "events": []
+                },
+                {
+                  "age": 14,
+                  "start": "2004-06-15",
+                  "end_exclusive": "2005-06-15",
+                  "events": []
+                },
+                {
+                  "age": 15,
+                  "start": "2005-06-15",
+                  "end_exclusive": "2006-06-15",
+                  "events": []
+                },
+                {
+                  "age": 16,
+                  "start": "2006-06-15",
+                  "end_exclusive": "2007-06-15",
+                  "events": []
+                },
+                {
+                  "age": 17,
+                  "start": "2007-06-15",
+                  "end_exclusive": "2008-06-15",
+                  "events": []
+                },
+                {
+                  "age": 18,
+                  "start": "2008-06-15",
+                  "end_exclusive": "2009-06-15",
+                  "events": []
+                },
+                {
+                  "age": 19,
+                  "start": "2009-06-15",
+                  "end_exclusive": "2010-06-15",
+                  "events": []
+                },
+                {
+                  "age": 20,
+                  "start": "2010-06-15",
+                  "end_exclusive": "2011-06-15",
+                  "events": []
+                },
+                {
+                  "age": 21,
+                  "start": "2011-06-15",
+                  "end_exclusive": "2012-06-15",
+                  "events": []
+                },
+                {
+                  "age": 22,
+                  "start": "2012-06-15",
+                  "end_exclusive": "2013-06-15",
+                  "events": []
+                },
+                {
+                  "age": 23,
+                  "start": "2013-06-15",
+                  "end_exclusive": "2014-06-15",
+                  "events": []
+                },
+                {
+                  "age": 24,
+                  "start": "2014-06-15",
+                  "end_exclusive": "2015-06-15",
+                  "events": []
+                },
+                {
+                  "age": 25,
+                  "start": "2015-06-15",
+                  "end_exclusive": "2016-06-15",
+                  "events": []
+                },
+                {
+                  "age": 26,
+                  "start": "2016-06-15",
+                  "end_exclusive": "2017-06-15",
+                  "events": []
+                },
+                {
+                  "age": 27,
+                  "start": "2017-06-15",
+                  "end_exclusive": "2018-06-15",
+                  "events": []
+                },
+                {
+                  "age": 28,
+                  "start": "2018-06-15",
+                  "end_exclusive": "2019-06-15",
+                  "events": []
+                },
+                {
+                  "age": 29,
+                  "start": "2019-06-15",
+                  "end_exclusive": "2020-06-15",
+                  "events": []
+                },
+                {
+                  "age": 30,
+                  "start": "2020-06-15",
+                  "end_exclusive": "2021-06-15",
+                  "events": []
+                },
+                {
+                  "age": 31,
+                  "start": "2021-06-15",
+                  "end_exclusive": "2022-06-15",
+                  "events": []
+                },
+                {
+                  "age": 32,
+                  "start": "2022-06-15",
+                  "end_exclusive": "2023-06-15",
+                  "events": []
+                },
+                {
+                  "age": 33,
+                  "start": "2023-06-15",
+                  "end_exclusive": "2024-06-15",
+                  "events": []
+                },
+                {
+                  "age": 34,
+                  "start": "2024-06-15",
+                  "end_exclusive": "2025-06-15",
+                  "events": []
+                },
+                {
+                  "age": 35,
+                  "start": "2025-06-15",
+                  "end_exclusive": "2026-06-15",
+                  "events": []
+                },
+                {
+                  "age": 36,
+                  "start": "2026-06-15",
+                  "end_exclusive": "2027-06-15",
+                  "events": []
+                },
+                {
+                  "age": 37,
+                  "start": "2027-06-15",
+                  "end_exclusive": "2028-06-15",
+                  "events": []
+                },
+                {
+                  "age": 38,
+                  "start": "2028-06-15",
+                  "end_exclusive": "2029-06-15",
+                  "events": []
+                },
+                {
+                  "age": 39,
+                  "start": "2029-06-15",
+                  "end_exclusive": "2030-06-15",
+                  "events": []
+                },
+                {
+                  "age": 40,
+                  "start": "2030-06-15",
+                  "end_exclusive": "2031-06-15",
+                  "events": []
+                },
+                {
+                  "age": 41,
+                  "start": "2031-06-15",
+                  "end_exclusive": "2032-06-15",
+                  "events": []
+                },
+                {
+                  "age": 42,
+                  "start": "2032-06-15",
+                  "end_exclusive": "2033-06-15",
+                  "events": []
+                },
+                {
+                  "age": 43,
+                  "start": "2033-06-15",
+                  "end_exclusive": "2034-06-15",
+                  "events": []
+                },
+                {
+                  "age": 44,
+                  "start": "2034-06-15",
+                  "end_exclusive": "2035-06-15",
+                  "events": []
+                },
+                {
+                  "age": 45,
+                  "start": "2035-06-15",
+                  "end_exclusive": "2036-06-15",
+                  "events": []
+                },
+                {
+                  "age": 46,
+                  "start": "2036-06-15",
+                  "end_exclusive": "2037-06-15",
+                  "events": []
+                },
+                {
+                  "age": 47,
+                  "start": "2037-06-15",
+                  "end_exclusive": "2038-06-15",
+                  "events": []
+                },
+                {
+                  "age": 48,
+                  "start": "2038-06-15",
+                  "end_exclusive": "2039-06-15",
+                  "events": []
+                },
+                {
+                  "age": 49,
+                  "start": "2039-06-15",
+                  "end_exclusive": "2040-06-15",
+                  "events": []
+                },
+                {
+                  "age": 50,
+                  "start": "2040-06-15",
+                  "end_exclusive": "2041-06-15",
+                  "events": []
+                },
+                {
+                  "age": 51,
+                  "start": "2041-06-15",
+                  "end_exclusive": "2042-06-15",
+                  "events": []
+                },
+                {
+                  "age": 52,
+                  "start": "2042-06-15",
+                  "end_exclusive": "2043-06-15",
+                  "events": []
+                },
+                {
+                  "age": 53,
+                  "start": "2043-06-15",
+                  "end_exclusive": "2044-06-15",
+                  "events": []
+                },
+                {
+                  "age": 54,
+                  "start": "2044-06-15",
+                  "end_exclusive": "2045-06-15",
+                  "events": []
+                },
+                {
+                  "age": 55,
+                  "start": "2045-06-15",
+                  "end_exclusive": "2046-06-15",
+                  "events": []
+                },
+                {
+                  "age": 56,
+                  "start": "2046-06-15",
+                  "end_exclusive": "2047-06-15",
+                  "events": []
+                },
+                {
+                  "age": 57,
+                  "start": "2047-06-15",
+                  "end_exclusive": "2048-06-15",
+                  "events": []
+                },
+                {
+                  "age": 58,
+                  "start": "2048-06-15",
+                  "end_exclusive": "2049-06-15",
+                  "events": []
+                },
+                {
+                  "age": 59,
+                  "start": "2049-06-15",
+                  "end_exclusive": "2050-06-15",
+                  "events": []
+                },
+                {
+                  "age": 60,
+                  "start": "2050-06-15",
+                  "end_exclusive": "2051-06-15",
+                  "events": []
+                },
+                {
+                  "age": 61,
+                  "start": "2051-06-15",
+                  "end_exclusive": "2052-06-15",
+                  "events": []
+                },
+                {
+                  "age": 62,
+                  "start": "2052-06-15",
+                  "end_exclusive": "2053-06-15",
+                  "events": []
+                },
+                {
+                  "age": 63,
+                  "start": "2053-06-15",
+                  "end_exclusive": "2054-06-15",
+                  "events": []
+                },
+                {
+                  "age": 64,
+                  "start": "2054-06-15",
+                  "end_exclusive": "2055-06-15",
+                  "events": []
+                },
+                {
+                  "age": 65,
+                  "start": "2055-06-15",
+                  "end_exclusive": "2056-06-15",
+                  "events": []
+                },
+                {
+                  "age": 66,
+                  "start": "2056-06-15",
+                  "end_exclusive": "2057-06-15",
+                  "events": []
+                },
+                {
+                  "age": 67,
+                  "start": "2057-06-15",
+                  "end_exclusive": "2058-06-15",
+                  "events": []
+                },
+                {
+                  "age": 68,
+                  "start": "2058-06-15",
+                  "end_exclusive": "2059-06-15",
+                  "events": []
+                },
+                {
+                  "age": 69,
+                  "start": "2059-06-15",
+                  "end_exclusive": "2060-06-15",
+                  "events": []
+                },
+                {
+                  "age": 70,
+                  "start": "2060-06-15",
+                  "end_exclusive": "2061-06-15",
+                  "events": []
+                },
+                {
+                  "age": 71,
+                  "start": "2061-06-15",
+                  "end_exclusive": "2062-06-15",
+                  "events": []
+                },
+                {
+                  "age": 72,
+                  "start": "2062-06-15",
+                  "end_exclusive": "2063-06-15",
+                  "events": []
+                },
+                {
+                  "age": 73,
+                  "start": "2063-06-15",
+                  "end_exclusive": "2064-06-15",
+                  "events": []
+                },
+                {
+                  "age": 74,
+                  "start": "2064-06-15",
+                  "end_exclusive": "2065-06-15",
+                  "events": []
+                },
+                {
+                  "age": 75,
+                  "start": "2065-06-15",
+                  "end_exclusive": "2066-06-15",
+                  "events": []
+                },
+                {
+                  "age": 76,
+                  "start": "2066-06-15",
+                  "end_exclusive": "2067-06-15",
+                  "events": []
+                },
+                {
+                  "age": 77,
+                  "start": "2067-06-15",
+                  "end_exclusive": "2068-06-15",
+                  "events": []
+                },
+                {
+                  "age": 78,
+                  "start": "2068-06-15",
+                  "end_exclusive": "2069-06-15",
+                  "events": []
+                },
+                {
+                  "age": 79,
+                  "start": "2069-06-15",
+                  "end_exclusive": "2070-06-15",
+                  "events": []
+                },
+                {
+                  "age": 80,
+                  "start": "2070-06-15",
+                  "end_exclusive": "2071-06-15",
+                  "events": []
+                },
+                {
+                  "age": 81,
+                  "start": "2071-06-15",
+                  "end_exclusive": "2072-06-15",
+                  "events": []
+                },
+                {
+                  "age": 82,
+                  "start": "2072-06-15",
+                  "end_exclusive": "2073-06-15",
+                  "events": []
+                },
+                {
+                  "age": 83,
+                  "start": "2073-06-15",
+                  "end_exclusive": "2074-06-15",
+                  "events": []
+                },
+                {
+                  "age": 84,
+                  "start": "2074-06-15",
+                  "end_exclusive": "2075-06-15",
+                  "events": []
+                },
+                {
+                  "age": 85,
+                  "start": "2075-06-15",
+                  "end_exclusive": "2076-06-15",
+                  "events": []
+                },
+                {
+                  "age": 86,
+                  "start": "2076-06-15",
+                  "end_exclusive": "2077-06-15",
+                  "events": []
+                },
+                {
+                  "age": 87,
+                  "start": "2077-06-15",
+                  "end_exclusive": "2078-06-15",
+                  "events": []
+                },
+                {
+                  "age": 88,
+                  "start": "2078-06-15",
+                  "end_exclusive": "2079-06-15",
+                  "events": []
+                },
+                {
+                  "age": 89,
+                  "start": "2079-06-15",
+                  "end_exclusive": "2080-06-15",
+                  "events": []
+                },
+                {
+                  "age": 90,
+                  "start": "2080-06-15",
+                  "end_exclusive": "2081-06-15",
+                  "events": []
+                },
+                {
+                  "age": 91,
+                  "start": "2081-06-15",
+                  "end_exclusive": "2082-06-15",
+                  "events": []
+                },
+                {
+                  "age": 92,
+                  "start": "2082-06-15",
+                  "end_exclusive": "2083-06-15",
+                  "events": []
+                },
+                {
+                  "age": 93,
+                  "start": "2083-06-15",
+                  "end_exclusive": "2084-06-15",
+                  "events": []
+                },
+                {
+                  "age": 94,
+                  "start": "2084-06-15",
+                  "end_exclusive": "2085-06-15",
+                  "events": []
+                },
+                {
+                  "age": 95,
+                  "start": "2085-06-15",
+                  "end_exclusive": "2086-06-15",
+                  "events": []
+                },
+                {
+                  "age": 96,
+                  "start": "2086-06-15",
+                  "end_exclusive": "2087-06-15",
+                  "events": []
+                },
+                {
+                  "age": 97,
+                  "start": "2087-06-15",
+                  "end_exclusive": "2088-06-15",
+                  "events": []
+                },
+                {
+                  "age": 98,
+                  "start": "2088-06-15",
+                  "end_exclusive": "2089-06-15",
+                  "events": []
+                },
+                {
+                  "age": 99,
+                  "start": "2089-06-15",
+                  "end_exclusive": "2090-06-15",
+                  "events": []
+                }
+              ]
+            },
+            "trace": [],
+            "warnings": [
+              "Khoảng tuổi là lịch, không phải tuổi thọ hoặc lịch biến cố."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-09",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "e1ebb49ca433323c34e40561ec62f2c74c20465594cd7649a1ae02a89aca0337",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "provider": "Intl/ICU",
+              "node": "24.19.0",
+              "icu": "78.3",
+              "tzdb": "2026b",
+              "policy": "enumerate_candidates_no_silent_pick"
+            },
+            "calculation": {
+              "candidates": [
+                {
+                  "utc": "1990-06-15T00:30:00.000Z",
+                  "offset_seconds": 25200
+                }
+              ],
+              "state": "exact"
+            },
+            "trace": [],
+            "warnings": [],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          }
+        ],
+        "data_coverage": {
+          "numerator": 3,
+          "denominator": 3,
+          "ratio": 1,
+          "missing": [],
+          "meaning": "input_coverage_not_accuracy"
+        },
+        "missing_inputs": [],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-083",
+      "method": "profile_pipeline",
+      "synthetic": true,
+      "result": {
+        "pipeline_version": "2.0.reference",
+        "level": 1,
+        "subject_alias": "Hồ sơ tổng hợp B",
+        "state": "PARTIAL_REFERENCE",
+        "input_digest": "0b29a6f92a32ac334bd4e86108c34bf2242981b6e2711e2c10ce1737771e41e9",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu được sử dụng",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ tổng hợp B là hồ sơ tổng hợp dùng để kiểm tra luồng. Mục tiêu do người dùng lựa chọn: Lập lịch học một kỹ năng. Không nhận diện người thật hoặc suy đoán giới tính.",
+            "evidence_ids": [
+              "input.profile",
+              "input.goal"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả tính và cách đọc",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Theo bảng Latin demo, tổng tên là 43. Tổng chữ số ngày sinh là 13; chuỗi rút gọn: 13 → 4. Những kết quả này là phép quy đổi theo cấu hình, không đo trí tuệ, đạo đức, sức khỏe hoặc giá trị con người.",
+            "evidence_ids": [
+              "LCF-05",
+              "LCF-07",
+              "LCF-08",
+              "LCF-06"
+            ]
+          },
+          {
+            "id": "timeline",
+            "title": "Thời gian và phạm vi",
+            "block": "timeline",
+            "content_role": "symbolic_context",
+            "text": "Chu kỳ số theo năm dương lịch đang cho mã 2 ở năm 2026. Mã được trình bày riêng với lịch hành động, không biến thành năm thành công hoặc tai họa. Khung tuổi chỉ là các khoảng lịch không kèm biến cố.",
+            "evidence_ids": [
+              "LCF-08",
+              "LCF-06"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Một bước thực tế trong 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: viết đầu ra cụ thể của mục tiêu “Lập lịch học một kỹ năng”. Tuần 2: chọn lịch thực hiện vừa sức. Tuần 3: ghi việc đã làm và điều cản trở. Tuần 4: xem lại kết quả theo tiêu chí tự chọn; sửa kế hoạch thay vì cố làm cho trải nghiệm khớp một lời luận.",
+            "evidence_ids": [
+              "input.goal"
+            ]
+          }
+        ],
+        "method_results": [
+          {
+            "method_id": "LCF-05",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "109dbc6b71054d36da6ff8592d275ac384af53c52eb6a956a440974c32cb410b",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "table": "LATIN_CYCLE_1_9",
+              "reduction_policy": "single_digit",
+              "y_policy": "exclude"
+            },
+            "calculation": {
+              "original": "Demo Bình",
+              "nfc": "Demo Bình",
+              "latin": "DEMO BINH",
+              "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+              "parts": [
+                {
+                  "text": "DEMO",
+                  "letters": [
+                    {
+                      "letter": "D",
+                      "value": 4
+                    },
+                    {
+                      "letter": "E",
+                      "value": 5
+                    },
+                    {
+                      "letter": "M",
+                      "value": 4
+                    },
+                    {
+                      "letter": "O",
+                      "value": 6
+                    }
+                  ],
+                  "sum": 19
+                },
+                {
+                  "text": "BINH",
+                  "letters": [
+                    {
+                      "letter": "B",
+                      "value": 2
+                    },
+                    {
+                      "letter": "I",
+                      "value": 9
+                    },
+                    {
+                      "letter": "N",
+                      "value": 5
+                    },
+                    {
+                      "letter": "H",
+                      "value": 8
+                    }
+                  ],
+                  "sum": 24
+                }
+              ],
+              "sum": 43,
+              "reduction": {
+                "value": 7,
+                "path": [
+                  43,
+                  7
+                ],
+                "root": 7
+              },
+              "vowel_sum": 20,
+              "consonant_sum": 23,
+              "initial_sum": 6
+            },
+            "trace": [
+              {
+                "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+              }
+            ],
+            "warnings": [
+              "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+              "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-07",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "f4840f045e0495ec587dfd518975780702599517317903016f55be71ad5f125a",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "variant": "all_digits",
+              "reduction_policy": "single_digit"
+            },
+            "calculation": {
+              "raw_digit_sum": 13,
+              "components": {
+                "day": {
+                  "value": 8,
+                  "path": [
+                    8
+                  ],
+                  "root": 8
+                },
+                "month": {
+                  "value": 2,
+                  "path": [
+                    11,
+                    2
+                  ],
+                  "root": 2
+                },
+                "year": {
+                  "value": 3,
+                  "path": [
+                    3
+                  ],
+                  "root": 3
+                }
+              },
+              "calculation_sum": 13,
+              "reduction": {
+                "value": 4,
+                "path": [
+                  13,
+                  4
+                ],
+                "root": 4
+              }
+            },
+            "trace": [],
+            "warnings": [
+              "Các số trung gian thay đổi theo trường phái; không gộp ngầm."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-08",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "acd29414c91e09f1f3482b41771701746a798558750ab955eeceee4de4c6580c",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "boundary": "calendar",
+              "reduction": "single_digit",
+              "birthday_leap_policy": "feb28"
+            },
+            "calculation": {
+              "effective_year": 2026,
+              "personal_year": 2,
+              "personal_month": null,
+              "sum": 11
+            },
+            "trace": [],
+            "warnings": [
+              "Chu kỳ biểu tượng không dự báo sự kiện."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-06",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "0d3b81398b2dfeb8f4a4f294ee555eb85578b4d06560308b494c8dc952e423ef",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "leap_policy": "feb28",
+              "interval": "[start,end)"
+            },
+            "calculation": {
+              "age_at_as_of": 24,
+              "intervals": [
+                {
+                  "age": 0,
+                  "start": "2001-11-08",
+                  "end_exclusive": "2002-11-08",
+                  "events": []
+                },
+                {
+                  "age": 1,
+                  "start": "2002-11-08",
+                  "end_exclusive": "2003-11-08",
+                  "events": []
+                },
+                {
+                  "age": 2,
+                  "start": "2003-11-08",
+                  "end_exclusive": "2004-11-08",
+                  "events": []
+                },
+                {
+                  "age": 3,
+                  "start": "2004-11-08",
+                  "end_exclusive": "2005-11-08",
+                  "events": []
+                },
+                {
+                  "age": 4,
+                  "start": "2005-11-08",
+                  "end_exclusive": "2006-11-08",
+                  "events": []
+                },
+                {
+                  "age": 5,
+                  "start": "2006-11-08",
+                  "end_exclusive": "2007-11-08",
+                  "events": []
+                },
+                {
+                  "age": 6,
+                  "start": "2007-11-08",
+                  "end_exclusive": "2008-11-08",
+                  "events": []
+                },
+                {
+                  "age": 7,
+                  "start": "2008-11-08",
+                  "end_exclusive": "2009-11-08",
+                  "events": []
+                },
+                {
+                  "age": 8,
+                  "start": "2009-11-08",
+                  "end_exclusive": "2010-11-08",
+                  "events": []
+                },
+                {
+                  "age": 9,
+                  "start": "2010-11-08",
+                  "end_exclusive": "2011-11-08",
+                  "events": []
+                },
+                {
+                  "age": 10,
+                  "start": "2011-11-08",
+                  "end_exclusive": "2012-11-08",
+                  "events": []
+                },
+                {
+                  "age": 11,
+                  "start": "2012-11-08",
+                  "end_exclusive": "2013-11-08",
+                  "events": []
+                },
+                {
+                  "age": 12,
+                  "start": "2013-11-08",
+                  "end_exclusive": "2014-11-08",
+                  "events": []
+                },
+                {
+                  "age": 13,
+                  "start": "2014-11-08",
+                  "end_exclusive": "2015-11-08",
+                  "events": []
+                },
+                {
+                  "age": 14,
+                  "start": "2015-11-08",
+                  "end_exclusive": "2016-11-08",
+                  "events": []
+                },
+                {
+                  "age": 15,
+                  "start": "2016-11-08",
+                  "end_exclusive": "2017-11-08",
+                  "events": []
+                },
+                {
+                  "age": 16,
+                  "start": "2017-11-08",
+                  "end_exclusive": "2018-11-08",
+                  "events": []
+                },
+                {
+                  "age": 17,
+                  "start": "2018-11-08",
+                  "end_exclusive": "2019-11-08",
+                  "events": []
+                },
+                {
+                  "age": 18,
+                  "start": "2019-11-08",
+                  "end_exclusive": "2020-11-08",
+                  "events": []
+                },
+                {
+                  "age": 19,
+                  "start": "2020-11-08",
+                  "end_exclusive": "2021-11-08",
+                  "events": []
+                },
+                {
+                  "age": 20,
+                  "start": "2021-11-08",
+                  "end_exclusive": "2022-11-08",
+                  "events": []
+                },
+                {
+                  "age": 21,
+                  "start": "2022-11-08",
+                  "end_exclusive": "2023-11-08",
+                  "events": []
+                },
+                {
+                  "age": 22,
+                  "start": "2023-11-08",
+                  "end_exclusive": "2024-11-08",
+                  "events": []
+                },
+                {
+                  "age": 23,
+                  "start": "2024-11-08",
+                  "end_exclusive": "2025-11-08",
+                  "events": []
+                },
+                {
+                  "age": 24,
+                  "start": "2025-11-08",
+                  "end_exclusive": "2026-11-08",
+                  "events": []
+                },
+                {
+                  "age": 25,
+                  "start": "2026-11-08",
+                  "end_exclusive": "2027-11-08",
+                  "events": []
+                },
+                {
+                  "age": 26,
+                  "start": "2027-11-08",
+                  "end_exclusive": "2028-11-08",
+                  "events": []
+                },
+                {
+                  "age": 27,
+                  "start": "2028-11-08",
+                  "end_exclusive": "2029-11-08",
+                  "events": []
+                },
+                {
+                  "age": 28,
+                  "start": "2029-11-08",
+                  "end_exclusive": "2030-11-08",
+                  "events": []
+                },
+                {
+                  "age": 29,
+                  "start": "2030-11-08",
+                  "end_exclusive": "2031-11-08",
+                  "events": []
+                },
+                {
+                  "age": 30,
+                  "start": "2031-11-08",
+                  "end_exclusive": "2032-11-08",
+                  "events": []
+                },
+                {
+                  "age": 31,
+                  "start": "2032-11-08",
+                  "end_exclusive": "2033-11-08",
+                  "events": []
+                },
+                {
+                  "age": 32,
+                  "start": "2033-11-08",
+                  "end_exclusive": "2034-11-08",
+                  "events": []
+                },
+                {
+                  "age": 33,
+                  "start": "2034-11-08",
+                  "end_exclusive": "2035-11-08",
+                  "events": []
+                },
+                {
+                  "age": 34,
+                  "start": "2035-11-08",
+                  "end_exclusive": "2036-11-08",
+                  "events": []
+                },
+                {
+                  "age": 35,
+                  "start": "2036-11-08",
+                  "end_exclusive": "2037-11-08",
+                  "events": []
+                },
+                {
+                  "age": 36,
+                  "start": "2037-11-08",
+                  "end_exclusive": "2038-11-08",
+                  "events": []
+                },
+                {
+                  "age": 37,
+                  "start": "2038-11-08",
+                  "end_exclusive": "2039-11-08",
+                  "events": []
+                },
+                {
+                  "age": 38,
+                  "start": "2039-11-08",
+                  "end_exclusive": "2040-11-08",
+                  "events": []
+                },
+                {
+                  "age": 39,
+                  "start": "2040-11-08",
+                  "end_exclusive": "2041-11-08",
+                  "events": []
+                },
+                {
+                  "age": 40,
+                  "start": "2041-11-08",
+                  "end_exclusive": "2042-11-08",
+                  "events": []
+                },
+                {
+                  "age": 41,
+                  "start": "2042-11-08",
+                  "end_exclusive": "2043-11-08",
+                  "events": []
+                },
+                {
+                  "age": 42,
+                  "start": "2043-11-08",
+                  "end_exclusive": "2044-11-08",
+                  "events": []
+                },
+                {
+                  "age": 43,
+                  "start": "2044-11-08",
+                  "end_exclusive": "2045-11-08",
+                  "events": []
+                },
+                {
+                  "age": 44,
+                  "start": "2045-11-08",
+                  "end_exclusive": "2046-11-08",
+                  "events": []
+                },
+                {
+                  "age": 45,
+                  "start": "2046-11-08",
+                  "end_exclusive": "2047-11-08",
+                  "events": []
+                },
+                {
+                  "age": 46,
+                  "start": "2047-11-08",
+                  "end_exclusive": "2048-11-08",
+                  "events": []
+                },
+                {
+                  "age": 47,
+                  "start": "2048-11-08",
+                  "end_exclusive": "2049-11-08",
+                  "events": []
+                },
+                {
+                  "age": 48,
+                  "start": "2049-11-08",
+                  "end_exclusive": "2050-11-08",
+                  "events": []
+                },
+                {
+                  "age": 49,
+                  "start": "2050-11-08",
+                  "end_exclusive": "2051-11-08",
+                  "events": []
+                },
+                {
+                  "age": 50,
+                  "start": "2051-11-08",
+                  "end_exclusive": "2052-11-08",
+                  "events": []
+                },
+                {
+                  "age": 51,
+                  "start": "2052-11-08",
+                  "end_exclusive": "2053-11-08",
+                  "events": []
+                },
+                {
+                  "age": 52,
+                  "start": "2053-11-08",
+                  "end_exclusive": "2054-11-08",
+                  "events": []
+                },
+                {
+                  "age": 53,
+                  "start": "2054-11-08",
+                  "end_exclusive": "2055-11-08",
+                  "events": []
+                },
+                {
+                  "age": 54,
+                  "start": "2055-11-08",
+                  "end_exclusive": "2056-11-08",
+                  "events": []
+                },
+                {
+                  "age": 55,
+                  "start": "2056-11-08",
+                  "end_exclusive": "2057-11-08",
+                  "events": []
+                },
+                {
+                  "age": 56,
+                  "start": "2057-11-08",
+                  "end_exclusive": "2058-11-08",
+                  "events": []
+                },
+                {
+                  "age": 57,
+                  "start": "2058-11-08",
+                  "end_exclusive": "2059-11-08",
+                  "events": []
+                },
+                {
+                  "age": 58,
+                  "start": "2059-11-08",
+                  "end_exclusive": "2060-11-08",
+                  "events": []
+                },
+                {
+                  "age": 59,
+                  "start": "2060-11-08",
+                  "end_exclusive": "2061-11-08",
+                  "events": []
+                },
+                {
+                  "age": 60,
+                  "start": "2061-11-08",
+                  "end_exclusive": "2062-11-08",
+                  "events": []
+                },
+                {
+                  "age": 61,
+                  "start": "2062-11-08",
+                  "end_exclusive": "2063-11-08",
+                  "events": []
+                },
+                {
+                  "age": 62,
+                  "start": "2063-11-08",
+                  "end_exclusive": "2064-11-08",
+                  "events": []
+                },
+                {
+                  "age": 63,
+                  "start": "2064-11-08",
+                  "end_exclusive": "2065-11-08",
+                  "events": []
+                },
+                {
+                  "age": 64,
+                  "start": "2065-11-08",
+                  "end_exclusive": "2066-11-08",
+                  "events": []
+                },
+                {
+                  "age": 65,
+                  "start": "2066-11-08",
+                  "end_exclusive": "2067-11-08",
+                  "events": []
+                },
+                {
+                  "age": 66,
+                  "start": "2067-11-08",
+                  "end_exclusive": "2068-11-08",
+                  "events": []
+                },
+                {
+                  "age": 67,
+                  "start": "2068-11-08",
+                  "end_exclusive": "2069-11-08",
+                  "events": []
+                },
+                {
+                  "age": 68,
+                  "start": "2069-11-08",
+                  "end_exclusive": "2070-11-08",
+                  "events": []
+                },
+                {
+                  "age": 69,
+                  "start": "2070-11-08",
+                  "end_exclusive": "2071-11-08",
+                  "events": []
+                },
+                {
+                  "age": 70,
+                  "start": "2071-11-08",
+                  "end_exclusive": "2072-11-08",
+                  "events": []
+                },
+                {
+                  "age": 71,
+                  "start": "2072-11-08",
+                  "end_exclusive": "2073-11-08",
+                  "events": []
+                },
+                {
+                  "age": 72,
+                  "start": "2073-11-08",
+                  "end_exclusive": "2074-11-08",
+                  "events": []
+                },
+                {
+                  "age": 73,
+                  "start": "2074-11-08",
+                  "end_exclusive": "2075-11-08",
+                  "events": []
+                },
+                {
+                  "age": 74,
+                  "start": "2075-11-08",
+                  "end_exclusive": "2076-11-08",
+                  "events": []
+                },
+                {
+                  "age": 75,
+                  "start": "2076-11-08",
+                  "end_exclusive": "2077-11-08",
+                  "events": []
+                },
+                {
+                  "age": 76,
+                  "start": "2077-11-08",
+                  "end_exclusive": "2078-11-08",
+                  "events": []
+                },
+                {
+                  "age": 77,
+                  "start": "2078-11-08",
+                  "end_exclusive": "2079-11-08",
+                  "events": []
+                },
+                {
+                  "age": 78,
+                  "start": "2079-11-08",
+                  "end_exclusive": "2080-11-08",
+                  "events": []
+                },
+                {
+                  "age": 79,
+                  "start": "2080-11-08",
+                  "end_exclusive": "2081-11-08",
+                  "events": []
+                },
+                {
+                  "age": 80,
+                  "start": "2081-11-08",
+                  "end_exclusive": "2082-11-08",
+                  "events": []
+                },
+                {
+                  "age": 81,
+                  "start": "2082-11-08",
+                  "end_exclusive": "2083-11-08",
+                  "events": []
+                },
+                {
+                  "age": 82,
+                  "start": "2083-11-08",
+                  "end_exclusive": "2084-11-08",
+                  "events": []
+                },
+                {
+                  "age": 83,
+                  "start": "2084-11-08",
+                  "end_exclusive": "2085-11-08",
+                  "events": []
+                },
+                {
+                  "age": 84,
+                  "start": "2085-11-08",
+                  "end_exclusive": "2086-11-08",
+                  "events": []
+                },
+                {
+                  "age": 85,
+                  "start": "2086-11-08",
+                  "end_exclusive": "2087-11-08",
+                  "events": []
+                },
+                {
+                  "age": 86,
+                  "start": "2087-11-08",
+                  "end_exclusive": "2088-11-08",
+                  "events": []
+                },
+                {
+                  "age": 87,
+                  "start": "2088-11-08",
+                  "end_exclusive": "2089-11-08",
+                  "events": []
+                },
+                {
+                  "age": 88,
+                  "start": "2089-11-08",
+                  "end_exclusive": "2090-11-08",
+                  "events": []
+                },
+                {
+                  "age": 89,
+                  "start": "2090-11-08",
+                  "end_exclusive": "2091-11-08",
+                  "events": []
+                },
+                {
+                  "age": 90,
+                  "start": "2091-11-08",
+                  "end_exclusive": "2092-11-08",
+                  "events": []
+                },
+                {
+                  "age": 91,
+                  "start": "2092-11-08",
+                  "end_exclusive": "2093-11-08",
+                  "events": []
+                },
+                {
+                  "age": 92,
+                  "start": "2093-11-08",
+                  "end_exclusive": "2094-11-08",
+                  "events": []
+                },
+                {
+                  "age": 93,
+                  "start": "2094-11-08",
+                  "end_exclusive": "2095-11-08",
+                  "events": []
+                },
+                {
+                  "age": 94,
+                  "start": "2095-11-08",
+                  "end_exclusive": "2096-11-08",
+                  "events": []
+                },
+                {
+                  "age": 95,
+                  "start": "2096-11-08",
+                  "end_exclusive": "2097-11-08",
+                  "events": []
+                },
+                {
+                  "age": 96,
+                  "start": "2097-11-08",
+                  "end_exclusive": "2098-11-08",
+                  "events": []
+                },
+                {
+                  "age": 97,
+                  "start": "2098-11-08",
+                  "end_exclusive": "2099-11-08",
+                  "events": []
+                },
+                {
+                  "age": 98,
+                  "start": "2099-11-08",
+                  "end_exclusive": "2100-11-08",
+                  "events": []
+                },
+                {
+                  "age": 99,
+                  "start": "2100-11-08",
+                  "end_exclusive": "2101-11-08",
+                  "events": []
+                }
+              ]
+            },
+            "trace": [],
+            "warnings": [
+              "Khoảng tuổi là lịch, không phải tuổi thọ hoặc lịch biến cố."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          }
+        ],
+        "data_coverage": {
+          "numerator": 3,
+          "denominator": 3,
+          "ratio": 1,
+          "missing": [],
+          "meaning": "input_coverage_not_accuracy"
+        },
+        "missing_inputs": [
+          "birth_time"
+        ],
+        "warnings": [],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-084",
+      "method": "profile_pipeline",
+      "synthetic": true,
+      "result": {
+        "pipeline_version": "2.0.reference",
+        "level": 1,
+        "subject_alias": "Hồ sơ tổng hợp C",
+        "state": "NEEDS_INPUT_CHOICE",
+        "input_digest": "be2b2559ed12c2dfb77b89cdff0eeb2ba21cd95c55931da025d6dd45ed78a90f",
+        "sections": [
+          {
+            "id": "identity",
+            "title": "Dữ liệu được sử dụng",
+            "block": "identity",
+            "content_role": "input_summary",
+            "text": "Hồ sơ tổng hợp C là hồ sơ tổng hợp dùng để kiểm tra luồng. Mục tiêu do người dùng lựa chọn: Ghi lại dữ liệu gia đình. Không nhận diện người thật hoặc suy đoán giới tính.",
+            "evidence_ids": [
+              "input.profile",
+              "input.goal"
+            ]
+          },
+          {
+            "id": "analysis",
+            "title": "Kết quả tính và cách đọc",
+            "block": "analysis",
+            "content_role": "method_explanation",
+            "text": "Theo bảng Latin demo, tổng tên là 43. Ngày sinh chưa được khóa; không điền một ngày giả. Những kết quả này là phép quy đổi theo cấu hình, không đo trí tuệ, đạo đức, sức khỏe hoặc giá trị con người.",
+            "evidence_ids": [
+              "LCF-05",
+              "LCF-10"
+            ]
+          },
+          {
+            "id": "timeline",
+            "title": "Thời gian và phạm vi",
+            "block": "timeline",
+            "content_role": "symbolic_context",
+            "text": "Chưa tạo chu kỳ hoặc dòng thời gian cá nhân vì ngày sinh thiếu hoặc còn nhiều phương án.",
+            "evidence_ids": [
+              "input.profile"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Một bước thực tế trong 30 ngày",
+            "block": "action",
+            "content_role": "planning_guidance",
+            "text": "Tuần 1: viết đầu ra cụ thể của mục tiêu “Ghi lại dữ liệu gia đình”. Tuần 2: chọn lịch thực hiện vừa sức. Tuần 3: ghi việc đã làm và điều cản trở. Tuần 4: xem lại kết quả theo tiêu chí tự chọn; sửa kế hoạch thay vì cố làm cho trải nghiệm khớp một lời luận.",
+            "evidence_ids": [
+              "input.goal"
+            ]
+          }
+        ],
+        "method_results": [
+          {
+            "method_id": "LCF-05",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "5d549861e7dbf75fa71ca712ac2eab08b79277a2ac5883e0a754879e931cce2b",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "table": "LATIN_CYCLE_1_9",
+              "reduction_policy": "single_digit",
+              "y_policy": "exclude"
+            },
+            "calculation": {
+              "original": "Demo Cường",
+              "nfc": "Demo Cường",
+              "latin": "DEMO CUONG",
+              "transliteration_policy": "VI_LATIN_EXPLICIT_1",
+              "parts": [
+                {
+                  "text": "DEMO",
+                  "letters": [
+                    {
+                      "letter": "D",
+                      "value": 4
+                    },
+                    {
+                      "letter": "E",
+                      "value": 5
+                    },
+                    {
+                      "letter": "M",
+                      "value": 4
+                    },
+                    {
+                      "letter": "O",
+                      "value": 6
+                    }
+                  ],
+                  "sum": 19
+                },
+                {
+                  "text": "CUONG",
+                  "letters": [
+                    {
+                      "letter": "C",
+                      "value": 3
+                    },
+                    {
+                      "letter": "U",
+                      "value": 3
+                    },
+                    {
+                      "letter": "O",
+                      "value": 6
+                    },
+                    {
+                      "letter": "N",
+                      "value": 5
+                    },
+                    {
+                      "letter": "G",
+                      "value": 7
+                    }
+                  ],
+                  "sum": 24
+                }
+              ],
+              "sum": 43,
+              "reduction": {
+                "value": 7,
+                "path": [
+                  43,
+                  7
+                ],
+                "root": 7
+              },
+              "vowel_sum": 20,
+              "consonant_sum": 23,
+              "initial_sum": 7
+            },
+            "trace": [
+              {
+                "step": "Giữ tên gốc; tạo chuỗi quy đổi độc lập."
+              }
+            ],
+            "warnings": [
+              "Ý nghĩa của tên cần nguồn gia đình hoặc ngữ nghĩa xác nhận; không suy từ con số.",
+              "Y được xử lý theo cấu hình hiển thị, không có mặc định phổ quát cho mọi tên."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          },
+          {
+            "method_id": "LCF-10",
+            "method_version": "2.0",
+            "status": "REFERENCE_ONLY",
+            "claim_type": "derived_metric",
+            "input_digest": "58fc2183f42891e24ff322f7293f530326dcaf6f89a15321c63665489cd93a2a",
+            "digest_scope": "LOCAL_DEMO_NOT_ANONYMIZATION",
+            "configuration": {
+              "policy": "no_preferred_hypothesis"
+            },
+            "calculation": {
+              "alternatives": [
+                {
+                  "id": "paper",
+                  "birth_date": "1961-05-28",
+                  "result": {
+                    "raw_digit_sum": 32,
+                    "components": {
+                      "day": {
+                        "value": 1,
+                        "path": [
+                          28,
+                          10,
+                          1
+                        ],
+                        "root": 1
+                      },
+                      "month": {
+                        "value": 5,
+                        "path": [
+                          5
+                        ],
+                        "root": 5
+                      },
+                      "year": {
+                        "value": 8,
+                        "path": [
+                          17,
+                          8
+                        ],
+                        "root": 8
+                      }
+                    },
+                    "calculation_sum": 32,
+                    "reduction": {
+                      "value": 5,
+                      "path": [
+                        32,
+                        5
+                      ],
+                      "root": 5
+                    }
+                  }
+                },
+                {
+                  "id": "family",
+                  "birth_date": "1963-05-28",
+                  "result": {
+                    "raw_digit_sum": 34,
+                    "components": {
+                      "day": {
+                        "value": 1,
+                        "path": [
+                          28,
+                          10,
+                          1
+                        ],
+                        "root": 1
+                      },
+                      "month": {
+                        "value": 5,
+                        "path": [
+                          5
+                        ],
+                        "root": 5
+                      },
+                      "year": {
+                        "value": 1,
+                        "path": [
+                          19,
+                          10,
+                          1
+                        ],
+                        "root": 1
+                      }
+                    },
+                    "calculation_sum": 34,
+                    "reduction": {
+                      "value": 7,
+                      "path": [
+                        34,
+                        7
+                      ],
+                      "root": 7
+                    }
+                  }
+                }
+              ],
+              "selected": null
+            },
+            "trace": [],
+            "warnings": [
+              "Không lấy trung bình hai ngày sinh; không chọn phương án theo lời luận nghe hợp."
+            ],
+            "score": null,
+            "confidence": null,
+            "probability": null,
+            "limitations": [
+              "Không phải dự báo tính cách, sức khỏe, tài lộc hoặc số phận.",
+              "Không được mở production chỉ dựa vào demo."
+            ]
+          }
+        ],
+        "data_coverage": {
+          "numerator": 2,
+          "denominator": 3,
+          "ratio": 0.6666666666666666,
+          "missing": [
+            "birth_date"
+          ],
+          "meaning": "input_coverage_not_accuracy"
+        },
+        "missing_inputs": [
+          "selected_birth_hypothesis"
+        ],
+        "warnings": [
+          "Ngày sinh còn nhiều phương án; chưa chạy chu kỳ hoặc timeline chung."
+        ],
+        "score": null,
+        "confidence": null,
+        "probability": null,
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-085",
+      "method": "dag",
+      "synthetic": true,
+      "result": {
+        "order": [
+          "profile",
+          "birth",
+          "cycle",
+          "name",
+          "report"
+        ],
+        "waves": [
+          [
+            "profile"
+          ],
+          [
+            "birth",
+            "name"
+          ],
+          [
+            "cycle"
+          ],
+          [
+            "report"
+          ]
+        ],
+        "graph_digest": "4e6ae3ede2079fe96384284efab8c85d112c6fa3616faea2d211afc57a7206d9",
+        "status": "REFERENCE_PLAN_ONLY",
+        "production_ready": false
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-086",
+      "method": "dag",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "DAG_CYCLE",
+        "message": "Phụ thuộc tạo chu trình."
+      }
+    },
+    {
+      "id": "DEMO-087",
+      "method": "dag",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "MISSING_DEPENDENCY",
+        "message": "Thiếu nút phụ thuộc: not-there"
+      }
+    },
+    {
+      "id": "DEMO-088",
+      "method": "impact",
+      "synthetic": true,
+      "result": {
+        "impacted": [
+          "birth",
+          "cycle",
+          "report"
+        ],
+        "unchanged": [
+          "profile",
+          "name"
+        ],
+        "recalculation_policy": "recheck_authorization_before_execution"
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-089",
+      "method": "cache_key",
+      "synthetic": true,
+      "result": {
+        "cache_key": "lc2:c87ee93d7f41d79062a5decacf5d755ed81f855a16959d4adb1b5efabc8bc6e5",
+        "scope": "tenant_subject_purpose_version",
+        "notice": "SHA-256 demo; production cần keyed pseudonymization và retention phù hợp."
+      },
+      "error": null
+    },
+    {
+      "id": "DEMO-090",
+      "method": "cache_key",
+      "synthetic": true,
+      "result": null,
+      "error": {
+        "code": "INVALID_CACHE_CONTEXT",
+        "message": "Thiếu subject_id"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-10-20T11:40:50.321Z",
+  "scope": "single_process_local_reference_no_network_no_db_no_ai",
+  "node": "v22.16.0",
+  "icu": "77.1",
+  "tzdb": "2025b",
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "platform": "linux",
+  "results": [
+    {
+      "method": "tail80",
+      "iterations": 250,
+      "p50_ms": 0.0071,
+      "p95_ms": 0.0226,
+      "max_ms": 0.6608
+    },
+    {
+      "method": "pairs",
+      "iterations": 250,
+      "p50_ms": 0.0098,
+      "p95_ms": 0.0385,
+      "max_ms": 0.5195
+    },
+    {
+      "method": "name",
+      "iterations": 250,
+      "p50_ms": 0.0115,
+      "p95_ms": 0.1083,
+      "max_ms": 0.7105
+    },
+    {
+      "method": "birth",
+      "iterations": 250,
+      "p50_ms": 0.0106,
+      "p95_ms": 0.0369,
+      "max_ms": 0.9824
+    },
+    {
+      "method": "timeline",
+      "iterations": 250,
+      "p50_ms": 0.1565,
+      "p95_ms": 0.58,
+      "max_ms": 4.3331
+    },
+    {
+      "method": "time",
+      "iterations": 50,
+      "p50_ms": 2.1985,
+      "p95_ms": 3.4617,
+      "max_ms": 11.4208
+    },
+    {
+      "method": "profile_pipeline",
+      "iterations": 50,
+      "p50_ms": 3.4762,
+      "p95_ms": 7.9046,
+      "max_ms": 12.9632
+    }
+  ],
+  "limitations": [
+    "Không phải load test hoặc SLA production.",
+    "Không có dữ liệu thật, PostgreSQL, IdP, thanh toán, R2 hoặc mô hình AI."
+  ]
+}

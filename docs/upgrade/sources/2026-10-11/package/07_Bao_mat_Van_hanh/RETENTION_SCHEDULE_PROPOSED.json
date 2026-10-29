@@ -1,0 +1,58 @@
+[
+  {
+    "data_class": "guest_inputs",
+    "period": "not_stored_server",
+    "purpose": "Local calculation",
+    "caveat": "No retention promise about networkmetadata",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  },
+  {
+    "data_class": "temporary_upload",
+    "period": "24h_proposed",
+    "purpose": "Unfinished upload; quarantine then purge",
+    "caveat": "Feature disabled beta",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  },
+  {
+    "data_class": "report_snapshot",
+    "period": "contract_and_user_rights",
+    "purpose": "While servicepurpose valid; legal review",
+    "caveat": "Versioned content can still be deleted",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  },
+  {
+    "data_class": "security_log",
+    "period": "risk_based_schedule_pending",
+    "purpose": "Minimum metadata",
+    "caveat": "No bearer/rawPI",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  },
+  {
+    "data_class": "billing_records",
+    "period": "statutory_schedule_by_country",
+    "purpose": "Legal obligations determined counsel",
+    "caveat": "Not all PI retained with invoice",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  },
+  {
+    "data_class": "backup",
+    "period": "rotation_window_pending",
+    "purpose": "Encrypted limited access",
+    "caveat": "Replay deletion/revocation beforeopening",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  },
+  {
+    "data_class": "AI_provider_data",
+    "period": "vendor_contract_specific",
+    "purpose": "No training by default intended contract",
+    "caveat": "Provider not chosen; verify terms",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  },
+  {
+    "data_class": "research_dataset",
+    "period": "separate_consent_and_rights",
+    "purpose": "Purpose and withdrawal design",
+    "caveat": "No automatic service→training",
+    "status": "LEGAL_REVIEW_REQUIRED"
+  }
+]

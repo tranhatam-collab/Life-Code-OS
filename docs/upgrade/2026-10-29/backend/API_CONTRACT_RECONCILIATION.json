@@ -1,0 +1,5074 @@
+{
+  "schema_version": "planning-1",
+  "date": "2026-10-29",
+  "production_ready": false,
+  "codegen_ready": false,
+  "operation_count": 99,
+  "origin_counts": {
+    "LOCAL_R2_64": 64,
+    "EXTERNAL_V2_ADDITION_19": 19,
+    "EXTERNAL_V3_ADDITION_16": 16
+  },
+  "canonical_schema_receipts": [
+    {
+      "name": "Claim",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "sha256": "5105e0bd8d6b1ac5f8b72371217b78cdfe16fdf18ed702df1dfcd54e89a169eb",
+      "target_legacy_required_missing": [
+        "model_evidence"
+      ]
+    },
+    {
+      "name": "ProfileVersion",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "sha256": "4d916e423cd99fbc4f1d3c202f2709c48c23fc9d7d44f25b85aa56b848599403",
+      "target_legacy_required_missing": [
+        "version_number"
+      ]
+    },
+    {
+      "name": "ReleaseReceipt",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "sha256": "aa20c32a7f5b515f1ee49ed51d632b9f19c7ac04dd1ac41bdf89a220b5616030",
+      "target_legacy_required_missing": [
+        "domain_receipts",
+        "runtime_receipts",
+        "verified_at"
+      ]
+    },
+    {
+      "name": "Tail80Result",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "sha256": "f8c3269a4ac8e52cc9a07bf0a953fc47ea4b87aea17fc17ad1000dc82b363a45",
+      "target_legacy_required_missing": [
+        "formula_id",
+        "formula_version",
+        "rights_state",
+        "source_ref"
+      ]
+    },
+    {
+      "name": "MethodResult",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "sha256": "04d3b051cd8611ef3e7286e810856ae9e5d031378d1a918f04e30f69714533a8",
+      "target_legacy_required_missing": [
+        "calculation_version",
+        "input_digest",
+        "input_field_ids",
+        "model_evidence",
+        "schema_version"
+      ]
+    },
+    {
+      "name": "ReportSnapshot",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "sha256": "29f0abed150e90ada05d2408631b8789d5545c4218034710713676cac45ddc38",
+      "target_legacy_required_missing": [
+        "authorization_snapshot_id",
+        "published_at",
+        "rendered_from_snapshot_only",
+        "schema_version",
+        "source_digest"
+      ]
+    },
+    {
+      "name": "Metric",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "sha256": "45641bd50dc72df60dbeea785f33c17e0827231918f1668d1eee5ae30db61dc6",
+      "target_legacy_required_missing": [
+        "decimal_places",
+        "direction",
+        "formula_version",
+        "metric_id",
+        "missing_reason",
+        "observation_window",
+        "rounding_mode",
+        "scale_max",
+        "scale_min"
+      ]
+    },
+    {
+      "name": "JobEnvelope",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "sha256": "111a83a5782bfa30d68ca9169f1ad129af03921cad9bda94dbc830ad58688382",
+      "target_legacy_required_missing": [
+        "authorization_snapshot_id",
+        "consent_version",
+        "deadline_at",
+        "grant_version",
+        "max_attempts",
+        "schema_version"
+      ]
+    },
+    {
+      "name": "MethodRelease",
+      "source": "docs/upgrade/2026-10-20/03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "sha256": "0cde37e13a0ed82a3da9f338909ea5ae3ea35234f084398526150577c84dda0f",
+      "target_legacy_required_missing": [
+        "computation_kind",
+        "effective_at",
+        "evidence_class",
+        "expires_at",
+        "release_artifact_digest",
+        "release_state",
+        "schema_version",
+        "source_rights_receipt_ids"
+      ]
+    }
+  ],
+  "path_prefix_corrections": [
+    {
+      "operation_id": "computeNumerologyFull",
+      "from": "/api/v2/numbers/numerology-full",
+      "to": "/numbers/numerology-full",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "computeBatCuc",
+      "from": "/api/v2/numbers/bat-cuc",
+      "to": "/numbers/bat-cuc",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "computePsychomatrix",
+      "from": "/api/v2/numbers/psychomatrix",
+      "to": "/numbers/psychomatrix",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "compareNumberAssets",
+      "from": "/api/v2/numbers/compare",
+      "to": "/numbers/compare",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "compareNameVariants",
+      "from": "/api/v2/names/compare",
+      "to": "/names/compare",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "composeLifetime",
+      "from": "/api/v2/lifetime/compose",
+      "to": "/lifetime/compose",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "createAnalysisBundle",
+      "from": "/api/v2/analysis-bundles",
+      "to": "/analysis-bundles",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "getAnalysisBundle",
+      "from": "/api/v2/analysis-bundles/{bundle_id}",
+      "to": "/analysis-bundles/{bundle_id}",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "cancelAnalysisBundle",
+      "from": "/api/v2/analysis-bundles/{bundle_id}/cancel",
+      "to": "/analysis-bundles/{bundle_id}/cancel",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "getMethodSourceConflicts",
+      "from": "/api/v2/methods/{method_id}/source-conflicts",
+      "to": "/methods/{method_id}/source-conflicts",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "getBatCucTable",
+      "from": "/api/v2/numbers/bat-cuc/table",
+      "to": "/numbers/bat-cuc/table",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "getLifeDomains",
+      "from": "/api/v2/lifetime/domains",
+      "to": "/lifetime/domains",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "getScopedProductEligibility",
+      "from": "/api/v2/products/{product_id}/eligibility",
+      "to": "/products/{product_id}/eligibility",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "createKnowledgeLegacyTransfer",
+      "from": "/api/v2/legacy-transfers",
+      "to": "/legacy-transfers",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "getTerritoryReleaseGates",
+      "from": "/api/v2/territories/{territory_id}/release-gates",
+      "to": "/territories/{territory_id}/release-gates",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    },
+    {
+      "operation_id": "getMethodVersionHistory",
+      "from": "/api/v2/methods/{method_id}/versions",
+      "to": "/methods/{method_id}/versions",
+      "server_base": "/api/v2",
+      "reason": "Avoid doubled /api/v2 prefix when path is appended to server URL."
+    }
+  ],
+  "new_standalone_schema_receipts": [
+    {
+      "name": "AccessDecision",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/AccessDecision.schema.json",
+      "sha256": "78b95dd796ff3f54491a2c8c565d8b9ee1ae817cd6711e7a028036b56d31f634",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "BirthRecordV2",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/BirthRecordV2.schema.json",
+      "sha256": "bcb82919fb242943148682ee84441bba39095b4674a77c19b7088b6b7a574e81",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "ClaimV2",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ClaimV2.schema.json",
+      "sha256": "cae1528011afa29285cb3ae0632640d40a257236a08199b56a8a1167f7b16f82",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "ConflictResolution",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ConflictResolution.schema.json",
+      "sha256": "304008e7adb237763be919e19f714f1333ebdd27992b649e9f67d028c044ff36",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "DeletionRequestV2",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/DeletionRequestV2.schema.json",
+      "sha256": "14555d8c0e8f9c01c5fdfa75dd184a50563b4c9af0ec4b021e2bdb09f2e31ff0",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "MethodFreeze",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodFreeze.schema.json",
+      "sha256": "d2cce3bc47ff4674b1856d4f5a4c36213a438f012156b2f80444bd2ae4dd30a1",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "MethodPassportV2",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPassportV2.schema.json",
+      "sha256": "14efd6f08e9077f485b9c64e18156377e5d4e1dbc6dfd362ad853d4c2e60cf28",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "MethodPreview",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPreview.schema.json",
+      "sha256": "4fd4d335edae85f72a8a5d7e462ddc89b9d4cd4fa97cbc087ff347735ed57cfb",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "OfflineBatch",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OfflineBatch.schema.json",
+      "sha256": "cf84c961b06ada01ba5649386dc3f2037d577decfd2b6ec13d5fb02bc9f028a0",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "OutboxEvent",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OutboxEvent.schema.json",
+      "sha256": "dbd37ea7bc83978d246ae6a6818effb2fefab2e23ce0a7dd6034e4932d74b3a5",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "Problem",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/Problem.schema.json",
+      "sha256": "f7bbb539260376851a6aa2ca435725fab3ca6e9f06abe058db44c15e85616e06",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "ProfilePipelineInput",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ProfilePipelineInput.schema.json",
+      "sha256": "f94f97bf1fca4cf207507b2b30afc9e5a704fbca958c1000939f08af52576bb9",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "ReportSectionV2",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReportSectionV2.schema.json",
+      "sha256": "a34488d93aa03b30a8259205d7285d29cd762049fa23f55e0f4c7203041e81b9",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "ReviewDecision",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReviewDecision.schema.json",
+      "sha256": "cf3adebb8b77391e50c87f199347d555de79726c111b72ba6f41be84a94f8f77",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "RunCompare",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCompare.schema.json",
+      "sha256": "b1f7667172cbfaf61698edb715d173bbf1336d1d93712c20ac2e5ad9ae889180",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "RunCreate",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCreate.schema.json",
+      "sha256": "974b34517af5d90cdb5da7f9f0ddc30abf9f105650a036d1246bf7bf58a52433",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "RunStatus",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunStatus.schema.json",
+      "sha256": "b858b2ab7931fcba573727f6c0f9416188fc41f079ad42635b285c120280a99f",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "AllInOneInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/AllInOneInput.schema.json",
+      "sha256": "78ed5b00f88e35c337dfd50f649966a6ed14d8b50025128e1c741768bb619445",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "BatCucInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/BatCucInput.schema.json",
+      "sha256": "fd9792f0c4ea437be63e4c176f16bc3ee8513c8a6b742c3decf67f25f8a9f5ec",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "BundleCancelInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/BundleCancelInput.schema.json",
+      "sha256": "1eb5db0a0dd4a0b46047d3f41c8181ef631934833a26ca57aae4ba7f57f91c7c",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "KnowledgeTransferInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/KnowledgeTransferInput.schema.json",
+      "sha256": "ad34ffa153cfe57c2ad47739a89cb449ae959176e5ebfe17143da8b1fb44b618",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "LifetimeInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/LifetimeInput.schema.json",
+      "sha256": "544535aa18c3cfc7e961ad3d8a853940d899818c71c9b3d03f4813371e27cfcc",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "NameCompareInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NameCompareInput.schema.json",
+      "sha256": "b1968e2b7f72b607bb50fa81a2943c683f660ffe64c95e9d425f5c3335774118",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "NumberCompareInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NumberCompareInput.schema.json",
+      "sha256": "ffd56049cfaf40e95fe66ce01f07c2e180fcfdb2009ddd4b191efe337aee4fe4",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "NumerologyFullInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/NumerologyFullInput.schema.json",
+      "sha256": "efcf90bb39e723b664b892ad9e78efcc822ee7d86d2eeabca4b56a436a0edb28",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "PsychomatrixInput",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/PsychomatrixInput.schema.json",
+      "sha256": "13e27d460075dac7b5891c7c3d038af2b71f3a2f25272a0014f976412384d2dc",
+      "preserved_exact_object": true
+    },
+    {
+      "name": "ReferenceResult",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/schemas/ReferenceResult.schema.json",
+      "sha256": "4ac7ac118e0a19d3f43e2d3a9a9c3a6bfc4498a7de62fccd1b513b2d18ad9c97",
+      "preserved_exact_object": true
+    }
+  ],
+  "unresolved_internal_refs": [],
+  "component_schema_count": 68,
+  "generic_success_operation_count": 65,
+  "missing_success_schema_operation_count": 10,
+  "reference_only_success_operation_count": 6,
+  "blocked_operation_count": 81,
+  "api_csv99_parity": true,
+  "standards": [
+    {
+      "url": "https://spec.openapis.org/oas/v3.1.0.html#paths-object",
+      "checked_on": "2026-10-29",
+      "scope": "Paths appended to server URL; OAS 3.1 schema dialect."
+    },
+    {
+      "url": "https://json-schema.org/draft/2020-12/json-schema-core",
+      "checked_on": "2026-10-29",
+      "scope": "Dialect, identifiers and reference resolution. No production-validator certification."
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/ddl-rowsecurity.html",
+      "checked_on": "2026-10-29",
+      "scope": "RLS privileges, default deny, owner and BYPASSRLS exceptions. Database version still a candidate."
+    }
+  ],
+  "operations": [
+    {
+      "operation_id": "health",
+      "method": "GET",
+      "canonical_path": "/health",
+      "effective_design_path": "/api/v2/health",
+      "original_v3_path": "/health",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/HealthStatus"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "catalog",
+      "method": "GET",
+      "canonical_path": "/catalog",
+      "effective_design_path": "/api/v2/catalog",
+      "original_v3_path": "/catalog",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "methods",
+      "method": "GET",
+      "canonical_path": "/methods",
+      "effective_design_path": "/api/v2/methods",
+      "original_v3_path": "/methods",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "methodDetail",
+      "method": "GET",
+      "canonical_path": "/methods/{methodId}",
+      "effective_design_path": "/api/v2/methods/{methodId}",
+      "original_v3_path": "/methods/{methodId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/MethodRelease"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "login",
+      "method": "GET",
+      "canonical_path": "/auth/login",
+      "effective_design_path": "/api/v2/auth/login",
+      "original_v3_path": "/auth/login",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "authCallback",
+      "method": "GET",
+      "canonical_path": "/auth/callback",
+      "effective_design_path": "/api/v2/auth/callback",
+      "original_v3_path": "/auth/callback",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "logout",
+      "method": "POST",
+      "canonical_path": "/auth/logout",
+      "effective_design_path": "/api/v2/auth/logout",
+      "original_v3_path": "/auth/logout",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "self",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "self"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "204",
+          "state": "NO_BODY_EXPECTED",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "subjects",
+      "method": "GET",
+      "canonical_path": "/subjects",
+      "effective_design_path": "/api/v2/subjects",
+      "original_v3_path": "/subjects",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "self",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "self"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "createSubject",
+      "method": "POST",
+      "canonical_path": "/subjects",
+      "effective_design_path": "/api/v2/subjects",
+      "original_v3_path": "/subjects",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "self",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "self"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/SubjectCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "subject",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}",
+      "effective_design_path": "/api/v2/subjects/{subjectId}",
+      "original_v3_path": "/subjects/{subjectId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "overview",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/overview",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/overview",
+      "original_v3_path": "/subjects/{subjectId}/overview",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "newProfileVersion",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/profile-versions",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/profile-versions",
+      "original_v3_path": "/subjects/{subjectId}/profile-versions",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ProfileCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ProfileVersion"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "profileVersion",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/profile-versions/{versionId}",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/profile-versions/{versionId}",
+      "original_v3_path": "/subjects/{subjectId}/profile-versions/{versionId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ProfileVersion"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "newHypothesis",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/hypotheses",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/hypotheses",
+      "original_v3_path": "/subjects/{subjectId}/hypotheses",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/HypothesisCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "listHypotheses",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/hypotheses",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/hypotheses",
+      "original_v3_path": "/subjects/{subjectId}/hypotheses",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "HypothesisPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "consents",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/consents",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/consents",
+      "original_v3_path": "/subjects/{subjectId}/consents",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "consentDecision",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/consents",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/consents",
+      "original_v3_path": "/subjects/{subjectId}/consents",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:consent",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:consent"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ConsentCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "grants",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/grants",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/grants",
+      "original_v3_path": "/subjects/{subjectId}/grants",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:share",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:share"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "grant",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/grants",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/grants",
+      "original_v3_path": "/subjects/{subjectId}/grants",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:share",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:share"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/GrantCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "revokeGrant",
+      "method": "DELETE",
+      "canonical_path": "/grants/{grantId}",
+      "effective_design_path": "/api/v2/grants/{grantId}",
+      "original_v3_path": "/grants/{grantId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "grant:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "grant:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "204",
+          "state": "NO_BODY_EXPECTED",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "observations",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/observations",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/observations",
+      "original_v3_path": "/subjects/{subjectId}/observations",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "observation",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/observations",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/observations",
+      "original_v3_path": "/subjects/{subjectId}/observations",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ObservationCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "questionnaireResponse",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/questionnaire-responses",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/questionnaire-responses",
+      "original_v3_path": "/subjects/{subjectId}/questionnaire-responses",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/QuestionnaireResponse"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "createPlan",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/plans",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/plans",
+      "original_v3_path": "/subjects/{subjectId}/plans",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/PlanCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "plans",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/plans",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/plans",
+      "original_v3_path": "/subjects/{subjectId}/plans",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "checkin",
+      "method": "POST",
+      "canonical_path": "/actions/{actionId}/check-ins",
+      "effective_design_path": "/api/v2/actions/{actionId}/check-ins",
+      "original_v3_path": "/actions/{actionId}/check-ins",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "action:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "action:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/CheckinCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "timeline",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/timeline",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/timeline",
+      "original_v3_path": "/subjects/{subjectId}/timeline",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "analyze",
+      "method": "POST",
+      "canonical_path": "/analysis-runs",
+      "effective_design_path": "/api/v2/analysis-runs",
+      "original_v3_path": "/analysis-runs",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:analyze",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:analyze"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/AnalysisCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "202",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/JobAccepted"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "analysisStatus",
+      "method": "GET",
+      "canonical_path": "/analysis-runs/{runId}",
+      "effective_design_path": "/api/v2/analysis-runs/{runId}",
+      "original_v3_path": "/analysis-runs/{runId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "run:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "run:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "cancelAnalysis",
+      "method": "POST",
+      "canonical_path": "/analysis-runs/{runId}/cancel",
+      "effective_design_path": "/api/v2/analysis-runs/{runId}/cancel",
+      "original_v3_path": "/analysis-runs/{runId}/cancel",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "run:cancel",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "run:cancel"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/CancelRequest"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "analysisResults",
+      "method": "GET",
+      "canonical_path": "/analysis-runs/{runId}/results",
+      "effective_design_path": "/api/v2/analysis-runs/{runId}/results",
+      "original_v3_path": "/analysis-runs/{runId}/results",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "run:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "run:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/MethodResultPage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "methodResult",
+      "method": "GET",
+      "canonical_path": "/results/{resultId}",
+      "effective_design_path": "/api/v2/results/{resultId}",
+      "original_v3_path": "/results/{resultId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "result:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "result:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/MethodResult"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "createReport",
+      "method": "POST",
+      "canonical_path": "/reports",
+      "effective_design_path": "/api/v2/reports",
+      "original_v3_path": "/reports",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:report",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:report"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ReportCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "202",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/JobAccepted"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "reports",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/reports",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/reports",
+      "original_v3_path": "/subjects/{subjectId}/reports",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "report",
+      "method": "GET",
+      "canonical_path": "/reports/{reportId}",
+      "effective_design_path": "/api/v2/reports/{reportId}",
+      "original_v3_path": "/reports/{reportId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "report:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "report:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ReportSnapshot"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "reportRevisions",
+      "method": "GET",
+      "canonical_path": "/reports/{reportId}/revisions",
+      "effective_design_path": "/api/v2/reports/{reportId}/revisions",
+      "original_v3_path": "/reports/{reportId}/revisions",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "report:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "report:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "review",
+      "method": "POST",
+      "canonical_path": "/reports/{reportId}/reviews",
+      "effective_design_path": "/api/v2/reports/{reportId}/reviews",
+      "original_v3_path": "/reports/{reportId}/reviews",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "report:review",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "report:review"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ReviewCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "publish",
+      "method": "POST",
+      "canonical_path": "/reports/{reportId}/publish",
+      "effective_design_path": "/api/v2/reports/{reportId}/publish",
+      "original_v3_path": "/reports/{reportId}/publish",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "report:publish",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "report:publish"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/PublishRequest"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "exportReport",
+      "method": "POST",
+      "canonical_path": "/reports/{reportId}/exports",
+      "effective_design_path": "/api/v2/reports/{reportId}/exports",
+      "original_v3_path": "/reports/{reportId}/exports",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "report:export",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "report:export"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ExportCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "202",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/JobAccepted"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "downloadArtifact",
+      "method": "GET",
+      "canonical_path": "/artifacts/{artifactId}/download",
+      "effective_design_path": "/api/v2/artifacts/{artifactId}/download",
+      "original_v3_path": "/artifacts/{artifactId}/download",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "artifact:download",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "artifact:download"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/octet-stream",
+          "state": "INLINE_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "order",
+      "method": "POST",
+      "canonical_path": "/orders",
+      "effective_design_path": "/api/v2/orders",
+      "original_v3_path": "/orders",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "self",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "self"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/OrderCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "orderStatus",
+      "method": "GET",
+      "canonical_path": "/orders/{orderId}",
+      "effective_design_path": "/api/v2/orders/{orderId}",
+      "original_v3_path": "/orders/{orderId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "order:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "order:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "checkout",
+      "method": "POST",
+      "canonical_path": "/orders/{orderId}/checkout",
+      "effective_design_path": "/api/v2/orders/{orderId}/checkout",
+      "original_v3_path": "/orders/{orderId}/checkout",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "order:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "order:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/CheckoutCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "requestRefund",
+      "method": "POST",
+      "canonical_path": "/orders/{orderId}/refund-requests",
+      "effective_design_path": "/api/v2/orders/{orderId}/refund-requests",
+      "original_v3_path": "/orders/{orderId}/refund-requests",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "order:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "order:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/RefundRequest"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "paymentWebhook",
+      "method": "POST",
+      "canonical_path": "/webhooks/payments/{providerId}",
+      "effective_design_path": "/api/v2/webhooks/payments/{providerId}",
+      "original_v3_path": "/webhooks/payments/{providerId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "webhook_signature",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "webhook_signature"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "entitlements",
+      "method": "GET",
+      "canonical_path": "/entitlements",
+      "effective_design_path": "/api/v2/entitlements",
+      "original_v3_path": "/entitlements",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "self",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "self"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "ticket",
+      "method": "POST",
+      "canonical_path": "/support/tickets",
+      "effective_design_path": "/api/v2/support/tickets",
+      "original_v3_path": "/support/tickets",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "self",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "self"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/TicketCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "ticketStatus",
+      "method": "GET",
+      "canonical_path": "/support/tickets/{ticketId}",
+      "effective_design_path": "/api/v2/support/tickets/{ticketId}",
+      "original_v3_path": "/support/tickets/{ticketId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "ticket:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "ticket:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "privacyExport",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/data-exports",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/data-exports",
+      "original_v3_path": "/subjects/{subjectId}/data-exports",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:privacy",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:privacy"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/PrivacyExportRequest"
+      ],
+      "success_responses": [
+        {
+          "status": "202",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/JobAccepted"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "deleteSubject",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/deletion-jobs",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/deletion-jobs",
+      "original_v3_path": "/subjects/{subjectId}/deletion-jobs",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:privacy",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:privacy"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/DeletionRequest"
+      ],
+      "success_responses": [
+        {
+          "status": "202",
+          "media_type": "application/json",
+          "state": "NAMED_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/JobAccepted"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "deletionStatus",
+      "method": "GET",
+      "canonical_path": "/deletion-jobs/{jobId}",
+      "effective_design_path": "/api/v2/deletion-jobs/{jobId}",
+      "original_v3_path": "/deletion-jobs/{jobId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "job:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "job:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "jobStatus",
+      "method": "GET",
+      "canonical_path": "/jobs/{jobId}",
+      "effective_design_path": "/api/v2/jobs/{jobId}",
+      "original_v3_path": "/jobs/{jobId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "job:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "job:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "newAutomation",
+      "method": "POST",
+      "canonical_path": "/automations",
+      "effective_design_path": "/api/v2/automations",
+      "original_v3_path": "/automations",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:automate",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "subject:automate"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/AutomationCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "stopAutomation",
+      "method": "DELETE",
+      "canonical_path": "/automations/{automationId}",
+      "effective_design_path": "/api/v2/automations/{automationId}",
+      "original_v3_path": "/automations/{automationId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "automation:owner",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "automation:owner"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "204",
+          "state": "NO_BODY_EXPECTED",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "cases",
+      "method": "GET",
+      "canonical_path": "/practice/cases",
+      "effective_design_path": "/api/v2/practice/cases",
+      "original_v3_path": "/practice/cases",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "practitioner:assigned",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "practitioner:assigned"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "caseDetail",
+      "method": "GET",
+      "canonical_path": "/practice/cases/{caseId}",
+      "effective_design_path": "/api/v2/practice/cases/{caseId}",
+      "original_v3_path": "/practice/cases/{caseId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "practitioner:assigned",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "practitioner:assigned"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "courses",
+      "method": "GET",
+      "canonical_path": "/academy/courses",
+      "effective_design_path": "/api/v2/academy/courses",
+      "original_v3_path": "/academy/courses",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "assignment",
+      "method": "POST",
+      "canonical_path": "/academy/assignments",
+      "effective_design_path": "/api/v2/academy/assignments",
+      "original_v3_path": "/academy/assignments",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "enrollment:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "enrollment:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/AssignmentCreate"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "verifyCertificate",
+      "method": "GET",
+      "canonical_path": "/certificates/{certificateId}",
+      "effective_design_path": "/api/v2/certificates/{certificateId}",
+      "original_v3_path": "/certificates/{certificateId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "public_minimal",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "public_minimal"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "organizationOverview",
+      "method": "GET",
+      "canonical_path": "/organizations/{organizationId}/overview",
+      "effective_design_path": "/api/v2/organizations/{organizationId}/overview",
+      "original_v3_path": "/organizations/{organizationId}/overview",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "organization:member",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "organization:member"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "partner",
+      "method": "GET",
+      "canonical_path": "/partners/{partnerId}",
+      "effective_design_path": "/api/v2/partners/{partnerId}",
+      "original_v3_path": "/partners/{partnerId}",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "partner:assigned",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "partner:assigned"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "methodReleaseDraft",
+      "method": "POST",
+      "canonical_path": "/admin/method-releases",
+      "effective_design_path": "/api/v2/admin/method-releases",
+      "original_v3_path": "/admin/method-releases",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "method:editor",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "method:editor"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/MethodRelease"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "countryPackReview",
+      "method": "POST",
+      "canonical_path": "/admin/country-packs",
+      "effective_design_path": "/api/v2/admin/country-packs",
+      "original_v3_path": "/admin/country-packs",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "legal:reviewer",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "legal:reviewer"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/CountryPackDraft"
+      ],
+      "success_responses": [
+        {
+          "status": "201",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 200
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "quality",
+      "method": "GET",
+      "canonical_path": "/admin/quality",
+      "effective_design_path": "/api/v2/admin/quality",
+      "original_v3_path": "/admin/quality",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "quality:reviewer",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "quality:reviewer"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "operations",
+      "method": "GET",
+      "canonical_path": "/admin/operations",
+      "effective_design_path": "/api/v2/admin/operations",
+      "original_v3_path": "/admin/operations",
+      "origin": "LOCAL_R2_64",
+      "source": "docs/upgrade/2026-10-20/04_Backend_API/openapi.resolved.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "ops:reader",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-required-permission": "ops:reader"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": null,
+        "status": "USE_EXISTING_NAMED_CONTRACT_OR_DESIGN_RESOURCE_SPECIFIC_RESPONSE",
+        "acceptance": "Close generic response fields and preserve local canonical invariants."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "compareRuns",
+      "method": "POST",
+      "canonical_path": "/analysis-runs/compare",
+      "effective_design_path": "/api/v2/analysis-runs/compare",
+      "original_v3_path": "/analysis-runs/compare",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/RunCompare"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "RunComparisonView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "previewMethod",
+      "method": "POST",
+      "canonical_path": "/methods/{methodId}/preview",
+      "effective_design_path": "/api/v2/methods/{methodId}/preview",
+      "original_v3_path": "/methods/{methodId}/preview",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "method:preview",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "method:preview"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/MethodPreview"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "MethodPreviewResult",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "methodDependencies",
+      "method": "GET",
+      "canonical_path": "/methods/{methodId}/dependencies",
+      "effective_design_path": "/api/v2/methods/{methodId}/dependencies",
+      "original_v3_path": "/methods/{methodId}/dependencies",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "method:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "method:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "MethodDependencyPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "methodTestVectors",
+      "method": "GET",
+      "canonical_path": "/methods/{methodId}/test-vectors",
+      "effective_design_path": "/api/v2/methods/{methodId}/test-vectors",
+      "original_v3_path": "/methods/{methodId}/test-vectors",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "method:review",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "method:review"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "GoldenVectorPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "resolveHypotheses",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/hypotheses/resolve",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/hypotheses/resolve",
+      "original_v3_path": "/subjects/{subjectId}/hypotheses/resolve",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ConflictResolution"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "HypothesisResolutionReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "runTrace",
+      "method": "GET",
+      "canonical_path": "/analysis-runs/{runId}/trace",
+      "effective_design_path": "/api/v2/analysis-runs/{runId}/trace",
+      "original_v3_path": "/analysis-runs/{runId}/trace",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "RunTraceView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "runDependencies",
+      "method": "GET",
+      "canonical_path": "/analysis-runs/{runId}/dependencies",
+      "effective_design_path": "/api/v2/analysis-runs/{runId}/dependencies",
+      "original_v3_path": "/analysis-runs/{runId}/dependencies",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "RunDependencyPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "claimProvenance",
+      "method": "GET",
+      "canonical_path": "/claims/{claimId}/provenance",
+      "effective_design_path": "/api/v2/claims/{claimId}/provenance",
+      "original_v3_path": "/claims/{claimId}/provenance",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "ClaimProvenanceView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "reviewReportV2",
+      "method": "POST",
+      "canonical_path": "/reports/{reportId}/review",
+      "effective_design_path": "/api/v2/reports/{reportId}/review",
+      "original_v3_path": "/reports/{reportId}/review",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "report:review",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "report:review"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ReviewDecision"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "ReportReviewReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "withdrawReportV2",
+      "method": "POST",
+      "canonical_path": "/reports/{reportId}/withdraw",
+      "effective_design_path": "/api/v2/reports/{reportId}/withdraw",
+      "original_v3_path": "/reports/{reportId}/withdraw",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "report:withdraw",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "report:withdraw"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/ReviewDecision"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "ReportWithdrawalReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "reportDiff",
+      "method": "GET",
+      "canonical_path": "/reports/{reportId}/diff/{previousId}",
+      "effective_design_path": "/api/v2/reports/{reportId}/diff/{previousId}",
+      "original_v3_path": "/reports/{reportId}/diff/{previousId}",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "ReportDiffView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "newDeletionV2",
+      "method": "POST",
+      "canonical_path": "/privacy/deletion-requests",
+      "effective_design_path": "/api/v2/privacy/deletion-requests",
+      "original_v3_path": "/privacy/deletion-requests",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:delete",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:delete"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/DeletionRequestV2"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "DeletionAcceptedReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "deletionStatusV2",
+      "method": "GET",
+      "canonical_path": "/privacy/deletion-requests/{requestId}",
+      "effective_design_path": "/api/v2/privacy/deletion-requests/{requestId}",
+      "original_v3_path": "/privacy/deletion-requests/{requestId}",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "DeletionStatusView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "countryEligibility",
+      "method": "GET",
+      "canonical_path": "/country-packs/{countryId}/eligibility",
+      "effective_design_path": "/api/v2/country-packs/{countryId}/eligibility",
+      "original_v3_path": "/country-packs/{countryId}/eligibility",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "self",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "self"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "CountryEligibilityView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "releaseImpact",
+      "method": "GET",
+      "canonical_path": "/operations/method-releases/{releaseId}/impact",
+      "effective_design_path": "/api/v2/operations/method-releases/{releaseId}/impact",
+      "original_v3_path": "/operations/method-releases/{releaseId}/impact",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "method:review",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "method:review"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/ResourcePage"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "MethodImpactPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "freezeMethod",
+      "method": "POST",
+      "canonical_path": "/operations/method-releases/{releaseId}/freeze",
+      "effective_design_path": "/api/v2/operations/method-releases/{releaseId}/freeze",
+      "original_v3_path": "/operations/method-releases/{releaseId}/freeze",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "method:release",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "method:release"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/MethodFreeze"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "MethodFreezeReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "resonanceSummaryV2",
+      "method": "GET",
+      "canonical_path": "/subjects/{subjectId}/resonance/summary",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/resonance/summary",
+      "original_v3_path": "/subjects/{subjectId}/resonance/summary",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:read",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:read"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "MetricSummaryView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "syncOfflineBatch",
+      "method": "POST",
+      "canonical_path": "/subjects/{subjectId}/offline-batches",
+      "effective_design_path": "/api/v2/subjects/{subjectId}/offline-batches",
+      "original_v3_path": "/subjects/{subjectId}/offline-batches",
+      "origin": "EXTERNAL_V2_ADDITION_19",
+      "source": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": "subject:write",
+        "policy_requirements": [],
+        "mapping_state": "PRESERVED_PERMISSION_REQUIRES_SERVER_ENFORCEMENT",
+        "source_extensions": {
+          "x-permission": "subject:write"
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/OfflineBatch"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "GENERIC_SUCCESS_SCHEMA",
+          "schema_refs": [
+            "#/components/schemas/Resource"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "name": "Idempotency-Key",
+          "in": "header",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 16,
+            "maxLength": 128
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "GENERIC_SUCCESS_SCHEMA"
+      ],
+      "response_design_proposal": {
+        "name": "OfflineBatchReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "computeNumerologyFull",
+      "method": "POST",
+      "canonical_path": "/numbers/numerology-full",
+      "effective_design_path": "/api/v2/numbers/numerology-full",
+      "original_v3_path": "/api/v2/numbers/numerology-full",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/NumerologyFullInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "REFERENCE_ONLY_RESPONSE",
+          "schema_refs": [
+            "#/components/schemas/ReferenceResult"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED",
+        "REFERENCE_ONLY_RESPONSE"
+      ],
+      "response_design_proposal": {
+        "name": "NumerologyFullResult wrapped by canonical MethodResult",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "computeBatCuc",
+      "method": "POST",
+      "canonical_path": "/numbers/bat-cuc",
+      "effective_design_path": "/api/v2/numbers/bat-cuc",
+      "original_v3_path": "/api/v2/numbers/bat-cuc",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/BatCucInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "REFERENCE_ONLY_RESPONSE",
+          "schema_refs": [
+            "#/components/schemas/ReferenceResult"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED",
+        "REFERENCE_ONLY_RESPONSE"
+      ],
+      "response_design_proposal": {
+        "name": "BatCucResult wrapped by canonical MethodResult",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "computePsychomatrix",
+      "method": "POST",
+      "canonical_path": "/numbers/psychomatrix",
+      "effective_design_path": "/api/v2/numbers/psychomatrix",
+      "original_v3_path": "/api/v2/numbers/psychomatrix",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/PsychomatrixInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "REFERENCE_ONLY_RESPONSE",
+          "schema_refs": [
+            "#/components/schemas/ReferenceResult"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED",
+        "REFERENCE_ONLY_RESPONSE"
+      ],
+      "response_design_proposal": {
+        "name": "PsychomatrixResult wrapped by canonical MethodResult",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "compareNumberAssets",
+      "method": "POST",
+      "canonical_path": "/numbers/compare",
+      "effective_design_path": "/api/v2/numbers/compare",
+      "original_v3_path": "/api/v2/numbers/compare",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/NumberCompareInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "REFERENCE_ONLY_RESPONSE",
+          "schema_refs": [
+            "#/components/schemas/ReferenceResult"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED",
+        "REFERENCE_ONLY_RESPONSE"
+      ],
+      "response_design_proposal": {
+        "name": "NumberComparisonView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "compareNameVariants",
+      "method": "POST",
+      "canonical_path": "/names/compare",
+      "effective_design_path": "/api/v2/names/compare",
+      "original_v3_path": "/api/v2/names/compare",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/NameCompareInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "REFERENCE_ONLY_RESPONSE",
+          "schema_refs": [
+            "#/components/schemas/ReferenceResult"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED",
+        "REFERENCE_ONLY_RESPONSE"
+      ],
+      "response_design_proposal": {
+        "name": "NameComparisonView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "composeLifetime",
+      "method": "POST",
+      "canonical_path": "/lifetime/compose",
+      "effective_design_path": "/api/v2/lifetime/compose",
+      "original_v3_path": "/api/v2/lifetime/compose",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/LifetimeInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "media_type": "application/json",
+          "state": "REFERENCE_ONLY_RESPONSE",
+          "schema_refs": [
+            "#/components/schemas/ReferenceResult"
+          ]
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED",
+        "REFERENCE_ONLY_RESPONSE"
+      ],
+      "response_design_proposal": {
+        "name": "LifetimeCompositionView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "createAnalysisBundle",
+      "method": "POST",
+      "canonical_path": "/analysis-bundles",
+      "effective_design_path": "/api/v2/analysis-bundles",
+      "original_v3_path": "/api/v2/analysis-bundles",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/AllInOneInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        },
+        {
+          "status": "202",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "AnalysisBundleAcceptedReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "getAnalysisBundle",
+      "method": "GET",
+      "canonical_path": "/analysis-bundles/{bundle_id}",
+      "effective_design_path": "/api/v2/analysis-bundles/{bundle_id}",
+      "original_v3_path": "/api/v2/analysis-bundles/{bundle_id}",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "AnalysisBundleStatusView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "cancelAnalysisBundle",
+      "method": "POST",
+      "canonical_path": "/analysis-bundles/{bundle_id}/cancel",
+      "effective_design_path": "/api/v2/analysis-bundles/{bundle_id}/cancel",
+      "original_v3_path": "/api/v2/analysis-bundles/{bundle_id}/cancel",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/BundleCancelInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "AnalysisBundleCancellationReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "getMethodSourceConflicts",
+      "method": "GET",
+      "canonical_path": "/methods/{method_id}/source-conflicts",
+      "effective_design_path": "/api/v2/methods/{method_id}/source-conflicts",
+      "original_v3_path": "/api/v2/methods/{method_id}/source-conflicts",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "MethodSourceConflictPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "getBatCucTable",
+      "method": "GET",
+      "canonical_path": "/numbers/bat-cuc/table",
+      "effective_design_path": "/api/v2/numbers/bat-cuc/table",
+      "original_v3_path": "/api/v2/numbers/bat-cuc/table",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "VersionedPairTableView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "getLifeDomains",
+      "method": "GET",
+      "canonical_path": "/lifetime/domains",
+      "effective_design_path": "/api/v2/lifetime/domains",
+      "original_v3_path": "/api/v2/lifetime/domains",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "VersionedLifeDomainPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "getScopedProductEligibility",
+      "method": "GET",
+      "canonical_path": "/products/{product_id}/eligibility",
+      "effective_design_path": "/api/v2/products/{product_id}/eligibility",
+      "original_v3_path": "/api/v2/products/{product_id}/eligibility",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "ScopedProductEligibilityView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "createKnowledgeLegacyTransfer",
+      "method": "POST",
+      "canonical_path": "/legacy-transfers",
+      "effective_design_path": "/api/v2/legacy-transfers",
+      "original_v3_path": "/api/v2/legacy-transfers",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [
+        "#/components/schemas/KnowledgeTransferInput"
+      ],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [
+        {
+          "in": "header",
+          "name": "Idempotency-Key",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 120
+          }
+        }
+      ],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "KnowledgeTransferReceipt",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "getTerritoryReleaseGates",
+      "method": "GET",
+      "canonical_path": "/territories/{territory_id}/release-gates",
+      "effective_design_path": "/api/v2/territories/{territory_id}/release-gates",
+      "original_v3_path": "/api/v2/territories/{territory_id}/release-gates",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "TerritoryReleaseGateView",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    },
+    {
+      "operation_id": "getMethodVersionHistory",
+      "method": "GET",
+      "canonical_path": "/methods/{method_id}/versions",
+      "effective_design_path": "/api/v2/methods/{method_id}/versions",
+      "original_v3_path": "/api/v2/methods/{method_id}/versions",
+      "origin": "EXTERNAL_V3_ADDITION_16",
+      "source": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json",
+      "authorization": {
+        "schema_version": "planning-1",
+        "permission": null,
+        "policy_requirements": [
+          "account",
+          "subject_grant",
+          "processing_purpose",
+          "released_method",
+          "entitlement_if_required"
+        ],
+        "mapping_state": "UNRESOLVED_FAIL_CLOSED",
+        "source_extensions": {
+          "x-required-policy": [
+            "account",
+            "subject_grant",
+            "processing_purpose",
+            "released_method",
+            "entitlement_if_required"
+          ]
+        },
+        "runtime_authority": false
+      },
+      "request_schema_refs": [],
+      "success_responses": [
+        {
+          "status": "200",
+          "state": "MISSING_SUCCESS_SCHEMA",
+          "schema_refs": []
+        }
+      ],
+      "idempotency_header_contracts": [],
+      "codegen_blockers": [
+        "FIELD_LEVEL_AUTHORIZATION_AND_SUBJECT_CONTEXT_UNRESOLVED",
+        "MISSING_SUCCESS_SCHEMA",
+        "PERMISSION_ACTION_AND_RESOURCE_SCOPE_UNRESOLVED"
+      ],
+      "response_design_proposal": {
+        "name": "MethodVersionPage",
+        "status": "PROPOSED_NOT_BOUND_TO_API",
+        "acceptance": "Define exact authorized fields, pagination/versioning/null reasons and positive/negative fixtures before binding; never reuse an input schema as output."
+      },
+      "implemented_by_import": false
+    }
+  ]
+}

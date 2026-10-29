@@ -1,0 +1,98 @@
+{
+  "product_id": "LC-L9",
+  "template_version": "0.1-proposed",
+  "page_budget": {
+    "min": 150,
+    "max": 600,
+    "mandatory": false
+  },
+  "sections": [
+    {
+      "block": "identity",
+      "title_vi": "Phạm vi và dữ liệu gốc",
+      "requirements": "Nguồn, consent, input precision và unknowns",
+      "section_id": "L9.01",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "identity",
+      "title_vi": "Bản đồ điều đã biết",
+      "requirements": "Dữ kiện/khai báo/quan sát riêng",
+      "section_id": "L9.02",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Hồ sơ hợp nhất",
+      "requirements": "Included/excluded scopes",
+      "section_id": "L9.03",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Quan hệ giữa các phần",
+      "requirements": "Claim lineage không double count",
+      "section_id": "L9.04",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Điều đã thay đổi",
+      "requirements": "Revisions actual",
+      "section_id": "L9.05",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Hệ lựa chọn",
+      "requirements": "Goals/constraints",
+      "section_id": "L9.06",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "analysis",
+      "title_vi": "Bản đồ hành động",
+      "requirements": "30/90day/yearplans không tiên tri",
+      "section_id": "L9.07",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "appendix",
+      "title_vi": "Phép tính, nguồn và giới hạn",
+      "requirements": "Method versions/rights/claim types + missing fields",
+      "section_id": "L9.08",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    },
+    {
+      "block": "action",
+      "title_vi": "Quyền sửa, chia sẻ và xóa",
+      "requirements": "Hướng dẫn thực tế và kênh hỗ trợ miễn phí",
+      "section_id": "L9.09",
+      "missing_data_text": "Chưa có dữ liệu phù hợp cho phần này. Không suy ra kết luận thay thế.",
+      "personalized_only_with_claim_refs": true
+    }
+  ],
+  "public_auto_publish": false,
+  "default_review": "human_before_publish_beta",
+  "prohibited": [
+    "unverified_biography",
+    "health_from_numbers",
+    "morphology_personality",
+    "unvalidated_probability",
+    "filler_to_reach_page_count"
+  ],
+  "execution_amendment_2026_10_20": {
+    "contract_id": "RPT-L9",
+    "contract_ref": "../NINE_LEVEL_REPORT_CONTRACTS.json",
+    "evaluation_ref": "../07_AI_EVALUATION_AND_DEMO_PLAN_2026-10-20.md",
+    "claim_status": "NOT_CHECKED"
+  }
+}

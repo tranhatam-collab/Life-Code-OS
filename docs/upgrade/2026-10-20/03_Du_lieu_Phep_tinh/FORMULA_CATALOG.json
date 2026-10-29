@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0-proposed",
+  "as_of": "2026-10-20",
+  "status": "PROPOSED_NOT_APPROVED",
+  "policy": {
+    "catalog_entry_is_not_product_approval": true,
+    "no_unspecified_formula_fallback": true,
+    "symbolic_meaning_is_not_part_of_arithmetic": true,
+    "cross_field_arithmetic_is_validated_by_backend": true
+  },
+  "formulas": [
+    {
+      "formula_id": "FC-NAME-NFC-001",
+      "method_ids": ["M02"],
+      "name": "Unicode NFC name normalization",
+      "specification_state": "specified_reference",
+      "expression": "nfc = UnicodeNormalizeNFC(original); display whitespace policy is separately versioned",
+      "inputs": ["F002"],
+      "output_kind": "normalized_string_derivative",
+      "null_policy": "missing original name returns blocked, never an empty inferred name",
+      "range_policy": null,
+      "decimal_policy": null,
+      "timezone_policy": null,
+      "source_ids": ["S15"],
+      "demo_cases": [
+        {"case_id": "NFC-DECOMPOSED-VI", "input": "Trần Hà Tâm", "expected_nfc": "Trần Hà Tâm", "claim": "normalization_only"}
+      ],
+      "runtime_invariants": ["original is preserved", "normalization_version is recorded", "no symbolic meaning is inferred"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-NAME-CYCLE-001",
+      "method_ids": ["M03"],
+      "name": "Latin A-Z cycle 1-9",
+      "specification_state": "specified_reference_source_missing",
+      "expression": "A..I -> 1..9; J..R -> 1..9; S..Z -> 1..8; sum mapped characters; optional root is a separate configured step",
+      "inputs": ["F002"],
+      "output_kind": "deterministic_calculation",
+      "null_policy": "unsupported script or missing approved transliteration returns unsupported",
+      "range_policy": "sum is a non-negative integer; no personality range is defined",
+      "decimal_policy": "integer_only",
+      "timezone_policy": null,
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "NAME-CYCLE-REFERENCE-01", "input": "Trần Hà Tâm", "expected_sum": 33, "expected_root": 6, "claim": "calculation_only"},
+        {"case_id": "NAME-CYCLE-UNSUPPORTED-SCRIPT", "input": "陳", "expected_status": "unsupported"}
+      ],
+      "runtime_invariants": ["original and normalized strings remain distinct", "transliteration adapter is explicit", "no personality or destiny claim"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-DIGIT-SUM-001",
+      "method_ids": ["M04"],
+      "name": "Digit sum",
+      "specification_state": "specified_reference_source_missing",
+      "expression": "sum = Σ decimal_digit(input)",
+      "inputs": ["F013"],
+      "output_kind": "deterministic_calculation",
+      "null_policy": "missing or non-digit canonical input returns blocked",
+      "range_policy": "non-negative integer",
+      "decimal_policy": "integer_only",
+      "timezone_policy": "date must already be resolved under an approved calendar/time policy",
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "DIGIT-SUM-REFERENCE-01", "input": "24091983", "expected_sum": 36},
+        {"case_id": "DIGIT-SUM-FORMATTED-REJECT", "input": "24/09/1983", "expected_status": "blocked"}
+      ],
+      "runtime_invariants": ["separator formatting is not silently included", "intermediate sum is retained"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-DIGITAL-ROOT-001",
+      "method_ids": ["M03", "M04"],
+      "name": "Decimal digital root",
+      "specification_state": "reference_implementation_only",
+      "expression": "root(0)=0; for n>0, root=1+((n-1) mod 9)",
+      "inputs": [],
+      "output_kind": "deterministic_calculation",
+      "null_policy": "missing, negative, non-integer, or unsafe integer returns blocked",
+      "range_policy": "0..9",
+      "decimal_policy": "integer_only",
+      "timezone_policy": null,
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "ROOT-ZERO", "input": 0, "expected": 0},
+        {"case_id": "ROOT-36", "input": 36, "expected": 9},
+        {"case_id": "ROOT-NEGATIVE-REJECT", "input": -1, "expected_status": "blocked"}
+      ],
+      "runtime_invariants": ["master-number retention is not implied", "no symbolic claim is generated"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-PERSONAL-YEAR-UNRESOLVED",
+      "method_ids": ["M05"],
+      "name": "Personal year basic",
+      "specification_state": "formula_not_locked",
+      "expression": null,
+      "inputs": ["F013"],
+      "output_kind": "unsupported_until_method_release",
+      "null_policy": "always unresolved until reduction and year-boundary policies are approved",
+      "range_policy": null,
+      "decimal_policy": "integer_expected_but_not_approved",
+      "timezone_policy": "reference-year boundary not approved",
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "PERSONAL-YEAR-NO-FALLBACK", "input": {"birth_month": 9, "birth_day": 24, "reference_year": 2026}, "expected_status": "unsupported"}
+      ],
+      "runtime_invariants": ["must not choose a variant automatically", "must not generate event forecasts"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-TAIL80-001",
+      "method_ids": ["M06"],
+      "name": "Four-digit modulo 80",
+      "specification_state": "calculation_specified_symbolic_table_unverified",
+      "expression": "N = int(four_ascii_digits); quotient = floor(N / 80); remainder = N mod 80; lookup = null when remainder=0 and zero_policy=unmapped, otherwise remainder or 80",
+      "inputs": [],
+      "missing_registry_inputs": ["raw_identifier", "numbering_context", "normalized_identifier", "tail4_suffix"],
+      "output_kind": "deterministic_calculation_plus_optional_symbolic_lookup",
+      "null_policy": "remainder 0 with unmapped policy gives null lookup and null label",
+      "range_policy": "N 0000..9999; quotient 0..124; remainder 0..79; lookup null or 1..80",
+      "decimal_policy": "integer_only_no_fraction_truncation",
+      "timezone_policy": null,
+      "source_ids": ["USER_TABLE80", "USER_TABLE80_CONVERSATION"],
+      "demo_cases": [
+        {"case_id": "TAIL80-6231", "suffix": "6231", "zero_policy": "unmapped", "quotient": 77, "remainder": 71, "lookup_code": 71},
+        {"case_id": "TAIL80-1986", "suffix": "1986", "zero_policy": "unmapped", "quotient": 24, "remainder": 66, "lookup_code": 66},
+        {"case_id": "TAIL80-3468", "suffix": "3468", "zero_policy": "unmapped", "quotient": 43, "remainder": 28, "lookup_code": 28},
+        {"case_id": "TAIL80-0080-UNMAPPED", "suffix": "0080", "zero_policy": "unmapped", "quotient": 1, "remainder": 0, "lookup_code": null},
+        {"case_id": "TAIL80-0080-AS80", "suffix": "0080", "zero_policy": "as80", "quotient": 1, "remainder": 0, "lookup_code": 80},
+        {"case_id": "TAIL80-NON-ASCII-REJECT", "suffix": "１２３４", "expected_status": "blocked"}
+      ],
+      "runtime_invariants": ["N = 80 * quotient + remainder", "suffix is exactly four ASCII digits", "symbolic label is separate from arithmetic", "probability is null", "is_personalized is false"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-PAIR-ADJACENT-001",
+      "method_ids": ["M07"],
+      "name": "Overlapping adjacent pair classification",
+      "specification_state": "structure_specified_lookup_source_missing",
+      "expression": "a digit string of length n produces pairs input[i:i+2] for i=0..n-2; each pair is looked up in a versioned 64-pair table",
+      "inputs": [],
+      "missing_registry_inputs": ["raw_identifier", "numbering_context", "normalized_digit_sequence"],
+      "output_kind": "deterministic_table_lookup",
+      "null_policy": "pairs containing 0 or 5 are unresolved in the initial configuration",
+      "range_policy": "pair count = n-1",
+      "decimal_policy": "digit_string_only",
+      "timezone_policy": null,
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "PAIR-OVERLAP-STRUCTURE", "input": "123", "expected_pairs": ["12", "23"]},
+        {"case_id": "PAIR-ZERO-FIVE-UNRESOLVED", "input": "105", "expected_unresolved_pairs": ["10", "05"]}
+      ],
+      "runtime_invariants": ["pairs overlap", "unresolved pairs remain visible", "55 is not assigned automatically", "no compatibility forecast"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-TASK-COMPLETION-001",
+      "method_ids": ["M10"],
+      "name": "Due-task completion",
+      "specification_state": "formula_specified_scope_policy_pending",
+      "expression": "completed_due_tasks / due_tasks",
+      "inputs": ["F030", "F032", "F033", "F034"],
+      "missing_registry_inputs": ["due_at", "due_state", "cancellation_reason", "eligibility_window_timezone"],
+      "output_kind": "derived_metric",
+      "null_policy": "due_tasks=0 returns null with missing_reason=no_due_tasks",
+      "range_policy": "ratio 0..1 or percent 0..100 according to metric release",
+      "decimal_policy": "server-defined decimal_places and rounding_mode",
+      "timezone_policy": "due-window timezone must be explicit",
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "TASK-ONE-OF-TWO", "completed_due_tasks": 1, "due_tasks": 2, "expected_ratio": 0.5},
+        {"case_id": "TASK-NO-DUE", "completed_due_tasks": 0, "due_tasks": 0, "expected_value": null, "expected_missing_reason": "no_due_tasks"}
+      ],
+      "runtime_invariants": ["denominator comes from server product requirements", "cancellation policy is versioned", "not a destiny score"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-OBSERVATION-COVERAGE-001",
+      "method_ids": [],
+      "name": "Observation coverage",
+      "specification_state": "formula_specified_zero_policy_amended",
+      "expression": "observed_days / planned_days",
+      "inputs": ["F083"],
+      "missing_registry_inputs": ["observation_plan_id", "planned_day", "eligible_day", "plan_timezone"],
+      "output_kind": "derived_metric",
+      "null_policy": "planned_days=0 returns null with missing_reason=no_planned_days",
+      "range_policy": "ratio 0..1 when observed_days is capped to eligible planned days",
+      "decimal_policy": "server-defined decimal_places and rounding_mode",
+      "timezone_policy": "day boundary uses the observation plan timezone",
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "OBS-FIVE-OF-SEVEN", "observed_days": 5, "planned_days": 7, "expected_fraction": "5/7", "decimal_output": "depends_on_approved_rounding_policy"},
+        {"case_id": "OBS-NO-PLAN", "observed_days": 0, "planned_days": 0, "expected_value": null, "expected_missing_reason": "no_planned_days"}
+      ],
+      "runtime_invariants": ["eligible-day definition is versioned", "missing days are not silently removed from denominator"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-CASHFLOW-001",
+      "method_ids": ["M13"],
+      "name": "Cashflow difference",
+      "specification_state": "formula_specified_decimal_contract_pending",
+      "expression": "cashflow = inflows - outflows for one currency and one declared period",
+      "inputs": ["F051", "F052", "F053", "F059", "F060"],
+      "output_kind": "derived_metric_or_scenario",
+      "null_policy": "missing amounts, currency, period, or as_of returns null/blocked; never coerced to zero",
+      "range_policy": "signed monetary amount; no universal score range",
+      "decimal_policy": "decimal_or_minor_units_only; ISO-4217 scale and rounding mode required",
+      "timezone_policy": "period boundary timezone must be explicit when sub-day transactions are used",
+      "source_ids": [],
+      "demo_cases": [
+        {"case_id": "CASHFLOW-SAME-CURRENCY", "inflows": "1000.00", "outflows": "700.00", "currency": "USD", "expected": "300.00", "note": "Illustrates decimal subtraction; currency scale still requires an approved contract."},
+        {"case_id": "CASHFLOW-CROSS-CURRENCY-BLOCK", "inflow_currency": "VND", "outflow_currency": "USD", "expected_status": "blocked_without_fx_source_and_date"}
+      ],
+      "runtime_invariants": ["no cross-currency sum without FX source and date", "assumptions remain visible", "not investment advice"],
+      "release_state": "blocked"
+    },
+    {
+      "formula_id": "FC-AGE-INTERVAL-001",
+      "method_ids": ["M09"],
+      "name": "Age interval 0-99",
+      "specification_state": "formula_specified_policy_pending",
+      "expression": "interval(a) = [anniversary(B,a), anniversary(B,a+1)) for a=0..99",
+      "inputs": ["F011", "F012", "F013", "F015", "F018", "F019", "F020"],
+      "output_kind": "deterministic_temporal_intervals",
+      "null_policy": "unknown or partial birth date returns interval bands or blocked, never an invented 01/01 birth date",
+      "range_policy": "exactly 100 non-overlapping half-open intervals when full birth date is available",
+      "decimal_policy": null,
+      "timezone_policy": "leap-day policy, calendar conversion, IANA timezone, and tzdb version are configuration",
+      "source_ids": ["S16"],
+      "demo_cases": [
+        {"case_id": "AGE-LEAPDAY-FEB28-POLICY", "birth_date": "2000-02-29", "age": 1, "leap_day_policy": "feb28", "expected_start": "2001-02-28", "expected_end": "2002-02-28"},
+        {"case_id": "AGE-LEAPDAY-MAR01-POLICY", "birth_date": "2000-02-29", "age": 1, "leap_day_policy": "mar01", "expected_start": "2001-03-01", "expected_end": "2002-03-01"},
+        {"case_id": "AGE-YEAR-ONLY", "birth_year": 2000, "expected_status": "interval_band_or_blocked"}
+      ],
+      "runtime_invariants": ["no add-365-days shortcut", "29-Feb policy is explicit", "date-only is not shifted through UTC", "no event or risk forecast"],
+      "release_state": "blocked"
+    }
+  ]
+}

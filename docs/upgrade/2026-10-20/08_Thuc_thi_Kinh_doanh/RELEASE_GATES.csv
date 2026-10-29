@@ -1,0 +1,13 @@
+﻿gate_id,name,owner,acceptance,status,scope,evidence_uri,approver,waive_core_security,fpos_gate_ids
+G01,Source & Release,Tech Lead,SHA/artifact/deployed receipt/schema/rollback,NOT_CHECKED,paid_beta,,,false,"[""RG0"",""RG2"",""RG4"",""RG5"",""RG9"",""RG10"",""RG11"",""RG13""]"
+G02,Authentication,Backend + Security,Client không quyết danh tính; session/recovery tests,NOT_CHECKED,paid_beta,,,false,"[""RG7"",""RG8"",""RG11""]"
+G03,Authorization,Security + QA,Object/tenant/field/grant negative tests,NOT_CHECKED,paid_beta,,,false,"[""RG7"",""RG8"",""RG11""]"
+G04,Legal & Purpose,Legal + Privacy,Pháp nhân/scope/country/basis/notices,NOT_CHECKED,paid_beta,,,false,"[""RG1"",""RG6"",""RG10"",""RG13""]"
+G05,Retention & Deletion,Data + Privacy,Xóa DB/R2/cache/index/queue/provider; backup restore,NOT_CHECKED,paid_beta,,,false,"[""RG7"",""RG12""]"
+G06,Methods & Claims,Method Council,Passport/rights/tests/null/approved rules,NOT_CHECKED,paid_beta,,,false,"[""RG1"",""RG2"",""RG3"",""RG6"",""RG7""]"
+G07,Legacy & Migration,Data Lead,"Quarantine, ownership, reconciliation",NOT_CHECKED,paid_beta,,,false,"[""RG7"",""RG9"",""RG12""]"
+G08,Reports & AI,Editorial + AI,"Claim lineage, policy, render quality",NOT_CHECKED,paid_beta,,,false,"[""RG2"",""RG3"",""RG8""]"
+G09,Commerce,Commerce + QA,Signature/replay/refund/entitlement tests,NOT_CHECKED,paid_beta,,,false,"[""RG7"",""RG9""]"
+G10,Reliability,SRE,Load/retry/DLQ/restore/RPO/RTO,NOT_CHECKED,paid_beta,,,false,"[""RG4"",""RG9"",""RG11""]"
+G11,Security Review,Independent Security,Review/retest/no unresolved blockers,NOT_CHECKED,paid_beta,,,false,"[""RG5"",""RG8""]"
+G12,Operations & Pilot,Program + Founder,Support/economics/incident/pilot/release decision,NOT_CHECKED,paid_beta,,,false,"[""RG1"",""RG6"",""RG10"",""RG12"",""RG13""]"

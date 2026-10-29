@@ -1,0 +1,274 @@
+{
+  "date": "2026-10-29",
+  "structural_checks": {
+    "tail80_exact_codes_1_to_80": true,
+    "pair64_exact_supported_digit_cartesian": true,
+    "groups8_each8": true,
+    "pair_intensity_unconfigured": true,
+    "transition64_exact_cartesian": true,
+    "transitions_not_traditional_authority": true,
+    "repeated70_exact_patterns_2_to_8": true,
+    "domains18_unique": true,
+    "scenarios54_exact_domain_modes": true,
+    "scenarios_no_forecast_or_diagnosis": true,
+    "fields120_unique": true,
+    "fields_not_blanket_required": true,
+    "resonance144_exact_layer_field_cartesian": true
+  },
+  "all_structural_checks_pass": true,
+  "assets": [
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/LAYERS_FIELDS_PRESERVED.json",
+      "sha256": "0b95e26a6f50d7fa325e2d190f47ca3cfce138c5afee7aa1af7133186d1b2f63",
+      "record_count": 4,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/METHOD_FAMILIES_PRESERVED.json",
+      "sha256": "b76688b91ab543c4382cc32fa3336fe281cb89c12b8cfb22d353d6253a8fcb54",
+      "record_count": 20,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+      "sha256": "be5e0d63299af47a0431c9fcda42bff1b66ebda64c3975aa700ca49bff1f77df",
+      "record_count": 62,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_64_PAIRS.json",
+      "sha256": "86b10ccff29499aa2744785ad827e074c73c9b7f68a5e30ef012c50a0fad5519",
+      "record_count": 64,
+      "source_ids": [
+        "R04",
+        "R05"
+      ],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_GROUPS.json",
+      "sha256": "3284feaa95b42e776b47dbf509f8eaec8422d00aafe7625b3947e5a6d45e1280",
+      "record_count": 8,
+      "source_ids": [
+        "R04",
+        "R05"
+      ],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_POLICY_VARIANTS.json",
+      "sha256": "9edd4ad86b0df96b3b89a70a904fd252baa3b91a18964da264ed870d0e1549e1",
+      "record_count": 3,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_SOURCE_CONFLICTS.json",
+      "sha256": "4b4462b96ab5eba5f5bcc940e47ef42a43502abd0843dcc1e6d9b103d03b1120",
+      "record_count": 2,
+      "source_ids": [
+        "R04"
+      ],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_TRANSITION_8X8.json",
+      "sha256": "7af1bb54a9421d6a377fb8497ce027ac22bfe52154aa8db1a47a640013280947",
+      "record_count": 64,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/NUMEROLOGY_23_COMPONENTS.json",
+      "sha256": "5daefb5cf0a68c5c0fed465e725f5bf8f664ea7d74f66fa7ae85bdb121ff7381",
+      "record_count": 23,
+      "source_ids": [
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R26"
+      ],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/PSYCHOMATRIX_17_POSITIONS.json",
+      "sha256": "dd852c87ea4c0e43427ffb5fc6f238910bf280104cd652601d5d875f944760a7",
+      "record_count": 17,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/REPEATED_SEQUENCES_70.json",
+      "sha256": "f2ff11e43952938f3b918b1f83806002098d2c651d204a87fc3e111f0d4f1494",
+      "record_count": 70,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/TAIL80_COMPLETE.json",
+      "sha256": "77dfc3111c7dda1254d2aa177e305775542a6ba4c7656f1cbe52c84835c4cfe5",
+      "record_count": 80,
+      "source_ids": [
+        "USER_TABLE80_CONVERSATION"
+      ],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/05_LIFETIME/LIFE_DOMAINS_18.json",
+      "sha256": "3b9cc70e65cd5fa1d9d4410c0e9d905fec58cc56d454314f3333712577f52f1e",
+      "record_count": 18,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/05_LIFETIME/LIFE_SCENARIOS_54.json",
+      "sha256": "33861e703d9786d4aaa7471ef20b169bc781976ff90c5f062b974b402f7d0f3c",
+      "record_count": 54,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/05_LIFETIME/LIFE_STAGE_ROUTING_9.json",
+      "sha256": "1d31deb688e213c7c65cc9a1a136fc247178d9ae422e1470b8a4e8198ecba25b",
+      "record_count": 9,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    },
+    {
+      "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/05_LIFETIME/RESONANCE_144_PRESERVED.json",
+      "sha256": "4e2d6100eb13663e56233771c4cf2d3ec197a32dc1cdb71c2ca4a27c062da3d9",
+      "record_count": 144,
+      "source_ids": [],
+      "integration_state": "PRESERVED_REFERENCE_DATA_NOT_SEEDED",
+      "release_gate": "source edition/rule/transcription, rights receipt, independent review, approved method release",
+      "rights_verified_by_this_audit": false
+    }
+  ],
+  "lab_table_copy_parity": [
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/BAT_CUC_64_PAIRS.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_64_PAIRS.json",
+      "exact_byte_match": true
+    },
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/BAT_CUC_GROUPS.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_GROUPS.json",
+      "exact_byte_match": true
+    },
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/BAT_CUC_POLICY_VARIANTS.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_POLICY_VARIANTS.json",
+      "exact_byte_match": true
+    },
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/BAT_CUC_TRANSITION_8X8.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_TRANSITION_8X8.json",
+      "exact_byte_match": true
+    },
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/LIFE_DOMAINS_18.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/05_LIFETIME/LIFE_DOMAINS_18.json",
+      "exact_byte_match": true
+    },
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/NUMEROLOGY_23_COMPONENTS.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/NUMEROLOGY_23_COMPONENTS.json",
+      "exact_byte_match": true
+    },
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/PSYCHOMATRIX_17_POSITIONS.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/PSYCHOMATRIX_17_POSITIONS.json",
+      "exact_byte_match": true
+    },
+    {
+      "lab_copy": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/data/TAIL80_COMPLETE.json",
+      "canonical_reference": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/TAIL80_COMPLETE.json",
+      "exact_byte_match": true
+    }
+  ],
+  "field_classifications": {
+    "PRIVATE": 90,
+    "RESTRICTED": 30
+  },
+  "fields_first_beta_count": 90,
+  "retention_status": "All 12 field-group retention identifiers remain policy_pending_review; finalize durations and deletion graph before real collection.",
+  "source_namespace_issue": {
+    "data_id": "USER_TABLE80_CONVERSATION",
+    "registry_id": "R28",
+    "state": "PROPOSED_ALIAS_NOT_A_RIGHTS_RECEIPT"
+  },
+  "source_conflicts": [
+    {
+      "id": "BC-CONFLICT-01",
+      "example": "876",
+      "table_result": [
+        "DN",
+        "SK"
+      ],
+      "public_prose_labels": [
+        "DN",
+        "TY"
+      ],
+      "source_id": "R04",
+      "resolution": "USE_DISCLOSED_PAIR_TABLE; FLAG_PROSE_CONFLICT; NO_FINANCIAL_CLAIM"
+    },
+    {
+      "id": "BC-CONFLICT-02",
+      "example": "678",
+      "table_result": [
+        "SK",
+        "DN"
+      ],
+      "public_prose_labels": [
+        "SK",
+        "TY"
+      ],
+      "source_id": "R04",
+      "resolution": "USE_DISCLOSED_PAIR_TABLE; FLAG_PROSE_CONFLICT; NO_FINANCIAL_CLAIM"
+    }
+  ],
+  "limits": [
+    "Structural completeness does not prove historical authority, copyright permission, predictive validity or production release.",
+    "Source Sxx, Rxx, user-supplied IDs and formula/method namespaces require explicit versioned crosswalk.",
+    "No SQL seed or migration was executed."
+  ]
+}

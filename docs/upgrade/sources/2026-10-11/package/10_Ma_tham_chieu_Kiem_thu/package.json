@@ -1,0 +1,13 @@
+{
+  "name": "life-code-reference-tests",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Local reference only. No deployment, authentication provider, database server, billing or production integration.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

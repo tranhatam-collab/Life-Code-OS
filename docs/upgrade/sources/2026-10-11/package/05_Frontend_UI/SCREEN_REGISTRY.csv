@@ -1,0 +1,46 @@
+﻿screen_id,name_vi,target_route,principal,data,api,task_id,states_acceptance,common_a11y,release_status
+UI-01,Trang chủ,/,guest,Public content,GET /catalog,WEB-01,educational-first; release badge,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-02,Giới thiệu HNH,/gioi-thieu,guest,Doctrine/source pages,static,WEB-01,No endorsement/clinicalclaims,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-03,Danh mục9cấp,/9-levels-life-code,guest,Catalog/eligibility,GET /catalog,GOV-09,Available/planned/delayed states,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-04,Thư viện phương pháp,/research/methods,guest,Published method passports,GET /methods,METHOD-10,Readstatus andsourceversion,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-05,Tra bộ số miễn phí,/numbers,guest,Suffix/name local,local deterministic,WEB-02,Invalid/unresolved/tablechanged; noPIanalytics,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-06,Giá và phạm vi,/pricing,guest,Versioned product offer,GET /catalog,COMMERCE-01,No hiddendatafee,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-07,Bắt đầu theo nhu cầu,/app/start,user,Goal/required fields,POST /subjects,WEB-03,Draft/partial/authneeded,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-08,Đăng nhập,/app/login,guest,Identity provider,GET /auth/login,TRUST-01,Failure/recovery/accountlock,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-09,Tổng quan,/app/dashboard,user,Goals/tasks/reports,GET /subjects/{subjectId}/overview,WEB-06,"Nullmetric notzero, nextaction",keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-10,Hồ sơ,/app/profiles,user,Subject list,GET /subjects,API-02,Empty/shared/revoked,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-11,Chỉnh hồ sơ,/app/profiles/:id,user,Profileversion,POST /subjects/{subjectId}/profile-versions,DATA-01,IfMatch conflict/missingDOB,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-12,Giả thuyết dữ liệu,/app/profiles/:id/hypotheses,user,Datahypotheses,POST /subjects/{subjectId}/hypotheses,DATA-01,Conflicting birthyears never merge,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-13,Sự đồng ý,/app/privacy,user,Purposes/consents,POST /subjects/{subjectId}/consents,TRUST-08,Withdraw/processingpaused,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-14,Chia sẻ,/app/sharing,user,Accessgrants,POST /subjects/{subjectId}/grants,TRUST-07,Scope/expiry/revoke,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-15,Nhật ký,/app/journal,user,Observation,POST /subjects/{subjectId}/observations,WEB-07,Offline/draft/saveerror,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-16,Đồng nhịp,/app/resonance,user,Resonance observations,GET /subjects/{subjectId}/observations,EXPAND-04,No causal/medical inference,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-17,Mục tiêu,/app/goals,user,Plans/actions,POST /subjects/{subjectId}/plans,API-05,No goal/start/archive,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-18,Check-in,/app/actions/:id,user,Actionoutcome,POST /actions/{actionId}/check-ins,API-05,Retry-idempotent/cancelled,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-19,Dòng thời gian,/app/timeline,user,Events/scenarios,GET /subjects/{subjectId}/timeline,METHOD-08,Fourtracks/unknown dates,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-20,Khảo sát,/app/questionnaires/:code,user,Licensedinstrument,POST /subjects/{subjectId}/questionnaire-responses,EXPAND-01,Incomplete/localeunsupported,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-21,Tính phân tích,/app/analysis/new,user,Releasedmethods,POST /analysis-runs,API-03,Missing/grantdenied/methodretired,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-22,Tiến độ,/app/analysis/:id,user,Analysisrun,GET /analysis-runs/{runId},API-03,Queued/running/failed/cancelled,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-23,Thư viện báo cáo,/app/reports,user,Reportmetadata,GET /subjects/{subjectId}/reports,WEB-08,No report/stale/withdrawn,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-24,Đọc báo cáo,/app/reports/:id,user,Authorizedsnapshot,GET /reports/{reportId},REPORT-05,Typedclaim/commoncontent separated,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-25,So sánh revisions,/app/reports/:id/versions,user,Reportrevisions,GET /reports/{reportId}/revisions,REPORT-09,Changed/notcomparable,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-26,Xuất/tải,/app/reports/:id/export,user,Exportartifact,POST /reports/{reportId}/exports,REPORT-06,Queued/ready/expired/denied,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-27,Đơn hàng,/app/orders,user,Order,POST /orders,COMMERCE-01,Pricechanged/missingdata,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-28,Thanh toán,/app/checkout/:id,user,Payment intent,POST /orders/{orderId}/checkout,COMMERCE-03,Pending/failed/serverconfirmed,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-29,Quyền dịch vụ,/app/subscription,user,Entitlements,GET /entitlements,COMMERCE-05,Expired/cancelled/freefallback,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-30,Hỗ trợ,/app/support,user,Scopedticket,POST /support/tickets,COMMERCE-08,Escalated/noPIneeded,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-31,Xuất dữ liệu,/app/privacy/export,user,Privacyexport,POST /subjects/{subjectId}/data-exports,DATA-09,Alwaysfree/progress,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-32,Yêu cầu xóa,/app/privacy/delete,user,Deletionjob,POST /subjects/{subjectId}/deletion-jobs,DATA-07,Hold/pending/complete/backupexpiry,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-33,Trung tâm tự động,/app/automations,user,Authorizationpolicies,POST /automations,AI-10,Off/optin/capped/stopped,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-34,Gia đình,/family,authorized_adults,Sharedsubjectgrants,GET /subjects,EXPAND-05,No blanketguardianaccess,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-35,Case chuyên gia,/practice/cases,practitioner,Assignedcases,GET /practice/cases,ACADEMY-05,Grantmissing/expired/closed,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-36,Duyệt báo cáo,/practice/reviews/:id,reviewer,Minimumclaimpackage,POST /reports/{reportId}/reviews,REPORT-10,Draft/revise/approved no direct publish,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-37,Academy,/academy,guest/user,Releasedcurriculum,GET /academy/courses,ACADEMY-01,Planned/open/closedcohort,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-38,Học bài,/academy/learn/:id,enrolled,Lessons/assignments,POST /academy/assignments,ACADEMY-03,Lockedbyenrollment notprivateprofile,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-39,Chứng nhận,/academy/verify/:id,public_minimal,Certificatepublicview,GET /certificates/{certificateId},ACADEMY-06,Valid/expired/revoked minimumPI,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-40,Workspace,/workspace,organization_member,Workprofiles/goals,GET /organizations/{organizationId}/overview,EXPAND-08,No journal/morphology analytics,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-41,Partner,/partner,licensed_partner,Countrylicense/quotas,GET /partners/{partnerId},GLOBAL-05,Suspended/countrynotapproved,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-42,Nguồn/phương pháp Admin,/admin/methods,method_editor,Methoddraft/releases,POST /admin/method-releases,METHOD-10,Reviewer segregation required,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-43,Quality center,/admin/quality,quality_reviewer,Sanitizedtest/outcomes,GET /admin/quality,OPS-08,No universalPIaccess,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-44,Ops center,/admin/operations,ops,Metrics/errors/jobs,GET /admin/operations,OPS-04,Kill switches A3approval,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED
+UI-45,Rights/legal center,/admin/rights,legal,Source/country policy,POST /admin/country-packs,GLOBAL-01,Pending/expired/restricted,keyboard/focus/errors/labels/contrast/reducedmotion,TARGET_NOT_DEPLOYED

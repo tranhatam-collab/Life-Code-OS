@@ -1,0 +1,274 @@
+[
+  {
+    "product_id": "LC-L1",
+    "family": "personal_report",
+    "level": 1,
+    "name": "Self Signal",
+    "name_vi": "Tín hiệu nền",
+    "phase": "C",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Mục tiêu, tên/ngày sinh theo phương pháp chọn",
+    "output_contract": "Kiểm tra nguồn, tính minh bạch, chủ đề tự quan sát",
+    "action": "Kế hoạch 30 ngày",
+    "method_candidates": [
+      "M01",
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "page_budget": {
+      "min": 30,
+      "max": 50,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L2",
+    "family": "personal_report",
+    "level": 2,
+    "name": "Inner Architecture",
+    "name_vi": "Cấu trúc nội tâm",
+    "phase": "E",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Vai trò, giá trị, áp lực, tình huống tự thuật",
+    "output_contract": "Mâu thuẫn nhu cầu và lựa chọn được xác nhận",
+    "action": "Thử nghiệm 90 ngày",
+    "method_candidates": [
+      "M10",
+      "M11"
+    ],
+    "page_budget": {
+      "min": 40,
+      "max": 60,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L3",
+    "family": "personal_report",
+    "level": 3,
+    "name": "Behavior Code",
+    "name_vi": "Cách hành động",
+    "phase": "E",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Nhật ký, bảng hỏi phù hợp, các lần thực hiện",
+    "output_contract": "Mô thức trong bối cảnh, không chẩn đoán",
+    "action": "Kế hoạch thay đổi có theo dõi",
+    "method_candidates": [
+      "M10",
+      "M11",
+      "M12"
+    ],
+    "page_budget": {
+      "min": 50,
+      "max": 70,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L4",
+    "family": "personal_report",
+    "level": 4,
+    "name": "Work & Wealth Code",
+    "name_vi": "Công việc và nguồn lực",
+    "phase": "E",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Nghề, kỹ năng, nguồn lực, thu–chi tự nguyện",
+    "output_contract": "Phương án vai trò, nguồn lực, kịch bản",
+    "action": "Kế hoạch công việc và ngân sách",
+    "method_candidates": [
+      "M12",
+      "M13"
+    ],
+    "page_budget": {
+      "min": 50,
+      "max": 80,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L5",
+    "family": "personal_report",
+    "level": 5,
+    "name": "Relationship Field",
+    "name_vi": "Quan hệ và ranh giới",
+    "phase": "E",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Nhu cầu, tự thuật và grant từng bên",
+    "output_contract": "Bản đồ giao tiếp, trách nhiệm, khác biệt",
+    "action": "Kế hoạch đối thoại",
+    "method_candidates": [
+      "M11",
+      "M14"
+    ],
+    "page_budget": {
+      "min": 50,
+      "max": 80,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L6",
+    "family": "personal_report",
+    "level": 6,
+    "name": "Life Timeline",
+    "name_vi": "Dòng thời gian",
+    "phase": "F",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Sự kiện có ngày/nguồn, giả thuyết, mục tiêu",
+    "output_contract": "Lịch sử, chu kỳ biểu tượng, kế hoạch, dự báo tách biệt",
+    "action": "Hành động 12 tháng, kịch bản dài hạn",
+    "method_candidates": [
+      "M09",
+      "M10"
+    ],
+    "page_budget": {
+      "min": 60,
+      "max": 100,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L7",
+    "family": "personal_report",
+    "level": 7,
+    "name": "Body Intelligence",
+    "name_vi": "Cơ thể và môi trường",
+    "phase": "F_REVIEW",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Ảnh/quan sát hợp lệ theo scope riêng",
+    "output_contract": "Mô tả hình thức, nhật ký sinh hoạt, giới hạn",
+    "action": "Quan sát và trao đổi chuyên môn phù hợp",
+    "method_candidates": [
+      "M15"
+    ],
+    "page_budget": {
+      "min": 60,
+      "max": 120,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L8",
+    "family": "personal_report",
+    "level": 8,
+    "name": "Mission Path",
+    "name_vi": "Hướng sống và phụng sự",
+    "phase": "F",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Giá trị, năng lực có minh chứng, lựa chọn",
+    "output_contract": "Hướng sống tự chọn, không nhiệm vụ linh hồn bắt buộc",
+    "action": "Thử nghiệm phụng sự và kế hoạch chuyển giao",
+    "method_candidates": [
+      "M11",
+      "M12"
+    ],
+    "page_budget": {
+      "min": 80,
+      "max": 150,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  },
+  {
+    "product_id": "LC-L9",
+    "family": "personal_report",
+    "level": 9,
+    "name": "Full Life Code",
+    "name_vi": "Hồ sơ đời sống hợp nhất",
+    "phase": "F",
+    "status": "PROPOSED_NOT_RELEASED",
+    "input_contract": "Chỉ các module được phép và đủ dữ liệu cần thiết",
+    "output_contract": "Sách không lặp, lineage, điều chưa biết, revisions",
+    "action": "Hệ hành động và xem lại",
+    "method_candidates": [
+      "M10",
+      "M11"
+    ],
+    "page_budget": {
+      "min": 150,
+      "max": 600,
+      "mandatory": false
+    },
+    "prerequisite_purchases": [],
+    "eligible_users": "adults_self_first; other scopes require dedicated gate",
+    "review": "human_before_publish_in_beta",
+    "price": {
+      "currency": null,
+      "amount": null,
+      "status": "PENDING_COMMERCIAL_APPROVAL"
+    },
+    "privacy_rights_paywalled": false
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:ReviewDecision",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "expected_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "decision": {
+      "enum": [
+        "approve",
+        "request_changes",
+        "withdraw"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    }
+  },
+  "required": [
+    "expected_version",
+    "decision",
+    "reason"
+  ]
+}

@@ -1,0 +1,491 @@
+[
+  {
+    "level": 1,
+    "product_id": "LC-L1",
+    "name": "Self Signal",
+    "name_vi": "Tín hiệu nền",
+    "required_scope": "Tên, ngày sinh khi phương pháp cần, mục tiêu; giờ/nơi có thể thiếu",
+    "focus_domains": [
+      "identity",
+      "learning",
+      "daily_rhythm",
+      "meaning"
+    ],
+    "method_candidates": [
+      "NUM23",
+      "TAIL80",
+      "BCLC64",
+      "NAME-UNICODE"
+    ],
+    "page_budget": {
+      "min": 30,
+      "max": 50,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 2,
+    "product_id": "LC-L2",
+    "name": "Inner Architecture",
+    "name_vi": "Cấu trúc nội tâm",
+    "required_scope": "Giá trị, vai trò, nhu cầu, tình huống do chủ thể kể",
+    "focus_domains": [
+      "identity",
+      "relationships",
+      "meaning",
+      "life_changes"
+    ],
+    "method_candidates": [
+      "VALUES-INTEREST",
+      "HNH-REFLECTION"
+    ],
+    "page_budget": {
+      "min": 40,
+      "max": 60,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 3,
+    "product_id": "LC-L3",
+    "name": "Behavior Code",
+    "name_vi": "Hành vi và mô thức",
+    "required_scope": "Nhật ký và bảng hỏi phù hợp",
+    "focus_domains": [
+      "learning",
+      "work",
+      "daily_rhythm",
+      "digital_life"
+    ],
+    "method_candidates": [
+      "IPIP",
+      "LIFE-DESIGN",
+      "RESONANCE"
+    ],
+    "page_budget": {
+      "min": 50,
+      "max": 70,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 4,
+    "product_id": "LC-L4",
+    "name": "Work & Wealth Code",
+    "name_vi": "Công việc và nguồn lực",
+    "required_scope": "Kỹ năng, việc làm, nguồn lực và thu–chi có đơn vị",
+    "focus_domains": [
+      "work",
+      "resources",
+      "home",
+      "mobility"
+    ],
+    "method_candidates": [
+      "CAREER",
+      "CASHFLOW"
+    ],
+    "page_budget": {
+      "min": 50,
+      "max": 80,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 5,
+    "product_id": "LC-L5",
+    "name": "Relationship Field",
+    "name_vi": "Quan hệ và ranh giới",
+    "required_scope": "Nhu cầu, lịch sử tự thuật; quyền dữ liệu từng bên",
+    "focus_domains": [
+      "relationships",
+      "family",
+      "community",
+      "caregiving"
+    ],
+    "method_candidates": [
+      "RELATIONSHIPS",
+      "HNH-REFLECTION"
+    ],
+    "page_budget": {
+      "min": 50,
+      "max": 80,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 6,
+    "product_id": "LC-L6",
+    "name": "Life Timeline",
+    "name_vi": "Dòng đời và phương án",
+    "required_scope": "Sự kiện có ngày, giả thuyết thời điểm và kế hoạch",
+    "focus_domains": [
+      "life_changes",
+      "later_life",
+      "legacy",
+      "mobility"
+    ],
+    "method_candidates": [
+      "NUM-LIFE-CYCLES",
+      "LIFE-DESIGN"
+    ],
+    "page_budget": {
+      "min": 60,
+      "max": 100,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 7,
+    "product_id": "LC-L7",
+    "name": "Body Intelligence",
+    "name_vi": "Cơ thể và môi trường",
+    "required_scope": "Quan sát có quyền, nhật ký sinh hoạt; ảnh tùy chọn",
+    "focus_domains": [
+      "body",
+      "daily_rhythm",
+      "home",
+      "caregiving"
+    ],
+    "method_candidates": [
+      "HAND",
+      "FACE",
+      "FOOT-VOICE",
+      "RESONANCE"
+    ],
+    "page_budget": {
+      "min": 60,
+      "max": 120,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 8,
+    "product_id": "LC-L8",
+    "name": "Mission Path",
+    "name_vi": "Hướng sống và phụng sự",
+    "required_scope": "Giá trị, năng lực có minh chứng, lựa chọn tự nguyện",
+    "focus_domains": [
+      "meaning",
+      "community",
+      "creativity",
+      "legacy"
+    ],
+    "method_candidates": [
+      "HNH-REFLECTION",
+      "CONTEMPLATION",
+      "LIFE-DESIGN"
+    ],
+    "page_budget": {
+      "min": 80,
+      "max": 150,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  },
+  {
+    "level": 9,
+    "product_id": "LC-L9",
+    "name": "Full Life Code",
+    "name_vi": "Hồ sơ đời sống hợp nhất",
+    "required_scope": "Các kết quả được phép và dữ liệu chủ thể đồng ý",
+    "focus_domains": [
+      "identity",
+      "learning",
+      "work",
+      "resources",
+      "relationships",
+      "family",
+      "home",
+      "community",
+      "body",
+      "daily_rhythm",
+      "meaning",
+      "creativity",
+      "mobility",
+      "caregiving",
+      "later_life",
+      "legacy",
+      "life_changes",
+      "digital_life"
+    ],
+    "method_candidates": [
+      "LINEAGE",
+      "REPORT",
+      "LIFE-DESIGN"
+    ],
+    "page_budget": {
+      "min": 150,
+      "max": 600,
+      "mandatory": false
+    },
+    "required_sections": [
+      "cover",
+      "source_of_truth",
+      "input_completeness",
+      "data_coverage",
+      "lci_status",
+      "identity",
+      "name_code_if_applicable",
+      "chrono_if_applicable",
+      "matrix_if_applicable",
+      "current_context",
+      "risk_boundaries",
+      "mission_options",
+      "action_plan",
+      "limitations_and_sources"
+    ],
+    "content_blocks": [
+      "Identity",
+      "Analysis",
+      "Timeline",
+      "Action"
+    ],
+    "privacy_rights_paywalled": false,
+    "purchase_prerequisites": [],
+    "eligibility": "scope_rights + purpose + released_method + needed_inputs; not compulsory_previous_level",
+    "missing_policy": "null plus explanation; no filler",
+    "production_status": "NOT_RELEASED",
+    "human_review": "required_in_beta",
+    "child_policy": "age_appropriate_separate_product_gate",
+    "maximum_claim": "No unknown-life facts or unsupported medical/personality inference"
+  }
+]

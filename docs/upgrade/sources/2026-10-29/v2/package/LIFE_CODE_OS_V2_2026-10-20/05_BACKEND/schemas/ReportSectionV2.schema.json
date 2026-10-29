@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:ReportSectionV2",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "section_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "block": {
+      "enum": [
+        "identity",
+        "analysis",
+        "timeline",
+        "action",
+        "appendix"
+      ]
+    },
+    "supporting_claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "body": {
+      "type": "string",
+      "maxLength": 50000
+    },
+    "availability": {
+      "enum": [
+        "ready",
+        "partial",
+        "unavailable",
+        "withheld"
+      ]
+    },
+    "missing_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "review_state": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "approved",
+        "withdrawn"
+      ]
+    }
+  },
+  "required": [
+    "section_id",
+    "title",
+    "block",
+    "supporting_claim_ids",
+    "body",
+    "availability",
+    "missing_requirements",
+    "review_state"
+  ]
+}

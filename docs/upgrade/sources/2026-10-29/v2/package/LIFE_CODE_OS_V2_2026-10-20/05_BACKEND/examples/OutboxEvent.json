@@ -1,0 +1,13 @@
+{
+  "event_id": "00000000-0000-4000-8000-000000000001",
+  "tenant_id": "00000000-0000-4000-8000-000000000002",
+  "subject_id": "00000000-0000-4000-8000-000000000001",
+  "operation": "render_report",
+  "idempotency_key": "demo-key",
+  "payload_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "access_revision": 1,
+  "state": "pending",
+  "attempt": 0,
+  "next_attempt_at": "2026-10-20T00:00:00Z",
+  "lease_until": null
+}

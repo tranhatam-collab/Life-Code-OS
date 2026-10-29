@@ -1,0 +1,10 @@
+{
+  "checked_on": "2026-10-29",
+  "command": "validation-python -B <immutable-v3>/VERIFY_PACKAGE.py",
+  "exit_code": 0,
+  "status": "PASS",
+  "files_expected": 519,
+  "files_present_excluding_manifest": 519,
+  "manifest_excluded_from_self_hash": true,
+  "production_scope": false
+}

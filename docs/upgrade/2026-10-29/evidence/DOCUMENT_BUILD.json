@@ -1,0 +1,948 @@
+{
+  "version": "2026-10-29.r1",
+  "sources": [
+    {
+      "path": "docs/upgrade/2026-10-29/MASTER_PLAN.md",
+      "sha256": "ee866bfdc2dec203922fceb66e9a7eda8e3c2e4949114de93ddf5933aa596229",
+      "bytes": 36812
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/backend/BACKEND_DEV_HANDOFF.md",
+      "sha256": "61fc0c118dcb632baa931f877d840056e66f04022d0f0b8a9d79ecfacc9dec04",
+      "bytes": 28662
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/product/PRODUCT_UX_REPORT_HANDOFF.md",
+      "sha256": "4c8cd2c6da588a7766e96eb25bc2007fadbf7a999734dada4cef992dddf9dc26",
+      "bytes": 20643
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/product/AI_REPORT_ACADEMY_HANDOFF.md",
+      "sha256": "769ac15a6861a44c32233a1966ad79afd10bffeffb869926610d6fc322c09403",
+      "bytes": 18827
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/execution/PROGRAM_EXECUTION_PLAN.md",
+      "sha256": "6c3520a9f996d91c48f2cea28d5056c1a4f2b348e97c7f044a4d7aeb37e8d679",
+      "bytes": 32597
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/backend/API_CONTRACT_RECONCILIATION.md",
+      "sha256": "b26294a10568c4996756865ba39db667da979c180ed2715e68eb3ca171250d92",
+      "bytes": 17760
+    }
+  ],
+  "headings": [
+    {
+      "text": "Phần 1 Tổng kế hoạch hợp nhất",
+      "level": 1,
+      "bookmark": "lc_h001"
+    },
+    {
+      "text": "1. Kết quả hợp nhất và cách áp dụng",
+      "level": 2,
+      "bookmark": "lc_h002"
+    },
+    {
+      "text": "2. Bản sắc, giá trị và giới hạn sản phẩm",
+      "level": 2,
+      "bookmark": "lc_h003"
+    },
+    {
+      "text": "3. Nguồn, phiên bản và quyền sử dụng",
+      "level": 2,
+      "bookmark": "lc_h004"
+    },
+    {
+      "text": "4. Danh mục sản phẩm và chín cấp",
+      "level": 2,
+      "bookmark": "lc_h005"
+    },
+    {
+      "text": "5. Mô hình đời sống và dữ liệu đầu vào",
+      "level": 2,
+      "bookmark": "lc_h006"
+    },
+    {
+      "text": "6. Hợp đồng công thức, ma trận và phương pháp",
+      "level": 2,
+      "bookmark": "lc_h007"
+    },
+    {
+      "text": "7. Bộ số–tên 23 thành phần",
+      "level": 2,
+      "bookmark": "lc_h008"
+    },
+    {
+      "text": "8. Bát Cực, đuôi 80 và Psychomatrix",
+      "level": 2,
+      "bookmark": "lc_h009"
+    },
+    {
+      "text": "9. Kiến trúc đích và đối chiếu repository thực",
+      "level": 2,
+      "bookmark": "lc_h010"
+    },
+    {
+      "text": "10. API và schema cần đóng trước code generation",
+      "level": 2,
+      "bookmark": "lc_h011"
+    },
+    {
+      "text": "11. Identity, quyền và dữ liệu riêng tư",
+      "level": 2,
+      "bookmark": "lc_h012"
+    },
+    {
+      "text": "12. Jobs, tính lại, hiệu năng và phục hồi",
+      "level": 2,
+      "bookmark": "lc_h013"
+    },
+    {
+      "text": "13. Mobile web, desktop web và native",
+      "level": 2,
+      "bookmark": "lc_h014"
+    },
+    {
+      "text": "14. AI và nhà máy báo cáo",
+      "level": 2,
+      "bookmark": "lc_h015"
+    },
+    {
+      "text": "15. Thương mại và mô hình chi phí",
+      "level": 2,
+      "bookmark": "lc_h016"
+    },
+    {
+      "text": "16. Academy, chuyên gia và lãnh thổ",
+      "level": 2,
+      "bookmark": "lc_h017"
+    },
+    {
+      "text": "17. Chuyển đổi hệ hiện có và P0",
+      "level": 2,
+      "bookmark": "lc_h018"
+    },
+    {
+      "text": "18. Chương trình DEV, phụ thuộc và nhận việc",
+      "level": 2,
+      "bookmark": "lc_h019"
+    },
+    {
+      "text": "19. QA, demo và cổng phát hành",
+      "level": 2,
+      "bookmark": "lc_h020"
+    },
+    {
+      "text": "20. Bàn giao và cập nhật tiếp theo",
+      "level": 2,
+      "bookmark": "lc_h021"
+    },
+    {
+      "text": "Phần 2 Bàn giao backend và công thức",
+      "level": 1,
+      "bookmark": "lc_h022"
+    },
+    {
+      "text": "1. Mốc bàn giao và nguồn dùng khi lập trình",
+      "level": 2,
+      "bookmark": "lc_h023"
+    },
+    {
+      "text": "2. Các vấn đề phải giải quyết trước khi sinh SDK hoặc nối giao diện",
+      "level": 2,
+      "bookmark": "lc_h024"
+    },
+    {
+      "text": "3. Kiến trúc triển khai và ranh giới trách nhiệm",
+      "level": 2,
+      "bookmark": "lc_h025"
+    },
+    {
+      "text": "4. Thiết kế dữ liệu, quyền và tính bền vững",
+      "level": 2,
+      "bookmark": "lc_h026"
+    },
+    {
+      "text": "5. Quy tắc công thức và demo phải bàn giao",
+      "level": 2,
+      "bookmark": "lc_h027"
+    },
+    {
+      "text": "6. Nguồn, quyền sử dụng và nội dung",
+      "level": 2,
+      "bookmark": "lc_h028"
+    },
+    {
+      "text": "7. Gói công việc DEV, phụ thuộc và nghiệm thu",
+      "level": 2,
+      "bookmark": "lc_h029"
+    },
+    {
+      "text": "BE-WP01 Contract & state — BE lead + FE lead + QA, 4–7",
+      "level": 3,
+      "bookmark": "lc_h030"
+    },
+    {
+      "text": "BE-WP02 Source & registry — Method Council + data steward + BE, 5–10 + review ngoài",
+      "level": 3,
+      "bookmark": "lc_h031"
+    },
+    {
+      "text": "BE-WP03 Data & access — DBA + security/BE, 6–10",
+      "level": 3,
+      "bookmark": "lc_h032"
+    },
+    {
+      "text": "BE-WP04 Queue & durable ledger — BE platform, 5–9",
+      "level": 3,
+      "bookmark": "lc_h033"
+    },
+    {
+      "text": "BE-WP05 Pure engine foundation — BE math/core + QA, 4–7",
+      "level": 3,
+      "bookmark": "lc_h034"
+    },
+    {
+      "text": "BE-WP06 Tên, ngày & ma trận — BE method + bilingual reviewer, 5–9",
+      "level": 3,
+      "bookmark": "lc_h035"
+    },
+    {
+      "text": "BE-WP07 Chuỗi, đuôi80 & Bát Cực — BE method + source reviewer, 4–7",
+      "level": 3,
+      "bookmark": "lc_h036"
+    },
+    {
+      "text": "BE-WP08 Lifetime & quan sát — BE product + QA, 4–7",
+      "level": 3,
+      "bookmark": "lc_h037"
+    },
+    {
+      "text": "BE-WP09 Bundle & incremental — BE orchestration + QA, 4–7",
+      "level": 3,
+      "bookmark": "lc_h038"
+    },
+    {
+      "text": "BE-WP10 Claim, report, book — BE reports + editorial + QA, 5–9",
+      "level": 3,
+      "bookmark": "lc_h039"
+    },
+    {
+      "text": "BE-WP11 Research adapters — Council + chuyên gia bản ngữ + BE",
+      "level": 3,
+      "bookmark": "lc_h040"
+    },
+    {
+      "text": "BE-WP12 Integration, privacy & ops — QA lead + SRE + security + product",
+      "level": 3,
+      "bookmark": "lc_h041"
+    },
+    {
+      "text": "8. Hợp đồng bàn giao cho mobile web, web app và desktop web",
+      "level": 2,
+      "bookmark": "lc_h042"
+    },
+    {
+      "text": "9. Kiểm thử đã có và bộ chứng cứ phải bổ sung",
+      "level": 2,
+      "bookmark": "lc_h043"
+    },
+    {
+      "text": "10. Biên bản nhận bàn giao DEV",
+      "level": 2,
+      "bookmark": "lc_h044"
+    },
+    {
+      "text": "Phần 3 Sản phẩm và giao diện đa thiết bị",
+      "level": 1,
+      "bookmark": "lc_h045"
+    },
+    {
+      "text": "Phạm vi đã hợp nhất và những điểm cần quyết định",
+      "level": 2,
+      "bookmark": "lc_h046"
+    },
+    {
+      "text": "Một tài khoản và các không gian được phép",
+      "level": 2,
+      "bookmark": "lc_h047"
+    },
+    {
+      "text": "Năm sản phẩm bổ sung và quan hệ với sản phẩm cũ",
+      "level": 2,
+      "bookmark": "lc_h048"
+    },
+    {
+      "text": "Hợp đồng trải nghiệm trên điện thoại, tablet và desktop",
+      "level": 2,
+      "bookmark": "lc_h049"
+    },
+    {
+      "text": "Gói việc frontend có thể bàn giao",
+      "level": 2,
+      "bookmark": "lc_h050"
+    },
+    {
+      "text": "PX-01 Khung ngữ cảnh",
+      "level": 3,
+      "bookmark": "lc_h051"
+    },
+    {
+      "text": "PX-02 Lab synthetic",
+      "level": 3,
+      "bookmark": "lc_h052"
+    },
+    {
+      "text": "PX-03 Số và tên",
+      "level": 3,
+      "bookmark": "lc_h053"
+    },
+    {
+      "text": "PX-04 Life Map",
+      "level": 3,
+      "bookmark": "lc_h054"
+    },
+    {
+      "text": "PX-05 Hợp đồng trạng thái",
+      "level": 3,
+      "bookmark": "lc_h055"
+    },
+    {
+      "text": "PX-06 Offline có kiểm soát",
+      "level": 3,
+      "bookmark": "lc_h056"
+    },
+    {
+      "text": "PX-07 Quyền và di sản",
+      "level": 3,
+      "bookmark": "lc_h057"
+    },
+    {
+      "text": "PX-08 Đọc và xuất báo cáo",
+      "level": 3,
+      "bookmark": "lc_h058"
+    },
+    {
+      "text": "PX-09 Reviewer và Research Studio",
+      "level": 3,
+      "bookmark": "lc_h059"
+    },
+    {
+      "text": "PX-10 Bản địa hóa và territory",
+      "level": 3,
+      "bookmark": "lc_h060"
+    },
+    {
+      "text": "Đường dẫn triển khai và giới hạn sửa đổi",
+      "level": 2,
+      "bookmark": "lc_h061"
+    },
+    {
+      "text": "Bộ demo và thứ tự nghiệm thu",
+      "level": 2,
+      "bookmark": "lc_h062"
+    },
+    {
+      "text": "Phần 4 AI báo cáo và Academy",
+      "level": 1,
+      "bookmark": "lc_h063"
+    },
+    {
+      "text": "Mô hình nội dung dùng chung",
+      "level": 2,
+      "bookmark": "lc_h064"
+    },
+    {
+      "text": "Phạm vi riêng của từng cấp",
+      "level": 2,
+      "bookmark": "lc_h065"
+    },
+    {
+      "text": "L1 Self Signal",
+      "level": 3,
+      "bookmark": "lc_h066"
+    },
+    {
+      "text": "L2 Inner Architecture",
+      "level": 3,
+      "bookmark": "lc_h067"
+    },
+    {
+      "text": "L3 Behavior Code",
+      "level": 3,
+      "bookmark": "lc_h068"
+    },
+    {
+      "text": "L4 Work & Wealth",
+      "level": 3,
+      "bookmark": "lc_h069"
+    },
+    {
+      "text": "L5 Relationship Field",
+      "level": 3,
+      "bookmark": "lc_h070"
+    },
+    {
+      "text": "L6 Life Timeline",
+      "level": 3,
+      "bookmark": "lc_h071"
+    },
+    {
+      "text": "L7 Body Intelligence",
+      "level": 3,
+      "bookmark": "lc_h072"
+    },
+    {
+      "text": "L8 Mission Path",
+      "level": 3,
+      "bookmark": "lc_h073"
+    },
+    {
+      "text": "L9 Full Life Code",
+      "level": 3,
+      "bookmark": "lc_h074"
+    },
+    {
+      "text": "Hợp đồng AI và quyền",
+      "level": 2,
+      "bookmark": "lc_h075"
+    },
+    {
+      "text": "Gói việc AI và báo cáo",
+      "level": 2,
+      "bookmark": "lc_h076"
+    },
+    {
+      "text": "PR-01 Snapshot và claim schema",
+      "level": 3,
+      "bookmark": "lc_h077"
+    },
+    {
+      "text": "PR-02 Assembler và kiểm tra số",
+      "level": 3,
+      "bookmark": "lc_h078"
+    },
+    {
+      "text": "PR-03 Chín template khác biệt",
+      "level": 3,
+      "bookmark": "lc_h079"
+    },
+    {
+      "text": "PR-04 Bộ mẫu và đối chứng",
+      "level": 3,
+      "bookmark": "lc_h080"
+    },
+    {
+      "text": "PR-05 Quota và lỗi provider",
+      "level": 3,
+      "bookmark": "lc_h081"
+    },
+    {
+      "text": "PR-06 Biên tập và bản địa hóa",
+      "level": 3,
+      "bookmark": "lc_h082"
+    },
+    {
+      "text": "PR-07 Review và publish",
+      "level": 3,
+      "bookmark": "lc_h083"
+    },
+    {
+      "text": "PR-08 Export và correction",
+      "level": 3,
+      "bookmark": "lc_h084"
+    },
+    {
+      "text": "PR-09 Academy thực hành",
+      "level": 3,
+      "bookmark": "lc_h085"
+    },
+    {
+      "text": "PR-10 Lãnh thổ và license",
+      "level": 3,
+      "bookmark": "lc_h086"
+    },
+    {
+      "text": "Fixture, tiêu chí chất lượng và receipt",
+      "level": 2,
+      "bookmark": "lc_h087"
+    },
+    {
+      "text": "Academy chín buổi 120 phút",
+      "level": 2,
+      "bookmark": "lc_h088"
+    },
+    {
+      "text": "License, thị trường và điều kiện mở rộng",
+      "level": 2,
+      "bookmark": "lc_h089"
+    },
+    {
+      "text": "Phần 5 Điều hành và nhận việc DEV",
+      "level": 1,
+      "bookmark": "lc_h090"
+    },
+    {
+      "text": "1. Kết luận và cách sử dụng",
+      "level": 2,
+      "bookmark": "lc_h091"
+    },
+    {
+      "text": "2. Baseline, nguồn và thứ tự hiệu lực",
+      "level": 2,
+      "bookmark": "lc_h092"
+    },
+    {
+      "text": "3. Số lượng hợp nhất và chống bỏ sót",
+      "level": 2,
+      "bookmark": "lc_h093"
+    },
+    {
+      "text": "4. Dependency và DAG đúng kiểu",
+      "level": 2,
+      "bookmark": "lc_h094"
+    },
+    {
+      "text": "5. Phạm vi đầu tiên và làn nghiên cứu dài hạn",
+      "level": 2,
+      "bookmark": "lc_h095"
+    },
+    {
+      "text": "6. Cấu trúc backend ưu tiên",
+      "level": 2,
+      "bookmark": "lc_h096"
+    },
+    {
+      "text": "7. Gói demo và trải nghiệm đa thiết bị",
+      "level": 2,
+      "bookmark": "lc_h097"
+    },
+    {
+      "text": "8. Báo cáo, AI và biên tập",
+      "level": 2,
+      "bookmark": "lc_h098"
+    },
+    {
+      "text": "9. Nguồn lực và effort không cộng trùng",
+      "level": 2,
+      "bookmark": "lc_h099"
+    },
+    {
+      "text": "10. Wave và đường găng có điều kiện",
+      "level": 2,
+      "bookmark": "lc_h100"
+    },
+    {
+      "text": "11. Dispatch mười ngày làm việc đầu",
+      "level": 2,
+      "bookmark": "lc_h101"
+    },
+    {
+      "text": "12. Definition of Ready và Done",
+      "level": 2,
+      "bookmark": "lc_h102"
+    },
+    {
+      "text": "13. Gate, QA claim và vận hành",
+      "level": 2,
+      "bookmark": "lc_h103"
+    },
+    {
+      "text": "14. Điểm cần con người quyết định, không chặn công việc chuẩn bị",
+      "level": 2,
+      "bookmark": "lc_h104"
+    },
+    {
+      "text": "15. Bàn giao và nhịp điều hành",
+      "level": 2,
+      "bookmark": "lc_h105"
+    },
+    {
+      "text": "Phần 6 Đối chiếu API và tra cứu hợp đồng",
+      "level": 1,
+      "bookmark": "lc_h106"
+    },
+    {
+      "text": "Quyết định hợp nhất",
+      "level": 2,
+      "bookmark": "lc_h107"
+    },
+    {
+      "text": "Tra cứu đủ 99 operation trong registry API",
+      "level": 2,
+      "bookmark": "lc_h108"
+    },
+    {
+      "text": "Bàn giao schema và bằng chứng",
+      "level": 2,
+      "bookmark": "lc_h109"
+    },
+    {
+      "text": "Phần 7 Danh mục hợp đồng và cách nhận bàn giao",
+      "level": 1,
+      "bookmark": "lc_h110"
+    },
+    {
+      "text": "Nhận việc theo candidate và phạm vi",
+      "level": 2,
+      "bookmark": "lc_h111"
+    }
+  ],
+  "toc_entries": [
+    {
+      "text": "Phần 1 Tổng kế hoạch hợp nhất",
+      "level": 1,
+      "bookmark": "lc_h001"
+    },
+    {
+      "text": "1. Kết quả hợp nhất và cách áp dụng",
+      "level": 2,
+      "bookmark": "lc_h002"
+    },
+    {
+      "text": "2. Bản sắc, giá trị và giới hạn sản phẩm",
+      "level": 2,
+      "bookmark": "lc_h003"
+    },
+    {
+      "text": "3. Nguồn, phiên bản và quyền sử dụng",
+      "level": 2,
+      "bookmark": "lc_h004"
+    },
+    {
+      "text": "4. Danh mục sản phẩm và chín cấp",
+      "level": 2,
+      "bookmark": "lc_h005"
+    },
+    {
+      "text": "5. Mô hình đời sống và dữ liệu đầu vào",
+      "level": 2,
+      "bookmark": "lc_h006"
+    },
+    {
+      "text": "6. Hợp đồng công thức, ma trận và phương pháp",
+      "level": 2,
+      "bookmark": "lc_h007"
+    },
+    {
+      "text": "7. Bộ số–tên 23 thành phần",
+      "level": 2,
+      "bookmark": "lc_h008"
+    },
+    {
+      "text": "8. Bát Cực, đuôi 80 và Psychomatrix",
+      "level": 2,
+      "bookmark": "lc_h009"
+    },
+    {
+      "text": "9. Kiến trúc đích và đối chiếu repository thực",
+      "level": 2,
+      "bookmark": "lc_h010"
+    },
+    {
+      "text": "10. API và schema cần đóng trước code generation",
+      "level": 2,
+      "bookmark": "lc_h011"
+    },
+    {
+      "text": "11. Identity, quyền và dữ liệu riêng tư",
+      "level": 2,
+      "bookmark": "lc_h012"
+    },
+    {
+      "text": "12. Jobs, tính lại, hiệu năng và phục hồi",
+      "level": 2,
+      "bookmark": "lc_h013"
+    },
+    {
+      "text": "13. Mobile web, desktop web và native",
+      "level": 2,
+      "bookmark": "lc_h014"
+    },
+    {
+      "text": "14. AI và nhà máy báo cáo",
+      "level": 2,
+      "bookmark": "lc_h015"
+    },
+    {
+      "text": "15. Thương mại và mô hình chi phí",
+      "level": 2,
+      "bookmark": "lc_h016"
+    },
+    {
+      "text": "16. Academy, chuyên gia và lãnh thổ",
+      "level": 2,
+      "bookmark": "lc_h017"
+    },
+    {
+      "text": "17. Chuyển đổi hệ hiện có và P0",
+      "level": 2,
+      "bookmark": "lc_h018"
+    },
+    {
+      "text": "18. Chương trình DEV, phụ thuộc và nhận việc",
+      "level": 2,
+      "bookmark": "lc_h019"
+    },
+    {
+      "text": "19. QA, demo và cổng phát hành",
+      "level": 2,
+      "bookmark": "lc_h020"
+    },
+    {
+      "text": "20. Bàn giao và cập nhật tiếp theo",
+      "level": 2,
+      "bookmark": "lc_h021"
+    },
+    {
+      "text": "Phần 2 Bàn giao backend và công thức",
+      "level": 1,
+      "bookmark": "lc_h022"
+    },
+    {
+      "text": "1. Mốc bàn giao và nguồn dùng khi lập trình",
+      "level": 2,
+      "bookmark": "lc_h023"
+    },
+    {
+      "text": "2. Các vấn đề phải giải quyết trước khi sinh SDK hoặc nối giao diện",
+      "level": 2,
+      "bookmark": "lc_h024"
+    },
+    {
+      "text": "3. Kiến trúc triển khai và ranh giới trách nhiệm",
+      "level": 2,
+      "bookmark": "lc_h025"
+    },
+    {
+      "text": "4. Thiết kế dữ liệu, quyền và tính bền vững",
+      "level": 2,
+      "bookmark": "lc_h026"
+    },
+    {
+      "text": "5. Quy tắc công thức và demo phải bàn giao",
+      "level": 2,
+      "bookmark": "lc_h027"
+    },
+    {
+      "text": "6. Nguồn, quyền sử dụng và nội dung",
+      "level": 2,
+      "bookmark": "lc_h028"
+    },
+    {
+      "text": "7. Gói công việc DEV, phụ thuộc và nghiệm thu",
+      "level": 2,
+      "bookmark": "lc_h029"
+    },
+    {
+      "text": "8. Hợp đồng bàn giao cho mobile web, web app và desktop web",
+      "level": 2,
+      "bookmark": "lc_h042"
+    },
+    {
+      "text": "9. Kiểm thử đã có và bộ chứng cứ phải bổ sung",
+      "level": 2,
+      "bookmark": "lc_h043"
+    },
+    {
+      "text": "10. Biên bản nhận bàn giao DEV",
+      "level": 2,
+      "bookmark": "lc_h044"
+    },
+    {
+      "text": "Phần 3 Sản phẩm và giao diện đa thiết bị",
+      "level": 1,
+      "bookmark": "lc_h045"
+    },
+    {
+      "text": "Phạm vi đã hợp nhất và những điểm cần quyết định",
+      "level": 2,
+      "bookmark": "lc_h046"
+    },
+    {
+      "text": "Một tài khoản và các không gian được phép",
+      "level": 2,
+      "bookmark": "lc_h047"
+    },
+    {
+      "text": "Năm sản phẩm bổ sung và quan hệ với sản phẩm cũ",
+      "level": 2,
+      "bookmark": "lc_h048"
+    },
+    {
+      "text": "Hợp đồng trải nghiệm trên điện thoại, tablet và desktop",
+      "level": 2,
+      "bookmark": "lc_h049"
+    },
+    {
+      "text": "Gói việc frontend có thể bàn giao",
+      "level": 2,
+      "bookmark": "lc_h050"
+    },
+    {
+      "text": "Đường dẫn triển khai và giới hạn sửa đổi",
+      "level": 2,
+      "bookmark": "lc_h061"
+    },
+    {
+      "text": "Bộ demo và thứ tự nghiệm thu",
+      "level": 2,
+      "bookmark": "lc_h062"
+    },
+    {
+      "text": "Phần 4 AI báo cáo và Academy",
+      "level": 1,
+      "bookmark": "lc_h063"
+    },
+    {
+      "text": "Mô hình nội dung dùng chung",
+      "level": 2,
+      "bookmark": "lc_h064"
+    },
+    {
+      "text": "Phạm vi riêng của từng cấp",
+      "level": 2,
+      "bookmark": "lc_h065"
+    },
+    {
+      "text": "Hợp đồng AI và quyền",
+      "level": 2,
+      "bookmark": "lc_h075"
+    },
+    {
+      "text": "Gói việc AI và báo cáo",
+      "level": 2,
+      "bookmark": "lc_h076"
+    },
+    {
+      "text": "Fixture, tiêu chí chất lượng và receipt",
+      "level": 2,
+      "bookmark": "lc_h087"
+    },
+    {
+      "text": "Academy chín buổi 120 phút",
+      "level": 2,
+      "bookmark": "lc_h088"
+    },
+    {
+      "text": "License, thị trường và điều kiện mở rộng",
+      "level": 2,
+      "bookmark": "lc_h089"
+    },
+    {
+      "text": "Phần 5 Điều hành và nhận việc DEV",
+      "level": 1,
+      "bookmark": "lc_h090"
+    },
+    {
+      "text": "1. Kết luận và cách sử dụng",
+      "level": 2,
+      "bookmark": "lc_h091"
+    },
+    {
+      "text": "2. Baseline, nguồn và thứ tự hiệu lực",
+      "level": 2,
+      "bookmark": "lc_h092"
+    },
+    {
+      "text": "3. Số lượng hợp nhất và chống bỏ sót",
+      "level": 2,
+      "bookmark": "lc_h093"
+    },
+    {
+      "text": "4. Dependency và DAG đúng kiểu",
+      "level": 2,
+      "bookmark": "lc_h094"
+    },
+    {
+      "text": "5. Phạm vi đầu tiên và làn nghiên cứu dài hạn",
+      "level": 2,
+      "bookmark": "lc_h095"
+    },
+    {
+      "text": "6. Cấu trúc backend ưu tiên",
+      "level": 2,
+      "bookmark": "lc_h096"
+    },
+    {
+      "text": "7. Gói demo và trải nghiệm đa thiết bị",
+      "level": 2,
+      "bookmark": "lc_h097"
+    },
+    {
+      "text": "8. Báo cáo, AI và biên tập",
+      "level": 2,
+      "bookmark": "lc_h098"
+    },
+    {
+      "text": "9. Nguồn lực và effort không cộng trùng",
+      "level": 2,
+      "bookmark": "lc_h099"
+    },
+    {
+      "text": "10. Wave và đường găng có điều kiện",
+      "level": 2,
+      "bookmark": "lc_h100"
+    },
+    {
+      "text": "11. Dispatch mười ngày làm việc đầu",
+      "level": 2,
+      "bookmark": "lc_h101"
+    },
+    {
+      "text": "12. Definition of Ready và Done",
+      "level": 2,
+      "bookmark": "lc_h102"
+    },
+    {
+      "text": "13. Gate, QA claim và vận hành",
+      "level": 2,
+      "bookmark": "lc_h103"
+    },
+    {
+      "text": "14. Điểm cần con người quyết định, không chặn công việc chuẩn bị",
+      "level": 2,
+      "bookmark": "lc_h104"
+    },
+    {
+      "text": "15. Bàn giao và nhịp điều hành",
+      "level": 2,
+      "bookmark": "lc_h105"
+    },
+    {
+      "text": "Phần 6 Đối chiếu API và tra cứu hợp đồng",
+      "level": 1,
+      "bookmark": "lc_h106"
+    },
+    {
+      "text": "Quyết định hợp nhất",
+      "level": 2,
+      "bookmark": "lc_h107"
+    },
+    {
+      "text": "Tra cứu đủ 99 operation trong registry API",
+      "level": 2,
+      "bookmark": "lc_h108"
+    },
+    {
+      "text": "Bàn giao schema và bằng chứng",
+      "level": 2,
+      "bookmark": "lc_h109"
+    },
+    {
+      "text": "Phần 7 Danh mục hợp đồng và cách nhận bàn giao",
+      "level": 1,
+      "bookmark": "lc_h110"
+    },
+    {
+      "text": "Nhận việc theo candidate và phạm vi",
+      "level": 2,
+      "bookmark": "lc_h111"
+    }
+  ],
+  "toc_kind": "static internal hyperlinks and bookmarks; page numbers populated from rendered PDF outlines",
+  "docx_path": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS/docs/upgrade/2026-10-29/exports/Life_Code_OS_Master_Dev_Handoff_2026-10-29.docx",
+  "paragraph_count": 597,
+  "table_count": 18
+}

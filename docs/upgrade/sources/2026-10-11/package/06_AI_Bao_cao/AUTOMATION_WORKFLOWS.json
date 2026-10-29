@@ -1,0 +1,102 @@
+[
+  {
+    "id": "method_calculation",
+    "trigger": "input_validated",
+    "autonomy": "A1",
+    "preconditions": "released method, purpose, quota",
+    "success_output": "typed result",
+    "on_failure": "UNKNOWN_RULE",
+    "owner_lane": "METHOD",
+    "implemented": false
+  },
+  {
+    "id": "report_draft",
+    "trigger": "analysis_complete",
+    "autonomy": "A1",
+    "preconditions": "grants current, claims allowed, cost cap",
+    "success_output": "draft snapshot",
+    "on_failure": "REVIEW_NEEDED",
+    "owner_lane": "REPORT",
+    "implemented": false
+  },
+  {
+    "id": "report_publish_beta",
+    "trigger": "review_approved",
+    "autonomy": "A3",
+    "preconditions": "reviewer role, notauthor, current grants",
+    "success_output": "published snapshot",
+    "on_failure": "DENY_OR_REVISE",
+    "owner_lane": "REPORT",
+    "implemented": false
+  },
+  {
+    "id": "payment_fulfillment",
+    "trigger": "verified payment webhook",
+    "autonomy": "A2",
+    "preconditions": "signature, order, amount, currency, dedup",
+    "success_output": "entitlement event",
+    "on_failure": "MANUAL_RECONCILIATION",
+    "owner_lane": "COMMERCE",
+    "implemented": false
+  },
+  {
+    "id": "optin_reminder",
+    "trigger": "schedule tick",
+    "autonomy": "A2",
+    "preconditions": "current optin, quiet hours, ratecap, grant",
+    "success_output": "one notification",
+    "on_failure": "NO_SEND",
+    "owner_lane": "AI",
+    "implemented": false
+  },
+  {
+    "id": "privacy_export",
+    "trigger": "verified subject request",
+    "autonomy": "A2",
+    "preconditions": "ownership, reauth, field scope",
+    "success_output": "private data export",
+    "on_failure": "PRIVACY_REVIEW",
+    "owner_lane": "DATA",
+    "implemented": false
+  },
+  {
+    "id": "delete_subject",
+    "trigger": "verified delete request",
+    "autonomy": "A2",
+    "preconditions": "purpose stops, legalholds reviewed",
+    "success_output": "deletion receipt",
+    "on_failure": "LEGAL_HOLD_NOTICE",
+    "owner_lane": "DATA",
+    "implemented": false
+  },
+  {
+    "id": "partner_release",
+    "trigger": "license approved",
+    "autonomy": "A3",
+    "preconditions": "country pack, rights, training, legal",
+    "success_output": "capability activation",
+    "on_failure": "NO_LAUNCH",
+    "owner_lane": "GLOBAL",
+    "implemented": false
+  },
+  {
+    "id": "source_ingest",
+    "trigger": "new licensed source",
+    "autonomy": "A1",
+    "preconditions": "rightsingest, scan, ACL, version",
+    "success_output": "research chunks",
+    "on_failure": "RIGHTS_REVIEW",
+    "owner_lane": "GOV",
+    "implemented": false
+  },
+  {
+    "id": "provider_outage",
+    "trigger": "errorbudget exceeded",
+    "autonomy": "A2",
+    "preconditions": "safe fallback predefined, no newdataregion",
+    "success_output": "degraded deterministic mode",
+    "on_failure": "PAUSE_GENERATION",
+    "owner_lane": "OPS",
+    "implemented": false
+  }
+]

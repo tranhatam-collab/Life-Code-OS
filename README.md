@@ -1,4 +1,17 @@
 # Life-Code-OS
+
+## Tổng kế hoạch và bàn giao DEV ngày 29 tháng 10 năm 2026
+
+Mở [tổng kế hoạch hợp nhất V1, V2, V3 và local r2](docs/upgrade/2026-10-29/MASTER_PLAN.md), [hướng dẫn nhận việc](docs/upgrade/2026-10-29/START_HERE.md) và [báo cáo bàn giao](docs/upgrade/2026-10-29/INTEGRATION_AND_DEV_HANDOFF_REPORT.md). Bộ mới giữ nguyên nguồn cũ, bổ sung 316 bản ghi kế hoạch, 45 decision packet, hợp đồng 62 adapter/99 API/28 sản phẩm/69 màn hình/chín cấp báo cáo và truy vết 407 dòng. Đây là bản điều phối kế hoạch hiện tại; trạng thái thực thi cần receipt riêng.
+
+Phạm vi cập nhật là tài liệu local và công cụ kiểm tra kế hoạch. Release vẫn HOLD. Chi tiết áp dụng tại [Document Authority ngày 29/10](docs/upgrade/2026-10-29/DOCUMENT_AUTHORITY.md); các bản ngày 20/10 và nội dung phía dưới giữ nguyên để đối chiếu lịch sử.
+
+## Cập nhật bộ kế hoạch ngày 20 tháng 10 năm 2026
+
+Theo yêu cầu Founder, bộ kế hoạch chuẩn bị dev hợp nhất nằm tại [docs/upgrade](docs/upgrade/README.md), kèm toàn bộ 149 tệp gốc ngày 11/10 được bảo toàn, registry mở rộng và demo tổng hợp. Đội phát triển bắt đầu tại [DEV Start Here](docs/upgrade/2026-10-20/00_Doc_truoc/DEV_START_HERE_2026-10-20.md).
+
+Phạm vi supersede: các phát biểu bên dưới về README là authority duy nhất, thiết kế đã khóa và sản phẩm đã đủ điều kiện code/release cần áp dụng theo [Document Authority](docs/upgrade/2026-10-20/00_Doc_truoc/DOCUMENT_AUTHORITY.md) cùng FPOS hiện hành. Nội dung cũ được giữ nguyên làm nguồn đối chiếu; các quyết định sản phẩm, công thức, quyền nguồn và release chưa có receipt vẫn cần review. Release hiện HOLD. Cập nhật này không triển khai ứng dụng hoặc sửa runtime.
+
 Dưới đây là **README.md bản khóa chuẩn duy nhất** để làm **single source of truth** cho toàn bộ hệ Life Code OS.
 Anh có thể copy nguyên khối này vào file:
 

@@ -1,0 +1,112 @@
+[
+  {
+    "country_pack_id": "VN",
+    "name": "Việt Nam",
+    "status": "NOT_APPROVED",
+    "locale_candidate": "vi-VN",
+    "source_ids": [
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S28",
+      "S29",
+      "S36"
+    ],
+    "legal_opinion_status": "PENDING",
+    "launch_enabled": false,
+    "merchant_entity": null,
+    "data_controller": null,
+    "data_regions": [],
+    "age_policy": null,
+    "franchise_classification": null,
+    "trademark_clearance": null,
+    "translation_review": null,
+    "support_plan": null,
+    "notes": "Primary scope; legal applicability opinion required"
+  },
+  {
+    "country_pack_id": "EU-EEA",
+    "name": "EU/EEA",
+    "status": "NOT_APPROVED",
+    "locale_candidate": "country_specific",
+    "source_ids": [
+      "S30",
+      "S31",
+      "S32"
+    ],
+    "legal_opinion_status": "PENDING",
+    "launch_enabled": false,
+    "merchant_entity": null,
+    "data_controller": null,
+    "data_regions": [],
+    "age_policy": null,
+    "franchise_classification": null,
+    "trademark_clearance": null,
+    "translation_review": null,
+    "support_plan": null,
+    "notes": "GDPR, AI Act consolidated timeline; local franchise/consumer rules"
+  },
+  {
+    "country_pack_id": "US",
+    "name": "Hoa Kỳ",
+    "status": "NOT_APPROVED",
+    "locale_candidate": "en-US",
+    "source_ids": [
+      "S33"
+    ],
+    "legal_opinion_status": "PENDING",
+    "launch_enabled": false,
+    "merchant_entity": null,
+    "data_controller": null,
+    "data_regions": [],
+    "age_policy": null,
+    "franchise_classification": null,
+    "trademark_clearance": null,
+    "translation_review": null,
+    "support_plan": null,
+    "notes": "FTC federal franchise + state rules; privacy, children, claims counsel"
+  },
+  {
+    "country_pack_id": "AU",
+    "name": "Australia",
+    "status": "NOT_APPROVED",
+    "locale_candidate": "en-AU",
+    "source_ids": [
+      "S34",
+      "S35",
+      "S40"
+    ],
+    "legal_opinion_status": "PENDING",
+    "launch_enabled": false,
+    "merchant_entity": null,
+    "data_controller": null,
+    "data_regions": [],
+    "age_policy": null,
+    "franchise_classification": null,
+    "trademark_clearance": null,
+    "translation_review": null,
+    "support_plan": null,
+    "notes": "Franchise Code, privacy, consumer; current duties by transaction"
+  },
+  {
+    "country_pack_id": "SG",
+    "name": "Singapore",
+    "status": "NOT_APPROVED",
+    "locale_candidate": "en-SG",
+    "source_ids": [
+      "S41"
+    ],
+    "legal_opinion_status": "PENDING",
+    "launch_enabled": false,
+    "merchant_entity": null,
+    "data_controller": null,
+    "data_regions": [],
+    "age_policy": null,
+    "franchise_classification": null,
+    "trademark_clearance": null,
+    "translation_review": null,
+    "support_plan": null,
+    "notes": "PDPC source partial; dedicated full legal review pending"
+  }
+]

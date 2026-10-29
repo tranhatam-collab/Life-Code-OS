@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-29",
+  "tool": "artifact_tool",
+  "sheets": 21,
+  "sheets_detail": [
+    {
+      "name": "Yeu cau",
+      "rows": 62,
+      "columns": 6
+    },
+    {
+      "name": "Phuong phap",
+      "rows": 62,
+      "columns": 9
+    },
+    {
+      "name": "Bo so 23",
+      "rows": 23,
+      "columns": 7
+    },
+    {
+      "name": "Bat cuc 64",
+      "rows": 64,
+      "columns": 8
+    },
+    {
+      "name": "Chuyen nhom 64",
+      "rows": 64,
+      "columns": 8
+    },
+    {
+      "name": "Ma duoi 80",
+      "rows": 80,
+      "columns": 8
+    },
+    {
+      "name": "17 o ma tran",
+      "rows": 17,
+      "columns": 5
+    },
+    {
+      "name": "18 linh vuc",
+      "rows": 18,
+      "columns": 7
+    },
+    {
+      "name": "54 tinh huong",
+      "rows": 54,
+      "columns": 8
+    },
+    {
+      "name": "San pham 28",
+      "rows": 28,
+      "columns": 8
+    },
+    {
+      "name": "9 cap",
+      "rows": 9,
+      "columns": 8
+    },
+    {
+      "name": "Cong viec 280",
+      "rows": 280,
+      "columns": 9
+    },
+    {
+      "name": "Quyet dinh 45",
+      "rows": 45,
+      "columns": 6
+    },
+    {
+      "name": "Man hinh 69",
+      "rows": 69,
+      "columns": 8
+    },
+    {
+      "name": "Nguon 30",
+      "rows": 30,
+      "columns": 8
+    },
+    {
+      "name": "12 cong",
+      "rows": 12,
+      "columns": 7
+    },
+    {
+      "name": "API 99",
+      "rows": 99,
+      "columns": 5
+    },
+    {
+      "name": "Demo 167",
+      "rows": 167,
+      "columns": 8
+    },
+    {
+      "name": "Bao toan 307",
+      "rows": 307,
+      "columns": 5
+    },
+    {
+      "name": "Gia dinh chi phi",
+      "rows": 4,
+      "columns": 5
+    }
+  ],
+  "baseline_workbooks": "preserved byte-for-byte; V3 is consolidated new workbook",
+  "budget": "unknown prices left blank",
+  "formula_errors_checked": "OOXML scan found no cached error cells; dashboard and cost formulas inspected; originals unchanged.",
+  "visual_review": "Dashboard rendered and reviewed; tabular data wraps with autofit rows."
+}

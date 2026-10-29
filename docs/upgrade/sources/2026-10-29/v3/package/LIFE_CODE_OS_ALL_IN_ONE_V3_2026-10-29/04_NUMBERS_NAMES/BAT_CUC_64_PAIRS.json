@@ -1,0 +1,834 @@
+[
+  {
+    "pair": "14",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "41",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "67",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "76",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "39",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "93",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "28",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "82",
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "13",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "31",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "68",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "86",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "49",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "94",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "27",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "72",
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "19",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "91",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "78",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "87",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "34",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "43",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "26",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "62",
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "11",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "22",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "33",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "44",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "66",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "77",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "88",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "99",
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "12",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "21",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "69",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "96",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "48",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "84",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "37",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "73",
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "18",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "81",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "79",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "97",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "36",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "63",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "24",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "42",
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "16",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "61",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "47",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "74",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "38",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "83",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "29",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "92",
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "17",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "71",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "89",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "98",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "46",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "64",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "23",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  },
+  {
+    "pair": "32",
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "intensity_rank": null,
+    "intensity_ratio": null,
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "mapping_status": "REFERENCE_TABLE",
+    "release_status": "NOT_PRODUCTION_RELEASED"
+  }
+]

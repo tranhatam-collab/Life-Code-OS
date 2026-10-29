@@ -1,0 +1,7 @@
+{
+  "allowed": false,
+  "reason_code": "GRANT_MISSING",
+  "policy_release": "demo.v2",
+  "grant_revision": null,
+  "evaluated_at": "2026-10-20T00:00:00Z"
+}

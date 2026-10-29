@@ -1,0 +1,13 @@
+﻿gate_id,name,owner,acceptance,status,scope,evidence_uri,approver,waive_core_security
+G01,Source & Release,Tech Lead,SHA/artifact/deployed receipt/schema/rollback,NOT_CHECKED,paid_beta,,,False
+G02,Authentication,Backend + Security,Client không quyết danh tính; session/recovery tests,NOT_CHECKED,paid_beta,,,False
+G03,Authorization,Security + QA,Object/tenant/field/grant negative tests,NOT_CHECKED,paid_beta,,,False
+G04,Legal & Purpose,Legal + Privacy,Pháp nhân/scope/country/basis/notices,NOT_CHECKED,paid_beta,,,False
+G05,Retention & Deletion,Data + Privacy,Xóa DB/R2/cache/index/queue/provider; backup restore,NOT_CHECKED,paid_beta,,,False
+G06,Methods & Claims,Method Council,Passport/rights/tests/null/approved rules,NOT_CHECKED,paid_beta,,,False
+G07,Legacy & Migration,Data Lead,"Quarantine, ownership, reconciliation",NOT_CHECKED,paid_beta,,,False
+G08,Reports & AI,Editorial + AI,"Claim lineage, policy, render quality",NOT_CHECKED,paid_beta,,,False
+G09,Commerce,Commerce + QA,Signature/replay/refund/entitlement tests,NOT_CHECKED,paid_beta,,,False
+G10,Reliability,SRE,Load/retry/DLQ/restore/RPO/RTO,NOT_CHECKED,paid_beta,,,False
+G11,Security Review,Independent Security,Review/retest/no unresolved blockers,NOT_CHECKED,paid_beta,,,False
+G12,Operations & Pilot,Program + Founder,Support/economics/incident/pilot/release decision,NOT_CHECKED,paid_beta,,,False

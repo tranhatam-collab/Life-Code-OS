@@ -1,0 +1,31 @@
+﻿mapping_id,surface,source_path,source_ref,status_evidence,action,target,task_id,acceptance
+MAP-01,/,index.html,99b4027...main,PUBLIC_CONTENT_AND_SOURCE,KEEP_REWRITE,/,WEB-01,Remove absoluteprediction and fake score proof; clarify launchscope
+MAP-02,/gioi-thieu,gioi-thieu.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REWRITE,/gioi-thieu,WEB-01,Founder selfdeclared expertise vsverified credential distinguished
+MAP-03,/he-thong-life-code,he-thong-life-code.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REWRITE,/he-thong-life-code,GOV-02,Correct typedclaims/12layers/9products/unknown handling
+MAP-04,/9-levels-life-code,9-levels-life-code.html,99b4027...main,PUBLIC_CONTENT_AND_SOURCE,REWRITE,/9-levels-life-code,GOV-09,DAG eligibility; page budget notevidence; scope release
+MAP-05,/life-code-index,life-code-index.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,DEPRECATE_LEGACY_COPY,/life-code-index,METHOD-07,Nulls; no clientdenominator/inbornpersonscore
+MAP-06,/timeline-cuoc-doi,timeline-cuoc-doi.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REWRITE,/timeline-cuoc-doi,METHOD-08,History/symbolic/plan/model tracks; no seedrisk
+MAP-07,/bao-cao-life-code,bao-cao-life-code.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REWRITE,/bao-cao-life-code,REPORT-01,Structuredsnapshot/version; pagecounts conditional
+MAP-08,/bat-dau,bat-dau.html,99b4027...main,PUBLIC_CONTENT_AND_SOURCE,CONTAIN_THEN_REPLACE,/app/start,P0-03,Stop hardcoded scores and unsafe session
+MAP-09,/dashboard,dashboard.html,99b4027...main,PUBLIC_CONTENT_AND_SOURCE,CONTAIN_THEN_REPLACE,/app/dashboard,WEB-06,"Privateauth goalsfirst, no pseudo-riskdials"
+MAP-10,/account,account.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,CONTAIN_THEN_REPLACE,/app/settings,TRUST-01,Session/authmodel not clientuser_id
+MAP-11,/engine-lab,engine-lab.html,99b4027...main,PUBLIC_CONTENT_AND_SOURCE,RESTRICT,/internal/engine-lab,P0-05,Serveraccess allowlist; hidealone insufficient
+MAP-12,/chinh-sach-bao-mat,chinh-sach-bao-mat.html,99b4027...main,PUBLIC_CONTENT_AND_SOURCE,REWRITE_AND_IMPLEMENT,/chinh-sach-bao-mat,GOV-04,Deletion/export not futurepromise
+MAP-13,/dieu-khoan-su-dung,dieu-khoan-su-dung.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,LEGAL_REVIEW,/dieu-khoan-su-dung,GOV-05,VN2026AI/TMĐT/privacy scope current
+MAP-14,/ban-quyen-so-huu-tri-tue,ban-quyen-so-huu-tri-tue.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,RIGHTS_REVIEW,/ban-quyen-so-huu-tri-tue,GOV-07,"Method ideas notall owned, thirdparty expression licensed"
+MAP-15,/cau-hoi-thuong-gap,cau-hoi-thuong-gap.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REWRITE,/cau-hoi-thuong-gap,WEB-01,Free data rights/prices unknown scope and AI disclosure
+MAP-16,/lien-he,lien-he.html,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REWRITE,/lien-he,COMMERCE-08,Support/rights channel real beforepublic promise
+MAP-17,/api/v1/profile/:id,workers/life-code-api/src/index.js,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,DISABLE_THEN_RETIRE,/api/v2/subjects/{subjectId},P0-03,No rawID access; objectgrant
+MAP-18,/api/v1/session/start,workers/life-code-api/src/index.js,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,DISABLE_THEN_RETIRE,/api/v2/auth/login,P0-04,No clientasserted identity
+MAP-19,/api/v1/report,workers/life-code-api/src/index.js,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,DISABLE_THEN_ADAPT,/api/v2/reports,API-06,"Subject+result ownerbound, no bypassfallback"
+MAP-20,/api/v1/lci,workers/life-code-api/src/engine.mjs,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,QUARANTINE,/api/v2/analysis-runs,METHOD-07,No legacy weightedfake metric
+MAP-21,/api/v1/timeline,engine/core/timeline.js,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,QUARANTINE,/api/v2/subjects/{subjectId}/timeline,METHOD-08,Sinseed unavailable public
+MAP-22,/api/v1/life-code-data,workers/life-code-api/src/index.js,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,RETIRE_LEGACY_WRITE,/api/v2/analysis-runs,API-03,"Typedresult, validatedserver methods"
+MAP-23,BUILD,scripts/prepare-pages.sh,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REPLACE,apps/public-web/build,OPS-02,Publicallowlist notdenylist
+MAP-24,CI,.github/workflows/deploy-pages.yml,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REPLACE,ci/release-policy,OPS-01,No dirtydeploy; manifest andgate beforedelivery
+MAP-25,CI-WORKER,.github/workflows/deploy-worker.yml,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,REVIEW,ci/worker-release,OPS-03,Separate receipt Worker andPages
+MAP-26,METHOD-CORE,engine/core + workers/life-code-api/src/engine.mjs,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,CONSOLIDATE,packages/method-core,METHOD-10,Singleimplementation noUI copy
+MAP-27,DB,workers/life-code-api/migrations,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,MIGRATE_CONTROLLED,database/migrations,DATA-04,"CurrentD1 not PG, validownership beforemigration"
+MAP-28,DOCS,docs/LEVELS_ARCHITECTURE_V1.md,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,SUPERSEDE_AFTER_APPROVAL,specs/products/NINE_LEVELS,GOV-01,Sequentialstronggating explicitlydeprecated
+MAP-29,DOCS,docs/audit/LIFE_CODE_OS_COMPREHENSIVE_UPGRADE_PLAN_2026-10-11.md,336ef35a...audit,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,RECONCILE,docs/master,GOV-01,Newbranch plan notproof runtimefix
+MAP-30,STATUS,PROJECT_STATUS_MASTER.md,99b4027...main,SOURCE_OR_PRIOR_AUDIT_NOT_RUNTIME,CORRECT_EVIDENCE,docs/status,P0-02,No subjective90–95% readiness

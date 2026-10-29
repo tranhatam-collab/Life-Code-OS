@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:ClaimV2",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "type": {
+      "enum": [
+        "fact",
+        "self_report",
+        "observation",
+        "symbolic_interpretation",
+        "derived_metric",
+        "model_probability"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 12000
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "probability": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "model_release_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "horizon": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_status": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "withdrawn"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "text",
+    "evidence_ids",
+    "probability",
+    "model_release_id",
+    "target",
+    "horizon",
+    "review_status"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "model_probability"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "probability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "model_release_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "horizon": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "probability": {
+            "type": "null"
+          },
+          "model_release_id": {
+            "type": "null"
+          },
+          "target": {
+            "type": "null"
+          },
+          "horizon": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "subject_alias": "Hồ sơ tổng hợp A",
+  "profile": {
+    "full_name": "Demo An",
+    "birth_date": "1990-06-15",
+    "birth_time": "07:30",
+    "time_zone": "Asia/Ho_Chi_Minh"
+  },
+  "goal": "Hoàn thành bản mô tả một sản phẩm",
+  "as_of": "2026-10-20"
+}

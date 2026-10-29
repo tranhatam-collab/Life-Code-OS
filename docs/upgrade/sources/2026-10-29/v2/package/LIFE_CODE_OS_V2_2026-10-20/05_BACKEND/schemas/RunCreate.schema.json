@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:RunCreate",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "subject_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "profile_version_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "product_release_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "method_release_ids": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 40,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "purpose_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "selected_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "locale": {
+      "enum": [
+        "vi-VN",
+        "en-US"
+      ]
+    }
+  },
+  "required": [
+    "subject_id",
+    "profile_version_id",
+    "product_release_id",
+    "method_release_ids",
+    "purpose_id",
+    "selected_hypotheses",
+    "as_of",
+    "locale"
+  ]
+}

@@ -1,0 +1,1340 @@
+[
+  {
+    "task_id": "V3-MTH-001",
+    "title": "Đặc tả, đối chiếu và duyệt Lịch và múi giờ",
+    "workstream": "K01",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Lưu UTC candidates; golden DST gap/fold và biên ngày",
+    "sources_or_inputs": "Ngày gốc, lịch, tọa độ, sai số, tzdb"
+  },
+  {
+    "task_id": "V3-MTH-002",
+    "title": "Đặc tả, đối chiếu và duyệt 24 tiết khí",
+    "workstream": "K01",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "So ít nhất 3 nguồn lịch tại sát giao tiết; không dùng ngày cố định",
+    "sources_or_inputs": "Ephemeris có quyền, kinh độ Mặt Trời, timescale"
+  },
+  {
+    "task_id": "V3-MTH-003",
+    "title": "Đặc tả, đối chiếu và duyệt Âm–dương lịch",
+    "workstream": "K01",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Lunar leap-month roundtrip; giữ lịch gốc",
+    "sources_or_inputs": "Ngày sóc, múi giờ, tháng nhuận, vùng lịch"
+  },
+  {
+    "task_id": "V3-MTH-004",
+    "title": "Đặc tả, đối chiếu và duyệt Bốn trụ",
+    "workstream": "K02",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "So nhật trụ, giờ Tý và trước/sau Lập xuân; thiếu giờ trả 3 trụ",
+    "sources_or_inputs": "Tiết khí, ranh giới ngày, giờ, true-solar policy"
+  },
+  {
+    "task_id": "V3-MTH-005",
+    "title": "Đặc tả, đối chiếu và duyệt Tàng can, thập thần, quan hệ",
+    "workstream": "K02",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Kiểm đủ tổ hợp; không biến sinh khắc thành bệnh",
+    "sources_or_inputs": "Bảng tàng can/version, nhật chủ, âm dương"
+  },
+  {
+    "task_id": "V3-MTH-006",
+    "title": "Đặc tả, đối chiếu và duyệt Khởi vận và đại vận",
+    "workstream": "K02",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Lưu từng biến thể và sai số; không trộn dụng thần các trường phái",
+    "sources_or_inputs": "Trường phái chiều vận, mốc tiết, quy đổi tuổi"
+  },
+  {
+    "task_id": "V3-MTH-007",
+    "title": "Đặc tả, đối chiếu và duyệt An cung và sao",
+    "workstream": "K03",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Golden nhiều giới hạn lịch; không tự gán giới tính từ tên",
+    "sources_or_inputs": "Âm lịch, tháng nhuận, giờ, bảng sao"
+  },
+  {
+    "task_id": "V3-MTH-008",
+    "title": "Đặc tả, đối chiếu và duyệt Tứ hóa và hạn",
+    "workstream": "K03",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "So phương án tuổi; không dự báo hôn nhân từ cung",
+    "sources_or_inputs": "Bảng thiên can/tứ hóa riêng, tuổi mụ/dương"
+  },
+  {
+    "task_id": "V3-MTH-009",
+    "title": "Đặc tả, đối chiếu và duyệt Hà Lạc/Thiết Bản",
+    "workstream": "K03",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Tách chỉ mục văn bản khỏi dữ kiện cá nhân",
+    "sources_or_inputs": "Đúng văn bản và cách sinh điều văn"
+  },
+  {
+    "task_id": "V3-MTH-010",
+    "title": "Đặc tả, đối chiếu và duyệt Sáu hào và quẻ biến",
+    "workstream": "K04",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "64×64 biến đổi, bảo toàn hướng bit",
+    "sources_or_inputs": "Sáu bit dưới lên, hào động"
+  },
+  {
+    "task_id": "V3-MTH-011",
+    "title": "Đặc tả, đối chiếu và duyệt Quẻ/hào và văn bản",
+    "workstream": "K04",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Tra đoạn được phép; không sao chép toàn sách",
+    "sources_or_inputs": "Bản dịch có quyền, edition/page"
+  },
+  {
+    "task_id": "V3-MTH-012",
+    "title": "Đặc tả, đối chiếu và duyệt Lục Hào/Mai Hoa",
+    "workstream": "K04",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Tách từng module; cùng câu hỏi khác cách lấy không bị ghi đè",
+    "sources_or_inputs": "Câu hỏi, cách lấy quẻ, nạp giáp, thể–dụng"
+  },
+  {
+    "task_id": "V3-MTH-013",
+    "title": "Đặc tả, đối chiếu và duyệt Kỳ Môn",
+    "workstream": "K05",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Mẫu bàn độc lập duyệt trước code",
+    "sources_or_inputs": "Lập cục, âm/dương độn, tiết, bản phái"
+  },
+  {
+    "task_id": "V3-MTH-014",
+    "title": "Đặc tả, đối chiếu và duyệt Đại Lục Nhâm",
+    "workstream": "K05",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Nguồn chính và golden exceptions",
+    "sources_or_inputs": "Ngày giờ, nguyệt tướng, tứ khóa tam truyền"
+  },
+  {
+    "task_id": "V3-MTH-015",
+    "title": "Đặc tả, đối chiếu và duyệt Thái Ất",
+    "workstream": "K05",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Chưa có nguồn đủ: không sinh bàn giả",
+    "sources_or_inputs": "Kỷ nguyên, tích niên, trường phái"
+  },
+  {
+    "task_id": "V3-MTH-016",
+    "title": "Đặc tả, đối chiếu và duyệt Phong thủy không gian",
+    "workstream": "K06",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Tách Bát trạch, phi tinh, hình thế; quyền ảnh vị trí",
+    "sources_or_inputs": "Mặt bằng, độ đo, hướng sai số, thời điểm sửa"
+  },
+  {
+    "task_id": "V3-MTH-017",
+    "title": "Đặc tả, đối chiếu và duyệt Vastu",
+    "workstream": "K06",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Nguồn ngôn ngữ gốc; không tuyên bố chữa bệnh",
+    "sources_or_inputs": "Nguồn, mặt bằng, phương vị"
+  },
+  {
+    "task_id": "V3-MTH-018",
+    "title": "Đặc tả, đối chiếu và duyệt Không gian thực tế",
+    "workstream": "K06",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Đơn vị, nguồn đo, nguy cơ vị trí riêng tư",
+    "sources_or_inputs": "Ánh sáng, tiếng ồn, tiện ích, đi lại tự khai"
+  },
+  {
+    "task_id": "V3-MTH-019",
+    "title": "Đặc tả, đối chiếu và duyệt Jyotish lá số",
+    "workstream": "K07",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Ayanamsa có version; không tự trộn tropical/sidereal",
+    "sources_or_inputs": "Ephemeris, ayanamsa, nhà, varga, quyền nguồn"
+  },
+  {
+    "task_id": "V3-MTH-020",
+    "title": "Đặc tả, đối chiếu và duyệt Daśā và quá cảnh",
+    "workstream": "K07",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Biên thời gian, timezone, phép cộng độ dài",
+    "sources_or_inputs": "Nakshatra, rule period, lịch"
+  },
+  {
+    "task_id": "V3-MTH-021",
+    "title": "Đặc tả, đối chiếu và duyệt Nadi văn bản",
+    "workstream": "K07",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không tạo lá Nadi giả cho một người; nguồn toàn văn còn thiếu",
+    "sources_or_inputs": "Bản thảo hợp pháp, transcription, dịch thuật"
+  },
+  {
+    "task_id": "V3-MTH-022",
+    "title": "Đặc tả, đối chiếu và duyệt Thiên thể và hệ nhà",
+    "workstream": "K08",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Polar edge case; bản quyền thương mại riêng",
+    "sources_or_inputs": "Engine có license, timescale, tọa độ"
+  },
+  {
+    "task_id": "V3-MTH-023",
+    "title": "Đặc tả, đối chiếu và duyệt Quá cảnh/tiến triển",
+    "workstream": "K08",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Giữ kỹ thuật thiên văn và diễn giải riêng",
+    "sources_or_inputs": "Reference chart và method"
+  },
+  {
+    "task_id": "V3-MTH-024",
+    "title": "Đặc tả, đối chiếu và duyệt Hy Lạp/Latin/Ả Rập",
+    "workstream": "K08",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Ghi mức đọc, không giả đã đọc mọi ngôn ngữ",
+    "sources_or_inputs": "Bản văn gốc, bản dịch và chú giải"
+  },
+  {
+    "task_id": "V3-MTH-025",
+    "title": "Đặc tả, đối chiếu và duyệt Saju, Shichū Suimei, Tây Tạng",
+    "workstream": "K09",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không mặc nhiên dùng engine Bazi cho mọi nhánh",
+    "sources_or_inputs": "Chuyên gia bản địa, lịch và ngôn ngữ"
+  },
+  {
+    "task_id": "V3-MTH-026",
+    "title": "Đặc tả, đối chiếu và duyệt Thái, Myanmar, Weton/Pawukon",
+    "workstream": "K09",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Golden từ người thực hành có nguồn",
+    "sources_or_inputs": "Cách tính ngày vùng và truyền thống"
+  },
+  {
+    "task_id": "V3-MTH-027",
+    "title": "Đặc tả, đối chiếu và duyệt Lịch Maya",
+    "workstream": "K09",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không nhập hệ hiện đại dưới nhãn lịch cổ",
+    "sources_or_inputs": "Hệ lịch và correlation rõ"
+  },
+  {
+    "task_id": "V3-MTH-028",
+    "title": "Đặc tả, đối chiếu và duyệt 23 chỉ số số–tên",
+    "workstream": "K10",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Reference V3 có code; source+review trước release",
+    "sources_or_inputs": "Ngày, tên, chính sách Y, variant"
+  },
+  {
+    "task_id": "V3-MTH-029",
+    "title": "Đặc tả, đối chiếu và duyệt Psychomatrix 17 vị trí",
+    "workstream": "K10",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không suy sức khỏe, trí nhớ hoặc thân mật",
+    "sources_or_inputs": "Raw hoặc bốn số phụ, leading-zero policy"
+  },
+  {
+    "task_id": "V3-MTH-030",
+    "title": "Đặc tả, đối chiếu và duyệt Chu kỳ, đỉnh cao và thử thách",
+    "workstream": "K10",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không dùng cùng band cho mọi phương pháp",
+    "sources_or_inputs": "Boundary và reduction độc lập"
+  },
+  {
+    "task_id": "V3-MTH-031",
+    "title": "Đặc tả, đối chiếu và duyệt Gematria/Abjad/Isopsephy",
+    "workstream": "K10",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Adapter riêng cho từng hệ; quyền nguồn",
+    "sources_or_inputs": "Script, bảng chữ, final-form, phiên âm"
+  },
+  {
+    "task_id": "V3-MTH-032",
+    "title": "Đặc tả, đối chiếu và duyệt Bát Cực 64 cặp",
+    "workstream": "K11",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Giữ 0/5 unresolved ở strict mode",
+    "sources_or_inputs": "Chuỗi canonical, context"
+  },
+  {
+    "task_id": "V3-MTH-033",
+    "title": "Đặc tả, đối chiếu và duyệt Số 0 và 5",
+    "workstream": "K11",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Diagnostic single bridge có code; intensity không bịa",
+    "sources_or_inputs": "Bảng rule có edition/examples"
+  },
+  {
+    "task_id": "V3-MTH-034",
+    "title": "Đặc tả, đối chiếu và duyệt Tổ hợp và chế hóa",
+    "workstream": "K11",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "64 câu hỏi HNH mới không thay cổ quy tắc chưa đọc",
+    "sources_or_inputs": "Chuỗi, thứ bậc, context gốc"
+  },
+  {
+    "task_id": "V3-MTH-035",
+    "title": "Đặc tả, đối chiếu và duyệt Mã đuôi 80",
+    "workstream": "K11",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "10.000 cases; labels không thành điểm người",
+    "sources_or_inputs": "Bốn chữ số, zero-policy, tableversion"
+  },
+  {
+    "task_id": "V3-MTH-036",
+    "title": "Đặc tả, đối chiếu và duyệt SIM/serial/biển/địa chỉ",
+    "workstream": "K11",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Giữ zero; không nhận mật khẩu; định danh chỉ suffix",
+    "sources_or_inputs": "Quy tắc chuỗi theo loại"
+  },
+  {
+    "task_id": "V3-MTH-037",
+    "title": "Đặc tả, đối chiếu và duyệt Tên và Unicode",
+    "workstream": "K12",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "NFC+derivative; giữ punctuation policy",
+    "sources_or_inputs": "Tên nguyên văn, locale, cách đọc"
+  },
+  {
+    "task_id": "V3-MTH-038",
+    "title": "Đặc tả, đối chiếu và duyệt Ngữ nghĩa tên",
+    "workstream": "K12",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Đa nghĩa trả nhiều khả năng, không đoán chữ Hán",
+    "sources_or_inputs": "Chữ gốc hoặc lời gia đình; từ điển quyền"
+  },
+  {
+    "task_id": "V3-MTH-039",
+    "title": "Đặc tả, đối chiếu và duyệt Tên thường dùng/doanh nghiệp",
+    "workstream": "K12",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không tư vấn thương hiệu/pháp lý chỉ dựa số",
+    "sources_or_inputs": "Tên pháp lý, publicname, lịch sử đổi"
+  },
+  {
+    "task_id": "V3-MTH-040",
+    "title": "Đặc tả, đối chiếu và duyệt Bàn tay",
+    "workstream": "K13",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Mô tả nếp gấp; không tuổi thọ, tài lộc",
+    "sources_or_inputs": "Ảnh có quyền, trái/phải, scale"
+  },
+  {
+    "task_id": "V3-MTH-041",
+    "title": "Đặc tả, đối chiếu và duyệt Khuôn mặt",
+    "workstream": "K13",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không nhận diện hoặc suy tính cách/đạo đức",
+    "sources_or_inputs": "Ảnh tự cung cấp có quyền, quality"
+  },
+  {
+    "task_id": "V3-MTH-042",
+    "title": "Đặc tả, đối chiếu và duyệt Chân, giọng và dáng",
+    "workstream": "K13",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không suy nội tạng, di truyền hay hormone",
+    "sources_or_inputs": "Đơn vị đo, mục đích, specialist scope"
+  },
+  {
+    "task_id": "V3-MTH-043",
+    "title": "Đặc tả, đối chiếu và duyệt Tarot/Lenormand/Oracle",
+    "workstream": "K14",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Ngẫu nhiên phải ghi ngẫu nhiên; reflection không facts",
+    "sources_or_inputs": "Deck license, drawsource, câu hỏi"
+  },
+  {
+    "task_id": "V3-MTH-044",
+    "title": "Đặc tả, đối chiếu và duyệt Rune/geomancy",
+    "workstream": "K14",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Đối chiếu hình dấu và dịch thuật",
+    "sources_or_inputs": "Nguồn đúng truyền thống"
+  },
+  {
+    "task_id": "V3-MTH-045",
+    "title": "Đặc tả, đối chiếu và duyệt Ifá và giấc mơ",
+    "workstream": "K14",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không gán niềm tin; không copy truyền thống riêng tư",
+    "sources_or_inputs": "Culturalpermission, lời kể chủ thể"
+  },
+  {
+    "task_id": "V3-MTH-046",
+    "title": "Đặc tả, đối chiếu và duyệt Human Design",
+    "workstream": "K15",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Tính toán và licensing chưa giải xong: researchonly",
+    "sources_or_inputs": "Quyền công thức/nội dung, birthtime"
+  },
+  {
+    "task_id": "V3-MTH-047",
+    "title": "Đặc tả, đối chiếu và duyệt Gene Keys",
+    "workstream": "K15",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không gọi là gene xét nghiệm hoặc DNA",
+    "sources_or_inputs": "Bản quyền và terminology"
+  },
+  {
+    "task_id": "V3-MTH-048",
+    "title": "Đặc tả, đối chiếu và duyệt Ngữ pháp HNH",
+    "workstream": "K16",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Counterexample; người dùng có thể không đồng ý",
+    "sources_or_inputs": "6 quan hệ và câu hỏi nguyên bản"
+  },
+  {
+    "task_id": "V3-MTH-049",
+    "title": "Đặc tả, đối chiếu và duyệt Tu tập và thực hành nội tâm",
+    "workstream": "K16",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không ép niềm tin hay thay trị liệu",
+    "sources_or_inputs": "Sự tự nguyện, truyền thống, phiên bản"
+  },
+  {
+    "task_id": "V3-MTH-050",
+    "title": "Đặc tả, đối chiếu và duyệt Nhân cách và bảng hỏi",
+    "workstream": "K17",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không gọi câu tự tạo là test chuẩn hóa",
+    "sources_or_inputs": "Instrument bản gốc, license, dịch thích nghi"
+  },
+  {
+    "task_id": "V3-MTH-051",
+    "title": "Đặc tả, đối chiếu và duyệt Giá trị/hứng thú",
+    "workstream": "K17",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không biến score thành tuyển dụng",
+    "sources_or_inputs": "Questionnaire scope, age, context"
+  },
+  {
+    "task_id": "V3-MTH-052",
+    "title": "Đặc tả, đối chiếu và duyệt Đánh giá đo lường",
+    "workstream": "K17",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Bias, reliability, population; số thiếu không đo thiếu năng lực",
+    "sources_or_inputs": "Targetconstruct, itemquality, validation"
+  },
+  {
+    "task_id": "V3-MTH-053",
+    "title": "Đặc tả, đối chiếu và duyệt Nghề, vai trò và kỹ năng",
+    "workstream": "K18",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Hướng đề xuất dựa dữ liệu thực",
+    "sources_or_inputs": "Hồ sơ kỹ năng, việc thật, constraints"
+  },
+  {
+    "task_id": "V3-MTH-054",
+    "title": "Đặc tả, đối chiếu và duyệt Nguồn lực và dòng tiền",
+    "workstream": "K18",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không cộng ngoại tệ thiếuFX",
+    "sources_or_inputs": "Đơn vị tiền, số nguyên, nguồn giao dịch"
+  },
+  {
+    "task_id": "V3-MTH-055",
+    "title": "Đặc tả, đối chiếu và duyệt Quan hệ nhiều chủ thể",
+    "workstream": "K18",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không lộ người thứ hai qua report người thứ nhất",
+    "sources_or_inputs": "Consent/grant từng phần, revocation"
+  },
+  {
+    "task_id": "V3-MTH-056",
+    "title": "Đặc tả, đối chiếu và duyệt 12 trường đồng nhịp",
+    "workstream": "K19",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không biến correlation thành cause",
+    "sources_or_inputs": "Nhật ký tự khai, bối cảnh"
+  },
+  {
+    "task_id": "V3-MTH-057",
+    "title": "Đặc tả, đối chiếu và duyệt Ăn gần nguồn, lịch sinh hoạt",
+    "workstream": "K19",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không kê chế độ chữa bệnh bằng số",
+    "sources_or_inputs": "Dị ứng/bệnh chuyên môn nếu phù hợp"
+  },
+  {
+    "task_id": "V3-MTH-058",
+    "title": "Đặc tả, đối chiếu và duyệt 30/90 ngày và chuyển giao",
+    "workstream": "K19",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Tự động nhắc theo consent, không tiên đoán",
+    "sources_or_inputs": "Mục tiêu, deadline, outcome"
+  },
+  {
+    "task_id": "V3-MTH-059",
+    "title": "Đặc tả, đối chiếu và duyệt Đồ thị nguồn và nhận định",
+    "workstream": "K20",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "REFERENCE_PENDING_REVIEW",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không tính nhiều bản từ cùng DOB là độc lập",
+    "sources_or_inputs": "IDs, versions, digest, purpose"
+  },
+  {
+    "task_id": "V3-MTH-060",
+    "title": "Đặc tả, đối chiếu và duyệt Quyền và tự động hóa",
+    "workstream": "K20",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Failclosed; chính sách trước AI",
+    "sources_or_inputs": "Tenant,subject,grant,purpose,entitlement"
+  },
+  {
+    "task_id": "V3-MTH-061",
+    "title": "Đặc tả, đối chiếu và duyệt Báo cáo và bản sách",
+    "workstream": "K20",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Không bịa nội dung để đủ trang",
+    "sources_or_inputs": "Claimapproved, structuredsections"
+  },
+  {
+    "task_id": "V3-MTH-062",
+    "title": "Đặc tả, đối chiếu và duyệt Kiểm thử và hiệu chỉnh",
+    "workstream": "K20",
+    "owner_role": "Method Engineer + Native Reviewer + QA",
+    "parent_task_id": null,
+    "reference_artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "dependencies": [
+      "Q31",
+      "Q32",
+      "G06"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "SPEC_RESEARCH_PENDING",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Tách đúngphéptính và predictivevalidity",
+    "sources_or_inputs": "Target/horizon/population"
+  },
+  {
+    "task_id": "V3-INT-01",
+    "title": "Một luồng nhập dữ liệu; chọn sản phẩm và chỉ thu trường cần thiết",
+    "workstream": "UX",
+    "owner_role": "UX Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Profilecontextkhôngtựtiếtlộquaworkspacekhác"
+  },
+  {
+    "task_id": "V3-INT-02",
+    "title": "Dòng đời có nhiều giả thuyết và phiên bản",
+    "workstream": "DATA",
+    "owner_role": "DATA Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Nohistoryinvented; eventsource; removalpropagation"
+  },
+  {
+    "task_id": "V3-INT-03",
+    "title": "Bộ biên tập sử dụng nhận định được phép truy cập",
+    "workstream": "AI",
+    "owner_role": "AI Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Prompt injection negativecases; noarbitraryconfidence"
+  },
+  {
+    "task_id": "V3-INT-04",
+    "title": "Tích hợp API V3 với nhà cung cấp danh tính thực tế",
+    "workstream": "API",
+    "owner_role": "API Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "No clientuser_idauthority; authmatrixtest"
+  },
+  {
+    "task_id": "V3-INT-05",
+    "title": "Chín báo cáo dùng chung cấu trúc nội dung",
+    "workstream": "REPORT",
+    "owner_role": "REPORT Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Mỗi claim cósource; nodeduplicate nội dung"
+  },
+  {
+    "task_id": "V3-INT-06",
+    "title": "PWA đồng bộ và quyền ngoại tuyến",
+    "workstream": "MOBILE",
+    "owner_role": "MOBILE Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Offlineprivatecacheoptin; revoke/deletepolicy"
+  },
+  {
+    "task_id": "V3-INT-07",
+    "title": "Mỗi lãnh thổ có điều kiện phát hành riêng",
+    "workstream": "LIC",
+    "owner_role": "LIC Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Legalopinion, nativeeditor, datarole and franchisecontract"
+  },
+  {
+    "task_id": "V3-INT-08",
+    "title": "Chín buổi, mỗi buổi 120 phút; đánh giá thực hành",
+    "workstream": "EDU",
+    "owner_role": "EDU Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "Giảng viênchứngminhđúngphéptínhkhônglàmngườihọcsợ"
+  },
+  {
+    "task_id": "V3-INT-09",
+    "title": "Công cụ nhập gói không ghi đè",
+    "workstream": "OPS",
+    "owner_role": "OPS Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "307baselinehash plus all149V1 checked"
+  },
+  {
+    "task_id": "V3-INT-10",
+    "title": "Đối chiếu bản nền, kế hoạch và triển khai thực tế",
+    "workstream": "QUALITY",
+    "owner_role": "QUALITY Lead + QA",
+    "parent_task_id": null,
+    "dependencies": [
+      "Q31",
+      "G01"
+    ],
+    "production_status": "NOT_STARTED",
+    "reference_status": "DESIGN",
+    "effort_person_days": null,
+    "estimate_rollup": "ESTIMATE_REQUIRED; DO_NOT_SUM_WITH_PARENT",
+    "acceptance": "No fake ready rate; provider missing visible"
+  }
+]

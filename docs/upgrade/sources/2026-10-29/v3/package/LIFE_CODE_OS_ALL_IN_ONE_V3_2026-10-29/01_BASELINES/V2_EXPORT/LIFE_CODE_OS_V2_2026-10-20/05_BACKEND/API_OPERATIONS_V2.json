@@ -1,0 +1,583 @@
+[
+  {
+    "method": "GET",
+    "path": "/health",
+    "operation_id": "health",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Liveness tối thiểu. Không truy vấn dữ liệu hồ sơ; không chứng minh readiness, phân quyền hoặc deployed SHA."
+  },
+  {
+    "method": "GET",
+    "path": "/catalog",
+    "operation_id": "catalog",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: public. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/methods",
+    "operation_id": "methods",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: public. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/methods/{methodId}",
+    "operation_id": "methodDetail",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: public. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/auth/login",
+    "operation_id": "login",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: public. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/auth/callback",
+    "operation_id": "authCallback",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: public. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp. Yêu cầu đúng một trong code/error; x"
+  },
+  {
+    "method": "POST",
+    "path": "/auth/logout",
+    "operation_id": "logout",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: self. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects",
+    "operation_id": "subjects",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: self. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects",
+    "operation_id": "createSubject",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: self. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}",
+    "operation_id": "subject",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/overview",
+    "operation_id": "overview",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/profile-versions",
+    "operation_id": "newProfileVersion",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:write. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/profile-versions/{versionId}",
+    "operation_id": "profileVersion",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/hypotheses",
+    "operation_id": "newHypothesis",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:write. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/hypotheses",
+    "operation_id": "listHypotheses",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/consents",
+    "operation_id": "consents",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/consents",
+    "operation_id": "consentDecision",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:consent. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/grants",
+    "operation_id": "grants",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:share. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/grants",
+    "operation_id": "grant",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:share. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "DELETE",
+    "path": "/grants/{grantId}",
+    "operation_id": "revokeGrant",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: grant:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/observations",
+    "operation_id": "observations",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/observations",
+    "operation_id": "observation",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:write. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/questionnaire-responses",
+    "operation_id": "questionnaireResponse",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:write. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/plans",
+    "operation_id": "createPlan",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:write. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/plans",
+    "operation_id": "plans",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/actions/{actionId}/check-ins",
+    "operation_id": "checkin",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: action:write. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/timeline",
+    "operation_id": "timeline",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/analysis-runs",
+    "operation_id": "analyze",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:analyze. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/analysis-runs/{runId}",
+    "operation_id": "analysisStatus",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: run:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/analysis-runs/{runId}/cancel",
+    "operation_id": "cancelAnalysis",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: run:cancel. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/analysis-runs/{runId}/results",
+    "operation_id": "analysisResults",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: run:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/results/{resultId}",
+    "operation_id": "methodResult",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: result:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/reports",
+    "operation_id": "createReport",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:report. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/reports",
+    "operation_id": "reports",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/reports/{reportId}",
+    "operation_id": "report",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: report:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/reports/{reportId}/revisions",
+    "operation_id": "reportRevisions",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: report:read. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/reviews",
+    "operation_id": "review",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: report:review. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/publish",
+    "operation_id": "publish",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: report:publish. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/exports",
+    "operation_id": "exportReport",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: report:export. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/artifacts/{artifactId}/download",
+    "operation_id": "downloadArtifact",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: artifact:download. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/orders",
+    "operation_id": "order",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: self. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/orders/{orderId}",
+    "operation_id": "orderStatus",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: order:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/orders/{orderId}/checkout",
+    "operation_id": "checkout",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: order:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/orders/{orderId}/refund-requests",
+    "operation_id": "requestRefund",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: order:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/webhooks/payments/{providerId}",
+    "operation_id": "paymentWebhook",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Provider signature on raw body, replay ledger, timestamp, order/currency/amount server verification. Provider not selected. Not an unauthenticated generic JSON processing route."
+  },
+  {
+    "method": "GET",
+    "path": "/entitlements",
+    "operation_id": "entitlements",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: self. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/support/tickets",
+    "operation_id": "ticket",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: self. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/support/tickets/{ticketId}",
+    "operation_id": "ticketStatus",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: ticket:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/data-exports",
+    "operation_id": "privacyExport",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:privacy. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/deletion-jobs",
+    "operation_id": "deleteSubject",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:privacy. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/deletion-jobs/{jobId}",
+    "operation_id": "deletionStatus",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: job:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/jobs/{jobId}",
+    "operation_id": "jobStatus",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: job:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/automations",
+    "operation_id": "newAutomation",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: subject:automate. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "DELETE",
+    "path": "/automations/{automationId}",
+    "operation_id": "stopAutomation",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: automation:owner. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/practice/cases",
+    "operation_id": "cases",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: practitioner:assigned. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/practice/cases/{caseId}",
+    "operation_id": "caseDetail",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: practitioner:assigned. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/academy/courses",
+    "operation_id": "courses",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: public. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/academy/assignments",
+    "operation_id": "assignment",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: enrollment:write. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/certificates/{certificateId}",
+    "operation_id": "verifyCertificate",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: public_minimal. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/organizations/{organizationId}/overview",
+    "operation_id": "organizationOverview",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: organization:member. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/partners/{partnerId}",
+    "operation_id": "partner",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: partner:assigned. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/admin/method-releases",
+    "operation_id": "methodReleaseDraft",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: method:editor. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/admin/country-packs",
+    "operation_id": "countryPackReview",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: legal:reviewer. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/admin/quality",
+    "operation_id": "quality",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: quality:reviewer. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "GET",
+    "path": "/admin/operations",
+    "operation_id": "operations",
+    "implementation": "DESIGN_ONLY_BASELINE_PRESERVED",
+    "permission": "Quyền yêu cầu: ops:reader. Server resolve principal, không tin client owner. Kiểm tra policy/product/method/country tại service; mô-đun chưa mở trả trạng thái phù hợp."
+  },
+  {
+    "method": "POST",
+    "path": "/analysis-runs/compare",
+    "operation_id": "compareRuns",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "POST",
+    "path": "/methods/{methodId}/preview",
+    "operation_id": "previewMethod",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "method:preview"
+  },
+  {
+    "method": "GET",
+    "path": "/methods/{methodId}/dependencies",
+    "operation_id": "methodDependencies",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "method:read"
+  },
+  {
+    "method": "GET",
+    "path": "/methods/{methodId}/test-vectors",
+    "operation_id": "methodTestVectors",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "method:review"
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/hypotheses/resolve",
+    "operation_id": "resolveHypotheses",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:write"
+  },
+  {
+    "method": "GET",
+    "path": "/analysis-runs/{runId}/trace",
+    "operation_id": "runTrace",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "GET",
+    "path": "/analysis-runs/{runId}/dependencies",
+    "operation_id": "runDependencies",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "GET",
+    "path": "/claims/{claimId}/provenance",
+    "operation_id": "claimProvenance",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/review",
+    "operation_id": "reviewReportV2",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "report:review"
+  },
+  {
+    "method": "POST",
+    "path": "/reports/{reportId}/withdraw",
+    "operation_id": "withdrawReportV2",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "report:withdraw"
+  },
+  {
+    "method": "GET",
+    "path": "/reports/{reportId}/diff/{previousId}",
+    "operation_id": "reportDiff",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "POST",
+    "path": "/privacy/deletion-requests",
+    "operation_id": "newDeletionV2",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:delete"
+  },
+  {
+    "method": "GET",
+    "path": "/privacy/deletion-requests/{requestId}",
+    "operation_id": "deletionStatusV2",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "GET",
+    "path": "/country-packs/{countryId}/eligibility",
+    "operation_id": "countryEligibility",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "self"
+  },
+  {
+    "method": "GET",
+    "path": "/operations/method-releases/{releaseId}/impact",
+    "operation_id": "releaseImpact",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "method:review"
+  },
+  {
+    "method": "POST",
+    "path": "/operations/method-releases/{releaseId}/freeze",
+    "operation_id": "freezeMethod",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "method:release"
+  },
+  {
+    "method": "GET",
+    "path": "/subjects/{subjectId}/resonance/summary",
+    "operation_id": "resonanceSummaryV2",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:read"
+  },
+  {
+    "method": "POST",
+    "path": "/subjects/{subjectId}/offline-batches",
+    "operation_id": "syncOfflineBatch",
+    "implementation": "NOT_IMPLEMENTED",
+    "permission": "subject:write"
+  }
+]

@@ -1,0 +1,9 @@
+﻿source_path,read_scope,treatment,v3_artifact,boundary
+docs/LEVELS_ARCHITECTURE_V1.md,99b4027,"Giữ lịch sử; thay điều kiện mở khóa theo quyền, mục tiêu và dữ liệu",06_PRODUCTS/NINE_LEVELS_INTEGRATED_V3.json,Không tự mở đủ 9 cấp bằng coverage
+docs/audit/LIFE_CODE_OS_COMPREHENSIVE_UPGRADE_PLAN_2026-10-11.md,336ef35,"Giữ audit, Q1–Q12 và thứ tự P0; bổ sung phạm vi toàn đời",00_START/Life_Code_All_In_One_Master_V3.md,Không coi kế hoạch audit là nghiệm thu
+engine/core/timeline.js,99b4027 historical audit,Cách ly đầu ra sin-seed; chỉ xây lịch sử/kế hoạch/chu kỳ có nhãn,08_ALL_IN_ONE_LAB/src/lifetime.mjs,Không tự phát sinh risk/mission years
+engine/core/lci.js,99b4027 historical audit,"Giữ nguồn lịch sử, không dùng điểm tùy đặt",07_BACKEND/EXECUTION_AND_DATA_SPEC.md,Điểm không có phép đo để null
+workers/life-code-api/src/index.js,99b4027 historical audit,"Kế hoạch thay trust boundary, object access, jobs và report snapshots",07_BACKEND/openapi.v3.target.json,Chưa vá source chạy thật
+bat-dau.html,99b4027 historical audit,"Bỏ hằng số cá nhân hóa khi triển khai, dùng hợp đồng intake",06_PRODUCTS/WEB_MOBILE_DESKTOP.md,Demo không thay form production
+scripts/prepare-pages.sh,99b4027 historical audit,"Dùng allowlist public bundle; không copy tài liệu, ZIP, SQL hoặc fixture",12_IMPORT/REPOSITORY_IMPORT.md,Docs không phải nội dung public tự động
+.github/workflows/deploy-pages.yml,99b4027 historical audit,"Release receipt, clean SHA, gates và rollback",07_BACKEND/TRUST_PRIVACY_AND_CHILDREN.md,Không tự sửa CI trong gói này

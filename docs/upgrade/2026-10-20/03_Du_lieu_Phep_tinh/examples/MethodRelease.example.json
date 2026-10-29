@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0-proposed",
+  "method_id": "M06",
+  "release_id": "M06-v0.1",
+  "family_id": "K11",
+  "version": "0.1",
+  "computation_kind": "deterministic_calculation",
+  "evidence_class": "calculation_reproduced_symbolic_authority_unverified",
+  "release_state": "blocked",
+  "status": "specified",
+  "source_ids": [
+    "USER_TABLE80"
+  ],
+  "edition_locations": [
+    "Bảng người dùng cung cấp; 80 mục"
+  ],
+  "rights_status": "pending",
+  "input_schema_ref": "tail4-input",
+  "output_schema_ref": "Tail80Result",
+  "rule_spec_ref": "03_NUMBERS_AND_TAIL80.md",
+  "configuration": {
+    "zero_policy": "unmapped"
+  },
+  "limitations": [
+    "Không cá nhân hóa và không dự báo"
+  ],
+  "golden_cases_ref": "reference_tests",
+  "test_receipt_ref": null,
+  "allowed_claim_types": [
+    "symbolic_interpretation",
+    "derived_metric"
+  ],
+  "allowed_product_ids": [
+    "LC-NUMBERS"
+  ],
+  "allowed_country_packs": [],
+  "approved_by": null,
+  "approved_at": null,
+  "source_rights_receipt_ids": [],
+  "release_artifact_digest": null,
+  "effective_at": null,
+  "expires_at": null
+}

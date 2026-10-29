@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v3:PsychomatrixInput",
+  "title": "PsychomatrixInput",
+  "type": "object",
+  "required": [
+    "birth_date"
+  ],
+  "properties": {
+    "birth_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "variant": {
+      "enum": [
+        "raw_birth_digits",
+        "four_working_subtractive"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

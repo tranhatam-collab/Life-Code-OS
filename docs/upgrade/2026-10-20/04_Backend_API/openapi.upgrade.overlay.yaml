@@ -1,0 +1,142 @@
+overlay: 1.2.0
+info:
+  title: Life Code OS API v2.1 planning-contract overlay
+  version: 2026-10-20.proposed
+extends: ./openapi.yaml
+actions:
+  - target: $.info
+    description: Mark the base API contract as a planning candidate and bind external governance registries.
+    update:
+      version: 2.1-proposed
+      x-lc-contract-status: DESIGN_APPROVAL_PENDING_NOT_IMPLEMENTED
+      x-lc-operation-registry: ./API_OPERATIONS.json
+      x-lc-authorization-policy-matrix: ./AUTHORIZATION_POLICY_MATRIX.json
+      x-lc-required-operation-count: 64
+
+  - target: $.paths.*.*
+    description: Every operationId must resolve to the separate immutable permission registry; clients cannot submit a policy decision.
+    update:
+      x-lc-authorization-source: ./AUTHORIZATION_POLICY_MATRIX.json
+      x-lc-object-authorization: server_resolved
+
+  - target: $.paths.*.post
+    description: Cookie-authenticated mutations require CSRF validation unless the operation uses an explicitly different authenticator such as a signed webhook.
+    update:
+      x-lc-csrf-default: required_for_cookie_session
+
+  - target: $.paths.*.delete
+    description: Cookie-authenticated mutations require CSRF validation.
+    update:
+      x-lc-csrf-default: required_for_cookie_session
+
+  - target: $.paths['/webhooks/payments/{providerId}'].post
+    description: The payment webhook does not use a browser session or CSRF; it authenticates the raw request body against server-side provider and merchant configuration.
+    update:
+      x-lc-csrf-default: not_applicable
+      x-lc-authenticator: provider_signature_over_raw_body
+      x-lc-replay-key: provider_code+merchant_account_id+provider_event_id
+      x-lc-idempotent-effect: true
+
+  - target: $.components.schemas.Claim
+    remove: true
+  - target: $.components.schemas.JobEnvelope
+    remove: true
+  - target: $.components.schemas.MethodRelease
+    remove: true
+  - target: $.components.schemas.MethodResult
+    remove: true
+  - target: $.components.schemas.Metric
+    remove: true
+  - target: $.components.schemas.ProfileVersion
+    remove: true
+  - target: $.components.schemas.ReleaseReceipt
+    remove: true
+  - target: $.components.schemas.ReportSnapshot
+    remove: true
+  - target: $.components.schemas.Tail80Result
+    remove: true
+  - target: $.components.schemas.Error
+    remove: true
+
+  - target: $.components.schemas
+    description: Replace duplicated embedded schemas with the reviewed canonical JSON Schema files.
+    update:
+      Claim:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/Claim.schema.json
+      JobEnvelope:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json
+      MethodRelease:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json
+      MethodResult:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json
+      Metric:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/Metric.schema.json
+      ProfileVersion:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json
+      ReleaseReceipt:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json
+      ReportSnapshot:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json
+      Tail80Result:
+        $ref: ../03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json
+      ProblemDetails:
+        type: object
+        additionalProperties: false
+        required:
+          - type
+          - title
+          - status
+          - code
+          - request_id
+        properties:
+          type:
+            type: string
+            format: uri-reference
+          title:
+            type: string
+            minLength: 1
+            maxLength: 200
+          status:
+            type: integer
+            minimum: 400
+            maximum: 599
+          detail:
+            type:
+              - string
+              - 'null'
+            maxLength: 2000
+          instance:
+            type:
+              - string
+              - 'null'
+            format: uri-reference
+          code:
+            type: string
+            pattern: ^[a-z][a-z0-9_]{2,63}$
+          request_id:
+            type: string
+            minLength: 8
+            maxLength: 128
+          errors:
+            type: array
+            maxItems: 100
+            items:
+              type: object
+              additionalProperties: false
+              required: [field, code]
+              properties:
+                field:
+                  type: string
+                  maxLength: 500
+                code:
+                  type: string
+                  pattern: ^[a-z][a-z0-9_]{2,63}$
+      Error:
+        $ref: '#/components/schemas/ProblemDetails'
+
+  - target: $.components.schemas.Resource
+    description: The generic Resource envelope remains only for planning compatibility; each production operation must replace it with a named response schema.
+    update:
+      description: Transitional planning envelope. NOT_ACCEPTED_FOR_PRODUCTION_GATE until the operation has a typed response schema and field-level authorization review.
+      x-lc-contract-status: TRANSITIONAL_BLOCKER
+

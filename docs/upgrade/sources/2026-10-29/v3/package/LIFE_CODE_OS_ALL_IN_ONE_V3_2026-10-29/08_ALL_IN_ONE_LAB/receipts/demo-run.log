@@ -1,0 +1,5 @@
+
+> lifecode-all-in-one-reference-v3@0.3.0 demo
+> node tools/run-cases.mjs
+
+167 receipts created; external calls=0. These are reference calculations, not production readiness.

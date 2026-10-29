@@ -1,0 +1,302 @@
+[
+  {
+    "source_id": "R01",
+    "title": "Life Code: nội dung website công khai",
+    "url": "https://lifecode.iai.one/",
+    "language": "vi",
+    "access_status": "PUBLIC_PAGE_RETRIEVED",
+    "scope": "Đối chiếu định vị, 12 lớp, 9 cấp; không xác minh deployed SHA.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R02",
+    "title": "GitHub: danh sách nhánh",
+    "url": "https://api.github.com/repos/tranhatam-collab/Life-Code-OS/branches?per_page=100",
+    "language": "en",
+    "access_status": "CONNECTOR_READ",
+    "scope": "main và audit giữ SHA; nhánh rescue cùng SHA audit.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R03",
+    "title": "GitHub: kế hoạch audit 11/10/2026",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/336ef35a8386a744c6de18a7f7c6e268e89e6dac/docs/audit/LIFE_CODE_OS_COMPREHENSIVE_UPGRADE_PLAN_2026-10-11.md",
+    "language": "vi",
+    "access_status": "CONNECTOR_READ",
+    "scope": "Kế hoạch có đề xuất, chưa phải release approval.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R04",
+    "title": "Kim Tâm Cát: Bát Cực Linh Số",
+    "url": "https://kimtamcat.com.vn/bat-cuc-linh-so-la-gi-va-cach-ung-dung-cai-van/",
+    "language": "vi",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Bảng cặp và quy ước; các tuyên bố số phận không được coi là bằng chứng thực nghiệm.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R05",
+    "title": "八星數字能量在人生各方面的應用",
+    "url": "https://20401319.org/number02/",
+    "language": "zh-Hant",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Đối chiếu thuật ngữ và chuỗi; không gộp ngầm trường phái.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R06",
+    "title": "World Numerology: Life Path",
+    "url": "https://www.worldnumerology.com/numerology-life-path/",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Phân biệt cộng trực tiếp và rút gọn từng thành phần; lưu phương pháp.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R07",
+    "title": "World Numerology: chữ Y",
+    "url": "https://www.worldnumerology.com/numerology-articles/numerology-Y-vowel-consonant.html",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Y phụ thuộc quy ước/phát âm; không áp máy móc một quy tắc cho mọi tên Việt.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R08",
+    "title": "World Numerology: Maturity",
+    "url": "https://www.worldnumerology.com/numerology-articles/numerology-maturity-number.html",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Cộng Life Path và Expression theo quy tắc được chọn.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R09",
+    "title": "World Numerology: Rational Thought",
+    "url": "https://www.worldnumerology.com/numerology-articles/rational-thought-number.html",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Tên riêng cần được xác nhận, không tự dùng token đầu của tên Việt.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R10",
+    "title": "World Numerology: Subconscious Self",
+    "url": "https://www.worldnumerology.com/numerology-articles/numerology-subconscious-self.html",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Đếm nhóm số có mặt trong tên; Hidden Passion có thể đồng hạng.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R11",
+    "title": "World Numerology: Balance",
+    "url": "https://www.worldnumerology.com/numerology-balance-number/",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Quy đổi chữ đầu tên; không phải đo cân bằng tâm lý.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R12",
+    "title": "World Numerology: Pinnacles",
+    "url": "https://www.worldnumerology.com/numerology-pinnacles/",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Bốn công thức, ranh giới tuổi cần khóa cách tính inclusive/exclusive.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R13",
+    "title": "World Numerology: Challenges",
+    "url": "https://www.worldnumerology.com/numerology-challenges/",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Bốn hiệu tuyệt đối; mốc thời gian phải có chính sách riêng.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R14",
+    "title": "World Numerology: Period Cycles",
+    "url": "https://www.worldnumerology.com/numerology-period-cycles/",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Chu kỳ không đồng nhất với Pinnacles; không tự giữ bảng tuổi cũ nếu thiếu nguồn.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R15",
+    "title": "Yandex Books: Цифровой психоанализ для начинающих",
+    "url": "https://books.yandex.ru/books/WHuirlQq/read-online",
+    "language": "ru",
+    "access_status": "SEARCH_EXCERPT_ONLY_FULL_TEXT_NOT_ACCESSED",
+    "scope": "Nhận diện công thức bốn số phụ; quyền và toàn văn còn phải đối chiếu.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R16",
+    "title": "Unicode Normalization",
+    "url": "https://www.unicode.org/reports/tr15/",
+    "language": "en",
+    "access_status": "PRIMARY_STANDARD",
+    "scope": "NFC không đồng nghĩa xóa dấu hoặc phiên âm.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R17",
+    "title": "IANA Time Zone Database",
+    "url": "https://www.iana.org/time-zones",
+    "language": "en",
+    "access_status": "PRIMARY_DOCUMENTATION",
+    "scope": "Lưu phiên bản tzdb và độ chính xác thời điểm sinh.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R18",
+    "title": "Cloudflare Queues: delivery guarantees",
+    "url": "https://developers.cloudflare.com/queues/reference/delivery-guarantees/",
+    "language": "en",
+    "access_status": "PRIMARY_DOCUMENTATION",
+    "scope": "At-least-once; tác vụ phải chống tác dụng phụ trùng.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R19",
+    "title": "PostgreSQL Row Security Policies",
+    "url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html",
+    "language": "en",
+    "access_status": "PRIMARY_DOCUMENTATION",
+    "scope": "Runtime role không được tự bỏ qua RLS.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R20",
+    "title": "W3C WCAG 2.2",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "language": "en",
+    "access_status": "PRIMARY_STANDARD",
+    "scope": "Mục tiêu AA; kiểm thử demo không tự là chứng nhận toàn hệ.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R21",
+    "title": "Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15",
+    "url": "https://chinhphu.vn/?classid=1&docid=214590&orggroupid=1&pageid=27160",
+    "language": "vi",
+    "access_status": "OFFICIAL_METADATA_VERIFIED",
+    "scope": "Hiệu lực 01/01/2026; cần pháp lý rà phạm vi áp dụng thực tế.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R22",
+    "title": "Luật Trí tuệ nhân tạo 134/2025/QH15",
+    "url": "https://chinhphu.vn/?classid=1&docid=216334&orggroupid=1&pageid=27160",
+    "language": "vi",
+    "access_status": "OFFICIAL_METADATA_VERIFIED",
+    "scope": "Hiệu lực 01/03/2026; phân loại theo chức năng, không theo nhãn giáo dục.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R23",
+    "title": "Luật Thương mại điện tử 122/2025/QH15",
+    "url": "https://chinhphu.vn/?classid=1&docid=216503&pageid=27160&typegroupid=3",
+    "language": "vi",
+    "access_status": "OFFICIAL_METADATA_VERIFIED",
+    "scope": "Hiệu lực 01/07/2026; chưa có legal opinion cho launch.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R24",
+    "title": "OWASP API1:2023 BOLA",
+    "url": "https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/",
+    "language": "en",
+    "access_status": "PRIMARY_SECURITY_GUIDANCE",
+    "scope": "Mọi ID đối tượng cần kiểm tra quyền ở phía server.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R25",
+    "title": "WIPO Copyright",
+    "url": "https://www.wipo.int/en/web/copyright",
+    "language": "en",
+    "access_status": "PRIMARY_RIGHTS_GUIDANCE",
+    "scope": "Tách ý tưởng/phương pháp khỏi biểu đạt, bản dịch và phần mềm có quyền.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R26",
+    "title": "World Numerology: tự tính biểu đồ",
+    "url": "https://www.worldnumerology.com/do-your-own-reading/",
+    "language": "en",
+    "access_status": "PRACTITIONER_SOURCE",
+    "scope": "Các công thức tham khảo; không sao chép luận giải thương mại.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R27",
+    "title": "GitHub: kiến trúc chín cấp v1",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/docs/LEVELS_ARCHITECTURE_V1.md",
+    "language": "en-vi",
+    "access_status": "CONNECTOR_READ",
+    "scope": "Giữ tên/ID; thay cơ chế mở khóa theo dữ liệu và quyền, không chỉ coverage.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R28",
+    "title": "Bảng Mã đuôi 80 do Founder cung cấp",
+    "url": "user-supplied:conversation:tail80",
+    "language": "vi",
+    "access_status": "USER_SUPPLIED",
+    "scope": "Lưu bảng 80 riêng; chưa xác minh một bảng gốc lịch sử duy nhất.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R29",
+    "title": "Bộ V1 đính kèm 11/10/2026",
+    "url": "attachment:Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip",
+    "language": "vi",
+    "access_status": "BYTES_PRESERVED",
+    "scope": "149 tệp, hash ở PRESERVATION_MANIFEST.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  },
+  {
+    "source_id": "R30",
+    "title": "Bộ V2 đính kèm 20/10/2026",
+    "url": "attachment:Life_Code_OS_V2_Complete_Upgrade_2026-10-20.zip",
+    "language": "vi",
+    "access_status": "BYTES_PRESERVED",
+    "scope": "307 mục tệp của ZIP được giữ nguyên; các receipt cũ giữ ngày cũ.",
+    "checked_on": "2026-10-29",
+    "full_book_read": false
+  }
+]

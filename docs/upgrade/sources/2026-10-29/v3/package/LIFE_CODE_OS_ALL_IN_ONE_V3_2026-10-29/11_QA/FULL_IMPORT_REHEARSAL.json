@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-29",
+  "scope": "Temporary local Git repository; remote URL used for identity check only; no network mutation",
+  "dry_run": {
+    "status": "DRY_RUN",
+    "project": "tranhatam-collab/Life-Code-OS",
+    "branch": "review/v3-import",
+    "head": "241a33c6bd6b8c9e8b36dbabddaa41a01bd28588",
+    "target": "docs/upgrades/2026-10-29-v3",
+    "files": 519,
+    "add": 519,
+    "identical_skip": 0,
+    "sample_paths": [
+      "00_START/Life_Code_All_In_One_Execution_V3.xlsx",
+      "00_START/Life_Code_All_In_One_Master_V3.docx",
+      "00_START/Life_Code_All_In_One_Master_V3.md",
+      "00_START/Life_Code_All_In_One_Master_V3.pdf",
+      "00_START/Life_Code_Numbers_Names_Bat_Cuc_Atlas_V3.docx",
+      "00_START/Life_Code_Numbers_Names_Bat_Cuc_Atlas_V3.md",
+      "00_START/Life_Code_Numbers_Names_Bat_Cuc_Atlas_V3.pdf",
+      "00_START/START_HERE.md",
+      "01_BASELINES/Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip",
+      "01_BASELINES/Life_Code_OS_V2_Complete_Upgrade_2026-10-20.zip",
+      "01_BASELINES/PRESERVATION_MANIFEST.json",
+      "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/DOCUMENT_INDEX.json"
+    ],
+    "writes": false
+  },
+  "apply": {
+    "status": "COPIED_NOT_COMMITTED",
+    "added": 519,
+    "identical_skipped": 0,
+    "target": "/tmp/lc_v3_import_rehearsal_be6pg9bk/Life-Code-OS/docs/upgrades/2026-10-29-v3",
+    "commit": false,
+    "push": false,
+    "deploy": false
+  },
+  "imported_package_verifier": {
+    "status": "PASS",
+    "files_expected": 518,
+    "files_present": 518,
+    "errors": [],
+    "manifest_excluded_from_self_hash": true
+  },
+  "baseline_readme_unchanged": true,
+  "production_changes": false,
+  "github_write": false
+}

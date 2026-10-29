@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:MethodPassportV2",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "method_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "release": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "status": {
+      "enum": [
+        "researching",
+        "specified",
+        "reference_tested",
+        "content_reviewed",
+        "permitted_for_product",
+        "deprecated",
+        "retired"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "source_read_status": {
+      "enum": [
+        "metadata_only",
+        "excerpt_read",
+        "full_text_reviewed",
+        "original_design"
+      ]
+    },
+    "rights_status": {
+      "enum": [
+        "unknown",
+        "restricted",
+        "permitted"
+      ]
+    },
+    "input_schema_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "output_schema_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "rule_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "golden_case_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "approvers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    }
+  },
+  "required": [
+    "method_id",
+    "release",
+    "status",
+    "source_ids",
+    "source_read_status",
+    "rights_status",
+    "input_schema_id",
+    "output_schema_id",
+    "rule_digest",
+    "golden_case_ids",
+    "limitations",
+    "approvers"
+  ]
+}

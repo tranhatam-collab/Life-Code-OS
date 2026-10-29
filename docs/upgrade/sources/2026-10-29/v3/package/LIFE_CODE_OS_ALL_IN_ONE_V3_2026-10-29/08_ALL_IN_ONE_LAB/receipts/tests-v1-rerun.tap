@@ -1,0 +1,508 @@
+TAP version 13
+# Subtest: tail80: toàn miền 10.000 suffix, thương/số dư/ánh xạ
+ok 1 - tail80: toàn miền 10.000 suffix, thương/số dư/ánh xạ
+  ---
+  duration_ms: 14.268988
+  type: 'test'
+  ...
+# Subtest: tail80 bảng đúng80mục duy nhất
+ok 2 - tail80 bảng đúng80mục duy nhất
+  ---
+  duration_ms: 0.22959
+  type: 'test'
+  ...
+# Subtest: tail80 phân bố nhãn giữ nguồn
+ok 3 - tail80 phân bố nhãn giữ nguồn
+  ---
+  duration_ms: 1.237561
+  type: 'test'
+  ...
+# Subtest: tail80 0000
+ok 4 - tail80 0000
+  ---
+  duration_ms: 0.309595
+  type: 'test'
+  ...
+# Subtest: tail80 0001
+ok 5 - tail80 0001
+  ---
+  duration_ms: 0.096636
+  type: 'test'
+  ...
+# Subtest: tail80 0079
+ok 6 - tail80 0079
+  ---
+  duration_ms: 0.167047
+  type: 'test'
+  ...
+# Subtest: tail80 0080
+ok 7 - tail80 0080
+  ---
+  duration_ms: 0.206769
+  type: 'test'
+  ...
+# Subtest: tail80 0081
+ok 8 - tail80 0081
+  ---
+  duration_ms: 0.104868
+  type: 'test'
+  ...
+# Subtest: tail80 0160
+ok 9 - tail80 0160
+  ---
+  duration_ms: 0.250661
+  type: 'test'
+  ...
+# Subtest: tail80 6789
+ok 10 - tail80 6789
+  ---
+  duration_ms: 0.301147
+  type: 'test'
+  ...
+# Subtest: tail80 6869
+ok 11 - tail80 6869
+  ---
+  duration_ms: 0.247799
+  type: 'test'
+  ...
+# Subtest: tail80 6231
+ok 12 - tail80 6231
+  ---
+  duration_ms: 0.070999
+  type: 'test'
+  ...
+# Subtest: tail80 1986
+ok 13 - tail80 1986
+  ---
+  duration_ms: 0.848156
+  type: 'test'
+  ...
+# Subtest: tail80 3468
+ok 14 - tail80 3468
+  ---
+  duration_ms: 0.126962
+  type: 'test'
+  ...
+# Subtest: tail80 9999
+ok 15 - tail80 9999
+  ---
+  duration_ms: 0.311698
+  type: 'test'
+  ...
+# Subtest: tail80zero mặc định unresolved
+ok 16 - tail80zero mặc định unresolved
+  ---
+  duration_ms: 0.095107
+  type: 'test'
+  ...
+# Subtest: tail80zero opt-in80
+ok 17 - tail80zero opt-in80
+  ---
+  duration_ms: 0.092933
+  type: 'test'
+  ...
+# Subtest: tail80 invalid 1234
+ok 18 - tail80 invalid 1234
+  ---
+  duration_ms: 0.413508
+  type: 'test'
+  ...
+# Subtest: tail80 invalid 123
+ok 19 - tail80 invalid 123
+  ---
+  duration_ms: 0.071674
+  type: 'test'
+  ...
+# Subtest: tail80 invalid 12345
+ok 20 - tail80 invalid 12345
+  ---
+  duration_ms: 0.048809
+  type: 'test'
+  ...
+# Subtest: tail80 invalid 12a4
+ok 21 - tail80 invalid 12a4
+  ---
+  duration_ms: 0.05384
+  type: 'test'
+  ...
+# Subtest: tail80 invalid  1234
+ok 22 - tail80 invalid  1234
+  ---
+  duration_ms: 0.053317
+  type: 'test'
+  ...
+# Subtest: tail80 invalid 12 34
+ok 23 - tail80 invalid 12 34
+  ---
+  duration_ms: 0.047246
+  type: 'test'
+  ...
+# Subtest: tail80 invalid 12.3
+ok 24 - tail80 invalid 12.3
+  ---
+  duration_ms: 0.046569
+  type: 'test'
+  ...
+# Subtest: tail80 invalid -123
+ok 25 - tail80 invalid -123
+  ---
+  duration_ms: 0.045429
+  type: 'test'
+  ...
+# Subtest: tail80 invalid １２３４
+ok 26 - tail80 invalid １２３４
+  ---
+  duration_ms: 0.175246
+  type: 'test'
+  ...
+# Subtest: tail80 invalid null
+ok 27 - tail80 invalid null
+  ---
+  duration_ms: 0.057936
+  type: 'test'
+  ...
+# Subtest: tail80 invalid undefined
+ok 28 - tail80 invalid undefined
+  ---
+  duration_ms: 0.048226
+  type: 'test'
+  ...
+# Subtest: tail80 invalid 
+ok 29 - tail80 invalid 
+  ---
+  duration_ms: 0.052739
+  type: 'test'
+  ...
+# Subtest: tail80zero policy invalid
+ok 30 - tail80zero policy invalid
+  ---
+  duration_ms: 0.154762
+  type: 'test'
+  ...
+# Subtest: tail80 prefix invariant dùng BigInt
+ok 31 - tail80 prefix invariant dùng BigInt
+  ---
+  duration_ms: 0.190081
+  type: 'test'
+  ...
+# Subtest: digitalRoot 0
+ok 32 - digitalRoot 0
+  ---
+  duration_ms: 0.087729
+  type: 'test'
+  ...
+# Subtest: digitalRoot36
+ok 33 - digitalRoot36
+  ---
+  duration_ms: 0.053423
+  type: 'test'
+  ...
+# Subtest: digitalRoot38
+ok 34 - digitalRoot38
+  ---
+  duration_ms: 0.0524
+  type: 'test'
+  ...
+# Subtest: digitalRoot negative rejected
+ok 35 - digitalRoot negative rejected
+  ---
+  duration_ms: 0.073587
+  type: 'test'
+  ...
+# Subtest: digitalRoot unsafe rejected
+ok 36 - digitalRoot unsafe rejected
+  ---
+  duration_ms: 0.069418
+  type: 'test'
+  ...
+# Subtest: digitSum exactdigits
+ok 37 - digitSum exactdigits
+  ---
+  duration_ms: 0.169466
+  type: 'test'
+  ...
+# Subtest: digitSum dateformat rejected
+ok 38 - digitSum dateformat rejected
+  ---
+  duration_ms: 0.107838
+  type: 'test'
+  ...
+# Subtest: Tên Founder tổng33
+ok 39 - Tên Founder tổng33
+  ---
+  duration_ms: 0.890976
+  type: 'test'
+  ...
+# Subtest: Tên giữnguyên bản và NFC
+ok 40 - Tên giữnguyên bản và NFC
+  ---
+  duration_ms: 0.254526
+  type: 'test'
+  ...
+# Subtest: Tên Đ chuyển D có policy
+ok 41 - Tên Đ chuyển D có policy
+  ---
+  duration_ms: 0.125822
+  type: 'test'
+  ...
+# Subtest: Tên unsupportedscript rejected
+ok 42 - Tên unsupportedscript rejected
+  ---
+  duration_ms: 0.126424
+  type: 'test'
+  ...
+# Subtest: Tên rỗng rejected
+ok 43 - Tên rỗng rejected
+  ---
+  duration_ms: 0.111362
+  type: 'test'
+  ...
+# Subtest: pairmap64
+ok 44 - pairmap64
+  ---
+  duration_ms: 0.067892
+  type: 'test'
+  ...
+# Subtest: pairmap mỗi nhóm8
+ok 45 - pairmap mỗi nhóm8
+  ---
+  duration_ms: 0.231687
+  type: 'test'
+  ...
+# Subtest: 876 là DN-SK không phải DN-TY
+ok 46 - 876 là DN-SK không phải DN-TY
+  ---
+  duration_ms: 0.250254
+  type: 'test'
+  ...
+# Subtest: 55unresolved không PV
+ok 47 - 55unresolved không PV
+  ---
+  duration_ms: 0.096035
+  type: 'test'
+  ...
+# Subtest: 10digits9pairs
+ok 48 - 10digits9pairs
+  ---
+  duration_ms: 0.085007
+  type: 'test'
+  ...
+# Subtest: same-count no arbitrary differentiation
+ok 49 - same-count no arbitrary differentiation
+  ---
+  duration_ms: 0.193247
+  type: 'test'
+  ...
+# Subtest: pairinvalid rejected
+ok 50 - pairinvalid rejected
+  ---
+  duration_ms: 0.111771
+  type: 'test'
+  ...
+# Subtest: Coverage one supplied not full
+ok 51 - Coverage one supplied not full
+  ---
+  duration_ms: 0.153774
+  type: 'test'
+  ...
+# Subtest: Coverage unknown null
+ok 52 - Coverage unknown null
+  ---
+  duration_ms: 0.06295
+  type: 'test'
+  ...
+# Subtest: Coverage client extra ignored
+ok 53 - Coverage client extra ignored
+  ---
+  duration_ms: 0.104309
+  type: 'test'
+  ...
+# Subtest: Coverage duplicate rejected
+ok 54 - Coverage duplicate rejected
+  ---
+  duration_ms: 0.298512
+  type: 'test'
+  ...
+# Subtest: Coverage invalidweight rejected
+ok 55 - Coverage invalidweight rejected
+  ---
+  duration_ms: 0.178336
+  type: 'test'
+  ...
+# Subtest: Auth scoped allow
+ok 56 - Auth scoped allow
+  ---
+  duration_ms: 0.111808
+  type: 'test'
+  ...
+# Subtest: Auth reject authenticated
+ok 57 - Auth reject authenticated
+  ---
+  duration_ms: 0.080357
+  type: 'test'
+  ...
+# Subtest: Auth reject principal
+ok 58 - Auth reject principal
+  ---
+  duration_ms: 0.054118
+  type: 'test'
+  ...
+# Subtest: Auth reject tenant
+ok 59 - Auth reject tenant
+  ---
+  duration_ms: 0.043136
+  type: 'test'
+  ...
+# Subtest: Auth reject subject
+ok 60 - Auth reject subject
+  ---
+  duration_ms: 0.037703
+  type: 'test'
+  ...
+# Subtest: Auth reject purpose
+ok 61 - Auth reject purpose
+  ---
+  duration_ms: 0.037027
+  type: 'test'
+  ...
+# Subtest: Auth reject resourceState
+ok 62 - Auth reject resourceState
+  ---
+  duration_ms: 0.045592
+  type: 'test'
+  ...
+# Subtest: Auth expired grant deny
+ok 63 - Auth expired grant deny
+  ---
+  duration_ms: 0.178225
+  type: 'test'
+  ...
+# Subtest: Auth revoked grant deny
+ok 64 - Auth revoked grant deny
+  ---
+  duration_ms: 0.076064
+  type: 'test'
+  ...
+# Subtest: Auth invalidexpiry deny
+ok 65 - Auth invalidexpiry deny
+  ---
+  duration_ms: 0.060858
+  type: 'test'
+  ...
+# Subtest: Auth grantmissing deny
+ok 66 - Auth grantmissing deny
+  ---
+  duration_ms: 0.057082
+  type: 'test'
+  ...
+# Subtest: Eligibility alltrue
+ok 67 - Eligibility alltrue
+  ---
+  duration_ms: 0.077643
+  type: 'test'
+  ...
+# Subtest: Eligibility blocks authorized
+ok 68 - Eligibility blocks authorized
+  ---
+  duration_ms: 0.058278
+  type: 'test'
+  ...
+# Subtest: Eligibility blocks purposeAllowed
+ok 69 - Eligibility blocks purposeAllowed
+  ---
+  duration_ms: 0.041012
+  type: 'test'
+  ...
+# Subtest: Eligibility blocks entitlementValid
+ok 70 - Eligibility blocks entitlementValid
+  ---
+  duration_ms: 0.086267
+  type: 'test'
+  ...
+# Subtest: Eligibility blocks methodReleased
+ok 71 - Eligibility blocks methodReleased
+  ---
+  duration_ms: 0.040387
+  type: 'test'
+  ...
+# Subtest: Eligibility blocks inputsValid
+ok 72 - Eligibility blocks inputsValid
+  ---
+  duration_ms: 0.0443
+  type: 'test'
+  ...
+# Subtest: Eligibility blocks countryAllowed
+ok 73 - Eligibility blocks countryAllowed
+  ---
+  duration_ms: 0.05523
+  type: 'test'
+  ...
+# Subtest: Claim symbolic null valid
+ok 74 - Claim symbolic null valid
+  ---
+  duration_ms: 0.123692
+  type: 'test'
+  ...
+# Subtest: Claim symbolic probability rejected
+ok 75 - Claim symbolic probability rejected
+  ---
+  duration_ms: 0.095834
+  type: 'test'
+  ...
+# Subtest: Claim probability modelrequired
+ok 76 - Claim probability modelrequired
+  ---
+  duration_ms: 0.316673
+  type: 'test'
+  ...
+# Subtest: Claim probability range
+ok 77 - Claim probability range
+  ---
+  duration_ms: 0.111405
+  type: 'test'
+  ...
+# Subtest: Claim probability structuralvalid notproofcalibration
+ok 78 - Claim probability structuralvalid notproofcalibration
+  ---
+  duration_ms: 0.063498
+  type: 'test'
+  ...
+# Subtest: Progress empty null
+ok 79 - Progress empty null
+  ---
+  duration_ms: 0.293182
+  type: 'test'
+  ...
+# Subtest: Progress fraction
+ok 80 - Progress fraction
+  ---
+  duration_ms: 0.112371
+  type: 'test'
+  ...
+# Subtest: Idempotency replay sameeffect
+ok 81 - Idempotency replay sameeffect
+  ---
+  duration_ms: 0.129984
+  type: 'test'
+  ...
+# Subtest: Idempotency digest conflict
+ok 82 - Idempotency digest conflict
+  ---
+  duration_ms: 0.093282
+  type: 'test'
+  ...
+# Subtest: Idempotency accountnamespaces separated
+ok 83 - Idempotency accountnamespaces separated
+  ---
+  duration_ms: 0.116477
+  type: 'test'
+  ...
+1..83
+# tests 83
+# suites 0
+# pass 83
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 156.211931

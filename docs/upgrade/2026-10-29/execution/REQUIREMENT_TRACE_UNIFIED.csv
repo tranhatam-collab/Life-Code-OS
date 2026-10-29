@@ -1,0 +1,408 @@
+﻿trace_id,origin,requirement,task_ids,registry_ref,evidence_status
+LOCAL_R2:REQ-SCREEN-UI-01,LOCAL_R2,UI-01 Trang chủ: responsive state and authorization parity,"[""WEB-01"", ""UPG-UX-001""]","[""UI-01""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-02,LOCAL_R2,UI-02 Giới thiệu HNH: responsive state and authorization parity,"[""WEB-01"", ""UPG-UX-001""]","[""UI-02""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-03,LOCAL_R2,UI-03 Danh mục9cấp: responsive state and authorization parity,"[""GOV-09"", ""UPG-UX-001""]","[""UI-03""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-04,LOCAL_R2,UI-04 Thư viện phương pháp: responsive state and authorization parity,"[""METHOD-10"", ""UPG-UX-001""]","[""UI-04""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-05,LOCAL_R2,UI-05 Tra bộ số miễn phí: responsive state and authorization parity,"[""WEB-02"", ""UPG-UX-001""]","[""UI-05""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-06,LOCAL_R2,UI-06 Giá và phạm vi: responsive state and authorization parity,"[""COMMERCE-01"", ""UPG-UX-001""]","[""UI-06""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-07,LOCAL_R2,UI-07 Bắt đầu theo nhu cầu: responsive state and authorization parity,"[""WEB-03"", ""UPG-UX-001""]","[""UI-07""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-08,LOCAL_R2,UI-08 Đăng nhập: responsive state and authorization parity,"[""TRUST-01"", ""UPG-UX-001""]","[""UI-08""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-09,LOCAL_R2,UI-09 Tổng quan: responsive state and authorization parity,"[""WEB-06"", ""UPG-UX-001""]","[""UI-09""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-10,LOCAL_R2,UI-10 Hồ sơ: responsive state and authorization parity,"[""API-02"", ""UPG-UX-001""]","[""UI-10""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-11,LOCAL_R2,UI-11 Chỉnh hồ sơ: responsive state and authorization parity,"[""DATA-01"", ""UPG-UX-001""]","[""UI-11""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-12,LOCAL_R2,UI-12 Giả thuyết dữ liệu: responsive state and authorization parity,"[""DATA-01"", ""UPG-UX-001""]","[""UI-12""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-13,LOCAL_R2,UI-13 Sự đồng ý: responsive state and authorization parity,"[""TRUST-08"", ""UPG-UX-001""]","[""UI-13""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-14,LOCAL_R2,UI-14 Chia sẻ: responsive state and authorization parity,"[""TRUST-07"", ""UPG-UX-001""]","[""UI-14""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-15,LOCAL_R2,UI-15 Nhật ký: responsive state and authorization parity,"[""WEB-07"", ""UPG-UX-001""]","[""UI-15""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-16,LOCAL_R2,UI-16 Đồng nhịp: responsive state and authorization parity,"[""EXPAND-04"", ""UPG-UX-001""]","[""UI-16""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-17,LOCAL_R2,UI-17 Mục tiêu: responsive state and authorization parity,"[""API-05"", ""UPG-UX-001""]","[""UI-17""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-18,LOCAL_R2,UI-18 Check-in: responsive state and authorization parity,"[""API-05"", ""UPG-UX-001""]","[""UI-18""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-19,LOCAL_R2,UI-19 Dòng thời gian: responsive state and authorization parity,"[""METHOD-08"", ""UPG-UX-001""]","[""UI-19""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-20,LOCAL_R2,UI-20 Khảo sát: responsive state and authorization parity,"[""EXPAND-01"", ""UPG-UX-001""]","[""UI-20""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-21,LOCAL_R2,UI-21 Tính phân tích: responsive state and authorization parity,"[""API-03"", ""UPG-UX-001""]","[""UI-21""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-22,LOCAL_R2,UI-22 Tiến độ: responsive state and authorization parity,"[""API-03"", ""UPG-UX-001""]","[""UI-22""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-23,LOCAL_R2,UI-23 Thư viện báo cáo: responsive state and authorization parity,"[""WEB-08"", ""UPG-UX-001""]","[""UI-23""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-24,LOCAL_R2,UI-24 Đọc báo cáo: responsive state and authorization parity,"[""REPORT-05"", ""UPG-UX-001""]","[""UI-24""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-25,LOCAL_R2,UI-25 So sánh revisions: responsive state and authorization parity,"[""REPORT-09"", ""UPG-UX-001""]","[""UI-25""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-26,LOCAL_R2,UI-26 Xuất/tải: responsive state and authorization parity,"[""REPORT-06"", ""UPG-UX-001""]","[""UI-26""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-27,LOCAL_R2,UI-27 Đơn hàng: responsive state and authorization parity,"[""COMMERCE-01"", ""UPG-UX-001""]","[""UI-27""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-28,LOCAL_R2,UI-28 Thanh toán: responsive state and authorization parity,"[""COMMERCE-03"", ""UPG-UX-001""]","[""UI-28""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-29,LOCAL_R2,UI-29 Quyền dịch vụ: responsive state and authorization parity,"[""COMMERCE-05"", ""UPG-UX-001""]","[""UI-29""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-30,LOCAL_R2,UI-30 Hỗ trợ: responsive state and authorization parity,"[""COMMERCE-08"", ""UPG-UX-001""]","[""UI-30""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-31,LOCAL_R2,UI-31 Xuất dữ liệu: responsive state and authorization parity,"[""DATA-09"", ""UPG-UX-001""]","[""UI-31""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-32,LOCAL_R2,UI-32 Yêu cầu xóa: responsive state and authorization parity,"[""DATA-07"", ""UPG-UX-001""]","[""UI-32""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-33,LOCAL_R2,UI-33 Trung tâm tự động: responsive state and authorization parity,"[""AI-10"", ""UPG-UX-001""]","[""UI-33""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-34,LOCAL_R2,UI-34 Gia đình: responsive state and authorization parity,"[""EXPAND-05"", ""UPG-UX-001""]","[""UI-34""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-35,LOCAL_R2,UI-35 Case chuyên gia: responsive state and authorization parity,"[""ACADEMY-05"", ""UPG-UX-001""]","[""UI-35""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-36,LOCAL_R2,UI-36 Duyệt báo cáo: responsive state and authorization parity,"[""REPORT-10"", ""UPG-UX-001""]","[""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-37,LOCAL_R2,UI-37 Academy: responsive state and authorization parity,"[""ACADEMY-01"", ""UPG-UX-001""]","[""UI-37""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-38,LOCAL_R2,UI-38 Học bài: responsive state and authorization parity,"[""ACADEMY-03"", ""UPG-UX-001""]","[""UI-38""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-39,LOCAL_R2,UI-39 Chứng nhận: responsive state and authorization parity,"[""ACADEMY-06"", ""UPG-UX-001""]","[""UI-39""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-40,LOCAL_R2,UI-40 Workspace: responsive state and authorization parity,"[""EXPAND-08"", ""UPG-UX-001""]","[""UI-40""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-41,LOCAL_R2,UI-41 Partner: responsive state and authorization parity,"[""GLOBAL-05"", ""UPG-UX-001""]","[""UI-41""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-42,LOCAL_R2,UI-42 Nguồn/phương pháp Admin: responsive state and authorization parity,"[""METHOD-10"", ""UPG-UX-001""]","[""UI-42""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-43,LOCAL_R2,UI-43 Quality center: responsive state and authorization parity,"[""OPS-08"", ""UPG-UX-001""]","[""UI-43""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-44,LOCAL_R2,UI-44 Ops center: responsive state and authorization parity,"[""OPS-04"", ""UPG-UX-001""]","[""UI-44""]",NOT_CHECKED
+LOCAL_R2:REQ-SCREEN-UI-45,LOCAL_R2,UI-45 Rights/legal center: responsive state and authorization parity,"[""GLOBAL-01"", ""UPG-UX-001""]","[""UI-45""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L1,LOCAL_R2,Retain LC-L1 in T2 with conditional evidence and kill metrics,"[""WEB-03"", ""WEB-06"", ""DATA-01"", ""API-03"", ""WEB-08"", ""REPORT-05"", ""REPORT-06"", ""UPG-PRD-002""]","[""UI-07"", ""UI-09"", ""UI-11"", ""UI-21"", ""UI-22"", ""UI-23"", ""UI-24"", ""UI-26""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L2,LOCAL_R2,Retain LC-L2 in T4 with conditional evidence and kill metrics,"[""EXPAND-01"", ""API-03"", ""WEB-08"", ""REPORT-05"", ""REPORT-09"", ""UPG-PRD-002""]","[""UI-20"", ""UI-21"", ""UI-23"", ""UI-24"", ""UI-25""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L3,LOCAL_R2,Retain LC-L3 in T4 with conditional evidence and kill metrics,"[""WEB-07"", ""API-05"", ""EXPAND-01"", ""API-03"", ""REPORT-05"", ""UPG-PRD-002""]","[""UI-15"", ""UI-18"", ""UI-20"", ""UI-21"", ""UI-24""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L4,LOCAL_R2,Retain LC-L4 in T4 with conditional evidence and kill metrics,"[""API-05"", ""METHOD-08"", ""API-03"", ""REPORT-05"", ""UPG-PRD-002""]","[""UI-17"", ""UI-19"", ""UI-21"", ""UI-24""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L5,LOCAL_R2,Retain LC-L5 in T4 with conditional evidence and kill metrics,"[""TRUST-08"", ""TRUST-07"", ""REPORT-05"", ""REPORT-09"", ""UPG-PRD-002""]","[""UI-13"", ""UI-14"", ""UI-24"", ""UI-25""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L6,LOCAL_R2,Retain LC-L6 in T6 with conditional evidence and kill metrics,"[""METHOD-08"", ""API-03"", ""REPORT-05"", ""REPORT-09"", ""UPG-PRD-002""]","[""UI-19"", ""UI-21"", ""UI-24"", ""UI-25""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L7,LOCAL_R2,Retain LC-L7 in T6 with conditional evidence and kill metrics,"[""TRUST-08"", ""WEB-07"", ""API-03"", ""REPORT-05"", ""UPG-PRD-002""]","[""UI-13"", ""UI-15"", ""UI-21"", ""UI-24""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L8,LOCAL_R2,Retain LC-L8 in T6 with conditional evidence and kill metrics,"[""API-05"", ""API-03"", ""REPORT-05"", ""UPG-PRD-002""]","[""UI-17"", ""UI-18"", ""UI-21"", ""UI-24""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-L9,LOCAL_R2,Retain LC-L9 in T6 with conditional evidence and kill metrics,"[""TRUST-08"", ""TRUST-07"", ""METHOD-08"", ""API-03"", ""WEB-08"", ""REPORT-05"", ""REPORT-09"", ""REPORT-06"", ""UPG-PRD-002""]","[""UI-13"", ""UI-14"", ""UI-19"", ""UI-21"", ""UI-23"", ""UI-24"", ""UI-25"", ""UI-26""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-GUEST,LOCAL_R2,Retain LC-GUEST in T1 with conditional evidence and kill metrics,"[""WEB-01"", ""GOV-09"", ""METHOD-10"", ""WEB-02"", ""UPG-PRD-002""]","[""UI-01"", ""UI-02"", ""UI-03"", ""UI-04"", ""UI-05""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-FREE,LOCAL_R2,Retain LC-FREE in T2 with conditional evidence and kill metrics,"[""WEB-03"", ""WEB-06"", ""API-02"", ""DATA-01"", ""TRUST-08"", ""WEB-07"", ""API-05"", ""DATA-09"", ""DATA-07"", ""UPG-PRD-002""]","[""UI-07"", ""UI-09"", ""UI-10"", ""UI-11"", ""UI-13"", ""UI-15"", ""UI-17"", ""UI-31"", ""UI-32""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-COMPANION,LOCAL_R2,Retain LC-COMPANION in T3 with conditional evidence and kill metrics,"[""WEB-07"", ""API-05"", ""AI-10"", ""UPG-PRD-002""]","[""UI-15"", ""UI-17"", ""UI-18"", ""UI-33""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-NUMBERS,LOCAL_R2,Retain LC-NUMBERS in T1 with conditional evidence and kill metrics,"[""WEB-02"", ""UPG-PRD-002""]","[""UI-05""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-EXPERT,LOCAL_R2,Retain LC-EXPERT in T3 with conditional evidence and kill metrics,"[""TRUST-07"", ""COMMERCE-08"", ""ACADEMY-05"", ""REPORT-10"", ""UPG-PRD-002""]","[""UI-14"", ""UI-30"", ""UI-35"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-PRACTICE,LOCAL_R2,Retain LC-PRACTICE in T5 with conditional evidence and kill metrics,"[""ACADEMY-05"", ""REPORT-10"", ""UPG-PRD-002""]","[""UI-35"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-ACADEMY-FOUNDATION,LOCAL_R2,Retain LC-ACADEMY-FOUNDATION in T5 with conditional evidence and kill metrics,"[""ACADEMY-01"", ""ACADEMY-03"", ""ACADEMY-06"", ""UPG-PRD-002""]","[""UI-37"", ""UI-38"", ""UI-39""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-ACADEMY-PRO,LOCAL_R2,Retain LC-ACADEMY-PRO in T6 with conditional evidence and kill metrics,"[""ACADEMY-05"", ""REPORT-10"", ""ACADEMY-01"", ""ACADEMY-03"", ""ACADEMY-06"", ""UPG-PRD-002""]","[""UI-35"", ""UI-36"", ""UI-37"", ""UI-38"", ""UI-39""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-ACADEMY-TRAINER,LOCAL_R2,Retain LC-ACADEMY-TRAINER in T6 with conditional evidence and kill metrics,"[""ACADEMY-01"", ""ACADEMY-03"", ""ACADEMY-06"", ""METHOD-10"", ""UPG-PRD-002""]","[""UI-37"", ""UI-38"", ""UI-39"", ""UI-42""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-FAMILY,LOCAL_R2,Retain LC-FAMILY in T6 with conditional evidence and kill metrics,"[""TRUST-08"", ""TRUST-07"", ""EXPAND-05"", ""UPG-PRD-002""]","[""UI-13"", ""UI-14"", ""UI-34""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-ORG,LOCAL_R2,Retain LC-ORG in T7 with conditional evidence and kill metrics,"[""EXPAND-08"", ""UPG-PRD-002""]","[""UI-40""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-API,LOCAL_R2,Retain LC-API in T7 with conditional evidence and kill metrics,"[""UPG-PRD-002""]","[""LC-API""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-PUBLISH,LOCAL_R2,Retain LC-PUBLISH in T3 with conditional evidence and kill metrics,"[""WEB-08"", ""REPORT-05"", ""REPORT-09"", ""REPORT-06"", ""UPG-PRD-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26""]",NOT_CHECKED
+LOCAL_R2:REQ-PRODUCT-LC-REGIONAL,LOCAL_R2,Retain LC-REGIONAL in T8 with conditional evidence and kill metrics,"[""GLOBAL-05"", ""GLOBAL-01"", ""UPG-PRD-002""]","[""UI-41"", ""UI-45""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L1,LOCAL_R2,"Level 1 follows differentiated typed input, AI, review and rejection contract","[""REPORT-02"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L2,LOCAL_R2,"Level 2 follows differentiated typed input, AI, review and rejection contract","[""REPORT-03"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L3,LOCAL_R2,"Level 3 follows differentiated typed input, AI, review and rejection contract","[""REPORT-03"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L4,LOCAL_R2,"Level 4 follows differentiated typed input, AI, review and rejection contract","[""REPORT-03"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L5,LOCAL_R2,"Level 5 follows differentiated typed input, AI, review and rejection contract","[""REPORT-03"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L6,LOCAL_R2,"Level 6 follows differentiated typed input, AI, review and rejection contract","[""REPORT-04"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L7,LOCAL_R2,"Level 7 follows differentiated typed input, AI, review and rejection contract","[""REPORT-04"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L8,LOCAL_R2,"Level 8 follows differentiated typed input, AI, review and rejection contract","[""REPORT-04"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-REPORT-L9,LOCAL_R2,"Level 9 follows differentiated typed input, AI, review and rejection contract","[""REPORT-04"", ""REPORT-05"", ""REPORT-06"", ""REPORT-07"", ""REPORT-08"", ""REPORT-09"", ""REPORT-10"", ""UPG-AI-001"", ""UPG-AI-002""]","[""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-36""]",NOT_CHECKED
+LOCAL_R2:REQ-X-PWA,LOCAL_R2,Install is optional; manifest scope/update/cache/offline behavior is explicit,"[""UPG-UX-001"", ""UPG-UX-003""]","[""UI-01"", ""UI-02"", ""UI-03"", ""UI-04"", ""UI-05"", ""UI-06"", ""UI-07"", ""UI-08"", ""UI-09"", ""UI-10"", ""UI-11"", ""UI-12"", ""UI-13"", ""UI-14"", ""UI-15"", ""UI-16"", ""UI-17"", ""UI-18"", ""UI-19"", ""UI-20"", ""UI-21"", ""UI-22"", ""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-27"", ""UI-28"", ""UI-29"", ""UI-30"", ""UI-31"", ""UI-32"", ""UI-33"", ""UI-34"", ""UI-35"", ""UI-36"", ""UI-37"", ""UI-38"", ""UI-39"", ""UI-40"", ""UI-41"", ""UI-42"", ""UI-43"", ""UI-44"", ""UI-45""]",NOT_CHECKED
+LOCAL_R2:REQ-X-A11Y,LOCAL_R2,Critical flows conform to WCAG 2.2 AA with manual and automated evidence,"[""WEB-10"", ""UPG-UX-003""]","[""UI-01"", ""UI-02"", ""UI-03"", ""UI-04"", ""UI-05"", ""UI-06"", ""UI-07"", ""UI-08"", ""UI-09"", ""UI-10"", ""UI-11"", ""UI-12"", ""UI-13"", ""UI-14"", ""UI-15"", ""UI-16"", ""UI-17"", ""UI-18"", ""UI-19"", ""UI-20"", ""UI-21"", ""UI-22"", ""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-27"", ""UI-28"", ""UI-29"", ""UI-30"", ""UI-31"", ""UI-32"", ""UI-33"", ""UI-34"", ""UI-35"", ""UI-36"", ""UI-37"", ""UI-38"", ""UI-39"", ""UI-40"", ""UI-41"", ""UI-42"", ""UI-43"", ""UI-44"", ""UI-45""]",NOT_CHECKED
+LOCAL_R2:REQ-X-AUTH,LOCAL_R2,Every object is authorized by server-side tenant/subject/grant context,"[""TRUST-04"", ""TRUST-05"", ""UPG-BE-003""]","[""UI-10"", ""UI-14"", ""UI-34"", ""UI-35"", ""UI-40""]",NOT_CHECKED
+LOCAL_R2:REQ-X-TYPED,LOCAL_R2,Formula result represents null/decimal/date/timezone explicitly,"[""METHOD-07"", ""UPG-BE-002""]","[""UI-05"", ""UI-19"", ""UI-21"", ""UI-24""]",NOT_CHECKED
+LOCAL_R2:REQ-X-METHOD-RIGHTS,LOCAL_R2,Only released methods with source and rights may calculate or publish,"[""METHOD-10"", ""UPG-BE-001""]","[""UI-04"", ""UI-42"", ""UI-45""]",NOT_CHECKED
+LOCAL_R2:REQ-X-JOBS,LOCAL_R2,Jobs/outbox/payment fulfill exactly once and reconcile terminal state,"[""DATA-06"", ""COMMERCE-04"", ""UPG-BE-004""]","[""UI-22"", ""UI-26"", ""UI-28"", ""UI-31"", ""UI-32""]",NOT_CHECKED
+LOCAL_R2:REQ-X-MIGRATION,LOCAL_R2,D1 to Postgres dry-run reconciles and rolls back before any separately authorized real migration,"[""DATA-03"", ""DATA-04"", ""UPG-BE-005""]","[""LC-FREE""]",NOT_CHECKED
+LOCAL_R2:REQ-X-OPENAPI,LOCAL_R2,"All 64 retained operation IDs have schemas, auth and negative contracts","[""API-01"", ""API-10"", ""UPG-BE-006""]","[""LC-API""]",NOT_CHECKED
+LOCAL_R2:REQ-X-DEMO,LOCAL_R2,Demo and trace explorer use synthetic data and disclose exact candidate,"[""UPG-UX-002"", ""UPG-BE-007""]","[""UI-01"", ""UI-02"", ""UI-03"", ""UI-04"", ""UI-05"", ""UI-06"", ""UI-07"", ""UI-08"", ""UI-09"", ""UI-10"", ""UI-11"", ""UI-12"", ""UI-13"", ""UI-14"", ""UI-15"", ""UI-16"", ""UI-17"", ""UI-18"", ""UI-19"", ""UI-20"", ""UI-21"", ""UI-22"", ""UI-23"", ""UI-24"", ""UI-25"", ""UI-26"", ""UI-27"", ""UI-28"", ""UI-29"", ""UI-30"", ""UI-31"", ""UI-32"", ""UI-33"", ""UI-34"", ""UI-35"", ""UI-36"", ""UI-37"", ""UI-38"", ""UI-39"", ""UI-40"", ""UI-41"", ""UI-42"", ""UI-43"", ""UI-44"", ""UI-45""]",NOT_CHECKED
+LOCAL_R2:REQ-X-COST,LOCAL_R2,Costs remain formulas until approved rates/vendors/currency; missing is not zero,"[""COMMERCE-09"", ""UPG-PM-002""]","[""LC-L1"", ""LC-L2"", ""LC-L3"", ""LC-L4"", ""LC-L5"", ""LC-L6"", ""LC-L7"", ""LC-L8"", ""LC-L9"", ""LC-GUEST"", ""LC-FREE"", ""LC-COMPANION"", ""LC-NUMBERS"", ""LC-EXPERT"", ""LC-PRACTICE"", ""LC-ACADEMY-FOUNDATION"", ""LC-ACADEMY-PRO"", ""LC-ACADEMY-TRAINER"", ""LC-FAMILY"", ""LC-ORG"", ""LC-API"", ""LC-PUBLISH"", ""LC-REGIONAL""]",NOT_CHECKED
+INCOMING_V3:REQ-V3-001,INCOMING_V3,Bảo toàn toàn bộ tệp V1 và V2,"[""INT29-001""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/01_BASELINES/PRESERVATION_MANIFEST.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-002,INCOMING_V3,Đối chiếu GitHub và nhánh rescue,"[""INT29-002""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/GITHUB_BASELINE_2026-10-29.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-003,INCOMING_V3,Hai mươi họ tri thức thế giới,"[""INT29-005""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-004,INCOMING_V3,Mười hai lớp và mười hai trường đồng nhịp,"[""INT29-009""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/03_KNOWLEDGE/LAYERS_FIELDS_PRESERVED.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-005,INCOMING_V3,Đủ 23 chỉ số số–tên,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/NUMEROLOGY_23_COMPONENTS.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-006,INCOMING_V3,Bát Cực: tám nhóm và 64 cặp,"[""INT29-008""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_64_PAIRS.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-007,INCOMING_V3,"Bát Cực: chuỗi, tổ hợp và vị trí","[""INT29-008""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_TRANSITION_8X8.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-008,INCOMING_V3,Bát Cực: chính sách số 0 và số 5,"[""INT29-008""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/BAT_CUC_POLICY_VARIANTS.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-009,INCOMING_V3,Psychomatrix: 17 vị trí,"[""INT29-008""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/PSYCHOMATRIX_17_POSITIONS.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-010,INCOMING_V3,Số lặp và trục 2–5–8,"[""INT29-008""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/REPEATED_SEQUENCES_70.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-011,INCOMING_V3,Mã đuôi 80 đủ nguyên văn và nhãn nguồn,"[""INT29-008""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/04_NUMBERS_NAMES/TAIL80_COMPLETE.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-012,INCOMING_V3,"Tên đầy đủ, tên ngắn và nguyên âm Y","[""INT29-006""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-013,INCOMING_V3,"Chu kỳ đỉnh cao, thử thách và ba thời kỳ","[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-014,INCOMING_V3,Bản đồ đời sống 18 lĩnh vực,"[""INT29-009""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/05_LIFETIME/LIFE_DOMAINS_18.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-015,INCOMING_V3,Từ đầu đời đến 99 và tiếp nối,"[""INT29-009""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/05_LIFETIME/LIFE_STAGE_ROUTING_9.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-016,INCOMING_V3,"Lịch sử thật, kế hoạch và chu kỳ biểu tượng","[""INT29-009""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/lifetime.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-017,INCOMING_V3,Đủ hợp đồng chín cấp sản phẩm,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/NINE_LEVELS_INTEGRATED_V3.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-018,INCOMING_V3,Từ miễn phí đến tổ chức và doanh nghiệp,"[""INT29-017""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-019,INCOMING_V3,"Mobile, web và desktop dùng chung lõi","[""INT29-015""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/public/index.html,NOT_CHECKED
+INCOMING_V3:REQ-V3-020,INCOMING_V3,"Backend, API và dấu vết dữ liệu","[""INT29-010""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/openapi.v3.target.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-021,INCOMING_V3,"AI hỗ trợ, giảm thao tác quản trị","[""INT29-016""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/AI_AND_AUTOMATION.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-022,INCOMING_V3,"Academy, chuyển giao và cấp phép quốc tế","[""INT29-019""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/10_GLOBAL_ACADEMY/ACADEMY_AND_LICENSING.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-023,INCOMING_V3,Bảng công việc hợp nhất,"[""INT29-003""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-024,INCOMING_V3,Không bỏ kế hoạch và Q1–Q30,"[""INT29-004""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISION_LEDGER_ALL.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-025,INCOMING_V3,Nguồn đa ngôn ngữ và quyền sử dụng,"[""INT29-005""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/13_SOURCES/SOURCES_V3.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-026,INCOMING_V3,Tính đúng và không tạo điểm giả,"[""INT29-013""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/11_QA/VERIFICATION_REPORT.json,NOT_CHECKED
+INCOMING_V3:REQ-V3-027,INCOMING_V3,Một cửa từ hồ sơ đến bản xem trước,"[""INT29-015""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/all_in_one.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-028,INCOMING_V3,Nhập đúng repository theo cách bổ sung,"[""INT29-001""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/12_IMPORT/import_into_repo.py,NOT_CHECKED
+INCOMING_V3:REQ-V3-029,INCOMING_V3,"Quyền dữ liệu trẻ em, ảnh và sức khỏe","[""INT29-011""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/07_BACKEND/TRUST_PRIVACY_AND_CHILDREN.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-030,INCOMING_V3,"PDF, Word và bảng điều hành","[""INT29-020""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/00_START/START_HERE.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-031,INCOMING_V3,NUM-01 — Đường đời,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-032,INCOMING_V3,NUM-02 — Ngày sinh,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-033,INCOMING_V3,NUM-03 — Dấu số truyền thống 13/14/16/19,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-034,INCOMING_V3,NUM-04 — Biểu đạt theo tên đầy đủ,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-035,INCOMING_V3,NUM-05 — Biểu đạt theo tên thường dùng,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-036,INCOMING_V3,NUM-06 — Tổng nguyên âm tên đầy đủ,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-037,INCOMING_V3,NUM-07 — Tổng nguyên âm tên thường dùng,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-038,INCOMING_V3,NUM-08 — Số ghép và các bước rút gọn,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-039,INCOMING_V3,NUM-09 — Tổng phụ âm tên đầy đủ,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-040,INCOMING_V3,NUM-10 — Tổng phụ âm tên thường dùng,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-041,INCOMING_V3,NUM-11 — Chỉ số trưởng thành quy ước,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-042,INCOMING_V3,NUM-12 — Chỉ số tên riêng và ngày sinh,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-043,INCOMING_V3,NUM-13 — Nhóm số không xuất hiện trong tên,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-044,INCOMING_V3,NUM-14 — Tổng chữ đầu các thành phần tên,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-045,INCOMING_V3,NUM-15 — Nhóm số lặp nhiều nhất trong tên,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-046,INCOMING_V3,NUM-16 — Số nhóm chữ có mặt,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-047,INCOMING_V3,NUM-17 — Bốn hiệu số thử thách,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-048,INCOMING_V3,NUM-18 — Phạm vi thời gian thử thách,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-049,INCOMING_V3,NUM-19 — Bốn tổng đỉnh cao,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-050,INCOMING_V3,NUM-20 — Phạm vi tuổi đỉnh cao,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-051,INCOMING_V3,NUM-21 — Ba chu kỳ tháng–ngày–năm,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-052,INCOMING_V3,NUM-22 — Cầu nối đường đời–tên,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-053,INCOMING_V3,NUM-23 — Cầu nối nguyên âm–phụ âm,"[""INT29-007""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/08_ALL_IN_ONE_LAB/src/numerology_full.mjs,NOT_CHECKED
+INCOMING_V3:REQ-V3-054,INCOMING_V3,Level 1 — Self Signal,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_1_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-055,INCOMING_V3,Level 2 — Inner Architecture,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_2_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-056,INCOMING_V3,Level 3 — Behavior Code,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_3_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-057,INCOMING_V3,Level 4 — Work & Wealth Code,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_4_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-058,INCOMING_V3,Level 5 — Relationship Field,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_5_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-059,INCOMING_V3,Level 6 — Life Timeline,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_6_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-060,INCOMING_V3,Level 7 — Body Intelligence,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_7_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-061,INCOMING_V3,Level 8 — Mission Path,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_8_REPORT_CONTRACT.md,NOT_CHECKED
+INCOMING_V3:REQ-V3-062,INCOMING_V3,Level 9 — Full Life Code,"[""INT29-014""]",docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/LEVEL_9_REPORT_CONTRACT.md,NOT_CHECKED
+PRODUCT_ID:LC-L1,CANONICAL_REGISTRY,Complete execution contract for LC-L1,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L1,NOT_CHECKED
+PRODUCT_ID:LC-L2,CANONICAL_REGISTRY,Complete execution contract for LC-L2,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L2,NOT_CHECKED
+PRODUCT_ID:LC-L3,CANONICAL_REGISTRY,Complete execution contract for LC-L3,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L3,NOT_CHECKED
+PRODUCT_ID:LC-L4,CANONICAL_REGISTRY,Complete execution contract for LC-L4,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L4,NOT_CHECKED
+PRODUCT_ID:LC-L5,CANONICAL_REGISTRY,Complete execution contract for LC-L5,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L5,NOT_CHECKED
+PRODUCT_ID:LC-L6,CANONICAL_REGISTRY,Complete execution contract for LC-L6,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L6,NOT_CHECKED
+PRODUCT_ID:LC-L7,CANONICAL_REGISTRY,Complete execution contract for LC-L7,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L7,NOT_CHECKED
+PRODUCT_ID:LC-L8,CANONICAL_REGISTRY,Complete execution contract for LC-L8,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L8,NOT_CHECKED
+PRODUCT_ID:LC-L9,CANONICAL_REGISTRY,Complete execution contract for LC-L9,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-L9,NOT_CHECKED
+PRODUCT_ID:LC-GUEST,CANONICAL_REGISTRY,Complete execution contract for LC-GUEST,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-GUEST,NOT_CHECKED
+PRODUCT_ID:LC-FREE,CANONICAL_REGISTRY,Complete execution contract for LC-FREE,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-FREE,NOT_CHECKED
+PRODUCT_ID:LC-COMPANION,CANONICAL_REGISTRY,Complete execution contract for LC-COMPANION,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-COMPANION,NOT_CHECKED
+PRODUCT_ID:LC-NUMBERS,CANONICAL_REGISTRY,Complete execution contract for LC-NUMBERS,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-NUMBERS,NOT_CHECKED
+PRODUCT_ID:LC-EXPERT,CANONICAL_REGISTRY,Complete execution contract for LC-EXPERT,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-EXPERT,NOT_CHECKED
+PRODUCT_ID:LC-PRACTICE,CANONICAL_REGISTRY,Complete execution contract for LC-PRACTICE,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-PRACTICE,NOT_CHECKED
+PRODUCT_ID:LC-ACADEMY-FOUNDATION,CANONICAL_REGISTRY,Complete execution contract for LC-ACADEMY-FOUNDATION,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-ACADEMY-FOUNDATION,NOT_CHECKED
+PRODUCT_ID:LC-ACADEMY-PRO,CANONICAL_REGISTRY,Complete execution contract for LC-ACADEMY-PRO,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-ACADEMY-PRO,NOT_CHECKED
+PRODUCT_ID:LC-ACADEMY-TRAINER,CANONICAL_REGISTRY,Complete execution contract for LC-ACADEMY-TRAINER,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-ACADEMY-TRAINER,NOT_CHECKED
+PRODUCT_ID:LC-FAMILY,CANONICAL_REGISTRY,Complete execution contract for LC-FAMILY,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-FAMILY,NOT_CHECKED
+PRODUCT_ID:LC-ORG,CANONICAL_REGISTRY,Complete execution contract for LC-ORG,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-ORG,NOT_CHECKED
+PRODUCT_ID:LC-API,CANONICAL_REGISTRY,Complete execution contract for LC-API,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-API,NOT_CHECKED
+PRODUCT_ID:LC-PUBLISH,CANONICAL_REGISTRY,Complete execution contract for LC-PUBLISH,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-PUBLISH,NOT_CHECKED
+PRODUCT_ID:LC-REGIONAL,CANONICAL_REGISTRY,Complete execution contract for LC-REGIONAL,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-REGIONAL,NOT_CHECKED
+PRODUCT_ID:LC-NUM-ATLAS,CANONICAL_REGISTRY,Complete execution contract for LC-NUM-ATLAS,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-NUM-ATLAS,NOT_CHECKED
+PRODUCT_ID:LC-LIFE-MAP,CANONICAL_REGISTRY,Complete execution contract for LC-LIFE-MAP,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-LIFE-MAP,NOT_CHECKED
+PRODUCT_ID:LC-LEGACY,CANONICAL_REGISTRY,Complete execution contract for LC-LEGACY,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-LEGACY,NOT_CHECKED
+PRODUCT_ID:LC-REGION-KIT,CANONICAL_REGISTRY,Complete execution contract for LC-REGION-KIT,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-REGION-KIT,NOT_CHECKED
+PRODUCT_ID:LC-RESEARCH-STUDIO,CANONICAL_REGISTRY,Complete execution contract for LC-RESEARCH-STUDIO,"[""INT29-017""]",docs/upgrade/2026-10-29/product/PRODUCT_EXECUTION_CONTRACTS.json#LC-RESEARCH-STUDIO,NOT_CHECKED
+SCREEN_ID:UI-01,CANONICAL_REGISTRY,Complete execution contract for UI-01,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-01,NOT_CHECKED
+SCREEN_ID:UI-02,CANONICAL_REGISTRY,Complete execution contract for UI-02,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-02,NOT_CHECKED
+SCREEN_ID:UI-03,CANONICAL_REGISTRY,Complete execution contract for UI-03,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-03,NOT_CHECKED
+SCREEN_ID:UI-04,CANONICAL_REGISTRY,Complete execution contract for UI-04,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-04,NOT_CHECKED
+SCREEN_ID:UI-05,CANONICAL_REGISTRY,Complete execution contract for UI-05,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-05,NOT_CHECKED
+SCREEN_ID:UI-06,CANONICAL_REGISTRY,Complete execution contract for UI-06,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-06,NOT_CHECKED
+SCREEN_ID:UI-07,CANONICAL_REGISTRY,Complete execution contract for UI-07,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-07,NOT_CHECKED
+SCREEN_ID:UI-08,CANONICAL_REGISTRY,Complete execution contract for UI-08,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-08,NOT_CHECKED
+SCREEN_ID:UI-09,CANONICAL_REGISTRY,Complete execution contract for UI-09,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-09,NOT_CHECKED
+SCREEN_ID:UI-10,CANONICAL_REGISTRY,Complete execution contract for UI-10,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-10,NOT_CHECKED
+SCREEN_ID:UI-11,CANONICAL_REGISTRY,Complete execution contract for UI-11,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-11,NOT_CHECKED
+SCREEN_ID:UI-12,CANONICAL_REGISTRY,Complete execution contract for UI-12,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-12,NOT_CHECKED
+SCREEN_ID:UI-13,CANONICAL_REGISTRY,Complete execution contract for UI-13,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-13,NOT_CHECKED
+SCREEN_ID:UI-14,CANONICAL_REGISTRY,Complete execution contract for UI-14,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-14,NOT_CHECKED
+SCREEN_ID:UI-15,CANONICAL_REGISTRY,Complete execution contract for UI-15,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-15,NOT_CHECKED
+SCREEN_ID:UI-16,CANONICAL_REGISTRY,Complete execution contract for UI-16,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-16,NOT_CHECKED
+SCREEN_ID:UI-17,CANONICAL_REGISTRY,Complete execution contract for UI-17,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-17,NOT_CHECKED
+SCREEN_ID:UI-18,CANONICAL_REGISTRY,Complete execution contract for UI-18,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-18,NOT_CHECKED
+SCREEN_ID:UI-19,CANONICAL_REGISTRY,Complete execution contract for UI-19,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-19,NOT_CHECKED
+SCREEN_ID:UI-20,CANONICAL_REGISTRY,Complete execution contract for UI-20,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-20,NOT_CHECKED
+SCREEN_ID:UI-21,CANONICAL_REGISTRY,Complete execution contract for UI-21,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-21,NOT_CHECKED
+SCREEN_ID:UI-22,CANONICAL_REGISTRY,Complete execution contract for UI-22,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-22,NOT_CHECKED
+SCREEN_ID:UI-23,CANONICAL_REGISTRY,Complete execution contract for UI-23,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-23,NOT_CHECKED
+SCREEN_ID:UI-24,CANONICAL_REGISTRY,Complete execution contract for UI-24,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-24,NOT_CHECKED
+SCREEN_ID:UI-25,CANONICAL_REGISTRY,Complete execution contract for UI-25,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-25,NOT_CHECKED
+SCREEN_ID:UI-26,CANONICAL_REGISTRY,Complete execution contract for UI-26,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-26,NOT_CHECKED
+SCREEN_ID:UI-27,CANONICAL_REGISTRY,Complete execution contract for UI-27,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-27,NOT_CHECKED
+SCREEN_ID:UI-28,CANONICAL_REGISTRY,Complete execution contract for UI-28,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-28,NOT_CHECKED
+SCREEN_ID:UI-29,CANONICAL_REGISTRY,Complete execution contract for UI-29,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-29,NOT_CHECKED
+SCREEN_ID:UI-30,CANONICAL_REGISTRY,Complete execution contract for UI-30,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-30,NOT_CHECKED
+SCREEN_ID:UI-31,CANONICAL_REGISTRY,Complete execution contract for UI-31,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-31,NOT_CHECKED
+SCREEN_ID:UI-32,CANONICAL_REGISTRY,Complete execution contract for UI-32,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-32,NOT_CHECKED
+SCREEN_ID:UI-33,CANONICAL_REGISTRY,Complete execution contract for UI-33,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-33,NOT_CHECKED
+SCREEN_ID:UI-34,CANONICAL_REGISTRY,Complete execution contract for UI-34,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-34,NOT_CHECKED
+SCREEN_ID:UI-35,CANONICAL_REGISTRY,Complete execution contract for UI-35,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-35,NOT_CHECKED
+SCREEN_ID:UI-36,CANONICAL_REGISTRY,Complete execution contract for UI-36,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-36,NOT_CHECKED
+SCREEN_ID:UI-37,CANONICAL_REGISTRY,Complete execution contract for UI-37,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-37,NOT_CHECKED
+SCREEN_ID:UI-38,CANONICAL_REGISTRY,Complete execution contract for UI-38,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-38,NOT_CHECKED
+SCREEN_ID:UI-39,CANONICAL_REGISTRY,Complete execution contract for UI-39,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-39,NOT_CHECKED
+SCREEN_ID:UI-40,CANONICAL_REGISTRY,Complete execution contract for UI-40,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-40,NOT_CHECKED
+SCREEN_ID:UI-41,CANONICAL_REGISTRY,Complete execution contract for UI-41,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-41,NOT_CHECKED
+SCREEN_ID:UI-42,CANONICAL_REGISTRY,Complete execution contract for UI-42,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-42,NOT_CHECKED
+SCREEN_ID:UI-43,CANONICAL_REGISTRY,Complete execution contract for UI-43,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-43,NOT_CHECKED
+SCREEN_ID:UI-44,CANONICAL_REGISTRY,Complete execution contract for UI-44,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-44,NOT_CHECKED
+SCREEN_ID:UI-45,CANONICAL_REGISTRY,Complete execution contract for UI-45,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#UI-45,NOT_CHECKED
+SCREEN_ID:V2-S01,CANONICAL_REGISTRY,Complete execution contract for V2-S01,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S01,NOT_CHECKED
+SCREEN_ID:V2-S02,CANONICAL_REGISTRY,Complete execution contract for V2-S02,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S02,NOT_CHECKED
+SCREEN_ID:V2-S03,CANONICAL_REGISTRY,Complete execution contract for V2-S03,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S03,NOT_CHECKED
+SCREEN_ID:V2-S04,CANONICAL_REGISTRY,Complete execution contract for V2-S04,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S04,NOT_CHECKED
+SCREEN_ID:V2-S05,CANONICAL_REGISTRY,Complete execution contract for V2-S05,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S05,NOT_CHECKED
+SCREEN_ID:V2-S06,CANONICAL_REGISTRY,Complete execution contract for V2-S06,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S06,NOT_CHECKED
+SCREEN_ID:V2-S07,CANONICAL_REGISTRY,Complete execution contract for V2-S07,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S07,NOT_CHECKED
+SCREEN_ID:V2-S08,CANONICAL_REGISTRY,Complete execution contract for V2-S08,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S08,NOT_CHECKED
+SCREEN_ID:V2-S09,CANONICAL_REGISTRY,Complete execution contract for V2-S09,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S09,NOT_CHECKED
+SCREEN_ID:V2-S10,CANONICAL_REGISTRY,Complete execution contract for V2-S10,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S10,NOT_CHECKED
+SCREEN_ID:V2-S11,CANONICAL_REGISTRY,Complete execution contract for V2-S11,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S11,NOT_CHECKED
+SCREEN_ID:V2-S12,CANONICAL_REGISTRY,Complete execution contract for V2-S12,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V2-S12,NOT_CHECKED
+SCREEN_ID:V3-UI-058,CANONICAL_REGISTRY,Complete execution contract for V3-UI-058,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-058,NOT_CHECKED
+SCREEN_ID:V3-UI-059,CANONICAL_REGISTRY,Complete execution contract for V3-UI-059,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-059,NOT_CHECKED
+SCREEN_ID:V3-UI-060,CANONICAL_REGISTRY,Complete execution contract for V3-UI-060,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-060,NOT_CHECKED
+SCREEN_ID:V3-UI-061,CANONICAL_REGISTRY,Complete execution contract for V3-UI-061,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-061,NOT_CHECKED
+SCREEN_ID:V3-UI-062,CANONICAL_REGISTRY,Complete execution contract for V3-UI-062,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-062,NOT_CHECKED
+SCREEN_ID:V3-UI-063,CANONICAL_REGISTRY,Complete execution contract for V3-UI-063,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-063,NOT_CHECKED
+SCREEN_ID:V3-UI-064,CANONICAL_REGISTRY,Complete execution contract for V3-UI-064,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-064,NOT_CHECKED
+SCREEN_ID:V3-UI-065,CANONICAL_REGISTRY,Complete execution contract for V3-UI-065,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-065,NOT_CHECKED
+SCREEN_ID:V3-UI-066,CANONICAL_REGISTRY,Complete execution contract for V3-UI-066,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-066,NOT_CHECKED
+SCREEN_ID:V3-UI-067,CANONICAL_REGISTRY,Complete execution contract for V3-UI-067,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-067,NOT_CHECKED
+SCREEN_ID:V3-UI-068,CANONICAL_REGISTRY,Complete execution contract for V3-UI-068,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-068,NOT_CHECKED
+SCREEN_ID:V3-UI-069,CANONICAL_REGISTRY,Complete execution contract for V3-UI-069,"[""INT29-015""]",docs/upgrade/2026-10-29/product/SCREEN_EXECUTION_CONTRACTS.json#V3-UI-069,NOT_CHECKED
+METHOD:CAL-CIVIL,CANONICAL_REGISTRY,Lịch và múi giờ,"[""INT29-005"", ""V3-MTH-001""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#CAL-CIVIL,NOT_CHECKED
+METHOD:CAL-TERMS,CANONICAL_REGISTRY,24 tiết khí,"[""INT29-005"", ""V3-MTH-002""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#CAL-TERMS,NOT_CHECKED
+METHOD:CAL-LUNAR,CANONICAL_REGISTRY,Âm–dương lịch,"[""INT29-005"", ""V3-MTH-003""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#CAL-LUNAR,NOT_CHECKED
+METHOD:BAZI-PILLARS,CANONICAL_REGISTRY,Bốn trụ,"[""INT29-005"", ""V3-MTH-004""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#BAZI-PILLARS,NOT_CHECKED
+METHOD:BAZI-RELATIONS,CANONICAL_REGISTRY,"Tàng can, thập thần, quan hệ","[""INT29-005"", ""V3-MTH-005""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#BAZI-RELATIONS,NOT_CHECKED
+METHOD:BAZI-LUCK,CANONICAL_REGISTRY,Khởi vận và đại vận,"[""INT29-005"", ""V3-MTH-006""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#BAZI-LUCK,NOT_CHECKED
+METHOD:ZIWEI-CHART,CANONICAL_REGISTRY,An cung và sao,"[""INT29-005"", ""V3-MTH-007""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#ZIWEI-CHART,NOT_CHECKED
+METHOD:ZIWEI-TRANSFORM,CANONICAL_REGISTRY,Tứ hóa và hạn,"[""INT29-005"", ""V3-MTH-008""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#ZIWEI-TRANSFORM,NOT_CHECKED
+METHOD:HELAC-IRON,CANONICAL_REGISTRY,Hà Lạc/Thiết Bản,"[""INT29-005"", ""V3-MTH-009""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#HELAC-IRON,NOT_CHECKED
+METHOD:ICHING-LINES,CANONICAL_REGISTRY,Sáu hào và quẻ biến,"[""INT29-005"", ""V3-MTH-010""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#ICHING-LINES,NOT_CHECKED
+METHOD:ICHING-TEXT,CANONICAL_REGISTRY,Quẻ/hào và văn bản,"[""INT29-005"", ""V3-MTH-011""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#ICHING-TEXT,NOT_CHECKED
+METHOD:LIUYAO-MAIHOA,CANONICAL_REGISTRY,Lục Hào/Mai Hoa,"[""INT29-005"", ""V3-MTH-012""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#LIUYAO-MAIHOA,NOT_CHECKED
+METHOD:QIMEN,CANONICAL_REGISTRY,Kỳ Môn,"[""INT29-005"", ""V3-MTH-013""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#QIMEN,NOT_CHECKED
+METHOD:LIUREN,CANONICAL_REGISTRY,Đại Lục Nhâm,"[""INT29-005"", ""V3-MTH-014""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#LIUREN,NOT_CHECKED
+METHOD:TAIYI,CANONICAL_REGISTRY,Thái Ất,"[""INT29-005"", ""V3-MTH-015""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#TAIYI,NOT_CHECKED
+METHOD:FENGSHUI,CANONICAL_REGISTRY,Phong thủy không gian,"[""INT29-005"", ""V3-MTH-016""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#FENGSHUI,NOT_CHECKED
+METHOD:VASTU,CANONICAL_REGISTRY,Vastu,"[""INT29-005"", ""V3-MTH-017""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#VASTU,NOT_CHECKED
+METHOD:PLACE-OBSERVE,CANONICAL_REGISTRY,Không gian thực tế,"[""INT29-005"", ""V3-MTH-018""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#PLACE-OBSERVE,NOT_CHECKED
+METHOD:JYOTISH,CANONICAL_REGISTRY,Jyotish lá số,"[""INT29-005"", ""V3-MTH-019""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#JYOTISH,NOT_CHECKED
+METHOD:DASHA,CANONICAL_REGISTRY,Daśā và quá cảnh,"[""INT29-005"", ""V3-MTH-020""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#DASHA,NOT_CHECKED
+METHOD:NADI,CANONICAL_REGISTRY,Nadi văn bản,"[""INT29-005"", ""V3-MTH-021""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NADI,NOT_CHECKED
+METHOD:ASTRO-EPHEMERIS,CANONICAL_REGISTRY,Thiên thể và hệ nhà,"[""INT29-005"", ""V3-MTH-022""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#ASTRO-EPHEMERIS,NOT_CHECKED
+METHOD:ASTRO-CYCLES,CANONICAL_REGISTRY,Quá cảnh/tiến triển,"[""INT29-005"", ""V3-MTH-023""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#ASTRO-CYCLES,NOT_CHECKED
+METHOD:ASTRO-HISTORICAL,CANONICAL_REGISTRY,Hy Lạp/Latin/Ả Rập,"[""INT29-005"", ""V3-MTH-024""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#ASTRO-HISTORICAL,NOT_CHECKED
+METHOD:REGIONAL-ASIAN,CANONICAL_REGISTRY,"Saju, Shichū Suimei, Tây Tạng","[""INT29-005"", ""V3-MTH-025""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#REGIONAL-ASIAN,NOT_CHECKED
+METHOD:REGIONAL-SEA,CANONICAL_REGISTRY,"Thái, Myanmar, Weton/Pawukon","[""INT29-005"", ""V3-MTH-026""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#REGIONAL-SEA,NOT_CHECKED
+METHOD:MAYA,CANONICAL_REGISTRY,Lịch Maya,"[""INT29-005"", ""V3-MTH-027""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#MAYA,NOT_CHECKED
+METHOD:NUM23,CANONICAL_REGISTRY,23 chỉ số số–tên,"[""INT29-005"", ""V3-MTH-028""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NUM23,NOT_CHECKED
+METHOD:PSYCHO17,CANONICAL_REGISTRY,Psychomatrix 17 vị trí,"[""INT29-005"", ""V3-MTH-029""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#PSYCHO17,NOT_CHECKED
+METHOD:NUM-LIFE-CYCLES,CANONICAL_REGISTRY,"Chu kỳ, đỉnh cao và thử thách","[""INT29-005"", ""V3-MTH-030""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NUM-LIFE-CYCLES,NOT_CHECKED
+METHOD:LETTER-NONLATIN,CANONICAL_REGISTRY,Gematria/Abjad/Isopsephy,"[""INT29-005"", ""V3-MTH-031""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#LETTER-NONLATIN,NOT_CHECKED
+METHOD:BCLC64,CANONICAL_REGISTRY,Bát Cực 64 cặp,"[""INT29-005"", ""V3-MTH-032""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#BCLC64,NOT_CHECKED
+METHOD:BCLC-MODIFIERS,CANONICAL_REGISTRY,Số 0 và 5,"[""INT29-005"", ""V3-MTH-033""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#BCLC-MODIFIERS,NOT_CHECKED
+METHOD:BCLC-COMBINATION,CANONICAL_REGISTRY,Tổ hợp và chế hóa,"[""INT29-005"", ""V3-MTH-034""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#BCLC-COMBINATION,NOT_CHECKED
+METHOD:TAIL80,CANONICAL_REGISTRY,Mã đuôi 80,"[""INT29-005"", ""V3-MTH-035""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#TAIL80,NOT_CHECKED
+METHOD:NUMBER-CONTEXT,CANONICAL_REGISTRY,SIM/serial/biển/địa chỉ,"[""INT29-005"", ""V3-MTH-036""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NUMBER-CONTEXT,NOT_CHECKED
+METHOD:NAME-UNICODE,CANONICAL_REGISTRY,Tên và Unicode,"[""INT29-005"", ""V3-MTH-037""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NAME-UNICODE,NOT_CHECKED
+METHOD:NAME-SEMANTICS,CANONICAL_REGISTRY,Ngữ nghĩa tên,"[""INT29-005"", ""V3-MTH-038""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NAME-SEMANTICS,NOT_CHECKED
+METHOD:NAME-BRAND,CANONICAL_REGISTRY,Tên thường dùng/doanh nghiệp,"[""INT29-005"", ""V3-MTH-039""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NAME-BRAND,NOT_CHECKED
+METHOD:HAND,CANONICAL_REGISTRY,Bàn tay,"[""INT29-005"", ""V3-MTH-040""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#HAND,NOT_CHECKED
+METHOD:FACE,CANONICAL_REGISTRY,Khuôn mặt,"[""INT29-005"", ""V3-MTH-041""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#FACE,NOT_CHECKED
+METHOD:FOOT-VOICE,CANONICAL_REGISTRY,"Chân, giọng và dáng","[""INT29-005"", ""V3-MTH-042""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#FOOT-VOICE,NOT_CHECKED
+METHOD:TAROT,CANONICAL_REGISTRY,Tarot/Lenormand/Oracle,"[""INT29-005"", ""V3-MTH-043""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#TAROT,NOT_CHECKED
+METHOD:RUNE-GEOMANCY,CANONICAL_REGISTRY,Rune/geomancy,"[""INT29-005"", ""V3-MTH-044""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#RUNE-GEOMANCY,NOT_CHECKED
+METHOD:IFA-DREAM,CANONICAL_REGISTRY,Ifá và giấc mơ,"[""INT29-005"", ""V3-MTH-045""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#IFA-DREAM,NOT_CHECKED
+METHOD:HUMAN-DESIGN,CANONICAL_REGISTRY,Human Design,"[""INT29-005"", ""V3-MTH-046""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#HUMAN-DESIGN,NOT_CHECKED
+METHOD:GENE-KEYS,CANONICAL_REGISTRY,Gene Keys,"[""INT29-005"", ""V3-MTH-047""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#GENE-KEYS,NOT_CHECKED
+METHOD:HNH-REFLECTION,CANONICAL_REGISTRY,Ngữ pháp HNH,"[""INT29-005"", ""V3-MTH-048""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#HNH-REFLECTION,NOT_CHECKED
+METHOD:CONTEMPLATION,CANONICAL_REGISTRY,Tu tập và thực hành nội tâm,"[""INT29-005"", ""V3-MTH-049""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#CONTEMPLATION,NOT_CHECKED
+METHOD:IPIP,CANONICAL_REGISTRY,Nhân cách và bảng hỏi,"[""INT29-005"", ""V3-MTH-050""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#IPIP,NOT_CHECKED
+METHOD:VALUES-INTEREST,CANONICAL_REGISTRY,Giá trị/hứng thú,"[""INT29-005"", ""V3-MTH-051""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#VALUES-INTEREST,NOT_CHECKED
+METHOD:PSYCHOMETRIC,CANONICAL_REGISTRY,Đánh giá đo lường,"[""INT29-005"", ""V3-MTH-052""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#PSYCHOMETRIC,NOT_CHECKED
+METHOD:CAREER,CANONICAL_REGISTRY,"Nghề, vai trò và kỹ năng","[""INT29-005"", ""V3-MTH-053""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#CAREER,NOT_CHECKED
+METHOD:CASHFLOW,CANONICAL_REGISTRY,Nguồn lực và dòng tiền,"[""INT29-005"", ""V3-MTH-054""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#CASHFLOW,NOT_CHECKED
+METHOD:RELATIONSHIPS,CANONICAL_REGISTRY,Quan hệ nhiều chủ thể,"[""INT29-005"", ""V3-MTH-055""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#RELATIONSHIPS,NOT_CHECKED
+METHOD:RESONANCE,CANONICAL_REGISTRY,12 trường đồng nhịp,"[""INT29-005"", ""V3-MTH-056""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#RESONANCE,NOT_CHECKED
+METHOD:NUTRITION-LIFESTYLE,CANONICAL_REGISTRY,"Ăn gần nguồn, lịch sinh hoạt","[""INT29-005"", ""V3-MTH-057""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#NUTRITION-LIFESTYLE,NOT_CHECKED
+METHOD:LIFE-DESIGN,CANONICAL_REGISTRY,30/90 ngày và chuyển giao,"[""INT29-005"", ""V3-MTH-058""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#LIFE-DESIGN,NOT_CHECKED
+METHOD:LINEAGE,CANONICAL_REGISTRY,Đồ thị nguồn và nhận định,"[""INT29-005"", ""V3-MTH-059""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#LINEAGE,NOT_CHECKED
+METHOD:POLICY,CANONICAL_REGISTRY,Quyền và tự động hóa,"[""INT29-005"", ""V3-MTH-060""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#POLICY,NOT_CHECKED
+METHOD:REPORT,CANONICAL_REGISTRY,Báo cáo và bản sách,"[""INT29-005"", ""V3-MTH-061""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#REPORT,NOT_CHECKED
+METHOD:EVALUATION,CANONICAL_REGISTRY,Kiểm thử và hiệu chỉnh,"[""INT29-005"", ""V3-MTH-062""]",backend/FORMULA_METHOD_EXECUTION_MATRIX.json#EVALUATION,NOT_CHECKED
+API:health,CANONICAL_REGISTRY,GET /health,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#health,NOT_CHECKED
+API:catalog,CANONICAL_REGISTRY,GET /catalog,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#catalog,NOT_CHECKED
+API:methods,CANONICAL_REGISTRY,GET /methods,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#methods,NOT_CHECKED
+API:methodDetail,CANONICAL_REGISTRY,GET /methods/{methodId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#methodDetail,NOT_CHECKED
+API:login,CANONICAL_REGISTRY,GET /auth/login,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#login,NOT_CHECKED
+API:authCallback,CANONICAL_REGISTRY,GET /auth/callback,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#authCallback,NOT_CHECKED
+API:logout,CANONICAL_REGISTRY,POST /auth/logout,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#logout,NOT_CHECKED
+API:subjects,CANONICAL_REGISTRY,GET /subjects,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#subjects,NOT_CHECKED
+API:createSubject,CANONICAL_REGISTRY,POST /subjects,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#createSubject,NOT_CHECKED
+API:subject,CANONICAL_REGISTRY,GET /subjects/{subjectId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#subject,NOT_CHECKED
+API:overview,CANONICAL_REGISTRY,GET /subjects/{subjectId}/overview,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#overview,NOT_CHECKED
+API:newProfileVersion,CANONICAL_REGISTRY,POST /subjects/{subjectId}/profile-versions,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#newProfileVersion,NOT_CHECKED
+API:profileVersion,CANONICAL_REGISTRY,GET /subjects/{subjectId}/profile-versions/{versionId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#profileVersion,NOT_CHECKED
+API:newHypothesis,CANONICAL_REGISTRY,POST /subjects/{subjectId}/hypotheses,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#newHypothesis,NOT_CHECKED
+API:listHypotheses,CANONICAL_REGISTRY,GET /subjects/{subjectId}/hypotheses,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#listHypotheses,NOT_CHECKED
+API:consents,CANONICAL_REGISTRY,GET /subjects/{subjectId}/consents,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#consents,NOT_CHECKED
+API:consentDecision,CANONICAL_REGISTRY,POST /subjects/{subjectId}/consents,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#consentDecision,NOT_CHECKED
+API:grants,CANONICAL_REGISTRY,GET /subjects/{subjectId}/grants,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#grants,NOT_CHECKED
+API:grant,CANONICAL_REGISTRY,POST /subjects/{subjectId}/grants,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#grant,NOT_CHECKED
+API:revokeGrant,CANONICAL_REGISTRY,DELETE /grants/{grantId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#revokeGrant,NOT_CHECKED
+API:observations,CANONICAL_REGISTRY,GET /subjects/{subjectId}/observations,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#observations,NOT_CHECKED
+API:observation,CANONICAL_REGISTRY,POST /subjects/{subjectId}/observations,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#observation,NOT_CHECKED
+API:questionnaireResponse,CANONICAL_REGISTRY,POST /subjects/{subjectId}/questionnaire-responses,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#questionnaireResponse,NOT_CHECKED
+API:createPlan,CANONICAL_REGISTRY,POST /subjects/{subjectId}/plans,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#createPlan,NOT_CHECKED
+API:plans,CANONICAL_REGISTRY,GET /subjects/{subjectId}/plans,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#plans,NOT_CHECKED
+API:checkin,CANONICAL_REGISTRY,POST /actions/{actionId}/check-ins,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#checkin,NOT_CHECKED
+API:timeline,CANONICAL_REGISTRY,GET /subjects/{subjectId}/timeline,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#timeline,NOT_CHECKED
+API:analyze,CANONICAL_REGISTRY,POST /analysis-runs,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#analyze,NOT_CHECKED
+API:analysisStatus,CANONICAL_REGISTRY,GET /analysis-runs/{runId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#analysisStatus,NOT_CHECKED
+API:cancelAnalysis,CANONICAL_REGISTRY,POST /analysis-runs/{runId}/cancel,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#cancelAnalysis,NOT_CHECKED
+API:analysisResults,CANONICAL_REGISTRY,GET /analysis-runs/{runId}/results,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#analysisResults,NOT_CHECKED
+API:methodResult,CANONICAL_REGISTRY,GET /results/{resultId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#methodResult,NOT_CHECKED
+API:createReport,CANONICAL_REGISTRY,POST /reports,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#createReport,NOT_CHECKED
+API:reports,CANONICAL_REGISTRY,GET /subjects/{subjectId}/reports,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#reports,NOT_CHECKED
+API:report,CANONICAL_REGISTRY,GET /reports/{reportId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#report,NOT_CHECKED
+API:reportRevisions,CANONICAL_REGISTRY,GET /reports/{reportId}/revisions,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#reportRevisions,NOT_CHECKED
+API:review,CANONICAL_REGISTRY,POST /reports/{reportId}/reviews,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#review,NOT_CHECKED
+API:publish,CANONICAL_REGISTRY,POST /reports/{reportId}/publish,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#publish,NOT_CHECKED
+API:exportReport,CANONICAL_REGISTRY,POST /reports/{reportId}/exports,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#exportReport,NOT_CHECKED
+API:downloadArtifact,CANONICAL_REGISTRY,GET /artifacts/{artifactId}/download,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#downloadArtifact,NOT_CHECKED
+API:order,CANONICAL_REGISTRY,POST /orders,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#order,NOT_CHECKED
+API:orderStatus,CANONICAL_REGISTRY,GET /orders/{orderId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#orderStatus,NOT_CHECKED
+API:checkout,CANONICAL_REGISTRY,POST /orders/{orderId}/checkout,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#checkout,NOT_CHECKED
+API:requestRefund,CANONICAL_REGISTRY,POST /orders/{orderId}/refund-requests,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#requestRefund,NOT_CHECKED
+API:paymentWebhook,CANONICAL_REGISTRY,POST /webhooks/payments/{providerId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#paymentWebhook,NOT_CHECKED
+API:entitlements,CANONICAL_REGISTRY,GET /entitlements,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#entitlements,NOT_CHECKED
+API:ticket,CANONICAL_REGISTRY,POST /support/tickets,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#ticket,NOT_CHECKED
+API:ticketStatus,CANONICAL_REGISTRY,GET /support/tickets/{ticketId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#ticketStatus,NOT_CHECKED
+API:privacyExport,CANONICAL_REGISTRY,POST /subjects/{subjectId}/data-exports,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#privacyExport,NOT_CHECKED
+API:deleteSubject,CANONICAL_REGISTRY,POST /subjects/{subjectId}/deletion-jobs,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#deleteSubject,NOT_CHECKED
+API:deletionStatus,CANONICAL_REGISTRY,GET /deletion-jobs/{jobId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#deletionStatus,NOT_CHECKED
+API:jobStatus,CANONICAL_REGISTRY,GET /jobs/{jobId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#jobStatus,NOT_CHECKED
+API:newAutomation,CANONICAL_REGISTRY,POST /automations,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#newAutomation,NOT_CHECKED
+API:stopAutomation,CANONICAL_REGISTRY,DELETE /automations/{automationId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#stopAutomation,NOT_CHECKED
+API:cases,CANONICAL_REGISTRY,GET /practice/cases,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#cases,NOT_CHECKED
+API:caseDetail,CANONICAL_REGISTRY,GET /practice/cases/{caseId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#caseDetail,NOT_CHECKED
+API:courses,CANONICAL_REGISTRY,GET /academy/courses,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#courses,NOT_CHECKED
+API:assignment,CANONICAL_REGISTRY,POST /academy/assignments,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#assignment,NOT_CHECKED
+API:verifyCertificate,CANONICAL_REGISTRY,GET /certificates/{certificateId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#verifyCertificate,NOT_CHECKED
+API:organizationOverview,CANONICAL_REGISTRY,GET /organizations/{organizationId}/overview,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#organizationOverview,NOT_CHECKED
+API:partner,CANONICAL_REGISTRY,GET /partners/{partnerId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#partner,NOT_CHECKED
+API:methodReleaseDraft,CANONICAL_REGISTRY,POST /admin/method-releases,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#methodReleaseDraft,NOT_CHECKED
+API:countryPackReview,CANONICAL_REGISTRY,POST /admin/country-packs,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#countryPackReview,NOT_CHECKED
+API:quality,CANONICAL_REGISTRY,GET /admin/quality,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#quality,NOT_CHECKED
+API:operations,CANONICAL_REGISTRY,GET /admin/operations,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#operations,NOT_CHECKED
+API:compareRuns,CANONICAL_REGISTRY,POST /analysis-runs/compare,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#compareRuns,NOT_CHECKED
+API:previewMethod,CANONICAL_REGISTRY,POST /methods/{methodId}/preview,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#previewMethod,NOT_CHECKED
+API:methodDependencies,CANONICAL_REGISTRY,GET /methods/{methodId}/dependencies,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#methodDependencies,NOT_CHECKED
+API:methodTestVectors,CANONICAL_REGISTRY,GET /methods/{methodId}/test-vectors,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#methodTestVectors,NOT_CHECKED
+API:resolveHypotheses,CANONICAL_REGISTRY,POST /subjects/{subjectId}/hypotheses/resolve,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#resolveHypotheses,NOT_CHECKED
+API:runTrace,CANONICAL_REGISTRY,GET /analysis-runs/{runId}/trace,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#runTrace,NOT_CHECKED
+API:runDependencies,CANONICAL_REGISTRY,GET /analysis-runs/{runId}/dependencies,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#runDependencies,NOT_CHECKED
+API:claimProvenance,CANONICAL_REGISTRY,GET /claims/{claimId}/provenance,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#claimProvenance,NOT_CHECKED
+API:reviewReportV2,CANONICAL_REGISTRY,POST /reports/{reportId}/review,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#reviewReportV2,NOT_CHECKED
+API:withdrawReportV2,CANONICAL_REGISTRY,POST /reports/{reportId}/withdraw,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#withdrawReportV2,NOT_CHECKED
+API:reportDiff,CANONICAL_REGISTRY,GET /reports/{reportId}/diff/{previousId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#reportDiff,NOT_CHECKED
+API:newDeletionV2,CANONICAL_REGISTRY,POST /privacy/deletion-requests,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#newDeletionV2,NOT_CHECKED
+API:deletionStatusV2,CANONICAL_REGISTRY,GET /privacy/deletion-requests/{requestId},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#deletionStatusV2,NOT_CHECKED
+API:countryEligibility,CANONICAL_REGISTRY,GET /country-packs/{countryId}/eligibility,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#countryEligibility,NOT_CHECKED
+API:releaseImpact,CANONICAL_REGISTRY,GET /operations/method-releases/{releaseId}/impact,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#releaseImpact,NOT_CHECKED
+API:freezeMethod,CANONICAL_REGISTRY,POST /operations/method-releases/{releaseId}/freeze,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#freezeMethod,NOT_CHECKED
+API:resonanceSummaryV2,CANONICAL_REGISTRY,GET /subjects/{subjectId}/resonance/summary,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#resonanceSummaryV2,NOT_CHECKED
+API:syncOfflineBatch,CANONICAL_REGISTRY,POST /subjects/{subjectId}/offline-batches,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#syncOfflineBatch,NOT_CHECKED
+API:computeNumerologyFull,CANONICAL_REGISTRY,POST /numbers/numerology-full,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#computeNumerologyFull,NOT_CHECKED
+API:computeBatCuc,CANONICAL_REGISTRY,POST /numbers/bat-cuc,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#computeBatCuc,NOT_CHECKED
+API:computePsychomatrix,CANONICAL_REGISTRY,POST /numbers/psychomatrix,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#computePsychomatrix,NOT_CHECKED
+API:compareNumberAssets,CANONICAL_REGISTRY,POST /numbers/compare,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#compareNumberAssets,NOT_CHECKED
+API:compareNameVariants,CANONICAL_REGISTRY,POST /names/compare,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#compareNameVariants,NOT_CHECKED
+API:composeLifetime,CANONICAL_REGISTRY,POST /lifetime/compose,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#composeLifetime,NOT_CHECKED
+API:createAnalysisBundle,CANONICAL_REGISTRY,POST /analysis-bundles,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#createAnalysisBundle,NOT_CHECKED
+API:getAnalysisBundle,CANONICAL_REGISTRY,GET /analysis-bundles/{bundle_id},"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#getAnalysisBundle,NOT_CHECKED
+API:cancelAnalysisBundle,CANONICAL_REGISTRY,POST /analysis-bundles/{bundle_id}/cancel,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#cancelAnalysisBundle,NOT_CHECKED
+API:getMethodSourceConflicts,CANONICAL_REGISTRY,GET /methods/{method_id}/source-conflicts,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#getMethodSourceConflicts,NOT_CHECKED
+API:getBatCucTable,CANONICAL_REGISTRY,GET /numbers/bat-cuc/table,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#getBatCucTable,NOT_CHECKED
+API:getLifeDomains,CANONICAL_REGISTRY,GET /lifetime/domains,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#getLifeDomains,NOT_CHECKED
+API:getScopedProductEligibility,CANONICAL_REGISTRY,GET /products/{product_id}/eligibility,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#getScopedProductEligibility,NOT_CHECKED
+API:createKnowledgeLegacyTransfer,CANONICAL_REGISTRY,POST /legacy-transfers,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#createKnowledgeLegacyTransfer,NOT_CHECKED
+API:getTerritoryReleaseGates,CANONICAL_REGISTRY,GET /territories/{territory_id}/release-gates,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#getTerritoryReleaseGates,NOT_CHECKED
+API:getMethodVersionHistory,CANONICAL_REGISTRY,GET /methods/{method_id}/versions,"[""INT29-010""]",backend/OPENAPI_UNIFIED_TARGET.json#getMethodVersionHistory,NOT_CHECKED

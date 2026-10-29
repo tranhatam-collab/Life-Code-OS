@@ -1,0 +1,19 @@
+source_id,title,url,retrieved_or_referenced_on,scope,read_status,rights
+N01,W3C WCAG 2.2,https://www.w3.org/TR/WCAG22/,2026-10-20,"Tiêu chuẩn accessibility; chỉ mục tiêu thiết kế, chưa chứng nhận AA",CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N02,PostgreSQL Row Security,https://www.postgresql.org/docs/current/ddl-rowsecurity.html,2026-10-20,RLS; role và owner bypass cần kiểm thử riêng,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N03,Cloudflare Queues delivery,https://developers.cloudflare.com/queues/reference/delivery-guarantees/,2026-10-20,At-least-once; idempotency,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N04,OpenAPI 3.1.1,https://spec.openapis.org/oas/v3.1.1.html,2026-10-20,Phiên bản hợp đồng được chọn; không khẳng định mới nhất,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N05,RFC 9457 Problem Details,https://www.rfc-editor.org/rfc/rfc9457.html,2026-10-20,Định dạng lỗi HTTP,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N06,RFC 8785 JCS,https://www.rfc-editor.org/rfc/rfc8785.html,2026-10-20,Tham chiếu canonicalization; demo chỉ hỗ trợ tập con riêng,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N07,Unicode normalization,https://unicode.org/reports/tr15/,2026-10-20,Giữ nguyên tên và tạo derivative NFC,OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD,Reference/link; no full-text redistribution
+N08,IANA time zone database,https://www.iana.org/time-zones,2026-10-20,Lịch sử múi giờ và pin version,OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD,Reference/link; no full-text redistribution
+N09,OWASP object authorization,https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/,2026-10-20,Quyền từng đối tượng,OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD,Reference/link; no full-text redistribution
+N10,JSON Schema 2020-12,https://json-schema.org/draft/2020-12,2026-10-20,Schema cấu trúc; không thay business authorization,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N11,Luật 91/2025/QH15,https://congbao.chinhphu.vn/van-ban/luat-so-91-2025-qh15-45578/57730.htm,2026-10-20,Metadata văn bản; áp dụng cần counsel,CURRENT_PUBLIC_METADATA,Reference/link; no full-text redistribution
+N12,Luật 134/2025/QH15,https://congbao.chinhphu.vn/van-ban/luat-so-134-2025-qh15-468694/61695.htm,2026-10-20,Metadata văn bản; áp dụng cần counsel,CURRENT_PUBLIC_METADATA,Reference/link; no full-text redistribution
+N13,Luật 122/2025/QH15,https://congbao.chinhphu.vn/van-ban/luat-so-122-2025-qh15-468683/61714.htm,2026-10-20,Metadata văn bản; áp dụng cần counsel,CURRENT_PUBLIC_METADATA,Reference/link; no full-text redistribution
+N14,Nghị định hướng dẫn AI 142/2026,https://media.chinhphu.vn/ban-hanh-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-tri-tue-nhan-tao-102260508162952667.htm,2026-10-20,Nguồn thông tin Chính phủ; chưa thay đọc điều khoản,CURRENT_PUBLIC_METADATA,Reference/link; no full-text redistribution
+N15,EU AI Act FAQs,https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act,2026-10-20,Phân loại chức năng và hành vi bị cấm,CURRENT_PUBLIC_METADATA,Reference/link; no full-text redistribution
+N16,Life Code public home,https://lifecode.iai.one/,2026-10-20,Nội dung public được công cụ truy xuất; không receipt runtime SHA,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N17,GitHub main pinned,https://github.com/tranhatam-collab/Life-Code-OS/tree/99b402764437f81859fa0cd3a3af860125f7bd52,2026-10-20,Mã nguồn remote được đọc,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution
+N18,GitHub audit pinned,https://github.com/tranhatam-collab/Life-Code-OS/tree/336ef35a8386a744c6de18a7f7c6e268e89e6dac,2026-10-20,Baseline audit; không chứng nhận production,CURRENT_CONTENT_READ,Reference/link; no full-text redistribution

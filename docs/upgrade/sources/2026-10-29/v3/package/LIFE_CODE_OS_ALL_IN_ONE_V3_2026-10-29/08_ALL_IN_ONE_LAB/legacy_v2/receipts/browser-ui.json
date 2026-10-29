@@ -1,0 +1,573 @@
+{
+  "scope": "Chromium local markup with explicit Python loopback transport; not deployed web E2E",
+  "cases": [
+    {
+      "id": "DEMO-001",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 333
+    },
+    {
+      "id": "DEMO-002",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 385
+    },
+    {
+      "id": "DEMO-003",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 334
+    },
+    {
+      "id": "DEMO-004",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 329
+    },
+    {
+      "id": "DEMO-005",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 334
+    },
+    {
+      "id": "DEMO-006",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 333
+    },
+    {
+      "id": "DEMO-007",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 336
+    },
+    {
+      "id": "DEMO-008",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 336
+    },
+    {
+      "id": "DEMO-009",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 104
+    },
+    {
+      "id": "DEMO-010",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 375
+    },
+    {
+      "id": "DEMO-011",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 375
+    },
+    {
+      "id": "DEMO-012",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 374
+    },
+    {
+      "id": "DEMO-013",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 414
+    },
+    {
+      "id": "DEMO-014",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 414
+    },
+    {
+      "id": "DEMO-015",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 414
+    },
+    {
+      "id": "DEMO-016",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 385
+    },
+    {
+      "id": "DEMO-017",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 477
+    },
+    {
+      "id": "DEMO-018",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 377
+    },
+    {
+      "id": "DEMO-019",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 254
+    },
+    {
+      "id": "DEMO-020",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 255
+    },
+    {
+      "id": "DEMO-021",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 591
+    },
+    {
+      "id": "DEMO-022",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 593
+    },
+    {
+      "id": "DEMO-023",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 601
+    },
+    {
+      "id": "DEMO-024",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 613
+    },
+    {
+      "id": "DEMO-025",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 601
+    },
+    {
+      "id": "DEMO-026",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 591
+    },
+    {
+      "id": "DEMO-027",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 591
+    },
+    {
+      "id": "DEMO-028",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 154
+    },
+    {
+      "id": "DEMO-029",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 89
+    },
+    {
+      "id": "DEMO-030",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 378
+    },
+    {
+      "id": "DEMO-031",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 104
+    },
+    {
+      "id": "DEMO-032",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 118
+    },
+    {
+      "id": "DEMO-033",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 378
+    },
+    {
+      "id": "DEMO-034",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 374
+    },
+    {
+      "id": "DEMO-035",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 372
+    },
+    {
+      "id": "DEMO-036",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 385
+    },
+    {
+      "id": "DEMO-037",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 574
+    },
+    {
+      "id": "DEMO-038",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 573
+    },
+    {
+      "id": "DEMO-039",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 421
+    },
+    {
+      "id": "DEMO-040",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 305
+    },
+    {
+      "id": "DEMO-041",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 374
+    },
+    {
+      "id": "DEMO-042",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 319
+    },
+    {
+      "id": "DEMO-043",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 378
+    },
+    {
+      "id": "DEMO-044",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 99
+    },
+    {
+      "id": "DEMO-045",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 408
+    },
+    {
+      "id": "DEMO-046",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 127
+    },
+    {
+      "id": "DEMO-047",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 408
+    },
+    {
+      "id": "DEMO-048",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 419
+    },
+    {
+      "id": "DEMO-049",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 394
+    },
+    {
+      "id": "DEMO-050",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 122
+    },
+    {
+      "id": "DEMO-051",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 399
+    },
+    {
+      "id": "DEMO-052",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 421
+    },
+    {
+      "id": "DEMO-053",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 412
+    },
+    {
+      "id": "DEMO-054",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 362
+    },
+    {
+      "id": "DEMO-055",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 382
+    },
+    {
+      "id": "DEMO-056",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 383
+    },
+    {
+      "id": "DEMO-057",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 391
+    },
+    {
+      "id": "DEMO-058",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 275
+    },
+    {
+      "id": "DEMO-059",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 280
+    },
+    {
+      "id": "DEMO-060",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 262
+    },
+    {
+      "id": "DEMO-061",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 239
+    },
+    {
+      "id": "DEMO-062",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 239
+    },
+    {
+      "id": "DEMO-063",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 241
+    },
+    {
+      "id": "DEMO-064",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 241
+    },
+    {
+      "id": "DEMO-065",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 240
+    },
+    {
+      "id": "DEMO-066",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 136
+    },
+    {
+      "id": "DEMO-067",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 109
+    },
+    {
+      "id": "DEMO-068",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 212
+    },
+    {
+      "id": "DEMO-069",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 123
+    },
+    {
+      "id": "DEMO-070",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 272
+    },
+    {
+      "id": "DEMO-071",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 116
+    },
+    {
+      "id": "DEMO-072",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 266
+    },
+    {
+      "id": "DEMO-073",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 881
+    },
+    {
+      "id": "DEMO-074",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 930
+    },
+    {
+      "id": "DEMO-075",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 917
+    },
+    {
+      "id": "DEMO-076",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 928
+    },
+    {
+      "id": "DEMO-077",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 932
+    },
+    {
+      "id": "DEMO-078",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 923
+    },
+    {
+      "id": "DEMO-079",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 942
+    },
+    {
+      "id": "DEMO-080",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 936
+    },
+    {
+      "id": "DEMO-081",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 933
+    },
+    {
+      "id": "DEMO-082",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 1329
+    },
+    {
+      "id": "DEMO-083",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 1332
+    },
+    {
+      "id": "DEMO-084",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 1308
+    },
+    {
+      "id": "DEMO-085",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 362
+    },
+    {
+      "id": "DEMO-086",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 86
+    },
+    {
+      "id": "DEMO-087",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 101
+    },
+    {
+      "id": "DEMO-088",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 329
+    },
+    {
+      "id": "DEMO-089",
+      "rendered": true,
+      "expected_error": false,
+      "text_length": 400
+    },
+    {
+      "id": "DEMO-090",
+      "rendered": true,
+      "expected_error": true,
+      "text_length": 90
+    }
+  ],
+  "viewports": [
+    {
+      "width": 360,
+      "height": 800,
+      "horizontal_overflow": false,
+      "screenshot": "Life_Code_Demo_360.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontal_overflow": false,
+      "screenshot": "Life_Code_Demo_390.png"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "horizontal_overflow": false,
+      "screenshot": "Life_Code_Demo_768.png"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "horizontal_overflow": false,
+      "screenshot": "Life_Code_Demo_1440.png"
+    }
+  ],
+  "errors": [],
+  "custom_zero_unmapped": true
+}

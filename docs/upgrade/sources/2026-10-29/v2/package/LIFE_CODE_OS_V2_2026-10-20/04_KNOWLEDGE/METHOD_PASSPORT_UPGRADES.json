@@ -1,0 +1,507 @@
+[
+  {
+    "method_id": "M01",
+    "key": "calendar_profile_normalization",
+    "family_id": "K01",
+    "version": "0.2-design",
+    "required_inputs": "Ngày/giờ/nơi, loại lịch và uncertainty",
+    "rule_summary": "Chuẩn hóa; không đoán múi giờ khi thiếu nơi",
+    "implementation_status": "specified_reference",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [
+      "S16"
+    ],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-09",
+      "LCF-10"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M02",
+    "key": "name_unicode_normalization",
+    "family_id": "K12",
+    "version": "0.2-design",
+    "required_inputs": "Tên nguyên bản",
+    "rule_summary": "NFC giữ tên gốc; chuỗi bỏ dấu riêng",
+    "implementation_status": "reference_tested_in_package",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [
+      "S15"
+    ],
+    "source_full_text_status": "specified_from_disclosed_input",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "symbolic_interpretation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-05"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M03",
+    "key": "latin_name_cycle_1_9",
+    "family_id": "K10",
+    "version": "0.2-design",
+    "required_inputs": "Chuỗi Latin theo chính sách chuyển tự",
+    "rule_summary": "Bảng A–I1–9,J–R1–9,S–Z1–8; không đo tính cách",
+    "implementation_status": "reference_tested_in_package",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "symbolic_interpretation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-05"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M04",
+    "key": "birth_digit_sum",
+    "family_id": "K10",
+    "version": "0.2-design",
+    "required_inputs": "Ngày Gregorian đã xác nhận",
+    "rule_summary": "Tổng/căn và reduction policy; master retention riêng",
+    "implementation_status": "reference_tested_in_package",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "symbolic_interpretation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-07"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M05",
+    "key": "personal_year_basic",
+    "family_id": "K10",
+    "version": "0.2-design",
+    "required_inputs": "Ngày/tháng và năm tham chiếu",
+    "rule_summary": "Rút gọn theo calendar-year policy; không biến cố",
+    "implementation_status": "specified_reference",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "symbolic_interpretation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-08"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M06",
+    "key": "tail4_mod80",
+    "family_id": "K11",
+    "version": "0.2-design",
+    "required_inputs": "Đúng4chữ số",
+    "rule_summary": "N mod80; zero unmapped mặc định; bảng nguồn user",
+    "implementation_status": "reference_tested_in_package",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "specified_from_disclosed_input",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": "unmapped",
+    "claim_types": [
+      "symbolic_interpretation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-01"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M07",
+    "key": "eight_group_pairs",
+    "family_id": "K11",
+    "version": "0.2-design",
+    "required_inputs": "Chuỗi chữ số",
+    "rule_summary": "64cặp; 0/5 unresolved; overlap; không compatibility forecast",
+    "implementation_status": "reference_tested_in_package",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "symbolic_interpretation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-02"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M08",
+    "key": "psychomatrix_variant",
+    "family_id": "K10",
+    "version": "0.2-design",
+    "required_inputs": "DOB và variant id",
+    "rule_summary": "Chưa khóa working numbers; không giả có lời giải chuẩn",
+    "implementation_status": "research_only",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "REVIEW_REQUIRED",
+    "zero_policy": null,
+    "claim_types": [
+      "symbolic_interpretation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-03"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M09",
+    "key": "age_intervals_0_99",
+    "family_id": "K01",
+    "version": "0.2-design",
+    "required_inputs": "DOB/precision/leap policy",
+    "rule_summary": "100khoảng tuổi; không dự báo sống tới99",
+    "implementation_status": "specified_reference",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [
+      "S16"
+    ],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-06"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M10",
+    "key": "goal_journal_progress",
+    "family_id": "K18",
+    "version": "0.2-design",
+    "required_inputs": "Task/check-in thực tế",
+    "rule_summary": "Tỷ lệ hoàn tất; denominator server scope",
+    "implementation_status": "reference_tested_in_package",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-12"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M11",
+    "key": "values_reflection",
+    "family_id": "K16",
+    "version": "0.2-design",
+    "required_inputs": "Người dùng tự thuật",
+    "rule_summary": "Câu hỏi và lựa chọn; không chẩn đoán",
+    "implementation_status": "content_review_required",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G08",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [],
+    "approval_required": true
+  },
+  {
+    "method_id": "M12",
+    "key": "work_interest_instrument",
+    "family_id": "K17",
+    "version": "0.2-design",
+    "required_inputs": "Công cụ/phiên bản/locale có quyền",
+    "rule_summary": "Không tự đổi câu hỏi rồi giữ reliability cũ",
+    "implementation_status": "instrument_review_required",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [
+      "S38",
+      "S39"
+    ],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "REVIEW_REQUIRED",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G06",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [],
+    "approval_required": true
+  },
+  {
+    "method_id": "M13",
+    "key": "cashflow_scenarios",
+    "family_id": "K18",
+    "version": "0.2-design",
+    "required_inputs": "Thu/chi/nợ và giả định",
+    "rule_summary": "Kịch bản minh bạch; không đầu tư cá nhân tự động",
+    "implementation_status": "specialist_review_required",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G04",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [
+      "LCF-13"
+    ],
+    "approval_required": true
+  },
+  {
+    "method_id": "M14",
+    "key": "shared_relationship_reflection",
+    "family_id": "K18",
+    "version": "0.2-design",
+    "required_inputs": "Grant từng subject và lời tự thuật",
+    "rule_summary": "Không suy phản bội hoặc thông tin người vắng mặt",
+    "implementation_status": "sharing_review_required",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "OWN_IMPLEMENTATION_AND_SOURCE_REVIEW",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G03",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [],
+    "approval_required": true
+  },
+  {
+    "method_id": "M15",
+    "key": "morphology_description",
+    "family_id": "K13",
+    "version": "0.2-design",
+    "required_inputs": "Consent,ảnh và mục đích",
+    "rule_summary": "Quan sát hình thức; không traits/health/income",
+    "implementation_status": "research_only",
+    "product_release_status": "NOT_RELEASED",
+    "source_ids": [],
+    "source_full_text_status": "method_specific_pending",
+    "rights_status": "REVIEW_REQUIRED",
+    "zero_policy": null,
+    "claim_types": [
+      "self_report",
+      "observation",
+      "derived_metric"
+    ],
+    "prohibited_claims": [
+      "destiny_certainty",
+      "health_from_numbers_or_images",
+      "personality_from_morphology",
+      "intelligence_from_numbers",
+      "unvalidated_probability"
+    ],
+    "release_gate": "G04",
+    "approver": null,
+    "scope": "adults_self_pilot_only_until_approved",
+    "baseline_version": "0.1-proposed",
+    "formula_links": [],
+    "approval_required": true
+  }
+]

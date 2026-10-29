@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/Metric.json",
+  "title": "Metric",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "metric_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "meaning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "window": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "higher_means": {
+      "enum": [
+        "more",
+        "less",
+        "not_ordered"
+      ]
+    },
+    "scale_min": {
+      "type": "number"
+    },
+    "scale_max": {
+      "type": "number"
+    },
+    "direction": {
+      "enum": [
+        "higher_is_more",
+        "higher_is_less",
+        "not_ordered"
+      ]
+    },
+    "formula_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observation_window": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "timezone_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": ["start", "end", "timezone_id"]
+    },
+    "decimal_places": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 12
+    },
+    "rounding_mode": {
+      "enum": [
+        "half_even",
+        "half_up",
+        "down",
+        "not_applicable"
+      ]
+    },
+    "missing_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "metric_id",
+    "value",
+    "unit",
+    "meaning",
+    "method_id",
+    "higher_means",
+    "scale_min",
+    "scale_max",
+    "direction",
+    "formula_version",
+    "observation_window",
+    "decimal_places",
+    "rounding_mode",
+    "missing_reason"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "value": {"type": "null"}
+        }
+      },
+      "then": {
+        "properties": {
+          "missing_reason": {"type": "string", "minLength": 1}
+        }
+      },
+      "else": {
+        "properties": {
+          "missing_reason": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "unit": {"const": "percent"}
+        },
+        "required": ["unit"]
+      },
+      "then": {
+        "properties": {
+          "value": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+          "scale_min": {"const": 0},
+          "scale_max": {"const": 100}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "unit": {"const": "ratio"}
+        },
+        "required": ["unit"]
+      },
+      "then": {
+        "properties": {
+          "value": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+          "scale_min": {"const": 0},
+          "scale_max": {"const": 1}
+        }
+      }
+    }
+  ]
+}

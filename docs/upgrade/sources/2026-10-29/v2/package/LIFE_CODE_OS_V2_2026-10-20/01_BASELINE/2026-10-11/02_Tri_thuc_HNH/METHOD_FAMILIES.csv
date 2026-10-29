@@ -1,0 +1,21 @@
+﻿family_id,name_vi,research_languages,registry_scope,default_release,source_requirements,cross_cultural_gate
+K01,"Lịch pháp, thiên văn và múi giờ",VI/EN + lịch liên quan,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K02,"Bát tự, Tứ trụ, Tử Bình",VI/ZH cổ–phồn–giản,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K03,Tử Vi Đẩu Số và mệnh bàn,VI/ZH,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K04,"Kinh Dịch, Mai Hoa, Lục Hào",VI/ZH,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K05,"Kỳ Môn, Lục Nhâm, Thái Ất",ZH/VI,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K06,"Phong thủy, Vastu, không gian",ZH/SA/EN/VI,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K07,"Jyotish, Nadi, truyền thống Ấn Độ",SA/TA/HI/EN/VI,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K08,Chiêm tinh phương Tây và trung đại,EL/LA/AR/FA/EN/VI,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K09,Lịch và chiêm nghiệm khu vực,BO/JA/KO/TH/MY/ID + ngôn ngữ nguồn,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K10,"Thần số học, Psychomatrix, chữ–số",EN/RU/FR/VI + chữ gốc,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K11,"Bát Cực Linh Số, Mã đuôi80, dãy số",VI/ZH/TH,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K12,"Danh học, ngôn ngữ và ký hiệu",VI + từng văn tự,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K13,"Bàn tay, khuôn mặt, bàn chân, hình thái",VI/ZH/EN,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K14,"Tarot, Rune, Ifá, giấc mơ",EN/FR + ngôn ngữ cộng đồng nguồn,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K15,"Human Design, Gene Keys và hệ tổng hợp",EN + bản dịch có quyền,research_inventory_not_claim_all_read,RESEARCH_ONLY,Edition/page/language/rights/rule/limitations/reviewer,True
+K16,"Triết học, tôn giáo và nội tâm",VI/PI/SA/ZH/AR/HE/EL/LA,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K17,Tâm lý học và đo lường,EN/VI + công cụ có validation,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K18,"Hành vi, nghề nghiệp, kinh tế, xã hội",EN/VI + nghiên cứu khu vực,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K19,"Sinh hoạt, môi trường, sức khỏe nền",EN/VI + nguồn chuyên môn,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True
+K20,"Toán học, dữ liệu, AI và kỹ thuật",EN/VI,research_inventory_not_claim_all_read,METHOD_BY_METHOD_APPROVAL,Edition/page/language/rights/rule/limitations/reviewer,True

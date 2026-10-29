@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:OutboxEvent",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "tenant_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "subject_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "operation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "payload_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "access_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "state": {
+      "enum": [
+        "pending",
+        "leased",
+        "dispatched",
+        "dead_letter"
+      ]
+    },
+    "attempt": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "next_attempt_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lease_until": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "event_id",
+    "tenant_id",
+    "subject_id",
+    "operation",
+    "idempotency_key",
+    "payload_digest",
+    "access_revision",
+    "state",
+    "attempt",
+    "next_attempt_at",
+    "lease_until"
+  ]
+}

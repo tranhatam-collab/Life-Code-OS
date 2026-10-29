@@ -1,0 +1,23 @@
+{
+  "profile_version_id": "00000000-0000-0000-0000-000000000001",
+  "subject_id": "00000000-0000-0000-0000-000000000002",
+  "tenant_id": "00000000-0000-0000-0000-000000000003",
+  "schema_version": "2.0-proposed",
+  "full_name_original": "Người dùng mô phỏng",
+  "full_name_nfc": "Người dùng mô phỏng",
+  "birth": {
+    "calendar": "gregorian",
+    "date_original": null,
+    "date_iso": null,
+    "time_local": null,
+    "time_precision": "unknown",
+    "place_original": null,
+    "timezone_id": null,
+    "tzdb_version": null,
+    "source_kind": "hypothesis",
+    "hypothesis_ids": []
+  },
+  "created_at": "2026-10-11T00:00:00Z",
+  "supersedes": null,
+  "record_origin": "user_entry"
+}

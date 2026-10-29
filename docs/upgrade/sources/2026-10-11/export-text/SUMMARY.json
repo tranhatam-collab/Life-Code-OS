@@ -1,0 +1,65 @@
+{
+  "pdf_pages": 47,
+  "docx_paragraphs": 846,
+  "docx_tables": 2,
+  "xlsx_tabs": 11,
+  "sheets": [
+    {
+      "sheet": "DOC_TRUOC",
+      "rows": 13,
+      "columns": 8
+    },
+    {
+      "sheet": "Backlog",
+      "rows": 144,
+      "columns": 12
+    },
+    {
+      "sheet": "Gates",
+      "rows": 16,
+      "columns": 6
+    },
+    {
+      "sheet": "Decisions",
+      "rows": 24,
+      "columns": 5
+    },
+    {
+      "sheet": "Products",
+      "rows": 27,
+      "columns": 7
+    },
+    {
+      "sheet": "SourceMap",
+      "rows": 34,
+      "columns": 7
+    },
+    {
+      "sheet": "Sources",
+      "rows": 57,
+      "columns": 5
+    },
+    {
+      "sheet": "Screens",
+      "rows": 49,
+      "columns": 7
+    },
+    {
+      "sheet": "Countries",
+      "rows": 9,
+      "columns": 5
+    },
+    {
+      "sheet": "Costs",
+      "rows": 26,
+      "columns": 7
+    },
+    {
+      "sheet": "Dashboard",
+      "rows": 23,
+      "columns": 8
+    }
+  ],
+  "xlsx_formulas": 46,
+  "pdf_replacement_characters": 0
+}

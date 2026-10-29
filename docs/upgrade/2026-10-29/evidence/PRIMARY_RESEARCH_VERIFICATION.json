@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-10-29",
+  "scope": "Selected primary standards and official legal metadata relevant to reconciliation; no legal opinion or method predictive validation",
+  "sources": [
+    {"title":"OpenAPI 3.1.0","url":"https://spec.openapis.org/oas/v3.1.0.html","verified_scope":"Server URL plus path composition; prevents doubled /api/v2 prefix","review_lane":"backend"},
+    {"title":"JSON Schema 2020-12 Core","url":"https://json-schema.org/draft/2020-12/json-schema-core","verified_scope":"Schema dialect and reference contracts","review_lane":"backend"},
+    {"title":"PostgreSQL Row Security Policies","url":"https://www.postgresql.org/docs/current/ddl-rowsecurity.html","verified_scope":"Owner/BYPASSRLS and policy boundaries; runtime role/rehearsal still required","review_lane":"backend"},
+    {"title":"Cloudflare Queues delivery guarantees","url":"https://developers.cloudflare.com/queues/reference/delivery-guarantees/","verified_scope":"At-least-once delivery and possible duplicate effects; business deduplication required","review_lane":"root"},
+    {"title":"W3C WCAG 2.2","url":"https://www.w3.org/TR/WCAG22/","verified_scope":"Device-independent accessibility targets; no conformance certification inferred from screenshots","review_lane":"root"},
+    {"title":"Luật 91/2025/QH15","url":"https://chinhphu.vn/?classid=1&docid=214590&orggroupid=1&pageid=27160","verified_scope":"Official title/number/metadata; effective 2026-01-01","review_lane":"root","full_legal_applicability_review":false},
+    {"title":"Luật 134/2025/QH15","url":"https://chinhphu.vn/?classid=1&docid=216334&orggroupid=1&pageid=27160","verified_scope":"Official title/number/metadata; effective 2026-03-01","review_lane":"root","full_legal_applicability_review":false},
+    {"title":"Luật 122/2025/QH15","url":"https://chinhphu.vn/?classid=1&docid=216503&pageid=27160&typegroupid=3","verified_scope":"Official title/number/metadata; effective 2026-07-01","review_lane":"root","full_legal_applicability_review":false}
+  ],
+  "boundaries": ["Attached R01-R30/S source registries remain historical source records unless explicitly refreshed here","No advanced source books acquired or rights approved","No provider account/configuration or production state verified"]
+}

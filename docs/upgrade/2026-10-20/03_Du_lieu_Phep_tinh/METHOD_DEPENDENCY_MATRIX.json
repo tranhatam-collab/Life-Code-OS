@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0-proposed",
+  "as_of": "2026-10-20",
+  "status": "PROPOSED_NOT_APPROVED",
+  "policy": {
+    "field_mapping_is_candidate_until_method_release": true,
+    "undeclared_input_is_not_inferred": true,
+    "missing_required_field_blocks_or_returns_declared_null": true
+  },
+  "data_field_registry_audit": {
+    "field_count": 120,
+    "group_count": 12,
+    "unique_field_ids": 120,
+    "unique_keys": 120,
+    "required_by_default_true_count": 0,
+    "source_kind_values": ["self_report_or_verified_source"],
+    "classification_counts": {"PRIVATE": 90, "RESTRICTED": 30},
+    "first_beta_counts": {"true": 90, "false": 30},
+    "current_strengths": ["stable_unique_ids", "grouped_inventory", "CSV_JSON_parity_at_audit_time"],
+    "contract_gaps": [
+      "no_schema_for_registry_rows",
+      "no_product_release_required_field_sets",
+      "enum_domains_missing",
+      "array_item_schemas_missing",
+      "object_schemas_missing",
+      "number_and_integer_ranges_missing",
+      "units_missing",
+      "nullability_and_missing_reason_missing",
+      "decimal_scale_and_rounding_missing",
+      "datetime_offset_and_timezone_semantics_missing",
+      "date_precision_missing",
+      "birth_time_range_missing",
+      "per_value_provenance_and_verification_state_missing",
+      "retention_values_pending",
+      "question_and_measurement_versions_missing",
+      "adult_self_attestation_is_optional_without_a_product_requirement_matrix",
+      "media_subject_attestation_is_optional_without_a_method_requirement_matrix",
+      "resonance_food_sleep_fields_have_no_context_sensitive_health_data_reclassification"
+    ]
+  },
+  "methods": [
+    {
+      "method_id": "M01",
+      "candidate_input_field_ids": ["F011", "F012", "F013", "F014", "F015", "F016", "F017", "F018", "F019", "F020"],
+      "missing_registry_inputs": ["date_precision", "time_range", "coordinate_verification_state", "calendar_conversion_version"],
+      "formula_ids": [],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "not_locked",
+      "on_missing": "blocked_or_multiple_hypotheses"
+    },
+    {
+      "method_id": "M02",
+      "candidate_input_field_ids": ["F002"],
+      "missing_registry_inputs": ["normalization_version"],
+      "formula_ids": ["FC-NAME-NFC-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "candidate_mapping",
+      "on_missing": "blocked"
+    },
+    {
+      "method_id": "M03",
+      "candidate_input_field_ids": ["F002"],
+      "missing_registry_inputs": ["transliteration_policy_id"],
+      "formula_ids": ["FC-NAME-CYCLE-001", "FC-DIGITAL-ROOT-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "not_locked",
+      "on_missing": "unsupported"
+    },
+    {
+      "method_id": "M04",
+      "candidate_input_field_ids": ["F012", "F013"],
+      "missing_registry_inputs": ["date_precision", "reduction_policy_id", "master_number_policy_id"],
+      "formula_ids": ["FC-DIGIT-SUM-001", "FC-DIGITAL-ROOT-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "not_locked",
+      "on_missing": "blocked"
+    },
+    {
+      "method_id": "M05",
+      "candidate_input_field_ids": ["F013"],
+      "missing_registry_inputs": ["reference_year", "year_boundary_policy_id", "reduction_policy_id"],
+      "formula_ids": ["FC-PERSONAL-YEAR-UNRESOLVED"],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "formula_unresolved",
+      "on_missing": "unsupported"
+    },
+    {
+      "method_id": "M06",
+      "candidate_input_field_ids": [],
+      "missing_registry_inputs": ["raw_identifier", "numbering_context", "normalized_identifier", "tail4_suffix", "table_version"],
+      "formula_ids": ["FC-TAIL80-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT", "RC-TAIL80", "RC-CLAIM"],
+      "dependency_state": "registry_gap",
+      "on_missing": "blocked"
+    },
+    {
+      "method_id": "M07",
+      "candidate_input_field_ids": [],
+      "missing_registry_inputs": ["raw_identifier", "numbering_context", "normalized_digit_sequence", "pair_table_version"],
+      "formula_ids": ["FC-PAIR-ADJACENT-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "registry_and_source_gap",
+      "on_missing": "unsupported"
+    },
+    {
+      "method_id": "M08",
+      "candidate_input_field_ids": ["F013"],
+      "missing_registry_inputs": ["psychomatrix_variant_id", "working_number_policy_id"],
+      "formula_ids": [],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "variant_unresolved",
+      "on_missing": "method_not_supported"
+    },
+    {
+      "method_id": "M09",
+      "candidate_input_field_ids": ["F011", "F012", "F013", "F015", "F018", "F019", "F020"],
+      "missing_registry_inputs": ["date_precision", "leap_day_policy_id", "calendar_conversion_version"],
+      "formula_ids": ["FC-AGE-INTERVAL-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT"],
+      "dependency_state": "not_locked",
+      "on_missing": "interval_band_or_blocked"
+    },
+    {
+      "method_id": "M10",
+      "candidate_input_field_ids": ["F021", "F023", "F026", "F030", "F031", "F032", "F033", "F034"],
+      "missing_registry_inputs": ["due_at", "due_state", "cancellation_reason", "eligibility_window_timezone"],
+      "formula_ids": ["FC-TASK-COMPLETION-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT", "RC-METRIC"],
+      "dependency_state": "scope_policy_pending",
+      "on_missing": "null_with_missing_reason"
+    },
+    {
+      "method_id": "M11",
+      "candidate_input_field_ids": ["F101", "F102", "F103", "F104", "F105", "F106", "F107", "F108", "F109", "F110"],
+      "missing_registry_inputs": ["question_version", "content_release_id"],
+      "formula_ids": [],
+      "result_contract_ids": ["RC-METHOD-RESULT", "RC-CLAIM"],
+      "dependency_state": "content_review_pending",
+      "on_missing": "blocked"
+    },
+    {
+      "method_id": "M12",
+      "candidate_input_field_ids": ["F041", "F042", "F043", "F048", "F049", "F050"],
+      "missing_registry_inputs": ["instrument_id", "instrument_version", "item_response", "scoring_version", "locale_validation_receipt"],
+      "formula_ids": [],
+      "result_contract_ids": ["RC-METHOD-RESULT", "RC-METRIC"],
+      "dependency_state": "instrument_not_selected",
+      "on_missing": "method_not_supported"
+    },
+    {
+      "method_id": "M13",
+      "candidate_input_field_ids": ["F051", "F052", "F053", "F054", "F055", "F056", "F057", "F058", "F059", "F060"],
+      "missing_registry_inputs": ["money_decimal_scale", "rounding_mode", "period_start", "period_end", "fx_source_and_date"],
+      "formula_ids": ["FC-CASHFLOW-001"],
+      "result_contract_ids": ["RC-METHOD-RESULT", "RC-METRIC"],
+      "dependency_state": "financial_contract_pending",
+      "on_missing": "null_or_blocked_never_zero"
+    },
+    {
+      "method_id": "M14",
+      "candidate_input_field_ids": ["F061", "F062", "F063", "F064", "F065", "F066", "F067", "F068", "F069", "F070"],
+      "missing_registry_inputs": ["per_subject_grant_ids", "grant_expiry", "purpose_id", "question_version"],
+      "formula_ids": [],
+      "result_contract_ids": ["RC-METHOD-RESULT", "RC-CLAIM"],
+      "dependency_state": "sharing_review_pending",
+      "on_missing": "deny"
+    },
+    {
+      "method_id": "M15",
+      "candidate_input_field_ids": ["F111", "F112", "F113", "F114", "F115", "F116", "F117", "F118", "F119", "F120"],
+      "missing_registry_inputs": ["consent_receipt_id", "capture_timezone", "device_metadata", "retention_expiry", "question_or_measurement_version"],
+      "formula_ids": [],
+      "result_contract_ids": ["RC-METHOD-RESULT", "RC-CLAIM"],
+      "dependency_state": "research_only",
+      "on_missing": "deny"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+[
+  {
+    "id": "D01",
+    "path": "01_Chien_luoc_San_pham/01_MASTER_VISION.md",
+    "title": "Life Code OS: tầm nhìn, giới hạn và cấu trúc hợp nhất",
+    "owner": "Founder + Product Lead",
+    "sources": [
+      "G02",
+      "S01",
+      "S02"
+    ],
+    "master": true
+  },
+  {
+    "id": "D02",
+    "path": "09_Doi_chieu_Bang_chung/01_CURRENT_STATE_AUDIT.md",
+    "title": "Đối chiếu nguồn, nội dung công khai và trạng thái vận hành",
+    "owner": "Tech Lead + Security + QA",
+    "sources": [
+      "G01",
+      "G02",
+      "G04",
+      "G09",
+      "G10",
+      "S01",
+      "S03",
+      "S05",
+      "S06"
+    ],
+    "master": true
+  },
+  {
+    "id": "D03",
+    "path": "07_Bao_mat_Van_hanh/01_P0_CONTAINMENT.md",
+    "title": "P0: chặn rủi ro trong 48–72 giờ và bảo toàn chứng cứ",
+    "owner": "Incident Commander + Backend + Security",
+    "sources": [
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G11",
+      "S07",
+      "S08"
+    ],
+    "master": true
+  },
+  {
+    "id": "D04",
+    "path": "01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md",
+    "title": "Chuỗi sản phẩm từ miễn phí tới doanh nghiệp và đối tác",
+    "owner": "Product + Finance + Support",
+    "sources": [
+      "G02",
+      "S02"
+    ],
+    "master": true
+  },
+  {
+    "id": "D05",
+    "path": "01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md",
+    "title": "Hợp đồng chín cấp Life Code và cách trưởng thành hồ sơ",
+    "owner": "Product + Method Council",
+    "sources": [
+      "G03",
+      "S02"
+    ],
+    "master": true
+  },
+  {
+    "id": "D06",
+    "path": "01_Chien_luoc_San_pham/04_USER_JOURNEYS.md",
+    "title": "Hành trình người dùng, trạng thái trống và tiêu chí giá trị",
+    "owner": "UX Lead + QA",
+    "sources": [],
+    "master": true
+  },
+  {
+    "id": "D07",
+    "path": "02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+    "title": "Học thuyết HNH và ngữ pháp đời sống có cấu trúc",
+    "owner": "Founder + Method Council",
+    "sources": [],
+    "master": true
+  },
+  {
+    "id": "D08",
+    "path": "02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+    "title": "20 họ tri thức: cách khảo cứu, tích hợp và phát hành",
+    "owner": "Research Lead + Linguists + Method Council",
+    "sources": [
+      "G02",
+      "S15",
+      "S16",
+      "S38",
+      "S39"
+    ],
+    "master": true
+  },
+  {
+    "id": "D09",
+    "path": "02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+    "title": "Đồng nhịp sống và thiết kế đời sống: đặc tả dữ liệu và thực hành",
+    "owner": "HNH Council + Product + Privacy",
+    "sources": [],
+    "master": true
+  },
+  {
+    "id": "D10",
+    "path": "03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+    "title": "Mô hình miền: tài khoản, chủ thể, quyền và dữ liệu nhiều giả thuyết",
+    "owner": "Data Architect + Privacy",
+    "sources": [
+      "S09",
+      "S15",
+      "S16"
+    ],
+    "master": true
+  },
+  {
+    "id": "D11",
+    "path": "03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+    "title": "Hợp đồng kết quả, chỉ số và cách xử lý điều chưa biết",
+    "owner": "Method Engineering + Data",
+    "sources": [
+      "G05",
+      "S14"
+    ],
+    "master": true
+  },
+  {
+    "id": "D12",
+    "path": "03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+    "title": "Bộ số: quy tắc độc lập, trường hợp biên và Mã đuôi 80",
+    "owner": "Method Engineering",
+    "sources": [
+      "G02",
+      "S15"
+    ],
+    "master": true
+  },
+  {
+    "id": "D13",
+    "path": "03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+    "title": "Dòng thời gian 0–99: lịch sử, chu kỳ, kế hoạch và kịch bản",
+    "owner": "Data + Method Council",
+    "sources": [
+      "G06",
+      "S16"
+    ],
+    "master": true
+  },
+  {
+    "id": "D14",
+    "path": "04_Backend_API/01_TARGET_ARCHITECTURE.md",
+    "title": "Backend: modular monolith, ranh giới tin cậy và lựa chọn công nghệ",
+    "owner": "Tech Lead + Platform",
+    "sources": [
+      "G09",
+      "G10",
+      "S09",
+      "S10",
+      "S12",
+      "S13"
+    ],
+    "master": true
+  },
+  {
+    "id": "D15",
+    "path": "04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+    "title": "Danh tính, phiên, chia sẻ và kiểm soát đối tượng",
+    "owner": "Security + Backend",
+    "sources": [
+      "G04",
+      "G08",
+      "G11",
+      "S07",
+      "S08",
+      "S09"
+    ],
+    "master": true
+  },
+  {
+    "id": "D16",
+    "path": "04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+    "title": "Tác vụ nền, thanh toán và tính nhất quán nghiệp vụ",
+    "owner": "Backend + Platform + Commerce",
+    "sources": [
+      "S10",
+      "S20"
+    ],
+    "master": true
+  },
+  {
+    "id": "D17",
+    "path": "04_Backend_API/04_API_AND_MIGRATION.md",
+    "title": "API v2, tương thích và migration D1 sang PostgreSQL",
+    "owner": "Backend + Data + QA",
+    "sources": [
+      "G02",
+      "S14"
+    ],
+    "master": true
+  },
+  {
+    "id": "D18",
+    "path": "05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md",
+    "title": "Frontend: điều hướng, trang công khai và không gian ứng dụng",
+    "owner": "Frontend Lead + UX",
+    "sources": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S06",
+      "S18",
+      "S19"
+    ],
+    "master": true
+  },
+  {
+    "id": "D19",
+    "path": "05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md",
+    "title": "Thiết kế giao diện, ngôn ngữ Việt và khả năng tiếp cận",
+    "owner": "Design + Frontend + Editorial",
+    "sources": [
+      "S17",
+      "S15"
+    ],
+    "master": true
+  },
+  {
+    "id": "D20",
+    "path": "05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md",
+    "title": "Nâng cấp nội dung live và SEO không phá đường dẫn",
+    "owner": "Editorial + Frontend",
+    "sources": [
+      "S01",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "G09"
+    ],
+    "master": true
+  },
+  {
+    "id": "D21",
+    "path": "06_AI_Bao_cao/01_AI_ORCHESTRATION.md",
+    "title": "AI hỗ trợ: học, hỏi, viết và kiểm soát hành động",
+    "owner": "AI Lead + Security + Editorial",
+    "sources": [
+      "S21",
+      "S22",
+      "G02"
+    ],
+    "master": true
+  },
+  {
+    "id": "D22",
+    "path": "06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md",
+    "title": "Tự động hóa có giới hạn: giảm thao tác, không bỏ trách nhiệm",
+    "owner": "Product Operations + AI Lead",
+    "sources": [
+      "S10",
+      "S20",
+      "S21"
+    ],
+    "master": true
+  },
+  {
+    "id": "D23",
+    "path": "06_AI_Bao_cao/03_REPORT_FACTORY.md",
+    "title": "Nhà máy báo cáo: một nội dung chuẩn cho Web, PDF và Word",
+    "owner": "Report Lead + Editorial + QA",
+    "sources": [
+      "G02",
+      "G03"
+    ],
+    "master": true
+  },
+  {
+    "id": "D24",
+    "path": "06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md",
+    "title": "Chuẩn tiếng Việt, cấu trúc bài đọc và chất lượng học liệu",
+    "owner": "Editorial Authority + Method Council",
+    "sources": [
+      "S15",
+      "S38",
+      "S39"
+    ],
+    "master": true
+  },
+  {
+    "id": "D25",
+    "path": "07_Bao_mat_Van_hanh/02_PRIVACY_AND_DELETION.md",
+    "title": "Dữ liệu cá nhân: mục đích, lưu giữ, xóa và khôi phục",
+    "owner": "Privacy Lead + Data Lead",
+    "sources": [
+      "S23",
+      "S24",
+      "S30",
+      "S40",
+      "S05"
+    ],
+    "master": true
+  },
+  {
+    "id": "D26",
+    "path": "07_Bao_mat_Van_hanh/03_SECURITY_THREAT_MODEL.md",
+    "title": "Mô hình đe dọa và ranh giới bảo vệ",
+    "owner": "Security Lead + Architect",
+    "sources": [
+      "S07",
+      "S08",
+      "S09",
+      "S11",
+      "S12"
+    ],
+    "master": true
+  },
+  {
+    "id": "D27",
+    "path": "07_Bao_mat_Van_hanh/04_OPERATIONS_SRE_AND_COST.md",
+    "title": "Vận hành, quan sát, khôi phục và kiểm soát chi phí",
+    "owner": "SRE + Finance Operations",
+    "sources": [
+      "S10",
+      "S11",
+      "S13",
+      "S20"
+    ],
+    "master": true
+  },
+  {
+    "id": "D28",
+    "path": "07_Bao_mat_Van_hanh/05_VIETNAM_LEGAL_READINESS.md",
+    "title": "Pháp lý Việt Nam và phạm vi dịch vụ phải rà soát",
+    "owner": "Legal Counsel + Privacy Lead",
+    "sources": [
+      "S23",
+      "S24",
+      "S25",
+      "S26",
+      "S27",
+      "S28",
+      "S29"
+    ],
+    "master": true
+  },
+  {
+    "id": "D29",
+    "path": "08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md",
+    "title": "Cấp phép quốc tế và nhượng quyền Huyền Nhân Học",
+    "owner": "Founder + Partnerships + Legal",
+    "sources": [
+      "S30",
+      "S31",
+      "S32",
+      "S33",
+      "S34",
+      "S35",
+      "S36",
+      "S37",
+      "S40",
+      "S41"
+    ],
+    "master": true
+  },
+  {
+    "id": "D30",
+    "path": "01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md",
+    "title": "Academy, đào tạo giảng viên và không gian chuyên gia",
+    "owner": "Academic Lead + Method Council",
+    "sources": [
+      "G02",
+      "S38",
+      "S39"
+    ],
+    "master": true
+  },
+  {
+    "id": "D31",
+    "path": "01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md",
+    "title": "Tổ chức, gia đình và quyền cá nhân không thể bị hòa tan",
+    "owner": "Product + Privacy + Enterprise Lead",
+    "sources": [
+      "S07",
+      "S09",
+      "S23",
+      "S30"
+    ],
+    "master": true
+  },
+  {
+    "id": "D32",
+    "path": "08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md",
+    "title": "Mô hình thương mại, chi phí và tính bền vững của miễn phí",
+    "owner": "Product + Finance + Commerce",
+    "sources": [
+      "S20",
+      "S28",
+      "S29",
+      "S33"
+    ],
+    "master": true
+  },
+  {
+    "id": "D33",
+    "path": "08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md",
+    "title": "Lộ trình, phân công và quản trị phụ thuộc",
+    "owner": "Program Lead + Tech Lead",
+    "sources": [
+      "G02"
+    ],
+    "master": true
+  },
+  {
+    "id": "D34",
+    "path": "07_Bao_mat_Van_hanh/06_RELEASE_GATES.md",
+    "title": "Mười hai cổng phát hành và yêu cầu bằng chứng",
+    "owner": "Release Authority + QA + Security",
+    "sources": [
+      "S07",
+      "S13",
+      "S21"
+    ],
+    "master": true
+  },
+  {
+    "id": "D35",
+    "path": "08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md",
+    "title": "Quyết định Q1–Q20: nền cũ và phạm vi mở rộng",
+    "owner": "Founder + Functional Approvers",
+    "sources": [
+      "G02"
+    ],
+    "master": true
+  },
+  {
+    "id": "D36",
+    "path": "08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md",
+    "title": "Giao việc cho AI và DEV: bối cảnh, lệnh thực hiện và báo cáo",
+    "owner": "Tech Lead + AI Engineering",
+    "sources": [
+      "G02",
+      "G09",
+      "G10"
+    ],
+    "master": true
+  },
+  {
+    "id": "D37",
+    "path": "02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+    "title": "Chương trình nghiên cứu chuyên sâu K01–K20 và cách tạo Code HNH",
+    "owner": "Method Council + Ngôn ngữ + Data Science",
+    "sources": [
+      "G02",
+      "S15",
+      "S16",
+      "S38",
+      "S39"
+    ],
+    "master": true
+  },
+  {
+    "id": "D38",
+    "path": "06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md",
+    "title": "Chuẩn bài đọc người dùng: từ dữ liệu đến lựa chọn",
+    "owner": "Editorial + Product",
+    "sources": [
+      "G02"
+    ],
+    "master": true
+  }
+]

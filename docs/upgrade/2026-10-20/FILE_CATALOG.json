@@ -1,0 +1,1298 @@
+[
+  {
+    "path": "00_Doc_truoc/AMENDMENT_2026-10-20.md",
+    "title": "Life Code OS Phần hợp nhất bổ sung ngày 20 tháng 10 năm 2026",
+    "group": "00_Doc_truoc",
+    "format": "md"
+  },
+  {
+    "path": "00_Doc_truoc/BROWSER_QA.json",
+    "title": "00_Doc_truoc/BROWSER_QA.json",
+    "group": "00_Doc_truoc",
+    "format": "json"
+  },
+  {
+    "path": "00_Doc_truoc/CHANGELOG.md",
+    "title": "Lịch sử thay đổi và bảo toàn kế hoạch",
+    "group": "00_Doc_truoc",
+    "format": "md"
+  },
+  {
+    "path": "00_Doc_truoc/DEV_START_HERE_2026-10-20.md",
+    "title": "Life Code OS Hướng dẫn nhận việc phát triển",
+    "group": "00_Doc_truoc",
+    "format": "md"
+  },
+  {
+    "path": "00_Doc_truoc/DOCUMENT_AUTHORITY.md",
+    "title": "Life Code OS Thứ tự áp dụng tài liệu",
+    "group": "00_Doc_truoc",
+    "format": "md"
+  },
+  {
+    "path": "00_Doc_truoc/DOCUMENT_INDEX.json",
+    "title": "00_Doc_truoc/DOCUMENT_INDEX.json",
+    "group": "00_Doc_truoc",
+    "format": "json"
+  },
+  {
+    "path": "00_Doc_truoc/EIGHT_BUNDLES_MAP.md",
+    "title": "Ánh xạ tám bộ quản trị sang thư mục bàn giao",
+    "group": "00_Doc_truoc",
+    "format": "md"
+  },
+  {
+    "path": "00_Doc_truoc/EXPORT_QA.json",
+    "title": "00_Doc_truoc/EXPORT_QA.json",
+    "group": "00_Doc_truoc",
+    "format": "json"
+  },
+  {
+    "path": "00_Doc_truoc/KNOWN_LIMITATIONS.md",
+    "title": "Phạm vi đã làm và giới hạn còn lại ngày 20 tháng 10 năm 2026",
+    "group": "00_Doc_truoc",
+    "format": "md"
+  },
+  {
+    "path": "00_Doc_truoc/Life_Code_OS_Execution_Board.xlsx",
+    "title": "00_Doc_truoc/Life_Code_OS_Execution_Board.xlsx",
+    "group": "00_Doc_truoc",
+    "format": "xlsx"
+  },
+  {
+    "path": "00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.docx",
+    "title": "00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.docx",
+    "group": "00_Doc_truoc",
+    "format": "docx"
+  },
+  {
+    "path": "00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.md",
+    "title": "Life Code OS Kế hoạch hợp nhất chuẩn bị phát triển",
+    "group": "00_Doc_truoc",
+    "format": "md"
+  },
+  {
+    "path": "00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.pdf",
+    "title": "00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.pdf",
+    "group": "00_Doc_truoc",
+    "format": "pdf"
+  },
+  {
+    "path": "00_Doc_truoc/MASTER_ASSEMBLY.json",
+    "title": "00_Doc_truoc/MASTER_ASSEMBLY.json",
+    "group": "00_Doc_truoc",
+    "format": "json"
+  },
+  {
+    "path": "00_Doc_truoc/PACKAGE_QA.json",
+    "title": "00_Doc_truoc/PACKAGE_QA.json",
+    "group": "00_Doc_truoc",
+    "format": "json"
+  },
+  {
+    "path": "00_Doc_truoc/READ_COVERAGE.json",
+    "title": "00_Doc_truoc/READ_COVERAGE.json",
+    "group": "00_Doc_truoc",
+    "format": "json"
+  },
+  {
+    "path": "00_Doc_truoc/WORKBOOK_QA.json",
+    "title": "00_Doc_truoc/WORKBOOK_QA.json",
+    "group": "00_Doc_truoc",
+    "format": "json"
+  },
+  {
+    "path": "00_Doc_truoc/qa-browser/demo-desktop.png",
+    "title": "00_Doc_truoc/qa-browser/demo-desktop.png",
+    "group": "00_Doc_truoc",
+    "format": "png"
+  },
+  {
+    "path": "00_Doc_truoc/qa-browser/demo-mobile.png",
+    "title": "00_Doc_truoc/qa-browser/demo-mobile.png",
+    "group": "00_Doc_truoc",
+    "format": "png"
+  },
+  {
+    "path": "00_Doc_truoc/qa-browser/portal-desktop.png",
+    "title": "00_Doc_truoc/qa-browser/portal-desktop.png",
+    "group": "00_Doc_truoc",
+    "format": "png"
+  },
+  {
+    "path": "00_Doc_truoc/qa-browser/portal-mobile.png",
+    "title": "00_Doc_truoc/qa-browser/portal-mobile.png",
+    "group": "00_Doc_truoc",
+    "format": "png"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/01_MASTER_VISION.md",
+    "title": "Life Code OS: tầm nhìn, giới hạn và cấu trúc hợp nhất",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "md"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md",
+    "title": "Chuỗi sản phẩm từ miễn phí tới doanh nghiệp và đối tác",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "md"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md",
+    "title": "Hợp đồng chín cấp Life Code và cách trưởng thành hồ sơ",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "md"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/04_USER_JOURNEYS.md",
+    "title": "Hành trình người dùng, trạng thái trống và tiêu chí giá trị",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "md"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md",
+    "title": "Academy, đào tạo giảng viên và không gian chuyên gia",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "md"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md",
+    "title": "Tổ chức, gia đình và quyền cá nhân không thể bị hòa tan",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "md"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/07_PRODUCT_EXECUTION_CHARTER_2026-10-20.md",
+    "title": "Product execution charter — amendment 2026-10-20",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "md"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/NINE_LEVELS.json",
+    "title": "01_Chien_luoc_San_pham/NINE_LEVELS.json",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "json"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+    "title": "01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "csv"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+    "title": "01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "json"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.csv",
+    "title": "01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.csv",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "csv"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.json",
+    "title": "01_Chien_luoc_San_pham/PRODUCT_EXECUTION_EXTENSION.json",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "json"
+  },
+  {
+    "path": "01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+    "title": "01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+    "group": "01_Chien_luoc_San_pham",
+    "format": "json"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+    "title": "Học thuyết HNH và ngữ pháp đời sống có cấu trúc",
+    "group": "02_Tri_thuc_HNH",
+    "format": "md"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+    "title": "20 họ tri thức: cách khảo cứu, tích hợp và phát hành",
+    "group": "02_Tri_thuc_HNH",
+    "format": "md"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+    "title": "Đồng nhịp sống và thiết kế đời sống: đặc tả dữ liệu và thực hành",
+    "group": "02_Tri_thuc_HNH",
+    "format": "md"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+    "title": "Chương trình nghiên cứu chuyên sâu K01–K20 và cách tạo Code HNH",
+    "group": "02_Tri_thuc_HNH",
+    "format": "md"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+    "title": "02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+    "group": "02_Tri_thuc_HNH",
+    "format": "json"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+    "title": "Từ điển sử dụng trong bộ nâng cấp",
+    "group": "02_Tri_thuc_HNH",
+    "format": "md"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+    "title": "02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+    "group": "02_Tri_thuc_HNH",
+    "format": "json"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+    "title": "02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+    "group": "02_Tri_thuc_HNH",
+    "format": "csv"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+    "title": "02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+    "group": "02_Tri_thuc_HNH",
+    "format": "json"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/METHOD_FAMILY_READINESS.json",
+    "title": "02_Tri_thuc_HNH/METHOD_FAMILY_READINESS.json",
+    "group": "02_Tri_thuc_HNH",
+    "format": "json"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+    "title": "02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+    "group": "02_Tri_thuc_HNH",
+    "format": "json"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/METHOD_RELEASE_REGISTRY_V2.json",
+    "title": "02_Tri_thuc_HNH/METHOD_RELEASE_REGISTRY_V2.json",
+    "group": "02_Tri_thuc_HNH",
+    "format": "json"
+  },
+  {
+    "path": "02_Tri_thuc_HNH/SOURCE_RIGHTS_REGISTER.json",
+    "title": "02_Tri_thuc_HNH/SOURCE_RIGHTS_REGISTER.json",
+    "group": "02_Tri_thuc_HNH",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+    "title": "Mô hình miền: tài khoản, chủ thể, quyền và dữ liệu nhiều giả thuyết",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "md"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+    "title": "Hợp đồng kết quả, chỉ số và cách xử lý điều chưa biết",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "md"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+    "title": "Bộ số: quy tắc độc lập, trường hợp biên và Mã đuôi 80",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "md"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+    "title": "Dòng thời gian 0–99: lịch sử, chu kỳ, kế hoạch và kịch bản",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "md"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+    "title": "03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "csv"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+    "title": "03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/FORMULA_CATALOG.json",
+    "title": "03_Du_lieu_Phep_tinh/FORMULA_CATALOG.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/METHOD_DEPENDENCY_MATRIX.json",
+    "title": "03_Du_lieu_Phep_tinh/METHOD_DEPENDENCY_MATRIX.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/RESULT_CONTRACT_MATRIX.json",
+    "title": "03_Du_lieu_Phep_tinh/RESULT_CONTRACT_MATRIX.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+    "title": "03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+    "title": "03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+    "group": "03_Du_lieu_Phep_tinh",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/01_TARGET_ARCHITECTURE.md",
+    "title": "Backend: modular monolith, ranh giới tin cậy và lựa chọn công nghệ",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+    "title": "Danh tính, phiên, chia sẻ và kiểm soát đối tượng",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+    "title": "Tác vụ nền, thanh toán và tính nhất quán nghiệp vụ",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/04_API_AND_MIGRATION.md",
+    "title": "API v2, tương thích và migration D1 sang PostgreSQL",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/05_METHOD_EXECUTION_AND_RESULT_CONTRACT.md",
+    "title": "Hợp đồng thực thi phương pháp và kết quả v2.1",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/06_AUTHORIZATION_POLICY_AND_NEGATIVE_MATRIX.md",
+    "title": "Hợp đồng authorization theo đối tượng v2.1",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/07_MIGRATION_AND_RECONCILIATION_RUNBOOK.md",
+    "title": "Runbook migration D1 → PostgreSQL v2.1",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/API_OPERATIONS.json",
+    "title": "04_Backend_API/API_OPERATIONS.json",
+    "group": "04_Backend_API",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/API_RESPONSE_DESIGN_PACKETS.json",
+    "title": "04_Backend_API/API_RESPONSE_DESIGN_PACKETS.json",
+    "group": "04_Backend_API",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/API_RESPONSE_DESIGN_PACKETS.md",
+    "title": "Gói thiết kế response cho 46 operation generic",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/ARCHITECTURE.mmd",
+    "title": "04_Backend_API/ARCHITECTURE.mmd",
+    "group": "04_Backend_API",
+    "format": "mmd"
+  },
+  {
+    "path": "04_Backend_API/AUTHORIZATION_POLICY_MATRIX.json",
+    "title": "04_Backend_API/AUTHORIZATION_POLICY_MATRIX.json",
+    "group": "04_Backend_API",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/ENTITY_REGISTRY.json",
+    "title": "04_Backend_API/ENTITY_REGISTRY.json",
+    "group": "04_Backend_API",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/MIGRATION_RECONCILIATION_MATRIX.csv",
+    "title": "04_Backend_API/MIGRATION_RECONCILIATION_MATRIX.csv",
+    "group": "04_Backend_API",
+    "format": "csv"
+  },
+  {
+    "path": "04_Backend_API/OPENAPI_UPGRADE_NOTES.md",
+    "title": "OpenAPI v2.1 — contract hiện hành và cách tái tạo",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/READ_COVERAGE.json",
+    "title": "04_Backend_API/READ_COVERAGE.json",
+    "group": "04_Backend_API",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/SCHEMA_DELTA_REFERENCE_2026_10_20.sql",
+    "title": "04_Backend_API/SCHEMA_DELTA_REFERENCE_2026_10_20.sql",
+    "group": "04_Backend_API",
+    "format": "sql"
+  },
+  {
+    "path": "04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+    "title": "04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+    "group": "04_Backend_API",
+    "format": "sql"
+  },
+  {
+    "path": "04_Backend_API/SCHEMA_README.md",
+    "title": "Thiết kế dữ liệu logic",
+    "group": "04_Backend_API",
+    "format": "md"
+  },
+  {
+    "path": "04_Backend_API/openapi.json",
+    "title": "04_Backend_API/openapi.json",
+    "group": "04_Backend_API",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/openapi.resolved.json",
+    "title": "04_Backend_API/openapi.resolved.json",
+    "group": "04_Backend_API",
+    "format": "json"
+  },
+  {
+    "path": "04_Backend_API/openapi.resolved.yaml",
+    "title": "04_Backend_API/openapi.resolved.yaml",
+    "group": "04_Backend_API",
+    "format": "yaml"
+  },
+  {
+    "path": "04_Backend_API/openapi.upgrade.overlay.yaml",
+    "title": "04_Backend_API/openapi.upgrade.overlay.yaml",
+    "group": "04_Backend_API",
+    "format": "yaml"
+  },
+  {
+    "path": "04_Backend_API/openapi.yaml",
+    "title": "04_Backend_API/openapi.yaml",
+    "group": "04_Backend_API",
+    "format": "yaml"
+  },
+  {
+    "path": "05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md",
+    "title": "Frontend: điều hướng, trang công khai và không gian ứng dụng",
+    "group": "05_Frontend_UI",
+    "format": "md"
+  },
+  {
+    "path": "05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md",
+    "title": "Thiết kế giao diện, ngôn ngữ Việt và khả năng tiếp cận",
+    "group": "05_Frontend_UI",
+    "format": "md"
+  },
+  {
+    "path": "05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md",
+    "title": "Nâng cấp nội dung live và SEO không phá đường dẫn",
+    "group": "05_Frontend_UI",
+    "format": "md"
+  },
+  {
+    "path": "05_Frontend_UI/04_PWA_RESPONSIVE_EXECUTION_PLAN_2026-10-20.md",
+    "title": "Responsive web/PWA execution plan — amendment 2026-10-20",
+    "group": "05_Frontend_UI",
+    "format": "md"
+  },
+  {
+    "path": "05_Frontend_UI/05_DEMO_USABILITY_FLOWS_2026-10-20.md",
+    "title": "Demo and usability flows — amendment 2026-10-20",
+    "group": "05_Frontend_UI",
+    "format": "md"
+  },
+  {
+    "path": "05_Frontend_UI/DESIGN_TOKENS.json",
+    "title": "05_Frontend_UI/DESIGN_TOKENS.json",
+    "group": "05_Frontend_UI",
+    "format": "json"
+  },
+  {
+    "path": "05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.csv",
+    "title": "05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.csv",
+    "group": "05_Frontend_UI",
+    "format": "csv"
+  },
+  {
+    "path": "05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.json",
+    "title": "05_Frontend_UI/SCREEN_EXECUTION_EXTENSION.json",
+    "group": "05_Frontend_UI",
+    "format": "json"
+  },
+  {
+    "path": "05_Frontend_UI/SCREEN_REGISTRY.csv",
+    "title": "05_Frontend_UI/SCREEN_REGISTRY.csv",
+    "group": "05_Frontend_UI",
+    "format": "csv"
+  },
+  {
+    "path": "05_Frontend_UI/SCREEN_REGISTRY.json",
+    "title": "05_Frontend_UI/SCREEN_REGISTRY.json",
+    "group": "05_Frontend_UI",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/01_AI_ORCHESTRATION.md",
+    "title": "AI hỗ trợ: học, hỏi, viết và kiểm soát hành động",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md",
+    "title": "Tự động hóa có giới hạn: giảm thao tác, không bỏ trách nhiệm",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/03_REPORT_FACTORY.md",
+    "title": "Nhà máy báo cáo: một nội dung chuẩn cho Web, PDF và Word",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md",
+    "title": "Chuẩn tiếng Việt, cấu trúc bài đọc và chất lượng học liệu",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md",
+    "title": "Chuẩn bài đọc người dùng: từ dữ liệu đến lựa chọn",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/06_NINE_LEVEL_AI_REPORT_CONTRACTS_2026-10-20.md",
+    "title": "Nine-level AI/report execution contracts — amendment 2026-10-20",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/07_AI_EVALUATION_AND_DEMO_PLAN_2026-10-20.md",
+    "title": "AI evaluation, cost and demo plan — amendment 2026-10-20",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+    "title": "06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/AUTONOMY_POLICY.json",
+    "title": "06_AI_Bao_cao/AUTONOMY_POLICY.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.csv",
+    "title": "06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.csv",
+    "group": "06_AI_Bao_cao",
+    "format": "csv"
+  },
+  {
+    "path": "06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.json",
+    "title": "06_AI_Bao_cao/NINE_LEVEL_REPORT_CONTRACTS.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_1.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_1.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_1.md",
+    "title": "Self Signal — Tín hiệu nền",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_2.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_2.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_2.md",
+    "title": "Inner Architecture — Cấu trúc nội tâm",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_3.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_3.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_3.md",
+    "title": "Behavior Code — Cách hành động",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_4.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_4.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_4.md",
+    "title": "Work & Wealth Code — Công việc và nguồn lực",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_5.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_5.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_5.md",
+    "title": "Relationship Field — Quan hệ và ranh giới",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_6.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_6.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_6.md",
+    "title": "Life Timeline — Dòng thời gian",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_7.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_7.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_7.md",
+    "title": "Body Intelligence — Cơ thể và môi trường",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_8.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_8.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_8.md",
+    "title": "Mission Path — Hướng sống và phụng sự",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_9.json",
+    "title": "06_AI_Bao_cao/templates/LEVEL_9.json",
+    "group": "06_AI_Bao_cao",
+    "format": "json"
+  },
+  {
+    "path": "06_AI_Bao_cao/templates/LEVEL_9.md",
+    "title": "Full Life Code — Hồ sơ đời sống hợp nhất",
+    "group": "06_AI_Bao_cao",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/01_P0_CONTAINMENT.md",
+    "title": "P0: chặn rủi ro trong 48–72 giờ và bảo toàn chứng cứ",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/02_PRIVACY_AND_DELETION.md",
+    "title": "Dữ liệu cá nhân: mục đích, lưu giữ, xóa và khôi phục",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/03_SECURITY_THREAT_MODEL.md",
+    "title": "Mô hình đe dọa và ranh giới bảo vệ",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/04_OPERATIONS_SRE_AND_COST.md",
+    "title": "Vận hành, quan sát, khôi phục và kiểm soát chi phí",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/05_VIETNAM_LEGAL_READINESS.md",
+    "title": "Pháp lý Việt Nam và phạm vi dịch vụ phải rà soát",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/06_RELEASE_GATES.md",
+    "title": "Mười hai cổng phát hành và yêu cầu bằng chứng",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/CI_RELEASE_POLICY.md",
+    "title": "CI và phát hành — đặc tả, không phải workflow tự triển khai",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/FPOS_GATE_MAPPING.json",
+    "title": "07_Bao_mat_Van_hanh/FPOS_GATE_MAPPING.json",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "json"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/FPOS_GATE_MAPPING.md",
+    "title": "Life Code OS Ánh xạ cổng phát hành FPOS",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/LEGAL_ACTIVITY_MATRIX.json",
+    "title": "07_Bao_mat_Van_hanh/LEGAL_ACTIVITY_MATRIX.json",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "json"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/OPERATIONS_ACCEPTANCE.json",
+    "title": "07_Bao_mat_Van_hanh/OPERATIONS_ACCEPTANCE.json",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "json"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/OPERATIONS_ACCEPTANCE_RUNBOOK.md",
+    "title": "Life Code OS Nghiệm thu vận hành và khôi phục",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/00_SCOPE_AND_AUTHORITY.md",
+    "title": "P0 — Phạm vi và quyền thực hiện",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/01_EVIDENCE_BASELINE.json",
+    "title": "07_Bao_mat_Van_hanh/P0_PACKET/01_EVIDENCE_BASELINE.json",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "json"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/02_SURFACE_INVENTORY.csv",
+    "title": "07_Bao_mat_Van_hanh/P0_PACKET/02_SURFACE_INVENTORY.csv",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "csv"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/03_PATCH_PLAN.csv",
+    "title": "07_Bao_mat_Van_hanh/P0_PACKET/03_PATCH_PLAN.csv",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "csv"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/04_NEGATIVE_TEST_MATRIX.csv",
+    "title": "07_Bao_mat_Van_hanh/P0_PACKET/04_NEGATIVE_TEST_MATRIX.csv",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "csv"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/05_DEPLOYMENT_AND_ROLLBACK.md",
+    "title": "P0 — Triển khai và khôi phục có chứng cứ",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/06_LEGACY_AND_INCIDENT_TRIAGE.md",
+    "title": "P0 — Dữ liệu legacy và đánh giá sự cố",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/P0_PACKET/07_EXIT_REVIEW.json",
+    "title": "07_Bao_mat_Van_hanh/P0_PACKET/07_EXIT_REVIEW.json",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "json"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/RETENTION_SCHEDULE_PROPOSED.json",
+    "title": "07_Bao_mat_Van_hanh/RETENTION_SCHEDULE_PROPOSED.json",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "json"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/SECURITY_AND_PRIVACY_ACCEPTANCE.md",
+    "title": "Life Code OS Hợp đồng nghiệm thu bảo mật và quyền dữ liệu",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "md"
+  },
+  {
+    "path": "07_Bao_mat_Van_hanh/SERVICE_CATALOG.json",
+    "title": "07_Bao_mat_Van_hanh/SERVICE_CATALOG.json",
+    "group": "07_Bao_mat_Van_hanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md",
+    "title": "Cấp phép quốc tế và nhượng quyền Huyền Nhân Học",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "md"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md",
+    "title": "Mô hình thương mại, chi phí và tính bền vững của miễn phí",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "md"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md",
+    "title": "Lộ trình, phân công và quản trị phụ thuộc",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "md"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md",
+    "title": "Quyết định Q1–Q20: nền cũ và phạm vi mở rộng",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "md"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md",
+    "title": "Giao việc cho AI và DEV: bối cảnh, lệnh thực hiện và báo cáo",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "md"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/06_PROGRAM_EXECUTION_PLAN_2026-10-20.md",
+    "title": "Program execution plan — amendment 2026-10-20",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "md"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/07_REQUIREMENT_TRACEABILITY_2026-10-20.md",
+    "title": "Requirement traceability and evidence rules — amendment 2026-10-20",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "md"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+    "title": "08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/DECISION_EXECUTION_PACKETS.csv",
+    "title": "08_Thuc_thi_Kinh_doanh/DECISION_EXECUTION_PACKETS.csv",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "csv"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/DECISION_EXECUTION_PACKETS.json",
+    "title": "08_Thuc_thi_Kinh_doanh/DECISION_EXECUTION_PACKETS.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+    "title": "08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "csv"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+    "title": "08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+    "title": "08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "csv"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+    "title": "08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/READ_COVERAGE.json",
+    "title": "08_Thuc_thi_Kinh_doanh/READ_COVERAGE.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+    "title": "08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "csv"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+    "title": "08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/REQUIREMENT_TRACE_MATRIX.csv",
+    "title": "08_Thuc_thi_Kinh_doanh/REQUIREMENT_TRACE_MATRIX.csv",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "csv"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/REQUIREMENT_TRACE_MATRIX.json",
+    "title": "08_Thuc_thi_Kinh_doanh/REQUIREMENT_TRACE_MATRIX.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/TASK_EXECUTION_CONTRACTS.csv",
+    "title": "08_Thuc_thi_Kinh_doanh/TASK_EXECUTION_CONTRACTS.csv",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "csv"
+  },
+  {
+    "path": "08_Thuc_thi_Kinh_doanh/TASK_EXECUTION_CONTRACTS.json",
+    "title": "08_Thuc_thi_Kinh_doanh/TASK_EXECUTION_CONTRACTS.json",
+    "group": "08_Thuc_thi_Kinh_doanh",
+    "format": "json"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/01_CURRENT_STATE_AUDIT.md",
+    "title": "Đối chiếu nguồn, nội dung công khai và trạng thái vận hành",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "md"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/BASELINE_LOCK.json",
+    "title": "09_Doi_chieu_Bang_chung/BASELINE_LOCK.json",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "json"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+    "title": "09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "csv"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.json",
+    "title": "09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.json",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "json"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/RESEARCH_UPDATE_2026-10-20.json",
+    "title": "09_Doi_chieu_Bang_chung/RESEARCH_UPDATE_2026-10-20.json",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "json"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/SOURCE_FILE_TRANSFORMATIONS.csv",
+    "title": "09_Doi_chieu_Bang_chung/SOURCE_FILE_TRANSFORMATIONS.csv",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "csv"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/SOURCE_FILE_TRANSFORMATIONS.json",
+    "title": "09_Doi_chieu_Bang_chung/SOURCE_FILE_TRANSFORMATIONS.json",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "json"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+    "title": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "csv"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+    "title": "09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "json"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+    "title": "09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "csv"
+  },
+  {
+    "path": "09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+    "title": "09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+    "group": "09_Doi_chieu_Bang_chung",
+    "format": "json"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/README.md",
+    "title": "Mã tham chiếu và kiểm thử cục bộ",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "md"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/data/demo_cases.json",
+    "title": "10_Ma_tham_chieu_Kiem_thu/data/demo_cases.json",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "json"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+    "title": "10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "json"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/demo.html",
+    "title": "10_Ma_tham_chieu_Kiem_thu/demo.html",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "html"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/package.json",
+    "title": "10_Ma_tham_chieu_Kiem_thu/package.json",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "json"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/requirements-openapi-resolver.txt",
+    "title": "10_Ma_tham_chieu_Kiem_thu/requirements-openapi-resolver.txt",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "txt"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/src/decimal.mjs",
+    "title": "10_Ma_tham_chieu_Kiem_thu/src/decimal.mjs",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "mjs"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+    "title": "10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "mjs"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+    "title": "10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "mjs"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/src/timeline.mjs",
+    "title": "10_Ma_tham_chieu_Kiem_thu/src/timeline.mjs",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "mjs"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+    "title": "10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "tap"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/tests/backend-contract.test.mjs",
+    "title": "10_Ma_tham_chieu_Kiem_thu/tests/backend-contract.test.mjs",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "mjs"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/tests/demo-suite.test.mjs",
+    "title": "10_Ma_tham_chieu_Kiem_thu/tests/demo-suite.test.mjs",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "mjs"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+    "title": "10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "mjs"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+    "title": "10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "py"
+  },
+  {
+    "path": "10_Ma_tham_chieu_Kiem_thu/tools/resolve_openapi.py",
+    "title": "10_Ma_tham_chieu_Kiem_thu/tools/resolve_openapi.py",
+    "group": "10_Ma_tham_chieu_Kiem_thu",
+    "format": "py"
+  },
+  {
+    "path": "FILE_CATALOG.csv",
+    "title": "FILE_CATALOG.csv",
+    "group": "Bắt đầu",
+    "format": "csv"
+  },
+  {
+    "path": "FILE_CATALOG.json",
+    "title": "FILE_CATALOG.json",
+    "group": "Bắt đầu",
+    "format": "json"
+  },
+  {
+    "path": "INDEX.html",
+    "title": "INDEX.html",
+    "group": "Bắt đầu",
+    "format": "html"
+  },
+  {
+    "path": "MANIFEST.json",
+    "title": "MANIFEST.json",
+    "group": "Bắt đầu",
+    "format": "json"
+  },
+  {
+    "path": "README.md",
+    "title": "Life Code OS Bộ kế hoạch hợp nhất chuẩn bị phát triển",
+    "group": "Bắt đầu",
+    "format": "md"
+  },
+  {
+    "path": "REFERENCE_USE_AND_RIGHTS.md",
+    "title": "Phạm vi sử dụng và quyền nguồn",
+    "group": "Bắt đầu",
+    "format": "md"
+  },
+  {
+    "path": "VERIFY_PACKAGE.py",
+    "title": "VERIFY_PACKAGE.py",
+    "group": "Bắt đầu",
+    "format": "py"
+  },
+  {
+    "path": "manifest.txt",
+    "title": "manifest.txt",
+    "group": "Bắt đầu",
+    "format": "txt"
+  }
+]

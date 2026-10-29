@@ -1,0 +1,4151 @@
+{
+  "kind": "XLSX",
+  "sheets": [
+    {
+      "name": "DOC_TRUOC",
+      "rows": [
+        [
+          "LIFE CODE OS | Bảng điều hành nâng cấp",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bản bàn giao 11/10/2026 • Đề xuất, chưa triển khai • Không có dữ liệu người dùng thật.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "MỤC",
+          "CÁCH DÙNG"
+        ],
+        [
+          "Trạng thái",
+          "Backlog = NOT_STARTED; Gates = NOT_CHECKED. Không phải điểm hoàn thiện sản phẩm."
+        ],
+        [
+          "Chỉnh tiến độ",
+          "Cột Status và Evidence trong Backlog/Gates dành cho đội triển khai cập nhật sau khi có bằng chứng."
+        ],
+        [
+          "Ước lượng",
+          "Ngày công là khoảng dự kiến, không phải thời hạn calendar hoặc báo giá."
+        ],
+        [
+          "Ngân sách",
+          "Costs có FTE và tháng đề xuất. Nhập đơn giá đã được duyệt; hệ không tự điền giá thị trường."
+        ],
+        [
+          "Quyền dữ liệu",
+          "Export/correction/delete luôn có luồng miễn phí. Không dùng số hoặc ảnh để xếp hạng con người."
+        ],
+        [
+          "Nguồn",
+          "Sources và SourceMap liên kết nguồn theo SHA hoặc URL. Deployed SHA chưa xác minh."
+        ],
+        [
+          "Bản chuẩn",
+          "Chi tiết đọc trong MASTER PDF/DOCX và các tệp Markdown/JSON. Workbook là bảng quản trị."
+        ],
+        [
+          "Màu chữ",
+          "Xanh lam: ô cần nhập/cập nhật; xanh đậm: tiêu đề; không mã màu giá trị con người."
+        ],
+        [
+          "Khả năng vận hành",
+          "Mã tham chiếu và schema được thử cục bộ; không thay integration/security/production E2E."
+        ]
+      ]
+    },
+    {
+      "name": "Backlog",
+      "rows": [
+        [
+          "140 công việc | Phụ thuộc và nghiệm thu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mọi dòng là việc triển khai cần làm; số ngày công là estimate thiết kế, chưa phải cam kết.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "ID",
+          "Phase",
+          "Công việc",
+          "Chủ trì",
+          "Ưu tiên",
+          "Status",
+          "Ngày công thấp",
+          "Ngày công cao",
+          "Phụ thuộc",
+          "Gate",
+          "Nghiệm thu",
+          "Evidence"
+        ],
+        [
+          "P0-01",
+          "P0",
+          "Chốt scope containment và người chỉ huy",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          null,
+          "G01;G02;G03",
+          "Scope/domain/role được ký; không có quyền deploy ngầm",
+          null
+        ],
+        [
+          "P0-02",
+          "P0",
+          "Lập surface inventory và lưu evidence riêng tư",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-01",
+          "G01;G02;G03",
+          "Liệt kê custom/worker/preview/jobs; không xuất PII",
+          null
+        ],
+        [
+          "P0-03",
+          "P0",
+          "Khóa intake/profile/report/session legacy server-side",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-02",
+          "G01;G02;G03",
+          "Mọi đường vòng được kiểm tra từ bên ngoài với dữ liệu giả",
+          null
+        ],
+        [
+          "P0-04",
+          "P0",
+          "Thu hồi token legacy và chặn cấp theo client ID",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-03",
+          "G01;G02;G03",
+          "Token cũ401; payload user_id không cấp quyền",
+          null
+        ],
+        [
+          "P0-05",
+          "P0",
+          "Ẩn và khóa Engine Lab mọi môi trường public",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-04",
+          "G01;G02;G03",
+          "Direct URL và API vẫn bị chặn, không chỉ noindex",
+          null
+        ],
+        [
+          "P0-06",
+          "P0",
+          "Cách ly LCI/timeline/risk legacy",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-05",
+          "G01;G02;G03",
+          "Không có seeded risk/mission trong output người dùng",
+          null
+        ],
+        [
+          "P0-07",
+          "P0",
+          "Bảo toàn và phân loại hồ sơ legacy",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-06",
+          "G01;G02;G03",
+          "Phân biệt raw input/quyền chưa rõ/output giả",
+          null
+        ],
+        [
+          "P0-08",
+          "P0",
+          "Xác minh clean clone ngoài thư mục iCloud",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-07",
+          "G01;G02;G03",
+          "Có snapshot không phá dữ liệu và diff exact HEAD",
+          null
+        ],
+        [
+          "P0-09",
+          "P0",
+          "Build allowlist và quét artifact tĩnh",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-08",
+          "G01;G02;G03",
+          "Không .env/workers/api/docs nội bộ ngoài allowlist",
+          null
+        ],
+        [
+          "P0-10",
+          "P0",
+          "Deploy containment có approval và receipt",
+          "Security + Platform",
+          "P0",
+          "NOT_STARTED",
+          1,
+          2,
+          "P0-09",
+          "G01;G02;G03",
+          "SHA/artifact/deploy ID/rollback safe liên kết",
+          null
+        ],
+        [
+          "GOV-01",
+          "A",
+          "Khóa Q1–Q12 và Q13–Q20",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "P0-02",
+          "G04;G06",
+          "Từng quyết định có điều kiện, approver và phạm vi",
+          null
+        ],
+        [
+          "GOV-02",
+          "A",
+          "Chốt thuật ngữ VI/EN và claim taxonomy",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "GOV-01",
+          "G04;G06",
+          "Sáu claim types, không ngôn ngữ phán quyết ẩn",
+          null
+        ],
+        [
+          "GOV-03",
+          "A",
+          "Chọn pháp nhân dịch vụ và data roles",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "GOV-02",
+          "G04;G06",
+          "Merchant/controller/processor không mơ hồ",
+          null
+        ],
+        [
+          "GOV-04",
+          "A",
+          "Phê duyệt privacy purposes và notices",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "GOV-03",
+          "G04;G06",
+          "Mục đích dịch vụ/research/marketing tách biệt",
+          null
+        ],
+        [
+          "GOV-05",
+          "A",
+          "Rà soát luật Việt Nam2026 theo chức năng",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "GOV-04",
+          "G04;G06",
+          "Ý kiến áp dụng dữ liệu/AI/TMĐT và chuyển tiếp",
+          null
+        ],
+        [
+          "GOV-06",
+          "A",
+          "Đánh giá IdP/DB/payment/AI vendors",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "GOV-05",
+          "G04;G06",
+          "Data regions/subprocessors/cost/exit được xem",
+          null
+        ],
+        [
+          "GOV-07",
+          "A",
+          "Thiết kế quyền nguồn và học liệu",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "GOV-06",
+          "G04;G06",
+          "Sources/edition/license dùng được có record",
+          null
+        ],
+        [
+          "GOV-08",
+          "A",
+          "Lập release policy và change authority",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "GOV-07",
+          "G04;G06",
+          "Người viết không tự duyệt mọi ranh giới",
+          null
+        ],
+        [
+          "GOV-09",
+          "A",
+          "Chốt first pilot adults/self và scope loại trừ",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "GOV-08",
+          "G04;G06",
+          "Không ảnh/trẻ/sức khỏe sâu ở beta đầu",
+          null
+        ],
+        [
+          "GOV-10",
+          "A",
+          "Chốt phương án xử lý báo cáo sai legacy",
+          "Founder + Product + Legal",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "GOV-09",
+          "G04;G06",
+          "Correction/withdraw/user rights có decision",
+          null
+        ],
+        [
+          "TRUST-01",
+          "B",
+          "Tích hợp OIDC/BFF session chuẩn",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "P0-10;GOV-04",
+          "G02;G03;G05",
+          "Không nhận authority từ client; tests login/logout",
+          null
+        ],
+        [
+          "TRUST-02",
+          "B",
+          "Session digest, expiry, rotation, recovery",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "TRUST-01",
+          "G02;G03;G05",
+          "Không bearer raw DB; recovery không dựa DOB",
+          null
+        ],
+        [
+          "TRUST-03",
+          "B",
+          "Schema account/subject/grant/purpose",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "TRUST-02",
+          "G02;G03;G05",
+          "FK và scope version rõ, defaults deny",
+          null
+        ],
+        [
+          "TRUST-04",
+          "B",
+          "Owner/object authorization middleware",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "TRUST-03",
+          "G02;G03;G05",
+          "Hai account thử read/write/list/download chéo đều deny",
+          null
+        ],
+        [
+          "TRUST-05",
+          "B",
+          "RLS tenant/subject với trusted context",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "TRUST-04",
+          "G02;G03;G05",
+          "Role không bypass; transaction pool không lẫn",
+          null
+        ],
+        [
+          "TRUST-06",
+          "B",
+          "CSRF, Origin và CORS đúng vai trò",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "TRUST-05",
+          "G02;G03;G05",
+          "Mutating request không CSRF bị chặn",
+          null
+        ],
+        [
+          "TRUST-07",
+          "B",
+          "Field/section sharing và grant expiry",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "TRUST-06",
+          "G02;G03;G05",
+          "Quyền thay đổi áp dụng list/export/background",
+          null
+        ],
+        [
+          "TRUST-08",
+          "B",
+          "Intake consent và purpose versioning",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "TRUST-07",
+          "G02;G03;G05",
+          "Client hiểu dữ liệu/retention; rút consent có hiệu lực",
+          null
+        ],
+        [
+          "TRUST-09",
+          "B",
+          "Private media staging và authorized download",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "TRUST-08",
+          "G02;G03;G05",
+          "MIME/size/path checks; URL không trong log",
+          null
+        ],
+        [
+          "TRUST-10",
+          "B",
+          "Break-glass có dual review và expiry",
+          "Backend + Security",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "TRUST-09",
+          "G02;G03;G05",
+          "Không admin đọc mọi hồ sơ mặc định",
+          null
+        ],
+        [
+          "DATA-01",
+          "B",
+          "Triển khai profile version và hypotheses",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "TRUST-03",
+          "G05;G07;G10",
+          "Không ghi đè DOB mâu thuẫn, giữ raw name",
+          null
+        ],
+        [
+          "DATA-02",
+          "B",
+          "Định nghĩa120field và mức cần thu",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "DATA-01",
+          "G05;G07;G10",
+          "Mọi field có purpose/sensitivity/phase",
+          null
+        ],
+        [
+          "DATA-03",
+          "B",
+          "D1 inventory và ownership quarantine",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "DATA-02",
+          "G05;G07;G10",
+          "Hồ sơ chưa rõ không tự map vào account",
+          null
+        ],
+        [
+          "DATA-04",
+          "B",
+          "Dry-run D1→PostgreSQL bằng synthetic",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "DATA-03",
+          "G05;G07;G10",
+          "Counts/checksums/FKs đối soát và rollback",
+          null
+        ],
+        [
+          "DATA-05",
+          "B",
+          "Migration rehearsal với quyền được cấp riêng",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "DATA-04",
+          "G05;G07;G10",
+          "Không lấy production PI trong scope mặc định",
+          null
+        ],
+        [
+          "DATA-06",
+          "B",
+          "Outbox và job receipt schema",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "DATA-05",
+          "G05;G07;G10",
+          "Commit dữ liệu+outbox atomically",
+          null
+        ],
+        [
+          "DATA-07",
+          "B",
+          "Deletion orchestrator xuyên hệ",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "DATA-06",
+          "G05;G07;G10",
+          "DB/R2/index/cache/queue/provider có receipt",
+          null
+        ],
+        [
+          "DATA-08",
+          "B",
+          "Legal hold và backup tombstones",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "DATA-07",
+          "G05;G07;G10",
+          "Restore không tái xuất dữ liệu đã xóa",
+          null
+        ],
+        [
+          "DATA-09",
+          "B",
+          "Export/correction self-service",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "DATA-08",
+          "G05;G07;G10",
+          "Quyền dữ liệu miễn phí và không lẫn subject",
+          null
+        ],
+        [
+          "DATA-10",
+          "B",
+          "Cutover single writer và revert plan",
+          "Data Lead + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "DATA-09",
+          "G05;G07;G10",
+          "Không dualwrite tùy tiện; revert giữ quyền",
+          null
+        ],
+        [
+          "METHOD-01",
+          "C",
+          "NFC/transliteration/name-cycle passport",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "GOV-07",
+          "G06",
+          "Đúng tên gốc; unsupported scripts không bị tự đoán",
+          null
+        ],
+        [
+          "METHOD-02",
+          "C",
+          "Birth sums và calendar-year policy",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "METHOD-01",
+          "G06",
+          "Rule giữ11/22/33 có version riêng",
+          null
+        ],
+        [
+          "METHOD-03",
+          "C",
+          "Timezone/date precision và leap rules",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "METHOD-02",
+          "G06",
+          "Unknown không thành00:00; ranh giới lịch có fixture",
+          null
+        ],
+        [
+          "METHOD-04",
+          "C",
+          "Mã đuôi80 với zero policy",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "METHOD-03",
+          "G06",
+          "10.000suffix đối chiếu; unmapped mặc định",
+          null
+        ],
+        [
+          "METHOD-05",
+          "C",
+          "Registry80 label/source/editorial riêng",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "METHOD-04",
+          "G06",
+          "Mục34/55 còn note; nhãn không tự đổi",
+          null
+        ],
+        [
+          "METHOD-06",
+          "C",
+          "64cặp số và unresolved0/5",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "METHOD-05",
+          "G06",
+          "Overlapping pair, đủ64không trùng; không tự hóa giải",
+          null
+        ],
+        [
+          "METHOD-07",
+          "C",
+          "Server-required coverage và nullable metrics",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "METHOD-06",
+          "G06",
+          "Client không chọn denominator; không score mặc định",
+          null
+        ],
+        [
+          "METHOD-08",
+          "C",
+          "Age intervals0–99 và4timeline tracks",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "METHOD-07",
+          "G06",
+          "Không seeded risk; zero-data không tạo biography",
+          null
+        ],
+        [
+          "METHOD-09",
+          "C",
+          "Goal progress metric từ observation",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "METHOD-08",
+          "G06",
+          "Có denominator/timewindow/source; không chẩn đoán",
+          null
+        ],
+        [
+          "METHOD-10",
+          "C",
+          "Method release registry và revoke impact",
+          "Method Council + Engineer",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "METHOD-09",
+          "G06",
+          "Method revoked chặn chạy/publish mới đúng scope",
+          null
+        ],
+        [
+          "WEB-01",
+          "C",
+          "Chỉnh home/levels claims và giữ URL",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "GOV-02;TRUST-03",
+          "G03;G08;G12",
+          "Không hứa tiên tri; redirects/canonical kiểm tra",
+          null
+        ],
+        [
+          "WEB-02",
+          "C",
+          "Guest deterministic tools không tài khoản",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "WEB-01",
+          "G03;G08;G12",
+          "Không raw input analytics; có unknown/tableversion",
+          null
+        ],
+        [
+          "WEB-03",
+          "C",
+          "Needs-first onboarding và save-draft",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "WEB-02",
+          "G03;G08;G12",
+          "Form ít trường, nêu purpose và lỗi rõ",
+          null
+        ],
+        [
+          "WEB-04",
+          "C",
+          "Profile/hypothesis editor",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "WEB-03",
+          "G03;G08;G12",
+          "Ngày thiếu và mâu thuẫn hiển thị đúng",
+          null
+        ],
+        [
+          "WEB-05",
+          "C",
+          "Consent center/access grants UI",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "WEB-04",
+          "G03;G08;G12",
+          "Ai thấy gì/thời hạn/revoke có feedback",
+          null
+        ],
+        [
+          "WEB-06",
+          "C",
+          "Dashboard goals/actions/data completeness",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "WEB-05",
+          "G03;G08;G12",
+          "Không đồng hồ nguy cơ giả, null không thành0",
+          null
+        ],
+        [
+          "WEB-07",
+          "C",
+          "Journal/resonance check-in",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "WEB-06",
+          "G03;G08;G12",
+          "Lưu tự thuật, optional fields và unit/source",
+          null
+        ],
+        [
+          "WEB-08",
+          "C",
+          "Report reader/diff/revision/withdrawn",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "WEB-07",
+          "G03;G08;G12",
+          "Chỉ đúng subject; label/common vs personalized",
+          null
+        ],
+        [
+          "WEB-09",
+          "C",
+          "Responsive/i18n/date/RTL foundation",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "WEB-08",
+          "G03;G08;G12",
+          "VI glossary, locale switch bằng tên ngôn ngữ",
+          null
+        ],
+        [
+          "WEB-10",
+          "C",
+          "WCAG2.2AA kiểm thử flow chính",
+          "Frontend + UX",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "WEB-09",
+          "G03;G08;G12",
+          "Keyboard/focus/errors/reducedmotion/screenreader",
+          null
+        ],
+        [
+          "API-01",
+          "C",
+          "OpenAPI3.1 contract generation",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "TRUST-04;DATA-01",
+          "G03;G06;G09",
+          "Request/response/error refs validate",
+          null
+        ],
+        [
+          "API-02",
+          "C",
+          "Subject/profile/observation CRUD",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "API-01",
+          "G03;G06;G09",
+          "IfMatch conflict, pagination và object permissions",
+          null
+        ],
+        [
+          "API-03",
+          "C",
+          "Analysis run create/status/cancel",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "API-02",
+          "G03;G06;G09",
+          "202idempotent; product/input/method policy",
+          null
+        ],
+        [
+          "API-04",
+          "C",
+          "Claim/result scoped retrieval",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "API-03",
+          "G03;G06;G09",
+          "Lineage và no-data semantics trả đúng",
+          null
+        ],
+        [
+          "API-05",
+          "C",
+          "Plan/action/check-in APIs",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "API-04",
+          "G03;G06;G09",
+          "Scope/timezone/goals, không arbitrary owner",
+          null
+        ],
+        [
+          "API-06",
+          "C",
+          "Report snapshot/review/export/download",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "API-05",
+          "G03;G06;G09",
+          "Approval server không queryID tùy ý",
+          null
+        ],
+        [
+          "API-07",
+          "C",
+          "Catalog/order/entitlement APIs",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "API-06",
+          "G03;G06;G09",
+          "Price từ server, no client amount authority",
+          null
+        ],
+        [
+          "API-08",
+          "C",
+          "Practice case/sharing APIs",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "API-07",
+          "G03;G06;G09",
+          "Only granted sections, offboard revokes",
+          null
+        ],
+        [
+          "API-09",
+          "C",
+          "Legacy route410/adapter migration",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "API-08",
+          "G03;G06;G09",
+          "Không fallback bypass khi v2auth fail",
+          null
+        ],
+        [
+          "API-10",
+          "C",
+          "Contract-to-E2E negative suite",
+          "Backend + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "API-09",
+          "G03;G06;G09",
+          "Mọi protected operation có ID cross test",
+          null
+        ],
+        [
+          "AI-01",
+          "C",
+          "Provider gateway và per-purpose policy",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "GOV-06;METHOD-10",
+          "G06;G08",
+          "Không tự fallback vendor chưa legal review",
+          null
+        ],
+        [
+          "AI-02",
+          "C",
+          "Source ingestion với ACL và rights",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "AI-01",
+          "G06;G08",
+          "Chunk metadata edition/page/locale/rights",
+          null
+        ],
+        [
+          "AI-03",
+          "C",
+          "Retriever subject/tenant trước và sau search",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "AI-02",
+          "G06;G08",
+          "Canary dữ liệu tenant khác không được trả",
+          null
+        ],
+        [
+          "AI-04",
+          "C",
+          "Claim-driven synthesis tool contract",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "AI-03",
+          "G06;G08",
+          "No unsupported personal claims, no score invention",
+          null
+        ],
+        [
+          "AI-05",
+          "C",
+          "Writer VI và glossary",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "AI-04",
+          "G06;G08",
+          "Names/digits/dates từ results immutable",
+          null
+        ],
+        [
+          "AI-06",
+          "C",
+          "Reviewer deterministic số liệu và sources",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "AI-05",
+          "G06;G08",
+          "No unmatched IDs, no fake citations",
+          null
+        ],
+        [
+          "AI-07",
+          "C",
+          "Prompt injection regression multilang",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "AI-06",
+          "G06;G08",
+          "Tài liệu không override policies/tools",
+          null
+        ],
+        [
+          "AI-08",
+          "C",
+          "Budget/quota/circuitbreaker/degrade",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "AI-07",
+          "G06;G08",
+          "Cost cap stops generation; deterministic still works",
+          null
+        ],
+        [
+          "AI-09",
+          "C",
+          "AI tutor/support scope tools",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "AI-08",
+          "G06;G08",
+          "Status/refund từ server; no invented completion",
+          null
+        ],
+        [
+          "AI-10",
+          "C",
+          "Autonomy center và opt-in reminders",
+          "AI Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "AI-09",
+          "G06;G08",
+          "A0–A3 enforcement, quiet hours và kill switch",
+          null
+        ],
+        [
+          "REPORT-01",
+          "D",
+          "Structured content tree và snapshot schema",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "AI-05;API-06",
+          "G08",
+          "Câu nguồn/claim có link; personal/common khác nhãn",
+          null
+        ],
+        [
+          "REPORT-02",
+          "D",
+          "Template L1 chuẩn đọc và30dayactions",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "REPORT-01",
+          "G08",
+          "Không filler/inborn certainty/hidden score",
+          null
+        ],
+        [
+          "REPORT-03",
+          "D",
+          "Templates L2–L5 dữ liệu thực",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "REPORT-02",
+          "G08",
+          "Missing input không thay bằng số",
+          null
+        ],
+        [
+          "REPORT-04",
+          "D",
+          "Templates L6–L9 và dedup book",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "REPORT-03",
+          "G08",
+          "Các timeline riêng, L9không nối bản lặp",
+          null
+        ],
+        [
+          "REPORT-05",
+          "D",
+          "HTML/Web renderer accessible",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "REPORT-04",
+          "G08",
+          "Sanitize, private noindex, stable section anchors",
+          null
+        ],
+        [
+          "REPORT-06",
+          "D",
+          "PDF render sandbox font/link/bookmark",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "REPORT-05",
+          "G08",
+          "Selectable VI, no remote arbitrary assets",
+          null
+        ],
+        [
+          "REPORT-07",
+          "D",
+          "DOCX exporter headings/TOC/table",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "REPORT-06",
+          "G08",
+          "Không ảnh toàn trang, metadata clean",
+          null
+        ],
+        [
+          "REPORT-08",
+          "D",
+          "Visual regression và a11y review",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "REPORT-07",
+          "G08",
+          "Trang nào lỗi phải sửa trước publish",
+          null
+        ],
+        [
+          "REPORT-09",
+          "D",
+          "Withdrawal/correction impact workflow",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "REPORT-08",
+          "G08",
+          "Method revocation tìm report; user notified đúng",
+          null
+        ],
+        [
+          "REPORT-10",
+          "D",
+          "Pilot editorial capacity tracking",
+          "Report Lead + Editorial",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "REPORT-09",
+          "G08",
+          "Review SLA/cost/error feedback; chưa auto sensitive",
+          null
+        ],
+        [
+          "COMMERCE-01",
+          "D",
+          "SKU/pricing/quotes từ server",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "TRUST-04;GOV-03",
+          "G09;G12",
+          "Free quyền dữ liệu; price version locked",
+          null
+        ],
+        [
+          "COMMERCE-02",
+          "D",
+          "Payment provider legal merchant approval",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "COMMERCE-01",
+          "G09;G12",
+          "Không giả availability/đã ký hợp đồng",
+          null
+        ],
+        [
+          "COMMERCE-03",
+          "D",
+          "Webhook signature và raw-body check",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "COMMERCE-02",
+          "G09;G12",
+          "Sai chữ ký bị deny trước parsebusiness",
+          null
+        ],
+        [
+          "COMMERCE-04",
+          "D",
+          "Event replay/out-of-order/idempotency",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "COMMERCE-03",
+          "G09;G12",
+          "Một payment một effect; lưu payloadhash",
+          null
+        ],
+        [
+          "COMMERCE-05",
+          "D",
+          "Entitlement ledger/expiry/revoke",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "COMMERCE-04",
+          "G09;G12",
+          "Không từ successredirect; subjectgrant vẫn check",
+          null
+        ],
+        [
+          "COMMERCE-06",
+          "D",
+          "Refund/cancel/dispute state machine",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "COMMERCE-05",
+          "G09;G12",
+          "Policy giới hạn, auditable, no AI arbitrary money",
+          null
+        ],
+        [
+          "COMMERCE-07",
+          "D",
+          "Invoice/receipt/consumer disclosures",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "COMMERCE-06",
+          "G09;G12",
+          "Scope/delivery/revisions/tax theo entity duyệt",
+          null
+        ],
+        [
+          "COMMERCE-08",
+          "D",
+          "Support ticket/status/escalation",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "COMMERCE-07",
+          "G09;G12",
+          "Không đọc journal nếu không cần",
+          null
+        ],
+        [
+          "COMMERCE-09",
+          "D",
+          "Free/paid unit economics load pilot",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "COMMERCE-08",
+          "G09;G12",
+          "Costinputs thực thay assumptions, caps enforce",
+          null
+        ],
+        [
+          "COMMERCE-10",
+          "D",
+          "Payment-to-report complete staging flow",
+          "Commerce + Finance + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "COMMERCE-09",
+          "G09;G12",
+          "Paid nhưng notready không giả delivered",
+          null
+        ],
+        [
+          "OPS-01",
+          "D",
+          "CI required tests/secret/dependency scans",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "P0-10",
+          "G01;G10;G11;G12",
+          "No dirty deploy; protected review evidence",
+          null
+        ],
+        [
+          "OPS-02",
+          "D",
+          "Pages allowlist/artifact integrity",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "OPS-01",
+          "G01;G10;G11;G12",
+          "Chỉ assets public; docs/api không vô tình xuất",
+          null
+        ],
+        [
+          "OPS-03",
+          "D",
+          "Worker/Pages deployment receipts",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "OPS-02",
+          "G01;G10;G11;G12",
+          "SHA/artifact/config/schema/env/version nối nhau",
+          null
+        ],
+        [
+          "OPS-04",
+          "D",
+          "Observability privacy-safe",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "OPS-03",
+          "G01;G10;G11;G12",
+          "No raw PI/tokens/presignedURL; trace IDs",
+          null
+        ],
+        [
+          "OPS-05",
+          "D",
+          "Load/fault tests queue and AI providers",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "OPS-04",
+          "G01;G10;G11;G12",
+          "Retry limits/DLQ/circuitbreakers đo được",
+          null
+        ],
+        [
+          "OPS-06",
+          "D",
+          "Backup restore drill và RPO/RTO",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "OPS-05",
+          "G01;G10;G11;G12",
+          "Đo thời gian và replaydeletions trước mở",
+          null
+        ],
+        [
+          "OPS-07",
+          "D",
+          "Incident tabletop và breach decision path",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "OPS-06",
+          "G01;G10;G11;G12",
+          "Role/clock/evidence/legal/comms có rehearsal",
+          null
+        ],
+        [
+          "OPS-08",
+          "D",
+          "Independent security test/retest",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "OPS-07",
+          "G01;G10;G11;G12",
+          "No unresolved critical auth/data findings",
+          null
+        ],
+        [
+          "OPS-09",
+          "D",
+          "Canary rollout và safe rollback",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          3,
+          7,
+          "OPS-08",
+          "G01;G10;G11;G12",
+          "Không rollback vào vulnerable legacy",
+          null
+        ],
+        [
+          "OPS-10",
+          "D",
+          "GO/NO_GO packet paid pilot",
+          "SRE + Security + QA",
+          "P1",
+          "NOT_STARTED",
+          2,
+          5,
+          "OPS-09",
+          "G01;G10;G11;G12",
+          "Cả12gates applicable có evidence và signatures",
+          null
+        ],
+        [
+          "ACADEMY-01",
+          "E",
+          "Curriculum9buổi120phút và outcomes",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "GOV-07;REPORT-01",
+          "G04;G06;G08;G12",
+          "Mỗi buổi có bài tập/rubric/source",
+          null
+        ],
+        [
+          "ACADEMY-02",
+          "E",
+          "Course content licensing và locale review",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "ACADEMY-01",
+          "G04;G06;G08;G12",
+          "Không fulltext unlicensed; biết phần chưa đọc",
+          null
+        ],
+        [
+          "ACADEMY-03",
+          "E",
+          "Enrollment/schedule/learning UI",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "ACADEMY-02",
+          "G04;G06;G08;G12",
+          "Dates current bycohort, không tự oldlaunch",
+          null
+        ],
+        [
+          "ACADEMY-04",
+          "E",
+          "Assessment/calculation/ethics rubric",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "ACADEMY-03",
+          "G04;G06;G08;G12",
+          "Fail hard on privacy/fabrication/medicalclaim",
+          null
+        ],
+        [
+          "ACADEMY-05",
+          "E",
+          "Supervised practitioner case workflow",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "ACADEMY-04",
+          "G04;G06;G08;G12",
+          "Scope/glossary/reviewer/grant đầy đủ",
+          null
+        ],
+        [
+          "ACADEMY-06",
+          "E",
+          "Internal certificate issue/revoke/verify",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "ACADEMY-05",
+          "G04;G06;G08;G12",
+          "Không đại diện clinical license; expired clear",
+          null
+        ],
+        [
+          "ACADEMY-07",
+          "E",
+          "Practitioner billing and calendar adapter",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "ACADEMY-06",
+          "G04;G06;G08;G12",
+          "Không quyền thừa, doublebooking handled",
+          null
+        ],
+        [
+          "ACADEMY-08",
+          "E",
+          "Trainer approval và updates by version",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "ACADEMY-07",
+          "G04;G06;G08;G12",
+          "Rule retired kéo theo học liệu review",
+          null
+        ],
+        [
+          "ACADEMY-09",
+          "E",
+          "Complaint and practitioner suspension",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "ACADEMY-08",
+          "G04;G06;G08;G12",
+          "Dueprocess, clients continuity, nopublicPI",
+          null
+        ],
+        [
+          "ACADEMY-10",
+          "E",
+          "Educational pilot evaluation",
+          "Academic + Practice Lead",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "ACADEMY-09",
+          "G04;G06;G08;G12",
+          "User comprehension và safe practice measurable",
+          null
+        ],
+        [
+          "EXPAND-01",
+          "E",
+          "Levels2–3 observation-driven launch",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "OPS-10",
+          "G03;G04;G05;G08",
+          "No DOB alone personality evidence",
+          null
+        ],
+        [
+          "EXPAND-02",
+          "E",
+          "Work/wealth scenario governance",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "EXPAND-01",
+          "G03;G04;G05;G08",
+          "Inputs/assumptions/referral, no auto investment",
+          null
+        ],
+        [
+          "EXPAND-03",
+          "E",
+          "Relationship dual-subject consent",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "EXPAND-02",
+          "G03;G04;G05;G08",
+          "Withdrawal invalidates jointprocessing",
+          null
+        ],
+        [
+          "EXPAND-04",
+          "E",
+          "Resonance experiments reversible",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "EXPAND-03",
+          "G03;G04;G05;G08",
+          "No food-as-treatment prescriptions",
+          null
+        ],
+        [
+          "EXPAND-05",
+          "E",
+          "Adult family sharing foundation",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "EXPAND-04",
+          "G03;G04;G05;G08",
+          "No familyadmin reads all bydefault",
+          null
+        ],
+        [
+          "EXPAND-06",
+          "E",
+          "Minor/guardian country policy design",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "EXPAND-05",
+          "G03;G04;G05;G08",
+          "Notenabled until specialized review",
+          null
+        ],
+        [
+          "EXPAND-07",
+          "E",
+          "Body intake specialist/dpia gate",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "EXPAND-06",
+          "G03;G04;G05;G08",
+          "No morphology traits/medical inference",
+          null
+        ],
+        [
+          "EXPAND-08",
+          "E",
+          "Organization work-profile separation",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "EXPAND-07",
+          "G03;G04;G05;G08",
+          "No privatejournal employee analytics",
+          null
+        ],
+        [
+          "EXPAND-09",
+          "E",
+          "Aggregates reidentification tests",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "EXPAND-08",
+          "G03;G04;G05;G08",
+          "Smallcohort/differencing blocked",
+          null
+        ],
+        [
+          "EXPAND-10",
+          "E",
+          "Mobile value assessment and offline design",
+          "Product + Data + Privacy",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "EXPAND-09",
+          "G03;G04;G05;G08",
+          "Shared API/core, devicevault and syncconflicts",
+          null
+        ],
+        [
+          "GLOBAL-01",
+          "F",
+          "Country packs VN/EU/US/AU/SG",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "OPS-10;GOV-03",
+          "G03;G04;G06;G12",
+          "No launch without legal/locale/vendor approval",
+          null
+        ],
+        [
+          "GLOBAL-02",
+          "F",
+          "License-vs-franchise classification",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "GLOBAL-01",
+          "G03;G04;G06;G12",
+          "Substance notlabel; jurisdiction opinion",
+          null
+        ],
+        [
+          "GLOBAL-03",
+          "F",
+          "Trademark/translation/source rights clearance",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "GLOBAL-02",
+          "G03;G04;G06;G12",
+          "Madridfiling notglobalgrant; scope documented",
+          null
+        ],
+        [
+          "GLOBAL-04",
+          "F",
+          "Regional partner term sheet and economics",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "GLOBAL-03",
+          "G03;G04;G06;G12",
+          "No guaranteed ROI; territory/fees conditional",
+          null
+        ],
+        [
+          "GLOBAL-05",
+          "F",
+          "Tenantbrand policy intersection",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "GLOBAL-04",
+          "G03;G04;G06;G12",
+          "Denywins, cannot override method/safety",
+          null
+        ],
+        [
+          "GLOBAL-06",
+          "F",
+          "Trainer country qualification and audits",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "GLOBAL-05",
+          "G03;G04;G06;G12",
+          "Language/content/expertise scope verified",
+          null
+        ],
+        [
+          "GLOBAL-07",
+          "F",
+          "Partner API OAuth/scopes/quota",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "GLOBAL-06",
+          "G03;G04;G06;G12",
+          "No master cross-tenant token",
+          null
+        ],
+        [
+          "GLOBAL-08",
+          "F",
+          "Data residency/subprocessor routing",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "GLOBAL-07",
+          "G03;G04;G06;G12",
+          "Country purpose provider approved, failclosed",
+          null
+        ],
+        [
+          "GLOBAL-09",
+          "F",
+          "Partner exit/revocation/client continuity",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          3,
+          7,
+          "GLOBAL-08",
+          "G03;G04;G06;G12",
+          "Exports/deletion/support continue under policy",
+          null
+        ],
+        [
+          "GLOBAL-10",
+          "F",
+          "International pilot release decision",
+          "Partnerships + Legal + Platform",
+          "P2",
+          "NOT_STARTED",
+          2,
+          5,
+          "GLOBAL-09",
+          "G03;G04;G06;G12",
+          "Real unit economics, support coverage, legal signoff",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "Gates",
+      "rows": [
+        [
+          "12 cổng phát hành",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Không cộng trung bình để bù lỗi bảo mật. Chỉ PASS khi có bằng chứng đúng scope.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "Gate",
+          "Tên",
+          "Chủ trì",
+          "Status",
+          "Tiêu chí",
+          "Evidence"
+        ],
+        [
+          "G01",
+          "Source & Release",
+          "Tech Lead",
+          "NOT_CHECKED",
+          "SHA/artifact/deployed receipt/schema/rollback",
+          null
+        ],
+        [
+          "G02",
+          "Authentication",
+          "Backend + Security",
+          "NOT_CHECKED",
+          "Client không quyết danh tính; session/recovery tests",
+          null
+        ],
+        [
+          "G03",
+          "Authorization",
+          "Security + QA",
+          "NOT_CHECKED",
+          "Object/tenant/field/grant negative tests",
+          null
+        ],
+        [
+          "G04",
+          "Legal & Purpose",
+          "Legal + Privacy",
+          "NOT_CHECKED",
+          "Pháp nhân/scope/country/basis/notices",
+          null
+        ],
+        [
+          "G05",
+          "Retention & Deletion",
+          "Data + Privacy",
+          "NOT_CHECKED",
+          "Xóa DB/R2/cache/index/queue/provider; backup restore",
+          null
+        ],
+        [
+          "G06",
+          "Methods & Claims",
+          "Method Council",
+          "NOT_CHECKED",
+          "Passport/rights/tests/null/approved rules",
+          null
+        ],
+        [
+          "G07",
+          "Legacy & Migration",
+          "Data Lead",
+          "NOT_CHECKED",
+          "Quarantine, ownership, reconciliation",
+          null
+        ],
+        [
+          "G08",
+          "Reports & AI",
+          "Editorial + AI",
+          "NOT_CHECKED",
+          "Claim lineage, policy, render quality",
+          null
+        ],
+        [
+          "G09",
+          "Commerce",
+          "Commerce + QA",
+          "NOT_CHECKED",
+          "Signature/replay/refund/entitlement tests",
+          null
+        ],
+        [
+          "G10",
+          "Reliability",
+          "SRE",
+          "NOT_CHECKED",
+          "Load/retry/DLQ/restore/RPO/RTO",
+          null
+        ],
+        [
+          "G11",
+          "Security Review",
+          "Independent Security",
+          "NOT_CHECKED",
+          "Review/retest/no unresolved blockers",
+          null
+        ],
+        [
+          "G12",
+          "Operations & Pilot",
+          "Program + Founder",
+          "NOT_CHECKED",
+          "Support/economics/incident/pilot/release decision",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "Decisions",
+      "rows": [
+        [
+          "Q1–Q20 | Quyết định cần phê duyệt",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yêu cầu xuất kế hoạch không tự là lệnh deploy hoặc phê duyệt từng Q.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "Mã",
+          "Quyết định",
+          "Status",
+          "Người duyệt",
+          "Điều kiện / bằng chứng"
+        ],
+        [
+          "Q1",
+          "Định vị tự hiểu và thiết kế đời sống",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q2",
+          "9 cấp/12 lớp/4 phần/12 trường/K01–20",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q3",
+          "Method độc lập theo nguồn và phiên bản",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q4",
+          "Entitlement khác quyền và đủ dữ liệu",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q5",
+          "Dừng điểm giả và cho null",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q6",
+          "Numbers là tham chiếu không đo số phận",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q7",
+          "Báo cáo cấu trúc không filler",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q8",
+          "Dòng sản phẩm mở theo gates",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q9",
+          "Privacy, auth, delete từ đầu",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q10",
+          "Tám bộ nền từ source/runtime khóa",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q11",
+          "Quarantine experimental_legacy",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q12",
+          "Passport/rights/tests/limits/approver",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q13",
+          "Free Essentials và quota minh bạch",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q14",
+          "Pháp nhân/merchant/controller",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q15",
+          "IdP/PG/payment/AI provider selection",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q16",
+          "Autonomy A0–A3 và kill switches",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q17",
+          "Academy/practitioner scope",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q18",
+          "Organization privacy boundary",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q19",
+          "Country pack và license/franchise",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ],
+        [
+          "Q20",
+          "Budget/team/roadmap có điều kiện",
+          "PENDING_FOUNDER",
+          "Founder + chức năng liên quan",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "Products",
+      "rows": [
+        [
+          "23 sản phẩm / dòng dịch vụ đề xuất",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Miễn phí → cá nhân → chuyên gia → tổ chức → cấp phép. Price và launch status cần duyệt riêng.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "SKU",
+          "Sản phẩm",
+          "Cấp",
+          "Phase",
+          "Dòng",
+          "Đầu ra",
+          "Giới hạn"
+        ],
+        [
+          "LC-L1",
+          "Tín hiệu nền",
+          1,
+          "C",
+          "personal_report",
+          "Kiểm tra nguồn, tính minh bạch, chủ đề tự quan sát",
+          "Kế hoạch 30 ngày"
+        ],
+        [
+          "LC-L2",
+          "Cấu trúc nội tâm",
+          2,
+          "E",
+          "personal_report",
+          "Mâu thuẫn nhu cầu và lựa chọn được xác nhận",
+          "Thử nghiệm 90 ngày"
+        ],
+        [
+          "LC-L3",
+          "Cách hành động",
+          3,
+          "E",
+          "personal_report",
+          "Mô thức trong bối cảnh, không chẩn đoán",
+          "Kế hoạch thay đổi có theo dõi"
+        ],
+        [
+          "LC-L4",
+          "Công việc và nguồn lực",
+          4,
+          "E",
+          "personal_report",
+          "Phương án vai trò, nguồn lực, kịch bản",
+          "Kế hoạch công việc và ngân sách"
+        ],
+        [
+          "LC-L5",
+          "Quan hệ và ranh giới",
+          5,
+          "E",
+          "personal_report",
+          "Bản đồ giao tiếp, trách nhiệm, khác biệt",
+          "Kế hoạch đối thoại"
+        ],
+        [
+          "LC-L6",
+          "Dòng thời gian",
+          6,
+          "F",
+          "personal_report",
+          "Lịch sử, chu kỳ biểu tượng, kế hoạch, dự báo tách biệt",
+          "Hành động 12 tháng, kịch bản dài hạn"
+        ],
+        [
+          "LC-L7",
+          "Cơ thể và môi trường",
+          7,
+          "F_REVIEW",
+          "personal_report",
+          "Mô tả hình thức, nhật ký sinh hoạt, giới hạn",
+          "Quan sát và trao đổi chuyên môn phù hợp"
+        ],
+        [
+          "LC-L8",
+          "Hướng sống và phụng sự",
+          8,
+          "F",
+          "personal_report",
+          "Hướng sống tự chọn, không nhiệm vụ linh hồn bắt buộc",
+          "Thử nghiệm phụng sự và kế hoạch chuyển giao"
+        ],
+        [
+          "LC-L9",
+          "Hồ sơ đời sống hợp nhất",
+          9,
+          "F",
+          "personal_report",
+          "Sách không lặp, lineage, điều chưa biết, revisions",
+          "Hệ hành động và xem lại"
+        ],
+        [
+          "LC-GUEST",
+          "Công cụ không tài khoản",
+          null,
+          "C",
+          "free",
+          "Công cụ deterministic tại thiết bị; không gửi tên/đuôi số vào analytics",
+          "Không AI vô hạn; không lưu hồ sơ"
+        ],
+        [
+          "LC-FREE",
+          "Hồ sơ căn bản miễn phí",
+          null,
+          "C",
+          "free",
+          "Một subject tự quản, một mục tiêu, nhật ký, Snapshot và quyền dữ liệu",
+          "AI quota đề xuất; không giảm quyền export/delete"
+        ],
+        [
+          "LC-COMPANION",
+          "AI đồng hành",
+          null,
+          "D",
+          "subscription",
+          "Hỏi báo cáo, kế hoạch, nhắc việc được phép, review mục tiêu",
+          "Cấm dự báo nguy cơ từ số"
+        ],
+        [
+          "LC-NUMBERS",
+          "Bộ số và tên",
+          null,
+          "C",
+          "module",
+          "Thẻ kết quả từng phương pháp; so sánh cấu trúc",
+          "Không score đổi vận; PIN/OTP bị loại"
+        ],
+        [
+          "LC-EXPERT",
+          "Phiên chuyên gia",
+          null,
+          "D",
+          "session",
+          "Thời lượng/scope/revision xác định; practitioner grant",
+          "Không quyết thay client"
+        ],
+        [
+          "LC-PRACTICE",
+          "Không gian chuyên gia",
+          null,
+          "E",
+          "subscription",
+          "Case, lịch, ghi chú, review, report",
+          "Chỉ subject grants hợp lệ"
+        ],
+        [
+          "LC-ACADEMY-FOUNDATION",
+          "Khóa nền HNH chín buổi",
+          null,
+          "E",
+          "cohort",
+          "9×120 phút, bài tập và đánh giá",
+          "Chứng nhận nội bộ có phạm vi"
+        ],
+        [
+          "LC-ACADEMY-PRO",
+          "Đào tạo thực hành có giám sát",
+          null,
+          "F",
+          "cohort",
+          "Supervised cases và ethics assessment",
+          "Không cấp bằng lâm sàng"
+        ],
+        [
+          "LC-ACADEMY-TRAINER",
+          "Đào tạo giảng viên",
+          null,
+          "F",
+          "license",
+          "Học liệu/version, dạy thử, quality review",
+          "Quyền ngôn ngữ/lãnh thổ riêng"
+        ],
+        [
+          "LC-FAMILY",
+          "Gia đình có quyền riêng",
+          null,
+          "E_F_REVIEW",
+          "subscription",
+          "Mục tiêu chung, chia sẻ người lớn; minor flow chưa mở",
+          "Guardian/country gate riêng"
+        ],
+        [
+          "LC-ORG",
+          "Tổ chức và doanh nghiệp",
+          null,
+          "F",
+          "license",
+          "Vai trò, học tập, mục tiêu, projects, aggregates phù hợp",
+          "Không hiring/credit scoring từ biểu tượng"
+        ],
+        [
+          "LC-API",
+          "API cấp phép",
+          null,
+          "F",
+          "usage",
+          "Tenant/purpose scoped API, quota, method versions",
+          "Không bulk private profiling"
+        ],
+        [
+          "LC-PUBLISH",
+          "Xuất bản và bộ sách",
+          null,
+          "D",
+          "one_time",
+          "Snapshot và exports theo scope",
+          "Không bảo đảm600trang mỗi hồ sơ"
+        ],
+        [
+          "LC-REGIONAL",
+          "Cấp phép quốc gia/nhượng quyền",
+          null,
+          "F_LEGAL",
+          "contract",
+          "Brand/curriculum/software scope và continuity",
+          "Không mở lãnh thổ trước legal gate"
+        ]
+      ]
+    },
+    {
+      "name": "SourceMap",
+      "rows": [
+        [
+          "30 điểm đối chiếu nguồn → đích",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "PUBLIC_CONTENT không phải deployed SHA. Đọc source evidence register trước khi nhận định runtime.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "Mã",
+          "Bề mặt",
+          "Tệp nguồn",
+          "Xử lý",
+          "Đích",
+          "Task",
+          "Tiêu chí"
+        ],
+        [
+          "MAP-01",
+          "/",
+          "index.html",
+          "KEEP_REWRITE",
+          "/",
+          "WEB-01",
+          "Remove absoluteprediction and fake score proof; clarify launchscope"
+        ],
+        [
+          "MAP-02",
+          "/gioi-thieu",
+          "gioi-thieu.html",
+          "REWRITE",
+          "/gioi-thieu",
+          "WEB-01",
+          "Founder selfdeclared expertise vsverified credential distinguished"
+        ],
+        [
+          "MAP-03",
+          "/he-thong-life-code",
+          "he-thong-life-code.html",
+          "REWRITE",
+          "/he-thong-life-code",
+          "GOV-02",
+          "Correct typedclaims/12layers/9products/unknown handling"
+        ],
+        [
+          "MAP-04",
+          "/9-levels-life-code",
+          "9-levels-life-code.html",
+          "REWRITE",
+          "/9-levels-life-code",
+          "GOV-09",
+          "DAG eligibility; page budget notevidence; scope release"
+        ],
+        [
+          "MAP-05",
+          "/life-code-index",
+          "life-code-index.html",
+          "DEPRECATE_LEGACY_COPY",
+          "/life-code-index",
+          "METHOD-07",
+          "Nulls; no clientdenominator/inbornpersonscore"
+        ],
+        [
+          "MAP-06",
+          "/timeline-cuoc-doi",
+          "timeline-cuoc-doi.html",
+          "REWRITE",
+          "/timeline-cuoc-doi",
+          "METHOD-08",
+          "History/symbolic/plan/model tracks; no seedrisk"
+        ],
+        [
+          "MAP-07",
+          "/bao-cao-life-code",
+          "bao-cao-life-code.html",
+          "REWRITE",
+          "/bao-cao-life-code",
+          "REPORT-01",
+          "Structuredsnapshot/version; pagecounts conditional"
+        ],
+        [
+          "MAP-08",
+          "/bat-dau",
+          "bat-dau.html",
+          "CONTAIN_THEN_REPLACE",
+          "/app/start",
+          "P0-03",
+          "Stop hardcoded scores and unsafe session"
+        ],
+        [
+          "MAP-09",
+          "/dashboard",
+          "dashboard.html",
+          "CONTAIN_THEN_REPLACE",
+          "/app/dashboard",
+          "WEB-06",
+          "Privateauth goalsfirst, no pseudo-riskdials"
+        ],
+        [
+          "MAP-10",
+          "/account",
+          "account.html",
+          "CONTAIN_THEN_REPLACE",
+          "/app/settings",
+          "TRUST-01",
+          "Session/authmodel not clientuser_id"
+        ],
+        [
+          "MAP-11",
+          "/engine-lab",
+          "engine-lab.html",
+          "RESTRICT",
+          "/internal/engine-lab",
+          "P0-05",
+          "Serveraccess allowlist; hidealone insufficient"
+        ],
+        [
+          "MAP-12",
+          "/chinh-sach-bao-mat",
+          "chinh-sach-bao-mat.html",
+          "REWRITE_AND_IMPLEMENT",
+          "/chinh-sach-bao-mat",
+          "GOV-04",
+          "Deletion/export not futurepromise"
+        ],
+        [
+          "MAP-13",
+          "/dieu-khoan-su-dung",
+          "dieu-khoan-su-dung.html",
+          "LEGAL_REVIEW",
+          "/dieu-khoan-su-dung",
+          "GOV-05",
+          "VN2026AI/TMĐT/privacy scope current"
+        ],
+        [
+          "MAP-14",
+          "/ban-quyen-so-huu-tri-tue",
+          "ban-quyen-so-huu-tri-tue.html",
+          "RIGHTS_REVIEW",
+          "/ban-quyen-so-huu-tri-tue",
+          "GOV-07",
+          "Method ideas notall owned, thirdparty expression licensed"
+        ],
+        [
+          "MAP-15",
+          "/cau-hoi-thuong-gap",
+          "cau-hoi-thuong-gap.html",
+          "REWRITE",
+          "/cau-hoi-thuong-gap",
+          "WEB-01",
+          "Free data rights/prices unknown scope and AI disclosure"
+        ],
+        [
+          "MAP-16",
+          "/lien-he",
+          "lien-he.html",
+          "REWRITE",
+          "/lien-he",
+          "COMMERCE-08",
+          "Support/rights channel real beforepublic promise"
+        ],
+        [
+          "MAP-17",
+          "/api/v1/profile/:id",
+          "workers/life-code-api/src/index.js",
+          "DISABLE_THEN_RETIRE",
+          "/api/v2/subjects/{subjectId}",
+          "P0-03",
+          "No rawID access; objectgrant"
+        ],
+        [
+          "MAP-18",
+          "/api/v1/session/start",
+          "workers/life-code-api/src/index.js",
+          "DISABLE_THEN_RETIRE",
+          "/api/v2/auth/login",
+          "P0-04",
+          "No clientasserted identity"
+        ],
+        [
+          "MAP-19",
+          "/api/v1/report",
+          "workers/life-code-api/src/index.js",
+          "DISABLE_THEN_ADAPT",
+          "/api/v2/reports",
+          "API-06",
+          "Subject+result ownerbound, no bypassfallback"
+        ],
+        [
+          "MAP-20",
+          "/api/v1/lci",
+          "workers/life-code-api/src/engine.mjs",
+          "QUARANTINE",
+          "/api/v2/analysis-runs",
+          "METHOD-07",
+          "No legacy weightedfake metric"
+        ],
+        [
+          "MAP-21",
+          "/api/v1/timeline",
+          "engine/core/timeline.js",
+          "QUARANTINE",
+          "/api/v2/subjects/{subjectId}/timeline",
+          "METHOD-08",
+          "Sinseed unavailable public"
+        ],
+        [
+          "MAP-22",
+          "/api/v1/life-code-data",
+          "workers/life-code-api/src/index.js",
+          "RETIRE_LEGACY_WRITE",
+          "/api/v2/analysis-runs",
+          "API-03",
+          "Typedresult, validatedserver methods"
+        ],
+        [
+          "MAP-23",
+          "BUILD",
+          "scripts/prepare-pages.sh",
+          "REPLACE",
+          "apps/public-web/build",
+          "OPS-02",
+          "Publicallowlist notdenylist"
+        ],
+        [
+          "MAP-24",
+          "CI",
+          ".github/workflows/deploy-pages.yml",
+          "REPLACE",
+          "ci/release-policy",
+          "OPS-01",
+          "No dirtydeploy; manifest andgate beforedelivery"
+        ],
+        [
+          "MAP-25",
+          "CI-WORKER",
+          ".github/workflows/deploy-worker.yml",
+          "REVIEW",
+          "ci/worker-release",
+          "OPS-03",
+          "Separate receipt Worker andPages"
+        ],
+        [
+          "MAP-26",
+          "METHOD-CORE",
+          "engine/core + workers/life-code-api/src/engine.mjs",
+          "CONSOLIDATE",
+          "packages/method-core",
+          "METHOD-10",
+          "Singleimplementation noUI copy"
+        ],
+        [
+          "MAP-27",
+          "DB",
+          "workers/life-code-api/migrations",
+          "MIGRATE_CONTROLLED",
+          "database/migrations",
+          "DATA-04",
+          "CurrentD1 not PG, validownership beforemigration"
+        ],
+        [
+          "MAP-28",
+          "DOCS",
+          "docs/LEVELS_ARCHITECTURE_V1.md",
+          "SUPERSEDE_AFTER_APPROVAL",
+          "specs/products/NINE_LEVELS",
+          "GOV-01",
+          "Sequentialstronggating explicitlydeprecated"
+        ],
+        [
+          "MAP-29",
+          "DOCS",
+          "docs/audit/LIFE_CODE_OS_COMPREHENSIVE_UPGRADE_PLAN_2026-10-11.md",
+          "RECONCILE",
+          "docs/master",
+          "GOV-01",
+          "Newbranch plan notproof runtimefix"
+        ],
+        [
+          "MAP-30",
+          "STATUS",
+          "PROJECT_STATUS_MASTER.md",
+          "CORRECT_EVIDENCE",
+          "docs/status",
+          "P0-02",
+          "No subjective90–95% readiness"
+        ]
+      ]
+    },
+    {
+      "name": "Sources",
+      "rows": [
+        [
+          "53 nguồn đối chiếu",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Nguồn theo SHA; nội dung công khai; tài liệu chính thức. Mức đã đọc và giới hạn có ghi riêng.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "ID",
+          "Tên",
+          "URL",
+          "Phạm vi đã tiếp cận",
+          "Giới hạn"
+        ],
+        [
+          "G01",
+          "Remote branches",
+          "https://api.github.com/repos/tranhatam-collab/Life-Code-OS/branches?per_page=100",
+          "GitHub connector GET; đọc danh sách nhánh",
+          "Không phải deployed SHA"
+        ],
+        [
+          "G02",
+          "Kế hoạch audit 1.096 dòng",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/336ef35a8386a744c6de18a7f7c6e268e89e6dac/docs/audit/LIFE_CODE_OS_COMPREHENSIVE_UPGRADE_PLAN_2026-10-11.md",
+          "Đọc các dải nội dung toàn tài liệu qua GitHub; trạng thái PROPOSED_FOR_TEAM_AUDIT",
+          "Các kết quả live của tác giả audit là nguồn khai báo, không mặc nhiên là đo lại trong phiên này"
+        ],
+        [
+          "G03",
+          "Kiến trúc 9 level cũ",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/docs/LEVELS_ARCHITECTURE_V1.md",
+          "Đã đọc nội dung",
+          null
+        ],
+        [
+          "G04",
+          "API routes: profile và session",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/workers/life-code-api/src/index.js#L653-L760",
+          "Đọc nhánh xử lý mã remote",
+          "Không thử lấy hồ sơ người thật; không xác nhận exploit runtime"
+        ],
+        [
+          "G05",
+          "LCI legacy",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/engine/core/lci.js",
+          "Đã đọc trong audit đối chiếu của chuỗi trao đổi, cùng SHA",
+          null
+        ],
+        [
+          "G06",
+          "Timeline legacy",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/engine/core/timeline.js",
+          "Đã đọc trong audit đối chiếu của chuỗi trao đổi, cùng SHA",
+          null
+        ],
+        [
+          "G07",
+          "Biểu mẫu Bắt đầu",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/bat-dau.html#L250-L320",
+          "Đã đọc đoạn gửi payload trong chuỗi audit, cùng SHA",
+          null
+        ],
+        [
+          "G08",
+          "Migration session",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/workers/life-code-api/migrations/002_create_sessions.sql",
+          "Đã đọc trong chuỗi audit, cùng SHA",
+          null
+        ],
+        [
+          "G09",
+          "Pages build script",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/scripts/prepare-pages.sh",
+          "Đã đọc trực tiếp",
+          "Denylist còn có thể để lọt file mới; chưa đo bundle live"
+        ],
+        [
+          "G10",
+          "Workflow Pages",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/.github/workflows/deploy-pages.yml",
+          "Đã đọc trực tiếp",
+          "Có --commit-dirty=true; không có bước smoke/security trong workflow đã đọc"
+        ],
+        [
+          "G11",
+          "Report API legacy",
+          "https://github.com/tranhatam-collab/Life-Code-OS/blob/99b402764437f81859fa0cd3a3af860125f7bd52/workers/life-code-api/src/index.js#L1014-L1065",
+          "Đã đọc trong chuỗi audit, cùng SHA",
+          null
+        ],
+        [
+          "G12",
+          "Audit commit metadata",
+          "https://github.com/tranhatam-collab/Life-Code-OS/commit/336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+          "Đã đọc metadata và diff tài liệu",
+          "Không phải commit sửa P0"
+        ],
+        [
+          "S01",
+          "Life Code trang chủ",
+          "https://lifecode.iai.one/",
+          "Nội dung HTML qua công cụ web; nguồn báo crawled yesterday",
+          "Không xác nhận byte hash, HTTP headers hoặc deployed SHA"
+        ],
+        [
+          "S02",
+          "Life Code chín tầng",
+          "https://lifecode.iai.one/9-levels-life-code",
+          "Đọc nội dung công khai qua liên kết clean URL",
+          null
+        ],
+        [
+          "S03",
+          "Life Code Bắt đầu",
+          "https://lifecode.iai.one/bat-dau",
+          "Đọc giao diện biểu mẫu; không gửi dữ liệu",
+          null
+        ],
+        [
+          "S04",
+          "Life Code Dashboard",
+          "https://lifecode.iai.one/dashboard",
+          "Đọc nội dung giao diện public; không đăng nhập",
+          null
+        ],
+        [
+          "S05",
+          "Life Code chính sách bảo mật",
+          "https://lifecode.iai.one/chinh-sach-bao-mat",
+          "Đã đọc nội dung công khai",
+          null
+        ],
+        [
+          "S06",
+          "Life Code Engine Lab",
+          "https://lifecode.iai.one/engine-lab",
+          "Đọc giao diện; không gửi POST",
+          null
+        ],
+        [
+          "S07",
+          "OWASP API BOLA",
+          "https://api-security.owasp.org/editions/2023/en/0xa1-broken-object-level-authorization/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S08",
+          "OWASP Session Management",
+          "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S09",
+          "PostgreSQL Row Security",
+          "https://www.postgresql.org/docs/current/ddl-rowsecurity.html",
+          "Đã đọc trang chính thức",
+          "Trang current được trả là tài liệu PostgreSQL 18; không coi database dự án đã nâng cấp"
+        ],
+        [
+          "S10",
+          "Cloudflare Queues delivery guarantees",
+          "https://developers.cloudflare.com/queues/reference/delivery-guarantees/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S11",
+          "Cloudflare R2 presigned URL",
+          "https://developers.cloudflare.com/r2/api/s3/presigned-urls/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S12",
+          "Hyperdrive query caching",
+          "https://developers.cloudflare.com/hyperdrive/concepts/query-caching/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S13",
+          "Cloudflare Workers versions/deployments",
+          "https://developers.cloudflare.com/workers/versions-and-deployments/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S14",
+          "OpenAPI 3.1.1",
+          "https://spec.openapis.org/oas/v3.1.1.html",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S15",
+          "Unicode Normalization",
+          "https://unicode.org/reports/tr15/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S16",
+          "IANA Time Zone Database",
+          "https://www.iana.org/time-zones",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S17",
+          "WCAG 2.2",
+          "https://www.w3.org/TR/WCAG22/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S18",
+          "Astro deployment Cloudflare",
+          "https://docs.astro.build/en/guides/deploy/cloudflare/",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S19",
+          "React Quick Start",
+          "https://react.dev/learn",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S20",
+          "Stripe webhook guidance",
+          "https://docs.stripe.com/webhooks",
+          "Đã đọc trang chính thức",
+          "Tham chiếu giao thức; chưa chọn Stripe làm nhà cung cấp khả dụng cho pháp nhân dự án"
+        ],
+        [
+          "S21",
+          "NIST AI Risk Management Framework",
+          "https://www.nist.gov/itl/ai-risk-management-framework",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S22",
+          "ISO/IEC 42001 overview",
+          "https://www.iso.org/standard/42001",
+          "Đọc trang giới thiệu tiêu chuẩn",
+          "Chưa đọc toàn văn tiêu chuẩn trả phí; không chứng nhận tuân thủ"
+        ],
+        [
+          "S23",
+          "Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15",
+          "https://vanban.chinhphu.vn/?docid=214590&pageid=27160",
+          "Đọc metadata chính thức",
+          "Hiệu lực 01/01/2026; chưa thay ý kiến pháp lý áp dụng"
+        ],
+        [
+          "S24",
+          "Nghị định 356/2025/NĐ-CP",
+          "https://chinhphu.vn/?classid=1&docid=216387&orggroupid=2&pageid=27160",
+          "Đọc metadata chính thức",
+          null
+        ],
+        [
+          "S25",
+          "Luật Trí tuệ nhân tạo 134/2025/QH15",
+          "https://congbao.chinhphu.vn/van-ban/luat-so-134-2025-qh15-468694/61695.htm",
+          "Đọc metadata chính thức",
+          "Hiệu lực 01/03/2026"
+        ],
+        [
+          "S26",
+          "Nghị định 142/2026/NĐ-CP",
+          "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-142-2026-nd-cp-469480/64703.htm",
+          "Đọc metadata chính thức",
+          "Hiệu lực 01/05/2026"
+        ],
+        [
+          "S27",
+          "Khung pháp lý AI - Cục Công nghệ số và AI",
+          "https://dda.gov.vn/khung-phap-ly-ai",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S28",
+          "Nghị định 248/2026/NĐ-CP",
+          "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-248-2026-nd-cp-469983.htm",
+          "Đọc metadata chính thức",
+          "Hiệu lực 01/07/2026"
+        ],
+        [
+          "S29",
+          "Bộ Công Thương phổ biến Luật TMĐT và Nghị định 248",
+          "https://moit.gov.vn/tin-tuc/bo-cong-thuong-pho-bien-luat-thuong-mai-dien-tu-va-nghi-dinh-so-248-2026-nd-cp.html",
+          "Đã đọc trang chính thức",
+          "Nguồn xác nhận hiệu lực từ 01/07/2026; cần pháp lý đọc văn bản ký"
+        ],
+        [
+          "S30",
+          "EU GDPR",
+          "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+          "Truy cập văn bản pháp quy; rà soát định nghĩa và quyền",
+          "Không thay đánh giá tác động hoặc tư vấn thị trường cụ thể"
+        ],
+        [
+          "S31",
+          "EU AI Act application timeline",
+          "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "Đã đọc trang chính thức",
+          "Trang Ủy ban được kiểm tra 11/10/2026; thể hiện AI Omnibus có hiệu lực 27/07/2026 và lịch high-risk điều chỉnh. Đối chiếu văn bản hợp nhất trước launch"
+        ],
+        [
+          "S32",
+          "EU AI Act - bản tiếng Hà Lan",
+          "https://digital-strategy.ec.europa.eu/nl/policies/regulatory-framework-ai",
+          "Đối chiếu phần lịch áp dụng đa ngôn ngữ",
+          null
+        ],
+        [
+          "S33",
+          "FTC Consumer Guide to Buying a Franchise",
+          "https://www.ftc.gov/business-guidance/resources/consumers-guide-buying-franchise",
+          "Đã đọc trang chính thức",
+          "Thông tin FDD/14 ngày, không phải ý kiến phân loại hợp đồng Life Code"
+        ],
+        [
+          "S34",
+          "ACCC Franchising Code",
+          "https://www.accc.gov.au/business/industry-codes/franchising-code-of-conduct",
+          "Đã đọc trang chính thức",
+          "Bộ quy tắc mới 01/04/2025; một số quy định 01/11/2025"
+        ],
+        [
+          "S35",
+          "ACCC franchise disclosure document",
+          "https://www.accc.gov.au/business/industry-codes/franchising-code-of-conduct/franchise-disclosure-document",
+          "Đã đọc trang chính thức",
+          null
+        ],
+        [
+          "S36",
+          "Bộ Công Thương danh mục nhượng quyền",
+          "https://moit.gov.vn/nhuong-quyen-thuong-mai",
+          "Đọc danh mục công khai",
+          "Không đủ kết luận thủ tục outbound cho Life Code; pháp lý phải xác minh"
+        ],
+        [
+          "S37",
+          "WIPO Madrid filing",
+          "https://www.wipo.int/en/web/madrid-system/how_to/file/index",
+          "Đã đọc trang chính thức",
+          "Đăng ký quốc tế không bảo đảm được bảo hộ ở mọi thị trường; không xác minh nhãn Life Code đã đăng ký"
+        ],
+        [
+          "S38",
+          "IPIP ngân hàng mục hỏi",
+          "https://ipip.ori.org/",
+          "Đã đọc trang chính thức",
+          "Phải kiểm tra quyền của từng bản dịch và thang; chưa xác nhận giá trị đo trên mẫu Life Code"
+        ],
+        [
+          "S39",
+          "O*NET Interest Profiler",
+          "https://www.onetcenter.org/IP.html",
+          "Đã đọc trang chính thức",
+          "Dùng phạm vi hứng thú nghề; không quyết định nghề bắt buộc"
+        ],
+        [
+          "S40",
+          "OAIC privacy rights",
+          "https://www.oaic.gov.au/privacy/your-privacy-rights",
+          "Đã đọc trang chính thức",
+          "Điểm xuất phát rà soát Australia; chưa audit nghĩa vụ cụ thể"
+        ],
+        [
+          "S41",
+          "Singapore PDPC PDPA",
+          "https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act",
+          "Trang phản hồi rất ít nội dung",
+          "Chưa đủ nội dung để khẳng định điều khoản; rà soát trước launch"
+        ]
+      ]
+    },
+    {
+      "name": "Screens",
+      "rows": [
+        [
+          "45 màn hình mục tiêu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Đây là UI map cần build và nghiệm thu, không phải danh sách màn hình đã phát hành.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "ID",
+          "Màn hình",
+          "Route đích",
+          "Principal",
+          "API",
+          "Trạng thái cần thử",
+          "Task"
+        ],
+        [
+          "UI-01",
+          "Trang chủ",
+          "/",
+          "guest",
+          "GET /catalog",
+          "educational-first; release badge",
+          "WEB-01"
+        ],
+        [
+          "UI-02",
+          "Giới thiệu HNH",
+          "/gioi-thieu",
+          "guest",
+          "static",
+          "No endorsement/clinicalclaims",
+          "WEB-01"
+        ],
+        [
+          "UI-03",
+          "Danh mục9cấp",
+          "/9-levels-life-code",
+          "guest",
+          "GET /catalog",
+          "Available/planned/delayed states",
+          "GOV-09"
+        ],
+        [
+          "UI-04",
+          "Thư viện phương pháp",
+          "/research/methods",
+          "guest",
+          "GET /methods",
+          "Readstatus andsourceversion",
+          "METHOD-10"
+        ],
+        [
+          "UI-05",
+          "Tra bộ số miễn phí",
+          "/numbers",
+          "guest",
+          "local deterministic",
+          "Invalid/unresolved/tablechanged; noPIanalytics",
+          "WEB-02"
+        ],
+        [
+          "UI-06",
+          "Giá và phạm vi",
+          "/pricing",
+          "guest",
+          "GET /catalog",
+          "No hiddendatafee",
+          "COMMERCE-01"
+        ],
+        [
+          "UI-07",
+          "Bắt đầu theo nhu cầu",
+          "/app/start",
+          "user",
+          "POST /subjects",
+          "Draft/partial/authneeded",
+          "WEB-03"
+        ],
+        [
+          "UI-08",
+          "Đăng nhập",
+          "/app/login",
+          "guest",
+          "GET /auth/login",
+          "Failure/recovery/accountlock",
+          "TRUST-01"
+        ],
+        [
+          "UI-09",
+          "Tổng quan",
+          "/app/dashboard",
+          "user",
+          "GET /subjects/{subjectId}/overview",
+          "Nullmetric notzero, nextaction",
+          "WEB-06"
+        ],
+        [
+          "UI-10",
+          "Hồ sơ",
+          "/app/profiles",
+          "user",
+          "GET /subjects",
+          "Empty/shared/revoked",
+          "API-02"
+        ],
+        [
+          "UI-11",
+          "Chỉnh hồ sơ",
+          "/app/profiles/:id",
+          "user",
+          "POST /subjects/{subjectId}/profile-versions",
+          "IfMatch conflict/missingDOB",
+          "DATA-01"
+        ],
+        [
+          "UI-12",
+          "Giả thuyết dữ liệu",
+          "/app/profiles/:id/hypotheses",
+          "user",
+          "POST /subjects/{subjectId}/hypotheses",
+          "Conflicting birthyears never merge",
+          "DATA-01"
+        ],
+        [
+          "UI-13",
+          "Sự đồng ý",
+          "/app/privacy",
+          "user",
+          "POST /subjects/{subjectId}/consents",
+          "Withdraw/processingpaused",
+          "TRUST-08"
+        ],
+        [
+          "UI-14",
+          "Chia sẻ",
+          "/app/sharing",
+          "user",
+          "POST /subjects/{subjectId}/grants",
+          "Scope/expiry/revoke",
+          "TRUST-07"
+        ],
+        [
+          "UI-15",
+          "Nhật ký",
+          "/app/journal",
+          "user",
+          "POST /subjects/{subjectId}/observations",
+          "Offline/draft/saveerror",
+          "WEB-07"
+        ],
+        [
+          "UI-16",
+          "Đồng nhịp",
+          "/app/resonance",
+          "user",
+          "GET /subjects/{subjectId}/observations",
+          "No causal/medical inference",
+          "EXPAND-04"
+        ],
+        [
+          "UI-17",
+          "Mục tiêu",
+          "/app/goals",
+          "user",
+          "POST /subjects/{subjectId}/plans",
+          "No goal/start/archive",
+          "API-05"
+        ],
+        [
+          "UI-18",
+          "Check-in",
+          "/app/actions/:id",
+          "user",
+          "POST /actions/{actionId}/check-ins",
+          "Retry-idempotent/cancelled",
+          "API-05"
+        ],
+        [
+          "UI-19",
+          "Dòng thời gian",
+          "/app/timeline",
+          "user",
+          "GET /subjects/{subjectId}/timeline",
+          "Fourtracks/unknown dates",
+          "METHOD-08"
+        ],
+        [
+          "UI-20",
+          "Khảo sát",
+          "/app/questionnaires/:code",
+          "user",
+          "POST /subjects/{subjectId}/questionnaire-responses",
+          "Incomplete/localeunsupported",
+          "EXPAND-01"
+        ],
+        [
+          "UI-21",
+          "Tính phân tích",
+          "/app/analysis/new",
+          "user",
+          "POST /analysis-runs",
+          "Missing/grantdenied/methodretired",
+          "API-03"
+        ],
+        [
+          "UI-22",
+          "Tiến độ",
+          "/app/analysis/:id",
+          "user",
+          "GET /analysis-runs/{runId}",
+          "Queued/running/failed/cancelled",
+          "API-03"
+        ],
+        [
+          "UI-23",
+          "Thư viện báo cáo",
+          "/app/reports",
+          "user",
+          "GET /subjects/{subjectId}/reports",
+          "No report/stale/withdrawn",
+          "WEB-08"
+        ],
+        [
+          "UI-24",
+          "Đọc báo cáo",
+          "/app/reports/:id",
+          "user",
+          "GET /reports/{reportId}",
+          "Typedclaim/commoncontent separated",
+          "REPORT-05"
+        ],
+        [
+          "UI-25",
+          "So sánh revisions",
+          "/app/reports/:id/versions",
+          "user",
+          "GET /reports/{reportId}/revisions",
+          "Changed/notcomparable",
+          "REPORT-09"
+        ],
+        [
+          "UI-26",
+          "Xuất/tải",
+          "/app/reports/:id/export",
+          "user",
+          "POST /reports/{reportId}/exports",
+          "Queued/ready/expired/denied",
+          "REPORT-06"
+        ],
+        [
+          "UI-27",
+          "Đơn hàng",
+          "/app/orders",
+          "user",
+          "POST /orders",
+          "Pricechanged/missingdata",
+          "COMMERCE-01"
+        ],
+        [
+          "UI-28",
+          "Thanh toán",
+          "/app/checkout/:id",
+          "user",
+          "POST /orders/{orderId}/checkout",
+          "Pending/failed/serverconfirmed",
+          "COMMERCE-03"
+        ],
+        [
+          "UI-29",
+          "Quyền dịch vụ",
+          "/app/subscription",
+          "user",
+          "GET /entitlements",
+          "Expired/cancelled/freefallback",
+          "COMMERCE-05"
+        ],
+        [
+          "UI-30",
+          "Hỗ trợ",
+          "/app/support",
+          "user",
+          "POST /support/tickets",
+          "Escalated/noPIneeded",
+          "COMMERCE-08"
+        ],
+        [
+          "UI-31",
+          "Xuất dữ liệu",
+          "/app/privacy/export",
+          "user",
+          "POST /subjects/{subjectId}/data-exports",
+          "Alwaysfree/progress",
+          "DATA-09"
+        ],
+        [
+          "UI-32",
+          "Yêu cầu xóa",
+          "/app/privacy/delete",
+          "user",
+          "POST /subjects/{subjectId}/deletion-jobs",
+          "Hold/pending/complete/backupexpiry",
+          "DATA-07"
+        ],
+        [
+          "UI-33",
+          "Trung tâm tự động",
+          "/app/automations",
+          "user",
+          "POST /automations",
+          "Off/optin/capped/stopped",
+          "AI-10"
+        ],
+        [
+          "UI-34",
+          "Gia đình",
+          "/family",
+          "authorized_adults",
+          "GET /subjects",
+          "No blanketguardianaccess",
+          "EXPAND-05"
+        ],
+        [
+          "UI-35",
+          "Case chuyên gia",
+          "/practice/cases",
+          "practitioner",
+          "GET /practice/cases",
+          "Grantmissing/expired/closed",
+          "ACADEMY-05"
+        ],
+        [
+          "UI-36",
+          "Duyệt báo cáo",
+          "/practice/reviews/:id",
+          "reviewer",
+          "POST /reports/{reportId}/reviews",
+          "Draft/revise/approved no direct publish",
+          "REPORT-10"
+        ],
+        [
+          "UI-37",
+          "Academy",
+          "/academy",
+          "guest/user",
+          "GET /academy/courses",
+          "Planned/open/closedcohort",
+          "ACADEMY-01"
+        ],
+        [
+          "UI-38",
+          "Học bài",
+          "/academy/learn/:id",
+          "enrolled",
+          "POST /academy/assignments",
+          "Lockedbyenrollment notprivateprofile",
+          "ACADEMY-03"
+        ],
+        [
+          "UI-39",
+          "Chứng nhận",
+          "/academy/verify/:id",
+          "public_minimal",
+          "GET /certificates/{certificateId}",
+          "Valid/expired/revoked minimumPI",
+          "ACADEMY-06"
+        ],
+        [
+          "UI-40",
+          "Workspace",
+          "/workspace",
+          "organization_member",
+          "GET /organizations/{organizationId}/overview",
+          "No journal/morphology analytics",
+          "EXPAND-08"
+        ],
+        [
+          "UI-41",
+          "Partner",
+          "/partner",
+          "licensed_partner",
+          "GET /partners/{partnerId}",
+          "Suspended/countrynotapproved",
+          "GLOBAL-05"
+        ],
+        [
+          "UI-42",
+          "Nguồn/phương pháp Admin",
+          "/admin/methods",
+          "method_editor",
+          "POST /admin/method-releases",
+          "Reviewer segregation required",
+          "METHOD-10"
+        ],
+        [
+          "UI-43",
+          "Quality center",
+          "/admin/quality",
+          "quality_reviewer",
+          "GET /admin/quality",
+          "No universalPIaccess",
+          "OPS-08"
+        ],
+        [
+          "UI-44",
+          "Ops center",
+          "/admin/operations",
+          "ops",
+          "GET /admin/operations",
+          "Kill switches A3approval",
+          "OPS-04"
+        ],
+        [
+          "UI-45",
+          "Rights/legal center",
+          "/admin/rights",
+          "legal",
+          "POST /admin/country-packs",
+          "Pending/expired/restricted",
+          "GLOBAL-01"
+        ]
+      ]
+    },
+    {
+      "name": "Countries",
+      "rows": [
+        [
+          "Cấp phép và quốc gia",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mọi country pack chưa được phê duyệt; không giả có quyền kinh doanh hoặc bảo hộ toàn cầu.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "Mã",
+          "Quốc gia",
+          "Locale",
+          "Status",
+          "Ghi chú"
+        ],
+        [
+          "VN",
+          "Việt Nam",
+          "vi-VN",
+          "NOT_APPROVED",
+          "Primary scope; legal applicability opinion required"
+        ],
+        [
+          "EU-EEA",
+          "EU/EEA",
+          "country_specific",
+          "NOT_APPROVED",
+          "GDPR, AI Act consolidated timeline; local franchise/consumer rules"
+        ],
+        [
+          "US",
+          "Hoa Kỳ",
+          "en-US",
+          "NOT_APPROVED",
+          "FTC federal franchise + state rules; privacy, children, claims counsel"
+        ],
+        [
+          "AU",
+          "Australia",
+          "en-AU",
+          "NOT_APPROVED",
+          "Franchise Code, privacy, consumer; current duties by transaction"
+        ],
+        [
+          "SG",
+          "Singapore",
+          "en-SG",
+          "NOT_APPROVED",
+          "PDPC source partial; dedicated full legal review pending"
+        ]
+      ]
+    },
+    {
+      "name": "Costs",
+      "rows": [
+        [
+          "Mô hình ngân sách | Nhập đơn giá đã được duyệt",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "FTE/tháng là giả định cấu trúc đội beta. Đơn giá để trống có chủ đích: chưa có báo giá, không coi là 0 đồng.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "Vai trò",
+          "FTE giả định",
+          "Số tháng",
+          "Đơn giá/tháng VND",
+          "Thành tiền VND",
+          "Tình trạng",
+          "Ghi chú"
+        ],
+        [
+          "Tech Lead / Backend",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D5),B5*C5*D5,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          "Backend / Data",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D6),B6*C6*D6,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          "Frontend / UX",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D7),B7*C7*D7,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          "AI / Knowledge",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D8),B8*C8*D8,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          "Report / Full-stack",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D9),B9*C9*D9,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          "QA Automation",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D10),B10*C10*D10,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          "Platform / SRE",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D11),B11*C11*D11,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          "Editorial / Product",
+          1,
+          6,
+          null,
+          "=IF(ISNUMBER(D12),B12*C12*D12,\"\")",
+          "CẦN NHẬP ĐƠN GIÁ",
+          "Giả định beta; có thể kiêm nhiệm sau khi duyệt"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tổng nhân sự",
+          null,
+          null,
+          null,
+          "=IF(COUNT(D5:D12)=8,SUM(E5:E12),\"CHƯA ĐỦ GIẢ ĐỊNH\")"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Hạ tầng / AI 6 tháng",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Pháp lý / quyền nguồn",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Security review độc lập",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Dịch / bản địa hóa",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Dự phòng (%)",
+          0.15,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tổng ngân sách",
+          null,
+          null,
+          null,
+          "=IF(AND(COUNT(D5:D12)=8,COUNT(B17:B20)=4),(SUM(E5:E12)+SUM(B17:B20))*(1+B21),\"CHƯA ĐỦ GIẢ ĐỊNH\")"
+        ],
+        [],
+        [
+          "Không là báo giá thị trường. Không gồm ROI/thu nhập nhượng quyền. Nhập chi phí hợp lệ và thay số tháng theo scope trước khi dùng để quyết định.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "rows": [
+        [
+          "LIFE CODE OS | Tổng quan bàn giao",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Chỉ số dưới đây là trạng thái bảng kế hoạch; không chứng nhận readiness hoặc độ đúng của Life Code.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "Công việc",
+          "Đã DONE",
+          "Gates PASS",
+          "Q đã duyệt"
+        ],
+        [
+          "=COUNTA(Backlog!A5:A144)",
+          "=COUNTIF(Backlog!F5:F144,\"DONE\")",
+          "=COUNTIF(Gates!D5:D16,\"PASS\")",
+          "=COUNTIF(Decisions!C5:C24,\"APPROVE\")+COUNTIF(Decisions!C5:C24,\"APPROVE_WITH_CONDITIONS\")"
+        ],
+        [],
+        [],
+        [
+          "Phase",
+          "Công việc",
+          "Ngày công thấp",
+          "Ngày công cao",
+          "DONE"
+        ],
+        [
+          "P0",
+          "=COUNTIF(Backlog!B$5:B$144,A9)",
+          "=SUMIF(Backlog!B$5:B$144,A9,Backlog!G$5:G$144)",
+          "=SUMIF(Backlog!B$5:B$144,A9,Backlog!H$5:H$144)",
+          "=COUNTIFS(Backlog!B$5:B$144,A9,Backlog!F$5:F$144,\"DONE\")"
+        ],
+        [
+          "A",
+          "=COUNTIF(Backlog!B$5:B$144,A10)",
+          "=SUMIF(Backlog!B$5:B$144,A10,Backlog!G$5:G$144)",
+          "=SUMIF(Backlog!B$5:B$144,A10,Backlog!H$5:H$144)",
+          "=COUNTIFS(Backlog!B$5:B$144,A10,Backlog!F$5:F$144,\"DONE\")"
+        ],
+        [
+          "B",
+          "=COUNTIF(Backlog!B$5:B$144,A11)",
+          "=SUMIF(Backlog!B$5:B$144,A11,Backlog!G$5:G$144)",
+          "=SUMIF(Backlog!B$5:B$144,A11,Backlog!H$5:H$144)",
+          "=COUNTIFS(Backlog!B$5:B$144,A11,Backlog!F$5:F$144,\"DONE\")"
+        ],
+        [
+          "C",
+          "=COUNTIF(Backlog!B$5:B$144,A12)",
+          "=SUMIF(Backlog!B$5:B$144,A12,Backlog!G$5:G$144)",
+          "=SUMIF(Backlog!B$5:B$144,A12,Backlog!H$5:H$144)",
+          "=COUNTIFS(Backlog!B$5:B$144,A12,Backlog!F$5:F$144,\"DONE\")"
+        ],
+        [
+          "D",
+          "=COUNTIF(Backlog!B$5:B$144,A13)",
+          "=SUMIF(Backlog!B$5:B$144,A13,Backlog!G$5:G$144)",
+          "=SUMIF(Backlog!B$5:B$144,A13,Backlog!H$5:H$144)",
+          "=COUNTIFS(Backlog!B$5:B$144,A13,Backlog!F$5:F$144,\"DONE\")"
+        ],
+        [
+          "E",
+          "=COUNTIF(Backlog!B$5:B$144,A14)",
+          "=SUMIF(Backlog!B$5:B$144,A14,Backlog!G$5:G$144)",
+          "=SUMIF(Backlog!B$5:B$144,A14,Backlog!H$5:H$144)",
+          "=COUNTIFS(Backlog!B$5:B$144,A14,Backlog!F$5:F$144,\"DONE\")"
+        ],
+        [
+          "F",
+          "=COUNTIF(Backlog!B$5:B$144,A15)",
+          "=SUMIF(Backlog!B$5:B$144,A15,Backlog!G$5:G$144)",
+          "=SUMIF(Backlog!B$5:B$144,A15,Backlog!H$5:H$144)",
+          "=COUNTIFS(Backlog!B$5:B$144,A15,Backlog!F$5:F$144,\"DONE\")"
+        ],
+        [],
+        [
+          "Tổng",
+          "=SUM(B9:B15)",
+          "=SUM(C9:C15)",
+          "=SUM(D9:D15)",
+          "=SUM(E9:E15)"
+        ],
+        [],
+        [],
+        [
+          "SOURCE: main 99b4027… | audit 336ef35a… | deployed SHA chưa có receipt",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [],
+        [
+          "Bắt đầu: P0-01 → P0-10. Không deploy hoặc thu dữ liệu sâu dựa vào file kế hoạch. Kiểm thử tham chiếu 83/83 nằm riêng; chưa phải kiểm thử API production.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

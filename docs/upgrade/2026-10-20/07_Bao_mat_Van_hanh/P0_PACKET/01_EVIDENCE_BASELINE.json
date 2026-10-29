@@ -1,0 +1,190 @@
+{
+  "status": "REPORTED_UNVERIFIED",
+  "date": "2026-10-11",
+  "evidence": [
+    {
+      "id": "EV01",
+      "surface": "remote_main",
+      "observation": "99b402764437f81859fa0cd3a3af860125f7bd52",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G01",
+      "limitation": "SHA remote; không ánh xạ runtime",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_SOURCE",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV02",
+      "surface": "audit_branch",
+      "observation": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G01;G02",
+      "limitation": "Nhánh audit tồn tại và nội dung chờ Team Audit; không phải deployment",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_SOURCE",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV03",
+      "surface": "local_phase_branch",
+      "observation": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G02",
+      "limitation": "Không truy cập máy Mac/iCloud trong phiên này",
+      "checked_date": "2026-10-11",
+      "original_status": "REPORTED_BY_PRIOR_AUDIT",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV04",
+      "surface": "home_public",
+      "observation": "Nội dung 9 tầng/12 lớp/120 biến/0-99 có thể truy xuất",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "S01",
+      "limitation": "Không byte match; nguồn web có thể qua crawler",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_PUBLIC_CONTENT",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV05",
+      "surface": "start_public",
+      "observation": "Biểu mẫu ngày sinh và LCI hiện diện",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "S03",
+      "limitation": "Không submit và không đo E2E",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_PUBLIC_CONTENT",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV06",
+      "surface": "dashboard_public",
+      "observation": "Bộ chọn Level 1-9/report có trên nội dung public",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "S04",
+      "limitation": "Không đăng nhập; không chứng minh khả năng xuất report an toàn",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_PUBLIC_CONTENT",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV07",
+      "surface": "privacy_public",
+      "observation": "Cơ chế xóa được viết là triển khai sau",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "S05",
+      "limitation": "Cần thay copy cùng tính năng thật",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_PUBLIC_CONTENT",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV08",
+      "surface": "engine_lab",
+      "observation": "Nút gọi API hiện diện public",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "S06",
+      "limitation": "Không dùng UI để gọi production",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_PUBLIC_CONTENT",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV09",
+      "surface": "worker_health",
+      "observation": "Không nhận được phản hồi qua công cụ kiểm tra phiên này",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "S06",
+      "limitation": "DNS/network của container lỗi; web open lỗi. Không suy ra outage",
+      "checked_date": "2026-10-11",
+      "original_status": "BLOCKED",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV10",
+      "surface": "deployed_sha",
+      "observation": "Chưa có deployment receipt hiện hành",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G01;G02",
+      "limitation": "Không gọi SHA source là SHA live",
+      "checked_date": "2026-10-11",
+      "original_status": "BLOCKED",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV11",
+      "surface": "runtime_authz",
+      "observation": "Chưa kiểm thử tài khoản A/B staging",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G04",
+      "limitation": "Có lỗi source; không xác nhận exploit hoặc breach",
+      "checked_date": "2026-10-11",
+      "original_status": "NOT_CHECKED",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV12",
+      "surface": "build_allowlist",
+      "observation": "Build đang rsync denylist",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G09",
+      "limitation": "Danh sách không loại engine/api/.env tổng quát; rủi ro artefact, không xác nhận đã lộ dữ liệu",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_SOURCE",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV13",
+      "surface": "deployment_workflow",
+      "observation": "Workflow có commit-dirty=true",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G10",
+      "limitation": "Thiếu receipt và gate rõ trong workflow được đọc",
+      "checked_date": "2026-10-11",
+      "original_status": "VERIFIED_SOURCE",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV14",
+      "surface": "cloudflare_connector",
+      "observation": "Tìm plugin không trả Cloudflare trong các kết quả",
+      "status": "REPORTED_UNVERIFIED",
+      "source_ids": "G02",
+      "limitation": "Không có receipt account đọc trực tiếp trong lần này",
+      "checked_date": "2026-10-11",
+      "original_status": "BLOCKED",
+      "review_note": "Historical 11/10 observation preserved; do not treat as re-run production evidence"
+    },
+    {
+      "id": "EV20",
+      "surface": "package_ingestion",
+      "observation": "149 files ZIP/folder byte parity and 148 original manifest digests",
+      "status": "VERIFIED_WORKTREE_ONLY",
+      "source_ids": "SOURCE_RECEIPT.json",
+      "limitation": "Integrity only; no release approval",
+      "checked_date": "2026-10-20"
+    },
+    {
+      "id": "EV21",
+      "surface": "source_identity",
+      "observation": "remote main99b4027 and plan336ef35a matched; isolated codex branch from plan",
+      "status": "VERIFIED_CURRENT",
+      "source_ids": "git ls-remote + local Git",
+      "limitation": "Remote/source only, not deployed SHA",
+      "checked_date": "2026-10-20"
+    },
+    {
+      "id": "EV22",
+      "surface": "production_release",
+      "observation": "Provider deployment mapping, staging and Founder RC approval missing",
+      "status": "BLOCKED",
+      "source_ids": "baseline receipt",
+      "limitation": "All production gates remain unclosed",
+      "checked_date": "2026-10-20"
+    }
+  ],
+  "evidence_storage_rule": "PII/raw logs lưu trong kho riêng tư có quyền và thời hạn; gói này chỉ giữ mô tả, source IDs và trạng thái.",
+  "scope": "Historical source observations with current vocabulary; not P0 completion",
+  "revision": "2026-10-20.r2"
+}

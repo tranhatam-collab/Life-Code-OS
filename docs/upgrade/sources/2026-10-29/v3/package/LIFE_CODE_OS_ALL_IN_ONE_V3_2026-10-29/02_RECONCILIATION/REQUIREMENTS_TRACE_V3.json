@@ -1,0 +1,498 @@
+[
+  {
+    "request_id": "REQ-V3-001",
+    "requirement": "Bảo toàn toàn bộ tệp V1 và V2",
+    "artifact": "01_BASELINES/PRESERVATION_MANIFEST.json",
+    "delivery_state": "BYTE_PRESERVATION",
+    "remaining_boundary": "Archive does not approve unsafe old claims",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-002",
+    "requirement": "Đối chiếu GitHub và nhánh rescue",
+    "artifact": "02_RECONCILIATION/GITHUB_BASELINE_2026-10-29.json",
+    "delivery_state": "SOURCE_CHECKED",
+    "remaining_boundary": "Deployed SHA and import not verified",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-003",
+    "requirement": "Hai mươi họ tri thức thế giới",
+    "artifact": "03_KNOWLEDGE/METHOD_INTEGRATION_REGISTER_V3.json",
+    "delivery_state": "DESIGN_REGISTER",
+    "remaining_boundary": "Not all full texts read or engines implemented",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-004",
+    "requirement": "Mười hai lớp và mười hai trường đồng nhịp",
+    "artifact": "03_KNOWLEDGE/LAYERS_FIELDS_PRESERVED.json",
+    "delivery_state": "PRESERVED_AND_MAPPED",
+    "remaining_boundary": "144cells are organization, not measured energies",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-005",
+    "requirement": "Đủ 23 chỉ số số–tên",
+    "artifact": "04_NUMBERS_NAMES/NUMEROLOGY_23_COMPONENTS.json",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "No personality measurement",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-006",
+    "requirement": "Bát Cực: tám nhóm và 64 cặp",
+    "artifact": "04_NUMBERS_NAMES/BAT_CUC_64_PAIRS.json",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "No physical-field claims",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-007",
+    "requirement": "Bát Cực: chuỗi, tổ hợp và vị trí",
+    "artifact": "04_NUMBERS_NAMES/BAT_CUC_TRANSITION_8X8.json",
+    "delivery_state": "REFERENCE_PLUS_EDITORIAL",
+    "remaining_boundary": "Transition reflections are original draft not ancient doctrine",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-008",
+    "requirement": "Bát Cực: chính sách số 0 và số 5",
+    "artifact": "04_NUMBERS_NAMES/BAT_CUC_POLICY_VARIANTS.json",
+    "delivery_state": "REFERENCE_DIAGNOSTIC",
+    "remaining_boundary": "Full school-specific modifier policy pending",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-009",
+    "requirement": "Psychomatrix: 17 vị trí",
+    "artifact": "04_NUMBERS_NAMES/PSYCHOMATRIX_17_POSITIONS.json",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "No health,intellect or intimate inference",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-010",
+    "requirement": "Số lặp và trục 2–5–8",
+    "artifact": "04_NUMBERS_NAMES/REPEATED_SEQUENCES_70.json",
+    "delivery_state": "DESCRIPTIVE_CATALOG",
+    "remaining_boundary": "Not life-energy magnitude",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-011",
+    "requirement": "Mã đuôi 80 đủ nguyên văn và nhãn nguồn",
+    "artifact": "04_NUMBERS_NAMES/TAIL80_COMPLETE.json",
+    "delivery_state": "TABLE_AND_CODE",
+    "remaining_boundary": "Source80 not automatically equivalent81",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-012",
+    "requirement": "Tên đầy đủ, tên ngắn và nguyên âm Y",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "UndefinedY=null",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-013",
+    "requirement": "Chu kỳ đỉnh cao, thử thách và ba thời kỳ",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Periodspans need explicit config",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-014",
+    "requirement": "Bản đồ đời sống 18 lĩnh vực",
+    "artifact": "05_LIFETIME/LIFE_DOMAINS_18.json",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Not all life secrets known",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-015",
+    "requirement": "Từ đầu đời đến 99 và tiếp nối",
+    "artifact": "05_LIFETIME/LIFE_STAGE_ROUTING_9.json",
+    "delivery_state": "DESIGN_PLUS_CALENDAR_CODE",
+    "remaining_boundary": "Not lifespanprediction",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-016",
+    "requirement": "Lịch sử thật, kế hoạch và chu kỳ biểu tượng",
+    "artifact": "08_ALL_IN_ONE_LAB/src/lifetime.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "No fabricatedfutureevents",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-017",
+    "requirement": "Đủ hợp đồng chín cấp sản phẩm",
+    "artifact": "06_PRODUCTS/NINE_LEVELS_INTEGRATED_V3.json",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Full paidproducts not implemented",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-018",
+    "requirement": "Từ miễn phí đến tổ chức và doanh nghiệp",
+    "artifact": "06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+    "delivery_state": "PRODUCT_DESIGN",
+    "remaining_boundary": "Prices/providerspending",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-019",
+    "requirement": "Mobile, web và desktop dùng chung lõi",
+    "artifact": "08_ALL_IN_ONE_LAB/public/index.html",
+    "delivery_state": "LOCAL_UI",
+    "remaining_boundary": "Not nativeapps",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-020",
+    "requirement": "Backend, API và dấu vết dữ liệu",
+    "artifact": "07_BACKEND/openapi.v3.target.json",
+    "delivery_state": "CONTRACT",
+    "remaining_boundary": "TargetAPI not all routes implemented",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-021",
+    "requirement": "AI hỗ trợ, giảm thao tác quản trị",
+    "artifact": "07_BACKEND/AI_AND_AUTOMATION.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Humanapproval for highimpact changes",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-022",
+    "requirement": "Academy, chuyển giao và cấp phép quốc tế",
+    "artifact": "10_GLOBAL_ACADEMY/ACADEMY_AND_LICENSING.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "No territorystoreopened",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-023",
+    "requirement": "Bảng công việc hợp nhất",
+    "artifact": "09_EXECUTION/BACKLOG_UNIFIED.json",
+    "delivery_state": "EXECUTION_PLAN",
+    "remaining_boundary": "Estimaterefinementsnotblindsum",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-024",
+    "requirement": "Không bỏ kế hoạch và Q1–Q30",
+    "artifact": "09_EXECUTION/DECISION_LEDGER_ALL.json",
+    "delivery_state": "PRESERVED_EXTENDED",
+    "remaining_boundary": "Allpending approvals",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-025",
+    "requirement": "Nguồn đa ngôn ngữ và quyền sử dụng",
+    "artifact": "13_SOURCES/SOURCES_V3.json",
+    "delivery_state": "SOURCE_REGISTER",
+    "remaining_boundary": "Not all books read or translated",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-026",
+    "requirement": "Tính đúng và không tạo điểm giả",
+    "artifact": "11_QA/VERIFICATION_REPORT.json",
+    "delivery_state": "LOCAL_VERIFICATION",
+    "remaining_boundary": "No scientificpredictionclaim",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-027",
+    "requirement": "Một cửa từ hồ sơ đến bản xem trước",
+    "artifact": "08_ALL_IN_ONE_LAB/src/all_in_one.mjs",
+    "delivery_state": "REFERENCE_PREVIEW",
+    "remaining_boundary": "Onlypreviewnoauthstorage",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-028",
+    "requirement": "Nhập đúng repository theo cách bổ sung",
+    "artifact": "12_IMPORT/import_into_repo.py",
+    "delivery_state": "IMPORT_TOOL",
+    "remaining_boundary": "Dryrunbydefault,noauto deploy",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-029",
+    "requirement": "Quyền dữ liệu trẻ em, ảnh và sức khỏe",
+    "artifact": "07_BACKEND/TRUST_PRIVACY_AND_CHILDREN.md",
+    "delivery_state": "DESIGN_POLICY",
+    "remaining_boundary": "Sensitiveproductionfeaturesgated",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-030",
+    "requirement": "PDF, Word và bảng điều hành",
+    "artifact": "00_START/START_HERE.md",
+    "delivery_state": "ARTIFACT_PACKAGE",
+    "remaining_boundary": "Plan not fullproductionOS",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-031",
+    "requirement": "NUM-01 — Đường đời",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Tổng trung gian có thể khác dù căn giống nhau; lưu trace.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-032",
+    "requirement": "NUM-02 — Ngày sinh",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Giữ ngày 1–31 cùng kết quả rút gọn.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-033",
+    "requirement": "NUM-03 — Dấu số truyền thống 13/14/16/19",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không gán lỗi đạo đức, nghiệp xấu hay nợ kiếp trước.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-034",
+    "requirement": "NUM-04 — Biểu đạt theo tên đầy đủ",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Giữ nguyên tên Unicode; không suy năng lực từ số.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-035",
+    "requirement": "NUM-05 — Biểu đạt theo tên thường dùng",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không có tên thường dùng thì null; không tự lấy tên cuối.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-036",
+    "requirement": "NUM-06 — Tổng nguyên âm tên đầy đủ",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Có Y chưa phân loại thì null cho phần này, không chặn tổng tên.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-037",
+    "requirement": "NUM-07 — Tổng nguyên âm tên thường dùng",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Dùng đúng chính sách của lần chạy.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-038",
+    "requirement": "NUM-08 — Số ghép và các bước rút gọn",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không áp một nghĩa cố định cho 11/22/33 trên mọi vị trí.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-039",
+    "requirement": "NUM-09 — Tổng phụ âm tên đầy đủ",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Là chỉ số quy ước, không phải đo nhân cách.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-040",
+    "requirement": "NUM-10 — Tổng phụ âm tên thường dùng",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không có dữ liệu thì null.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-041",
+    "requirement": "NUM-11 — Chỉ số trưởng thành quy ước",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không kết luận sứ mệnh hay tuổi trưởng thành thật.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-042",
+    "requirement": "NUM-12 — Chỉ số tên riêng và ngày sinh",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Tên Việt có thể nhiều âm tiết; không tự dùng first token.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-043",
+    "requirement": "NUM-13 — Nhóm số không xuất hiện trong tên",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Thiếu chữ số không có nghĩa thiếu năng lực.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-044",
+    "requirement": "NUM-14 — Tổng chữ đầu các thành phần tên",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không đo cân bằng tâm lý.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-045",
+    "requirement": "NUM-15 — Nhóm số lặp nhiều nhất trong tên",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không chọn tùy ý một số khi hòa.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-046",
+    "requirement": "NUM-16 — Số nhóm chữ có mặt",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Không quy đổi thành confidence xác suất.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-047",
+    "requirement": "NUM-17 — Bốn hiệu số thử thách",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Số 0 được giữ; không có nghĩa không khó khăn.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-048",
+    "requirement": "NUM-18 — Phạm vi thời gian thử thách",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Mặc định chưa suy ra tuổi nếu chưa chọn chính sách.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-049",
+    "requirement": "NUM-19 — Bốn tổng đỉnh cao",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "P3 dùng đúng P1,P2 của phiên bản đã chọn.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-050",
+    "requirement": "NUM-20 — Phạm vi tuổi đỉnh cao",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Demo chọn last-integer-age-inclusive; lưu rõ điểm chuyển.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-051",
+    "requirement": "NUM-21 — Ba chu kỳ tháng–ngày–năm",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Giá trị tính được; tuổi chu kỳ không mặc nhiên bằng pinnacle.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-052",
+    "requirement": "NUM-22 — Cầu nối đường đời–tên",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Hiệu số mô tả, không phải mức hợp khoa học.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-053",
+    "requirement": "NUM-23 — Cầu nối nguyên âm–phụ âm",
+    "artifact": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "delivery_state": "REFERENCE_CODE",
+    "remaining_boundary": "Y chưa rõ thì bridge=null.",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-054",
+    "requirement": "Level 1 — Self Signal",
+    "artifact": "06_PRODUCTS/LEVEL_1_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-055",
+    "requirement": "Level 2 — Inner Architecture",
+    "artifact": "06_PRODUCTS/LEVEL_2_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-056",
+    "requirement": "Level 3 — Behavior Code",
+    "artifact": "06_PRODUCTS/LEVEL_3_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-057",
+    "requirement": "Level 4 — Work & Wealth Code",
+    "artifact": "06_PRODUCTS/LEVEL_4_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-058",
+    "requirement": "Level 5 — Relationship Field",
+    "artifact": "06_PRODUCTS/LEVEL_5_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-059",
+    "requirement": "Level 6 — Life Timeline",
+    "artifact": "06_PRODUCTS/LEVEL_6_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-060",
+    "requirement": "Level 7 — Body Intelligence",
+    "artifact": "06_PRODUCTS/LEVEL_7_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-061",
+    "requirement": "Level 8 — Mission Path",
+    "artifact": "06_PRODUCTS/LEVEL_8_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  },
+  {
+    "request_id": "REQ-V3-062",
+    "requirement": "Level 9 — Full Life Code",
+    "artifact": "06_PRODUCTS/LEVEL_9_REPORT_CONTRACT.md",
+    "delivery_state": "DESIGN_CONTRACT",
+    "remaining_boundary": "Approved scope and input required before paidrelease",
+    "production_state": "NOT_RELEASED"
+  }
+]

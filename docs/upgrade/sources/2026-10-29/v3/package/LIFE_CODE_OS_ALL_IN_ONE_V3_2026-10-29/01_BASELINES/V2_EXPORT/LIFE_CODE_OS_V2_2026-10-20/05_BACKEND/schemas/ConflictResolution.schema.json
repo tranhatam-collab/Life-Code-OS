@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:ConflictResolution",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "expected_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "selected_hypothesis_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    }
+  },
+  "required": [
+    "expected_version",
+    "selected_hypothesis_ids",
+    "reason"
+  ]
+}

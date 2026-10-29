@@ -1,0 +1,19 @@
+flowchart TB
+    Public[Public Web: Astro] --> Tools[Guest deterministic tools]
+    User[User App: React] --> BFF[Worker BFF + identity boundary]
+    Pro[Practice / Organization / Partner] --> BFF
+    BFF --> Auth[Account / Subject / Grant / Purpose / Entitlement]
+    Auth --> Profile[Versioned profile + hypotheses]
+    Profile --> Core[Canonical TypeScript method core]
+    Core --> Claims[Typed claims + provenance]
+    Journal[Observation + Resonance] --> Claims
+    Claims --> AI[Authorized retrieval / Writer / Reviewer]
+    AI --> Snap[Reviewed report snapshot + action plan]
+    Snap --> Jobs[Transactional outbox / Queues / receipt]
+    Jobs --> Files[Sandbox renderer / Private R2]
+    Auth --> PG[(PostgreSQL + RLS)]
+    PG --> Jobs
+    Sources[Source / edition / rights / release registry] --> Core
+    Sources --> AI
+    Policy[Country + safety policy: deny wins] --> Auth
+    Policy --> AI

@@ -1,0 +1,12 @@
+{
+  "subject_id": "00000000-0000-4000-8000-000000000001",
+  "profile_version_id": "00000000-0000-4000-8000-000000000002",
+  "product_release_id": "LC-L1.demo.v2",
+  "method_release_ids": [
+    "tail80.demo.v2"
+  ],
+  "purpose_id": "self_reflection",
+  "selected_hypotheses": [],
+  "as_of": "2026-10-20",
+  "locale": "vi-VN"
+}

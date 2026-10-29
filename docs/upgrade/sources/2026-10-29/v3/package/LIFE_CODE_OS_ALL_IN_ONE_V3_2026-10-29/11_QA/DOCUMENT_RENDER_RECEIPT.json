@@ -1,0 +1,18 @@
+[
+  {
+    "file": "Life_Code_All_In_One_Master_V3.pdf",
+    "pages": 25,
+    "outline_entries": 56,
+    "text_integrity_issues": [],
+    "rendered_with": "docx render_docx.py + LibreOffice",
+    "visual_review": "All final pages rendered and reviewed in contact sheets; key dense tables inspected at full size. No clipping, overlap or replacement glyphs observed. Not a formal accessibility certification."
+  },
+  {
+    "file": "Life_Code_Numbers_Names_Bat_Cuc_Atlas_V3.pdf",
+    "pages": 23,
+    "outline_entries": 43,
+    "text_integrity_issues": [],
+    "rendered_with": "docx render_docx.py + LibreOffice",
+    "visual_review": "All final pages rendered and reviewed in contact sheets; key dense tables inspected at full size. No clipping, overlap or replacement glyphs observed. Not a formal accessibility certification."
+  }
+]

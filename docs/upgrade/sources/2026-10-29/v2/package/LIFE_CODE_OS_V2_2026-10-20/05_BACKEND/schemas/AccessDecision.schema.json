@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:AccessDecision",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "allowed": {
+      "type": "boolean"
+    },
+    "reason_code": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "policy_release": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "grant_revision": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "evaluated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "allowed",
+    "reason_code",
+    "policy_release",
+    "grant_revision",
+    "evaluated_at"
+  ]
+}

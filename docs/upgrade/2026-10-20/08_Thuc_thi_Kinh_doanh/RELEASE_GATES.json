@@ -1,0 +1,201 @@
+[
+  {
+    "gate_id": "G01",
+    "name": "Source & Release",
+    "owner": "Tech Lead",
+    "acceptance": "SHA/artifact/deployed receipt/schema/rollback",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG0",
+      "RG2",
+      "RG4",
+      "RG5",
+      "RG9",
+      "RG10",
+      "RG11",
+      "RG13"
+    ]
+  },
+  {
+    "gate_id": "G02",
+    "name": "Authentication",
+    "owner": "Backend + Security",
+    "acceptance": "Client không quyết danh tính; session/recovery tests",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG7",
+      "RG8",
+      "RG11"
+    ]
+  },
+  {
+    "gate_id": "G03",
+    "name": "Authorization",
+    "owner": "Security + QA",
+    "acceptance": "Object/tenant/field/grant negative tests",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG7",
+      "RG8",
+      "RG11"
+    ]
+  },
+  {
+    "gate_id": "G04",
+    "name": "Legal & Purpose",
+    "owner": "Legal + Privacy",
+    "acceptance": "Pháp nhân/scope/country/basis/notices",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG1",
+      "RG6",
+      "RG10",
+      "RG13"
+    ]
+  },
+  {
+    "gate_id": "G05",
+    "name": "Retention & Deletion",
+    "owner": "Data + Privacy",
+    "acceptance": "Xóa DB/R2/cache/index/queue/provider; backup restore",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG7",
+      "RG12"
+    ]
+  },
+  {
+    "gate_id": "G06",
+    "name": "Methods & Claims",
+    "owner": "Method Council",
+    "acceptance": "Passport/rights/tests/null/approved rules",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG1",
+      "RG2",
+      "RG3",
+      "RG6",
+      "RG7"
+    ]
+  },
+  {
+    "gate_id": "G07",
+    "name": "Legacy & Migration",
+    "owner": "Data Lead",
+    "acceptance": "Quarantine, ownership, reconciliation",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG7",
+      "RG9",
+      "RG12"
+    ]
+  },
+  {
+    "gate_id": "G08",
+    "name": "Reports & AI",
+    "owner": "Editorial + AI",
+    "acceptance": "Claim lineage, policy, render quality",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG2",
+      "RG3",
+      "RG8"
+    ]
+  },
+  {
+    "gate_id": "G09",
+    "name": "Commerce",
+    "owner": "Commerce + QA",
+    "acceptance": "Signature/replay/refund/entitlement tests",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG7",
+      "RG9"
+    ]
+  },
+  {
+    "gate_id": "G10",
+    "name": "Reliability",
+    "owner": "SRE",
+    "acceptance": "Load/retry/DLQ/restore/RPO/RTO",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG4",
+      "RG9",
+      "RG11"
+    ]
+  },
+  {
+    "gate_id": "G11",
+    "name": "Security Review",
+    "owner": "Independent Security",
+    "acceptance": "Review/retest/no unresolved blockers",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG5",
+      "RG8"
+    ]
+  },
+  {
+    "gate_id": "G12",
+    "name": "Operations & Pilot",
+    "owner": "Program + Founder",
+    "acceptance": "Support/economics/incident/pilot/release decision",
+    "status": "NOT_CHECKED",
+    "scope": "paid_beta",
+    "evidence_uri": null,
+    "approver": null,
+    "waive_core_security": false,
+    "fpos_gate_ids": [
+      "RG1",
+      "RG6",
+      "RG10",
+      "RG12",
+      "RG13"
+    ]
+  }
+]

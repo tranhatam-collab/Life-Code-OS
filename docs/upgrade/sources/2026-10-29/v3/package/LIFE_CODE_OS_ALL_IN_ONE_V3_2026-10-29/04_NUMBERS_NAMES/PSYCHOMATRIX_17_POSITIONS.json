@@ -1,0 +1,196 @@
+[
+  {
+    "position_id": "CELL-1",
+    "digits": [
+      1
+    ],
+    "source_label": "Character",
+    "public_label": "Ô số 1",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-2",
+    "digits": [
+      2
+    ],
+    "source_label": "Energy",
+    "public_label": "Ô số 2",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-3",
+    "digits": [
+      3
+    ],
+    "source_label": "Interest",
+    "public_label": "Ô số 3",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-4",
+    "digits": [
+      4
+    ],
+    "source_label": "Health",
+    "public_label": "Ô số 4",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-5",
+    "digits": [
+      5
+    ],
+    "source_label": "Intuition",
+    "public_label": "Ô số 5",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-6",
+    "digits": [
+      6
+    ],
+    "source_label": "Labour",
+    "public_label": "Ô số 6",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-7",
+    "digits": [
+      7
+    ],
+    "source_label": "Luck",
+    "public_label": "Ô số 7",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-8",
+    "digits": [
+      8
+    ],
+    "source_label": "Duty",
+    "public_label": "Ô số 8",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "CELL-9",
+    "digits": [
+      9
+    ],
+    "source_label": "Memory",
+    "public_label": "Ô số 9",
+    "output_type": "digit_count",
+    "personal_trait_inference": false
+  },
+  {
+    "position_id": "AXIS-147",
+    "digits": [
+      1,
+      4,
+      7
+    ],
+    "source_label": "Purposeful",
+    "public_label": "Đường 1-4-7",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  },
+  {
+    "position_id": "AXIS-258",
+    "digits": [
+      2,
+      5,
+      8
+    ],
+    "source_label": "Family formation",
+    "public_label": "Đường 2-5-8",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  },
+  {
+    "position_id": "AXIS-369",
+    "digits": [
+      3,
+      6,
+      9
+    ],
+    "source_label": "Stability",
+    "public_label": "Đường 3-6-9",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  },
+  {
+    "position_id": "AXIS-123",
+    "digits": [
+      1,
+      2,
+      3
+    ],
+    "source_label": "Self appraisal",
+    "public_label": "Đường 1-2-3",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  },
+  {
+    "position_id": "AXIS-456",
+    "digits": [
+      4,
+      5,
+      6
+    ],
+    "source_label": "Finance",
+    "public_label": "Đường 4-5-6",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  },
+  {
+    "position_id": "AXIS-789",
+    "digits": [
+      7,
+      8,
+      9
+    ],
+    "source_label": "Talent",
+    "public_label": "Đường 7-8-9",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  },
+  {
+    "position_id": "AXIS-159",
+    "digits": [
+      1,
+      5,
+      9
+    ],
+    "source_label": "Spirituality",
+    "public_label": "Đường 1-5-9",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  },
+  {
+    "position_id": "AXIS-357",
+    "digits": [
+      3,
+      5,
+      7
+    ],
+    "source_label": "Sexual life",
+    "public_label": "Đường 3-5-7",
+    "output_type": "digit_count",
+    "personal_trait_inference": false,
+    "intimate_inference_enabled": false
+  }
+]

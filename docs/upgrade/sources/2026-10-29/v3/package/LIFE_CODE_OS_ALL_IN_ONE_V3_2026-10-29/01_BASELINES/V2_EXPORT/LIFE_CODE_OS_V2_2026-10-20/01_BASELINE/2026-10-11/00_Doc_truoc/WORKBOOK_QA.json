@@ -1,0 +1,202 @@
+{
+  "scope": "ARTIFACT_TOOL_LOCAL_WORKBOOK",
+  "sheets": 11,
+  "tool": "artifact_tool",
+  "inspections": [
+    {
+      "kind": "table",
+      "sheet": "Dashboard",
+      "address": "A4:E17",
+      "rows": 14,
+      "cols": 5,
+      "values": [
+        [
+          "Công việc",
+          "Đã DONE",
+          "Gates PASS",
+          "Q đã duyệt",
+          null
+        ],
+        [
+          140,
+          0,
+          0,
+          0,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Phase",
+          "Công việc",
+          "Ngày công thấp",
+          "Ngày công cao",
+          "DONE"
+        ],
+        [
+          "P0",
+          10,
+          10,
+          20,
+          0
+        ],
+        [
+          "A",
+          10,
+          27,
+          64,
+          0
+        ],
+        [
+          "B",
+          20,
+          54,
+          128,
+          0
+        ],
+        [
+          "C",
+          40,
+          108,
+          256,
+          0
+        ],
+        [
+          "D",
+          30,
+          81,
+          192,
+          0
+        ],
+        [
+          "E",
+          20,
+          54,
+          128,
+          0
+        ],
+        [
+          "F",
+          10,
+          27,
+          64,
+          0
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tổng",
+          140,
+          361,
+          852,
+          0
+        ]
+      ]
+    },
+    {
+      "kind": "table",
+      "sheet": "Costs",
+      "address": "A14:E23",
+      "rows": 10,
+      "cols": 5,
+      "values": [
+        [
+          "Tổng nhân sự",
+          null,
+          null,
+          null,
+          "CHƯA ĐỦ GIẢ ĐỊNH"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Hạ tầng / AI 6 tháng",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Pháp lý / quyền nguồn",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Security review độc lập",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Dịch / bản địa hóa",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Dự phòng (%)",
+          0.15,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tổng ngân sách",
+          null,
+          null,
+          null,
+          "CHƯA ĐỦ GIẢ ĐỊNH"
+        ]
+      ]
+    },
+    {
+      "kind": "notice",
+      "message": "Cell search matched 0 entries."
+    }
+  ],
+  "visual_previews_reviewed": [
+    "Dashboard",
+    "Costs"
+  ],
+  "status": "PASS_LOCAL_WORKBOOK_CHECKS"
+}

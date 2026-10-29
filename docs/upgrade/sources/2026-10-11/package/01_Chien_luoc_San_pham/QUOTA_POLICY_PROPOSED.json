@@ -1,0 +1,23 @@
+{
+  "status": "PROPOSED_NOT_PRODUCTION",
+  "guest": {
+    "server_ai_requests": 0,
+    "input_analytics": false,
+    "local_deterministic": true
+  },
+  "free": {
+    "self_subjects": 1,
+    "active_goals": 1,
+    "short_ai_turns_per_month_proposal": 10,
+    "journal_storage_mb_proposal": 10,
+    "privacy_export_and_delete_always_available": true
+  },
+  "all": {
+    "rate_limits_required": true,
+    "per_job_token_limit_required": true,
+    "max_parallel_jobs_configured_server_side": true,
+    "hard_cost_ceiling_required": true,
+    "degrade_to_deterministic_allowed": true,
+    "selling_private_data": false
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "policy_id": "strict_adjacent_v3",
+    "description": "Giữ toàn bộ dãy; tách cặp chồng lấn; 0/5 chưa phân loại.",
+    "default": true,
+    "approved_for_production": false
+  },
+  {
+    "policy_id": "bridge_single_0_5_diagnostic_v3",
+    "description": "Thêm cầu chỉ cho đúng một 0 hoặc 5 nằm giữa hai chữ số trong tập 1,2,3,4,6,7,8,9; không xóa dãy gốc.",
+    "default": false,
+    "approved_for_production": false,
+    "runs_00_55_mixed": "UNRESOLVED",
+    "coefficient": null
+  },
+  {
+    "policy_id": "full_traditional_context_pending",
+    "description": "Phối tiên thiên/hậu thiên, vị trí, cường độ, chế hóa: chờ nguồn/phiên bản và review riêng.",
+    "default": false,
+    "approved_for_production": false
+  }
+]

@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/JobEnvelope.json",
+  "title": "JobEnvelope",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.0-proposed"
+    },
+    "job_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "tenant_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "subject_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "principal_account_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "purpose_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operation": {
+      "enum": [
+        "analyze",
+        "draft_report",
+        "export_report",
+        "privacy_export",
+        "delete_subject",
+        "send_optin_reminder"
+      ]
+    },
+    "resource_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 16,
+      "maxLength": 200
+    },
+    "request_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "authorization_recheck_required": {
+      "const": true
+    },
+    "attempt": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 20
+    },
+    "payload_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "database_record"
+        },
+        "resource_type": {
+          "enum": [
+            "profile_version",
+            "method_result",
+            "report_snapshot",
+            "subject",
+            "privacy_export_request"
+          ]
+        },
+        "resource_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": ["kind", "resource_type", "resource_id", "version"]
+    },
+    "raw_personal_data_in_queue": {
+      "const": false
+    },
+    "max_attempts": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 20
+    },
+    "deadline_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "authorization_snapshot_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "grant_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "consent_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "job_id",
+    "tenant_id",
+    "subject_id",
+    "principal_account_id",
+    "purpose_id",
+    "policy_version",
+    "operation",
+    "resource_id",
+    "idempotency_key",
+    "request_digest",
+    "created_at",
+    "authorization_recheck_required",
+    "attempt",
+    "payload_ref",
+    "raw_personal_data_in_queue",
+    "max_attempts",
+    "deadline_at",
+    "authorization_snapshot_id",
+    "grant_version",
+    "consent_version"
+  ],
+  "$comment": "Backend must enforce attempt < max_attempts, deadline_at > created_at, idempotency namespace account+operation, and same-tenant/subject ownership for payload_ref."
+}

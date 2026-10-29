@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v3:LifetimeInput",
+  "title": "LifetimeInput",
+  "type": "object",
+  "required": [
+    "birth_date",
+    "as_of"
+  ],
+  "properties": {
+    "birth_date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "as_of": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "leap_policy": {
+      "enum": [
+        "feb28",
+        "mar01"
+      ]
+    },
+    "cycle_years": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "events": {
+      "type": "array",
+      "maxItems": 300,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "date",
+          "title",
+          "domain"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "domain": {
+            "enum": [
+              "identity",
+              "learning",
+              "work",
+              "resources",
+              "relationships",
+              "family",
+              "home",
+              "community",
+              "body",
+              "daily_rhythm",
+              "meaning",
+              "creativity",
+              "mobility",
+              "caregiving",
+              "later_life",
+              "legacy",
+              "life_changes",
+              "digital_life"
+            ]
+          },
+          "source_note": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "plans": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "target_date",
+          "title",
+          "domain"
+        ],
+        "properties": {
+          "target_date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "domain": {
+            "enum": [
+              "identity",
+              "learning",
+              "work",
+              "resources",
+              "relationships",
+              "family",
+              "home",
+              "community",
+              "body",
+              "daily_rhythm",
+              "meaning",
+              "creativity",
+              "mobility",
+              "caregiving",
+              "later_life",
+              "legacy",
+              "life_changes",
+              "digital_life"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

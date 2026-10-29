@@ -1,0 +1,17 @@
+sequenceDiagram
+ participant U as Người dùng
+ participant API as API có quyền
+ participant DB as PostgreSQL
+ participant Q as Queue
+ participant W as Worker
+ U->>API: Tạo run và idempotency key
+ API->>DB: Transaction: run + receipt + outbox
+ DB-->>API: Run ID
+ API-->>U: 202 và trạng thái
+ DB->>Q: Publisher gửi lại được
+ Q->>W: Job có operation ID
+ W->>DB: Kiểm lại quyền và deletion barrier
+ W->>W: DAG và công thức đã phát hành
+ W->>DB: Kết quả có provenance
+ W->>DB: Kiểm lại quyền trước publish
+ DB-->>U: Báo cáo khi đã được duyệt

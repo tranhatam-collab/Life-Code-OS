@@ -1,0 +1,38 @@
+{
+  "packet_status": "PLAN_ONLY_NOT_EXECUTED",
+  "approval": null,
+  "criteria": [
+    {
+      "id": "risky_surfaces_blocked",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "id": "legacy_sessions_invalidated",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "id": "pseudo_personal_outputs_disabled",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "id": "release_receipts_matched",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "id": "legacy_incident_owner_assigned",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    },
+    {
+      "id": "rollback_path_safe",
+      "status": "NOT_CHECKED",
+      "evidence": null
+    }
+  ],
+  "decision": "NO_GO_UNTIL_EVIDENCE_REVIEW",
+  "warning": "Không đổi trạng thái chỉ vì bộ tài liệu đã được xuất."
+}

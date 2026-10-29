@@ -1,0 +1,199 @@
+[
+  {
+    "fpos_gate_id": "RG0",
+    "title": "Source and baseline",
+    "custom_gate_ids": [
+      "G01"
+    ],
+    "owner_role": "Tech Lead",
+    "evidence_required": "Path/remote/branch/full SHA/clean-tree; artifact digest; exact environment",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG1",
+    "title": "Governance product and business",
+    "custom_gate_ids": [
+      "G04",
+      "G06",
+      "G12"
+    ],
+    "owner_role": "Founder + Product + Legal",
+    "evidence_required": "Charter; requirement acceptance; Q decisions; rights; scope/budget/service entity",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG2",
+    "title": "Architecture design and brand",
+    "custom_gate_ids": [
+      "G01",
+      "G06",
+      "G08"
+    ],
+    "owner_role": "Architect + UX + Founder",
+    "evidence_required": "Approved ADRs; data flow; accessibility; brand and public claim review",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG3",
+    "title": "AI system",
+    "custom_gate_ids": [
+      "G06",
+      "G08"
+    ],
+    "owner_role": "AI Lead + Method Lead + Security",
+    "evidence_required": "Model/prompt/source versions; evals; ACL retrieval; costs; kill switch; human escalation",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG4",
+    "title": "Infrastructure and environments",
+    "custom_gate_ids": [
+      "G01",
+      "G10"
+    ],
+    "owner_role": "Platform + SRE",
+    "evidence_required": "Resource/account/region/bindings; isolation; secrets controls; backup; cost caps",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG5",
+    "title": "Development and DevOps",
+    "custom_gate_ids": [
+      "G01",
+      "G11"
+    ],
+    "owner_role": "Tech Lead + QA",
+    "evidence_required": "Protected branch; required checks; pinned build; artifact allowlist; no dirty deploy",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG6",
+    "title": "Documentation",
+    "custom_gate_ids": [
+      "G04",
+      "G06",
+      "G12"
+    ],
+    "owner_role": "Product + Docs Owner",
+    "evidence_required": "Authority/supersession; runbooks; API/schema; user/support docs; read coverage",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG7",
+    "title": "Implementation data integration",
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G07",
+      "G09"
+    ],
+    "owner_role": "Backend + Data + QA",
+    "evidence_required": "Object/tenant grants; method golden cases; migrations/reconciliation; payment and deletion",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG8",
+    "title": "Verification and security",
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G08",
+      "G11"
+    ],
+    "owner_role": "Independent QA + Security",
+    "evidence_required": "Unit/property/contract/browser/e2e; negative auth; pentest/retest; counts and skips",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG9",
+    "title": "Staging and rehearsal",
+    "custom_gate_ids": [
+      "G01",
+      "G07",
+      "G09",
+      "G10"
+    ],
+    "owner_role": "Release Lead + SRE",
+    "evidence_required": "Staging RC; auth/payment sandbox; load; restore/rollback; immutable rehearsal receipt",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG10",
+    "title": "Production authorization",
+    "custom_gate_ids": [
+      "G01",
+      "G04",
+      "G12"
+    ],
+    "owner_role": "Founder + Release Authority",
+    "evidence_required": "Exact RC and scope; functional approvals; authorized operator/change window",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG11",
+    "title": "Post deploy verification",
+    "custom_gate_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G10"
+    ],
+    "owner_role": "SRE + QA",
+    "evidence_required": "Provider deployment IDs map digest; domain routes; allowlisted smoke and failure paths",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG12",
+    "title": "Cleanup and handoff",
+    "custom_gate_ids": [
+      "G05",
+      "G07",
+      "G12"
+    ],
+    "owner_role": "SRE + Support + Privacy",
+    "evidence_required": "Temporary access removed; legacy disposition; support/escalation; cost/monitor/DR ownership",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  },
+  {
+    "fpos_gate_id": "RG13",
+    "title": "Founder domain sign off",
+    "custom_gate_ids": [
+      "G01",
+      "G04",
+      "G12"
+    ],
+    "owner_role": "Founder",
+    "evidence_required": "Domain + exact release/capabilities + environment receipt + explicit decision",
+    "status": "NOT_CHECKED",
+    "receipt_ref": null,
+    "applicability": "Scope must be decided before RC; no automatic N/A"
+  }
+]

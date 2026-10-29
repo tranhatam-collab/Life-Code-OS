@@ -1,0 +1,42 @@
+{
+  "checked_on": "2026-10-29",
+  "tool": "Chromium via Playwright set_content",
+  "mode": "OFFLINE_RENDER_WITH_LOCAL_RESULT_FIXTURES",
+  "browser_http_navigation": "BLOCKED_BY_ADMINISTRATOR; no policy bypass attempted",
+  "http_api_tests": "Separate Node HTTP test suite",
+  "records": [
+    {
+      "viewport": 360,
+      "horizontal_page_overflow": false,
+      "js_errors": [],
+      "level_cards": 9,
+      "domain_cards": 18,
+      "offline_fixture_ui_rendered": true
+    },
+    {
+      "viewport": 390,
+      "horizontal_page_overflow": false,
+      "js_errors": [],
+      "level_cards": 9,
+      "domain_cards": 18,
+      "offline_fixture_ui_rendered": true
+    },
+    {
+      "viewport": 768,
+      "horizontal_page_overflow": false,
+      "js_errors": [],
+      "level_cards": 9,
+      "domain_cards": 18,
+      "offline_fixture_ui_rendered": true
+    },
+    {
+      "viewport": 1440,
+      "horizontal_page_overflow": false,
+      "js_errors": [],
+      "level_cards": 9,
+      "domain_cards": 18,
+      "offline_fixture_ui_rendered": true
+    }
+  ],
+  "scope": "Layout and UI behavior with mocked fetch; not integrated browser E2E, WCAG certification or native app."
+}

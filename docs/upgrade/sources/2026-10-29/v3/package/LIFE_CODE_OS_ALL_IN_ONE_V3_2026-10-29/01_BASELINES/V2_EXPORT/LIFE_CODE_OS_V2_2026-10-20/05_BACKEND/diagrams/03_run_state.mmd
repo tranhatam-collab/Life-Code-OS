@@ -1,0 +1,15 @@
+stateDiagram-v2
+ [*] --> queued
+ queued --> running
+ queued --> cancelled
+ running --> review_required
+ running --> blocked
+ running --> failed
+ running --> cancel_requested
+ cancel_requested --> cancelled
+ review_required --> approved
+ review_required --> blocked
+ approved --> published
+ approved --> stale
+ published --> withdrawn
+ withdrawn --> [*]

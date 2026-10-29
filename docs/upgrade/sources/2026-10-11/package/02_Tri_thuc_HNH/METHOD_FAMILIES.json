@@ -1,0 +1,182 @@
+[
+  {
+    "family_id": "K01",
+    "name_vi": "Lịch pháp, thiên văn và múi giờ",
+    "research_languages": "VI/EN + lịch liên quan",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K02",
+    "name_vi": "Bát tự, Tứ trụ, Tử Bình",
+    "research_languages": "VI/ZH cổ–phồn–giản",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K03",
+    "name_vi": "Tử Vi Đẩu Số và mệnh bàn",
+    "research_languages": "VI/ZH",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K04",
+    "name_vi": "Kinh Dịch, Mai Hoa, Lục Hào",
+    "research_languages": "VI/ZH",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K05",
+    "name_vi": "Kỳ Môn, Lục Nhâm, Thái Ất",
+    "research_languages": "ZH/VI",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K06",
+    "name_vi": "Phong thủy, Vastu, không gian",
+    "research_languages": "ZH/SA/EN/VI",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K07",
+    "name_vi": "Jyotish, Nadi, truyền thống Ấn Độ",
+    "research_languages": "SA/TA/HI/EN/VI",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K08",
+    "name_vi": "Chiêm tinh phương Tây và trung đại",
+    "research_languages": "EL/LA/AR/FA/EN/VI",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K09",
+    "name_vi": "Lịch và chiêm nghiệm khu vực",
+    "research_languages": "BO/JA/KO/TH/MY/ID + ngôn ngữ nguồn",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K10",
+    "name_vi": "Thần số học, Psychomatrix, chữ–số",
+    "research_languages": "EN/RU/FR/VI + chữ gốc",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K11",
+    "name_vi": "Bát Cực Linh Số, Mã đuôi80, dãy số",
+    "research_languages": "VI/ZH/TH",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K12",
+    "name_vi": "Danh học, ngôn ngữ và ký hiệu",
+    "research_languages": "VI + từng văn tự",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K13",
+    "name_vi": "Bàn tay, khuôn mặt, bàn chân, hình thái",
+    "research_languages": "VI/ZH/EN",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K14",
+    "name_vi": "Tarot, Rune, Ifá, giấc mơ",
+    "research_languages": "EN/FR + ngôn ngữ cộng đồng nguồn",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K15",
+    "name_vi": "Human Design, Gene Keys và hệ tổng hợp",
+    "research_languages": "EN + bản dịch có quyền",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "RESEARCH_ONLY",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K16",
+    "name_vi": "Triết học, tôn giáo và nội tâm",
+    "research_languages": "VI/PI/SA/ZH/AR/HE/EL/LA",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K17",
+    "name_vi": "Tâm lý học và đo lường",
+    "research_languages": "EN/VI + công cụ có validation",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K18",
+    "name_vi": "Hành vi, nghề nghiệp, kinh tế, xã hội",
+    "research_languages": "EN/VI + nghiên cứu khu vực",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K19",
+    "name_vi": "Sinh hoạt, môi trường, sức khỏe nền",
+    "research_languages": "EN/VI + nguồn chuyên môn",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  },
+  {
+    "family_id": "K20",
+    "name_vi": "Toán học, dữ liệu, AI và kỹ thuật",
+    "research_languages": "EN/VI",
+    "registry_scope": "research_inventory_not_claim_all_read",
+    "default_release": "METHOD_BY_METHOD_APPROVAL",
+    "source_requirements": "Edition/page/language/rights/rule/limitations/reviewer",
+    "cross_cultural_gate": true
+  }
+]

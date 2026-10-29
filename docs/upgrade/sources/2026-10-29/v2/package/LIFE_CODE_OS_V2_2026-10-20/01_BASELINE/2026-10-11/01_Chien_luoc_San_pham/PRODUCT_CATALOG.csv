@@ -1,0 +1,24 @@
+﻿product_id,name_vi,level,phase,billing,status,output,boundary
+LC-L1,Tín hiệu nền,1,C,personal_report,PROPOSED_NOT_RELEASED,"Kiểm tra nguồn, tính minh bạch, chủ đề tự quan sát",Kế hoạch 30 ngày
+LC-L2,Cấu trúc nội tâm,2,E,personal_report,PROPOSED_NOT_RELEASED,Mâu thuẫn nhu cầu và lựa chọn được xác nhận,Thử nghiệm 90 ngày
+LC-L3,Cách hành động,3,E,personal_report,PROPOSED_NOT_RELEASED,"Mô thức trong bối cảnh, không chẩn đoán",Kế hoạch thay đổi có theo dõi
+LC-L4,Công việc và nguồn lực,4,E,personal_report,PROPOSED_NOT_RELEASED,"Phương án vai trò, nguồn lực, kịch bản",Kế hoạch công việc và ngân sách
+LC-L5,Quan hệ và ranh giới,5,E,personal_report,PROPOSED_NOT_RELEASED,"Bản đồ giao tiếp, trách nhiệm, khác biệt",Kế hoạch đối thoại
+LC-L6,Dòng thời gian,6,F,personal_report,PROPOSED_NOT_RELEASED,"Lịch sử, chu kỳ biểu tượng, kế hoạch, dự báo tách biệt","Hành động 12 tháng, kịch bản dài hạn"
+LC-L7,Cơ thể và môi trường,7,F_REVIEW,personal_report,PROPOSED_NOT_RELEASED,"Mô tả hình thức, nhật ký sinh hoạt, giới hạn",Quan sát và trao đổi chuyên môn phù hợp
+LC-L8,Hướng sống và phụng sự,8,F,personal_report,PROPOSED_NOT_RELEASED,"Hướng sống tự chọn, không nhiệm vụ linh hồn bắt buộc",Thử nghiệm phụng sự và kế hoạch chuyển giao
+LC-L9,Hồ sơ đời sống hợp nhất,9,F,personal_report,PROPOSED_NOT_RELEASED,"Sách không lặp, lineage, điều chưa biết, revisions",Hệ hành động và xem lại
+LC-GUEST,Công cụ không tài khoản,,C,free,PROPOSED_NOT_RELEASED,Công cụ deterministic tại thiết bị; không gửi tên/đuôi số vào analytics,Không AI vô hạn; không lưu hồ sơ
+LC-FREE,Hồ sơ căn bản miễn phí,,C,free,PROPOSED_NOT_RELEASED,"Một subject tự quản, một mục tiêu, nhật ký, Snapshot và quyền dữ liệu",AI quota đề xuất; không giảm quyền export/delete
+LC-COMPANION,AI đồng hành,,D,subscription,PROPOSED_NOT_RELEASED,"Hỏi báo cáo, kế hoạch, nhắc việc được phép, review mục tiêu",Cấm dự báo nguy cơ từ số
+LC-NUMBERS,Bộ số và tên,,C,module,PROPOSED_NOT_RELEASED,Thẻ kết quả từng phương pháp; so sánh cấu trúc,Không score đổi vận; PIN/OTP bị loại
+LC-EXPERT,Phiên chuyên gia,,D,session,PROPOSED_NOT_RELEASED,Thời lượng/scope/revision xác định; practitioner grant,Không quyết thay client
+LC-PRACTICE,Không gian chuyên gia,,E,subscription,PROPOSED_NOT_RELEASED,"Case, lịch, ghi chú, review, report",Chỉ subject grants hợp lệ
+LC-ACADEMY-FOUNDATION,Khóa nền HNH chín buổi,,E,cohort,PROPOSED_NOT_RELEASED,"9×120 phút, bài tập và đánh giá",Chứng nhận nội bộ có phạm vi
+LC-ACADEMY-PRO,Đào tạo thực hành có giám sát,,F,cohort,PROPOSED_NOT_RELEASED,Supervised cases và ethics assessment,Không cấp bằng lâm sàng
+LC-ACADEMY-TRAINER,Đào tạo giảng viên,,F,license,PROPOSED_NOT_RELEASED,"Học liệu/version, dạy thử, quality review",Quyền ngôn ngữ/lãnh thổ riêng
+LC-FAMILY,Gia đình có quyền riêng,,E_F_REVIEW,subscription,PROPOSED_NOT_RELEASED,"Mục tiêu chung, chia sẻ người lớn; minor flow chưa mở",Guardian/country gate riêng
+LC-ORG,Tổ chức và doanh nghiệp,,F,license,PROPOSED_NOT_RELEASED,"Vai trò, học tập, mục tiêu, projects, aggregates phù hợp",Không hiring/credit scoring từ biểu tượng
+LC-API,API cấp phép,,F,usage,PROPOSED_NOT_RELEASED,"Tenant/purpose scoped API, quota, method versions",Không bulk private profiling
+LC-PUBLISH,Xuất bản và bộ sách,,D,one_time,PROPOSED_NOT_RELEASED,Snapshot và exports theo scope,Không bảo đảm600trang mỗi hồ sơ
+LC-REGIONAL,Cấp phép quốc gia/nhượng quyền,,F_LEGAL,contract,PROPOSED_NOT_RELEASED,Brand/curriculum/software scope và continuity,Không mở lãnh thổ trước legal gate

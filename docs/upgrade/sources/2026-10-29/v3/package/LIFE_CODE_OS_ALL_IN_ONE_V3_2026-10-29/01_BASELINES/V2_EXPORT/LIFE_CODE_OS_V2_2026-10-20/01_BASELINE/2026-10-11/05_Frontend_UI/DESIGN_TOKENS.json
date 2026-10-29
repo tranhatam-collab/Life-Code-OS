@@ -1,0 +1,40 @@
+{
+  "version": "0.1-proposed",
+  "colors": {
+    "ink": "#142E37",
+    "paper": "#F7F7F2",
+    "surface": "#FFFFFF",
+    "accent": "#176A61",
+    "warning": "#865900",
+    "error": "#A22E2E",
+    "muted": "#526571",
+    "border": "#D7E0DF"
+  },
+  "type": {
+    "body": "system-ui, sans-serif",
+    "body_min_px": 16,
+    "line_height": 1.55,
+    "mono": "ui-monospace, monospace"
+  },
+  "space_px": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius_px": 12,
+  "motion": {
+    "respect_reduced_motion": true,
+    "decorative_auto_animation": false
+  },
+  "semantics": {
+    "no_person_worth_color_scale": true,
+    "unknown_not_red_failure": true,
+    "critical_requires_text_not_color_only": true
+  },
+  "review": "Contrast and assistive technology testing required before production"
+}

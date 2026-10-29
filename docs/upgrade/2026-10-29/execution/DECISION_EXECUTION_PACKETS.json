@@ -1,0 +1,5296 @@
+[
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q1",
+    "topic": "Định vị tự hiểu và thiết kế đời sống",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q1-A",
+        "label": "Bounded self-understanding and life-design positioning",
+        "scope": "Position the system as reflective decision support with explicit limits; exclude diagnosis, destiny and guaranteed outcomes.",
+        "tradeoffs": [
+          "Preserves the product vision and action orientation",
+          "Requires disciplined claim review across every surface"
+        ]
+      },
+      {
+        "option_id": "Q1-B",
+        "label": "Educational wellbeing content only",
+        "scope": "Restrict the offer to static education and journaling without individualized interpretations.",
+        "tradeoffs": [
+          "Lowest claim risk",
+          "Removes much of the differentiated personalized value"
+        ]
+      },
+      {
+        "option_id": "Q1-C",
+        "label": "Pause positioning and run discovery",
+        "scope": "Do not freeze a public position until user research and legal review are complete.",
+        "tradeoffs": [
+          "Reduces premature commitment",
+          "Delays taxonomy, copy, product contracts and demo acceptance"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q1-A",
+    "recommendation_rationale": "It preserves the stated vision while creating a reviewable boundary between reflection and prohibited scientific, medical or deterministic claims.",
+    "recommendation_tradeoffs": [
+      "Requires ongoing Editorial, Method, Privacy and Legal review",
+      "Public copy cannot outrun evidence or product-specific gates"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "UPG-PRD-001",
+      "UPG-PRD-002",
+      "UPG-UX-002",
+      "UPG-PM-001"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q1",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds recurring claim-review and research capacity; no monetary estimate is valid yet.",
+      "cost_drivers": [
+        "user research",
+        "editorial review",
+        "method review",
+        "privacy/legal review"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Method Lead",
+      "Editorial Lead",
+      "Privacy/Legal"
+    ],
+    "decision_due_event": "before product narrative, public copy or pilot scope is frozen",
+    "constraints": [
+      "No diagnosis, destiny, guaranteed outcome or high-impact decision claim",
+      "Every public claim must map to a product/method/content release"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q1/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q2",
+    "topic": "9 cấp/12 lớp/4 phần/12 trường/K01–20",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q2-A",
+        "label": "Lock the 9-level/12-layer/4-block/12-field/K01-K20 model as a versioned taxonomy",
+        "scope": "Keep the complete model, publish definitions and version every semantic change.",
+        "tradeoffs": [
+          "Preserves all original vision and trace IDs",
+          "Creates broad governance and regression-test obligations"
+        ]
+      },
+      {
+        "option_id": "Q2-B",
+        "label": "Lock nine levels only and defer lower taxonomies",
+        "scope": "Use nine levels now; treat layers, blocks, fields and K families as research-only.",
+        "tradeoffs": [
+          "Smaller initial contract",
+          "Delays report differentiation and method mapping"
+        ]
+      },
+      {
+        "option_id": "Q2-C",
+        "label": "Redesign the taxonomy before implementation",
+        "scope": "Replace the current hierarchy after a dedicated research cycle.",
+        "tradeoffs": [
+          "May simplify the model",
+          "Breaks current product/report/trace mappings and delays development"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q2-A",
+    "recommendation_rationale": "Versioning retains all requested concepts without representing the taxonomy as validated science and gives downstream schemas stable identifiers.",
+    "recommendation_tradeoffs": [
+      "More documentation and migration discipline",
+      "Definitions must be testable and cannot remain marketing labels"
+    ],
+    "decision_dependencies": [
+      "Q1"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-PRD-002",
+      "UPG-AI-001",
+      "UPG-PM-001"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q2",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A has the largest up-front taxonomy and regression effort but avoids later ID churn.",
+      "cost_drivers": [
+        "taxonomy workshops",
+        "schema/versioning work",
+        "report-template regression",
+        "translation"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Method Lead",
+      "Data Architect",
+      "AI/Editorial Lead"
+    ],
+    "decision_due_event": "before schema, API and nine-level report contracts are frozen",
+    "constraints": [
+      "Taxonomy status is conceptual until evidence says otherwise",
+      "Semantic changes require migration and downstream trace review"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q2/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q3",
+    "topic": "Method độc lập theo nguồn và phiên bản",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q3-A",
+        "label": "Independent versioned method releases",
+        "scope": "Release each method by source, rights, formula, tests, limits and named approvers.",
+        "tradeoffs": [
+          "Strong provenance and selective withdrawal",
+          "Higher registry and review overhead"
+        ]
+      },
+      {
+        "option_id": "Q3-B",
+        "label": "One bundled method release",
+        "scope": "Approve the whole method set under one version and review.",
+        "tradeoffs": [
+          "Simpler packaging",
+          "A defect or rights issue can block or taint the entire bundle"
+        ]
+      },
+      {
+        "option_id": "Q3-C",
+        "label": "Content-only mode with no calculation methods",
+        "scope": "Keep method descriptions but disable computed or individualized outputs.",
+        "tradeoffs": [
+          "Lowest execution and rights risk",
+          "Cannot deliver the intended analytic product depth"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q3-A",
+    "recommendation_rationale": "Per-method releases provide the minimum isolation needed for rights, corrections, rollback and level-specific eligibility.",
+    "recommendation_tradeoffs": [
+      "Requires a release registry and independent review per method",
+      "Some catalog products remain unavailable while individual methods are blocked"
+    ],
+    "decision_dependencies": [
+      "Q2"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-AI-001",
+      "UPG-BE-001",
+      "UPG-BE-002",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q3",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Cost varies by source rights, expert review and test depth for each method.",
+      "cost_drivers": [
+        "source licensing",
+        "method review",
+        "formula implementation",
+        "golden and negative tests"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Method Council",
+      "Data Lead",
+      "Legal/Rights Reviewer",
+      "QA"
+    ],
+    "decision_due_event": "before any method result is eligible for a product or report",
+    "constraints": [
+      "No release without source/right/formula/test/limit evidence",
+      "Withdrawal must invalidate dependent jobs, reports and exports"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q3/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q4",
+    "topic": "Entitlement khác quyền và đủ dữ liệu",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q4-A",
+        "label": "Separate entitlement, authorization, eligibility and data sufficiency",
+        "scope": "Evaluate each server-side and return typed denial or missing-data reasons.",
+        "tradeoffs": [
+          "Correct security and user guidance",
+          "More policy states and negative tests"
+        ]
+      },
+      {
+        "option_id": "Q4-B",
+        "label": "Treat entitlement as sufficient access",
+        "scope": "A paid entitlement opens a product whenever the route exists.",
+        "tradeoffs": [
+          "Simpler commerce logic",
+          "Unsafe because payment does not prove subject rights, purpose or data sufficiency"
+        ]
+      },
+      {
+        "option_id": "Q4-C",
+        "label": "Manual eligibility review for every request",
+        "scope": "A reviewer approves each access and run.",
+        "tradeoffs": [
+          "Strong human control",
+          "Does not scale and increases sensitive-data handling"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q4-A",
+    "recommendation_rationale": "The four-way separation prevents payment or a client flag from becoming authorization and supports precise recovery states.",
+    "recommendation_tradeoffs": [
+      "Requires a policy engine and cross-layer test matrix",
+      "More blocked states must be designed across mobile and desktop"
+    ],
+    "decision_dependencies": [
+      "Q9"
+    ],
+    "affected_task_ids": [
+      "TRUST-01",
+      "TRUST-02",
+      "TRUST-03",
+      "TRUST-04",
+      "TRUST-05",
+      "TRUST-06",
+      "TRUST-07",
+      "TRUST-08",
+      "TRUST-09",
+      "TRUST-10",
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "API-01",
+      "API-02",
+      "API-03",
+      "API-04",
+      "API-05",
+      "API-06",
+      "API-07",
+      "API-08",
+      "API-09",
+      "API-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "UPG-BE-003",
+      "UPG-BE-004",
+      "UPG-BE-006"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q4",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds policy, authorization and cross-device state work; provider-independent estimates remain in person-days only.",
+      "cost_drivers": [
+        "policy engine",
+        "object/tenant tests",
+        "entitlement reconciliation",
+        "UX denial states"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Security Lead",
+      "Privacy/Data Owner",
+      "Commerce Lead"
+    ],
+    "decision_due_event": "before entitlement, profile, analysis or report authorization contracts are frozen",
+    "constraints": [
+      "Client-supplied IDs or flags cannot grant access",
+      "Every denial must avoid object-existence leakage"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q4/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q5",
+    "topic": "Dừng điểm giả và cho null",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q5-A",
+        "label": "Typed null, unknown, withheld and not-applicable results",
+        "scope": "Preserve uncertainty and block unsupported derived scores while allowing partial truthful reports.",
+        "tradeoffs": [
+          "Prevents fabricated certainty",
+          "Requires more schema and UI states"
+        ]
+      },
+      {
+        "option_id": "Q5-B",
+        "label": "Impute fallback scores",
+        "scope": "Fill missing values from defaults or heuristics.",
+        "tradeoffs": [
+          "Fewer visible gaps",
+          "Creates false precision and unsafe downstream inferences"
+        ]
+      },
+      {
+        "option_id": "Q5-C",
+        "label": "Fail the entire report on any missing input",
+        "scope": "Return no result until every field is present.",
+        "tradeoffs": [
+          "Simple consistency rule",
+          "Unnecessarily blocks safe partial value and encourages coerced data entry"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q5-A",
+    "recommendation_rationale": "Typed absence is the only option consistent with the plan's evidence discipline and differentiated report contracts.",
+    "recommendation_tradeoffs": [
+      "Every formula and narrative path needs null behavior",
+      "Users require clear explanations of what is missing and why"
+    ],
+    "decision_dependencies": [
+      "Q2",
+      "Q3"
+    ],
+    "affected_task_ids": [
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-BE-002",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q5",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A increases schema, fixture, UI and report-regression work.",
+      "cost_drivers": [
+        "typed schemas",
+        "null-state UX",
+        "formula tests",
+        "report fixtures"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Data Lead",
+      "Method Lead",
+      "AI/Editorial Lead",
+      "QA"
+    ],
+    "decision_due_event": "before formula, result and report schemas are accepted",
+    "constraints": [
+      "Unknown is never converted to zero",
+      "AI cannot infer or narrate unavailable deterministic values"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q5/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q6",
+    "topic": "Numbers là tham chiếu không đo số phận",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q6-A",
+        "label": "Numbers as bounded symbolic reference",
+        "scope": "Allow clearly labeled symbolic interpretation with sources, limitations and no fate or clinical claim.",
+        "tradeoffs": [
+          "Retains the original Numbers concept",
+          "Needs prominent limitations and cultural/claim review"
+        ]
+      },
+      {
+        "option_id": "Q6-B",
+        "label": "Numbers as predictive life metric",
+        "scope": "Use numeric outputs to predict traits, compatibility or outcomes.",
+        "tradeoffs": [
+          "Strong marketing differentiation",
+          "Unacceptable unsupported and potentially harmful inference risk"
+        ]
+      },
+      {
+        "option_id": "Q6-C",
+        "label": "Remove Numbers from the active portfolio",
+        "scope": "Keep historical material only and do not expose the method.",
+        "tradeoffs": [
+          "Lowest claim risk",
+          "Discards a material part of the product vision"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q6-A",
+    "recommendation_rationale": "A bounded reference mode keeps the vision visible without treating symbolic arithmetic as measurement or destiny.",
+    "recommendation_tradeoffs": [
+      "May reduce persuasive marketing language",
+      "Some users may still over-interpret results, requiring UX safeguards"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q3",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q6",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A requires source/right review, careful copy and misuse testing.",
+      "cost_drivers": [
+        "source rights",
+        "editorial review",
+        "claim testing",
+        "localization"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Editorial Lead",
+      "Privacy/Legal",
+      "QA"
+    ],
+    "decision_due_event": "before Numbers content or calculation is included in a release candidate",
+    "constraints": [
+      "No prediction, diagnosis or high-impact use",
+      "Every output includes method version, source, limitation and correction path"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q6/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q7",
+    "topic": "Báo cáo cấu trúc không filler",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q7-A",
+        "label": "Differentiated structured reports with evidence blocks",
+        "scope": "Use nine level-specific contracts, deterministic inputs, provenance, unknowns, actions and review states.",
+        "tradeoffs": [
+          "High traceability and genuine level differentiation",
+          "Largest template and regression surface"
+        ]
+      },
+      {
+        "option_id": "Q7-B",
+        "label": "One universal report template",
+        "scope": "Reuse a single report structure and vary only length or content.",
+        "tradeoffs": [
+          "Lower authoring cost",
+          "Risks filler and fails nine-level differentiation"
+        ]
+      },
+      {
+        "option_id": "Q7-C",
+        "label": "Free-form AI narrative",
+        "scope": "Let the model compose reports without a fixed schema.",
+        "tradeoffs": [
+          "Fast experimentation",
+          "Cannot reliably prove provenance, limits, corrections or stable outputs"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q7-A",
+    "recommendation_rationale": "The structured approach is required to avoid filler and to separate deterministic facts, interpretation, uncertainty and action.",
+    "recommendation_tradeoffs": [
+      "Needs nine golden fixture suites and reviewer capacity",
+      "Longer reports cannot be accepted by page count alone"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q7",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds template engineering, evaluation, rendering and human review capacity.",
+      "cost_drivers": [
+        "template development",
+        "evaluation suite",
+        "human review",
+        "render/accessibility QA"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "AI Lead",
+      "Editorial Lead",
+      "Method Lead",
+      "Privacy",
+      "QA"
+    ],
+    "decision_due_event": "before L1 report implementation and before any report template is published",
+    "constraints": [
+      "Public auto-publish remains off",
+      "Report acceptance is content- and evidence-based, not page-count-based"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q7/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q8",
+    "topic": "Dòng sản phẩm mở theo gates",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q8-A",
+        "label": "Open products by explicit train and exact release gates",
+        "scope": "Keep all 23 products registered but unlock only the approved product/release/market after receipts.",
+        "tradeoffs": [
+          "Preserves long-term vision and limits blast radius",
+          "Slower portfolio expansion"
+        ]
+      },
+      {
+        "option_id": "Q8-B",
+        "label": "Open the complete portfolio in one launch",
+        "scope": "Ship all products once the shared platform passes.",
+        "tradeoffs": [
+          "Faster catalog breadth",
+          "Unbounded legal, method, support and operating risk"
+        ]
+      },
+      {
+        "option_id": "Q8-C",
+        "label": "Freeze permanently to Guest and L1",
+        "scope": "Remove higher levels and advanced product lines from execution.",
+        "tradeoffs": [
+          "Smallest scope",
+          "Discards the requested portfolio vision"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q8-A",
+    "recommendation_rationale": "Train-by-train release keeps all 23 products without implying that shared platform evidence clears product-specific gates.",
+    "recommendation_tradeoffs": [
+      "Requires repeated candidate reviews",
+      "Commercial growth follows evidence rather than a fixed calendar"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "UPG-PRD-001",
+      "UPG-PRD-002"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q8",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Staged release spreads cost and adds repeated review; portfolio-wide cost cannot be quoted yet.",
+      "cost_drivers": [
+        "product-specific review",
+        "release verification",
+        "support readiness",
+        "country/legal review"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Release Owner",
+      "Privacy/Legal",
+      "Security/SRE",
+      "QA"
+    ],
+    "decision_due_event": "before a product train enters build beyond reversible design or synthetic fixtures",
+    "constraints": [
+      "No product inherits approval from another product",
+      "Exact SHA, artifact, environment, market and expiry bind every release"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q8/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q9",
+    "topic": "Privacy, auth, delete từ đầu",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q9-A",
+        "label": "Privacy, server authorization and deletion by design",
+        "scope": "Implement identity, object/tenant policy, consent, retention, export, correction and deletion before real intake.",
+        "tradeoffs": [
+          "Strongest trust baseline",
+          "Significant early engineering and review work"
+        ]
+      },
+      {
+        "option_id": "Q9-B",
+        "label": "Retrofit privacy after MVP",
+        "scope": "Collect data with basic authentication and add rights later.",
+        "tradeoffs": [
+          "Faster prototype",
+          "Creates unacceptable migration, disclosure and legal risk"
+        ]
+      },
+      {
+        "option_id": "Q9-C",
+        "label": "Anonymous ephemeral use only",
+        "scope": "Do not persist profiles, reports or accounts.",
+        "tradeoffs": [
+          "Minimizes stored personal data",
+          "Cannot support the planned longitudinal and commerce experience"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q9-A",
+    "recommendation_rationale": "Personalized life data requires rights and authorization contracts before collection; later retrofit is not a safe migration plan.",
+    "recommendation_tradeoffs": [
+      "Delays real-data pilots",
+      "Requires deletion/export/correction and backup implications to be rehearsed"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "TRUST-01",
+      "TRUST-02",
+      "TRUST-03",
+      "TRUST-04",
+      "TRUST-05",
+      "TRUST-06",
+      "TRUST-07",
+      "TRUST-08",
+      "TRUST-09",
+      "TRUST-10",
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "API-01",
+      "API-02",
+      "API-03",
+      "API-04",
+      "API-05",
+      "API-06",
+      "API-07",
+      "API-08",
+      "API-09",
+      "API-10",
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "OPS-01",
+      "OPS-02",
+      "OPS-03",
+      "OPS-04",
+      "OPS-05",
+      "OPS-06",
+      "OPS-07",
+      "OPS-08",
+      "OPS-09",
+      "OPS-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "UPG-AI-002",
+      "UPG-BE-003",
+      "UPG-BE-005",
+      "UPG-BE-006",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q9",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A carries early security, privacy and data-lifecycle cost but avoids expensive unsafe retrofit.",
+      "cost_drivers": [
+        "identity",
+        "authorization/RLS",
+        "privacy rights jobs",
+        "retention/legal review",
+        "security testing"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Privacy/Data Owner",
+      "Security Lead",
+      "Backend Lead",
+      "Legal",
+      "QA"
+    ],
+    "decision_due_event": "before any real personal data intake, persistence, sharing or migration",
+    "constraints": [
+      "Synthetic fixtures only until the trust baseline is evidenced",
+      "No production data access is authorized by this packet"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q9/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q10",
+    "topic": "Tám bộ nền từ source/runtime khóa",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q10-A",
+        "label": "Build eight bundles from a locked, hashed source/runtime baseline",
+        "scope": "Bind source, generation inputs, output manifest and receipts before transformation.",
+        "tradeoffs": [
+          "Reproducible and auditable",
+          "Requires source lock and transformation tracking"
+        ]
+      },
+      {
+        "option_id": "Q10-B",
+        "label": "Normalize and rewrite before baseline lock",
+        "scope": "Clean the source first, then record the resulting package.",
+        "tradeoffs": [
+          "Cleaner working material",
+          "Destroys provenance and makes omissions hard to detect"
+        ]
+      },
+      {
+        "option_id": "Q10-C",
+        "label": "Exclude runtime and deployment evidence",
+        "scope": "Package documents and source files only.",
+        "tradeoffs": [
+          "Smaller package",
+          "Cannot substantiate current-state, integration or release claims"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q10-A",
+    "recommendation_rationale": "A pre-transform receipt is necessary to prove all source content was retained and to separate planning artifacts from runtime evidence.",
+    "recommendation_tradeoffs": [
+      "Larger package and catalog maintenance",
+      "Every regenerated export changes the final manifest"
+    ],
+    "decision_dependencies": [
+      "Q11"
+    ],
+    "affected_task_ids": [
+      "P0-01",
+      "P0-02",
+      "P0-03",
+      "P0-04",
+      "P0-05",
+      "P0-06",
+      "P0-07",
+      "P0-08",
+      "P0-09",
+      "P0-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q10",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds evidence cataloging, hashing and export QA labor.",
+      "cost_drivers": [
+        "source inventory",
+        "transformation ledger",
+        "artifact generation",
+        "independent QA"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Program Lead",
+      "Tech Lead",
+      "Evidence Reviewer",
+      "Release Owner"
+    ],
+    "decision_due_event": "before any bundle is declared complete or handed to implementation",
+    "constraints": [
+      "The 149-file source package remains byte-preserved",
+      "Historical claims cannot be promoted without current receipts"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q10/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q11",
+    "topic": "Quarantine experimental_legacy",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q11-A",
+        "label": "Quarantine experimental legacy code and outputs",
+        "scope": "Keep recoverable history but deny product/public selection until an explicit re-release.",
+        "tradeoffs": [
+          "Preserves forensic value and prevents unsafe reuse",
+          "Requires deny rules and migration handling"
+        ]
+      },
+      {
+        "option_id": "Q11-B",
+        "label": "Retain legacy behind a feature flag",
+        "scope": "Allow reactivation through runtime configuration.",
+        "tradeoffs": [
+          "Easy fallback",
+          "Feature flags can bypass product, rights and safety review"
+        ]
+      },
+      {
+        "option_id": "Q11-C",
+        "label": "Delete all legacy material",
+        "scope": "Remove code, data and outputs permanently.",
+        "tradeoffs": [
+          "Eliminates accidental execution",
+          "Destroys provenance, rollback analysis and potential lawful records"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q11-A",
+    "recommendation_rationale": "Quarantine balances preservation with containment and makes re-entry depend on a new reviewed release rather than a hidden switch.",
+    "recommendation_tradeoffs": [
+      "Storage and inventory remain",
+      "Rollback cannot simply restore the old artifact"
+    ],
+    "decision_dependencies": [
+      "Q9"
+    ],
+    "affected_task_ids": [
+      "P0-01",
+      "P0-02",
+      "P0-03",
+      "P0-04",
+      "P0-05",
+      "P0-06",
+      "P0-07",
+      "P0-08",
+      "P0-09",
+      "P0-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q11",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds inventory, deny tests and storage but avoids destructive deletion.",
+      "cost_drivers": [
+        "legacy inventory",
+        "artifact scans",
+        "migration classification",
+        "containment tests"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Tech Lead",
+      "Security Lead",
+      "Data Owner",
+      "Method Lead",
+      "QA"
+    ],
+    "decision_due_event": "before source bundling, migration classification or public artifact construction",
+    "constraints": [
+      "No client or entitlement flag can enable quarantined output",
+      "Deletion of retained records requires separate legal/data authority"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q11/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q12",
+    "topic": "Passport/rights/tests/limits/approver",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q12-A",
+        "label": "Hard method-release gate",
+        "scope": "Require passport, source/right, formula/result contract, tests, limits and named approvers for each release.",
+        "tradeoffs": [
+          "Highest provenance and selective control",
+          "More work before each method becomes eligible"
+        ]
+      },
+      {
+        "option_id": "Q12-B",
+        "label": "Provisional method release with partial packet",
+        "scope": "Permit beta use when some source or test fields are pending.",
+        "tradeoffs": [
+          "Faster experimentation",
+          "Normalizes missing evidence and complicates withdrawal"
+        ]
+      },
+      {
+        "option_id": "Q12-C",
+        "label": "One product-level approval covers all methods",
+        "scope": "Treat product approval as authorization for every included method.",
+        "tradeoffs": [
+          "Simple governance",
+          "Cannot isolate rights, defect or limitation changes"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q12-A",
+    "recommendation_rationale": "The hard gate is the only option that supports reproducibility, rights control and precise withdrawal across methods and reports.",
+    "recommendation_tradeoffs": [
+      "Method throughput is constrained by expert reviewers",
+      "Catalog availability may be uneven"
+    ],
+    "decision_dependencies": [
+      "Q3"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "UPG-AI-001",
+      "UPG-BE-001",
+      "UPG-BE-002"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q12",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Cost depends on source licenses, expert review and per-method test complexity.",
+      "cost_drivers": [
+        "rights clearance",
+        "expert review",
+        "golden fixtures",
+        "release operations"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Method Council",
+      "Legal/Rights Reviewer",
+      "Data Lead",
+      "QA"
+    ],
+    "decision_due_event": "before any method is referenced by an eligible analysis or report release",
+    "constraints": [
+      "Missing evidence keeps release blocked",
+      "Approver must be independent of the sole author for high-risk methods"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q12/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q13",
+    "topic": "Free Essentials và quota minh bạch",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q13-A",
+        "label": "Bounded Free Essentials with transparent quota",
+        "scope": "Offer one self-managed profile, core goal/journal/privacy rights and explicit compute/storage limits with graceful degradation.",
+        "tradeoffs": [
+          "Supports entry and learning",
+          "Requires abuse, quota and unit-economics controls"
+        ]
+      },
+      {
+        "option_id": "Q13-B",
+        "label": "Unlimited free personalized service",
+        "scope": "Remove usage limits for all free users.",
+        "tradeoffs": [
+          "Lowest adoption friction",
+          "Unbounded AI, support and storage cost"
+        ]
+      },
+      {
+        "option_id": "Q13-C",
+        "label": "No free tier",
+        "scope": "Require payment before persistent personalized use.",
+        "tradeoffs": [
+          "Simpler cost recovery",
+          "Raises trust and adoption barriers"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q13-A",
+    "recommendation_rationale": "A bounded tier preserves free entry while keeping provider and support cost measurable and explaining limits honestly.",
+    "recommendation_tradeoffs": [
+      "Quota UX and abuse controls add complexity",
+      "Exact limits remain blocked until provider quotes and pilot data"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q15",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q13",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Quota values and marginal cost require selected providers, approved rates and observed usage.",
+      "cost_drivers": [
+        "AI tokens",
+        "database/storage",
+        "egress/rendering",
+        "support",
+        "abuse prevention"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Commerce/Finance Owner",
+      "SRE",
+      "Privacy",
+      "Support"
+    ],
+    "decision_due_event": "before public pricing, quota or free-tier launch copy is frozen",
+    "constraints": [
+      "Missing provider cost is unknown, not zero",
+      "Quota cannot remove privacy rights or corrupt paid entitlement"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q13/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q14",
+    "topic": "Pháp nhân/merchant/controller",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q14-A",
+        "label": "Named Vietnam entity as controller and merchant",
+        "scope": "Use a selected local entity for contracting, invoicing and controller duties after legal review.",
+        "tradeoffs": [
+          "Clear local accountability",
+          "Requires entity, tax, payment and privacy analysis"
+        ]
+      },
+      {
+        "option_id": "Q14-B",
+        "label": "Contracting entity with documented controller/processor split",
+        "scope": "Use a selected entity and vendors under explicit data-processing and merchant responsibilities.",
+        "tradeoffs": [
+          "Flexible regional model",
+          "More contracts and cross-border analysis"
+        ]
+      },
+      {
+        "option_id": "Q14-C",
+        "label": "No commercial or real-data launch until roles are selected",
+        "scope": "Continue planning and synthetic work only.",
+        "tradeoffs": [
+          "Avoids inventing a legal structure",
+          "Delays payment and real-user pilots"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q14-C",
+    "recommendation_rationale": "No verified entity, merchant or controller decision exists; synthetic planning can continue while commercial and real-data actions remain closed.",
+    "recommendation_tradeoffs": [
+      "Revenue and real-user validation wait",
+      "Legal assessment becomes a critical-path dependency"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-PM-002",
+      "UPG-BE-004"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q14",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Legal, entity, tax, merchant and data-processing costs require jurisdiction-specific quotes.",
+      "cost_drivers": [
+        "entity/tax advice",
+        "merchant onboarding",
+        "data-processing contracts",
+        "cross-border review"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Legal Counsel",
+      "Privacy/Data Owner",
+      "Finance/Commerce Owner"
+    ],
+    "decision_due_event": "before contracting, invoicing, payment onboarding or real personal-data collection",
+    "constraints": [
+      "This packet does not name or authorize an entity",
+      "Cross-border processing and tax duties require market-specific review"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q14/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q15",
+    "topic": "IdP/PG/payment/AI provider selection",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q15-A",
+        "label": "Evidence-weighted selection per provider category with adapters",
+        "scope": "Score IdP, PostgreSQL host, payment and AI providers separately; bind decisions to contracts, regions, exits and cost caps.",
+        "tradeoffs": [
+          "Best fit and lower lock-in",
+          "More integration and vendor-management work"
+        ]
+      },
+      {
+        "option_id": "Q15-B",
+        "label": "Single-suite provider strategy",
+        "scope": "Choose one ecosystem for as many categories as possible.",
+        "tradeoffs": [
+          "Simpler procurement and integration",
+          "Concentrated lock-in, outage and exit risk"
+        ]
+      },
+      {
+        "option_id": "Q15-C",
+        "label": "Self-host all core services",
+        "scope": "Operate identity, database and AI/payment-adjacent components directly where possible.",
+        "tradeoffs": [
+          "Maximum control",
+          "Highest security, compliance and on-call burden; payment still needs regulated rails"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q15-A",
+    "recommendation_rationale": "Category-specific assessment avoids inventing vendors and makes exit, data location, security and unit cost explicit before commitment.",
+    "recommendation_tradeoffs": [
+      "Adapters and multi-vendor operations cost more",
+      "Selection cannot close until quotes and technical/legal evidence exist"
+    ],
+    "decision_dependencies": [
+      "Q9",
+      "Q14",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "TRUST-01",
+      "TRUST-02",
+      "TRUST-03",
+      "TRUST-04",
+      "TRUST-05",
+      "TRUST-06",
+      "TRUST-07",
+      "TRUST-08",
+      "TRUST-09",
+      "TRUST-10",
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "API-01",
+      "API-02",
+      "API-03",
+      "API-04",
+      "API-05",
+      "API-06",
+      "API-07",
+      "API-08",
+      "API-09",
+      "API-10",
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "OPS-01",
+      "OPS-02",
+      "OPS-03",
+      "OPS-04",
+      "OPS-05",
+      "OPS-06",
+      "OPS-07",
+      "OPS-08",
+      "OPS-09",
+      "OPS-10",
+      "UPG-UX-001",
+      "UPG-AI-002",
+      "UPG-PM-002",
+      "UPG-BE-004",
+      "UPG-BE-005",
+      "UPG-BE-006",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q15",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "All provider amounts remain unavailable until comparable quotes, volumes, taxes and exit costs are recorded.",
+      "cost_drivers": [
+        "IdP MAU",
+        "PostgreSQL compute/storage/egress",
+        "payment fees/refunds",
+        "AI tokens/models",
+        "monitoring/support"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Tech Lead",
+      "Security/SRE",
+      "Privacy/Legal",
+      "Finance/Commerce Owner"
+    ],
+    "decision_due_event": "before provider-specific implementation, contract signature, spend or production data transfer",
+    "constraints": [
+      "No provider is selected by this planning artifact",
+      "Secrets, contracts and production accounts require separate authority"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q15/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q16",
+    "topic": "Autonomy A0–A3 và kill switches",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q16-A",
+        "label": "A0-A1 default, gated A2, hold A3",
+        "scope": "Permit assistive drafting and approved reversible automation; require receipts and kill switches before higher autonomy.",
+        "tradeoffs": [
+          "Balances productivity and control",
+          "Needs action taxonomy, monitoring and human review"
+        ]
+      },
+      {
+        "option_id": "Q16-B",
+        "label": "A0 only",
+        "scope": "AI may suggest but never execute or schedule actions.",
+        "tradeoffs": [
+          "Smallest operational risk",
+          "Leaves automation value unrealized"
+        ]
+      },
+      {
+        "option_id": "Q16-C",
+        "label": "Enable A0-A3 at launch",
+        "scope": "Allow autonomous multi-step operation across eligible workflows.",
+        "tradeoffs": [
+          "Fastest automation ambition",
+          "Unacceptable without mature controls, provider and incident evidence"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q16-A",
+    "recommendation_rationale": "Progressive autonomy allows useful low-risk assistance while keeping high-impact or irreversible actions behind explicit evidence and approval.",
+    "recommendation_tradeoffs": [
+      "More state, review and kill-switch engineering",
+      "Some promised automation remains unavailable during early phases"
+    ],
+    "decision_dependencies": [
+      "Q9",
+      "Q15"
+    ],
+    "affected_task_ids": [
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "UPG-AI-002"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q16",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds monitoring, evaluation, review and incident-response capacity.",
+      "cost_drivers": [
+        "model evaluation",
+        "workflow controls",
+        "observability",
+        "human review",
+        "incident rehearsal"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "AI Lead",
+      "Security/SRE",
+      "Privacy",
+      "Product Lead",
+      "QA"
+    ],
+    "decision_due_event": "before any workflow can act beyond user-confirmed reversible assistance",
+    "constraints": [
+      "No payment, publication, deletion or high-impact action without explicit human authority",
+      "Global and per-workflow kill switches must be tested"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q16/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q17",
+    "topic": "Academy/practitioner scope",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q17-A",
+        "label": "Academy learning pilot without practitioner credential claims",
+        "scope": "Launch curriculum and assessments on synthetic cases; defer certification authority until standards and complaints handling are proven.",
+        "tradeoffs": [
+          "Tests learning value safely",
+          "Delays monetizable practitioner credentials"
+        ]
+      },
+      {
+        "option_id": "Q17-B",
+        "label": "Full practitioner certification program",
+        "scope": "Issue credentials and permit practice under a complete standard at launch.",
+        "tradeoffs": [
+          "Strong ecosystem proposition",
+          "High legal, method, assessment and supervision burden"
+        ]
+      },
+      {
+        "option_id": "Q17-C",
+        "label": "Defer Academy entirely",
+        "scope": "Focus only on end-user products.",
+        "tradeoffs": [
+          "Reduces scope",
+          "Removes a core adoption and quality-control channel"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q17-A",
+    "recommendation_rationale": "A non-credential pilot preserves the Academy vision while evidence for competence, ethics, supervision and appeals is built.",
+    "recommendation_tradeoffs": [
+      "Certificates cannot imply regulated or professional authority",
+      "Requires clear distinction between completion and competence"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q12",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q17",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Academy cost depends on curriculum, reviewers, platform, accreditation advice and support volume.",
+      "cost_drivers": [
+        "curriculum production",
+        "assessment operations",
+        "expert reviewers",
+        "legal/accreditation review",
+        "learner support"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Academic Lead",
+      "Method Council",
+      "Legal",
+      "Privacy",
+      "QA"
+    ],
+    "decision_due_event": "before curriculum implementation promises certification or practitioner authority",
+    "constraints": [
+      "No regulated-profession implication",
+      "Assessment, appeals, suspension and complaint routes precede credential release"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q17/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q18",
+    "topic": "Organization privacy boundary",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q18-A",
+        "label": "Tenant-isolated organization product with member-controlled private profile",
+        "scope": "Expose only purpose-bound shared or minimum-cohort aggregate data; prohibit employer access to private profiles and high-impact profiling.",
+        "tradeoffs": [
+          "Preserves organization use with privacy boundary",
+          "Limits employer analytics and requires strong RLS"
+        ]
+      },
+      {
+        "option_id": "Q18-B",
+        "label": "Organization-administered full member profiles",
+        "scope": "Let the organization view and manage individual analysis and reports.",
+        "tradeoffs": [
+          "High administrative utility",
+          "Creates severe consent, employment and discrimination risk"
+        ]
+      },
+      {
+        "option_id": "Q18-C",
+        "label": "Do not offer organization features",
+        "scope": "Keep all use individual and direct-to-user.",
+        "tradeoffs": [
+          "Smallest tenant/privacy surface",
+          "Removes an important enterprise product line"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q18-A",
+    "recommendation_rationale": "Member control, tenant isolation and aggregation thresholds are the minimum viable boundary for an organization offering.",
+    "recommendation_tradeoffs": [
+      "Some enterprise requests must be rejected",
+      "Complex subject/tenant/grant testing and re-identification review"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q9",
+      "Q14",
+      "Q15"
+    ],
+    "affected_task_ids": [
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-BE-003"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q18",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds tenant isolation, privacy review, enterprise support and audit capability.",
+      "cost_drivers": [
+        "RLS/authorization",
+        "enterprise contracts",
+        "privacy/re-identification review",
+        "audit logs",
+        "support"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Privacy/Data Owner",
+      "Security Lead",
+      "Legal",
+      "Enterprise Support"
+    ],
+    "decision_due_event": "before organization data model, contracts or pilot recruitment are frozen",
+    "constraints": [
+      "No employment, credit, insurance or other high-impact profiling",
+      "Cross-tenant denial and aggregate re-identification tests are mandatory"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q18/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q19",
+    "topic": "Country pack và license/franchise",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q19-A",
+        "label": "One reviewed country pack at a time; license before franchise",
+        "scope": "Pilot a single market with locale, legal, support, claims and tax evidence; validate licensing before operational franchise.",
+        "tradeoffs": [
+          "Contained learning and easier rollback",
+          "Slower international expansion"
+        ]
+      },
+      {
+        "option_id": "Q19-B",
+        "label": "Parallel multi-country launch",
+        "scope": "Prepare and open several markets together.",
+        "tradeoffs": [
+          "Faster reach",
+          "Multiplies legal, translation, support and operational risk"
+        ]
+      },
+      {
+        "option_id": "Q19-C",
+        "label": "Remote software license only with no country pack",
+        "scope": "Offer a generic partner license without local operating adaptation.",
+        "tradeoffs": [
+          "Lower localization effort",
+          "May still create local legal duties and weak customer experience"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q19-A",
+    "recommendation_rationale": "Sequential country packs keep market-specific evidence and operating capacity reviewable and avoid calling a software license a ready franchise.",
+    "recommendation_tradeoffs": [
+      "Expansion cadence is evidence-limited",
+      "Reusable core still needs local legal and claim review"
+    ],
+    "decision_dependencies": [
+      "Q14",
+      "Q17",
+      "Q18",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q19",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Country cost requires local counsel, translation, tax, payment, support and partner quotes.",
+      "cost_drivers": [
+        "local legal/tax",
+        "translation/editorial",
+        "payment/merchant",
+        "support coverage",
+        "partner enablement"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Global/Partnerships Lead",
+      "Legal/Tax",
+      "Privacy",
+      "Finance",
+      "Support/SRE"
+    ],
+    "decision_due_event": "before selecting the first non-home market or signing a license/franchise commitment",
+    "constraints": [
+      "Country approval is product- and release-specific",
+      "No franchise representation without operating, support and legal readiness"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q19/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q20",
+    "topic": "Budget/team/roadmap có điều kiện",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q20-A",
+        "label": "Stage-gated funding and staffing with low/base/high scenarios",
+        "scope": "Fund the next bounded phase and release additional capacity only after decision and evidence checkpoints.",
+        "tradeoffs": [
+          "Controls downside and exposes uncertainty",
+          "May slow hiring and procurement"
+        ]
+      },
+      {
+        "option_id": "Q20-B",
+        "label": "Fixed full-portfolio budget and calendar",
+        "scope": "Approve the complete roadmap as one committed program.",
+        "tradeoffs": [
+          "Simple headline plan",
+          "False precision while scope, providers and gates remain unresolved"
+        ]
+      },
+      {
+        "option_id": "Q20-C",
+        "label": "No-spend planning only",
+        "scope": "Continue documentation and volunteer/internal work without budget commitment.",
+        "tradeoffs": [
+          "Avoids premature spend",
+          "Cannot responsibly promise implementation, review or support capacity"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q20-A",
+    "recommendation_rationale": "Stage-gated scenarios match the 452-1,039 person-day range and preserve the longer conditional portfolio horizon without inventing rates or dates.",
+    "recommendation_tradeoffs": [
+      "Budget must be revisited at checkpoints",
+      "Vendor and specialist capacity may require lead time"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "OPS-01",
+      "OPS-02",
+      "OPS-03",
+      "OPS-04",
+      "OPS-05",
+      "OPS-06",
+      "OPS-07",
+      "OPS-08",
+      "OPS-09",
+      "OPS-10",
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-PRD-001",
+      "UPG-PRD-002",
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "UPG-AI-001",
+      "UPG-AI-002",
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "UPG-BE-005",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q20",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "The package has person-day ranges only; monetary scenarios require approved role rates, vendor quotes, tax and contingency.",
+      "cost_drivers": [
+        "452-1,039 person-days",
+        "vendor quotes",
+        "independent reviews",
+        "support/operations",
+        "15-30 percent contingency"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Program Lead",
+      "Finance Owner",
+      "Product Lead",
+      "Tech Lead"
+    ],
+    "decision_due_event": "before hiring, procurement, paid vendor commitment or a delivery date is promised",
+    "constraints": [
+      "Missing rates or quotes remain unavailable, never zero",
+      "Schedule separates raw capacity from gate, review and observation time"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q20/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q21",
+    "topic": "Bảo toàn 149 tệp gốc bằng overlay và hash",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Giữ nguyên 149 tệp và quản thay đổi bằng overlay/hash",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q21-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Giữ nguồn nguyên byte; thay đổi qua overlay có provenance và receipt.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q21-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ giữ archive đọc; hoãn overlay tới khi chọn baseline.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q21-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Dừng intake mới để điều tra khác biệt trước khi hợp nhất.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q21-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q10"
+    ],
+    "affected_task_ids": [
+      "V2-GOV-01",
+      "INT29-001",
+      "INT29-003"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Governance",
+      "Documentation",
+      "Independent QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-001, INT29-003; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Số tệp/SHA/path khớp, source history không đổi; thiếu byte hoặc collision thì HOLD.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q21"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q21/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Số tệp/SHA/path khớp, source history không đổi; thiếu byte hoặc collision thì HOLD.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q22",
+    "topic": "16 họ công thức V2 là reference cần admission",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Duyệt 16 họ công thức tham chiếu, không gọi là production release",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q22-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Nhận 16 họ làm reference có passport; phát hành riêng từng method đủ quyền và test.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q22-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Giữ toàn bộ ở giáo dục/demo synthetic, không cá nhân hóa phát hành.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q22-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn họ chưa đủ nguồn và bổ sung nghiên cứu có native reviewer.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q22-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "V2-GOV-02",
+      "V2-BE-11",
+      "V2-BE-14",
+      "INT29-005",
+      "INT29-013"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Rights/Legal",
+      "Independent Method QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-005, INT29-013; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không lấy pass reference suite thay nguồn, quyền, độ đúng quy tắc hoặc production approval.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q22"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q22/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không lấy pass reference suite thay nguồn, quyền, độ đúng quy tắc hoặc production approval.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q23",
+    "topic": "Canonical digest và dữ liệu có thể nhận dạng",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Chính sách canonical digest và không coi hash PII là ẩn danh",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q23-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Digest theo schema/version/purpose; coi hash PII vẫn là dữ liệu cần bảo vệ.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q23-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Không lưu/reuse digest đầu vào giữa run; chấp nhận chi phí tính lại cao hơn.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q23-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn cache/cross-run reuse đến khi privacy và collision policy rõ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q23-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q9",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "V2-BE-01",
+      "V2-BE-08",
+      "V2-SEC-05",
+      "INT29-006",
+      "INT29-011",
+      "INT29-012"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Backend Architect",
+      "Privacy",
+      "Security"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-006, INT29-011, INT29-012; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Test canonical equivalence và intentional distinction; log không chứa raw PII; không gọi hash DOB là ẩn danh.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q23"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q23/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Test canonical equivalence và intentional distinction; log không chứa raw PII; không gọi hash DOB là ẩn danh.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q24",
+    "topic": "Thời gian, timezone, ngày nhuận và giả thuyết",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Chính sách thời gian: timezone/hypothesis/ngày nhuận",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q24-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Giữ raw calendar/time/location/uncertainty, UTC candidates và policy versioned.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q24-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ hỗ trợ date-only và loại mọi phương pháp cần giờ/vị trí.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q24-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn phương pháp phụ thuộc thời gian khi dữ liệu nguồn chưa đủ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q24-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q5"
+    ],
+    "affected_task_ids": [
+      "V2-BE-03",
+      "V2-BE-04",
+      "V3-MTH-001",
+      "INT29-006",
+      "INT29-009"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Calendar/Timezone Reviewer",
+      "Backend QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-006, INT29-009; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "DST gap/fold, leap day, missing timezone, boundary và hypothesis compare có golden case; không tự đoán.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q24"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q24/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "DST gap/fold, leap day, missing timezone, boundary và hypothesis compare có golden case; không tự đoán.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q25",
+    "topic": "Demo local và API nghiệp vụ đích là hai lớp bằng chứng",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Tách demoAPI local khỏi targetAPI có quyền",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q25-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Giữ demo health/catalog/run tách 99 operation thiết kế và runtime thật.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q25-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ phân phối fixture/CLI educational, hoãn demo HTTP.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q25-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn công bố demo cho đến khi chạy được HTTP và kiểm quyền.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q25-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q10"
+    ],
+    "affected_task_ids": [
+      "V2-FE-03",
+      "V2-BE-16",
+      "V3-INT-04",
+      "INT29-010",
+      "INT29-013"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Tech Lead",
+      "API QA",
+      "Security"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-010, INT29-013; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Route inventory không chứng minh implementation; mock browser không được ghi browser HTTP E2E.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q25"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q25/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Route inventory không chứng minh implementation; mock browser không được ghi browser HTTP E2E.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q26",
+    "topic": "144 câu hỏi đồng nhịp là khung suy ngẫm",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Duyệt ma trận 144 câu hỏi, không phải năng lượng đo được",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q26-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Giữ 12 trường×12 câu hỏi với answer/skip/observation riêng, không gọi năng lượng đo được.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q26-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ dùng câu hỏi journal tự chọn, không tổng hợp điểm.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q26-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn ma trận để kiểm tra nội dung/ngôn ngữ bằng nghiên cứu người dùng.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q26-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q5"
+    ],
+    "affected_task_ids": [
+      "V3-MTH-056",
+      "INT29-009"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Product",
+      "Editorial",
+      "Method",
+      "Privacy"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-009; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không điểm định mệnh, không ép trả lời; cùng input không nhân thành chứng cứ độc lập.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q26"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q26/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không điểm định mệnh, không ép trả lời; cùng input không nhân thành chứng cứ độc lập.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q27",
+    "topic": "Preview thiếu dữ liệu cho chín level",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Duyệt previewthiếudữ liệu cho 9 level, không viết bù",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q27-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Mỗi level có minimum input, null reason và preview đủ/thiếu/xung đột.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q27-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Mở L1 trước; giữ L2–L9 ở catalog chưa phát hành.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q27-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn template chưa đủ nội dung có nguồn, không dùng filler.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q27-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q5",
+      "Q7"
+    ],
+    "affected_task_ids": [
+      "V2-AI-04",
+      "V2-AI-05",
+      "V3-INT-05",
+      "INT29-014",
+      "INT29-015"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Editorial Lead",
+      "Product",
+      "Method QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-014, INT29-015; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Page budget không là cam kết số trang; không bịa sự kiện và không giấu missing evidence.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q27"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q27/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Page budget không là cam kết số trang; không bịa sự kiện và không giấu missing evidence.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q28",
+    "topic": "Responsive mobile, PWA và offline trước native",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Chốt blueprintmobile/PWA/offlinesync trước native",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q28-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Web responsive mobile/desktop cùng contract; PWA có scope; private offline tắt mặc định.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q28-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ online responsive, hoãn cache/sync và native.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q28-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Chuẩn bị native riêng sau quyết định team/budget/platform.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q28-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q9",
+      "Q13"
+    ],
+    "affected_task_ids": [
+      "V2-FE-07",
+      "V2-FE-08",
+      "V2-FE-09",
+      "V3-INT-06",
+      "INT29-015"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Product UX",
+      "Frontend",
+      "Privacy",
+      "Accessibility QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-015; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "360/390/768/1440, keyboard, zoom, screenreader và revoke/offline conflict được kiểm riêng; không gọi PWA là native.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q28"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q28/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "360/390/768/1440, keyboard, zoom, screenreader và revoke/offline conflict được kiểm riêng; không gọi PWA là native.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q29",
+    "topic": "Contract review, migration và RLS staging thực",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Chốt contract review, migration và RLS staging",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q29-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Review schema/migration; thử real app role/RLS và restore trên staging có scope.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q29-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Giữ schema thiết kế, không chạy migration khi chưa có staging/owner.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q29-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn lựa chọn datastore cho tới khi benchmark và tenancy review đủ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q29-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q9",
+      "Q10",
+      "Q15"
+    ],
+    "affected_task_ids": [
+      "V2-SEC-03",
+      "V2-OPS-02",
+      "V2-OPS-05",
+      "INT29-010",
+      "INT29-011",
+      "INT29-018"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Backend Architect",
+      "Security",
+      "Data/Release QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-010, INT29-011, INT29-018; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không owner/BYPASSRLS; cross-tenant FK, rollback và tombstone sau restore phải có receipt đúng candidate.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q29"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q29/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không owner/BYPASSRLS; cross-tenant FK, rollback và tombstone sau restore phải có receipt đúng candidate.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q30",
+    "topic": "Nhập add-only trên nhánh review phù hợp",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_proposal": "Duyệt importer không ghiđè và nhánhreview, không deploy",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q30-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Giữ nguyên tính add-only và review diff; chỉ dùng importer khi preflight sạch đúng remote.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q30-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Tích hợp tài liệu bằng overlay scoped có receipt riêng theo yêu cầu hiện tại.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q30-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn importer khi worktree dirty hoặc chưa chọn candidate.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q30-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q10"
+    ],
+    "affected_task_ids": [
+      "V3-INT-09",
+      "INT29-001",
+      "INT29-002"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Tech Lead",
+      "Repository Maintainer",
+      "Independent QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-001, INT29-002; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không reset/stash/force, không commit/push/deploy; scope hiện tại cho phép tài liệu mới, không tự đạt clean-importer gate.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V2_2026-10-20",
+        "path": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+        "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+        "source_record_id": "Q30"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q30/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không reset/stash/force, không commit/push/deploy; scope hiện tại cho phép tài liệu mới, không tự đạt clean-importer gate.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q31",
+    "topic": "Manifest authority và thứ tự hiệu lực V3",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Khóa manifest bảo toàn và thứ tự hiệu lực V3; không sửa lịch sử",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q31-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Archive nguyên byte; local20/10 +V2/V3 được nối qua conflict ledger và field-level precedence.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q31-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ lưu V3 như reference phụ, chưa thay đổi master hiện có.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q31-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn conflict field tới khi người có chức năng chọn và ký receipt.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q31-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q21",
+      "Q30"
+    ],
+    "affected_task_ids": [
+      "V2-GOV-01",
+      "V3-INT-09",
+      "V3-INT-10",
+      "INT29-001",
+      "INT29-003",
+      "INT29-004"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Program Manager",
+      "Tech Lead",
+      "Founder",
+      "Independent QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-001, INT29-003, INT29-004; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không chọn latest-wins cho security/P0; giữ 16 UPG và 6 sửa dependency; plural docs/upgrades của importer là reference, đích canonical singular docs/upgrade.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q31"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q31/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không chọn latest-wins cho security/P0; giữ 16 UPG và 6 sửa dependency; plural docs/upgrades của importer là reference, đích canonical singular docs/upgrade.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q32",
+    "topic": "23 chỉ số và chính sách tên, Y, reduction",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Duyệt 23 chỉ số và các chính sách rút gọn/Y/tên riêng",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q32-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Duyệt variant tường minh cho reduction/master/Y/full/common/given name; trace từng phép tính.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q32-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ trả raw arithmetic và giải thích giáo dục, hoãn diễn giải cá nhân hóa.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q32-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn biến thể chưa thống nhất nguồn; để null/unreleased.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q32-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q6",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "V3-MTH-028",
+      "V3-MTH-030",
+      "V3-MTH-037",
+      "INT29-006",
+      "INT29-007"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Native Numerology Reviewer",
+      "Independent QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-006, INT29-007; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "23 component đủ golden/negative/boundary; Y chưa rõ không tự đoán; dùng tên chỉ số không suy điểm tâm lý khoa học.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q32"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q32/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "23 component đủ golden/negative/boundary; Y chưa rõ không tự đoán; dùng tên chỉ số không suy điểm tâm lý khoa học.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q33",
+    "topic": "Bát Cực strict và diagnostic 0/5",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Duyệt Bát Cực chế độ strict; chẩn đoán 0/5 không được coi là quy tắc chính thống đã xác nhận",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q33-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Strict từ alphabet/rules có nguồn; 0/5 unresolved tách diagnostic, không giả confirmed cổ truyền.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q33-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ trình bày cặp/triplet raw và lỗi dữ liệu, không luận.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q33-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn toàn họ đến khi native reviewer/source edition đủ quyền.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q33-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q12",
+      "Q34"
+    ],
+    "affected_task_ids": [
+      "V3-MTH-032",
+      "V3-MTH-033",
+      "V3-MTH-034",
+      "INT29-008"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Native Reviewer",
+      "Rights/Legal"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-008; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "64 pair/512 triplet chỉ đúng alphabet đã chốt; không bỏ 0/5, không collapse chuỗi, transition HNH không gọi luật cổ.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q33"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q33/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "64 pair/512 triplet chỉ đúng alphabet đã chốt; không bỏ 0/5, không collapse chuỗi, transition HNH không gọi luật cổ.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q34",
+    "topic": "Tách symbolic calculation và quan sát đời thực",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Giữ cấp luận số và quan sát đời thực riêng; không có điểm định mệnh",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q34-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Gắn claim kind, lineage, uncertainty và phản hồi; symbolic không thành bằng chứng thực nghiệm.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q34-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ xuất calculation trace và journal; hoãn narrative hợp nhất.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q34-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn score/synthesis đến khi có thiết kế đánh giá độc lập.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q34-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q3",
+      "Q5"
+    ],
+    "affected_task_ids": [
+      "V2-BE-12",
+      "V3-MTH-048",
+      "V3-MTH-059",
+      "INT29-008",
+      "INT29-009",
+      "INT29-016"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Editorial",
+      "Product Research",
+      "Privacy"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-008, INT29-009, INT29-016; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không điểm số phận/health/income guarantee; nguồn cùng DOB hoặc sách sao chép không nhân thành corroboration.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q34"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q34/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không điểm số phận/health/income guarantee; nguồn cùng DOB hoặc sách sao chép không nhân thành corroboration.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q35",
+    "topic": "Đuôi 80: quyền bảng nguồn và zero policy",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Duyệt Mã đuôi 80: bảng nguồn và chính sách số dư 0",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q35-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Modulo integer0..79; variant0 unmapped hoặc80 theo policy có nguồn; quyền bảng tách biên tập.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q35-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ xuất modulo/bucket raw; không xuất ý nghĩa bảng.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q35-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn bảng nguồn khi rights/mục34/55 chưa rõ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q35-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "V2-BE-06",
+      "V3-MTH-035",
+      "INT29-008"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Source/Rights Reviewer",
+      "QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-008; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không r+1; giữ leading zeros/raw; enumerate10.000→125/bucket không chứng minh ý nghĩa con người.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q35"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q35/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không r+1; giữ leading zeros/raw; enumerate10.000→125/bucket không chứng minh ý nghĩa con người.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q36",
+    "topic": "Psychomatrix 17 ô/trục chỉ là quy ước đếm",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Psychomatrix gồm 17 ô và trục chỉ dùng phép đếm; không suy trí nhớ, sức khỏe hoặc đời tư",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q36-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Raw digits/counts và working numbers riêng; negative W3 theo policy chặn; output limit rõ.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q36-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ cung cấp đếm chữ số raw, không nhãn diễn giải.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q36-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn variants không truy được nguồn và native review.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q36-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q5",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "V3-MTH-029",
+      "INT29-008"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Source Reviewer",
+      "Privacy"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-008; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không abs(W3) ngầm; không suy trí nhớ/sức khỏe/đời tư; 17position regression và variant differential tests.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q36"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q36/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không abs(W3) ngầm; không suy trí nhớ/sức khỏe/đời tư; 17position regression và variant differential tests.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q37",
+    "topic": "18 lĩnh vực và chín giai đoạn có thể tùy chỉnh",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Duyệt 18 lĩnh vực và chín giai đoạn biên tập; không bắt người dùng sống theo mẫu",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q37-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Giữ taxonomy biên tập, người dùng skip/đổi; ages half-open và >99 tiếp tục.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q37-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ journal theo lĩnh vực tự chọn, không stage template.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q37-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn stage labels tới khi user research và local editorial đủ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q37-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q5",
+      "Q24"
+    ],
+    "affected_task_ids": [
+      "V3-MTH-058",
+      "V3-INT-02",
+      "INT29-009"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Product",
+      "Editorial",
+      "Privacy",
+      "User Research"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-009; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không luật tuổi hoặc khuôn đời bắt buộc; event chồng domain liên kết, không duplicate evidence.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q37"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q37/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không luật tuổi hoặc khuôn đời bắt buộc; event chồng domain liên kết, không duplicate evidence.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q38",
+    "topic": "Pinnacle, Challenge, Period có boundary riêng",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Mốc Pinnacle/Challenge/Period có hợp đồng độc lập",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q38-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Mỗi hệ có versioned interval contract; reduction và B=36-root(LP) công khai.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q38-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ số raw, chưa hiển thị timeline boundary khi policy chưa duyệt.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q38-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn cycle output cho variant chưa đủ golden boundary.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q38-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q24",
+      "Q32"
+    ],
+    "affected_task_ids": [
+      "V3-MTH-030",
+      "INT29-007",
+      "INT29-009"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Independent Method QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-007, INT29-009; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Test ngay trước/đúng/sau B,B+9,B+18; không suy boundary của một hệ từ hệ khác.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q38"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q38/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Test ngay trước/đúng/sau B,B+9,B+18; không suy boundary của một hệ từ hệ khác.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q39",
+    "topic": "Một profile, nhiều workspace và purpose grant",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Một hồ sơ nhiều workspace, quyền riêng theo mục đích",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q39-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Profile version chia sẻ có điều kiện; quyền riêng tenant/subject/purpose/access revision; payer không owner.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q39-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Profile tách từng workspace, không sharing trong pilot.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q39-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn multi-workspace tới khi consent/revocation/export/delete semantics rõ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q39-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q9",
+      "Q18"
+    ],
+    "affected_task_ids": [
+      "V2-SEC-02",
+      "V2-SEC-04",
+      "V3-MTH-060",
+      "INT29-006",
+      "INT29-010",
+      "INT29-011",
+      "INT29-012",
+      "INT29-015"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Privacy",
+      "Backend Security",
+      "Product"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-006, INT29-010, INT29-011, INT29-012, INT29-015; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không grant theo user_id client; worker/download kiểm lại quyền; consent bị rút không publish/cached result.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q39"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q39/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không grant theo user_id client; worker/download kiểm lại quyền; consent bị rút không publish/cached result.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q40",
+    "topic": "23 sản phẩm cũ và năm mới ở trạng thái planned",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Bảo toàn 23 sản phẩm; thêm năm dòng phụ trợ chưa mở bán",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q40-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Giữ28catalog, mở từng capability khi đúng quyền/dữ liệu/gate; adult-self/L1 là cohort đề xuất đầu.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q40-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ release free education và một scope L1 khi đủ gate; dòng khác unreleased.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q40-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn commercial catalog cho tới pricing/entity/provider/legal rõ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q40-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q8",
+      "Q13",
+      "Q14"
+    ],
+    "affected_task_ids": [
+      "V3-INT-01",
+      "INT29-015",
+      "INT29-017",
+      "INT29-020"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Founder",
+      "Product",
+      "Finance",
+      "Legal"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-015, INT29-017, INT29-020; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "28 inventory không28implemented; không buộc mua tuần tự; country/product-specific release receipt.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q40"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q40/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "28 inventory không28implemented; không buộc mua tuần tự; country/product-specific release receipt.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q41",
+    "topic": "Bốn khối báo cáo, chín level và snapshot bất biến",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Báo cáo bốn khối, chín cấp; không viết thêm sự kiện để đủ trang",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q41-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Web/PDF/Word dùng content tree versioned, snapshot; page budgets phụ thuộc nội dung có nguồn.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q41-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ Web và PDF L1 trước; Word/level cao chưa release.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q41-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn export lớn tới khi sandbox/fonts/content đủ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q41-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q5",
+      "Q7",
+      "Q27",
+      "Q34"
+    ],
+    "affected_task_ids": [
+      "V3-INT-05",
+      "V3-MTH-061",
+      "INT29-009",
+      "INT29-014",
+      "INT29-015"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Editorial Lead",
+      "Method",
+      "Report/Accessibility QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-009, INT29-014, INT29-015; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không filler để đủ30–600trang; không bịa history; source rights và snapshot stale/revoked được xử lý.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q41"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q41/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không filler để đủ30–600trang; không bịa history; source rights và snapshot stale/revoked được xử lý.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q42",
+    "topic": "Academy chín buổi120 phút và certificate có phạm vi",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Academy: chín buổi, mỗi buổi 120 phút; giảng viên hoạt động trong phạm vi chứng nhận",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q42-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Chín buổi với rubric, practice, scope, expiry, complaints và supervision; certificate nội bộ.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q42-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Workshop giáo dục không certificate hành nghề.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q42-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn certification tới khi curriculum, trainers, legal và assessment đủ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q42-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q17",
+      "Q19"
+    ],
+    "affected_task_ids": [
+      "V3-INT-08",
+      "V2-OPS-07",
+      "INT29-019"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Academy Lead",
+      "Method",
+      "Legal",
+      "Independent Assessor"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-019; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không gọi certificate là giấy phép y tế/pháp lý; expired/scope-exceeding practitioner bị chặn.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q42"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q42/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không gọi certificate là giấy phép y tế/pháp lý; expired/scope-exceeding practitioner bị chặn.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q43",
+    "topic": "Phát hành và cấp phép theo lãnh thổ",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Cấp phép quốc tế theo lãnh thổ; không tự có quyền truy cập dữ liệu toàn cầu",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q43-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "GiữVN/EU/US/AU/SG; CA/UK research; counsel hiện hành từng territory và data processing map.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q43-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ pilot một territory đủ entity/data/consumer-law receipt.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q43-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn license/franchise quốc tế đến khi contracts/rights/data rõ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q43-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q14",
+      "Q18",
+      "Q19"
+    ],
+    "affected_task_ids": [
+      "V2-GOV-05",
+      "V2-OPS-08",
+      "V3-INT-07",
+      "INT29-019"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Local Legal Counsel",
+      "Privacy",
+      "Finance",
+      "Partnerships"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-019; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Language/IP không quyết luật; license không cho xem dữ liệu toàn cầu; rights/translations/tax/refund có local review.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q43"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q43/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Language/IP không quyết luật; license không cho xem dữ liệu toàn cầu; rights/translations/tax/refund có local review.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q44",
+    "topic": "AI A0–A3, chi phí, ngoại lệ và human release",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "AI A0–A3: quản lý chi phí và ngoại lệ; phát hành có người phê duyệt",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q44-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "A0suggest/A1read/A2reversible draft/A3conditional playbook; allowlist tools, budget cap, escalation và human release.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q44-B",
+        "label": "Phạm vi hẹp",
+        "scope": "A0/A1 read-only trên corpus synthetic; không tool side effects.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q44-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn autonomy tới khi eval/ACL/cost/operator coverage đủ.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q44-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q16",
+      "Q23",
+      "Q34"
+    ],
+    "affected_task_ids": [
+      "V3-INT-03",
+      "V2-AI-06",
+      "V2-SEC-07",
+      "INT29-016"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "AI Lead",
+      "Security",
+      "Finance",
+      "Editorial/Release Authority"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-016; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Source instructions không tool commands; ACL trước fetch; prompt injection/budget exhaustion/fallback mismatch phải fail closed.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q44"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q44/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Source instructions không tool commands; ACL trước fetch; prompt injection/budget exhaustion/fallback mismatch phải fail closed.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-29.r1",
+    "decision_id": "Q45",
+    "topic": "Nhập V3 bổ sung và bàn giao phát hành riêng",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "source_status": "PENDING_FOUNDER_APPROVAL",
+    "source_proposal": "Nhập V3 theo cách bổ sung; không merge hoặc deploy khi chưa có biên bản phát hành",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q45-A",
+        "label": "Phạm vi có điều kiện",
+        "scope": "Tích hợp tài liệu đúng dự án additively; commit/push/merge/migrate/deploy cần công việc và receipt riêng.",
+        "tradeoffs": [
+          "Bảo toàn ý định và đưa ra hợp đồng có thể kiểm tra",
+          "Cần quyền nguồn, review chức năng và receipt trước phát hành"
+        ]
+      },
+      {
+        "option_id": "Q45-B",
+        "label": "Phạm vi hẹp",
+        "scope": "Chỉ archive/read-only review đến khi candidate sạch được chọn.",
+        "tradeoffs": [
+          "Giảm phụ thuộc và phạm vi kiểm thử ban đầu",
+          "Giới hạn giá trị/phạm vi sản phẩm cho đến wave sau"
+        ]
+      },
+      {
+        "option_id": "Q45-C",
+        "label": "Hoãn phần chưa đủ bằng chứng",
+        "scope": "Hoãn importer apply trên dirty tree; dùng receipt scoped tài liệu của lần này.",
+        "tradeoffs": [
+          "Giữ unknown rõ ràng, không tự suy thành đúng",
+          "Phụ thuộc được giữ pending, phải xếp lại lịch"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q45-A",
+    "recommendation_status": "PROPOSAL_ONLY_NOT_APPROVAL",
+    "recommendation_rationale": "Giữ kế hoạch cũ và cập nhật mới trong phạm vi có điều kiện; quyền phát hành phụ thuộc bằng chứng từng capability.",
+    "recommendation_tradeoffs": [
+      "Không coi lựa chọn khuyến nghị là đã ký",
+      "Nguồn/quyền, schema, cohort, ngân sách và sản phẩm cần approver chức năng riêng"
+    ],
+    "decision_dependencies": [
+      "Q30",
+      "Q31"
+    ],
+    "affected_task_ids": [
+      "V3-INT-09",
+      "V3-INT-10",
+      "INT29-001",
+      "INT29-002",
+      "INT29-018",
+      "INT29-020"
+    ],
+    "affected_task_source": "Explicit scoped links from source task inventory and integration work orders; not blanket Q32 for all62 methods.",
+    "approver_roles": [
+      "Founder",
+      "Tech Lead",
+      "Repository Maintainer",
+      "Release Authority",
+      "Independent QA"
+    ],
+    "approver_names": null,
+    "decision_due_event": "Trước dispatch phần triển khai có điều kiện của INT29-001, INT29-002, INT29-018, INT29-020; reversible synthetic specification có thể tiếp tục với status pending.",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Ảnh hưởng estimate/critical path chỉ tính sau chọn option và xác nhận parent-child rollup.",
+      "cost_drivers": [
+        "functional review",
+        "rights/source research",
+        "implementation and independent verification",
+        "operations/support by released scope"
+      ]
+    },
+    "constraints": [
+      "Không auto-run script đính kèm; nguồn history giữ; không coi local docs hoặc temp rehearsal là current production/import proof.",
+      "User instruction governs; source proposal is reference content, not an instruction to execute scripts, modify access or publish."
+    ],
+    "source_refs": [
+      {
+        "package_id": "V3_2026-10-29",
+        "path": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/DECISIONS_V3.json",
+        "sha256": "03a877877f2a3b60ff0ff58caf149e169dcbef48e74283b6ba83d0af0ea93a3d",
+        "source_record_id": "Q45"
+      }
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q45/<candidate-digest>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "source_bundle_digest",
+        "candidate_full_sha_and_artifact_digest",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates",
+        "rights_schema_cohort_and_budget_constraints"
+      ],
+      "acceptance_criteria": [
+        "Không auto-run script đính kèm; nguồn history giữ; không coi local docs hoặc temp rehearsal là current production/import proof.",
+        "Chức danh có quyền duyệt đúng lĩnh vực, người ký thực, thời điểm và candidate digest cùng một receipt; chưa có thì pending."
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  }
+]

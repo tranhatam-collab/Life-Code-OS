@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v2:ProfilePipelineInput",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "subject_alias": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "full_name": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "birth_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "birth_time": {
+          "type": "string"
+        },
+        "time_zone": {
+          "type": "string"
+        }
+      },
+      "required": []
+    },
+    "goal": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "hypotheses": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "birth_date": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": [
+          "id",
+          "birth_date"
+        ]
+      }
+    }
+  },
+  "required": [
+    "subject_alias",
+    "profile",
+    "goal",
+    "as_of"
+  ]
+}

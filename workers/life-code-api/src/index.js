@@ -66,36 +66,66 @@ function bearerToken(request) {
   return token;
 }
 
-async function resolveSessionUserId(request, db) {
-  if (!db) return null;
-  const token = bearerToken(request);
-  if (!token) return null;
-  const session = await db
+async function hashSessionToken(token) {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(token));
+  return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+function timingSafeEqualString(a, b) {
+  if (typeof a !== "string" || typeof b !== "string") return false;
+  const max = Math.max(a.length, b.length);
+  let diff = a.length ^ b.length;
+  for (let i = 0; i < max; i += 1) {
+    diff |= (a.charCodeAt(i) || 0) ^ (b.charCodeAt(i) || 0);
+  }
+  return diff === 0;
+}
+
+async function lookupSessionByBearer(db, token) {
+  if (!db || !token) return null;
+  const tokenHash = await hashSessionToken(token);
+  let session = await db
     .prepare(
-      "SELECT user_id, expires_at, revoked_at FROM user_sessions WHERE session_token = ? LIMIT 1"
+      "SELECT id, user_id, session_token, expires_at, revoked_at FROM user_sessions WHERE session_token = ? LIMIT 1"
     )
-    .bind(token)
+    .bind(tokenHash)
     .first();
+  if (!session) {
+    // Legacy plaintext rows: migrate-on-read to hash.
+    session = await db
+      .prepare(
+        "SELECT id, user_id, session_token, expires_at, revoked_at FROM user_sessions WHERE session_token = ? LIMIT 1"
+      )
+      .bind(token)
+      .first();
+    if (session) {
+      try {
+        await db
+          .prepare("UPDATE user_sessions SET session_token = ? WHERE id = ?")
+          .bind(tokenHash, session.id)
+          .run();
+        session.session_token = tokenHash;
+      } catch (_) {
+        // Concurrent migrate or unique conflict — still allow this request.
+      }
+    }
+  }
   if (!session) return null;
   if (session.revoked_at) return null;
   if (session.expires_at && Date.parse(session.expires_at) < Date.now()) return null;
-  return session.user_id || null;
+  return session;
+}
+
+async function resolveSessionUserId(request, db) {
+  const session = await resolveSession(request, db);
+  return session?.user_id || null;
 }
 
 async function resolveSession(request, db) {
   if (!db) return null;
   const token = bearerToken(request);
   if (!token) return null;
-  const session = await db
-    .prepare(
-      "SELECT id, user_id, session_token, expires_at, revoked_at FROM user_sessions WHERE session_token = ? LIMIT 1"
-    )
-    .bind(token)
-    .first();
-  if (!session) return null;
-  if (session.revoked_at) return null;
-  if (session.expires_at && Date.parse(session.expires_at) < Date.now()) return null;
-  return session;
+  return lookupSessionByBearer(db, token);
 }
 
 function parseReportLevel(value) {
@@ -214,7 +244,9 @@ function monitorAuthorized(request, env) {
   const key = env.MONITOR_KEY;
   if (!key) return { ok: false, status: 503, error: "Monitoring key not configured" };
   const received = request.headers.get("x-monitor-key") || "";
-  if (received !== key) return { ok: false, status: 401, error: "Unauthorized" };
+  if (!timingSafeEqualString(received, key)) {
+    return { ok: false, status: 401, error: "Unauthorized" };
+  }
   return { ok: true };
 }
 
@@ -224,6 +256,11 @@ async function rateLimitHit(db, bucketKey, limit, windowSeconds) {
   const windowStart = now - (now % windowSeconds);
   const id = `${bucketKey}:${windowStart}`;
   const createdAt = new Date(windowStart * 1000).toISOString();
+  const retryAfter = {
+    retry_after_seconds: windowSeconds - (now - windowStart),
+    limit,
+    window_seconds: windowSeconds,
+  };
 
   const row = await db
     .prepare("SELECT request_count FROM rate_limits WHERE id = ? LIMIT 1")
@@ -231,29 +268,47 @@ async function rateLimitHit(db, bucketKey, limit, windowSeconds) {
     .first();
 
   if (!row) {
-    await db
-      .prepare(
-        `INSERT INTO rate_limits (id, bucket_key, window_start, window_seconds, request_count, created_at)
-         VALUES (?, ?, ?, ?, ?, ?)`
-      )
-      .bind(id, bucketKey, windowStart, windowSeconds, 1, createdAt)
-      .run();
-    return null;
+    try {
+      await db
+        .prepare(
+          `INSERT INTO rate_limits (id, bucket_key, window_start, window_seconds, request_count, created_at)
+           VALUES (?, ?, ?, ?, ?, ?)`
+        )
+        .bind(id, bucketKey, windowStart, windowSeconds, 1, createdAt)
+        .run();
+      return null;
+    } catch (_) {
+      // Concurrent insert — fall through to atomic update.
+    }
   }
 
-  const current = Number(row.request_count || 0);
-  if (current >= limit) {
-    return {
-      retry_after_seconds: windowSeconds - (now - windowStart),
-      limit,
-      window_seconds: windowSeconds,
-    };
-  }
-
-  await db
-    .prepare("UPDATE rate_limits SET request_count = ? WHERE id = ?")
-    .bind(current + 1, id)
+  const updated = await db
+    .prepare(
+      "UPDATE rate_limits SET request_count = request_count + 1 WHERE id = ? AND request_count < ?"
+    )
+    .bind(id, limit)
     .run();
+  if ((updated?.meta?.changes || 0) > 0) return null;
+
+  const currentRow = await db
+    .prepare("SELECT request_count FROM rate_limits WHERE id = ? LIMIT 1")
+    .bind(id)
+    .first();
+  if (!currentRow) {
+    try {
+      await db
+        .prepare(
+          `INSERT INTO rate_limits (id, bucket_key, window_start, window_seconds, request_count, created_at)
+           VALUES (?, ?, ?, ?, ?, ?)`
+        )
+        .bind(id, bucketKey, windowStart, windowSeconds, 1, createdAt)
+        .run();
+      return null;
+    } catch (_) {
+      return retryAfter;
+    }
+  }
+  if (Number(currentRow.request_count || 0) >= limit) return retryAfter;
   return null;
 }
 
@@ -652,7 +707,15 @@ export default {
 
     if (request.method === "GET" && url.pathname.startsWith("/api/v1/profile/")) {
       if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
+      const session = await resolveSession(request, db);
+      if (!session?.user_id) return jsonResponse(request, 401, { error: "Unauthorized" });
       const userId = url.pathname.split("/").pop();
+      if (!userId || userId === "update") {
+        return jsonResponse(request, 404, { error: "Not found" });
+      }
+      if (userId !== session.user_id) {
+        return jsonResponse(request, 403, { error: "Forbidden" });
+      }
       try {
         const profile = await db.prepare("SELECT * FROM user_profiles WHERE id = ?").bind(userId).first();
         if (!profile) return jsonResponse(request, 404, { error: "Profile not found" });
@@ -692,11 +755,23 @@ export default {
         }
         const startRate = await rateLimitHit(db, `session_start:${requestIp(request)}`, 15, 60);
         if (startRate) return jsonResponse(request, 429, { error: "Rate limit exceeded", ...startRate });
-        const userId = payload.user_id || generateId();
+        const sessionUserId = await resolveSessionUserId(request, db);
+        // Never trust client user_id to attach to an existing profile without a bearer.
+        let userId;
+        if (sessionUserId) {
+          userId = sessionUserId;
+        } else if (payload.user_id) {
+          return jsonResponse(request, 401, {
+            error: "Unauthorized: bearer required to continue an existing user_id",
+          });
+        } else {
+          userId = generateId();
+        }
         const now = new Date().toISOString();
         const expiresAt = sessionExpiryIso();
         const sessionId = generateId();
         const sessionToken = `${generateId()}${generateId().replace(/-/g, "")}`;
+        const sessionTokenHash = await hashSessionToken(sessionToken);
         const profileMetadata = sanitizeProfileMetadata(payload.profile_metadata);
         const nickname = payload.nickname ? String(payload.nickname).trim().slice(0, 120) : null;
         const avatarUrl = validateAvatarUrl(payload.avatar_url);
@@ -753,7 +828,7 @@ export default {
             `INSERT INTO user_sessions (id, user_id, session_token, device_label, ip_address, user_agent, created_at, expires_at, last_seen_at, revoked_at)
              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, NULL)`
           )
-          .bind(sessionId, userId, sessionToken, deviceLabel, ipAddress, userAgent, now, expiresAt, now)
+          .bind(sessionId, userId, sessionTokenHash, deviceLabel, ipAddress, userAgent, now, expiresAt, now)
           .run();
 
         await auditLog(db, request, userId, "session_start", {
@@ -926,7 +1001,8 @@ export default {
 
         if (db) {
           const sessionUserId = await resolveSessionUserId(request, db);
-          const userId = payload.user_id || sessionUserId || (payload.name ? generateId() : null);
+          // Never trust client-supplied user_id for upsert authority (IDOR / overwrite).
+          const userId = sessionUserId || (payload.name ? generateId() : null);
           if (userId) {
           const now = new Date().toISOString();
           const metadataUpdate = sanitizeProfileMetadata(payload.profile_metadata);
@@ -1016,21 +1092,22 @@ export default {
 
       if (url.pathname === "/api/v1/report") {
         const resultId = payload.result_id;
-        let userId = payload.user_id;
         let level;
         if (!db) return jsonResponse(request, 503, { error: "Database not configured" });
 
         try {
           level = parseReportLevel(payload.level);
-          if (!userId) {
-            userId = await resolveSessionUserId(request, db);
-          }
-          if (!userId && !resultId) {
+          const sessionUserId = await resolveSessionUserId(request, db);
+          if (!sessionUserId) {
             return jsonResponse(request, 401, { error: "Unauthorized: user session required" });
           }
+          const userId = sessionUserId;
           let rawJson;
           if (resultId) {
-            const row = await db.prepare("SELECT raw_json FROM life_code_results WHERE id = ?").bind(resultId).first();
+            const row = await db
+              .prepare("SELECT raw_json FROM life_code_results WHERE id = ? AND user_id = ?")
+              .bind(resultId, userId)
+              .first();
             if (!row) return jsonResponse(request, 404, { error: "Result not found" });
             rawJson = row.raw_json;
           } else {

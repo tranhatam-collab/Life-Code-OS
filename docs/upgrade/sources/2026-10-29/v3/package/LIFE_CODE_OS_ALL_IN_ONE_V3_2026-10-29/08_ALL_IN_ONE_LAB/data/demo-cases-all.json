@@ -1,0 +1,3777 @@
+[
+  {
+    "id": "DEMO-001",
+    "group": "Bộ số",
+    "title": "Đuôi 6789 · quy tắc unmapped",
+    "method": "tail80",
+    "input": {
+      "suffix": "6789",
+      "zero_policy": "unmapped"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 69
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-002",
+    "group": "Bộ số",
+    "title": "Đuôi 0000 · quy tắc unmapped",
+    "method": "tail80",
+    "input": {
+      "suffix": "0000",
+      "zero_policy": "unmapped"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": null
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-003",
+    "group": "Bộ số",
+    "title": "Đuôi 0080 · quy tắc as80",
+    "method": "tail80",
+    "input": {
+      "suffix": "0080",
+      "zero_policy": "as80"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 80
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-004",
+    "group": "Bộ số",
+    "title": "Đuôi 0001 · quy tắc unmapped",
+    "method": "tail80",
+    "input": {
+      "suffix": "0001",
+      "zero_policy": "unmapped"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 1
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-005",
+    "group": "Bộ số",
+    "title": "Đuôi 9999 · quy tắc unmapped",
+    "method": "tail80",
+    "input": {
+      "suffix": "9999",
+      "zero_policy": "unmapped"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 79
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-006",
+    "group": "Bộ số",
+    "title": "Đuôi 6231 · quy tắc unmapped",
+    "method": "tail80",
+    "input": {
+      "suffix": "6231",
+      "zero_policy": "unmapped"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 71
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-007",
+    "group": "Bộ số",
+    "title": "Đuôi 1986 · quy tắc unmapped",
+    "method": "tail80",
+    "input": {
+      "suffix": "1986",
+      "zero_policy": "unmapped"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 66
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-008",
+    "group": "Bộ số",
+    "title": "Đuôi 3468 · quy tắc unmapped",
+    "method": "tail80",
+    "input": {
+      "suffix": "3468",
+      "zero_policy": "unmapped"
+    },
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 28
+      }
+    },
+    "expected_error": null,
+    "explanation": "Phép chia số nguyên có truy vết; nhãn nguồn không phải dự báo.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-009",
+    "group": "Bộ số",
+    "title": "Đầu vào ba chữ số phải bị từ chối",
+    "method": "tail80",
+    "input": {
+      "suffix": "789"
+    },
+    "expected_subset": null,
+    "expected_error": "INVALID_SUFFIX",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-010",
+    "group": "Bộ số",
+    "title": "Chuỗi 1234 · giữ phần chưa biết",
+    "method": "pairs",
+    "input": {
+      "digits": "1234",
+      "policy": "strict"
+    },
+    "expected_subset": {
+      "calculation": {
+        "known": 3,
+        "total": 3,
+        "counts": {
+          "TM": 1,
+          "HH": 1,
+          "DN": 1
+        }
+      }
+    },
+    "expected_error": null,
+    "explanation": "Không biến 55 thành Phục vị. Số 0/5 chưa có nhãn trong cấu hình strict.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-011",
+    "group": "Bộ số",
+    "title": "Chuỗi 1819 · giữ phần chưa biết",
+    "method": "pairs",
+    "input": {
+      "digits": "1819",
+      "policy": "strict"
+    },
+    "expected_subset": {
+      "calculation": {
+        "known": 3,
+        "total": 3,
+        "counts": {
+          "NQ": 2,
+          "DN": 1
+        }
+      }
+    },
+    "expected_error": null,
+    "explanation": "Không biến 55 thành Phục vị. Số 0/5 chưa có nhãn trong cấu hình strict.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-012",
+    "group": "Bộ số",
+    "title": "Chuỗi 1413 · giữ phần chưa biết",
+    "method": "pairs",
+    "input": {
+      "digits": "1413",
+      "policy": "strict"
+    },
+    "expected_subset": {
+      "calculation": {
+        "known": 3,
+        "total": 3,
+        "counts": {
+          "SK": 2,
+          "TY": 1
+        }
+      }
+    },
+    "expected_error": null,
+    "explanation": "Không biến 55 thành Phục vị. Số 0/5 chưa có nhãn trong cấu hình strict.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-013",
+    "group": "Bộ số",
+    "title": "Chuỗi 5555 · giữ phần chưa biết",
+    "method": "pairs",
+    "input": {
+      "digits": "5555",
+      "policy": "strict"
+    },
+    "expected_subset": {
+      "calculation": {
+        "known": 0,
+        "total": 3
+      }
+    },
+    "expected_error": null,
+    "explanation": "Không biến 55 thành Phục vị. Số 0/5 chưa có nhãn trong cấu hình strict.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-014",
+    "group": "Bộ số",
+    "title": "Chuỗi 8553 · giữ phần chưa biết",
+    "method": "pairs",
+    "input": {
+      "digits": "8553",
+      "policy": "strict"
+    },
+    "expected_subset": {
+      "calculation": {
+        "known": 0,
+        "total": 3
+      }
+    },
+    "expected_error": null,
+    "explanation": "Không biến 55 thành Phục vị. Số 0/5 chưa có nhãn trong cấu hình strict.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-015",
+    "group": "Bộ số",
+    "title": "Chuỗi 0000 · giữ phần chưa biết",
+    "method": "pairs",
+    "input": {
+      "digits": "0000",
+      "policy": "strict"
+    },
+    "expected_subset": {
+      "calculation": {
+        "known": 0,
+        "total": 3
+      }
+    },
+    "expected_error": null,
+    "explanation": "Không biến 55 thành Phục vị. Số 0/5 chưa có nhãn trong cấu hình strict.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-016",
+    "group": "Bộ số",
+    "title": "Nối qua 5 chỉ để đối chiếu độ nhạy",
+    "method": "pairs",
+    "input": {
+      "digits": "8553",
+      "policy": "bridge5_diagnostic"
+    },
+    "expected_subset": {
+      "calculation": {
+        "evaluated_digits": "83",
+        "known": 1
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-017",
+    "group": "Bộ số",
+    "title": "Đếm tần suất chữ số thô",
+    "method": "digit_matrix",
+    "input": {
+      "digits": "20000229"
+    },
+    "expected_subset": {
+      "calculation": {
+        "zero_count": 4
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-018",
+    "group": "Bộ số",
+    "title": "Chuỗi đối xứng không phải số phận",
+    "method": "sequence",
+    "input": {
+      "digits": "12344321"
+    },
+    "expected_subset": {
+      "calculation": {
+        "palindrome": true
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-019",
+    "group": "Bộ số",
+    "title": "Ký hiệu nội địa",
+    "method": "phone",
+    "input": {
+      "raw": "0900 000 001"
+    },
+    "expected_subset": {
+      "canonical": "0900000001"
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-020",
+    "group": "Bộ số",
+    "title": "Ký hiệu quốc tế cùng chuỗi nội địa",
+    "method": "phone",
+    "input": {
+      "raw": "+84 900 000 001"
+    },
+    "expected_subset": {
+      "canonical": "0900000001"
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-021",
+    "group": "Tên",
+    "title": "Quy đổi có giữ nguyên tên: Đỗ An",
+    "method": "name",
+    "input": {
+      "name": "Đỗ An"
+    },
+    "expected_subset": {
+      "calculation": {
+        "latin": "DO AN",
+        "sum": 16,
+        "vowel_sum": 7,
+        "consonant_sum": 9
+      }
+    },
+    "expected_error": null,
+    "explanation": "Tên minh họa; không khẳng định đây là hồ sơ một người có thật.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-022",
+    "group": "Tên",
+    "title": "Quy đổi có giữ nguyên tên: ĐỖ AN",
+    "method": "name",
+    "input": {
+      "name": "ĐỖ AN"
+    },
+    "expected_subset": {
+      "calculation": {
+        "latin": "DO AN",
+        "sum": 16,
+        "vowel_sum": 7,
+        "consonant_sum": 9
+      }
+    },
+    "expected_error": null,
+    "explanation": "Tên minh họa; không khẳng định đây là hồ sơ một người có thật.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-023",
+    "group": "Tên",
+    "title": "Quy đổi có giữ nguyên tên: Lê Bình",
+    "method": "name",
+    "input": {
+      "name": "Lê Bình"
+    },
+    "expected_subset": {
+      "calculation": {
+        "latin": "LE BINH",
+        "sum": 32,
+        "vowel_sum": 14,
+        "consonant_sum": 18
+      }
+    },
+    "expected_error": null,
+    "explanation": "Tên minh họa; không khẳng định đây là hồ sơ một người có thật.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-024",
+    "group": "Tên",
+    "title": "Quy đổi có giữ nguyên tên: Nguyễn An",
+    "method": "name",
+    "input": {
+      "name": "Nguyễn An"
+    },
+    "expected_subset": {
+      "calculation": {
+        "latin": "NGUYEN AN",
+        "sum": 38,
+        "vowel_sum": 9,
+        "consonant_sum": 29
+      }
+    },
+    "expected_error": null,
+    "explanation": "Tên minh họa; không khẳng định đây là hồ sơ một người có thật.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-025",
+    "group": "Tên",
+    "title": "Quy đổi có giữ nguyên tên: Demo An",
+    "method": "name",
+    "input": {
+      "name": "Demo An"
+    },
+    "expected_subset": {
+      "calculation": {
+        "latin": "DEMO AN",
+        "sum": 25,
+        "vowel_sum": 12,
+        "consonant_sum": 13
+      }
+    },
+    "expected_error": null,
+    "explanation": "Tên minh họa; không khẳng định đây là hồ sơ một người có thật.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-026",
+    "group": "Tên",
+    "title": "Y được tính như nguyên âm theo lựa chọn",
+    "method": "name",
+    "input": {
+      "name": "Ly An",
+      "y_policy": "include"
+    },
+    "expected_subset": {
+      "calculation": {
+        "vowel_sum": 8
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-027",
+    "group": "Tên",
+    "title": "Y không tính như nguyên âm",
+    "method": "name",
+    "input": {
+      "name": "Ly An",
+      "y_policy": "exclude"
+    },
+    "expected_subset": {
+      "calculation": {
+        "vowel_sum": 1
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-028",
+    "group": "Tên",
+    "title": "Không ép chữ Hán vào bảng Latin",
+    "method": "name",
+    "input": {
+      "name": "李明"
+    },
+    "expected_subset": null,
+    "expected_error": "UNSUPPORTED_SCRIPT",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-029",
+    "group": "Tên",
+    "title": "Ký tự điều khiển bị từ chối",
+    "method": "name",
+    "input": {
+      "name": "An\nBinh"
+    },
+    "expected_subset": null,
+    "expected_error": "INVALID_NAME",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-030",
+    "group": "Ngày và lịch",
+    "title": "Ngày nhuận hợp lệ",
+    "method": "birth",
+    "input": {
+      "birth_date": "2000-02-29"
+    },
+    "expected_subset": {
+      "calculation": {
+        "raw_digit_sum": 15
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-031",
+    "group": "Ngày và lịch",
+    "title": "Ngày không tồn tại",
+    "method": "birth",
+    "input": {
+      "birth_date": "2023-02-29"
+    },
+    "expected_subset": null,
+    "expected_error": "INVALID_INTEGER",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-032",
+    "group": "Ngày và lịch",
+    "title": "Không đoán định dạng ngày",
+    "method": "birth",
+    "input": {
+      "birth_date": "02/03/2000"
+    },
+    "expected_subset": null,
+    "expected_error": "INVALID_DATE",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-033",
+    "group": "Ngày và lịch",
+    "title": "Giữ số 11/22/33 khi được chọn",
+    "method": "birth",
+    "input": {
+      "birth_date": "2009-11-29",
+      "reduction_policy": "preserve_11_22_33"
+    },
+    "expected_subset": {
+      "calculation": {
+        "raw_digit_sum": 24,
+        "calculation_sum": 24,
+        "reduction": {
+          "value": 6,
+          "root": 6
+        }
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-034",
+    "group": "Ngày và lịch",
+    "title": "Đối chiếu cộng theo thành phần",
+    "method": "birth",
+    "input": {
+      "birth_date": "2009-11-29",
+      "reduction_policy": "preserve_11_22_33",
+      "variant": "reduced_components"
+    },
+    "expected_subset": {
+      "calculation": {
+        "raw_digit_sum": 24,
+        "calculation_sum": 33,
+        "reduction": {
+          "value": 33,
+          "root": 6
+        }
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-035",
+    "group": "Ngày và lịch",
+    "title": "Chu kỳ biểu tượng theo năm dương lịch",
+    "method": "cycle",
+    "input": {
+      "birth_date": "1990-03-14",
+      "year": 2026,
+      "month": 10
+    },
+    "expected_subset": {
+      "calculation": {
+        "personal_year": 9,
+        "personal_month": 1
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-036",
+    "group": "Ngày và lịch",
+    "title": "Chu kỳ theo sinh nhật trước ngày chuyển",
+    "method": "cycle",
+    "input": {
+      "birth_date": "1990-03-14",
+      "year": 2026,
+      "boundary": "birthday",
+      "as_of": "2026-02-01"
+    },
+    "expected_subset": {
+      "calculation": {
+        "effective_year": 2025
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-037",
+    "group": "Ngày và lịch",
+    "title": "Timeline 100 khoảng tuổi, không biến cố",
+    "method": "timeline",
+    "input": {
+      "birth_date": "2000-02-29",
+      "as_of": "2026-10-20",
+      "leap_policy": "feb28"
+    },
+    "expected_subset": {
+      "calculation": {
+        "age_at_as_of": 26
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-038",
+    "group": "Ngày và lịch",
+    "title": "Ngày nhuận chọn mốc 01/03",
+    "method": "timeline",
+    "input": {
+      "birth_date": "2000-02-29",
+      "as_of": "2025-02-28",
+      "leap_policy": "mar01",
+      "max_age": 30
+    },
+    "expected_subset": {
+      "calculation": {
+        "age_at_as_of": 24
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-039",
+    "group": "Ngày và lịch",
+    "title": "Hai phương án năm sinh giữ riêng",
+    "method": "hypotheses",
+    "input": {
+      "hypotheses": [
+        {
+          "id": "paper",
+          "birth_date": "1970-05-10"
+        },
+        {
+          "id": "family",
+          "birth_date": "1972-05-10"
+        }
+      ]
+    },
+    "expected_subset": {
+      "calculation": {
+        "selected": null
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-040",
+    "group": "Múi giờ",
+    "title": "Việt Nam · thời điểm duy nhất",
+    "method": "time",
+    "input": {
+      "date": "2000-02-29",
+      "time": "04:25",
+      "time_zone": "Asia/Ho_Chi_Minh"
+    },
+    "expected_subset": {
+      "calculation": {
+        "state": "exact"
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-041",
+    "group": "Múi giờ",
+    "title": "Berlin · giờ lặp lại cần lựa chọn",
+    "method": "time",
+    "input": {
+      "date": "2026-10-25",
+      "time": "02:30",
+      "time_zone": "Europe/Berlin"
+    },
+    "expected_subset": {
+      "calculation": {
+        "state": "ambiguous"
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-042",
+    "group": "Múi giờ",
+    "title": "Berlin · giờ không tồn tại",
+    "method": "time",
+    "input": {
+      "date": "2026-03-29",
+      "time": "02:30",
+      "time_zone": "Europe/Berlin"
+    },
+    "expected_subset": {
+      "calculation": {
+        "state": "nonexistent"
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-043",
+    "group": "Múi giờ",
+    "title": "New York · giờ lặp lại",
+    "method": "time",
+    "input": {
+      "date": "2026-11-01",
+      "time": "01:30",
+      "time_zone": "America/New_York"
+    },
+    "expected_subset": {
+      "calculation": {
+        "state": "ambiguous"
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-044",
+    "group": "Múi giờ",
+    "title": "Múi giờ chưa được cung cấp",
+    "method": "time",
+    "input": {
+      "date": "2000-01-01",
+      "time": "10:00"
+    },
+    "expected_subset": null,
+    "expected_error": "TIMEZONE_REQUIRED",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-045",
+    "group": "Quan sát",
+    "title": "Coverage lấy mẫu số từ registry",
+    "method": "coverage",
+    "input": {
+      "product_release": "self-signal.demo.2",
+      "valid_field_ids": [
+        "name"
+      ]
+    },
+    "expected_subset": {
+      "calculation": {
+        "numerator": 1,
+        "denominator": 3
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-046",
+    "group": "Quan sát",
+    "title": "Client không được đặt lại trọng số",
+    "method": "coverage",
+    "input": {
+      "product_release": "self-signal.demo.2",
+      "valid_field_ids": [
+        "name"
+      ],
+      "weights": [
+        100
+      ]
+    },
+    "expected_subset": null,
+    "expected_error": "CLIENT_SCORES_FORBIDDEN",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-047",
+    "group": "Quan sát",
+    "title": "Tiến độ có thời hạn và quy tắc hủy",
+    "method": "actions",
+    "input": {
+      "actions": [
+        {
+          "id": "A1",
+          "due_on": "2026-10-21",
+          "state": "done"
+        },
+        {
+          "id": "A2",
+          "due_on": "2026-10-22",
+          "state": "scheduled"
+        },
+        {
+          "id": "A3",
+          "due_on": "2026-10-23",
+          "state": "cancelled"
+        },
+        {
+          "id": "A4",
+          "due_on": "2026-11-01",
+          "state": "done"
+        }
+      ],
+      "window_start": "2026-10-20",
+      "window_end": "2026-10-30"
+    },
+    "expected_subset": {
+      "calculation": {
+        "completed": 1,
+        "due": 2,
+        "ratio": 0.5
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-048",
+    "group": "Quan sát",
+    "title": "Không có việc đến hạn trả null",
+    "method": "actions",
+    "input": {
+      "actions": [],
+      "window_start": "2026-10-20",
+      "window_end": "2026-10-30"
+    },
+    "expected_subset": {
+      "calculation": {
+        "ratio": null
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-049",
+    "group": "Quan sát",
+    "title": "Dòng tiền số nguyên · không dự báo",
+    "method": "cashflow",
+    "input": {
+      "currency": "VND",
+      "entries": [
+        {
+          "currency": "VND",
+          "kind": "inflow",
+          "minor_units": "12000000"
+        },
+        {
+          "currency": "VND",
+          "kind": "outflow",
+          "minor_units": "7500000"
+        }
+      ]
+    },
+    "expected_subset": {
+      "calculation": {
+        "net_minor": "4500000"
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-050",
+    "group": "Quan sát",
+    "title": "Không cộng lẫn VND và USD",
+    "method": "cashflow",
+    "input": {
+      "currency": "VND",
+      "entries": [
+        {
+          "currency": "USD",
+          "kind": "inflow",
+          "minor_units": "10000"
+        }
+      ]
+    },
+    "expected_subset": null,
+    "expected_error": "MIXED_CURRENCY",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-051",
+    "group": "Quan sát",
+    "title": "Đồng nhịp · mô tả cảm nhận không suy nhân quả",
+    "method": "resonance",
+    "input": {
+      "observations": [
+        {
+          "date": "2026-10-17",
+          "field": "work",
+          "rating": 6
+        },
+        {
+          "date": "2026-10-18",
+          "field": "work",
+          "rating": 8
+        },
+        {
+          "date": "2026-10-19",
+          "field": "sound",
+          "rating": 4
+        }
+      ]
+    },
+    "expected_subset": {
+      "calculation": {
+        "summaries": [
+          {
+            "field": "work",
+            "count": 2,
+            "sum": 14,
+            "mean": 7,
+            "median": 7
+          },
+          {
+            "field": "sound",
+            "count": 1,
+            "sum": 4,
+            "mean": 4,
+            "median": 4
+          }
+        ]
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-052",
+    "group": "Quan sát",
+    "title": "Ma trận ưu tiên do người dùng lựa chọn",
+    "method": "preference",
+    "input": {
+      "criteria": [
+        {
+          "id": "cost",
+          "weight": 40
+        },
+        {
+          "id": "time",
+          "weight": 60
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "values": {
+            "cost": 70,
+            "time": 80
+          }
+        },
+        {
+          "id": "B",
+          "values": {
+            "cost": 90,
+            "time": 60
+          }
+        }
+      ]
+    },
+    "expected_subset": {
+      "calculation": {
+        "ranking_allowed": true
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-053",
+    "group": "Quan sát",
+    "title": "Tiêu chí thiếu không tự chuẩn hóa thành 100",
+    "method": "preference",
+    "input": {
+      "criteria": [
+        {
+          "id": "cost",
+          "weight": 40
+        },
+        {
+          "id": "time",
+          "weight": 60
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "values": {
+            "cost": 70,
+            "time": null
+          }
+        }
+      ]
+    },
+    "expected_subset": {
+      "calculation": {
+        "ranking_allowed": false
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-054",
+    "group": "Cấu trúc biểu tượng",
+    "title": "Biến đổi sáu hào từ dưới lên",
+    "method": "hexagram",
+    "input": {
+      "lines_bottom_up": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "changing_lines": [
+        6
+      ]
+    },
+    "expected_subset": {
+      "calculation": {
+        "changed_lines": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-055",
+    "group": "Phạm vi nghiên cứu",
+    "title": "Adapter giữ chỗ có điều kiện: bazi.full",
+    "method": "blocked",
+    "input": {
+      "method_id": "bazi.full"
+    },
+    "expected_subset": {
+      "status": "METHOD_NOT_RELEASED"
+    },
+    "expected_error": null,
+    "explanation": "Danh mục không bị xóa. Chưa có nguồn/quy tắc/quyền hoặc phạm vi hợp lệ thì không tạo lời luận.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-056",
+    "group": "Phạm vi nghiên cứu",
+    "title": "Adapter giữ chỗ có điều kiện: ziwei.full",
+    "method": "blocked",
+    "input": {
+      "method_id": "ziwei.full"
+    },
+    "expected_subset": {
+      "status": "METHOD_NOT_RELEASED"
+    },
+    "expected_error": null,
+    "explanation": "Danh mục không bị xóa. Chưa có nguồn/quy tắc/quyền hoặc phạm vi hợp lệ thì không tạo lời luận.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-057",
+    "group": "Phạm vi nghiên cứu",
+    "title": "Adapter giữ chỗ có điều kiện: nadi.record_lookup",
+    "method": "blocked",
+    "input": {
+      "method_id": "nadi.record_lookup"
+    },
+    "expected_subset": {
+      "status": "METHOD_NOT_RELEASED"
+    },
+    "expected_error": null,
+    "explanation": "Danh mục không bị xóa. Chưa có nguồn/quy tắc/quyền hoặc phạm vi hợp lệ thì không tạo lời luận.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-058",
+    "group": "Phạm vi nghiên cứu",
+    "title": "Chặn loại suy luận vượt phạm vi: face.personality",
+    "method": "blocked",
+    "input": {
+      "method_id": "face.personality"
+    },
+    "expected_subset": {
+      "status": "POLICY_BLOCKED"
+    },
+    "expected_error": null,
+    "explanation": "Giữ kho nghiên cứu lịch sử; không dùng để suy nhân cách hoặc nguy cơ bệnh cá nhân từ ảnh.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-059",
+    "group": "Phạm vi nghiên cứu",
+    "title": "Chặn loại suy luận vượt phạm vi: medical_risk_from_palm",
+    "method": "blocked",
+    "input": {
+      "method_id": "medical_risk_from_palm"
+    },
+    "expected_subset": {
+      "status": "POLICY_BLOCKED"
+    },
+    "expected_error": null,
+    "explanation": "Giữ kho nghiên cứu lịch sử; không dùng để suy nhân cách hoặc nguy cơ bệnh cá nhân từ ảnh.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-060",
+    "group": "Quyền và vận hành",
+    "title": "Quyền đúng phạm vi",
+    "method": "authorization",
+    "input": {
+      "principal": {
+        "id": "demo-A",
+        "state": "active",
+        "authenticated": true
+      },
+      "resource": {
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "state": "active",
+        "permission_revision": 2
+      },
+      "grant": {
+        "state": "active",
+        "grantee_id": "demo-A",
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "purpose": "self_review",
+        "actions": [
+          "read"
+        ],
+        "expires_at": "2026-12-01T00:00:00Z",
+        "permission_revision": 2
+      },
+      "purpose": "self_review",
+      "action": "read",
+      "now": "2026-10-20T00:00:00Z",
+      "processing_basis_valid": true
+    },
+    "expected_subset": {
+      "allowed": true
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-061",
+    "group": "Quyền và vận hành",
+    "title": "Khác chủ thể bị chặn",
+    "method": "authorization",
+    "input": {
+      "principal": {
+        "id": "demo-A",
+        "state": "active",
+        "authenticated": true
+      },
+      "resource": {
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S2",
+        "state": "active",
+        "permission_revision": 2
+      },
+      "grant": {
+        "state": "active",
+        "grantee_id": "demo-A",
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "purpose": "self_review",
+        "actions": [
+          "read"
+        ],
+        "expires_at": "2026-12-01T00:00:00Z",
+        "permission_revision": 2
+      },
+      "purpose": "self_review",
+      "action": "read",
+      "now": "2026-10-20T00:00:00Z",
+      "processing_basis_valid": true
+    },
+    "expected_subset": {
+      "allowed": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-062",
+    "group": "Quyền và vận hành",
+    "title": "Quyền đã thu hồi bị chặn",
+    "method": "authorization",
+    "input": {
+      "principal": {
+        "id": "demo-A",
+        "state": "active",
+        "authenticated": true
+      },
+      "resource": {
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "state": "active",
+        "permission_revision": 2
+      },
+      "grant": {
+        "state": "revoked",
+        "grantee_id": "demo-A",
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "purpose": "self_review",
+        "actions": [
+          "read"
+        ],
+        "expires_at": "2026-12-01T00:00:00Z",
+        "permission_revision": 2
+      },
+      "purpose": "self_review",
+      "action": "read",
+      "now": "2026-10-20T00:00:00Z",
+      "processing_basis_valid": true
+    },
+    "expected_subset": {
+      "allowed": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-063",
+    "group": "Quyền và vận hành",
+    "title": "Khác mục đích bị chặn",
+    "method": "authorization",
+    "input": {
+      "principal": {
+        "id": "demo-A",
+        "state": "active",
+        "authenticated": true
+      },
+      "resource": {
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "state": "active",
+        "permission_revision": 2
+      },
+      "grant": {
+        "state": "active",
+        "grantee_id": "demo-A",
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "purpose": "self_review",
+        "actions": [
+          "read"
+        ],
+        "expires_at": "2026-12-01T00:00:00Z",
+        "permission_revision": 2
+      },
+      "purpose": "research",
+      "action": "read",
+      "now": "2026-10-20T00:00:00Z",
+      "processing_basis_valid": true
+    },
+    "expected_subset": {
+      "allowed": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-064",
+    "group": "Quyền và vận hành",
+    "title": "Revision cũ bị chặn",
+    "method": "authorization",
+    "input": {
+      "principal": {
+        "id": "demo-A",
+        "state": "active",
+        "authenticated": true
+      },
+      "resource": {
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "state": "active",
+        "permission_revision": 2
+      },
+      "grant": {
+        "state": "active",
+        "grantee_id": "demo-A",
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "purpose": "self_review",
+        "actions": [
+          "read"
+        ],
+        "expires_at": "2026-12-01T00:00:00Z",
+        "permission_revision": 1
+      },
+      "purpose": "self_review",
+      "action": "read",
+      "now": "2026-10-20T00:00:00Z",
+      "processing_basis_valid": true
+    },
+    "expected_subset": {
+      "allowed": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-065",
+    "group": "Quyền và vận hành",
+    "title": "Người chưa đăng nhập bị chặn",
+    "method": "authorization",
+    "input": {
+      "principal": {
+        "id": "demo-A",
+        "state": "active",
+        "authenticated": false
+      },
+      "resource": {
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "state": "active",
+        "permission_revision": 2
+      },
+      "grant": {
+        "state": "active",
+        "grantee_id": "demo-A",
+        "tenant_id": "demo-T1",
+        "subject_id": "demo-S1",
+        "purpose": "self_review",
+        "actions": [
+          "read"
+        ],
+        "expires_at": "2026-12-01T00:00:00Z",
+        "permission_revision": 2
+      },
+      "purpose": "self_review",
+      "action": "read",
+      "now": "2026-10-20T00:00:00Z",
+      "processing_basis_valid": true
+    },
+    "expected_subset": {
+      "allowed": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-066",
+    "group": "Quyền và vận hành",
+    "title": "Biểu tượng không được có xác suất",
+    "method": "claim",
+    "input": {
+      "claim": {
+        "type": "symbolic_interpretation",
+        "text": "Một chủ đề để suy ngẫm.",
+        "evidence_ids": [
+          "demo-source"
+        ],
+        "probability": 0.9
+      }
+    },
+    "expected_subset": null,
+    "expected_error": "PROBABILITY_NOT_ALLOWED",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-067",
+    "group": "Quyền và vận hành",
+    "title": "Model ID giả không mở quyền dự báo",
+    "method": "claim",
+    "input": {
+      "claim": {
+        "type": "model_probability",
+        "text": "Ví dụ kiểm thử.",
+        "evidence_ids": [
+          "demo-source"
+        ],
+        "probability": 0.8,
+        "model_release_id": "invented",
+        "target": "event",
+        "horizon": "30d"
+      }
+    },
+    "expected_subset": null,
+    "expected_error": "MODEL_NOT_APPROVED",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-068",
+    "group": "Quyền và vận hành",
+    "title": "Cập nhật đúng phiên bản",
+    "method": "optimistic",
+    "input": {
+      "expected": 4,
+      "current": 4,
+      "patch": {
+        "goal": "Viết bản nháp"
+      }
+    },
+    "expected_subset": {
+      "version": 5
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-069",
+    "group": "Quyền và vận hành",
+    "title": "Cập nhật từ phiên bản cũ bị chặn",
+    "method": "optimistic",
+    "input": {
+      "expected": 3,
+      "current": 4,
+      "patch": {}
+    },
+    "expected_subset": null,
+    "expected_error": "VERSION_CONFLICT",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-070",
+    "group": "Quyền và vận hành",
+    "title": "Thanh toán có trạng thái riêng",
+    "method": "transition",
+    "input": {
+      "kind": "order",
+      "current": "pending_payment",
+      "event": "verified_payment"
+    },
+    "expected_subset": {
+      "next": "paid"
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-071",
+    "group": "Quyền và vận hành",
+    "title": "Không đi từ nháp thẳng tới hoàn tất",
+    "method": "transition",
+    "input": {
+      "kind": "order",
+      "current": "draft",
+      "event": "complete"
+    },
+    "expected_subset": null,
+    "expected_error": "INVALID_STATE_TRANSITION",
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-072",
+    "group": "Quyền và vận hành",
+    "title": "Yêu cầu xóa chuyển sang hạn chế truy cập",
+    "method": "transition",
+    "input": {
+      "kind": "deletion",
+      "current": "verified",
+      "event": "restrict"
+    },
+    "expected_subset": {
+      "next": "restricted"
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-073",
+    "group": "Báo cáo",
+    "title": "Level 1 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 1,
+      "subject_alias": "Hồ sơ giả lập 01",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 1,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-074",
+    "group": "Báo cáo",
+    "title": "Level 2 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 2,
+      "subject_alias": "Hồ sơ giả lập 02",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 2,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-075",
+    "group": "Báo cáo",
+    "title": "Level 3 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 3,
+      "subject_alias": "Hồ sơ giả lập 03",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 3,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-076",
+    "group": "Báo cáo",
+    "title": "Level 4 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 4,
+      "subject_alias": "Hồ sơ giả lập 04",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 4,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-077",
+    "group": "Báo cáo",
+    "title": "Level 5 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 5,
+      "subject_alias": "Hồ sơ giả lập 05",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 5,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-078",
+    "group": "Báo cáo",
+    "title": "Level 6 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 6,
+      "subject_alias": "Hồ sơ giả lập 06",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 6,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-079",
+    "group": "Báo cáo",
+    "title": "Level 7 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 7,
+      "subject_alias": "Hồ sơ giả lập 07",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 7,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-080",
+    "group": "Báo cáo",
+    "title": "Level 8 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 8,
+      "subject_alias": "Hồ sơ giả lập 08",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 8,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-081",
+    "group": "Báo cáo",
+    "title": "Level 9 · bốn lớp và phần còn thiếu",
+    "method": "report",
+    "input": {
+      "level": 9,
+      "subject_alias": "Hồ sơ giả lập 09",
+      "method_results": [],
+      "goal": "Hoàn thành một dự án học tập có phạm vi rõ."
+    },
+    "expected_subset": {
+      "level": 9,
+      "production_ready": false
+    },
+    "expected_error": null,
+    "explanation": "Đối chiếu kết quả với cấu hình đã chọn; không lấp dữ liệu thiếu hoặc tự tạo nhận định về con người.",
+    "synthetic": true,
+    "data_retention": "Không lưu đầu vào tại máy chủ demo.",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-082",
+    "group": "Luồng hồ sơ hoàn chỉnh",
+    "title": "Hồ sơ xuyên suốt: đủ dữ liệu nền",
+    "method": "profile_pipeline",
+    "input": {
+      "subject_alias": "Hồ sơ tổng hợp A",
+      "profile": {
+        "full_name": "Demo An",
+        "birth_date": "1990-06-15",
+        "birth_time": "07:30",
+        "time_zone": "Asia/Ho_Chi_Minh"
+      },
+      "goal": "Hoàn thành bản mô tả một sản phẩm",
+      "as_of": "2026-10-20"
+    },
+    "expected_subset": {
+      "state": "DRAFT_REFERENCE_ONLY",
+      "level": 1
+    },
+    "explanation": "Một luồng thực chạy qua các phép tính, phân biệt dữ liệu thiếu, dựng bốn lớp nội dung; không dùng AI hay dữ liệu cá nhân thật.",
+    "synthetic": true,
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-083",
+    "group": "Luồng hồ sơ hoàn chỉnh",
+    "title": "Hồ sơ thiếu dữ liệu: không điền giờ sinh giả",
+    "method": "profile_pipeline",
+    "input": {
+      "subject_alias": "Hồ sơ tổng hợp B",
+      "profile": {
+        "full_name": "Demo Bình",
+        "birth_date": "2001-11-08",
+        "time_zone": "Asia/Ho_Chi_Minh"
+      },
+      "goal": "Lập lịch học một kỹ năng",
+      "as_of": "2026-10-20"
+    },
+    "expected_subset": {
+      "state": "PARTIAL_REFERENCE",
+      "score": null
+    },
+    "explanation": "Một luồng thực chạy qua các phép tính, phân biệt dữ liệu thiếu, dựng bốn lớp nội dung; không dùng AI hay dữ liệu cá nhân thật.",
+    "synthetic": true,
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-084",
+    "group": "Luồng hồ sơ hoàn chỉnh",
+    "title": "Hồ sơ có hai ngày sinh: cần lựa chọn",
+    "method": "profile_pipeline",
+    "input": {
+      "subject_alias": "Hồ sơ tổng hợp C",
+      "profile": {
+        "full_name": "Demo Cường"
+      },
+      "hypotheses": [
+        {
+          "id": "paper",
+          "birth_date": "1961-05-28"
+        },
+        {
+          "id": "family",
+          "birth_date": "1963-05-28"
+        }
+      ],
+      "goal": "Ghi lại dữ liệu gia đình",
+      "as_of": "2026-10-20"
+    },
+    "expected_subset": {
+      "state": "NEEDS_INPUT_CHOICE",
+      "probability": null
+    },
+    "explanation": "Một luồng thực chạy qua các phép tính, phân biệt dữ liệu thiếu, dựng bốn lớp nội dung; không dùng AI hay dữ liệu cá nhân thật.",
+    "synthetic": true,
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-085",
+    "group": "Điều phối và tính gia tăng",
+    "title": "DAG: chia các đợt tính độc lập",
+    "method": "dag",
+    "input": {
+      "nodes": [
+        {
+          "id": "profile",
+          "depends_on": []
+        },
+        {
+          "id": "name",
+          "depends_on": [
+            "profile"
+          ]
+        },
+        {
+          "id": "birth",
+          "depends_on": [
+            "profile"
+          ]
+        },
+        {
+          "id": "cycle",
+          "depends_on": [
+            "birth"
+          ]
+        },
+        {
+          "id": "report",
+          "depends_on": [
+            "name",
+            "cycle"
+          ]
+        }
+      ]
+    },
+    "explanation": "Kiểm tra phụ thuộc và tái sử dụng kết quả; không chạy cloud worker hoặc xử lý dữ liệu thật.",
+    "synthetic": true,
+    "expected_subset": {
+      "status": "REFERENCE_PLAN_ONLY"
+    },
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-086",
+    "group": "Điều phối và tính gia tăng",
+    "title": "DAG: chặn chu trình",
+    "method": "dag",
+    "input": {
+      "nodes": [
+        {
+          "id": "a",
+          "depends_on": [
+            "b"
+          ]
+        },
+        {
+          "id": "b",
+          "depends_on": [
+            "a"
+          ]
+        }
+      ]
+    },
+    "explanation": "Kiểm tra phụ thuộc và tái sử dụng kết quả; không chạy cloud worker hoặc xử lý dữ liệu thật.",
+    "synthetic": true,
+    "expected_error": "DAG_CYCLE",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-087",
+    "group": "Điều phối và tính gia tăng",
+    "title": "DAG: thiếu phụ thuộc không tự bỏ qua",
+    "method": "dag",
+    "input": {
+      "nodes": [
+        {
+          "id": "a",
+          "depends_on": [
+            "not-there"
+          ]
+        }
+      ]
+    },
+    "explanation": "Kiểm tra phụ thuộc và tái sử dụng kết quả; không chạy cloud worker hoặc xử lý dữ liệu thật.",
+    "synthetic": true,
+    "expected_error": "MISSING_DEPENDENCY",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-088",
+    "group": "Điều phối và tính gia tăng",
+    "title": "Impact: đổi ngày chỉ chạy các nút phụ thuộc",
+    "method": "impact",
+    "input": {
+      "nodes": [
+        {
+          "id": "profile",
+          "depends_on": []
+        },
+        {
+          "id": "name",
+          "depends_on": [
+            "profile"
+          ]
+        },
+        {
+          "id": "birth",
+          "depends_on": [
+            "profile"
+          ]
+        },
+        {
+          "id": "cycle",
+          "depends_on": [
+            "birth"
+          ]
+        },
+        {
+          "id": "report",
+          "depends_on": [
+            "name",
+            "cycle"
+          ]
+        }
+      ],
+      "changed": [
+        "birth"
+      ]
+    },
+    "explanation": "Kiểm tra phụ thuộc và tái sử dụng kết quả; không chạy cloud worker hoặc xử lý dữ liệu thật.",
+    "synthetic": true,
+    "expected_subset": {
+      "impacted": [
+        "birth",
+        "cycle",
+        "report"
+      ],
+      "unchanged": [
+        "profile",
+        "name"
+      ]
+    },
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-089",
+    "group": "Điều phối và tính gia tăng",
+    "title": "Cache: khóa theo tenant/chủ thể/mục đích",
+    "method": "cache_key",
+    "input": {
+      "tenant_id": "tenant-a",
+      "subject_id": "subject-a",
+      "input_digest": "synthetic-1",
+      "method_release": "name.demo.2",
+      "rule_digest": "rule-demo",
+      "purpose": "self_reflection",
+      "locale_release": "vi.v1",
+      "access_revision": 1
+    },
+    "explanation": "Kiểm tra phụ thuộc và tái sử dụng kết quả; không chạy cloud worker hoặc xử lý dữ liệu thật.",
+    "synthetic": true,
+    "expected_subset": {
+      "scope": "tenant_subject_purpose_version"
+    },
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "DEMO-090",
+    "group": "Điều phối và tính gia tăng",
+    "title": "Cache: thiếu chủ thể phải từ chối",
+    "method": "cache_key",
+    "input": {
+      "tenant_id": "tenant-a"
+    },
+    "explanation": "Kiểm tra phụ thuộc và tái sử dụng kết quả; không chạy cloud worker hoặc xử lý dữ liệu thật.",
+    "synthetic": true,
+    "expected_error": "INVALID_CACHE_CONTEXT",
+    "origin": "V2_RETAINED"
+  },
+  {
+    "id": "V3-DEMO-001",
+    "group": "Số–tên đầy đủ",
+    "title": "23 chỉ số · cấu hình rút gọn đơn",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "reduction_policy": "single_digit"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "expression": {
+            "value": 3
+          },
+          "heart_desire": {
+            "value": 1
+          },
+          "personality": {
+            "value": 2
+          },
+          "life_path": {
+            "value": 4
+          },
+          "rational_thought": {
+            "value": 8
+          }
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-002",
+    "group": "Số–tên đầy đủ",
+    "title": "Giữ số 22 trong tổng ngày sinh",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "life_path": {
+            "value": 22,
+            "root": 4
+          }
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-003",
+    "group": "Số–tên đầy đủ",
+    "title": "Thêm tên thường dùng",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "common_name": "BINH AN"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "minor_expression": {
+            "root": 3
+          }
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-004",
+    "group": "Số–tên đầy đủ",
+    "title": "Thiếu tên riêng: không đoán token đầu",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "rational_thought": null
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-005",
+    "group": "Số–tên đầy đủ",
+    "title": "Tên có Y · chính sách unknown",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "MAI MY",
+      "given_name": "MY",
+      "birth_date": "1992-03-04",
+      "y_policy": "unknown"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "full_name_profile": {
+          "y_unresolved": true
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-006",
+    "group": "Số–tên đầy đủ",
+    "title": "Tên có Y · chính sách vowel",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "MAI MY",
+      "given_name": "MY",
+      "birth_date": "1992-03-04",
+      "y_policy": "vowel"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "full_name_profile": {
+          "y_unresolved": false
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-007",
+    "group": "Số–tên đầy đủ",
+    "title": "Tên có Y · chính sách consonant",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "MAI MY",
+      "given_name": "MY",
+      "birth_date": "1992-03-04",
+      "y_policy": "consonant"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "full_name_profile": {
+          "y_unresolved": false
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-008",
+    "group": "Số–tên đầy đủ",
+    "title": "Tên không dấu và giữ tên gốc Unicode",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "ĐỖ AN",
+      "given_name": "AN",
+      "birth_date": "1992-03-04"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "full_name_profile": {
+          "latin": "DO AN",
+          "nfc": "ĐỖ AN"
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-009",
+    "group": "Số–tên đầy đủ",
+    "title": "Văn tự chưa hỗ trợ phải dừng",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "王明",
+      "birth_date": "1990-01-02"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "UNSUPPORTED_SCRIPT",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-010",
+    "group": "Số–tên đầy đủ",
+    "title": "Tên có dấu câu cần chính sách riêng",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "O'NEIL",
+      "birth_date": "1990-01-02"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "UNSUPPORTED_SCRIPT",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-011",
+    "group": "Số–tên đầy đủ",
+    "title": "Không có ngày thật 31/02",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-02-31",
+      "given_name": "AN"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "INVALID_INTEGER",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-012",
+    "group": "Số–tên đầy đủ",
+    "title": "Đồng hạng Hidden Passion được giữ",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AB",
+      "birth_date": "1990-01-02"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "hidden_passion": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-013",
+    "group": "Số–tên đầy đủ",
+    "title": "Chu kỳ có giá trị nhưng chưa gán tuổi",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "life_path_periods": {
+            "values": [
+              1,
+              2,
+              1
+            ],
+            "spans": null
+          }
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-014",
+    "group": "Số–tên đầy đủ",
+    "title": "Phạm vi ba chu kỳ được nhập có nguồn",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "period_span_policy": "provided",
+      "period_spans": [
+        {
+          "start_age": 0,
+          "end_age_exclusive": 25
+        },
+        {
+          "start_age": 25,
+          "end_age_exclusive": 52
+        },
+        {
+          "start_age": 52,
+          "end_age_exclusive": null
+        }
+      ],
+      "period_source_note": "Cấu hình minh họa do người dùng chọn, không xác nhận trường phái."
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "life_path_periods": {
+            "spans": [
+              {
+                "start_age": 0,
+                "end_age_exclusive": 25
+              },
+              {
+                "start_age": 25,
+                "end_age_exclusive": 52
+              },
+              {
+                "start_age": 52,
+                "end_age_exclusive": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-015",
+    "group": "Số–tên đầy đủ",
+    "title": "Phạm vi chu kỳ thiếu nguồn: từ chối",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "period_span_policy": "provided",
+      "period_spans": []
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "PERIOD_SOURCE_REQUIRED",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-016",
+    "group": "Số–tên đầy đủ",
+    "title": "Không gộp các khoảng tuổi hở",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "period_span_policy": "provided",
+      "period_source_note": "test",
+      "period_spans": [
+        {
+          "start_age": 0,
+          "end_age_exclusive": 25
+        },
+        {
+          "start_age": 26,
+          "end_age_exclusive": 52
+        },
+        {
+          "start_age": 52,
+          "end_age_exclusive": null
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "NONCONTIGUOUS_SPANS",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-017",
+    "group": "Số–tên đầy đủ",
+    "title": "Biến thể Life Path · all_digits",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "life_path_variant": "all_digits"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "life_path_variant": "all_digits"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-018",
+    "group": "Số–tên đầy đủ",
+    "title": "Biến thể Life Path · reduced_components",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "life_path_variant": "reduced_components"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "life_path_variant": "reduced_components"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-019",
+    "group": "Số–tên đầy đủ",
+    "title": "Không tự gán thời gian thử thách",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "components": {
+          "challenge_spans": null
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-020",
+    "group": "Số–tên đầy đủ",
+    "title": "Thời gian thử thách theo policy đã chọn",
+    "method": "numerology_full",
+    "input": {
+      "full_name": "AN BINH",
+      "birth_date": "1990-01-02",
+      "given_name": "AN",
+      "challenge_span_policy": "follow_pinnacles"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "challenge_span_policy": "follow_pinnacles"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-021",
+    "group": "Số–tên đầy đủ",
+    "title": "So cách viết tên, không chọn tốt/xấu",
+    "method": "name_compare",
+    "input": {
+      "base": {
+        "birth_date": "1990-01-02"
+      },
+      "variants": [
+        {
+          "id": "formal",
+          "name": "AN BINH"
+        },
+        {
+          "id": "public",
+          "name": "BINH AN"
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "preferred": null
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-022",
+    "group": "Số–tên đầy đủ",
+    "title": "Hai cách tên cùng ID bị từ chối",
+    "method": "name_compare",
+    "input": {
+      "base": {
+        "birth_date": "1990-01-02"
+      },
+      "variants": [
+        {
+          "id": "a",
+          "name": "AN BINH"
+        },
+        {
+          "id": "a",
+          "name": "BINH AN"
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "DUPLICATE_VARIANT",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-023",
+    "group": "Psychomatrix",
+    "title": "1990-01-02 · raw_birth_digits",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "1990-01-02",
+      "variant": "raw_birth_digits"
+    },
+    "synthetic": true,
+    "explanation": "Ngày minh họa cho phép đếm; không gắn người thật hoặc suy ra năng lực, sức khỏe và đời sống riêng tư.",
+    "expected_subset": {
+      "configuration": {
+        "variant": "raw_birth_digits"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-024",
+    "group": "Psychomatrix",
+    "title": "1990-01-02 · four_working_subtractive",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "1990-01-02",
+      "variant": "four_working_subtractive"
+    },
+    "synthetic": true,
+    "explanation": "Ngày minh họa cho phép đếm; không gắn người thật hoặc suy ra năng lực, sức khỏe và đời sống riêng tư.",
+    "expected_subset": {
+      "configuration": {
+        "variant": "four_working_subtractive"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-025",
+    "group": "Psychomatrix",
+    "title": "1988-08-08 · raw_birth_digits",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "1988-08-08",
+      "variant": "raw_birth_digits"
+    },
+    "synthetic": true,
+    "explanation": "Ngày minh họa cho phép đếm; không gắn người thật hoặc suy ra năng lực, sức khỏe và đời sống riêng tư.",
+    "expected_subset": {
+      "configuration": {
+        "variant": "raw_birth_digits"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-026",
+    "group": "Psychomatrix",
+    "title": "1988-08-08 · four_working_subtractive",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "1988-08-08",
+      "variant": "four_working_subtractive"
+    },
+    "synthetic": true,
+    "explanation": "Ngày minh họa cho phép đếm; không gắn người thật hoặc suy ra năng lực, sức khỏe và đời sống riêng tư.",
+    "expected_subset": {
+      "configuration": {
+        "variant": "four_working_subtractive"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-027",
+    "group": "Psychomatrix",
+    "title": "2008-11-02 · raw_birth_digits",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "2008-11-02",
+      "variant": "raw_birth_digits"
+    },
+    "synthetic": true,
+    "explanation": "Ngày minh họa cho phép đếm; không gắn người thật hoặc suy ra năng lực, sức khỏe và đời sống riêng tư.",
+    "expected_subset": {
+      "configuration": {
+        "variant": "raw_birth_digits"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-028",
+    "group": "Psychomatrix",
+    "title": "2008-11-02 · four_working_subtractive",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "2008-11-02",
+      "variant": "four_working_subtractive"
+    },
+    "synthetic": true,
+    "explanation": "Ngày minh họa cho phép đếm; không gắn người thật hoặc suy ra năng lực, sức khỏe và đời sống riêng tư.",
+    "expected_subset": {
+      "configuration": {
+        "variant": "four_working_subtractive"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-029",
+    "group": "Psychomatrix",
+    "title": "Ngày một chữ số: không lấy zero đệm",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "2008-11-02",
+      "variant": "four_working_subtractive"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "working_numbers": {
+          "w1": 14,
+          "w2": 5,
+          "w3": 10,
+          "w4": 1,
+          "first_day_digit": 2
+        }
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-030",
+    "group": "Psychomatrix",
+    "title": "Số phụ âm: không tự lấy trị tuyệt đối",
+    "method": "psychomatrix",
+    "input": {
+      "birth_date": "2000-01-09",
+      "variant": "four_working_subtractive"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "NEGATIVE_WORKING_NUMBER",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-031",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 4134 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "4134",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "4134",
+        "total_pairs": 3
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-032",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 4314 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "4314",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "4314",
+        "total_pairs": 3
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-033",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 876 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "876",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "876",
+        "total_pairs": 2
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-034",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 678 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "678",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "678",
+        "total_pairs": 2
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-035",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 103 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "103",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "103",
+        "total_pairs": 2
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-036",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 153 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "153",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "153",
+        "total_pairs": 2
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-037",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 8553 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "8553",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "8553",
+        "total_pairs": 3
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-038",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 1001 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "1001",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "1001",
+        "total_pairs": 3
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-039",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 050 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "050",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "050",
+        "total_pairs": 2
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-040",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 11111 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "11111",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "11111",
+        "total_pairs": 4
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-041",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 222 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "222",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "222",
+        "total_pairs": 2
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-042",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 5555 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "5555",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "5555",
+        "total_pairs": 3
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-043",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 8888 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "8888",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "8888",
+        "total_pairs": 3
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-044",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 258 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "258",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "258",
+        "total_pairs": 2
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-045",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 0943876231 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "0943876231",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "0943876231",
+        "total_pairs": 9
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-046",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Chuỗi 0916876231 · giữ vị trí gốc",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "0916876231",
+      "context": "generic_sequence"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "0916876231",
+        "total_pairs": 9
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-047",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Cầu chẩn đoán một ký tự · 103",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "103",
+      "policy": "bridge_single_0_5_diagnostic_v3"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "policy": "bridge_single_0_5_diagnostic_v3"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-048",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Cầu chẩn đoán một ký tự · 153",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "153",
+      "policy": "bridge_single_0_5_diagnostic_v3"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "policy": "bridge_single_0_5_diagnostic_v3"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-049",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Cầu chẩn đoán một ký tự · 8553",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "8553",
+      "policy": "bridge_single_0_5_diagnostic_v3"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "policy": "bridge_single_0_5_diagnostic_v3"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-050",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Cầu chẩn đoán một ký tự · 1001",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "1001",
+      "policy": "bridge_single_0_5_diagnostic_v3"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "policy": "bridge_single_0_5_diagnostic_v3"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-051",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Cầu chẩn đoán một ký tự · 3501",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "3501",
+      "policy": "bridge_single_0_5_diagnostic_v3"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "policy": "bridge_single_0_5_diagnostic_v3"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-052",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Cầu chẩn đoán một ký tự · 859",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "859",
+      "policy": "bridge_single_0_5_diagnostic_v3"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "policy": "bridge_single_0_5_diagnostic_v3"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-053",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Cầu chẩn đoán một ký tự · 856",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "856",
+      "policy": "bridge_single_0_5_diagnostic_v3"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "configuration": {
+        "policy": "bridge_single_0_5_diagnostic_v3"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-054",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Hai cách ghi cùng thuê bao",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "+84 943 876 231",
+      "context": "phone_vn"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "canonical_sequence": "0943876231"
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-055",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Định danh chỉ nhận suffix bốn chữ số",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "123456789012",
+      "context": "identifier_suffix4"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "SUFFIX_ONLY",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-056",
+    "group": "Bát Cực và tổ hợp",
+    "title": "Số máy lẻ không bị trích nhầm",
+    "method": "bat_cuc",
+    "input": {
+      "sequence": "0943876231 ext 12",
+      "context": "phone_vn"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "INVALID_PHONE",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-057",
+    "group": "Bát Cực và tổ hợp",
+    "title": "So hai dãy cùng thống kê khác thứ tự",
+    "method": "number_compare",
+    "input": {
+      "context": "phone_vn",
+      "sequences": [
+        {
+          "id": "A",
+          "sequence": "0943876231"
+        },
+        {
+          "id": "B",
+          "sequence": "0916876231"
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "equal_counts_and_root": [
+          [
+            "A",
+            "B"
+          ]
+        ],
+        "recommended": null
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-058",
+    "group": "Mã đuôi 80 tích hợp",
+    "title": "Đuôi 0000 · giữ bảng nguồn",
+    "method": "tail80",
+    "input": {
+      "suffix": "0000",
+      "zero_policy": "as80"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 80
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-059",
+    "group": "Mã đuôi 80 tích hợp",
+    "title": "Đuôi 0080 · giữ bảng nguồn",
+    "method": "tail80",
+    "input": {
+      "suffix": "0080",
+      "zero_policy": "as80"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 80
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-060",
+    "group": "Mã đuôi 80 tích hợp",
+    "title": "Đuôi 6231 · giữ bảng nguồn",
+    "method": "tail80",
+    "input": {
+      "suffix": "6231",
+      "zero_policy": "as80"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 71
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-061",
+    "group": "Mã đuôi 80 tích hợp",
+    "title": "Đuôi 1986 · giữ bảng nguồn",
+    "method": "tail80",
+    "input": {
+      "suffix": "1986",
+      "zero_policy": "as80"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 66
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-062",
+    "group": "Mã đuôi 80 tích hợp",
+    "title": "Đuôi 3468 · giữ bảng nguồn",
+    "method": "tail80",
+    "input": {
+      "suffix": "3468",
+      "zero_policy": "as80"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "lookup_code": 28
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-063",
+    "group": "Dòng đời đầy đủ",
+    "title": "100 khoảng tuổi không tự có sự kiện",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "1990-01-02",
+      "as_of": "2026-10-29"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "history": [],
+        "probabilistic_forecasts": []
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-064",
+    "group": "Dòng đời đầy đủ",
+    "title": "Sự kiện tự khai và kế hoạch tách riêng",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "1990-01-02",
+      "as_of": "2026-10-29",
+      "events": [
+        {
+          "id": "e1",
+          "date": "2010-09-01",
+          "title": "Bắt đầu một chương trình học",
+          "domain": "learning"
+        }
+      ],
+      "plans": [
+        {
+          "target_date": "2026-11-28",
+          "title": "Hoàn thành bản thảo ngắn",
+          "domain": "creativity"
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "age_at_as_of": 36
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-065",
+    "group": "Dòng đời đầy đủ",
+    "title": "Không ghi tương lai thành lịch sử",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "1990-01-02",
+      "as_of": "2026-10-29",
+      "events": [
+        {
+          "id": "e1",
+          "date": "2027-01-01",
+          "title": "Điều chưa xảy ra",
+          "domain": "work"
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "INVALID_HISTORY_DATE",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-066",
+    "group": "Dòng đời đầy đủ",
+    "title": "Không ghi trước khi sinh thành lịch sử",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "1990-01-02",
+      "as_of": "2026-10-29",
+      "events": [
+        {
+          "id": "e1",
+          "date": "1980-01-01",
+          "title": "Sai ngày",
+          "domain": "work"
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "INVALID_HISTORY_DATE",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-067",
+    "group": "Dòng đời đầy đủ",
+    "title": "Tên miền lĩnh vực sai: từ chối",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "1990-01-02",
+      "as_of": "2026-10-29",
+      "plans": [
+        {
+          "target_date": "2026-11-28",
+          "title": "Test",
+          "domain": "unknown"
+        }
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "UNSUPPORTED_POLICY",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-068",
+    "group": "Dòng đời đầy đủ",
+    "title": "Sinh 29/02 · chính sách feb28",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "2000-02-29",
+      "as_of": "2025-02-28",
+      "leap_policy": "feb28"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "age_at_as_of": 25
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-069",
+    "group": "Dòng đời đầy đủ",
+    "title": "Sinh 29/02 · chính sách mar01",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "2000-02-29",
+      "as_of": "2025-02-28",
+      "leap_policy": "mar01"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "age_at_as_of": 24
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-070",
+    "group": "Dòng đời đầy đủ",
+    "title": "Chỉ có năm sinh chưa đủ tạo ngày",
+    "method": "lifetime",
+    "input": {
+      "birth_date": "1963",
+      "as_of": "2026-10-29"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "INVALID_DATE",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-071",
+    "group": "All-in-one",
+    "title": "Một hồ sơ dùng ba mô-đun",
+    "method": "all_in_one",
+    "input": {
+      "profile": {
+        "full_name": "AN BINH",
+        "birth_date": "1990-01-02",
+        "given_name": "AN"
+      },
+      "as_of": "2026-10-29",
+      "selected": [
+        "numerology",
+        "raw_matrix",
+        "lifetime"
+      ],
+      "number_sequence": "0943876231",
+      "goal": "Hoàn thành một bản thảo trong 30 ngày."
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "life_code_index": null,
+        "personal_fate_prediction": null
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-072",
+    "group": "All-in-one",
+    "title": "Tên–số–dòng đời chung kết quả",
+    "method": "all_in_one",
+    "input": {
+      "profile": {
+        "full_name": "AN BINH",
+        "birth_date": "1990-01-02",
+        "given_name": "AN"
+      },
+      "as_of": "2026-10-29",
+      "selected": [
+        "numerology",
+        "bat_cuc",
+        "lifetime"
+      ],
+      "number_sequence": "0943876231",
+      "goal": "Hoàn thành một bản thảo trong 30 ngày."
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "life_code_index": null,
+        "personal_fate_prediction": null
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-073",
+    "group": "All-in-one",
+    "title": "Hai ma trận không được cộng thành confidence",
+    "method": "all_in_one",
+    "input": {
+      "profile": {
+        "full_name": "AN BINH",
+        "birth_date": "1990-01-02",
+        "given_name": "AN"
+      },
+      "as_of": "2026-10-29",
+      "selected": [
+        "working_matrix",
+        "bat_cuc"
+      ],
+      "number_sequence": "0943876231",
+      "goal": "Hoàn thành một bản thảo trong 30 ngày."
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "life_code_index": null,
+        "personal_fate_prediction": null
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-074",
+    "group": "All-in-one",
+    "title": "Thiếu ngày sinh: ghi phần thiếu, không bịa",
+    "method": "all_in_one",
+    "input": {
+      "profile": {
+        "full_name": "AN BINH"
+      },
+      "as_of": "2026-10-29"
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "method_results": {}
+      }
+    },
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-075",
+    "group": "All-in-one",
+    "title": "Không chạy phương pháp chưa có",
+    "method": "all_in_one",
+    "input": {
+      "profile": {
+        "full_name": "AN BINH",
+        "birth_date": "1990-01-02",
+        "given_name": "AN"
+      },
+      "as_of": "2026-10-29",
+      "selected": [
+        "face_personality"
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "METHOD_NOT_RELEASED",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-076",
+    "group": "All-in-one",
+    "title": "Chọn lặp mô-đun phải báo lỗi",
+    "method": "all_in_one",
+    "input": {
+      "profile": {
+        "full_name": "AN BINH",
+        "birth_date": "1990-01-02",
+        "given_name": "AN"
+      },
+      "as_of": "2026-10-29",
+      "selected": [
+        "numerology",
+        "numerology"
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_error": "INVALID_SELECTION",
+    "origin": "V3_ADDED"
+  },
+  {
+    "id": "V3-DEMO-077",
+    "group": "All-in-one",
+    "title": "Không tự tạo sứ mệnh khi thiếu mục tiêu",
+    "method": "all_in_one",
+    "input": {
+      "profile": {
+        "full_name": "AN BINH",
+        "birth_date": "1990-01-02",
+        "given_name": "AN"
+      },
+      "as_of": "2026-10-29",
+      "selected": [
+        "numerology"
+      ]
+    },
+    "synthetic": true,
+    "explanation": "Kiểm tra cách tính và giới hạn; không phải đánh giá con người.",
+    "expected_subset": {
+      "calculation": {
+        "personal_fate_prediction": null
+      }
+    },
+    "origin": "V3_ADDED"
+  }
+]

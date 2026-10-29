@@ -1,0 +1,74 @@
+[
+  {
+    "stage_id": "S01",
+    "age_start_inclusive": 0,
+    "age_end_exclusive": 3,
+    "title_vi": "Đầu đời",
+    "guidance": "Người chăm sóc đồng hành; không gắn nhãn tính cách hoặc sứ mệnh.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S02",
+    "age_start_inclusive": 3,
+    "age_end_exclusive": 6,
+    "title_vi": "Khám phá",
+    "guidance": "Chơi, ngôn ngữ, an toàn và nhịp sống; không xếp hạng trẻ.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S03",
+    "age_start_inclusive": 6,
+    "age_end_exclusive": 12,
+    "title_vi": "Học nền",
+    "guidance": "Sở thích, cơ hội học và kỹ năng; không suy trí nhớ từ ma trận.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S04",
+    "age_start_inclusive": 12,
+    "age_end_exclusive": 18,
+    "title_vi": "Tuổi thiếu niên",
+    "guidance": "Quyền riêng tư theo tuổi, phát triển bản sắc; không dự báo thân mật hoặc ép nghề.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S05",
+    "age_start_inclusive": 18,
+    "age_end_exclusive": 30,
+    "title_vi": "Tự lập",
+    "guidance": "Học, việc, quan hệ và trách nhiệm do chủ thể chọn.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S06",
+    "age_start_inclusive": 30,
+    "age_end_exclusive": 45,
+    "title_vi": "Xây dựng",
+    "guidance": "Nhiều vai trò có thể cùng tồn tại; không buộc kết hôn, sinh con hoặc sở hữu tài sản.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S07",
+    "age_start_inclusive": 45,
+    "age_end_exclusive": 60,
+    "title_vi": "Tái định hướng",
+    "guidance": "Điều chỉnh vai trò, chăm sóc, học lại, nguồn lực; không gọi tuổi này là khủng hoảng tất yếu.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S08",
+    "age_start_inclusive": 60,
+    "age_end_exclusive": 75,
+    "title_vi": "Tiếp nối",
+    "guidance": "Chủ động, khả năng tiếp cận, cộng đồng và chuyển giao.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  },
+  {
+    "stage_id": "S09",
+    "age_start_inclusive": 75,
+    "age_end_exclusive": null,
+    "title_vi": "Tiếp tục sống và trao truyền",
+    "guidance": "Không dự báo tuổi thọ; có thể vượt 99 tuổi. Nội dung tùy nhu cầu, không rập khuôn.",
+    "kind": "EDITORIAL_ROUTING_NOT_DETERMINISTIC_STAGE"
+  }
+]

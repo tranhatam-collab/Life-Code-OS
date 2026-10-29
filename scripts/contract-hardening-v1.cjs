@@ -87,6 +87,43 @@ async function run() {
   assert.equal(audit.res.status, 200);
   assert.ok(Array.isArray(audit.body.logs));
 
+  const profileNoAuth = await fetchWithRateRetry("/api/v1/profile/not-a-real-user", {
+    method: "GET",
+  });
+  assert.equal(profileNoAuth.res.status, 401);
+
+  const profileOther = await fetchWithRateRetry("/api/v1/profile/00000000-0000-4000-8000-000000000000", {
+    method: "GET",
+    headers: authHeaders,
+  });
+  assert.equal(profileOther.res.status, 403);
+
+  const profileSelf = await fetchWithRateRetry(`/api/v1/profile/${me.body.profile.id}`, {
+    method: "GET",
+    headers: authHeaders,
+  });
+  assert.equal(profileSelf.res.status, 200);
+  assert.equal(profileSelf.body.profile.id, me.body.profile.id);
+
+  const overwriteAttempt = await fetchWithRateRetry("/api/v1/life-code-data", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      user_id: me.body.profile.id,
+      name: "Attacker Overwrite",
+      layers: [{ score: 10, weight: 1, confidence: 1 }],
+    }),
+  });
+  assert.equal(overwriteAttempt.res.status, 200);
+  assert.notEqual(overwriteAttempt.body.user_id, me.body.profile.id);
+
+  const reportNoAuth = await fetchWithRateRetry("/api/v1/report", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ level: 1, result_id: "00000000-0000-4000-8000-000000000001" }),
+  });
+  assert.equal(reportNoAuth.res.status, 401);
+
   const monitorNoKey = await fetchWithRateRetry("/api/v1/ops/summary", { method: "GET" });
   assert.ok([401, 403, 503].includes(monitorNoKey.res.status));
 

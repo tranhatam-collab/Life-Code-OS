@@ -1,0 +1,347 @@
+[
+  {
+    "component_id": "NUM-01",
+    "key": "life_path",
+    "name_vi": "Đường đời",
+    "formula": "R(sum(ddmmyyyy)) hoặc R(R(month)+R(day)+R(sum(year)))",
+    "required_inputs": "Ngày sinh, life_path_variant, reduction_policy",
+    "edge_policy": "Tổng trung gian có thể khác dù căn giống nhau; lưu trace.",
+    "source_ids": [
+      "R06"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-02",
+    "key": "birthday",
+    "name_vi": "Ngày sinh",
+    "formula": "day và R(day)",
+    "required_inputs": "Ngày sinh",
+    "edge_policy": "Giữ ngày 1–31 cùng kết quả rút gọn.",
+    "source_ids": [
+      "R06"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-03",
+    "key": "karmic_debt_markers",
+    "name_vi": "Dấu số truyền thống 13/14/16/19",
+    "formula": "Các số 13,14,16,19 thực sự xuất hiện trong trace được chọn",
+    "required_inputs": "Trace của các chỉ số",
+    "edge_policy": "Không gán lỗi đạo đức, nghiệp xấu hay nợ kiếp trước.",
+    "source_ids": [
+      "R06"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-04",
+    "key": "expression",
+    "name_vi": "Biểu đạt theo tên đầy đủ",
+    "formula": "R(Σ giá trị chữ Latin đã xác nhận)",
+    "required_inputs": "Tên khai sinh + bảng quy đổi",
+    "edge_policy": "Giữ nguyên tên Unicode; không suy năng lực từ số.",
+    "source_ids": [
+      "R26"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-05",
+    "key": "minor_expression",
+    "name_vi": "Biểu đạt theo tên thường dùng",
+    "formula": "R(Σ giá trị chữ tên thường dùng)",
+    "required_inputs": "Tên thường dùng xác nhận",
+    "edge_policy": "Không có tên thường dùng thì null; không tự lấy tên cuối.",
+    "source_ids": [
+      "R26"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-06",
+    "key": "heart_desire",
+    "name_vi": "Tổng nguyên âm tên đầy đủ",
+    "formula": "R(Σ nguyên âm theo vowel_policy)",
+    "required_inputs": "Tên + chính sách Y",
+    "edge_policy": "Có Y chưa phân loại thì null cho phần này, không chặn tổng tên.",
+    "source_ids": [
+      "R07"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-07",
+    "key": "minor_heart_desire",
+    "name_vi": "Tổng nguyên âm tên thường dùng",
+    "formula": "R(Σ nguyên âm tên thường dùng)",
+    "required_inputs": "Tên thường dùng + Y policy",
+    "edge_policy": "Dùng đúng chính sách của lần chạy.",
+    "source_ids": [
+      "R07"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-08",
+    "key": "compound_numbers",
+    "name_vi": "Số ghép và các bước rút gọn",
+    "formula": "Lưu tổng, path, root theo từng component",
+    "required_inputs": "Tất cả trace",
+    "edge_policy": "Không áp một nghĩa cố định cho 11/22/33 trên mọi vị trí.",
+    "source_ids": [
+      "R06"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-09",
+    "key": "personality",
+    "name_vi": "Tổng phụ âm tên đầy đủ",
+    "formula": "R(Σ phụ âm theo vowel_policy)",
+    "required_inputs": "Tên + Y policy",
+    "edge_policy": "Là chỉ số quy ước, không phải đo nhân cách.",
+    "source_ids": [
+      "R07"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-10",
+    "key": "minor_personality",
+    "name_vi": "Tổng phụ âm tên thường dùng",
+    "formula": "R(Σ phụ âm tên thường dùng)",
+    "required_inputs": "Tên thường dùng",
+    "edge_policy": "Không có dữ liệu thì null.",
+    "source_ids": [
+      "R07"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-11",
+    "key": "maturity",
+    "name_vi": "Chỉ số trưởng thành quy ước",
+    "formula": "R(LifePath.value + Expression.value)",
+    "required_inputs": "Hai chỉ số nền + maturity_policy",
+    "edge_policy": "Không kết luận sứ mệnh hay tuổi trưởng thành thật.",
+    "source_ids": [
+      "R08"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-12",
+    "key": "rational_thought",
+    "name_vi": "Chỉ số tên riêng và ngày sinh",
+    "formula": "R(Σ chữ của given_name + day)",
+    "required_inputs": "given_name được xác nhận",
+    "edge_policy": "Tên Việt có thể nhiều âm tiết; không tự dùng first token.",
+    "source_ids": [
+      "R09"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-13",
+    "key": "karmic_lessons",
+    "name_vi": "Nhóm số không xuất hiện trong tên",
+    "formula": "{1..9} trừ các giá trị chữ có mặt",
+    "required_inputs": "Tên khai sinh",
+    "edge_policy": "Thiếu chữ số không có nghĩa thiếu năng lực.",
+    "source_ids": [
+      "R10"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-14",
+    "key": "balance",
+    "name_vi": "Tổng chữ đầu các thành phần tên",
+    "formula": "root(Σ initial_value)",
+    "required_inputs": "Tên có thành phần rõ",
+    "edge_policy": "Không đo cân bằng tâm lý.",
+    "source_ids": [
+      "R11"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-15",
+    "key": "hidden_passion",
+    "name_vi": "Nhóm số lặp nhiều nhất trong tên",
+    "formula": "argmax frequency; giữ mọi đồng hạng",
+    "required_inputs": "Tên",
+    "edge_policy": "Không chọn tùy ý một số khi hòa.",
+    "source_ids": [
+      "R10"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-16",
+    "key": "subconscious_confidence",
+    "name_vi": "Số nhóm chữ có mặt",
+    "formula": "count(distinct values 1..9)",
+    "required_inputs": "Tên",
+    "edge_policy": "Không quy đổi thành confidence xác suất.",
+    "source_ids": [
+      "R10"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-17",
+    "key": "challenges",
+    "name_vi": "Bốn hiệu số thử thách",
+    "formula": "|M-D|, |D-Y|, |C1-C2|, |M-Y|",
+    "required_inputs": "M,D,Y rút gọn đơn",
+    "edge_policy": "Số 0 được giữ; không có nghĩa không khó khăn.",
+    "source_ids": [
+      "R13"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-18",
+    "key": "challenge_spans",
+    "name_vi": "Phạm vi thời gian thử thách",
+    "formula": "Chính sách dùng cùng band hoặc nhập band có nguồn",
+    "required_inputs": "Span policy",
+    "edge_policy": "Mặc định chưa suy ra tuổi nếu chưa chọn chính sách.",
+    "source_ids": [
+      "R13"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-19",
+    "key": "pinnacles",
+    "name_vi": "Bốn tổng đỉnh cao",
+    "formula": "R(M+D),R(D+Y),R(P1+P2),R(M+Y)",
+    "required_inputs": "Components + reduction policy",
+    "edge_policy": "P3 dùng đúng P1,P2 của phiên bản đã chọn.",
+    "source_ids": [
+      "R12"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-20",
+    "key": "pinnacle_spans",
+    "name_vi": "Phạm vi tuổi đỉnh cao",
+    "formula": "B=36-root(LP); B+9; B+18",
+    "required_inputs": "boundary_policy",
+    "edge_policy": "Demo chọn last-integer-age-inclusive; lưu rõ điểm chuyển.",
+    "source_ids": [
+      "R12"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-21",
+    "key": "life_path_periods",
+    "name_vi": "Ba chu kỳ tháng–ngày–năm",
+    "formula": "root(month),root(day),root(sum(year))",
+    "required_inputs": "Ngày sinh + period span policy",
+    "edge_policy": "Giá trị tính được; tuổi chu kỳ không mặc nhiên bằng pinnacle.",
+    "source_ids": [
+      "R14"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-22",
+    "key": "life_expression_bridge",
+    "name_vi": "Cầu nối đường đời–tên",
+    "formula": "|root(LP)-root(Expression)|",
+    "required_inputs": "Hai chỉ số",
+    "edge_policy": "Hiệu số mô tả, không phải mức hợp khoa học.",
+    "source_ids": [
+      "R26"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  },
+  {
+    "component_id": "NUM-23",
+    "key": "heart_personality_bridge",
+    "name_vi": "Cầu nối nguyên âm–phụ âm",
+    "formula": "|root(Heart)-root(Personality)|",
+    "required_inputs": "Hai chỉ số đủ policy",
+    "edge_policy": "Y chưa rõ thì bridge=null.",
+    "source_ids": [
+      "R26"
+    ],
+    "implementation": "08_ALL_IN_ONE_LAB/src/numerology_full.mjs",
+    "status": "REFERENCE_IMPLEMENTATION_PENDING_TEST",
+    "production_release": false,
+    "claim_type": "derived_metric"
+  }
+]

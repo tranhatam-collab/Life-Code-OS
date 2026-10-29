@@ -1,0 +1,63 @@
+{
+  "schema_version": "2.0-proposed",
+  "result_id": "00000000-0000-0000-0000-000000000005",
+  "run_id": "00000000-0000-0000-0000-000000000009",
+  "subject_id": "00000000-0000-0000-0000-000000000002",
+  "profile_version_id": "00000000-0000-0000-0000-000000000001",
+  "method_id": "M06",
+  "method_release_id": "M06-v0.1",
+  "configuration_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "input_digest": "2222222222222222222222222222222222222222222222222222222222222222",
+  "input_field_ids": [],
+  "calculation_version": "FC-TAIL80-001@1.0-proposed",
+  "calculation": {
+    "method_id": "lc_tail4_mod80",
+    "formula_id": "FC-TAIL80-001",
+    "formula_version": "1.0-proposed",
+    "suffix": "6231",
+    "quotient": 77,
+    "remainder": 71,
+    "lookup_code": 71,
+    "zero_policy": "unmapped",
+    "table_version": "user_supplied_80_draft1",
+    "source_ref": "USER_TABLE80_CONVERSATION",
+    "rights_state": "unknown",
+    "source_label": "Hung",
+    "is_personalized": false,
+    "probability": null
+  },
+  "output_kind": "symbolic_map",
+  "metric": null,
+  "confidence": null,
+  "probability": null,
+  "model_evidence": null,
+  "claims": [
+    {
+      "claim_id": "00000000-0000-0000-0000-000000000004",
+      "subject_id": "00000000-0000-0000-0000-000000000002",
+      "type": "symbolic_interpretation",
+      "text_vi": "Trong bảng tham chiếu đang chọn, mã 71 có nhãn Hung; không phải dự báo cho người dùng.",
+      "source_ids": [
+        "USER_TABLE80"
+      ],
+      "result_ids": [
+        "00000000-0000-0000-0000-000000000005"
+      ],
+      "scope": "tail80_symbolic_reference",
+      "probability": null,
+      "model_release_id": null,
+      "model_evidence": null,
+      "limitations": [
+        "Không nhận ngày sinh hoặc dữ liệu hành vi."
+      ],
+      "review_state": "draft"
+    }
+  ],
+  "missing_inputs": [],
+  "unresolved_rules": [],
+  "limitations": [
+    "Không phải xác suất số phận"
+  ],
+  "created_at": "2026-10-11T00:00:00Z",
+  "state": "complete"
+}

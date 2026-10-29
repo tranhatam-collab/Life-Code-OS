@@ -1,0 +1,434 @@
+{
+  "version": "2026-10-20",
+  "lane": "product_frontend_ai_business",
+  "evidence_status": "VERIFIED_WORKTREE_ONLY",
+  "source_root": "docs/upgrade/sources/2026-10-11/package",
+  "generated_artifact_root": "docs/upgrade/2026-10-20",
+  "original_files_read_complete": 53,
+  "expected_assigned_original_files": 53,
+  "files": [
+    {
+      "relative_path": "01_Chien_luoc_San_pham/01_MASTER_VISION.md",
+      "sha256": "02902402814b77bd73d018d4c628093b59710ec434cbb074c5cabe197412d98a",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/01_MASTER_VISION.md"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md",
+      "sha256": "fd6851112a120def9f9211f1ef10a6a0ac864a06f0d6cd866461328a39d64a4c",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md",
+      "sha256": "e9ebf0828397c15816b15012de820dcf6b34b4b741c74f9dbaaf3056f52a753a",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/04_USER_JOURNEYS.md",
+      "sha256": "9ddf5b2581300f8bdec1a7d96c4b07aad231ece8883dc26b1dd4aa8bf2b7c0a5",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/04_USER_JOURNEYS.md"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md",
+      "sha256": "d8e38e8b44a18af948d37aa3e95ab8d53b72c19d2fafcad87caf3fae1cbbf2a1",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md",
+      "sha256": "3e90762e266ed0d82202fd80b6a6625fda6ae288718d50b8afea580d755c26a3",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "sha256": "6854b7b9ee26c7531f8420607d0997862ddbd9f46cc199f6f27435a25a84bb6d",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/NINE_LEVELS.json"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+      "sha256": "c72f2799c33afa490796278e0dc9b8a241e0c08d6eb23a58118e2849aea55f20",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "sha256": "07f231482f840e205047f33ffc91197ba0eb4dcf218f12beb375dd5aeff9d475",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/PRODUCT_CATALOG.json"
+    },
+    {
+      "relative_path": "01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+      "sha256": "cdced6403e55ad312c59e45cb60b91564d298e0847454d4203ce67f619d4df34",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json"
+    },
+    {
+      "relative_path": "05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md",
+      "sha256": "c5eb9607999423d551c42b0adab489b344c46aa1cd4bf1d0a872900ec17b8739",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md"
+    },
+    {
+      "relative_path": "05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md",
+      "sha256": "47aede81a1c411e47b572ab7b2a7b9acaf89b99a826136327482b2fb88070f10",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md"
+    },
+    {
+      "relative_path": "05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md",
+      "sha256": "b8aa46ad6b57ff65a9db83342fe228822f2ca7b376241cdf1f1ce02dff72bec7",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md"
+    },
+    {
+      "relative_path": "05_Frontend_UI/DESIGN_TOKENS.json",
+      "sha256": "d07c335d4bdd22d168d8d766a1d575457c938c087fa13a8ec140d3e5b1fb5eb7",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/05_Frontend_UI/DESIGN_TOKENS.json"
+    },
+    {
+      "relative_path": "05_Frontend_UI/SCREEN_REGISTRY.csv",
+      "sha256": "73e65f2eaaae37a48ee8f4cd6aae972a7f6601db156f866ebc4e5f8daed2df10",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/05_Frontend_UI/SCREEN_REGISTRY.csv"
+    },
+    {
+      "relative_path": "05_Frontend_UI/SCREEN_REGISTRY.json",
+      "sha256": "f889ae17392d53c1c1085eb7ad8adaf0ee16b517346fdfc438de4c3bcaa8cf6e",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/05_Frontend_UI/SCREEN_REGISTRY.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/01_AI_ORCHESTRATION.md",
+      "sha256": "56a345d3573c25e8cbedf693157b97bdd727dd9ee80143672c89755db9e76e7f",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/01_AI_ORCHESTRATION.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md",
+      "sha256": "3d74d97e716e4cac55362e74a2647999e64b69150546857b9fff3f646674f612",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/03_REPORT_FACTORY.md",
+      "sha256": "9619d462d31315a7472e19e9bce7eb6e4448b2f715bf9f046670064c71cbd9fd",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/03_REPORT_FACTORY.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md",
+      "sha256": "e25834a25e848255e3cae655e1f472403b84888a3893d778fc816d624d19339d",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md",
+      "sha256": "819fee6ae311da6ff357d844b516d279237eeee047c0470ac897540eea6aee7b",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+      "sha256": "efa5ba8d6f656cf40e08bacb65e77f2a12e74d112656da9bca79b46bd95aa00b",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/AUTONOMY_POLICY.json",
+      "sha256": "987cdd892f83876b80ce4951a3b33b295e87a1937bb178f7e55b64c54b13257e",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/AUTONOMY_POLICY.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_1.json",
+      "sha256": "aff43ca819925900dbcaf501a81239b6c522115a9abef84649b352a5a3144dd2",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_1.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_1.md",
+      "sha256": "1bae9802357962668d05e782b8681e3b93dd83e52eaecae1138b5ae5372758df",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_1.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_2.json",
+      "sha256": "77b2939a170f971960552649f5d18164c796721ebc874f84bdd33c6323f2cb6a",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_2.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_2.md",
+      "sha256": "c82bfc0cf80dbe11d56c14875b0e19af434abef3cf7480a338257c1b3479470b",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_2.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_3.json",
+      "sha256": "a15b2af30f5f5cdd624815a51d66cab8d5ff3f29b353256163b882424ef70400",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_3.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_3.md",
+      "sha256": "43412673bd79b8b9d349a27c9d1e6f0265d4963fbd7faab95d1067ab0f5db454",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_3.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_4.json",
+      "sha256": "2982f7aee7866ad7188fc4ed0b2b274129370e7655d17ec6097806b7492a2eb0",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_4.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_4.md",
+      "sha256": "839746e08a1b1b02717adf3a9596d927ed4bf58075daba76306c380965354dab",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_4.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_5.json",
+      "sha256": "08dfd52b24936eb39892969be89e0c18a767444ded3d5f3d1599c75fd286aad9",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_5.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_5.md",
+      "sha256": "4e90968c01cd6c651aa3e8bcef722391236ec3a32d9f29788db8e3bfcc4aefaa",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_5.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_6.json",
+      "sha256": "8c55325dd66df836a9cdfbdab2e83c739bfabdb999112f1bf3a8cbd608c966c1",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_6.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_6.md",
+      "sha256": "edd013293f1aba4f1c469747ead1d24f1a215921b5bb7506b8da854610fb0430",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_6.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_7.json",
+      "sha256": "230ce68acbb772f3f0c588ac706221ac83f9c494e007635eb6a485181ec3d5d8",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_7.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_7.md",
+      "sha256": "b03ab45aae7d6d11da6f34fdf0a3509d4855679e2edfd9c2fc5c21f771515b92",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_7.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_8.json",
+      "sha256": "7d5c1b5ee00920e34d01b83ae4a0772a5f54eda535b89aedcc737a0be1ad9d11",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_8.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_8.md",
+      "sha256": "88f95b9262bafb48dc205c417c52a38a592d2c2591a56ada239a134278e63c39",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_8.md"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_9.json",
+      "sha256": "ccfd55f850f65d95a45c1a5a22fde30346b9248dc28fa97577d0cb617d2a975a",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_9.json"
+    },
+    {
+      "relative_path": "06_AI_Bao_cao/templates/LEVEL_9.md",
+      "sha256": "46d6264bafc37b6bbbc0537e7534698170dba257b4b4a392f2c5fca1434d1a92",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/06_AI_Bao_cao/templates/LEVEL_9.md"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md",
+      "sha256": "cebe3f5d851276f8a4df9dd6fe9b29cbb63f8b1d0d9976d2e9bb8643fb91b62a",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md",
+      "sha256": "cc3bb1d2a278770968134dc8957cfc9a060b754379181b413e6328b801b36e04",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md",
+      "sha256": "f57baf61fbdd860d8a40d80bec8e3232d84a8bc3d40454d4c11935923d1ac313",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md",
+      "sha256": "97b5d81fde84e939461518576ac5cfae631a12c1b0c06d40550253ccf6bbb775",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md",
+      "sha256": "9a6294da270816d98f8e9c787af2814a8deefc263bca209552009dcfea2fdeb3",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+      "sha256": "a3225049c50246f5e446f0e8960cdea3a04bbe6d7e325c9d46606145b5feb766",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+      "sha256": "d009db808f785adb43d089f05318f92f47865713b350d5320838384e6566cb9e",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "sha256": "05611a2ef112466a90b365a35900b1f20a51dcd10e808c60c88a22868808d2a4",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+      "sha256": "ae96706951d6bd3e11029a8270313d3528dce4a356478e864b918e67686fc59d",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "sha256": "0c9937c8e6e1e30c1b17f18a18aa5a50164b33f6484b9a2db6f7ad9dbbe87386",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+      "sha256": "3e3edc8ded587937235b40ed6a40fa18f3d7aeb6acdb836ca7212869281c539a",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv"
+    },
+    {
+      "relative_path": "08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "sha256": "573558e993f91664e27ed70449f08ecefced7c43c6390bd4830f237522db6681",
+      "read_status": "READ_COMPLETE",
+      "read_scope": "full file",
+      "working_copy_path": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json"
+    }
+  ],
+  "master_plan_review": {
+    "relative_path": "00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.md",
+    "sha256": "13da5e73434718b6c69e914ef7e386e3b5d971027753706acdc4e5eddb13ab18",
+    "line_count": 1169,
+    "read_status": "RELEVANT_SECTIONS_READ_COMPLETE",
+    "sections": [
+      {
+        "lines": "54-150",
+        "topics": [
+          "vision",
+          "principles",
+          "23-product portfolio",
+          "nine levels"
+        ]
+      },
+      {
+        "lines": "455-639",
+        "topics": [
+          "frontend",
+          "45 screens",
+          "accessibility",
+          "AI/report factory",
+          "nine templates"
+        ]
+      },
+      {
+        "lines": "730-904",
+        "topics": [
+          "international",
+          "academy",
+          "organization",
+          "commercial model",
+          "roadmap",
+          "release gates",
+          "Q decisions",
+          "handover"
+        ]
+      }
+    ],
+    "note": "Relevant sections requested by the coordinator were read in full; this record does not claim every master-plan line was audited by this lane."
+  },
+  "structured_checks_required": [
+    "JSON parse",
+    "CSV/JSON common-field parity",
+    "23 product IDs",
+    "45 screen IDs",
+    "9 report levels",
+    "140 original task identity plus prefixed additions",
+    "64 API operation reference resolution",
+    "dependency DAG",
+    "custom gate and FPOS mapping resolution"
+  ]
+}

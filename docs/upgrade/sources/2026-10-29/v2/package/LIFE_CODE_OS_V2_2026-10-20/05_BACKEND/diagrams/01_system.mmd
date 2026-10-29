@@ -1,0 +1,15 @@
+flowchart TD
+ Web[Web và mobile] --> G[Gateway: xác thực và quyền]
+ G --> P[Phiên bản hồ sơ và giả thuyết]
+ P --> O[Orchestrator / DAG]
+ O --> M[Method core có phiên bản]
+ O --> J[Quan sát và nhật ký]
+ M --> C[Claim registry]
+ J --> C
+ C --> S[HNH synthesis]
+ S --> W[Writer và Reviewer]
+ W --> R[Report snapshot]
+ R --> A[Web / PDF / Word]
+ G --> DB[(PostgreSQL)]
+ O --> Q[Outbox và Queue]
+ R --> FS[(Private R2)]

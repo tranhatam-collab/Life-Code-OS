@@ -1,0 +1,639 @@
+{
+  "version": "2026-10-29.r1",
+  "scope": "NEW_MASTER_HANDOFF_DOCUMENTS_ONLY_NOT_APPLICATION_OR_RELEASE_QA",
+  "status": "PASS",
+  "docx": {
+    "path": "docs/upgrade/2026-10-29/exports/Life_Code_OS_Master_Dev_Handoff_2026-10-29.docx",
+    "sha256": "b826f42c4191e42d4199c337abfad045ca5c74eddf08ebbc142297af59259213",
+    "bytes": 113684,
+    "paragraphs": 597,
+    "tables": 18
+  },
+  "pdf": {
+    "path": "docs/upgrade/2026-10-29/exports/Life_Code_OS_Master_Dev_Handoff_2026-10-29.pdf",
+    "sha256": "f2298df256ddd4d174542a476381ec70de5b7b76d701bd534cfa5f793f40fed0",
+    "bytes": 720585,
+    "pages": 50
+  },
+  "sources": [
+    {
+      "path": "docs/upgrade/2026-10-29/MASTER_PLAN.md",
+      "sha256": "ee866bfdc2dec203922fceb66e9a7eda8e3c2e4949114de93ddf5933aa596229",
+      "bytes": 36812
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/backend/BACKEND_DEV_HANDOFF.md",
+      "sha256": "61fc0c118dcb632baa931f877d840056e66f04022d0f0b8a9d79ecfacc9dec04",
+      "bytes": 28662
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/product/PRODUCT_UX_REPORT_HANDOFF.md",
+      "sha256": "4c8cd2c6da588a7766e96eb25bc2007fadbf7a999734dada4cef992dddf9dc26",
+      "bytes": 20643
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/product/AI_REPORT_ACADEMY_HANDOFF.md",
+      "sha256": "769ac15a6861a44c32233a1966ad79afd10bffeffb869926610d6fc322c09403",
+      "bytes": 18827
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/execution/PROGRAM_EXECUTION_PLAN.md",
+      "sha256": "6c3520a9f996d91c48f2cea28d5056c1a4f2b348e97c7f044a4d7aeb37e8d679",
+      "bytes": 32597
+    },
+    {
+      "path": "docs/upgrade/2026-10-29/backend/API_CONTRACT_RECONCILIATION.md",
+      "sha256": "b26294a10568c4996756865ba39db667da979c180ed2715e68eb3ca171250d92",
+      "bytes": 17760
+    }
+  ],
+  "toc": {
+    "kind": "static internal hyperlinks and bookmarks; page numbers populated from rendered PDF outlines",
+    "entries": 70,
+    "all_final_page_numbers_match_pdf_outline": true
+  },
+  "structural_checks": {
+    "used_heading_styles_black": true,
+    "title_and_subtitle_no_paragraph_border": true,
+    "all_tables_repeating_headers": true,
+    "footer_PAGE_field": true,
+    "all_pages_rendered": true,
+    "no_characters_outside_24pt_horizontal_14pt_vertical_safety_inset": true,
+    "no_blank_pages": true,
+    "source_hashes_match_build": true
+  },
+  "literal_preservation": {
+    "2026-10-29.r1": {
+      "docx": true,
+      "pdf": true
+    },
+    "INT29-001": {
+      "docx": true,
+      "pdf": true
+    },
+    "Q1–Q45": {
+      "docx": true,
+      "pdf": true
+    },
+    "125/125": {
+      "docx": true,
+      "pdf": true
+    },
+    "192/192": {
+      "docx": true,
+      "pdf": true
+    },
+    "81/99": {
+      "docx": true,
+      "pdf": true
+    },
+    "62/62": {
+      "docx": true,
+      "pdf": true
+    },
+    "LC-NUM-ATLAS": {
+      "docx": true,
+      "pdf": true
+    },
+    "V3-UI-058": {
+      "docx": true,
+      "pdf": true
+    }
+  },
+  "visual_review": {
+    "all_pages_individually_reviewed": true,
+    "resolution": "original pixel resolution; every final page PNG, not contact sheets only",
+    "pages": [
+      {
+        "page": 1,
+        "text_characters": 1163,
+        "png": "/private/tmp/life-code-handoff-delivery/page-1.png",
+        "png_sha256": "56f3d29079119dc02ba2dbc75e4e50401eb1cc7237782de7548d014adb07d93b",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-1.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-001.png"
+      },
+      {
+        "page": 2,
+        "text_characters": 5147,
+        "png": "/private/tmp/life-code-handoff-delivery/page-2.png",
+        "png_sha256": "f0ea227b8298305670fa517bf8783e2d5d95015960f26f973a03615861ba30ad",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-2.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-002.png"
+      },
+      {
+        "page": 3,
+        "text_characters": 4430,
+        "png": "/private/tmp/life-code-handoff-delivery/page-3.png",
+        "png_sha256": "d8a327f168523f51733f40e6a0713ec72ff015f3ac0d19180c197e332ae488c7",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-delivery/page-3.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-003.png"
+      },
+      {
+        "page": 4,
+        "text_characters": 2069,
+        "png": "/private/tmp/life-code-handoff-delivery/page-4.png",
+        "png_sha256": "fabd389475a34ac4aad99b4fa601079425c79e7f5219e34fc51e87a50cfb5f84",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-4.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-004.png"
+      },
+      {
+        "page": 5,
+        "text_characters": 3172,
+        "png": "/private/tmp/life-code-handoff-delivery/page-5.png",
+        "png_sha256": "83ee9055472c90849bd6a1e8b588daeae0537894b6f3d537f661c6d746b2ac09",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-5.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-005.png"
+      },
+      {
+        "page": 6,
+        "text_characters": 2323,
+        "png": "/private/tmp/life-code-handoff-delivery/page-6.png",
+        "png_sha256": "ce6abfcc422294168ae7668c26c5fc0697f918d89620ddf0872019cb95c294e1",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-6.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-006.png"
+      },
+      {
+        "page": 7,
+        "text_characters": 3442,
+        "png": "/private/tmp/life-code-handoff-delivery/page-7.png",
+        "png_sha256": "bd4ad284a77f88921c187d9c7f1959ed6b63532a0a4ea10dc0b2c00ebf77f8a9",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-7.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-007.png"
+      },
+      {
+        "page": 8,
+        "text_characters": 3649,
+        "png": "/private/tmp/life-code-handoff-delivery/page-8.png",
+        "png_sha256": "c0babeddecde3bae32971a82ff6e06183b18723f7bbbd933bde1adb43144006e",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-8.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-008.png"
+      },
+      {
+        "page": 9,
+        "text_characters": 3573,
+        "png": "/private/tmp/life-code-handoff-delivery/page-9.png",
+        "png_sha256": "a302e16ddb3f8ac0361ecfb20d32db6876f565700eeca9355c5bd27edf7a684f",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-9.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-009.png"
+      },
+      {
+        "page": 10,
+        "text_characters": 3680,
+        "png": "/private/tmp/life-code-handoff-delivery/page-10.png",
+        "png_sha256": "ad8a8a1fb36c8f644726f616e27210fdd8ff68d9bc4ed476decb718501ec3ab3",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-10.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-010.png"
+      },
+      {
+        "page": 11,
+        "text_characters": 3653,
+        "png": "/private/tmp/life-code-handoff-delivery/page-11.png",
+        "png_sha256": "631d8485ff29313141c395f6c80aeae9582f3d314b07ce984b1c34598df1f261",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-11.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-011.png"
+      },
+      {
+        "page": 12,
+        "text_characters": 3551,
+        "png": "/private/tmp/life-code-handoff-delivery/page-12.png",
+        "png_sha256": "57b644283cf89e38785c0dad1cc8d644d665fba009ec4eeec4aae0dbf2911ded",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-12.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-012.png"
+      },
+      {
+        "page": 13,
+        "text_characters": 1358,
+        "png": "/private/tmp/life-code-handoff-delivery/page-13.png",
+        "png_sha256": "40faf5bb4863f2c93dd998cf9bab3a3f8d3ec4bf77d9737af7984caf5fa07135",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-13.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-013.png"
+      },
+      {
+        "page": 14,
+        "text_characters": 2173,
+        "png": "/private/tmp/life-code-handoff-delivery/page-14.png",
+        "png_sha256": "1a75769fe44c802e7ef42d6b86b49f61798a4d0001bbdf9f20c14a7bc0b45ef4",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-14.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-014.png"
+      },
+      {
+        "page": 15,
+        "text_characters": 3327,
+        "png": "/private/tmp/life-code-handoff-delivery/page-15.png",
+        "png_sha256": "7e92ae8ac743a486e234e670ccbefdff1ba95b99a4d031dd12cf7a8c1345a46d",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-15.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-015.png"
+      },
+      {
+        "page": 16,
+        "text_characters": 2386,
+        "png": "/private/tmp/life-code-handoff-delivery/page-16.png",
+        "png_sha256": "680fd4771e7d5f1b13269c70a74ac08b831fd5bd36a11b36371db9ee3c4f36f3",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-16.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-016.png"
+      },
+      {
+        "page": 17,
+        "text_characters": 3092,
+        "png": "/private/tmp/life-code-handoff-delivery/page-17.png",
+        "png_sha256": "3c213a239eaee39102f9919b90878aefc8d3001e2403c97ced51b359e12de6a6",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-17.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-017.png"
+      },
+      {
+        "page": 18,
+        "text_characters": 2825,
+        "png": "/private/tmp/life-code-handoff-delivery/page-18.png",
+        "png_sha256": "2ba572d195ec642a29797e21e0f312bf5c5ab0ac1a7393ec6474c9aaad6e3517",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final/page-18.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-018.png"
+      },
+      {
+        "page": 19,
+        "text_characters": 2641,
+        "png": "/private/tmp/life-code-handoff-delivery/page-19.png",
+        "png_sha256": "f9d0aa91744dca81e3e878e1dafcc486699e07796b9d5e21472ba870478c437c",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-layout-final/page-19.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-019.png"
+      },
+      {
+        "page": 20,
+        "text_characters": 2447,
+        "png": "/private/tmp/life-code-handoff-delivery/page-20.png",
+        "png_sha256": "4d41595ffadadcf0f447b175bc354d2c537e36eca9bd7bf9c4d24c67a55efcf8",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-layout-final/page-20.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-020.png"
+      },
+      {
+        "page": 21,
+        "text_characters": 3036,
+        "png": "/private/tmp/life-code-handoff-delivery/page-21.png",
+        "png_sha256": "0d1f75e3b38184bffce5192915300f5d768084375fa76a70b1b3e93a5c7ba512",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-layout-final/page-21.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-021.png"
+      },
+      {
+        "page": 22,
+        "text_characters": 3499,
+        "png": "/private/tmp/life-code-handoff-delivery/page-22.png",
+        "png_sha256": "37e75311f56b2a868d55d86b546b32882876ee06d9db815d90c137e345a53e42",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-layout-final/page-22.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-022.png"
+      },
+      {
+        "page": 23,
+        "text_characters": 2475,
+        "png": "/private/tmp/life-code-handoff-delivery/page-23.png",
+        "png_sha256": "039219132bb38694a6a93108596ae1d93d6b258018d41cb2eff2d3a64b90e0f6",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-layout-final/page-23.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-023.png"
+      },
+      {
+        "page": 24,
+        "text_characters": 2800,
+        "png": "/private/tmp/life-code-handoff-delivery/page-24.png",
+        "png_sha256": "164f6c23b0440facc189e593e3124a14bc8eb134f028538cb33c9594481fc401",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-shipping/page-24.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-024.png"
+      },
+      {
+        "page": 25,
+        "text_characters": 3222,
+        "png": "/private/tmp/life-code-handoff-delivery/page-25.png",
+        "png_sha256": "4a99cca1d94d760e2f42eaa9f3df6bb167393a620a57d7e0f789f4058f22c966",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-shipping/page-25.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-025.png"
+      },
+      {
+        "page": 26,
+        "text_characters": 3033,
+        "png": "/private/tmp/life-code-handoff-delivery/page-26.png",
+        "png_sha256": "754cb2ed0e36f37d890193ef88b29a488103ac3e9ae6f224d9d7a62252b19dfb",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final-verified/page-26.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-026.png"
+      },
+      {
+        "page": 27,
+        "text_characters": 2254,
+        "png": "/private/tmp/life-code-handoff-delivery/page-27.png",
+        "png_sha256": "cdf293974bf1204b7fc9cc061e3d948e45c9b180cbb024fd31f6686acc0f244a",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-final-verified/page-27.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-027.png"
+      },
+      {
+        "page": 28,
+        "text_characters": 2863,
+        "png": "/private/tmp/life-code-handoff-delivery/page-28.png",
+        "png_sha256": "f3d3924462a312bcb816089bc529f3ba979903e5786a5c97e0aedf3f9b2278b3",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-shipping/page-28.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-028.png"
+      },
+      {
+        "page": 29,
+        "text_characters": 1005,
+        "png": "/private/tmp/life-code-handoff-delivery/page-29.png",
+        "png_sha256": "a1838c16e9e8575ca89307da9289388f0b251ae0916a792783e412c010ebf13b",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-shipping/page-29.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-029.png"
+      },
+      {
+        "page": 30,
+        "text_characters": 2981,
+        "png": "/private/tmp/life-code-handoff-delivery/page-30.png",
+        "png_sha256": "0007f4a1a95b7dce5f2e2d3a91b601b61e7ca39c6569e7ecfb47cd42fc48af6c",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-30.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-030.png"
+      },
+      {
+        "page": 31,
+        "text_characters": 1955,
+        "png": "/private/tmp/life-code-handoff-delivery/page-31.png",
+        "png_sha256": "4930c5eb738013007594d58599c064a8eed1625a1a8be385ffd18d354a4ce092",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-31.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-031.png"
+      },
+      {
+        "page": 32,
+        "text_characters": 3356,
+        "png": "/private/tmp/life-code-handoff-delivery/page-32.png",
+        "png_sha256": "8c8a5ebc3b8e80acba840a68b4f276785bd576a0d98fa7072826ddb145544463",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-32.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-032.png"
+      },
+      {
+        "page": 33,
+        "text_characters": 2281,
+        "png": "/private/tmp/life-code-handoff-delivery/page-33.png",
+        "png_sha256": "5bf3908e14619c414411d57917e0efab536d7af8a16b0b2493ff6dd39161e1d6",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-33.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-033.png"
+      },
+      {
+        "page": 34,
+        "text_characters": 2764,
+        "png": "/private/tmp/life-code-handoff-delivery/page-34.png",
+        "png_sha256": "bb61dc328025d26fb1272ed7e36d22e5e6ac93698486408ead89ba837f800f2b",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-34.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-034.png"
+      },
+      {
+        "page": 35,
+        "text_characters": 2265,
+        "png": "/private/tmp/life-code-handoff-delivery/page-35.png",
+        "png_sha256": "4e500680456b7b135be76dd3ff2a7a39dd806ca734ebe305fa0348f27d4d85f9",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-35.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-035.png"
+      },
+      {
+        "page": 36,
+        "text_characters": 3218,
+        "png": "/private/tmp/life-code-handoff-delivery/page-36.png",
+        "png_sha256": "c4c3ceeb751c4f7a95097f44deb7d1080864452778e7abe3f26150087308033a",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-36.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-036.png"
+      },
+      {
+        "page": 37,
+        "text_characters": 2368,
+        "png": "/private/tmp/life-code-handoff-delivery/page-37.png",
+        "png_sha256": "9762edb57bb86f7647c58aaa225b3932576033ea8ced3e5fc103a9451d256849",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-37.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-037.png"
+      },
+      {
+        "page": 38,
+        "text_characters": 1971,
+        "png": "/private/tmp/life-code-handoff-delivery/page-38.png",
+        "png_sha256": "972dfaca3f2bfb38d90165943eebdd2a7f701ebe15264a2516dde96ee0b1ca27",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-38.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-038.png"
+      },
+      {
+        "page": 39,
+        "text_characters": 2437,
+        "png": "/private/tmp/life-code-handoff-delivery/page-39.png",
+        "png_sha256": "0786c6d8f3b493be8241593eab832766a320043e9485f33fdda75f6e9fac82a4",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-39.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-039.png"
+      },
+      {
+        "page": 40,
+        "text_characters": 2179,
+        "png": "/private/tmp/life-code-handoff-delivery/page-40.png",
+        "png_sha256": "76dee0ce1fc3f2474f409b69938bbb34d338deed387288cb60aef232bb8ad164",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-40.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-040.png"
+      },
+      {
+        "page": 41,
+        "text_characters": 2778,
+        "png": "/private/tmp/life-code-handoff-delivery/page-41.png",
+        "png_sha256": "025f94751c2db9d7b0f5414f65683c47dea0120ca77d06c0a5b6fdd1d18331d2",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-41.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-041.png"
+      },
+      {
+        "page": 42,
+        "text_characters": 2458,
+        "png": "/private/tmp/life-code-handoff-delivery/page-42.png",
+        "png_sha256": "2cd10efe87e5cb416b3cb257dd7dc8fa4a5c710e8c7154b65621bd40b833bc57",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-42.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-042.png"
+      },
+      {
+        "page": 43,
+        "text_characters": 2072,
+        "png": "/private/tmp/life-code-handoff-delivery/page-43.png",
+        "png_sha256": "b021b978d0debf8b2eac35b6a45d79aab30243d6a7536f4c8b2e042955149f10",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-43.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-043.png"
+      },
+      {
+        "page": 44,
+        "text_characters": 2419,
+        "png": "/private/tmp/life-code-handoff-delivery/page-44.png",
+        "png_sha256": "b775150d4eb32394ccaacbcc3efaa0b3d249e3be24e9991238d6251377b73c4e",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-44.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-044.png"
+      },
+      {
+        "page": 45,
+        "text_characters": 2819,
+        "png": "/private/tmp/life-code-handoff-delivery/page-45.png",
+        "png_sha256": "d9f54ab204b402d517fe898f398c287afedb577456bdeffeae42ecf80bbd49ca",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-45.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-045.png"
+      },
+      {
+        "page": 46,
+        "text_characters": 2599,
+        "png": "/private/tmp/life-code-handoff-delivery/page-46.png",
+        "png_sha256": "954804494889147f734c540fa1d429c065dcd8857addd9a0f490cfe42c98ac0c",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-46.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-046.png"
+      },
+      {
+        "page": 47,
+        "text_characters": 1962,
+        "png": "/private/tmp/life-code-handoff-delivery/page-47.png",
+        "png_sha256": "e9bd4059a1b51f2cc211b823dee8f2d5cac6387746852a7c59b66acf6d3e09f3",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-polished/page-47.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-047.png"
+      },
+      {
+        "page": 48,
+        "text_characters": 2885,
+        "png": "/private/tmp/life-code-handoff-delivery/page-48.png",
+        "png_sha256": "73cc4195a87c5aff3062e57660f02da871dccf9c8f853737928d68200ee8a892",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-delivery/page-48.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-048.png"
+      },
+      {
+        "page": 49,
+        "text_characters": 1903,
+        "png": "/private/tmp/life-code-handoff-delivery/page-49.png",
+        "png_sha256": "8928884a6bd44a956a755f137587ab8deb9437f4d535c5a3cc82d8a96ebd3505",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-delivery/page-49.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-049.png"
+      },
+      {
+        "page": 50,
+        "text_characters": 1625,
+        "png": "/private/tmp/life-code-handoff-delivery/page-50.png",
+        "png_sha256": "871c80d352380229c2d9fc17a7ff4960d547551b1c938131acde85d2c12e4330",
+        "visual_status": "PASS",
+        "viewed_original_png": "/private/tmp/life-code-handoff-delivery/page-50.png",
+        "final_png_identical_to_individually_viewed_image": true,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/document-render/page-050.png"
+      }
+    ],
+    "iteration_fixes": [
+      "Replaced narrow 12-work-package narrative table with full-width records.",
+      "Replaced narrow nine-report-level narrative table with full-width records.",
+      "Widened new-product ID column and prevented product/registry rows splitting across pages.",
+      "Removed forced breaks after short Academy/program/API closing paragraphs to prevent near-blank leaves."
+    ]
+  },
+  "runtime": {
+    "python": "/Users/tranhatam/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "libreoffice": "/Users/tranhatam/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+    "renderer": "/Users/tranhatam/.codex/plugins/cache/openai-primary-runtime/documents/26.1017.22136/skills/documents/render_docx.py"
+  },
+  "limits": [
+    "Document layout and planning consistency only.",
+    "No application, staging, production, commercial, legal or method release approval.",
+    "PDF is exported from the same DOCX content; static linked TOC is regenerated by the builder after edits."
+  ],
+  "authoring_markers": {
+    "docx": {
+      "successful_invocations": 1,
+      "expected_output_count": 1,
+      "operation_kind": "create",
+      "exit_code": 0
+    },
+    "pdf": {
+      "successful_invocations": 1,
+      "expected_output_count": 1,
+      "operation_kind": "create",
+      "exit_code": 0
+    }
+  }
+}

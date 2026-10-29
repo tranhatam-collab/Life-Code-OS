@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/ReportSnapshot.json",
+  "title": "ReportSnapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "report_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "tenant_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "subject_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "profile_version_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "product_release_id": {
+      "type": "string"
+    },
+    "method_release_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uuid"
+      }
+    },
+    "locale": {
+      "type": "string"
+    },
+    "content_version": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://schemas.lifecode.iai.one/proposed/ReportSection.json",
+        "title": "ReportSection",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "block": {
+            "enum": [
+              "identity",
+              "analysis",
+              "timeline",
+              "action",
+              "appendix"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "content_type": {
+            "enum": [
+              "personalized",
+              "general_education",
+              "calculation",
+              "worksheet"
+            ]
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          "text": {
+            "type": "string"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "section_id",
+          "block",
+          "title",
+          "content_type",
+          "claim_ids",
+          "text",
+          "limitations"
+        ]
+      }
+    },
+    "review_state": {
+      "enum": [
+        "draft",
+        "under_review",
+        "approved",
+        "published",
+        "withdrawn",
+        "deleted"
+      ]
+    },
+    "reviewer_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid"
+    },
+    "snapshot_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "report_id",
+    "tenant_id",
+    "subject_ids",
+    "profile_version_ids",
+    "product_release_id",
+    "method_release_ids",
+    "claim_ids",
+    "locale",
+    "content_version",
+    "sections",
+    "review_state",
+    "reviewer_id",
+    "snapshot_digest",
+    "created_at"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "review_state": {
+            "enum": [
+              "approved",
+              "published"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "reviewer_id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        }
+      }
+    }
+  ]
+}

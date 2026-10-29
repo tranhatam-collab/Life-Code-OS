@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lifecode.iai.one/proposed/ReleaseReceipt.json",
+  "title": "ReleaseReceipt",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "release_id": {
+      "type": "string"
+    },
+    "environment": {
+      "enum": [
+        "staging",
+        "production"
+      ]
+    },
+    "source_sha": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "artifact_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "ci_run_id": {
+      "type": "string"
+    },
+    "worker_version_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pages_deployment_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "method_release_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gate_receipts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approved_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rollback_target": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "deployed_verified",
+        "failed",
+        "rolled_back"
+      ]
+    }
+  },
+  "required": [
+    "release_id",
+    "environment",
+    "source_sha",
+    "artifact_sha256",
+    "ci_run_id",
+    "worker_version_id",
+    "pages_deployment_id",
+    "schema_version",
+    "method_release_ids",
+    "gate_receipts",
+    "approved_by",
+    "rollback_target",
+    "created_at",
+    "status"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "deployed_verified"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "approved_by": {
+            "type": "array",
+            "minItems": 1
+          },
+          "gate_receipts": {
+            "type": "array",
+            "minItems": 1
+          }
+        },
+        "anyOf": [
+          {
+            "properties": {
+              "worker_version_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          {
+            "properties": {
+              "pages_deployment_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

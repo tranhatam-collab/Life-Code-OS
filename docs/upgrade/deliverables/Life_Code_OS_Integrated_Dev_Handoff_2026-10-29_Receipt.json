@@ -1,0 +1,16 @@
+{
+  "version": "2026-10-29.r1",
+  "zip_path": "docs/upgrade/deliverables/Life_Code_OS_Integrated_Dev_Handoff_2026-10-29.zip",
+  "zip_bytes": 82721403,
+  "zip_sha256": "8d88ec842d754361b0d2f511f242ba47aa9ac9dc4d57f08f073b03fbf7f426dc",
+  "bundle_manifest_sha256": "3d849f6adb58756fe77e7e52cc5ac655d6f3d613be16912e8657409afa73e104",
+  "manifest_entries_excluding_self": 1432,
+  "archive_entries": 1433,
+  "portable_extraction": "/var/folders/b8/rvqg3w055l143hxlsf0y5xhh0000gn/T/lc-os-planning-portable-ghm9k2x3/Life_Code_OS_Integrated_Dev_Handoff_2026-10-29",
+  "portable_verification_exit": 0,
+  "portable_verification_output": "{\"checked_on\": \"2026-10-29\", \"scope\": \"PORTABLE_PLANNING_BUNDLE_ONLY\", \"passed\": 1618, \"failed\": 0, \"source_zip_entries\": 827, \"old_planning_files\": 216, \"protected_runtime_files_checked\": 0, \"tasks\": 316, \"formal_trace_rows\": 407, \"formal_trace_direct_tasks\": 149, \"backward_source_scope_tasks\": 316, \"release_status\": \"HOLD\", \"app_code_or_deployment_verified\": false}",
+  "zip_crc": "PASS",
+  "all_bundle_manifest_hashes": "PASS",
+  "commit_push_deploy_performed": false,
+  "scope": "Planning/documents/sources/helpers only; no application source checkout or runtime approval"
+}

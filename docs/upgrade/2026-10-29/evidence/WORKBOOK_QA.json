@@ -1,0 +1,808 @@
+{
+  "receipt_id": "LCO-WORKBOOK-QA-2026-10-29.r1",
+  "artifact_path": "docs/upgrade/2026-10-29/exports/Life_Code_OS_Dev_Execution_Board_2026-10-29.xlsx",
+  "artifact_sha256": "605ee406af628a2e1250725291d6f9edd82afeab217df427c2070483070193ba",
+  "artifact_bytes": 84859,
+  "status": "PASS",
+  "passed": 18,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Tasks all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 316,
+        "columns": 7,
+        "differences": []
+      }
+    },
+    {
+      "check": "WorkOrders all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 20,
+        "columns": 7,
+        "differences": []
+      }
+    },
+    {
+      "check": "Decisions all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 45,
+        "columns": 7,
+        "differences": []
+      }
+    },
+    {
+      "check": "Methods all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 62,
+        "columns": 7,
+        "differences": []
+      }
+    },
+    {
+      "check": "API all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 99,
+        "columns": 7,
+        "differences": []
+      }
+    },
+    {
+      "check": "ProductsUX all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 97,
+        "columns": 7,
+        "differences": [],
+        "nullish_fallback_verified": [
+          "UI02static",
+          "UI05localdeterministic",
+          "sourceoperationIdresolutionreason"
+        ]
+      }
+    },
+    {
+      "check": "Trace all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 407,
+        "columns": 6,
+        "differences": []
+      }
+    },
+    {
+      "check": "Gates all exported cells equal canonical projection",
+      "pass": true,
+      "detail": {
+        "rows": 12,
+        "columns": 6,
+        "differences": []
+      }
+    },
+    {
+      "check": "10expected tabs, no default blank worksheet",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "No stored spreadsheet error cells",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "26formula cells (9dashboard,17capacity)",
+      "pass": true,
+      "detail": 26
+    },
+    {
+      "check": "Dashboard cached9values equal independent canonical counts",
+      "pass": true,
+      "detail": [
+        296,
+        20,
+        316,
+        45,
+        62,
+        99,
+        97,
+        407,
+        316
+      ]
+    },
+    {
+      "check": "Capacity missing inputs/currency preserved blank",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Capacity restored unavailable, not0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "28product+69screen IDs allpresent/namefilled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "12gate acceptance cells nonempty",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Alltabs freeze header4rows andIDcolumn",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "Reviewed builder capacity tests preserve blank/zero and restoration",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "allcells_structural": {
+    "library": "Bundled openpyxl in read-only formula and cached-value modes; worksheet XML metadata read without mutation.",
+    "rectangular_cells_examined": 7372,
+    "nonempty_cells": 6988,
+    "formula_cells": 26,
+    "stored_error_cells": [],
+    "sheets": [
+      {
+        "sheet": "DOC_TRUOC",
+        "computed_dimension": "A1:C19",
+        "max_row": 19,
+        "max_column": 3,
+        "nonempty_cells": 36,
+        "formula_count": 9,
+        "formulas_and_cached_values": [
+          {
+            "cell": "B5",
+            "formula": "=COUNTA(Tasks!A5:A320)-COUNTA(WorkOrders!A5:A24)",
+            "cached_value": 296
+          },
+          {
+            "cell": "B6",
+            "formula": "=COUNTA(WorkOrders!A5:A24)",
+            "cached_value": 20
+          },
+          {
+            "cell": "B7",
+            "formula": "=COUNTA(Tasks!A5:A320)",
+            "cached_value": 316
+          },
+          {
+            "cell": "B8",
+            "formula": "=COUNTA(Decisions!A5:A49)",
+            "cached_value": 45
+          },
+          {
+            "cell": "B9",
+            "formula": "=COUNTA(Methods!A5:A66)",
+            "cached_value": 62
+          },
+          {
+            "cell": "B10",
+            "formula": "=COUNTA(API!A5:A103)",
+            "cached_value": 99
+          },
+          {
+            "cell": "B11",
+            "formula": "=COUNTA(ProductsUX!A5:A101)",
+            "cached_value": 97
+          },
+          {
+            "cell": "B12",
+            "formula": "=COUNTA(Trace!A5:A411)",
+            "cached_value": 407
+          },
+          {
+            "cell": "B13",
+            "formula": "=COUNTIF(Tasks!G5:G320,\"NOT_CHECKED\")",
+            "cached_value": 316
+          }
+        ],
+        "error_cells": []
+      },
+      {
+        "sheet": "Tasks",
+        "computed_dimension": "A1:G320",
+        "max_row": 320,
+        "max_column": 7,
+        "nonempty_cells": 2079,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "WorkOrders",
+        "computed_dimension": "A1:G24",
+        "max_row": 24,
+        "max_column": 7,
+        "nonempty_cells": 149,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "Decisions",
+        "computed_dimension": "A1:G49",
+        "max_row": 49,
+        "max_column": 7,
+        "nonempty_cells": 324,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "Methods",
+        "computed_dimension": "A1:G66",
+        "max_row": 66,
+        "max_column": 7,
+        "nonempty_cells": 443,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "API",
+        "computed_dimension": "A1:G103",
+        "max_row": 103,
+        "max_column": 7,
+        "nonempty_cells": 702,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "ProductsUX",
+        "computed_dimension": "A1:G101",
+        "max_row": 101,
+        "max_column": 7,
+        "nonempty_cells": 688,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "Trace",
+        "computed_dimension": "A1:F411",
+        "max_row": 411,
+        "max_column": 6,
+        "nonempty_cells": 2450,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "Gates",
+        "computed_dimension": "A1:F16",
+        "max_row": 16,
+        "max_column": 6,
+        "nonempty_cells": 80,
+        "formula_count": 0,
+        "formulas_and_cached_values": [],
+        "error_cells": []
+      },
+      {
+        "sheet": "Capacity",
+        "computed_dimension": "A1:G16",
+        "max_row": 16,
+        "max_column": 7,
+        "nonempty_cells": 37,
+        "formula_count": 17,
+        "formulas_and_cached_values": [
+          {
+            "cell": "E5",
+            "formula": "=IF(AND(ISNUMBER(B5),B5>=0,ISNUMBER(C5),C5>=0,ISNUMBER(D5),D5>=0,LEN(B$3)>0),B5*C5*D5,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F5",
+            "formula": "=IF(ISNUMBER(E5),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E6",
+            "formula": "=IF(AND(ISNUMBER(B6),B6>=0,ISNUMBER(C6),C6>=0,ISNUMBER(D6),D6>=0,LEN(B$3)>0),B6*C6*D6,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F6",
+            "formula": "=IF(ISNUMBER(E6),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E7",
+            "formula": "=IF(AND(ISNUMBER(B7),B7>=0,ISNUMBER(C7),C7>=0,ISNUMBER(D7),D7>=0,LEN(B$3)>0),B7*C7*D7,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F7",
+            "formula": "=IF(ISNUMBER(E7),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E8",
+            "formula": "=IF(AND(ISNUMBER(B8),B8>=0,ISNUMBER(C8),C8>=0,ISNUMBER(D8),D8>=0,LEN(B$3)>0),B8*C8*D8,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F8",
+            "formula": "=IF(ISNUMBER(E8),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E9",
+            "formula": "=IF(AND(ISNUMBER(B9),B9>=0,ISNUMBER(C9),C9>=0,ISNUMBER(D9),D9>=0,LEN(B$3)>0),B9*C9*D9,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F9",
+            "formula": "=IF(ISNUMBER(E9),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E10",
+            "formula": "=IF(AND(ISNUMBER(B10),B10>=0,ISNUMBER(C10),C10>=0,ISNUMBER(D10),D10>=0,LEN(B$3)>0),B10*C10*D10,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F10",
+            "formula": "=IF(ISNUMBER(E10),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E11",
+            "formula": "=IF(AND(ISNUMBER(B11),B11>=0,ISNUMBER(C11),C11>=0,ISNUMBER(D11),D11>=0,LEN(B$3)>0),B11*C11*D11,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F11",
+            "formula": "=IF(ISNUMBER(E11),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E12",
+            "formula": "=IF(AND(ISNUMBER(B12),B12>=0,ISNUMBER(C12),C12>=0,ISNUMBER(D12),D12>=0,LEN(B$3)>0),B12*C12*D12,\"\")",
+            "cached_value": null
+          },
+          {
+            "cell": "F12",
+            "formula": "=IF(ISNUMBER(E12),\"CÓ GIẢ ĐỊNH / CHỜ DUYỆT\",\"CẦN NHẬP GIẢ ĐỊNH\")",
+            "cached_value": "CẦN NHẬP GIẢ ĐỊNH"
+          },
+          {
+            "cell": "E14",
+            "formula": "=IF(COUNT(E5:E12)=8,SUM(E5:E12),\"CHƯA ĐỦ GIẢ ĐỊNH\")",
+            "cached_value": "CHƯA ĐỦ GIẢ ĐỊNH"
+          }
+        ],
+        "error_cells": []
+      }
+    ],
+    "xml_metadata": [
+      {
+        "sheet": "DOC_TRUOC",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:C1",
+          "A2:C2",
+          "A17:C19"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "Tasks",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:G1",
+          "A2:G2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "WorkOrders",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:G1",
+          "A2:G2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "Decisions",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:G1",
+          "A2:G2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "Methods",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:G1",
+          "A2:G2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "API",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:G1",
+          "A2:G2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "ProductsUX",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:G1",
+          "A2:G2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "Trace",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:F1",
+          "A2:F2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "Gates",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:F1",
+          "A2:F2"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      },
+      {
+        "sheet": "Capacity",
+        "freeze_pane": {
+          "xSplit": "1",
+          "ySplit": "4",
+          "topLeftCell": "B5",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        },
+        "merged_ranges": [
+          "A1:G1",
+          "A2:G2",
+          "A16:G16"
+        ],
+        "auto_filter_ref": null,
+        "data_validation_formulas": []
+      }
+    ]
+  },
+  "visual_review": {
+    "image_count": 20,
+    "sheets": 10,
+    "scope": "Reviewed all 20 original PNGs: top and tail ranges of all 10 tabs, with every exported column visible. Visual review sampled rows; structural/cell parity covered all exported rows.",
+    "observed": "No blocking title/header clipping, ####, blank product names, missing gate criteria or cut-off cell content observed in sampled ranges. Dense technical status strings remain readable through wrapping.",
+    "images": [
+      {
+        "sheet": "Tasks",
+        "range": "A1:G11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Tasks-1.png",
+        "sha256": "31449b042fa45e2e3ef7aee6ca695f59b87c567e166b1eebafb87ede5a5b190b",
+        "width": 2543,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Tasks-1.png"
+      },
+      {
+        "sheet": "Tasks",
+        "range": "A315:G320",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Tasks-2.png",
+        "sha256": "594a345ea10cd4c9a3a3e924176a963a1d9e04595db6e778db3f8fa22eeb149a",
+        "width": 2543,
+        "height": 250,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Tasks-2.png"
+      },
+      {
+        "sheet": "WorkOrders",
+        "range": "A1:G11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/WorkOrders-1.png",
+        "sha256": "1110ed9e9a8a430bd44934df8845e58bb361cad94284d19c671042c53b86a7b0",
+        "width": 3547,
+        "height": 659,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/WorkOrders-1.png"
+      },
+      {
+        "sheet": "WorkOrders",
+        "range": "A19:G24",
+        "file": "/private/tmp/lc-os-oct29-board-qa/WorkOrders-2.png",
+        "sha256": "84d9d92b446c0718f38f059a361d9a47e31db654fb9fc53e138102aaf5406e3a",
+        "width": 3547,
+        "height": 389,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/WorkOrders-2.png"
+      },
+      {
+        "sheet": "Decisions",
+        "range": "A1:G11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Decisions-1.png",
+        "sha256": "5a170eb28af63e417dff8020f5b8b1a6fa8e202395158725669740dbe6265d76",
+        "width": 3072,
+        "height": 640,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Decisions-1.png"
+      },
+      {
+        "sheet": "Decisions",
+        "range": "A44:G49",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Decisions-2.png",
+        "sha256": "c4677357fe86ee9f9571b8074c82ce27377d1ed2e0966449d69e4b3b3f559684",
+        "width": 3072,
+        "height": 485,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Decisions-2.png"
+      },
+      {
+        "sheet": "Methods",
+        "range": "A1:G11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Methods-1.png",
+        "sha256": "03ec0746bc3ec1fe5599a29bd920eb0a139f66ef03129e89d5c8b5147844a6e7",
+        "width": 3094,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Methods-1.png"
+      },
+      {
+        "sheet": "Methods",
+        "range": "A61:G66",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Methods-2.png",
+        "sha256": "5ff7a43422d38b1ed57d8bdbe9836a551f160ee3bf6575875a155331572d1359",
+        "width": 3094,
+        "height": 197,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Methods-2.png"
+      },
+      {
+        "sheet": "API",
+        "range": "A1:G11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/API-1.png",
+        "sha256": "40d63687f24b1058f70a6e400dccaf5f42a617be99b2291faa4b08684ff0d859",
+        "width": 3148,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/API-1.png"
+      },
+      {
+        "sheet": "API",
+        "range": "A98:G103",
+        "file": "/private/tmp/lc-os-oct29-board-qa/API-2.png",
+        "sha256": "485021151a2636aedecb2f037aa786ec4836596276aa85b6abaad4d3f47cedea",
+        "width": 3148,
+        "height": 370,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/API-2.png"
+      },
+      {
+        "sheet": "ProductsUX",
+        "range": "A1:G11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/ProductsUX-1.png",
+        "sha256": "1d795053757386db44b7e9556b67993f16264470f701d438298a230bbd83b7b0",
+        "width": 3256,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/ProductsUX-1.png"
+      },
+      {
+        "sheet": "ProductsUX",
+        "range": "A96:G101",
+        "file": "/private/tmp/lc-os-oct29-board-qa/ProductsUX-2.png",
+        "sha256": "bb0878208c694e07ac5ea41b9af79cb91dfa4bc1c9a6e0d1d5ef435defc84a8b",
+        "width": 3256,
+        "height": 254,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/ProductsUX-2.png"
+      },
+      {
+        "sheet": "Trace",
+        "range": "A1:F11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Trace-1.png",
+        "sha256": "54493c64e8db54f18379e779fc5935ee3594ff051841dc9da0ffc70dbfe4dd42",
+        "width": 3050,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Trace-1.png"
+      },
+      {
+        "sheet": "Trace",
+        "range": "A406:F411",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Trace-2.png",
+        "sha256": "1824465d6a00710f2e395a24436d3ffe46d9f34f7cf522a2f2040fd0cd292fe2",
+        "width": 3050,
+        "height": 168,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Trace-2.png"
+      },
+      {
+        "sheet": "Gates",
+        "range": "A1:F11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Gates-1.png",
+        "sha256": "53f7d48001ae4e651d7b11244462f8b4331f6f82a78e4f2d519ccc549e62186d",
+        "width": 2770,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Gates-1.png"
+      },
+      {
+        "sheet": "Gates",
+        "range": "A11:F16",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Gates-2.png",
+        "sha256": "ef8fcc610b37d9a03e20479f1cf827d7127f4e20048306c6e870b7157c10a51d",
+        "width": 2770,
+        "height": 168,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Gates-2.png"
+      },
+      {
+        "sheet": "Capacity",
+        "range": "A1:G11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Capacity-1.png",
+        "sha256": "2089139049f93b21a46c0354e43f44936878ccd3303e4dbc173437de1d9d1f2a",
+        "width": 2327,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Capacity-1.png"
+      },
+      {
+        "sheet": "Capacity",
+        "range": "A12:G16",
+        "file": "/private/tmp/lc-os-oct29-board-qa/Capacity-2.png",
+        "sha256": "a3645ad8a7e7056c5c37ce41b42e33e31e3af136ff5a2ac3867c8cf95f7684f4",
+        "width": 2327,
+        "height": 192,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/Capacity-2.png"
+      },
+      {
+        "sheet": "DOC_TRUOC",
+        "range": "A1:C11",
+        "file": "/private/tmp/lc-os-oct29-board-qa/DOC_TRUOC-1.png",
+        "sha256": "f0b9d635f38b23b54b8868602b2ce8a74b2ee1f503b8b1a78641c06103761ef3",
+        "width": 1916,
+        "height": 405,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/DOC_TRUOC-1.png"
+      },
+      {
+        "sheet": "DOC_TRUOC",
+        "range": "A12:C19",
+        "file": "/private/tmp/lc-os-oct29-board-qa/DOC_TRUOC-2.png",
+        "sha256": "12f80aa48cd13938c6e7315a412e0172c8fe2887fbe8411fcaf9399a6fd4a407",
+        "width": 1916,
+        "height": 216,
+        "visual_review": "REVIEWED_AT_ORIGINAL_RESOLUTION_ALL_COLUMNS",
+        "blocking_layout_issue": false,
+        "delivered_png": "docs/upgrade/2026-10-29/evidence/workbook-render/DOC_TRUOC-2.png"
+      }
+    ]
+  },
+  "builder_evidence": {
+    "path": "docs/upgrade/2026-10-29/evidence/WORKBOOK_BUILD_RECEIPT.json",
+    "sha256": "972c9fc98a869b1e30a301ad7b014cb6ec5b7f0049366dc806e6caab1ad82515",
+    "builder_path": "tools/planning/oct29/build_board.mjs",
+    "builder_sha256": "fdd0e9d87d13089deee5c863aace37cce475a6a024f640cdc15d87eaca150696",
+    "capacity_tests": [
+      "blank=>unavailable",
+      "legitimatezero=>0",
+      "8rolesx100=>800",
+      "restoredblank=>unavailable"
+    ],
+    "formula_errors_inspection": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+    "capacity_engine_scope": "The reviewed builder and build receipt record four creation-time Artifact Tool recalculation assertions. The final XLSX independently reloads with blank inputs and unavailable total. Native Excel/LibreOffice was not run."
+  },
+  "nonblocking_notes": [
+    "Some source-derived labels retain mixed Vietnamese/English and joined number-word spacing; this is a copy-editing limit.",
+    "Q40 repeats Founder in approver roles because the source packet contains a duplicate. This does not represent an additional approval.",
+    "No autofilter is configured. Every tab freezes four header rows and the first ID column. JSON/CSV carry the complete contracts."
+  ],
+  "limitations": [
+    "openpyxl loaded the workbook read_only=True in formula and data_only modes. It inspects structure, formulas and stored cached values; it does not recalculate formulas.",
+    "Visual verification covers the 20 documented top/tail ranges, not every one of the 316 task rows or 407 trace rows.",
+    "This QA did not edit the XLSX, shared builder or canonical records.",
+    "Original source workbooks with 11/20/21 tabs remain immutable and retain separate source receipts.",
+    "The workbook is a planning handoff. This receipt does not establish implementation, staging, runtime, legal/commercial or production readiness."
+  ],
+  "observed_date": "2026-10-29"
+}

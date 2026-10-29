@@ -1,5 +1,9 @@
 # Checklist — Khóa chuẩn trước khi code sâu
 
+**Bổ sung 2026-10-29:** nhận việc theo [bộ bàn giao DEV hiện tại](upgrade/2026-10-29/START_HERE.md), [316 task contract](upgrade/2026-10-29/execution/TASK_DEV_CONTRACTS.json), [20 work order](upgrade/2026-10-29/execution/INTEGRATION_WORK_ORDERS.json) và [45 decision packet](upgrade/2026-10-29/execution/DECISION_EXECUTION_PACKETS.json). Dấu chọn lịch sử không thay receipt đúng candidate, quyền nguồn, kiểm thử âm tính, reviewer hoặc release gate. Khóa scope và file allowlist trước khi code; bộ tài liệu này chưa triển khai ứng dụng.
+
+**Bổ sung 2026-10-20:** checklist này giữ làm nguồn thiết kế cũ. Các dấu đã chọn phía dưới cần revalidation theo [bộ chuẩn bị dev hiện tại](upgrade/2026-10-20/00_Doc_truoc/DEV_START_HERE_2026-10-20.md), method/source/rights registry và FPOS gate mapping. Không dùng checklist cũ thay approval của baseline mới. Phạm vi supersede là lời khẳng định đã khóa/đã sẵn sàng; giữ nội dung và lịch sử kiểm tra cũ để truy vết.
+
 Nguồn: `README.md` mục **30**, **31**, **32**. Đánh dấu `[x]` khi đã chốt trong docs/code; mọi thay đổi sau đó phải cập nhật README trước (mục 33).
 
 **Tài liệu đã có (tiến độ Trục B):**

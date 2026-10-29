@@ -1,0 +1,1804 @@
+[
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L1",
+    "catalog_name_vi": "Tín hiệu nền",
+    "launch_train": "T2",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Product",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-07",
+      "UI-09",
+      "UI-11",
+      "UI-21",
+      "UI-22",
+      "UI-23",
+      "UI-24",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "createSubject",
+      "overview",
+      "newProfileVersion",
+      "analyze",
+      "analysisStatus",
+      "analysisResults",
+      "reports",
+      "report",
+      "exportReport"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-04",
+      "DEMO-05"
+    ],
+    "estimate_low_person_days_non_additive": 25,
+    "estimate_high_person_days_non_additive": 50,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-06",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "unauthorized_disclosure",
+      "deterministic_mismatch",
+      "unsupported_high_risk_claim"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L2",
+    "catalog_name_vi": "Cấu trúc nội tâm",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-20",
+      "UI-21",
+      "UI-23",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "questionnaireResponse",
+      "analyze",
+      "analysisResults",
+      "reports",
+      "report",
+      "reportRevisions"
+    ],
+    "demo_flow_ids": [
+      "DEMO-04",
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 18,
+    "estimate_high_person_days_non_additive": 35,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "inferred_motive",
+      "hidden_contradiction",
+      "filler_output"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L3",
+    "catalog_name_vi": "Cách hành động",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-15",
+      "UI-18",
+      "UI-20",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "observation",
+      "checkin",
+      "questionnaireResponse",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 20,
+    "estimate_high_person_days_non_additive": 40,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "clinical_label",
+      "pattern_without_observations",
+      "causal_overclaim"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L4",
+    "catalog_name_vi": "Công việc và nguồn lực",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Finance-scope reviewer",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-17",
+      "UI-19",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "createPlan",
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 22,
+    "estimate_high_person_days_non_additive": 45,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "investment_or_credit_advice",
+      "employment_decision",
+      "unstated_assumption"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L5",
+    "catalog_name_vi": "Quan hệ và ranh giới",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "consenting_adults",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "grant",
+      "revokeGrant",
+      "report",
+      "reportRevisions"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 25,
+    "estimate_high_person_days_non_additive": 50,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "cross_subject_disclosure",
+      "loyalty_or_destiny_claim",
+      "coerced_conclusion"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L6",
+    "catalog_name_vi": "Dòng thời gian",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-19",
+      "UI-21",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "report",
+      "reportRevisions"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 25,
+    "estimate_high_person_days_non_additive": 55,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "invented_event",
+      "lifespan_prediction",
+      "merged_symbolic_fact"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L7",
+    "catalog_name_vi": "Cơ thể và môi trường",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F_REVIEW",
+    "eligible_subject": "adult_self_dedicated_review",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Specialist",
+      "Privacy",
+      "Legal",
+      "Method",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q15",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-15",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "observation",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 35,
+    "estimate_high_person_days_non_additive": 80,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "medical_inference",
+      "unapproved_body_or_image_input",
+      "missing_specialist_gate"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L8",
+    "catalog_name_vi": "Hướng sống và phụng sự",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Domain reviewer",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-17",
+      "UI-18",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "createPlan",
+      "checkin",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 28,
+    "estimate_high_person_days_non_additive": 60,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "single_destined_mission",
+      "unsafe_sacrifice_pressure",
+      "unsupported_capability"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L9",
+    "catalog_name_vi": "Hồ sơ đời sống hợp nhất",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "adult_self_released_components_only",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Senior Editorial",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-19",
+      "UI-21",
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "grant",
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "reports",
+      "report",
+      "reportRevisions",
+      "exportReport"
+    ],
+    "demo_flow_ids": [
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 45,
+    "estimate_high_person_days_non_additive": 110,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-06",
+      "PM-07",
+      "PM-08"
+    ],
+    "kill_metric_ids": [
+      "silent_inclusion_of_unavailable_level",
+      "flattened_contradiction",
+      "filler_output"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-GUEST",
+    "catalog_name_vi": "Công cụ không tài khoản",
+    "launch_train": "T1",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "guest",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Privacy",
+      "UX",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q3",
+      "Q6",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-01",
+      "UI-02",
+      "UI-03",
+      "UI-04",
+      "UI-05"
+    ],
+    "api_operation_ids": [
+      "catalog",
+      "methods"
+    ],
+    "demo_flow_ids": [
+      "DEMO-01",
+      "DEMO-12"
+    ],
+    "estimate_low_person_days_non_additive": 5,
+    "estimate_high_person_days_non_additive": 12,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-06"
+    ],
+    "kill_metric_ids": [
+      "remote_transmission_of_tool_input",
+      "misleading_claim",
+      "unlicensed_table"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-FREE",
+    "catalog_name_vi": "Hồ sơ căn bản miễn phí",
+    "launch_train": "T2",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Method",
+      "UX",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q13",
+      "Q15",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-07",
+      "UI-09",
+      "UI-10",
+      "UI-11",
+      "UI-13",
+      "UI-15",
+      "UI-17",
+      "UI-31",
+      "UI-32"
+    ],
+    "api_operation_ids": [
+      "createSubject",
+      "overview",
+      "subjects",
+      "newProfileVersion",
+      "consentDecision",
+      "observation",
+      "createPlan",
+      "privacyExport",
+      "deleteSubject"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-03",
+      "DEMO-07",
+      "DEMO-12"
+    ],
+    "estimate_low_person_days_non_additive": 20,
+    "estimate_high_person_days_non_additive": 45,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-06",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "privacy_right_paywall",
+      "quota_data_loss",
+      "unauthorized_disclosure"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-COMPANION",
+    "catalog_name_vi": "AI đồng hành",
+    "launch_train": "T3",
+    "earliest_catalog_phase": "D",
+    "eligible_subject": "adult_self_opt_in",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "AI",
+      "Privacy",
+      "Support",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q13",
+      "Q15",
+      "Q16",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-15",
+      "UI-17",
+      "UI-18",
+      "UI-33"
+    ],
+    "api_operation_ids": [
+      "observation",
+      "createPlan",
+      "checkin",
+      "newAutomation",
+      "stopAutomation"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-05"
+    ],
+    "estimate_low_person_days_non_additive": 22,
+    "estimate_high_person_days_non_additive": 50,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07",
+      "PM-08",
+      "PM-09",
+      "PM-10"
+    ],
+    "kill_metric_ids": [
+      "unconsented_reminder",
+      "budget_without_fallback",
+      "autonomous_high_impact_action"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-NUMBERS",
+    "catalog_name_vi": "Bộ số và tên",
+    "launch_train": "T1",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "guest_or_user",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Method Lead",
+    "reviewer_roles": [
+      "Product",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q5",
+      "Q6",
+      "Q8",
+      "Q12"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-05"
+    ],
+    "api_operation_ids": [],
+    "demo_flow_ids": [
+      "DEMO-01"
+    ],
+    "estimate_low_person_days_non_additive": 8,
+    "estimate_high_person_days_non_additive": 18,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-06",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "nondeterministic_result",
+      "destiny_claim",
+      "remote_input_analytics"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-EXPERT",
+    "catalog_name_vi": "Phiên chuyên gia",
+    "launch_train": "T3",
+    "earliest_catalog_phase": "D",
+    "eligible_subject": "adult_self_with_scoped_grant",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Practice Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Method",
+      "Commerce",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q14",
+      "Q15",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G08",
+      "G09",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-14",
+      "UI-30",
+      "UI-35",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "grant",
+      "revokeGrant",
+      "ticket",
+      "cases",
+      "caseDetail",
+      "review"
+    ],
+    "demo_flow_ids": [
+      "DEMO-06",
+      "DEMO-08"
+    ],
+    "estimate_low_person_days_non_additive": 24,
+    "estimate_high_person_days_non_additive": 55,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "scope_escape",
+      "reviewer_unavailable",
+      "complaint_path_missing"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-PRACTICE",
+    "catalog_name_vi": "Không gian chuyên gia",
+    "launch_train": "T5",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "authorized_practitioner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Practice Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Method",
+      "Security",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q15",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-35",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "cases",
+      "caseDetail",
+      "review"
+    ],
+    "demo_flow_ids": [
+      "DEMO-08"
+    ],
+    "estimate_low_person_days_non_additive": 35,
+    "estimate_high_person_days_non_additive": 75,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-04",
+      "PM-05",
+      "PM-07",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "cross_case_access",
+      "unsupervised_scope",
+      "serious_complaint_unresolved"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ACADEMY-FOUNDATION",
+    "catalog_name_vi": "Khóa nền HNH chín buổi",
+    "launch_train": "T5",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "enrolled_learner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Academic Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-37",
+      "UI-38",
+      "UI-39"
+    ],
+    "api_operation_ids": [
+      "courses",
+      "assignment",
+      "verifyCertificate"
+    ],
+    "demo_flow_ids": [
+      "DEMO-09"
+    ],
+    "estimate_low_person_days_non_additive": 30,
+    "estimate_high_person_days_non_additive": 65,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-06",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "unlicensed_content",
+      "certificate_overclaim",
+      "private_data_on_verification"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ACADEMY-PRO",
+    "catalog_name_vi": "Đào tạo thực hành có giám sát",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "supervised_practitioner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Academic Lead",
+    "reviewer_roles": [
+      "Method",
+      "Privacy",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-35",
+      "UI-36",
+      "UI-37",
+      "UI-38",
+      "UI-39"
+    ],
+    "api_operation_ids": [
+      "cases",
+      "caseDetail",
+      "review",
+      "courses",
+      "assignment",
+      "verifyCertificate"
+    ],
+    "demo_flow_ids": [
+      "DEMO-08",
+      "DEMO-09"
+    ],
+    "estimate_low_person_days_non_additive": 40,
+    "estimate_high_person_days_non_additive": 90,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-03",
+      "PM-05",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "unsupervised_practice",
+      "scope_overclaim",
+      "missing_complaint_path"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ACADEMY-TRAINER",
+    "catalog_name_vi": "Đào tạo giảng viên",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "approved_trainer",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Academic Lead",
+    "reviewer_roles": [
+      "Method Council",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-37",
+      "UI-38",
+      "UI-39",
+      "UI-42"
+    ],
+    "api_operation_ids": [
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "methodReleaseDraft"
+    ],
+    "demo_flow_ids": [
+      "DEMO-09",
+      "DEMO-11"
+    ],
+    "estimate_low_person_days_non_additive": 45,
+    "estimate_high_person_days_non_additive": 100,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-03",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "trainer_without_scope",
+      "stale_method_training",
+      "unreviewed_translation"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-FAMILY",
+    "catalog_name_vi": "Gia đình có quyền riêng",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "E_F_REVIEW",
+    "eligible_subject": "authorized_adults",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Legal",
+      "Security",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q18",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-34"
+    ],
+    "api_operation_ids": [
+      "subjects",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-10"
+    ],
+    "estimate_low_person_days_non_additive": 35,
+    "estimate_high_person_days_non_additive": 80,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-04",
+      "PM-05",
+      "PM-06"
+    ],
+    "kill_metric_ids": [
+      "minor_scope_without_policy",
+      "cross_member_disclosure",
+      "coerced_consent"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ORG",
+    "catalog_name_vi": "Tổ chức và doanh nghiệp",
+    "launch_train": "T7",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "organization_member",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Enterprise Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Legal",
+      "Security",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q14",
+      "Q15",
+      "Q18",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G08",
+      "G09",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-40"
+    ],
+    "api_operation_ids": [
+      "organizationOverview"
+    ],
+    "demo_flow_ids": [
+      "DEMO-10"
+    ],
+    "estimate_low_person_days_non_additive": 50,
+    "estimate_high_person_days_non_additive": 120,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-05",
+      "PM-06",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "tenant_escape",
+      "private_profile_exposure",
+      "high_impact_profiling"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-API",
+    "catalog_name_vi": "API cấp phép",
+    "launch_train": "T7",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "licensed_partner_system",
+    "delivery_surfaces": [
+      "server_api"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Platform Lead",
+    "reviewer_roles": [
+      "Security",
+      "Privacy",
+      "Legal",
+      "SRE",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q14",
+      "Q15",
+      "Q18",
+      "Q19",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "primary_screen_ids": [],
+    "api_operation_ids": [
+      "health",
+      "catalog",
+      "methods",
+      "methodDetail",
+      "login",
+      "authCallback",
+      "logout",
+      "subjects",
+      "createSubject",
+      "subject",
+      "overview",
+      "newProfileVersion",
+      "profileVersion",
+      "newHypothesis",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant",
+      "observations",
+      "observation",
+      "questionnaireResponse",
+      "createPlan",
+      "plans",
+      "checkin",
+      "timeline",
+      "analyze",
+      "analysisStatus",
+      "cancelAnalysis",
+      "analysisResults",
+      "methodResult",
+      "createReport",
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact",
+      "order",
+      "orderStatus",
+      "checkout",
+      "requestRefund",
+      "paymentWebhook",
+      "entitlements",
+      "ticket",
+      "ticketStatus",
+      "privacyExport",
+      "deleteSubject",
+      "deletionStatus",
+      "jobStatus",
+      "newAutomation",
+      "stopAutomation",
+      "cases",
+      "caseDetail",
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "organizationOverview",
+      "partner",
+      "methodReleaseDraft",
+      "countryPackReview",
+      "quality",
+      "operations"
+    ],
+    "demo_flow_ids": [
+      "DEMO-10",
+      "DEMO-11"
+    ],
+    "estimate_low_person_days_non_additive": 55,
+    "estimate_high_person_days_non_additive": 130,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-05",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "scope_or_tenant_escape",
+      "quota_bypass",
+      "unversioned_breaking_change"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-PUBLISH",
+    "catalog_name_vi": "Xuất bản và bộ sách",
+    "launch_train": "T3",
+    "earliest_catalog_phase": "D",
+    "eligible_subject": "adult_self_or_authorized_editor",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Editorial Lead",
+    "reviewer_roles": [
+      "Method",
+      "Privacy",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q4",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "demo_flow_ids": [
+      "DEMO-05"
+    ],
+    "estimate_low_person_days_non_additive": 28,
+    "estimate_high_person_days_non_additive": 65,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-04",
+      "PM-06",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "public_auto_publish",
+      "withdrawn_content_available",
+      "inaccessible_export"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-REGIONAL",
+    "catalog_name_vi": "Cấp phép quốc gia/nhượng quyền",
+    "launch_train": "T8",
+    "earliest_catalog_phase": "F_LEGAL",
+    "eligible_subject": "licensed_regional_partner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Global Lead",
+    "reviewer_roles": [
+      "Founder",
+      "Legal",
+      "Privacy",
+      "Method",
+      "Support",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-41",
+      "UI-45"
+    ],
+    "api_operation_ids": [
+      "partner",
+      "countryPackReview"
+    ],
+    "demo_flow_ids": [
+      "DEMO-10",
+      "DEMO-11"
+    ],
+    "estimate_low_person_days_non_additive": 60,
+    "estimate_high_person_days_non_additive": 150,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-05",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "unapproved_country_pack",
+      "missing_right_or_trademark",
+      "support_or_exit_gap"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts"
+  }
+]

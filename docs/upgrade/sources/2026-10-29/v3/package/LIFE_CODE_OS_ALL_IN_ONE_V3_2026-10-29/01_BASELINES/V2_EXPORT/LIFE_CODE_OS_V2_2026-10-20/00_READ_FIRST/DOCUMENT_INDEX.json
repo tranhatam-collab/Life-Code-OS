@@ -1,0 +1,157 @@
+[
+  {
+    "path": "00_READ_FIRST/MASTER_UPGRADE_V2.md",
+    "title": "Kế hoạch hợp nhất V2: giữ nền cũ, làm sâu backend, đưa trải nghiệm vào vận hành",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "00_READ_FIRST/START_HERE_V2.md",
+    "title": "Bắt đầu sử dụng bộ nâng cấp V2",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "02_REVIEW/READ_ALL_AND_CHANGELOG.md",
+    "title": "Rà soát toàn bộ gói cũ và nguyên tắc không mất nội dung",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "03_PRODUCT/ACADEMY_EXPERT_ORGANIZATION_GLOBAL.md",
+    "title": "Học viện, chuyên gia, tổ chức và cấp phép quốc tế",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "03_PRODUCT/NINE_REPORT_BLUEPRINTS.md",
+    "title": "Chín báo cáo: cấu trúc nội dung để người dùng hiểu và hành động",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "03_PRODUCT/PRODUCT_AND_USER_VALUE_V2.md",
+    "title": "Sản phẩm miễn phí đến Full Life Code: đầu ra, dữ liệu và quyền",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "04_KNOWLEDGE/RESEARCH_TO_METHOD_FACTORY.md",
+    "title": "Nhà máy tri thức: từ nhiều ngôn ngữ đến phương pháp có thể chạy",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/01_BACKEND_BLUEPRINT.md",
+    "title": "Backend V2: ranh giới mô-đun, đường dữ liệu và bảo đảm tính đúng",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/02_FORMULA_MATRIX_SPEC.md",
+    "title": "Công thức, ma trận và chính sách sai số",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/03_TIME_HYPOTHESES_SPEC.md",
+    "title": "Lịch, giờ sinh, múi giờ và nhiều giả thuyết",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/04_AUTH_DATA_TRANSACTION_SPEC.md",
+    "title": "Quyền dữ liệu, transaction và chống truy cập chéo",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/05_JOBS_PAYMENTS_DELETE_SPEC.md",
+    "title": "Tác vụ nền, thanh toán, xóa dữ liệu và tình huống gián đoạn",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/06_API_SCHEMA_REPORT_CONTRACT.md",
+    "title": "API, schema và báo cáo có thể truy vết",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/07_PERFORMANCE_CACHE_OBSERVABILITY.md",
+    "title": "Hiệu năng, bộ nhớ đệm và vận hành ít thao tác",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/08_SECURITY_MIGRATION_AND_P0.md",
+    "title": "Khống chế P0 và chuyển dữ liệu không mất lịch sử",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/09_ADVANCED_METHOD_EXPANSION.md",
+    "title": "Mở rộng bộ máy nâng cao mà không tạo kết quả giả",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/10_RUN_PROTOCOL_AND_CANCELLATION.md",
+    "title": "Giao thức một lần phân tích: từ yêu cầu tới phát hành",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/11_DATA_LINEAGE_SOURCE_AND_UPDATE.md",
+    "title": "Nguồn, phụ thuộc kết quả và cập nhật không làm mất lịch sử",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/12_REFERENCE_ADAPTER_AND_ACCEPTANCE.md",
+    "title": "Adapter, ma trận demo và cách chuyển mã tham chiếu thành sản phẩm",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/FORMULA_ATLAS.md",
+    "title": "Danh mục công thức, ma trận và điều kiện triển khai",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "05_BACKEND/sql/README.md",
+    "title": "Tham chiếu PostgreSQL V2",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "06_DEMO_LAB/DEMO_CATALOG.md",
+    "title": "Thư viện 90 tình huống minh họa",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "06_DEMO_LAB/README.md",
+    "title": "Phòng thực hành backend và giao diện",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "07_UI/AI_INTERACTION_AND_ADMIN_CONSOLE.md",
+    "title": "AI tương tác và bảng điều hành giảm thao tác lặp",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "07_UI/UX_MOBILE_WEB_DESKTOP.md",
+    "title": "Giao diện mobile, web và desktop: một dữ liệu, nhiều cách sử dụng",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "08_EXECUTION/EXECUTION_AND_ACCEPTANCE_V2.md",
+    "title": "Chuẩn bị chạy dự án: thứ tự thực thi và nghiệm thu",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "08_EXECUTION/LEGAL_AND_INTERNATIONAL_ADDENDUM.md",
+    "title": "Rà soát pháp lý bổ sung và điều kiện mở thị trường",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "09_REPOSITORY/INTEGRATION_PLAN.md",
+    "title": "Đưa V2 vào đúng dự án, giữ nguyên kế hoạch cũ",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "10_QA/QUALITY_AND_EVIDENCE_PLAN.md",
+    "title": "Chất lượng, kiểm thử và cách đọc bằng chứng",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "11_SOURCES/SOURCE_NOTES.md",
+    "title": "Nguồn tham khảo và phạm vi đã tiếp cận",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  },
+  {
+    "path": "README.md",
+    "title": "Life Code OS — Bộ nâng cấp bảo toàn V2",
+    "status": "REFERENCE_OR_DESIGN_REVIEW"
+  }
+]

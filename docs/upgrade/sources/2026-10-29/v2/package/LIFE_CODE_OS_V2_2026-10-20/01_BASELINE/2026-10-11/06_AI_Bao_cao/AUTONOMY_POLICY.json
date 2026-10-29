@@ -1,0 +1,77 @@
+{
+  "status": "PROPOSED",
+  "levels": {
+    "A0": "Dự thảo, không tác động ngoài",
+    "A1": "Tính toán/đảo ngược, policy rõ",
+    "A2": "Tác vụ đã cho phép, giới hạn scope và budget",
+    "A3": "Người có thẩm quyền duyệt"
+  },
+  "rules": [
+    {
+      "action": "calculate_method",
+      "tier": "A1",
+      "authority": "Released deterministic service",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "create_report_draft",
+      "tier": "A1",
+      "authority": "Scoped orchestrator",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "send_optin_reminder",
+      "tier": "A2",
+      "authority": "Notification service with current opt-in",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "fulfill_paid_order",
+      "tier": "A2",
+      "authority": "Verified webhook state machine",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "refund_within_policy",
+      "tier": "A2",
+      "authority": "Deterministic rule after confirmed request",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "release_method",
+      "tier": "A3",
+      "authority": "Method council + release authority",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "publish_sensitive_report",
+      "tier": "A3",
+      "authority": "Authorized reviewer",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "grant_cross_subject_access",
+      "tier": "A3",
+      "authority": "Subject/guardian authority verified",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "deploy_production",
+      "tier": "A3",
+      "authority": "Release authority",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "sign_country_license",
+      "tier": "A3",
+      "authority": "Founder + legal",
+      "model_can_execute_directly": false
+    },
+    {
+      "action": "breach_notification",
+      "tier": "A3",
+      "authority": "Incident + legal",
+      "model_can_execute_directly": false
+    }
+  ]
+}

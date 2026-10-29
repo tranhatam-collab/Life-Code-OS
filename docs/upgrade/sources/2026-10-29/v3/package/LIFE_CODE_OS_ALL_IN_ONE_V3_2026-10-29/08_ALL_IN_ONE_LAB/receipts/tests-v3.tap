@@ -1,0 +1,1166 @@
+
+> lifecode-all-in-one-reference-v3@0.3.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: HTTP health explicitly not production-ready
+ok 1 - HTTP health explicitly not production-ready
+  ---
+  duration_ms: 26.661112
+  type: 'test'
+  ...
+# Subtest: HTTP catalog preserves 167 cases and nine design levels
+ok 2 - HTTP catalog preserves 167 cases and nine design levels
+  ---
+  duration_ms: 9.586221
+  type: 'test'
+  ...
+# Subtest: HTTP rejects a remote browser origin
+ok 3 - HTTP rejects a remote browser origin
+  ---
+  duration_ms: 12.690276
+  type: 'test'
+  ...
+# Subtest: HTTP result has same calculation as local method
+ok 4 - HTTP result has same calculation as local method
+  ---
+  duration_ms: 9.038127
+  type: 'test'
+  ...
+# Subtest: HTTP malformed JSON gives problem response
+ok 5 - HTTP malformed JSON gives problem response
+  ---
+  duration_ms: 4.48562
+  type: 'test'
+  ...
+# Subtest: HTTP rejects unsupported methods
+ok 6 - HTTP rejects unsupported methods
+  ---
+  duration_ms: 5.136669
+  type: 'test'
+  ...
+# Subtest: HTTP no persistence/profile endpoint in local lab
+ok 7 - HTTP no persistence/profile endpoint in local lab
+  ---
+  duration_ms: 3.688353
+  type: 'test'
+  ...
+# Subtest: HTTP CSP and cache controls are present
+ok 8 - HTTP CSP and cache controls are present
+  ---
+  duration_ms: 3.370953
+  type: 'test'
+  ...
+# Subtest: DEMO-001 Đuôi 6789 · quy tắc unmapped
+ok 9 - DEMO-001 Đuôi 6789 · quy tắc unmapped
+  ---
+  duration_ms: 4.879301
+  type: 'test'
+  ...
+# Subtest: DEMO-002 Đuôi 0000 · quy tắc unmapped
+ok 10 - DEMO-002 Đuôi 0000 · quy tắc unmapped
+  ---
+  duration_ms: 0.42166
+  type: 'test'
+  ...
+# Subtest: DEMO-003 Đuôi 0080 · quy tắc as80
+ok 11 - DEMO-003 Đuôi 0080 · quy tắc as80
+  ---
+  duration_ms: 0.211985
+  type: 'test'
+  ...
+# Subtest: DEMO-004 Đuôi 0001 · quy tắc unmapped
+ok 12 - DEMO-004 Đuôi 0001 · quy tắc unmapped
+  ---
+  duration_ms: 0.162488
+  type: 'test'
+  ...
+# Subtest: DEMO-005 Đuôi 9999 · quy tắc unmapped
+ok 13 - DEMO-005 Đuôi 9999 · quy tắc unmapped
+  ---
+  duration_ms: 0.439607
+  type: 'test'
+  ...
+# Subtest: DEMO-006 Đuôi 6231 · quy tắc unmapped
+ok 14 - DEMO-006 Đuôi 6231 · quy tắc unmapped
+  ---
+  duration_ms: 0.270034
+  type: 'test'
+  ...
+# Subtest: DEMO-007 Đuôi 1986 · quy tắc unmapped
+ok 15 - DEMO-007 Đuôi 1986 · quy tắc unmapped
+  ---
+  duration_ms: 0.269574
+  type: 'test'
+  ...
+# Subtest: DEMO-008 Đuôi 3468 · quy tắc unmapped
+ok 16 - DEMO-008 Đuôi 3468 · quy tắc unmapped
+  ---
+  duration_ms: 0.131907
+  type: 'test'
+  ...
+# Subtest: DEMO-009 Đầu vào ba chữ số phải bị từ chối
+ok 17 - DEMO-009 Đầu vào ba chữ số phải bị từ chối
+  ---
+  duration_ms: 0.79101
+  type: 'test'
+  ...
+# Subtest: DEMO-010 Chuỗi 1234 · giữ phần chưa biết
+ok 18 - DEMO-010 Chuỗi 1234 · giữ phần chưa biết
+  ---
+  duration_ms: 0.945893
+  type: 'test'
+  ...
+# Subtest: DEMO-011 Chuỗi 1819 · giữ phần chưa biết
+ok 19 - DEMO-011 Chuỗi 1819 · giữ phần chưa biết
+  ---
+  duration_ms: 0.259976
+  type: 'test'
+  ...
+# Subtest: DEMO-012 Chuỗi 1413 · giữ phần chưa biết
+ok 20 - DEMO-012 Chuỗi 1413 · giữ phần chưa biết
+  ---
+  duration_ms: 0.128563
+  type: 'test'
+  ...
+# Subtest: DEMO-013 Chuỗi 5555 · giữ phần chưa biết
+ok 21 - DEMO-013 Chuỗi 5555 · giữ phần chưa biết
+  ---
+  duration_ms: 0.139882
+  type: 'test'
+  ...
+# Subtest: DEMO-014 Chuỗi 8553 · giữ phần chưa biết
+ok 22 - DEMO-014 Chuỗi 8553 · giữ phần chưa biết
+  ---
+  duration_ms: 0.094874
+  type: 'test'
+  ...
+# Subtest: DEMO-015 Chuỗi 0000 · giữ phần chưa biết
+ok 23 - DEMO-015 Chuỗi 0000 · giữ phần chưa biết
+  ---
+  duration_ms: 0.086567
+  type: 'test'
+  ...
+# Subtest: DEMO-016 Nối qua 5 chỉ để đối chiếu độ nhạy
+ok 24 - DEMO-016 Nối qua 5 chỉ để đối chiếu độ nhạy
+  ---
+  duration_ms: 0.157825
+  type: 'test'
+  ...
+# Subtest: DEMO-017 Đếm tần suất chữ số thô
+ok 25 - DEMO-017 Đếm tần suất chữ số thô
+  ---
+  duration_ms: 0.340316
+  type: 'test'
+  ...
+# Subtest: DEMO-018 Chuỗi đối xứng không phải số phận
+ok 26 - DEMO-018 Chuỗi đối xứng không phải số phận
+  ---
+  duration_ms: 0.415225
+  type: 'test'
+  ...
+# Subtest: DEMO-019 Ký hiệu nội địa
+ok 27 - DEMO-019 Ký hiệu nội địa
+  ---
+  duration_ms: 0.202658
+  type: 'test'
+  ...
+# Subtest: DEMO-020 Ký hiệu quốc tế cùng chuỗi nội địa
+ok 28 - DEMO-020 Ký hiệu quốc tế cùng chuỗi nội địa
+  ---
+  duration_ms: 0.09763
+  type: 'test'
+  ...
+# Subtest: DEMO-021 Quy đổi có giữ nguyên tên: Đỗ An
+ok 29 - DEMO-021 Quy đổi có giữ nguyên tên: Đỗ An
+  ---
+  duration_ms: 1.227887
+  type: 'test'
+  ...
+# Subtest: DEMO-022 Quy đổi có giữ nguyên tên: ĐỖ AN
+ok 30 - DEMO-022 Quy đổi có giữ nguyên tên: ĐỖ AN
+  ---
+  duration_ms: 0.251679
+  type: 'test'
+  ...
+# Subtest: DEMO-023 Quy đổi có giữ nguyên tên: Lê Bình
+ok 31 - DEMO-023 Quy đổi có giữ nguyên tên: Lê Bình
+  ---
+  duration_ms: 0.207593
+  type: 'test'
+  ...
+# Subtest: DEMO-024 Quy đổi có giữ nguyên tên: Nguyễn An
+ok 32 - DEMO-024 Quy đổi có giữ nguyên tên: Nguyễn An
+  ---
+  duration_ms: 0.190914
+  type: 'test'
+  ...
+# Subtest: DEMO-025 Quy đổi có giữ nguyên tên: Demo An
+ok 33 - DEMO-025 Quy đổi có giữ nguyên tên: Demo An
+  ---
+  duration_ms: 0.23712
+  type: 'test'
+  ...
+# Subtest: DEMO-026 Y được tính như nguyên âm theo lựa chọn
+ok 34 - DEMO-026 Y được tính như nguyên âm theo lựa chọn
+  ---
+  duration_ms: 0.122125
+  type: 'test'
+  ...
+# Subtest: DEMO-027 Y không tính như nguyên âm
+ok 35 - DEMO-027 Y không tính như nguyên âm
+  ---
+  duration_ms: 0.106421
+  type: 'test'
+  ...
+# Subtest: DEMO-028 Không ép chữ Hán vào bảng Latin
+ok 36 - DEMO-028 Không ép chữ Hán vào bảng Latin
+  ---
+  duration_ms: 0.123572
+  type: 'test'
+  ...
+# Subtest: DEMO-029 Ký tự điều khiển bị từ chối
+ok 37 - DEMO-029 Ký tự điều khiển bị từ chối
+  ---
+  duration_ms: 0.122894
+  type: 'test'
+  ...
+# Subtest: DEMO-030 Ngày nhuận hợp lệ
+ok 38 - DEMO-030 Ngày nhuận hợp lệ
+  ---
+  duration_ms: 0.427851
+  type: 'test'
+  ...
+# Subtest: DEMO-031 Ngày không tồn tại
+ok 39 - DEMO-031 Ngày không tồn tại
+  ---
+  duration_ms: 1.808876
+  type: 'test'
+  ...
+# Subtest: DEMO-032 Không đoán định dạng ngày
+ok 40 - DEMO-032 Không đoán định dạng ngày
+  ---
+  duration_ms: 0.075742
+  type: 'test'
+  ...
+# Subtest: DEMO-033 Giữ số 11/22/33 khi được chọn
+ok 41 - DEMO-033 Giữ số 11/22/33 khi được chọn
+  ---
+  duration_ms: 0.121841
+  type: 'test'
+  ...
+# Subtest: DEMO-034 Đối chiếu cộng theo thành phần
+ok 42 - DEMO-034 Đối chiếu cộng theo thành phần
+  ---
+  duration_ms: 0.08999
+  type: 'test'
+  ...
+# Subtest: DEMO-035 Chu kỳ biểu tượng theo năm dương lịch
+ok 43 - DEMO-035 Chu kỳ biểu tượng theo năm dương lịch
+  ---
+  duration_ms: 0.189302
+  type: 'test'
+  ...
+# Subtest: DEMO-036 Chu kỳ theo sinh nhật trước ngày chuyển
+ok 44 - DEMO-036 Chu kỳ theo sinh nhật trước ngày chuyển
+  ---
+  duration_ms: 0.168176
+  type: 'test'
+  ...
+# Subtest: DEMO-037 Timeline 100 khoảng tuổi, không biến cố
+ok 45 - DEMO-037 Timeline 100 khoảng tuổi, không biến cố
+  ---
+  duration_ms: 0.76222
+  type: 'test'
+  ...
+# Subtest: DEMO-038 Ngày nhuận chọn mốc 01/03
+ok 46 - DEMO-038 Ngày nhuận chọn mốc 01/03
+  ---
+  duration_ms: 0.22079
+  type: 'test'
+  ...
+# Subtest: DEMO-039 Hai phương án năm sinh giữ riêng
+ok 47 - DEMO-039 Hai phương án năm sinh giữ riêng
+  ---
+  duration_ms: 0.282242
+  type: 'test'
+  ...
+# Subtest: DEMO-040 Việt Nam · thời điểm duy nhất
+ok 48 - DEMO-040 Việt Nam · thời điểm duy nhất
+  ---
+  duration_ms: 24.997761
+  type: 'test'
+  ...
+# Subtest: DEMO-041 Berlin · giờ lặp lại cần lựa chọn
+ok 49 - DEMO-041 Berlin · giờ lặp lại cần lựa chọn
+  ---
+  duration_ms: 4.619111
+  type: 'test'
+  ...
+# Subtest: DEMO-042 Berlin · giờ không tồn tại
+ok 50 - DEMO-042 Berlin · giờ không tồn tại
+  ---
+  duration_ms: 3.969191
+  type: 'test'
+  ...
+# Subtest: DEMO-043 New York · giờ lặp lại
+ok 51 - DEMO-043 New York · giờ lặp lại
+  ---
+  duration_ms: 4.040049
+  type: 'test'
+  ...
+# Subtest: DEMO-044 Múi giờ chưa được cung cấp
+ok 52 - DEMO-044 Múi giờ chưa được cung cấp
+  ---
+  duration_ms: 0.115119
+  type: 'test'
+  ...
+# Subtest: DEMO-045 Coverage lấy mẫu số từ registry
+ok 53 - DEMO-045 Coverage lấy mẫu số từ registry
+  ---
+  duration_ms: 0.435842
+  type: 'test'
+  ...
+# Subtest: DEMO-046 Client không được đặt lại trọng số
+ok 54 - DEMO-046 Client không được đặt lại trọng số
+  ---
+  duration_ms: 0.170715
+  type: 'test'
+  ...
+# Subtest: DEMO-047 Tiến độ có thời hạn và quy tắc hủy
+ok 55 - DEMO-047 Tiến độ có thời hạn và quy tắc hủy
+  ---
+  duration_ms: 0.49912
+  type: 'test'
+  ...
+# Subtest: DEMO-048 Không có việc đến hạn trả null
+ok 56 - DEMO-048 Không có việc đến hạn trả null
+  ---
+  duration_ms: 0.097672
+  type: 'test'
+  ...
+# Subtest: DEMO-049 Dòng tiền số nguyên · không dự báo
+ok 57 - DEMO-049 Dòng tiền số nguyên · không dự báo
+  ---
+  duration_ms: 0.370388
+  type: 'test'
+  ...
+# Subtest: DEMO-050 Không cộng lẫn VND và USD
+ok 58 - DEMO-050 Không cộng lẫn VND và USD
+  ---
+  duration_ms: 0.095684
+  type: 'test'
+  ...
+# Subtest: DEMO-051 Đồng nhịp · mô tả cảm nhận không suy nhân quả
+ok 59 - DEMO-051 Đồng nhịp · mô tả cảm nhận không suy nhân quả
+  ---
+  duration_ms: 0.752648
+  type: 'test'
+  ...
+# Subtest: DEMO-052 Ma trận ưu tiên do người dùng lựa chọn
+ok 60 - DEMO-052 Ma trận ưu tiên do người dùng lựa chọn
+  ---
+  duration_ms: 0.33912
+  type: 'test'
+  ...
+# Subtest: DEMO-053 Tiêu chí thiếu không tự chuẩn hóa thành 100
+ok 61 - DEMO-053 Tiêu chí thiếu không tự chuẩn hóa thành 100
+  ---
+  duration_ms: 0.111572
+  type: 'test'
+  ...
+# Subtest: DEMO-054 Biến đổi sáu hào từ dưới lên
+ok 62 - DEMO-054 Biến đổi sáu hào từ dưới lên
+  ---
+  duration_ms: 0.688774
+  type: 'test'
+  ...
+# Subtest: DEMO-055 Adapter giữ chỗ có điều kiện: bazi.full
+ok 63 - DEMO-055 Adapter giữ chỗ có điều kiện: bazi.full
+  ---
+  duration_ms: 0.22748
+  type: 'test'
+  ...
+# Subtest: DEMO-056 Adapter giữ chỗ có điều kiện: ziwei.full
+ok 64 - DEMO-056 Adapter giữ chỗ có điều kiện: ziwei.full
+  ---
+  duration_ms: 0.138164
+  type: 'test'
+  ...
+# Subtest: DEMO-057 Adapter giữ chỗ có điều kiện: nadi.record_lookup
+ok 65 - DEMO-057 Adapter giữ chỗ có điều kiện: nadi.record_lookup
+  ---
+  duration_ms: 1.548955
+  type: 'test'
+  ...
+# Subtest: DEMO-058 Chặn loại suy luận vượt phạm vi: face.personality
+ok 66 - DEMO-058 Chặn loại suy luận vượt phạm vi: face.personality
+  ---
+  duration_ms: 0.121747
+  type: 'test'
+  ...
+# Subtest: DEMO-059 Chặn loại suy luận vượt phạm vi: medical_risk_from_palm
+ok 67 - DEMO-059 Chặn loại suy luận vượt phạm vi: medical_risk_from_palm
+  ---
+  duration_ms: 0.085608
+  type: 'test'
+  ...
+# Subtest: DEMO-060 Quyền đúng phạm vi
+ok 68 - DEMO-060 Quyền đúng phạm vi
+  ---
+  duration_ms: 0.337152
+  type: 'test'
+  ...
+# Subtest: DEMO-061 Khác chủ thể bị chặn
+ok 69 - DEMO-061 Khác chủ thể bị chặn
+  ---
+  duration_ms: 0.194377
+  type: 'test'
+  ...
+# Subtest: DEMO-062 Quyền đã thu hồi bị chặn
+ok 70 - DEMO-062 Quyền đã thu hồi bị chặn
+  ---
+  duration_ms: 0.107591
+  type: 'test'
+  ...
+# Subtest: DEMO-063 Khác mục đích bị chặn
+ok 71 - DEMO-063 Khác mục đích bị chặn
+  ---
+  duration_ms: 0.097205
+  type: 'test'
+  ...
+# Subtest: DEMO-064 Revision cũ bị chặn
+ok 72 - DEMO-064 Revision cũ bị chặn
+  ---
+  duration_ms: 0.098732
+  type: 'test'
+  ...
+# Subtest: DEMO-065 Người chưa đăng nhập bị chặn
+ok 73 - DEMO-065 Người chưa đăng nhập bị chặn
+  ---
+  duration_ms: 0.08733
+  type: 'test'
+  ...
+# Subtest: DEMO-066 Biểu tượng không được có xác suất
+ok 74 - DEMO-066 Biểu tượng không được có xác suất
+  ---
+  duration_ms: 0.593735
+  type: 'test'
+  ...
+# Subtest: DEMO-067 Model ID giả không mở quyền dự báo
+ok 75 - DEMO-067 Model ID giả không mở quyền dự báo
+  ---
+  duration_ms: 0.163554
+  type: 'test'
+  ...
+# Subtest: DEMO-068 Cập nhật đúng phiên bản
+ok 76 - DEMO-068 Cập nhật đúng phiên bản
+  ---
+  duration_ms: 0.186014
+  type: 'test'
+  ...
+# Subtest: DEMO-069 Cập nhật từ phiên bản cũ bị chặn
+ok 77 - DEMO-069 Cập nhật từ phiên bản cũ bị chặn
+  ---
+  duration_ms: 0.222613
+  type: 'test'
+  ...
+# Subtest: DEMO-070 Thanh toán có trạng thái riêng
+ok 78 - DEMO-070 Thanh toán có trạng thái riêng
+  ---
+  duration_ms: 0.343148
+  type: 'test'
+  ...
+# Subtest: DEMO-071 Không đi từ nháp thẳng tới hoàn tất
+ok 79 - DEMO-071 Không đi từ nháp thẳng tới hoàn tất
+  ---
+  duration_ms: 0.126788
+  type: 'test'
+  ...
+# Subtest: DEMO-072 Yêu cầu xóa chuyển sang hạn chế truy cập
+ok 80 - DEMO-072 Yêu cầu xóa chuyển sang hạn chế truy cập
+  ---
+  duration_ms: 0.100018
+  type: 'test'
+  ...
+# Subtest: DEMO-073 Level 1 · bốn lớp và phần còn thiếu
+ok 81 - DEMO-073 Level 1 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.564758
+  type: 'test'
+  ...
+# Subtest: DEMO-074 Level 2 · bốn lớp và phần còn thiếu
+ok 82 - DEMO-074 Level 2 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.171135
+  type: 'test'
+  ...
+# Subtest: DEMO-075 Level 3 · bốn lớp và phần còn thiếu
+ok 83 - DEMO-075 Level 3 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.158876
+  type: 'test'
+  ...
+# Subtest: DEMO-076 Level 4 · bốn lớp và phần còn thiếu
+ok 84 - DEMO-076 Level 4 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.141839
+  type: 'test'
+  ...
+# Subtest: DEMO-077 Level 5 · bốn lớp và phần còn thiếu
+ok 85 - DEMO-077 Level 5 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.131988
+  type: 'test'
+  ...
+# Subtest: DEMO-078 Level 6 · bốn lớp và phần còn thiếu
+ok 86 - DEMO-078 Level 6 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.163647
+  type: 'test'
+  ...
+# Subtest: DEMO-079 Level 7 · bốn lớp và phần còn thiếu
+ok 87 - DEMO-079 Level 7 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.35652
+  type: 'test'
+  ...
+# Subtest: DEMO-080 Level 8 · bốn lớp và phần còn thiếu
+ok 88 - DEMO-080 Level 8 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.14746
+  type: 'test'
+  ...
+# Subtest: DEMO-081 Level 9 · bốn lớp và phần còn thiếu
+ok 89 - DEMO-081 Level 9 · bốn lớp và phần còn thiếu
+  ---
+  duration_ms: 0.394383
+  type: 'test'
+  ...
+# Subtest: DEMO-082 Hồ sơ xuyên suốt: đủ dữ liệu nền
+ok 90 - DEMO-082 Hồ sơ xuyên suốt: đủ dữ liệu nền
+  ---
+  duration_ms: 6.642125
+  type: 'test'
+  ...
+# Subtest: DEMO-083 Hồ sơ thiếu dữ liệu: không điền giờ sinh giả
+ok 91 - DEMO-083 Hồ sơ thiếu dữ liệu: không điền giờ sinh giả
+  ---
+  duration_ms: 0.7846
+  type: 'test'
+  ...
+# Subtest: DEMO-084 Hồ sơ có hai ngày sinh: cần lựa chọn
+ok 92 - DEMO-084 Hồ sơ có hai ngày sinh: cần lựa chọn
+  ---
+  duration_ms: 0.815485
+  type: 'test'
+  ...
+# Subtest: DEMO-085 DAG: chia các đợt tính độc lập
+ok 93 - DEMO-085 DAG: chia các đợt tính độc lập
+  ---
+  duration_ms: 1.067248
+  type: 'test'
+  ...
+# Subtest: DEMO-086 DAG: chặn chu trình
+ok 94 - DEMO-086 DAG: chặn chu trình
+  ---
+  duration_ms: 0.115335
+  type: 'test'
+  ...
+# Subtest: DEMO-087 DAG: thiếu phụ thuộc không tự bỏ qua
+ok 95 - DEMO-087 DAG: thiếu phụ thuộc không tự bỏ qua
+  ---
+  duration_ms: 0.063111
+  type: 'test'
+  ...
+# Subtest: DEMO-088 Impact: đổi ngày chỉ chạy các nút phụ thuộc
+ok 96 - DEMO-088 Impact: đổi ngày chỉ chạy các nút phụ thuộc
+  ---
+  duration_ms: 0.4325
+  type: 'test'
+  ...
+# Subtest: DEMO-089 Cache: khóa theo tenant/chủ thể/mục đích
+ok 97 - DEMO-089 Cache: khóa theo tenant/chủ thể/mục đích
+  ---
+  duration_ms: 0.416363
+  type: 'test'
+  ...
+# Subtest: DEMO-090 Cache: thiếu chủ thể phải từ chối
+ok 98 - DEMO-090 Cache: thiếu chủ thể phải từ chối
+  ---
+  duration_ms: 0.086646
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-001 23 chỉ số · cấu hình rút gọn đơn
+ok 99 - V3-DEMO-001 23 chỉ số · cấu hình rút gọn đơn
+  ---
+  duration_ms: 2.079712
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-002 Giữ số 22 trong tổng ngày sinh
+ok 100 - V3-DEMO-002 Giữ số 22 trong tổng ngày sinh
+  ---
+  duration_ms: 1.085804
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-003 Thêm tên thường dùng
+ok 101 - V3-DEMO-003 Thêm tên thường dùng
+  ---
+  duration_ms: 0.600479
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-004 Thiếu tên riêng: không đoán token đầu
+ok 102 - V3-DEMO-004 Thiếu tên riêng: không đoán token đầu
+  ---
+  duration_ms: 0.639027
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-005 Tên có Y · chính sách unknown
+ok 103 - V3-DEMO-005 Tên có Y · chính sách unknown
+  ---
+  duration_ms: 0.247711
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-006 Tên có Y · chính sách vowel
+ok 104 - V3-DEMO-006 Tên có Y · chính sách vowel
+  ---
+  duration_ms: 0.301713
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-007 Tên có Y · chính sách consonant
+ok 105 - V3-DEMO-007 Tên có Y · chính sách consonant
+  ---
+  duration_ms: 0.273252
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-008 Tên không dấu và giữ tên gốc Unicode
+ok 106 - V3-DEMO-008 Tên không dấu và giữ tên gốc Unicode
+  ---
+  duration_ms: 0.231108
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-009 Văn tự chưa hỗ trợ phải dừng
+ok 107 - V3-DEMO-009 Văn tự chưa hỗ trợ phải dừng
+  ---
+  duration_ms: 0.101623
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-010 Tên có dấu câu cần chính sách riêng
+ok 108 - V3-DEMO-010 Tên có dấu câu cần chính sách riêng
+  ---
+  duration_ms: 0.323665
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-011 Không có ngày thật 31/02
+ok 109 - V3-DEMO-011 Không có ngày thật 31/02
+  ---
+  duration_ms: 0.17194
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-012 Đồng hạng Hidden Passion được giữ
+ok 110 - V3-DEMO-012 Đồng hạng Hidden Passion được giữ
+  ---
+  duration_ms: 0.433293
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-013 Chu kỳ có giá trị nhưng chưa gán tuổi
+ok 111 - V3-DEMO-013 Chu kỳ có giá trị nhưng chưa gán tuổi
+  ---
+  duration_ms: 0.514771
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-014 Phạm vi ba chu kỳ được nhập có nguồn
+ok 112 - V3-DEMO-014 Phạm vi ba chu kỳ được nhập có nguồn
+  ---
+  duration_ms: 0.363963
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-015 Phạm vi chu kỳ thiếu nguồn: từ chối
+ok 113 - V3-DEMO-015 Phạm vi chu kỳ thiếu nguồn: từ chối
+  ---
+  duration_ms: 0.183296
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-016 Không gộp các khoảng tuổi hở
+ok 114 - V3-DEMO-016 Không gộp các khoảng tuổi hở
+  ---
+  duration_ms: 0.191074
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-017 Biến thể Life Path · all_digits
+ok 115 - V3-DEMO-017 Biến thể Life Path · all_digits
+  ---
+  duration_ms: 0.18982
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-018 Biến thể Life Path · reduced_components
+ok 116 - V3-DEMO-018 Biến thể Life Path · reduced_components
+  ---
+  duration_ms: 0.167067
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-019 Không tự gán thời gian thử thách
+ok 117 - V3-DEMO-019 Không tự gán thời gian thử thách
+  ---
+  duration_ms: 0.293108
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-020 Thời gian thử thách theo policy đã chọn
+ok 118 - V3-DEMO-020 Thời gian thử thách theo policy đã chọn
+  ---
+  duration_ms: 0.949593
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-021 So cách viết tên, không chọn tốt/xấu
+ok 119 - V3-DEMO-021 So cách viết tên, không chọn tốt/xấu
+  ---
+  duration_ms: 1.201208
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-022 Hai cách tên cùng ID bị từ chối
+ok 120 - V3-DEMO-022 Hai cách tên cùng ID bị từ chối
+  ---
+  duration_ms: 0.479699
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-023 1990-01-02 · raw_birth_digits
+ok 121 - V3-DEMO-023 1990-01-02 · raw_birth_digits
+  ---
+  duration_ms: 0.902433
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-024 1990-01-02 · four_working_subtractive
+ok 122 - V3-DEMO-024 1990-01-02 · four_working_subtractive
+  ---
+  duration_ms: 0.250232
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-025 1988-08-08 · raw_birth_digits
+ok 123 - V3-DEMO-025 1988-08-08 · raw_birth_digits
+  ---
+  duration_ms: 0.277282
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-026 1988-08-08 · four_working_subtractive
+ok 124 - V3-DEMO-026 1988-08-08 · four_working_subtractive
+  ---
+  duration_ms: 0.643424
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-027 2008-11-02 · raw_birth_digits
+ok 125 - V3-DEMO-027 2008-11-02 · raw_birth_digits
+  ---
+  duration_ms: 0.476022
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-028 2008-11-02 · four_working_subtractive
+ok 126 - V3-DEMO-028 2008-11-02 · four_working_subtractive
+  ---
+  duration_ms: 0.278606
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-029 Ngày một chữ số: không lấy zero đệm
+ok 127 - V3-DEMO-029 Ngày một chữ số: không lấy zero đệm
+  ---
+  duration_ms: 3.125298
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-030 Số phụ âm: không tự lấy trị tuyệt đối
+ok 128 - V3-DEMO-030 Số phụ âm: không tự lấy trị tuyệt đối
+  ---
+  duration_ms: 0.501392
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-031 Chuỗi 4134 · giữ vị trí gốc
+ok 129 - V3-DEMO-031 Chuỗi 4134 · giữ vị trí gốc
+  ---
+  duration_ms: 1.487648
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-032 Chuỗi 4314 · giữ vị trí gốc
+ok 130 - V3-DEMO-032 Chuỗi 4314 · giữ vị trí gốc
+  ---
+  duration_ms: 0.299019
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-033 Chuỗi 876 · giữ vị trí gốc
+ok 131 - V3-DEMO-033 Chuỗi 876 · giữ vị trí gốc
+  ---
+  duration_ms: 0.133456
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-034 Chuỗi 678 · giữ vị trí gốc
+ok 132 - V3-DEMO-034 Chuỗi 678 · giữ vị trí gốc
+  ---
+  duration_ms: 0.128568
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-035 Chuỗi 103 · giữ vị trí gốc
+ok 133 - V3-DEMO-035 Chuỗi 103 · giữ vị trí gốc
+  ---
+  duration_ms: 0.22601
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-036 Chuỗi 153 · giữ vị trí gốc
+ok 134 - V3-DEMO-036 Chuỗi 153 · giữ vị trí gốc
+  ---
+  duration_ms: 0.293215
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-037 Chuỗi 8553 · giữ vị trí gốc
+ok 135 - V3-DEMO-037 Chuỗi 8553 · giữ vị trí gốc
+  ---
+  duration_ms: 0.496305
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-038 Chuỗi 1001 · giữ vị trí gốc
+ok 136 - V3-DEMO-038 Chuỗi 1001 · giữ vị trí gốc
+  ---
+  duration_ms: 0.129414
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-039 Chuỗi 050 · giữ vị trí gốc
+ok 137 - V3-DEMO-039 Chuỗi 050 · giữ vị trí gốc
+  ---
+  duration_ms: 0.09228
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-040 Chuỗi 11111 · giữ vị trí gốc
+ok 138 - V3-DEMO-040 Chuỗi 11111 · giữ vị trí gốc
+  ---
+  duration_ms: 0.265358
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-041 Chuỗi 222 · giữ vị trí gốc
+ok 139 - V3-DEMO-041 Chuỗi 222 · giữ vị trí gốc
+  ---
+  duration_ms: 0.430099
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-042 Chuỗi 5555 · giữ vị trí gốc
+ok 140 - V3-DEMO-042 Chuỗi 5555 · giữ vị trí gốc
+  ---
+  duration_ms: 0.115665
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-043 Chuỗi 8888 · giữ vị trí gốc
+ok 141 - V3-DEMO-043 Chuỗi 8888 · giữ vị trí gốc
+  ---
+  duration_ms: 0.091816
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-044 Chuỗi 258 · giữ vị trí gốc
+ok 142 - V3-DEMO-044 Chuỗi 258 · giữ vị trí gốc
+  ---
+  duration_ms: 0.077812
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-045 Chuỗi 0943876231 · giữ vị trí gốc
+ok 143 - V3-DEMO-045 Chuỗi 0943876231 · giữ vị trí gốc
+  ---
+  duration_ms: 0.126241
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-046 Chuỗi 0916876231 · giữ vị trí gốc
+ok 144 - V3-DEMO-046 Chuỗi 0916876231 · giữ vị trí gốc
+  ---
+  duration_ms: 0.09247
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-047 Cầu chẩn đoán một ký tự · 103
+ok 145 - V3-DEMO-047 Cầu chẩn đoán một ký tự · 103
+  ---
+  duration_ms: 0.212132
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-048 Cầu chẩn đoán một ký tự · 153
+ok 146 - V3-DEMO-048 Cầu chẩn đoán một ký tự · 153
+  ---
+  duration_ms: 0.117187
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-049 Cầu chẩn đoán một ký tự · 8553
+ok 147 - V3-DEMO-049 Cầu chẩn đoán một ký tự · 8553
+  ---
+  duration_ms: 0.268619
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-050 Cầu chẩn đoán một ký tự · 1001
+ok 148 - V3-DEMO-050 Cầu chẩn đoán một ký tự · 1001
+  ---
+  duration_ms: 0.138994
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-051 Cầu chẩn đoán một ký tự · 3501
+ok 149 - V3-DEMO-051 Cầu chẩn đoán một ký tự · 3501
+  ---
+  duration_ms: 0.092769
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-052 Cầu chẩn đoán một ký tự · 859
+ok 150 - V3-DEMO-052 Cầu chẩn đoán một ký tự · 859
+  ---
+  duration_ms: 0.081735
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-053 Cầu chẩn đoán một ký tự · 856
+ok 151 - V3-DEMO-053 Cầu chẩn đoán một ký tự · 856
+  ---
+  duration_ms: 0.074868
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-054 Hai cách ghi cùng thuê bao
+ok 152 - V3-DEMO-054 Hai cách ghi cùng thuê bao
+  ---
+  duration_ms: 0.200728
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-055 Định danh chỉ nhận suffix bốn chữ số
+ok 153 - V3-DEMO-055 Định danh chỉ nhận suffix bốn chữ số
+  ---
+  duration_ms: 0.168818
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-056 Số máy lẻ không bị trích nhầm
+ok 154 - V3-DEMO-056 Số máy lẻ không bị trích nhầm
+  ---
+  duration_ms: 0.071153
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-057 So hai dãy cùng thống kê khác thứ tự
+ok 155 - V3-DEMO-057 So hai dãy cùng thống kê khác thứ tự
+  ---
+  duration_ms: 0.546728
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-058 Đuôi 0000 · giữ bảng nguồn
+ok 156 - V3-DEMO-058 Đuôi 0000 · giữ bảng nguồn
+  ---
+  duration_ms: 0.278404
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-059 Đuôi 0080 · giữ bảng nguồn
+ok 157 - V3-DEMO-059 Đuôi 0080 · giữ bảng nguồn
+  ---
+  duration_ms: 0.102372
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-060 Đuôi 6231 · giữ bảng nguồn
+ok 158 - V3-DEMO-060 Đuôi 6231 · giữ bảng nguồn
+  ---
+  duration_ms: 0.23097
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-061 Đuôi 1986 · giữ bảng nguồn
+ok 159 - V3-DEMO-061 Đuôi 1986 · giữ bảng nguồn
+  ---
+  duration_ms: 0.061594
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-062 Đuôi 3468 · giữ bảng nguồn
+ok 160 - V3-DEMO-062 Đuôi 3468 · giữ bảng nguồn
+  ---
+  duration_ms: 0.05108
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-063 100 khoảng tuổi không tự có sự kiện
+ok 161 - V3-DEMO-063 100 khoảng tuổi không tự có sự kiện
+  ---
+  duration_ms: 0.896516
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-064 Sự kiện tự khai và kế hoạch tách riêng
+ok 162 - V3-DEMO-064 Sự kiện tự khai và kế hoạch tách riêng
+  ---
+  duration_ms: 0.93613
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-065 Không ghi tương lai thành lịch sử
+ok 163 - V3-DEMO-065 Không ghi tương lai thành lịch sử
+  ---
+  duration_ms: 0.483225
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-066 Không ghi trước khi sinh thành lịch sử
+ok 164 - V3-DEMO-066 Không ghi trước khi sinh thành lịch sử
+  ---
+  duration_ms: 0.671109
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-067 Tên miền lĩnh vực sai: từ chối
+ok 165 - V3-DEMO-067 Tên miền lĩnh vực sai: từ chối
+  ---
+  duration_ms: 0.913842
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-068 Sinh 29/02 · chính sách feb28
+ok 166 - V3-DEMO-068 Sinh 29/02 · chính sách feb28
+  ---
+  duration_ms: 0.608529
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-069 Sinh 29/02 · chính sách mar01
+ok 167 - V3-DEMO-069 Sinh 29/02 · chính sách mar01
+  ---
+  duration_ms: 1.650196
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-070 Chỉ có năm sinh chưa đủ tạo ngày
+ok 168 - V3-DEMO-070 Chỉ có năm sinh chưa đủ tạo ngày
+  ---
+  duration_ms: 0.074681
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-071 Một hồ sơ dùng ba mô-đun
+ok 169 - V3-DEMO-071 Một hồ sơ dùng ba mô-đun
+  ---
+  duration_ms: 1.569334
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-072 Tên–số–dòng đời chung kết quả
+ok 170 - V3-DEMO-072 Tên–số–dòng đời chung kết quả
+  ---
+  duration_ms: 0.992116
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-073 Hai ma trận không được cộng thành confidence
+ok 171 - V3-DEMO-073 Hai ma trận không được cộng thành confidence
+  ---
+  duration_ms: 0.215501
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-074 Thiếu ngày sinh: ghi phần thiếu, không bịa
+ok 172 - V3-DEMO-074 Thiếu ngày sinh: ghi phần thiếu, không bịa
+  ---
+  duration_ms: 0.094057
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-075 Không chạy phương pháp chưa có
+ok 173 - V3-DEMO-075 Không chạy phương pháp chưa có
+  ---
+  duration_ms: 0.092058
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-076 Chọn lặp mô-đun phải báo lỗi
+ok 174 - V3-DEMO-076 Chọn lặp mô-đun phải báo lỗi
+  ---
+  duration_ms: 0.054893
+  type: 'test'
+  ...
+# Subtest: V3-DEMO-077 Không tự tạo sứ mệnh khi thiếu mục tiêu
+ok 175 - V3-DEMO-077 Không tự tạo sứ mệnh khi thiếu mục tiêu
+  ---
+  duration_ms: 0.334631
+  type: 'test'
+  ...
+# Subtest: 64 pair mappings unique and exhaustive over supported digits
+ok 176 - 64 pair mappings unique and exhaustive over supported digits
+  ---
+  duration_ms: 2.68166
+  type: 'test'
+  ...
+# Subtest: 512 three-digit sequences preserve pair direction and transition coverage
+ok 177 - 512 three-digit sequences preserve pair direction and transition coverage
+  ---
+  duration_ms: 45.333971
+  type: 'test'
+  ...
+# Subtest: All 10000 tail80 inputs have exact remainder and 125 entries per code
+ok 178 - All 10000 tail80 inputs have exact remainder and 125 entries per code
+  ---
+  duration_ms: 93.681262
+  type: 'test'
+  ...
+# Subtest: No replacement of raw pairs by single-modifier diagnostics
+ok 179 - No replacement of raw pairs by single-modifier diagnostics
+  ---
+  duration_ms: 0.987396
+  type: 'test'
+  ...
+# Subtest: Repeated modifiers 55 remain unresolved, not collapsed to 83
+ok 180 - Repeated modifiers 55 remain unresolved, not collapsed to 83
+  ---
+  duration_ms: 0.319211
+  type: 'test'
+  ...
+# Subtest: Phone international and domestic equal calculations, raw trace separate
+ok 181 - Phone international and domestic equal calculations, raw trace separate
+  ---
+  duration_ms: 0.571955
+  type: 'test'
+  ...
+# Subtest: Source disagreement 876 is recorded, mapping is DN to SK
+ok 182 - Source disagreement 876 is recorded, mapping is DN to SK
+  ---
+  duration_ms: 0.203653
+  type: 'test'
+  ...
+# Subtest: Y unknown does not erase expression; vowel and consonant totals unresolved
+ok 183 - Y unknown does not erase expression; vowel and consonant totals unresolved
+  ---
+  duration_ms: 0.225178
+  type: 'test'
+  ...
+# Subtest: NFC and NFD equivalent name calculations while original preserved
+ok 184 - NFC and NFD equivalent name calculations while original preserved
+  ---
+  duration_ms: 0.34445
+  type: 'test'
+  ...
+# Subtest: Given name explicit; unsupported script not guessed
+ok 185 - Given name explicit; unsupported script not guessed
+  ---
+  duration_ms: 0.173526
+  type: 'test'
+  ...
+# Subtest: Three pinnacle transitions cover integer ages without overlap or gap
+ok 186 - Three pinnacle transitions cover integer ages without overlap or gap
+  ---
+  duration_ms: 0.476768
+  type: 'test'
+  ...
+# Subtest: Pinnacle and period spans are not silently treated as same
+ok 187 - Pinnacle and period spans are not silently treated as same
+  ---
+  duration_ms: 0.171483
+  type: 'test'
+  ...
+# Subtest: Known raw vs working matrix difference stays explicit
+ok 188 - Known raw vs working matrix difference stays explicit
+  ---
+  duration_ms: 0.455112
+  type: 'test'
+  ...
+# Subtest: Lifetime intervals contiguous and empty by default; not event prediction
+ok 189 - Lifetime intervals contiguous and empty by default; not event prediction
+  ---
+  duration_ms: 0.574875
+  type: 'test'
+  ...
+# Subtest: One source event is not replicated into many years
+ok 190 - One source event is not replicated into many years
+  ---
+  duration_ms: 1.445098
+  type: 'test'
+  ...
+# Subtest: All-in-one has no LCI or personal fate score
+ok 191 - All-in-one has no LCI or personal fate score
+  ---
+  duration_ms: 1.512022
+  type: 'test'
+  ...
+# Subtest: Deterministic results produce reproducible digest, not a public identity
+ok 192 - Deterministic results produce reproducible digest, not a public identity
+  ---
+  duration_ms: 0.826547
+  type: 'test'
+  ...
+1..192
+# tests 192
+# suites 0
+# pass 192
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 441.889305

@@ -1,0 +1,605 @@
+[
+  {
+    "formula_id": "LCF-01",
+    "demo_method": "tail80",
+    "name_vi": "Mã đuôi 80",
+    "formula": "r = N mod 80; q = floor(N / 80)",
+    "input_contract": "Chuỗi đúng bốn chữ số ASCII và chính sách zero_policy.",
+    "output_meaning": "Thương, số dư và mã tra trong bảng; không phải xác suất.",
+    "edge_policy": "Giữ nguyên số 0 đầu; số dư 0 mặc định chưa ánh xạ. Chỉ dùng as80 khi được chọn rõ; không tính qua số thực.",
+    "implementation_path": "06_DEMO_LAB/src/numbers.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M06"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-001",
+      "DEMO-002",
+      "DEMO-003",
+      "DEMO-004",
+      "DEMO-005",
+      "DEMO-006",
+      "DEMO-007",
+      "DEMO-008",
+      "DEMO-009"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-02",
+    "demo_method": "pairs",
+    "name_vi": "Cặp số chồng lấn",
+    "formula": "p_i = (d_i, d_(i+1)), với i từ 0 đến n−2",
+    "input_contract": "Chuỗi 2–32 chữ số; chọn strict hoặc bridge5_diagnostic.",
+    "output_meaning": "Nhóm của từng cặp, phần chưa xử lý và độ bao phủ phép phân loại.",
+    "edge_policy": "Trong strict, cặp có 0 hoặc 5 chưa được gán nhóm. Cặp 55 không mặc nhiên là Phục vị.",
+    "implementation_path": "06_DEMO_LAB/src/numbers.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M07"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-010",
+      "DEMO-011",
+      "DEMO-012",
+      "DEMO-013",
+      "DEMO-014",
+      "DEMO-015",
+      "DEMO-016"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-03",
+    "demo_method": "digit_matrix",
+    "name_vi": "Ma trận chữ số thô",
+    "formula": "count(k) = Σ I(d_i = k); tổng đường = Σ count(k)",
+    "input_contract": "Chuỗi chữ số gốc theo phạm vi của công cụ.",
+    "output_meaning": "Số lần xuất hiện của các chữ số và tổng tám đường; không đo năng lực con người.",
+    "edge_policy": "Không thêm các số làm việc khi chưa có quy tắc nguồn. Số 0 được ghi riêng.",
+    "implementation_path": "06_DEMO_LAB/src/numbers.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M08"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-017"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-04",
+    "demo_method": "sequence",
+    "name_vi": "Đặc trưng dãy số",
+    "formula": "Tổng chữ số; căn rút gọn; nhóm lặp; tính đối xứng",
+    "input_contract": "Chuỗi chữ số với giới hạn độ dài được kiểm tra.",
+    "output_meaning": "Các thuộc tính của chuỗi, không phải điểm trí nhớ hoặc độ hợp mệnh.",
+    "edge_policy": "Chuỗi đối xứng không tự chứng minh dễ nhớ đối với người sử dụng.",
+    "implementation_path": "06_DEMO_LAB/src/numbers.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-018"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-05",
+    "demo_method": "name",
+    "name_vi": "Quy đổi tên Latin có truy vết",
+    "formula": "value(c) = ((ord(c) − 65) mod 9) + 1, với c thuộc A–Z",
+    "input_contract": "Tên Việt hoặc Latin; cấu hình chữ Y và cách giữ số đặc biệt.",
+    "output_meaning": "Tổng từng từ, tổng tên, nguyên âm, phụ âm và chuỗi bước tính.",
+    "edge_policy": "Giữ tên gốc; chuẩn hóa NFC; quy đổi Đ thành D ở chuỗi dẫn xuất. Từ chối văn tự chưa được hỗ trợ.",
+    "implementation_path": "06_DEMO_LAB/src/names.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M02",
+      "M03"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-021",
+      "DEMO-022",
+      "DEMO-023",
+      "DEMO-024",
+      "DEMO-025",
+      "DEMO-026",
+      "DEMO-027",
+      "DEMO-028",
+      "DEMO-029"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-06",
+    "demo_method": "timeline",
+    "name_vi": "Khoảng tuổi 0–99",
+    "formula": "[anniv(B, a), anniv(B, a+1))",
+    "input_contract": "Ngày sinh ISO, ngày đối chiếu as_of và chính sách ngày nhuận.",
+    "output_meaning": "100 khoảng tuổi; danh sách sự kiện mặc định rỗng.",
+    "edge_policy": "Ngày 29/02 dùng chính sách feb28 hoặc mar01 đã chọn rõ. Không suy đoán tuổi thọ.",
+    "implementation_path": "06_DEMO_LAB/src/time.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M09"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-037",
+      "DEMO-038"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-07",
+    "demo_method": "birth",
+    "name_vi": "Quy đổi ngày sinh",
+    "formula": "all_digits hoặc reduced_components theo cấu hình",
+    "input_contract": "Ngày sinh ISO, biến thể cộng và quy tắc rút gọn.",
+    "output_meaning": "Tổng trung gian và từng bước rút gọn theo đúng cấu hình.",
+    "edge_policy": "Không trộn cách giữ 11, 22, 33 giữa các phương pháp.",
+    "implementation_path": "06_DEMO_LAB/src/time.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M04"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-030",
+      "DEMO-031",
+      "DEMO-032",
+      "DEMO-033",
+      "DEMO-034"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-08",
+    "demo_method": "cycle",
+    "name_vi": "Chu kỳ năm và tháng biểu tượng",
+    "formula": "r(r(ngày) + r(tháng) + r(tổng chữ số năm))",
+    "input_contract": "Ngày sinh; năm xét; quy ước năm dương lịch hoặc từ sinh nhật; as_of khi cần.",
+    "output_meaning": "Mã năm hoặc tháng theo quy ước, không phải sự kiện được dự báo.",
+    "edge_policy": "Giữ rõ chính sách chuyển năm và không gọi mã số là năm cưới, năm giàu hoặc năm tai họa.",
+    "implementation_path": "06_DEMO_LAB/src/time.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M05"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-035",
+      "DEMO-036"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-09",
+    "demo_method": "time",
+    "name_vi": "Thời điểm UTC ứng viên từ giờ địa phương",
+    "formula": "Liệt kê độ lệch múi giờ; đối chiếu ngược về giờ địa phương",
+    "input_contract": "Ngày, giờ địa phương và định danh múi giờ IANA.",
+    "output_meaning": "Không có, một hoặc hai thời điểm UTC ứng viên trong các trường hợp minh họa.",
+    "edge_policy": "Phạm vi demo 1900–2100; ghi phiên bản Intl/ICU. Không thay thư viện lịch pháp hoặc thiên văn đầy đủ.",
+    "implementation_path": "06_DEMO_LAB/src/time.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M01"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-040",
+      "DEMO-041",
+      "DEMO-042",
+      "DEMO-043",
+      "DEMO-044"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-10",
+    "demo_method": "hypotheses",
+    "name_vi": "So sánh giả thuyết ngày sinh",
+    "formula": "Tính độc lập cho từng giả thuyết, không trộn đầu vào",
+    "input_contract": "Từ hai đến năm phương án có ID và ngày ISO hợp lệ.",
+    "output_meaning": "Kết quả riêng cho mỗi phương án; selected mặc định là null.",
+    "edge_policy": "Không lấy trung bình ngày sinh và không tự chọn phương án vì lời diễn giải hấp dẫn hơn.",
+    "implementation_path": "06_DEMO_LAB/src/time.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M01"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-039"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-11",
+    "demo_method": "coverage",
+    "name_vi": "Độ đầy đủ đầu vào",
+    "formula": "Σ(trọng số máy chủ × có dữ liệu) / Σ(trọng số máy chủ)",
+    "input_contract": "Mã phiên bản sản phẩm và danh sách trường đầu vào hợp lệ.",
+    "output_meaning": "Tỷ lệ dữ liệu đã có trong phạm vi sản phẩm; không phải độ chính xác về cuộc đời.",
+    "edge_policy": "Mẫu số do máy chủ khóa; điểm và trọng số tự gửi từ client bị từ chối.",
+    "implementation_path": "06_DEMO_LAB/src/metrics.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-045",
+      "DEMO-046"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-12",
+    "demo_method": "actions",
+    "name_vi": "Tiến độ công việc đến hạn",
+    "formula": "Số việc hoàn thành đến hạn / số việc không hủy đến hạn trong cửa sổ",
+    "input_contract": "Danh sách công việc và khoảng ngày đối chiếu.",
+    "output_meaning": "Số việc đủ điều kiện, số hoàn thành và tỷ lệ nếu mẫu số khác 0.",
+    "edge_policy": "Loại việc hủy và việc ngoài cửa sổ; mẫu số 0 trả null, không giả thành 100%.",
+    "implementation_path": "06_DEMO_LAB/src/metrics.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M10"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-047",
+      "DEMO-048"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-13",
+    "demo_method": "cashflow",
+    "name_vi": "Dòng tiền theo đơn vị nhỏ nhất",
+    "formula": "Tổng tiền vào − tổng tiền ra, tách theo từng loại tiền",
+    "input_contract": "Mã tiền tệ và các số tiền ở dạng chuỗi số nguyên của đơn vị nhỏ nhất.",
+    "output_meaning": "Tổng thu, tổng chi và chênh lệch, được trả dưới dạng chuỗi.",
+    "edge_policy": "Dùng BigInt; không cộng lẫn các loại tiền hoặc tự quy đổi tỷ giá. Không dự báo lợi nhuận.",
+    "implementation_path": "06_DEMO_LAB/src/metrics.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [
+      "M13"
+    ],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-049",
+      "DEMO-050"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-14",
+    "demo_method": "resonance",
+    "name_vi": "Tổng hợp nhật ký tự khai",
+    "formula": "Số quan sát, trung bình và trung vị theo từng trường",
+    "input_contract": "Ngày, mã trường môi trường và điểm tự khai từ 0 đến 10.",
+    "output_meaning": "Thống kê mô tả những quan sát người dùng đã nhập.",
+    "edge_policy": "Không suy ra quan hệ nhân quả, hiệu quả điều trị hoặc thang đo sinh học.",
+    "implementation_path": "06_DEMO_LAB/src/metrics.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-051"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-15",
+    "demo_method": "preference",
+    "name_vi": "So sánh tiêu chí do người dùng chọn",
+    "formula": "Σ(trọng số × điểm tiêu chí) / 100",
+    "input_contract": "Bộ tiêu chí có tổng trọng số 100 và điểm của từng phương án.",
+    "output_meaning": "Điểm ưu tiên có trọng số và phần dữ liệu còn thiếu.",
+    "edge_policy": "Thiếu dữ liệu chặn xếp hạng toàn bộ; không tự chuẩn hóa lại mẫu số để làm đẹp kết quả.",
+    "implementation_path": "06_DEMO_LAB/src/metrics.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-052",
+      "DEMO-053"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "LCF-16",
+    "demo_method": "hexagram",
+    "name_vi": "Biến đổi sáu hào",
+    "formula": "Quẻ biến = quẻ gốc XOR mặt nạ hào động",
+    "input_contract": "Sáu bit từ dưới lên; 0 là âm, 1 là dương; các hào động 1–6 không trùng.",
+    "output_meaning": "Cấu trúc quẻ gốc, quẻ biến và chỉ số nhị phân.",
+    "edge_policy": "Chỉ số nhị phân không phải thứ tự Văn Vương. Demo không kèm tên quẻ hoặc lời quẻ chưa được khóa nguồn.",
+    "implementation_path": "06_DEMO_LAB/src/symbolic.mjs",
+    "status": "REFERENCE_IMPLEMENTED_NOT_PRODUCTION",
+    "source_method_ids": [],
+    "units": "Đơn vị xác định theo từng đầu ra; không có đơn vị năng lượng huyền học",
+    "time_precision": "Khai báo trong cấu hình nếu phương pháp cần",
+    "score_policy": "null, trừ đại lượng dẫn xuất có định nghĩa",
+    "probability_policy": "null; không tạo xác suất biến cố cuộc đời",
+    "demo_ids": [
+      "DEMO-054"
+    ],
+    "required_production_evidence": [
+      "method_release_approval",
+      "authorized_API_integration",
+      "staging_contract_and_security_tests"
+    ],
+    "crosswalk_scope": "Phần triển khai tham chiếu; không tuyên bố toàn bộ phương pháp nền đã được phát hành."
+  },
+  {
+    "formula_id": "SPEC-BAZI_PILLARS",
+    "name_vi": "Bát tự bốn trụ",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Tiết khí, múi giờ lịch sử, ranh giới ngày và chính sách trường phái.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-BAZI_STRENGTH",
+    "name_vi": "Vượng–suy/dụng thần",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Quy tắc nguồn, ví dụ độc lập và cách xử lý khác biệt trường phái.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-ZIWEI_PLACEMENT",
+    "name_vi": "Tử Vi an sao",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Lịch âm, tháng nhuận, quy tắc an Mệnh, cục và hệ sao.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-ZIWEI_CYCLES",
+    "name_vi": "Đại hạn/tiểu hạn",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Cách tính tuổi và chính sách chu kỳ theo trường phái.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-WESTERN_ASTRO",
+    "name_vi": "Thiên thể và hệ nhà",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Giấy phép và phiên bản ephemeris; múi giờ; cấu hình hệ nhà.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-JYOTISH_DASHA",
+    "name_vi": "Jyotish và daśā",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Ayanāṃśa, nakshatra và phiên bản các quy tắc daśā.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-QIMEN_BOARD",
+    "name_vi": "Kỳ Môn lập bàn",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Quy tắc lập cục, tiết khí và nguồn tham chiếu.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-LIUYAO_RELATIONS",
+    "name_vi": "Lục Hào",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Nguồn lấy quẻ, quy tắc lục thân, Thế–Ứng và ngày tháng.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-NAME_NON_LATIN",
+    "name_vi": "Tên ngoài Latin",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Văn tự gốc, cách đọc, bảng quy đổi và người rà soát bản ngữ.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-NADI_LIBRARY",
+    "name_vi": "Kho Nadi",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Bản thảo có quyền sử dụng; không giả định đã có mọi cuộc đời.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-IMAGE_MEASURE",
+    "name_vi": "Quan sát hình thái",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Quyền xử lý ảnh, điều kiện chụp và hiệu chỉnh; không suy nhân cách từ hình thái.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-VOICE_MEASURE",
+    "name_vi": "Quan sát giọng nói",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Quyền xử lý âm thanh, microphone và hiệu chỉnh tín hiệu; không suy đạo đức.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-BEHAVIOR_INSTRUMENT",
+    "name_vi": "Thang hành vi phù hợp",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Quyền sử dụng, bản dịch, cách chấm và đánh giá phạm vi áp dụng.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-OUTCOME_PROBABILITY",
+    "name_vi": "Xác suất mục tiêu cụ thể",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Mục tiêu dự báo, thời hạn, nhóm áp dụng, hiệu chỉnh và đánh giá độc lập.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-RLS_POSTGRES",
+    "name_vi": "Phân quyền cơ sở dữ liệu thực tế",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Tài khoản runtime, chính sách và kiểm thử từ chối truy cập trên staging.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  },
+  {
+    "formula_id": "SPEC-OUTBOX_DURABLE",
+    "name_vi": "Idempotency bền vững",
+    "status": "RESEARCH_OR_IMPLEMENTATION_PENDING",
+    "production_release": false,
+    "missing": "Giao dịch cơ sở dữ liệu, ràng buộc duy nhất, lease và đối soát tác vụ.",
+    "output_when_unavailable": "METHOD_NOT_RELEASED or scoped partial; never invented predictions",
+    "demo_ids": []
+  }
+]

@@ -1,5 +1,9 @@
 # Life Code OS — Trạng thái tổng hợp & tỷ lệ hoàn thành
 
+**Bổ sung 2026-10-29:** đã hợp nhất V2/V3 với bộ kế hoạch local r2 tại [tổng kế hoạch hiện tại](docs/upgrade/2026-10-29/MASTER_PLAN.md), kèm [báo cáo và bàn giao DEV](docs/upgrade/2026-10-29/INTEGRATION_AND_DEV_HANDOFF_REPORT.md). 316 bản ghi kế hoạch và 407 dòng trace là chỉ mục phạm vi, không phải phần trăm hoàn thành. Test reference local, app worktree, staging/deployment/runtime/restore và approval được tách riêng. Các thay đổi app sẵn có được giữ nguyên. Chưa có receipt hiện hành đủ để bỏ HOLD phát hành.
+
+**Bổ sung 2026-10-20 — phạm vi trạng thái hiện hành:** các phần trăm và nhãn hoàn thành phía dưới là snapshot lịch sử 31/03, không dùng để chứng nhận hiện trạng. Kế hoạch mới, source, local worktree, test reference, deployment, runtime, operations và approval có receipt riêng tại [bộ nâng cấp](docs/upgrade/README.md). Release giữ HOLD; không gán phần trăm mới khi chưa có denominator và maturity transition được duyệt. Nội dung lịch sử được giữ nguyên.
+
 **Cập nhật:** 2026-03-31  
 **Repo:** `https://github.com/tranhatam-collab/Life-Code-OS`  
 **Site:** `https://lifecode.iai.one`  

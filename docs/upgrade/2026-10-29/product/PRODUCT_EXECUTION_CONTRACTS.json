@@ -1,0 +1,4781 @@
+[
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L1",
+    "catalog_name_vi": "Tín hiệu nền",
+    "launch_train": "T2",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Product",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-07",
+      "UI-09",
+      "UI-11",
+      "UI-21",
+      "UI-22",
+      "UI-23",
+      "UI-24",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "createSubject",
+      "overview",
+      "newProfileVersion",
+      "analyze",
+      "analysisStatus",
+      "analysisResults",
+      "reports",
+      "report",
+      "exportReport"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-04",
+      "DEMO-05"
+    ],
+    "estimate_low_person_days_non_additive": 25,
+    "estimate_high_person_days_non_additive": 50,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-06",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "unauthorized_disclosure",
+      "deterministic_mismatch",
+      "unsupported_high_risk_claim"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L1",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L1",
+        "family": "personal_report",
+        "level": 1,
+        "name": "Self Signal",
+        "name_vi": "Tín hiệu nền",
+        "phase": "C",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Mục tiêu, tên/ngày sinh theo phương pháp chọn",
+        "output_contract": "Kiểm tra nguồn, tính minh bạch, chủ đề tự quan sát",
+        "action": "Kế hoạch 30 ngày",
+        "method_candidates": [
+          "M01",
+          "M02",
+          "M03",
+          "M04"
+        ],
+        "page_budget": {
+          "min": 30,
+          "max": 50,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L1",
+      "method_candidates_register62": [
+        "NUM23",
+        "TAIL80",
+        "BCLC64",
+        "NAME-UNICODE"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L2",
+    "catalog_name_vi": "Cấu trúc nội tâm",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-20",
+      "UI-21",
+      "UI-23",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "questionnaireResponse",
+      "analyze",
+      "analysisResults",
+      "reports",
+      "report",
+      "reportRevisions"
+    ],
+    "demo_flow_ids": [
+      "DEMO-04",
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 18,
+    "estimate_high_person_days_non_additive": 35,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "inferred_motive",
+      "hidden_contradiction",
+      "filler_output"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L2",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L2",
+        "family": "personal_report",
+        "level": 2,
+        "name": "Inner Architecture",
+        "name_vi": "Cấu trúc nội tâm",
+        "phase": "E",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Vai trò, giá trị, áp lực, tình huống tự thuật",
+        "output_contract": "Mâu thuẫn nhu cầu và lựa chọn được xác nhận",
+        "action": "Thử nghiệm 90 ngày",
+        "method_candidates": [
+          "M10",
+          "M11"
+        ],
+        "page_budget": {
+          "min": 40,
+          "max": 60,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L2",
+      "method_candidates_register62": [
+        "VALUES-INTEREST",
+        "HNH-REFLECTION"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L3",
+    "catalog_name_vi": "Cách hành động",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-15",
+      "UI-18",
+      "UI-20",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "observation",
+      "checkin",
+      "questionnaireResponse",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 20,
+    "estimate_high_person_days_non_additive": 40,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "clinical_label",
+      "pattern_without_observations",
+      "causal_overclaim"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L3",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L3",
+        "family": "personal_report",
+        "level": 3,
+        "name": "Behavior Code",
+        "name_vi": "Cách hành động",
+        "phase": "E",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Nhật ký, bảng hỏi phù hợp, các lần thực hiện",
+        "output_contract": "Mô thức trong bối cảnh, không chẩn đoán",
+        "action": "Kế hoạch thay đổi có theo dõi",
+        "method_candidates": [
+          "M10",
+          "M11",
+          "M12"
+        ],
+        "page_budget": {
+          "min": 50,
+          "max": 70,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L3",
+      "method_candidates_register62": [
+        "IPIP",
+        "LIFE-DESIGN",
+        "RESONANCE"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L4",
+    "catalog_name_vi": "Công việc và nguồn lực",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Finance-scope reviewer",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-17",
+      "UI-19",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "createPlan",
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 22,
+    "estimate_high_person_days_non_additive": 45,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "investment_or_credit_advice",
+      "employment_decision",
+      "unstated_assumption"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L4",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L4",
+        "family": "personal_report",
+        "level": 4,
+        "name": "Work & Wealth Code",
+        "name_vi": "Công việc và nguồn lực",
+        "phase": "E",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Nghề, kỹ năng, nguồn lực, thu–chi tự nguyện",
+        "output_contract": "Phương án vai trò, nguồn lực, kịch bản",
+        "action": "Kế hoạch công việc và ngân sách",
+        "method_candidates": [
+          "M12",
+          "M13"
+        ],
+        "page_budget": {
+          "min": 50,
+          "max": 80,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L4",
+      "method_candidates_register62": [
+        "CAREER",
+        "CASHFLOW"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L5",
+    "catalog_name_vi": "Quan hệ và ranh giới",
+    "launch_train": "T4",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "consenting_adults",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "grant",
+      "revokeGrant",
+      "report",
+      "reportRevisions"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 25,
+    "estimate_high_person_days_non_additive": 50,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "cross_subject_disclosure",
+      "loyalty_or_destiny_claim",
+      "coerced_conclusion"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L5",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L5",
+        "family": "personal_report",
+        "level": 5,
+        "name": "Relationship Field",
+        "name_vi": "Quan hệ và ranh giới",
+        "phase": "E",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Nhu cầu, tự thuật và grant từng bên",
+        "output_contract": "Bản đồ giao tiếp, trách nhiệm, khác biệt",
+        "action": "Kế hoạch đối thoại",
+        "method_candidates": [
+          "M11",
+          "M14"
+        ],
+        "page_budget": {
+          "min": 50,
+          "max": 80,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L5",
+      "method_candidates_register62": [
+        "RELATIONSHIPS",
+        "HNH-REFLECTION"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L6",
+    "catalog_name_vi": "Dòng thời gian",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-19",
+      "UI-21",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "report",
+      "reportRevisions"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 25,
+    "estimate_high_person_days_non_additive": 55,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "invented_event",
+      "lifespan_prediction",
+      "merged_symbolic_fact"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L6",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L6",
+        "family": "personal_report",
+        "level": 6,
+        "name": "Life Timeline",
+        "name_vi": "Dòng thời gian",
+        "phase": "F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Sự kiện có ngày/nguồn, giả thuyết, mục tiêu",
+        "output_contract": "Lịch sử, chu kỳ biểu tượng, kế hoạch, dự báo tách biệt",
+        "action": "Hành động 12 tháng, kịch bản dài hạn",
+        "method_candidates": [
+          "M09",
+          "M10"
+        ],
+        "page_budget": {
+          "min": 60,
+          "max": 100,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L6",
+      "method_candidates_register62": [
+        "NUM-LIFE-CYCLES",
+        "LIFE-DESIGN"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L7",
+    "catalog_name_vi": "Cơ thể và môi trường",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F_REVIEW",
+    "eligible_subject": "adult_self_dedicated_review",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Specialist",
+      "Privacy",
+      "Legal",
+      "Method",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q15",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-15",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "observation",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 35,
+    "estimate_high_person_days_non_additive": 80,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "medical_inference",
+      "unapproved_body_or_image_input",
+      "missing_specialist_gate"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L7",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L7",
+        "family": "personal_report",
+        "level": 7,
+        "name": "Body Intelligence",
+        "name_vi": "Cơ thể và môi trường",
+        "phase": "F_REVIEW",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Ảnh/quan sát hợp lệ theo scope riêng",
+        "output_contract": "Mô tả hình thức, nhật ký sinh hoạt, giới hạn",
+        "action": "Quan sát và trao đổi chuyên môn phù hợp",
+        "method_candidates": [
+          "M15"
+        ],
+        "page_budget": {
+          "min": 60,
+          "max": 120,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L7",
+      "method_candidates_register62": [
+        "HAND",
+        "FACE",
+        "FOOT-VOICE",
+        "RESONANCE"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L8",
+    "catalog_name_vi": "Hướng sống và phụng sự",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Domain reviewer",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-17",
+      "UI-18",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "createPlan",
+      "checkin",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 28,
+    "estimate_high_person_days_non_additive": 60,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "single_destined_mission",
+      "unsafe_sacrifice_pressure",
+      "unsupported_capability"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L8",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L8",
+        "family": "personal_report",
+        "level": 8,
+        "name": "Mission Path",
+        "name_vi": "Hướng sống và phụng sự",
+        "phase": "F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Giá trị, năng lực có minh chứng, lựa chọn",
+        "output_contract": "Hướng sống tự chọn, không nhiệm vụ linh hồn bắt buộc",
+        "action": "Thử nghiệm phụng sự và kế hoạch chuyển giao",
+        "method_candidates": [
+          "M11",
+          "M12"
+        ],
+        "page_budget": {
+          "min": 80,
+          "max": 150,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L8",
+      "method_candidates_register62": [
+        "HNH-REFLECTION",
+        "CONTEMPLATION",
+        "LIFE-DESIGN"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-L9",
+    "catalog_name_vi": "Hồ sơ đời sống hợp nhất",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "adult_self_released_components_only",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Senior Editorial",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-19",
+      "UI-21",
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "grant",
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "reports",
+      "report",
+      "reportRevisions",
+      "exportReport"
+    ],
+    "demo_flow_ids": [
+      "DEMO-05",
+      "DEMO-AI-06"
+    ],
+    "estimate_low_person_days_non_additive": 45,
+    "estimate_high_person_days_non_additive": 110,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-06",
+      "PM-07",
+      "PM-08"
+    ],
+    "kill_metric_ids": [
+      "silent_inclusion_of_unavailable_level",
+      "flattened_contradiction",
+      "filler_output"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-L9",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-L9",
+        "family": "personal_report",
+        "level": 9,
+        "name": "Full Life Code",
+        "name_vi": "Hồ sơ đời sống hợp nhất",
+        "phase": "F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Chỉ các module được phép và đủ dữ liệu cần thiết",
+        "output_contract": "Sách không lặp, lineage, điều chưa biết, revisions",
+        "action": "Hệ hành động và xem lại",
+        "method_candidates": [
+          "M10",
+          "M11"
+        ],
+        "page_budget": {
+          "min": 150,
+          "max": 600,
+          "mandatory": false
+        },
+        "prerequisite_purchases": [],
+        "eligible_users": "adults_self_first; other scopes require dedicated gate",
+        "review": "human_before_publish_in_beta",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced.",
+      "report_contract_id": "RPT-L9",
+      "method_candidates_register62": [
+        "LINEAGE",
+        "REPORT",
+        "LIFE-DESIGN"
+      ],
+      "method_release_status": "ALL_CANDIDATES_NOT_PRODUCTION_RELEASED"
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-GUEST",
+    "catalog_name_vi": "Công cụ không tài khoản",
+    "launch_train": "T1",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "guest",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Method",
+      "Privacy",
+      "UX",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q3",
+      "Q6",
+      "Q8",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-01",
+      "UI-02",
+      "UI-03",
+      "UI-04",
+      "UI-05"
+    ],
+    "api_operation_ids": [
+      "catalog",
+      "methods"
+    ],
+    "demo_flow_ids": [
+      "DEMO-01",
+      "DEMO-12"
+    ],
+    "estimate_low_person_days_non_additive": 5,
+    "estimate_high_person_days_non_additive": 12,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-06"
+    ],
+    "kill_metric_ids": [
+      "remote_transmission_of_tool_input",
+      "misleading_claim",
+      "unlicensed_table"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-GUEST",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-GUEST",
+        "family": "free",
+        "level": null,
+        "name": "Guest Tools",
+        "name_vi": "Công cụ không tài khoản",
+        "phase": "C",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Công cụ deterministic tại thiết bị; không gửi tên/đuôi số vào analytics",
+        "action": "Không AI vô hạn; không lưu hồ sơ",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": "VND",
+          "amount": 0,
+          "status": "PROPOSED_FREE"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-FREE",
+    "catalog_name_vi": "Hồ sơ căn bản miễn phí",
+    "launch_train": "T2",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "adult_self",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Method",
+      "UX",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q13",
+      "Q15",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-07",
+      "UI-09",
+      "UI-10",
+      "UI-11",
+      "UI-13",
+      "UI-15",
+      "UI-17",
+      "UI-31",
+      "UI-32"
+    ],
+    "api_operation_ids": [
+      "createSubject",
+      "overview",
+      "subjects",
+      "newProfileVersion",
+      "consentDecision",
+      "observation",
+      "createPlan",
+      "privacyExport",
+      "deleteSubject"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-03",
+      "DEMO-07",
+      "DEMO-12"
+    ],
+    "estimate_low_person_days_non_additive": 20,
+    "estimate_high_person_days_non_additive": 45,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-06",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "privacy_right_paywall",
+      "quota_data_loss",
+      "unauthorized_disclosure"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-FREE",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-FREE",
+        "family": "free",
+        "level": null,
+        "name": "Free Essentials",
+        "name_vi": "Hồ sơ căn bản miễn phí",
+        "phase": "C",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Một subject tự quản, một mục tiêu, nhật ký, Snapshot và quyền dữ liệu",
+        "action": "AI quota đề xuất; không giảm quyền export/delete",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": "VND",
+          "amount": 0,
+          "status": "PROPOSED_FREE"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-COMPANION",
+    "catalog_name_vi": "AI đồng hành",
+    "launch_train": "T3",
+    "earliest_catalog_phase": "D",
+    "eligible_subject": "adult_self_opt_in",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "AI",
+      "Privacy",
+      "Support",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q13",
+      "Q15",
+      "Q16",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-15",
+      "UI-17",
+      "UI-18",
+      "UI-33"
+    ],
+    "api_operation_ids": [
+      "observation",
+      "createPlan",
+      "checkin",
+      "newAutomation",
+      "stopAutomation"
+    ],
+    "demo_flow_ids": [
+      "DEMO-03",
+      "DEMO-05"
+    ],
+    "estimate_low_person_days_non_additive": 22,
+    "estimate_high_person_days_non_additive": 50,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07",
+      "PM-08",
+      "PM-09",
+      "PM-10"
+    ],
+    "kill_metric_ids": [
+      "unconsented_reminder",
+      "budget_without_fallback",
+      "autonomous_high_impact_action"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-COMPANION",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-COMPANION",
+        "family": "subscription",
+        "level": null,
+        "name": "Companion",
+        "name_vi": "AI đồng hành",
+        "phase": "D",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Hỏi báo cáo, kế hoạch, nhắc việc được phép, review mục tiêu",
+        "action": "Cấm dự báo nguy cơ từ số",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-NUMBERS",
+    "catalog_name_vi": "Bộ số và tên",
+    "launch_train": "T1",
+    "earliest_catalog_phase": "C",
+    "eligible_subject": "guest_or_user",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Method Lead",
+    "reviewer_roles": [
+      "Product",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q5",
+      "Q6",
+      "Q8",
+      "Q12"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G08"
+    ],
+    "primary_screen_ids": [
+      "UI-05"
+    ],
+    "api_operation_ids": [],
+    "demo_flow_ids": [
+      "DEMO-01"
+    ],
+    "estimate_low_person_days_non_additive": 8,
+    "estimate_high_person_days_non_additive": 18,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-06",
+      "PM-07"
+    ],
+    "kill_metric_ids": [
+      "nondeterministic_result",
+      "destiny_claim",
+      "remote_input_analytics"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-NUMBERS",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-NUMBERS",
+        "family": "module",
+        "level": null,
+        "name": "Numbers",
+        "name_vi": "Bộ số và tên",
+        "phase": "C",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Thẻ kết quả từng phương pháp; so sánh cấu trúc",
+        "action": "Không score đổi vận; PIN/OTP bị loại",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-EXPERT",
+    "catalog_name_vi": "Phiên chuyên gia",
+    "launch_train": "T3",
+    "earliest_catalog_phase": "D",
+    "eligible_subject": "adult_self_with_scoped_grant",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Practice Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Method",
+      "Commerce",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q14",
+      "Q15",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G08",
+      "G09",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-14",
+      "UI-30",
+      "UI-35",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "grant",
+      "revokeGrant",
+      "ticket",
+      "cases",
+      "caseDetail",
+      "review"
+    ],
+    "demo_flow_ids": [
+      "DEMO-06",
+      "DEMO-08"
+    ],
+    "estimate_low_person_days_non_additive": 24,
+    "estimate_high_person_days_non_additive": 55,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-03",
+      "PM-04",
+      "PM-05",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "scope_escape",
+      "reviewer_unavailable",
+      "complaint_path_missing"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-EXPERT",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-EXPERT",
+        "family": "session",
+        "level": null,
+        "name": "Expert Review",
+        "name_vi": "Phiên chuyên gia",
+        "phase": "D",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Thời lượng/scope/revision xác định; practitioner grant",
+        "action": "Không quyết thay client",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-PRACTICE",
+    "catalog_name_vi": "Không gian chuyên gia",
+    "launch_train": "T5",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "authorized_practitioner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Practice Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Method",
+      "Security",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q15",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-35",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "cases",
+      "caseDetail",
+      "review"
+    ],
+    "demo_flow_ids": [
+      "DEMO-08"
+    ],
+    "estimate_low_person_days_non_additive": 35,
+    "estimate_high_person_days_non_additive": 75,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-04",
+      "PM-05",
+      "PM-07",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "cross_case_access",
+      "unsupervised_scope",
+      "serious_complaint_unresolved"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-PRACTICE",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-PRACTICE",
+        "family": "subscription",
+        "level": null,
+        "name": "Practitioner Studio",
+        "name_vi": "Không gian chuyên gia",
+        "phase": "E",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Case, lịch, ghi chú, review, report",
+        "action": "Chỉ subject grants hợp lệ",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ACADEMY-FOUNDATION",
+    "catalog_name_vi": "Khóa nền HNH chín buổi",
+    "launch_train": "T5",
+    "earliest_catalog_phase": "E",
+    "eligible_subject": "enrolled_learner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Academic Lead",
+    "reviewer_roles": [
+      "Method",
+      "Editorial",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-37",
+      "UI-38",
+      "UI-39"
+    ],
+    "api_operation_ids": [
+      "courses",
+      "assignment",
+      "verifyCertificate"
+    ],
+    "demo_flow_ids": [
+      "DEMO-09"
+    ],
+    "estimate_low_person_days_non_additive": 30,
+    "estimate_high_person_days_non_additive": 65,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-03",
+      "PM-06",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "unlicensed_content",
+      "certificate_overclaim",
+      "private_data_on_verification"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-ACADEMY-FOUNDATION",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-ACADEMY-FOUNDATION",
+        "family": "cohort",
+        "level": null,
+        "name": "Academy Foundation",
+        "name_vi": "Khóa nền HNH chín buổi",
+        "phase": "E",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "9×120 phút, bài tập và đánh giá",
+        "action": "Chứng nhận nội bộ có phạm vi",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ACADEMY-PRO",
+    "catalog_name_vi": "Đào tạo thực hành có giám sát",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "supervised_practitioner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Academic Lead",
+    "reviewer_roles": [
+      "Method",
+      "Privacy",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-35",
+      "UI-36",
+      "UI-37",
+      "UI-38",
+      "UI-39"
+    ],
+    "api_operation_ids": [
+      "cases",
+      "caseDetail",
+      "review",
+      "courses",
+      "assignment",
+      "verifyCertificate"
+    ],
+    "demo_flow_ids": [
+      "DEMO-08",
+      "DEMO-09"
+    ],
+    "estimate_low_person_days_non_additive": 40,
+    "estimate_high_person_days_non_additive": 90,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-03",
+      "PM-05",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "unsupervised_practice",
+      "scope_overclaim",
+      "missing_complaint_path"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-ACADEMY-PRO",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-ACADEMY-PRO",
+        "family": "cohort",
+        "level": null,
+        "name": "Practitioner Certification",
+        "name_vi": "Đào tạo thực hành có giám sát",
+        "phase": "F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Supervised cases và ethics assessment",
+        "action": "Không cấp bằng lâm sàng",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ACADEMY-TRAINER",
+    "catalog_name_vi": "Đào tạo giảng viên",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "approved_trainer",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Academic Lead",
+    "reviewer_roles": [
+      "Method Council",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q8",
+      "Q12",
+      "Q17",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-37",
+      "UI-38",
+      "UI-39",
+      "UI-42"
+    ],
+    "api_operation_ids": [
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "methodReleaseDraft"
+    ],
+    "demo_flow_ids": [
+      "DEMO-09",
+      "DEMO-11"
+    ],
+    "estimate_low_person_days_non_additive": 45,
+    "estimate_high_person_days_non_additive": 100,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-03",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "trainer_without_scope",
+      "stale_method_training",
+      "unreviewed_translation"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-ACADEMY-TRAINER",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-ACADEMY-TRAINER",
+        "family": "license",
+        "level": null,
+        "name": "Trainer License",
+        "name_vi": "Đào tạo giảng viên",
+        "phase": "F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Học liệu/version, dạy thử, quality review",
+        "action": "Quyền ngôn ngữ/lãnh thổ riêng",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-FAMILY",
+    "catalog_name_vi": "Gia đình có quyền riêng",
+    "launch_train": "T6",
+    "earliest_catalog_phase": "E_F_REVIEW",
+    "eligible_subject": "authorized_adults",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Legal",
+      "Security",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q18",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G08",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-34"
+    ],
+    "api_operation_ids": [
+      "subjects",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant"
+    ],
+    "demo_flow_ids": [
+      "DEMO-02",
+      "DEMO-10"
+    ],
+    "estimate_low_person_days_non_additive": 35,
+    "estimate_high_person_days_non_additive": 80,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-04",
+      "PM-05",
+      "PM-06"
+    ],
+    "kill_metric_ids": [
+      "minor_scope_without_policy",
+      "cross_member_disclosure",
+      "coerced_consent"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-FAMILY",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-FAMILY",
+        "family": "subscription",
+        "level": null,
+        "name": "Family",
+        "name_vi": "Gia đình có quyền riêng",
+        "phase": "E_F_REVIEW",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Mục tiêu chung, chia sẻ người lớn; minor flow chưa mở",
+        "action": "Guardian/country gate riêng",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-ORG",
+    "catalog_name_vi": "Tổ chức và doanh nghiệp",
+    "launch_train": "T7",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "organization_member",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Enterprise Lead",
+    "reviewer_roles": [
+      "Privacy",
+      "Legal",
+      "Security",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q14",
+      "Q15",
+      "Q18",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G08",
+      "G09",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-40"
+    ],
+    "api_operation_ids": [
+      "organizationOverview"
+    ],
+    "demo_flow_ids": [
+      "DEMO-10"
+    ],
+    "estimate_low_person_days_non_additive": 50,
+    "estimate_high_person_days_non_additive": 120,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-05",
+      "PM-06",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "tenant_escape",
+      "private_profile_exposure",
+      "high_impact_profiling"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-ORG",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-ORG",
+        "family": "license",
+        "level": null,
+        "name": "Workspace",
+        "name_vi": "Tổ chức và doanh nghiệp",
+        "phase": "F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Vai trò, học tập, mục tiêu, projects, aggregates phù hợp",
+        "action": "Không hiring/credit scoring từ biểu tượng",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-API",
+    "catalog_name_vi": "API cấp phép",
+    "launch_train": "T7",
+    "earliest_catalog_phase": "F",
+    "eligible_subject": "licensed_partner_system",
+    "delivery_surfaces": [
+      "server_api"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Platform Lead",
+    "reviewer_roles": [
+      "Security",
+      "Privacy",
+      "Legal",
+      "SRE",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q8",
+      "Q9",
+      "Q14",
+      "Q15",
+      "Q18",
+      "Q19",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "primary_screen_ids": [],
+    "api_operation_ids": [
+      "health",
+      "catalog",
+      "methods",
+      "methodDetail",
+      "login",
+      "authCallback",
+      "logout",
+      "subjects",
+      "createSubject",
+      "subject",
+      "overview",
+      "newProfileVersion",
+      "profileVersion",
+      "newHypothesis",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant",
+      "observations",
+      "observation",
+      "questionnaireResponse",
+      "createPlan",
+      "plans",
+      "checkin",
+      "timeline",
+      "analyze",
+      "analysisStatus",
+      "cancelAnalysis",
+      "analysisResults",
+      "methodResult",
+      "createReport",
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact",
+      "order",
+      "orderStatus",
+      "checkout",
+      "requestRefund",
+      "paymentWebhook",
+      "entitlements",
+      "ticket",
+      "ticketStatus",
+      "privacyExport",
+      "deleteSubject",
+      "deletionStatus",
+      "jobStatus",
+      "newAutomation",
+      "stopAutomation",
+      "cases",
+      "caseDetail",
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "organizationOverview",
+      "partner",
+      "methodReleaseDraft",
+      "countryPackReview",
+      "quality",
+      "operations"
+    ],
+    "demo_flow_ids": [
+      "DEMO-10",
+      "DEMO-11"
+    ],
+    "estimate_low_person_days_non_additive": 55,
+    "estimate_high_person_days_non_additive": 130,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-02",
+      "PM-05",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "scope_or_tenant_escape",
+      "quota_bypass",
+      "unversioned_breaking_change"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-API",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-API",
+        "family": "usage",
+        "level": null,
+        "name": "Partner API",
+        "name_vi": "API cấp phép",
+        "phase": "F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Tenant/purpose scoped API, quota, method versions",
+        "action": "Không bulk private profiling",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-PUBLISH",
+    "catalog_name_vi": "Xuất bản và bộ sách",
+    "launch_train": "T3",
+    "earliest_catalog_phase": "D",
+    "eligible_subject": "adult_self_or_authorized_editor",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Editorial Lead",
+    "reviewer_roles": [
+      "Method",
+      "Privacy",
+      "Legal",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q4",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "demo_flow_ids": [
+      "DEMO-05"
+    ],
+    "estimate_low_person_days_non_additive": 28,
+    "estimate_high_person_days_non_additive": 65,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-04",
+      "PM-06",
+      "PM-07",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "public_auto_publish",
+      "withdrawn_content_available",
+      "inaccessible_export"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-PUBLISH",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-PUBLISH",
+        "family": "one_time",
+        "level": null,
+        "name": "Publishing",
+        "name_vi": "Xuất bản và bộ sách",
+        "phase": "D",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Snapshot và exports theo scope",
+        "action": "Không bảo đảm600trang mỗi hồ sơ",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-20",
+    "product_id": "LC-REGIONAL",
+    "catalog_name_vi": "Cấp phép quốc gia/nhượng quyền",
+    "launch_train": "T8",
+    "earliest_catalog_phase": "F_LEGAL",
+    "eligible_subject": "licensed_regional_partner",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Global Lead",
+    "reviewer_roles": [
+      "Founder",
+      "Legal",
+      "Privacy",
+      "Method",
+      "Support",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q8",
+      "Q9",
+      "Q12",
+      "Q14",
+      "Q15",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "primary_screen_ids": [
+      "UI-41",
+      "UI-45"
+    ],
+    "api_operation_ids": [
+      "partner",
+      "countryPackReview"
+    ],
+    "demo_flow_ids": [
+      "DEMO-10",
+      "DEMO-11"
+    ],
+    "estimate_low_person_days_non_additive": 60,
+    "estimate_high_person_days_non_additive": 150,
+    "estimate_basis": "portfolio allocation only; shared platform work overlaps backlog and must not be summed",
+    "cost_model_id": "COST_INPUTS_Q20",
+    "currency": null,
+    "monetary_cost_status": "BLOCKED",
+    "success_metric_ids": [
+      "PM-01",
+      "PM-02",
+      "PM-05",
+      "PM-08",
+      "PM-09"
+    ],
+    "kill_metric_ids": [
+      "unapproved_country_pack",
+      "missing_right_or_trademark",
+      "support_or_exit_gap"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": "exact product/method/content releases; responsive and accessibility traces; contract, negative and privacy tests; operating and approval receipts",
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": true,
+      "source_product_id": "LC-REGIONAL",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-REGIONAL",
+        "family": "contract",
+        "level": null,
+        "name": "Regional Partnership",
+        "name_vi": "Cấp phép quốc gia/nhượng quyền",
+        "phase": "F_LEGAL",
+        "status": "PROPOSED_NOT_RELEASED",
+        "input_contract": "Theo mục đích và phương pháp; không thu thừa",
+        "output_contract": "Brand/curriculum/software scope và continuity",
+        "action": "Không mở lãnh thổ trước legal gate",
+        "method_candidates": [],
+        "page_budget": null,
+        "prerequisite_purchases": [],
+        "eligible_users": "country_and_scope_policy",
+        "review": "risk_based_policy",
+        "price": {
+          "currency": null,
+          "amount": null,
+          "status": "PENDING_COMMERCIAL_APPROVAL"
+        },
+        "privacy_rights_paywalled": false,
+        "v2_status": "DESIGN_ONLY_NOT_RELEASED",
+        "completion_definition": "Đầu ra đúng phạm vi, dữ liệu có quyền, phương pháp được phát hành, nội dung được rà soát, có hành động và giới hạn rõ.",
+        "required_states": [
+          "ready",
+          "partial",
+          "needs_input",
+          "not_eligible",
+          "method_not_released"
+        ],
+        "data_rights_paywalled": false,
+        "success_measure": "Hiểu phạm vi, sửa được dữ kiện, chọn và đánh giá được hành động; không chỉ mức cảm thấy lời luận đúng.",
+        "v3_scope": "Retained; current contracts and release gates apply",
+        "all_in_one_entrypoint": "one_profile_multiple_consented_workspaces",
+        "production_status": "NOT_RELEASED"
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "scope": "Keep prior execution contract and enrich with incoming product data; no prior train or estimate is silently replaced."
+    }
+  },
+  {
+    "amendment_version": "2026-10-29",
+    "product_id": "LC-NUM-ATLAS",
+    "catalog_name_vi": "Bộ số–tên hoàn chỉnh",
+    "launch_train": "T1_EXTENSION_PENDING",
+    "earliest_catalog_phase": "E/F",
+    "eligible_subject": "adult_self; guest synthetic examples only",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product + Method",
+    "reviewer_roles": [
+      "Product",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q31",
+      "Q39",
+      "Q40",
+      "Q45"
+    ],
+    "custom_gate_ids": [],
+    "primary_screen_ids": [
+      "V3-UI-059",
+      "V3-UI-060",
+      "V3-UI-061",
+      "V3-UI-062",
+      "V3-UI-063",
+      "V3-UI-064",
+      "V3-UI-065"
+    ],
+    "api_operation_ids": [
+      "computeNumerologyFull",
+      "compareNameVariants",
+      "computeBatCuc",
+      "getBatCucTable",
+      "computePsychomatrix",
+      "compareNumberAssets"
+    ],
+    "demo_flow_ids": [],
+    "estimate_low_person_days_non_additive": null,
+    "estimate_high_person_days_non_additive": null,
+    "estimate_basis": "Not estimated; break down after schema/route decision",
+    "cost_model_id": null,
+    "currency": null,
+    "monetary_cost_status": "PENDING_APPROVED_SCOPE_AND_RATES",
+    "success_metric_ids": [],
+    "kill_metric_ids": [
+      "unauthorized_disclosure",
+      "unsupported_claim",
+      "silent_source_change"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": [
+      "approved_scope_and_method_versions",
+      "typed_input_output_schema",
+      "server_authorization_negative_receipts",
+      "deterministic_fixture_receipts",
+      "phone_desktop_a11y_receipts",
+      "reviewer_receipt_for_exact_snapshot",
+      "correction_withdrawal_and_deletion_receipts",
+      "separate_staging_runtime_and_release_receipts"
+    ],
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": false,
+      "source_product_id": "LC-NUM-ATLAS",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-NUM-ATLAS",
+        "name": "Numbers & Names Atlas",
+        "name_vi": "Bộ số–tên hoàn chỉnh",
+        "family": "extension",
+        "scope": "23 chỉ số, ma trận, Bát Cực và Mã đuôi80 trong các thẻ riêng",
+        "phase": "E/F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "production_status": "NOT_RELEASED",
+        "price": {
+          "amount": null,
+          "currency": null
+        },
+        "privacy_rights_paywalled": false
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "owner": "Product + Method",
+      "train": "T1_EXTENSION_PENDING",
+      "eligible_subject": "adult_self; guest synthetic examples only",
+      "screens": [
+        "V3-UI-059",
+        "V3-UI-060",
+        "V3-UI-061",
+        "V3-UI-062",
+        "V3-UI-063",
+        "V3-UI-064",
+        "V3-UI-065"
+      ],
+      "ops": [
+        "computeNumerologyFull",
+        "compareNameVariants",
+        "computeBatCuc",
+        "getBatCucTable",
+        "computePsychomatrix",
+        "compareNumberAssets"
+      ],
+      "methods": [
+        "NUM23",
+        "NAME-UNICODE",
+        "BCLC64",
+        "TAIL80",
+        "PSYCHO17"
+      ],
+      "inputs": [
+        "purpose and active subject grant",
+        "versioned name/date hypotheses with Unicode/Y/reduction policy",
+        "number string preserving zero and pair position",
+        "source table/rule version"
+      ],
+      "outputs": [
+        "23 indices with intermediate steps and explicit nulls",
+        "name variants kept separate",
+        "Bat Cuc pair segments and transition matrix",
+        "strict versus diagnostic 0/5 differences",
+        "tail80 source-row citation",
+        "raw versus working matrix and 17 positions"
+      ],
+      "exclusions": [
+        "unreleased results presented as personal truth",
+        "one aggregate good/bad fate score",
+        "medical/personality/wealth prediction from number or matrix"
+      ],
+      "negative": [
+        "empty/Unicode/Y variants",
+        "leading zeros",
+        "unsupported 0/5 policy",
+        "missing source table",
+        "mismatched method version",
+        "cross-subject access",
+        "withdrawn rule"
+      ],
+      "dependency": "Extension of retained LC-NUMBERS and report components; no replacement or automatic new entitlement.",
+      "exit_gates": [
+        "input_output_and_authorization_schema_approved",
+        "method_and_source_rights_released_where_used",
+        "all_listed_negative_cases_pass",
+        "phone_desktop_and_assistive_technology_receipts",
+        "exact_snapshot_human_review",
+        "billing_disabled_until_approved_price_and_provider_reconciliation",
+        "runtime_release_separately_authorized"
+      ]
+    }
+  },
+  {
+    "amendment_version": "2026-10-29",
+    "product_id": "LC-LIFE-MAP",
+    "catalog_name_vi": "Bản đồ một đời sống",
+    "launch_train": "T6_EXTENSION_PENDING",
+    "earliest_catalog_phase": "E/F",
+    "eligible_subject": "adult_self_or_explicit_scoped_reader",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product + Timeline/Method",
+    "reviewer_roles": [
+      "Product",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q31",
+      "Q39",
+      "Q40",
+      "Q45"
+    ],
+    "custom_gate_ids": [],
+    "primary_screen_ids": [
+      "UI-19",
+      "V3-UI-066",
+      "V3-UI-067"
+    ],
+    "api_operation_ids": [
+      "getLifeDomains",
+      "composeLifetime",
+      "timeline",
+      "createPlan",
+      "getScopedProductEligibility"
+    ],
+    "demo_flow_ids": [],
+    "estimate_low_person_days_non_additive": null,
+    "estimate_high_person_days_non_additive": null,
+    "estimate_basis": "Not estimated; break down after schema/route decision",
+    "cost_model_id": null,
+    "currency": null,
+    "monetary_cost_status": "PENDING_APPROVED_SCOPE_AND_RATES",
+    "success_metric_ids": [],
+    "kill_metric_ids": [
+      "unauthorized_disclosure",
+      "unsupported_claim",
+      "silent_source_change"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": [
+      "approved_scope_and_method_versions",
+      "typed_input_output_schema",
+      "server_authorization_negative_receipts",
+      "deterministic_fixture_receipts",
+      "phone_desktop_a11y_receipts",
+      "reviewer_receipt_for_exact_snapshot",
+      "correction_withdrawal_and_deletion_receipts",
+      "separate_staging_runtime_and_release_receipts"
+    ],
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": false,
+      "source_product_id": "LC-LIFE-MAP",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-LIFE-MAP",
+        "name": "Living Life Map",
+        "name_vi": "Bản đồ một đời sống",
+        "family": "extension",
+        "scope": "18 lĩnh vực,100 khoảng tuổi,lịch sử/kế hoạch/chukỳ riêng",
+        "phase": "E/F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "production_status": "NOT_RELEASED",
+        "price": {
+          "amount": null,
+          "currency": null
+        },
+        "privacy_rights_paywalled": false
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "owner": "Product + Timeline/Method",
+      "train": "T6_EXTENSION_PENDING",
+      "eligible_subject": "adult_self_or_explicit_scoped_reader",
+      "screens": [
+        "UI-19",
+        "V3-UI-066",
+        "V3-UI-067"
+      ],
+      "ops": [
+        "getLifeDomains",
+        "composeLifetime",
+        "timeline",
+        "createPlan",
+        "getScopedProductEligibility"
+      ],
+      "methods": [
+        "LIFE-DESIGN",
+        "NUM-LIFE-CYCLES"
+      ],
+      "inputs": [
+        "self-selected domains from versioned 18-domain dictionary",
+        "sourced events with date precision and timezone",
+        "user plans and separate released symbolic cycle inputs",
+        "active purpose-specific rights"
+      ],
+      "outputs": [
+        "history, plan, symbolic cycle and hypothesis/scenario tracks kept distinguishable",
+        "100 age intervals as navigable planning grid, empty when unknown",
+        "source/precision/filter and change history",
+        "reversible next action"
+      ],
+      "exclusions": [
+        "invented biography",
+        "predicted lifespan/death",
+        "symbolic cycle treated as historical evidence",
+        "mandatory nine life stages"
+      ],
+      "negative": [
+        "unknown birth date",
+        "contradicting events",
+        "partial date/timezone",
+        "track toggle without label loss",
+        "revoked event source",
+        "ages 80/99/100/120 retained without truncating global history",
+        "plan missing canonical ID/version"
+      ],
+      "dependency": "Extends LC-L6 timeline rather than replacing its rich report contract.",
+      "exit_gates": [
+        "input_output_and_authorization_schema_approved",
+        "method_and_source_rights_released_where_used",
+        "all_listed_negative_cases_pass",
+        "phone_desktop_and_assistive_technology_receipts",
+        "exact_snapshot_human_review",
+        "billing_disabled_until_approved_price_and_provider_reconciliation",
+        "runtime_release_separately_authorized"
+      ]
+    }
+  },
+  {
+    "amendment_version": "2026-10-29",
+    "product_id": "LC-LEGACY",
+    "catalog_name_vi": "Di sản tri thức",
+    "launch_train": "T6_EXTENSION_PENDING",
+    "earliest_catalog_phase": "E/F",
+    "eligible_subject": "adult_owner_or_separately_verified_scoped_recipient",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Product + Privacy + Editorial",
+    "reviewer_roles": [
+      "Product",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q31",
+      "Q39",
+      "Q40",
+      "Q45"
+    ],
+    "custom_gate_ids": [],
+    "primary_screen_ids": [
+      "V3-UI-068",
+      "UI-14",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "createKnowledgeLegacyTransfer",
+      "grants",
+      "grant",
+      "revokeGrant",
+      "reportRevisions"
+    ],
+    "demo_flow_ids": [],
+    "estimate_low_person_days_non_additive": null,
+    "estimate_high_person_days_non_additive": null,
+    "estimate_basis": "Not estimated; break down after schema/route decision",
+    "cost_model_id": null,
+    "currency": null,
+    "monetary_cost_status": "PENDING_APPROVED_SCOPE_AND_RATES",
+    "success_metric_ids": [],
+    "kill_metric_ids": [
+      "unauthorized_disclosure",
+      "unsupported_claim",
+      "silent_source_change"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": [
+      "approved_scope_and_method_versions",
+      "typed_input_output_schema",
+      "server_authorization_negative_receipts",
+      "deterministic_fixture_receipts",
+      "phone_desktop_a11y_receipts",
+      "reviewer_receipt_for_exact_snapshot",
+      "correction_withdrawal_and_deletion_receipts",
+      "separate_staging_runtime_and_release_receipts"
+    ],
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": false,
+      "source_product_id": "LC-LEGACY",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-LEGACY",
+        "name": "Knowledge Legacy",
+        "name_vi": "Di sản tri thức",
+        "family": "extension",
+        "scope": "Kho bài viết,ghi âm có quyền,người nhận và chỉ dẫn chuyển giao",
+        "phase": "E/F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "production_status": "NOT_RELEASED",
+        "price": {
+          "amount": null,
+          "currency": null
+        },
+        "privacy_rights_paywalled": false
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "owner": "Product + Privacy + Editorial",
+      "train": "T6_EXTENSION_PENDING",
+      "eligible_subject": "adult_owner_or_separately_verified_scoped_recipient",
+      "screens": [
+        "V3-UI-068",
+        "UI-14",
+        "UI-25"
+      ],
+      "ops": [
+        "createKnowledgeLegacyTransfer",
+        "grants",
+        "grant",
+        "revokeGrant",
+        "reportRevisions"
+      ],
+      "methods": [
+        "LINEAGE"
+      ],
+      "inputs": [
+        "rights-cleared text/audio and source ownership",
+        "named recipient and separately verified rights",
+        "transfer scope, conditions and expiry",
+        "owner review and immutable version"
+      ],
+      "outputs": [
+        "private knowledge collection and rights manifest",
+        "recipient-specific preview without unauthorized content",
+        "transfer request receipt and revocation impact",
+        "immutable version history"
+      ],
+      "exclusions": [
+        "automatic legal inheritance or estate execution",
+        "payer receives all subject data",
+        "unverified recipient notification/content disclosure",
+        "unlicensed third-party writing/audio"
+      ],
+      "negative": [
+        "revoked grant",
+        "wrong recipient",
+        "expired transfer",
+        "unlicensed content",
+        "duplicate submission",
+        "export after revocation",
+        "deleted owner source"
+      ],
+      "dependency": "Knowledge-sharing workflow only; legal inheritance and automated posthumous release need dedicated decisions, schema and legal review.",
+      "exit_gates": [
+        "input_output_and_authorization_schema_approved",
+        "method_and_source_rights_released_where_used",
+        "all_listed_negative_cases_pass",
+        "phone_desktop_and_assistive_technology_receipts",
+        "exact_snapshot_human_review",
+        "billing_disabled_until_approved_price_and_provider_reconciliation",
+        "runtime_release_separately_authorized"
+      ]
+    }
+  },
+  {
+    "amendment_version": "2026-10-29",
+    "product_id": "LC-REGION-KIT",
+    "catalog_name_vi": "Bộ triển khai lãnh thổ",
+    "launch_train": "T8_EXTENSION_PENDING",
+    "earliest_catalog_phase": "E/F",
+    "eligible_subject": "authorized_partner_and_territory_legal_reviewer",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Partner + Legal + Localization",
+    "reviewer_roles": [
+      "Product",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q31",
+      "Q39",
+      "Q40",
+      "Q45"
+    ],
+    "custom_gate_ids": [],
+    "primary_screen_ids": [
+      "V2-S11",
+      "UI-41",
+      "UI-45"
+    ],
+    "api_operation_ids": [
+      "countryEligibility",
+      "getTerritoryReleaseGates",
+      "countryPackReview",
+      "partner"
+    ],
+    "demo_flow_ids": [],
+    "estimate_low_person_days_non_additive": null,
+    "estimate_high_person_days_non_additive": null,
+    "estimate_basis": "Not estimated; break down after schema/route decision",
+    "cost_model_id": null,
+    "currency": null,
+    "monetary_cost_status": "PENDING_APPROVED_SCOPE_AND_RATES",
+    "success_metric_ids": [],
+    "kill_metric_ids": [
+      "unauthorized_disclosure",
+      "unsupported_claim",
+      "silent_source_change"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": [
+      "approved_scope_and_method_versions",
+      "typed_input_output_schema",
+      "server_authorization_negative_receipts",
+      "deterministic_fixture_receipts",
+      "phone_desktop_a11y_receipts",
+      "reviewer_receipt_for_exact_snapshot",
+      "correction_withdrawal_and_deletion_receipts",
+      "separate_staging_runtime_and_release_receipts"
+    ],
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": false,
+      "source_product_id": "LC-REGION-KIT",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-REGION-KIT",
+        "name": "Territory Kit",
+        "name_vi": "Bộ triển khai lãnh thổ",
+        "family": "extension",
+        "scope": "Ngôn ngữ,nguồn,bản quyền,pháp lý,vận hành và brandgate",
+        "phase": "E/F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "production_status": "NOT_RELEASED",
+        "price": {
+          "amount": null,
+          "currency": null
+        },
+        "privacy_rights_paywalled": false
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "owner": "Partner + Legal + Localization",
+      "train": "T8_EXTENSION_PENDING",
+      "eligible_subject": "authorized_partner_and_territory_legal_reviewer",
+      "screens": [
+        "V2-S11",
+        "UI-41",
+        "UI-45"
+      ],
+      "ops": [
+        "countryEligibility",
+        "getTerritoryReleaseGates",
+        "countryPackReview",
+        "partner"
+      ],
+      "methods": [],
+      "inputs": [
+        "territory and product scope",
+        "local legal entity and data roles",
+        "locale source/license/editor receipts",
+        "support/escalation and partner class",
+        "brand and contract versions"
+      ],
+      "outputs": [
+        "territory-by-product release checklist with dated evidence",
+        "unresolved restrictions and responsible reviewer",
+        "locale parity and support rehearsal receipts",
+        "explicit allowed/blocked scope"
+      ],
+      "exclusions": [
+        "global release implied by a translated UI",
+        "franchise grant from software status",
+        "local legal opinion invented by AI",
+        "country readiness inferred from market size"
+      ],
+      "negative": [
+        "missing legal entity",
+        "wrong territory/product",
+        "expired license",
+        "minor product requested",
+        "partner revoked",
+        "unreviewed translation"
+      ],
+      "dependency": "Operational kit for retained LC-REGIONAL; referral/practitioner/institution/regional franchise remain distinct agreements.",
+      "exit_gates": [
+        "input_output_and_authorization_schema_approved",
+        "method_and_source_rights_released_where_used",
+        "all_listed_negative_cases_pass",
+        "phone_desktop_and_assistive_technology_receipts",
+        "exact_snapshot_human_review",
+        "billing_disabled_until_approved_price_and_provider_reconciliation",
+        "runtime_release_separately_authorized"
+      ]
+    }
+  },
+  {
+    "amendment_version": "2026-10-29",
+    "product_id": "LC-RESEARCH-STUDIO",
+    "catalog_name_vi": "Xưởng phương pháp",
+    "launch_train": "T0_RESEARCH_PENDING",
+    "earliest_catalog_phase": "E/F",
+    "eligible_subject": "authorized_method_editor_reviewer_with_separation_of_duties",
+    "delivery_surfaces": [
+      "responsive_web",
+      "installable_pwa_progressive_enhancement",
+      "desktop_web"
+    ],
+    "native_app_in_scope": false,
+    "accountable_role": "Method + Rights + QA",
+    "reviewer_roles": [
+      "Product",
+      "Method",
+      "Privacy",
+      "QA"
+    ],
+    "decision_dependencies": [
+      "Q31",
+      "Q39",
+      "Q40",
+      "Q45"
+    ],
+    "custom_gate_ids": [],
+    "primary_screen_ids": [
+      "V3-UI-069",
+      "V2-S06",
+      "V2-S07",
+      "V2-S08",
+      "UI-42"
+    ],
+    "api_operation_ids": [
+      "getMethodSourceConflicts",
+      "getMethodVersionHistory",
+      "methodDependencies",
+      "methodTestVectors",
+      "methodReleaseDraft",
+      "releaseImpact"
+    ],
+    "demo_flow_ids": [],
+    "estimate_low_person_days_non_additive": null,
+    "estimate_high_person_days_non_additive": null,
+    "estimate_basis": "Not estimated; break down after schema/route decision",
+    "cost_model_id": null,
+    "currency": null,
+    "monetary_cost_status": "PENDING_APPROVED_SCOPE_AND_RATES",
+    "success_metric_ids": [],
+    "kill_metric_ids": [
+      "unauthorized_disclosure",
+      "unsupported_claim",
+      "silent_source_change"
+    ],
+    "claim_status": "NOT_CHECKED",
+    "evidence_required": [
+      "approved_scope_and_method_versions",
+      "typed_input_output_schema",
+      "server_authorization_negative_receipts",
+      "deterministic_fixture_receipts",
+      "phone_desktop_a11y_receipts",
+      "reviewer_receipt_for_exact_snapshot",
+      "correction_withdrawal_and_deletion_receipts",
+      "separate_staging_runtime_and_release_receipts"
+    ],
+    "integration_version": "2026-10-29",
+    "retention": {
+      "old_r2_fields_preserved": false,
+      "source_product_id": "LC-RESEARCH-STUDIO",
+      "incoming_ref": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/06_PRODUCTS/PRODUCT_CATALOG_ALL_IN_ONE.json",
+      "incoming_raw": {
+        "product_id": "LC-RESEARCH-STUDIO",
+        "name": "Research Studio",
+        "name_vi": "Xưởng phương pháp",
+        "family": "extension",
+        "scope": "Phiên bản nguồn,đối chiếu trường phái,rule tests,công bố giới hạn",
+        "phase": "E/F",
+        "status": "PROPOSED_NOT_RELEASED",
+        "production_status": "NOT_RELEASED",
+        "price": {
+          "amount": null,
+          "currency": null
+        },
+        "privacy_rights_paywalled": false
+      }
+    },
+    "v3_execution": {
+      "contract_status": "DESIGN_ONLY_NOT_IMPLEMENTED_OR_RELEASED",
+      "approval_status": "APPROVAL_PENDING",
+      "api_contract_ref": "docs/upgrade/2026-10-29/backend/OPENAPI_UNIFIED_TARGET.json",
+      "authority": "planning proposal; no source document creates release, price, consent or legal approval",
+      "workspace_rule": "server checks account, subject, tenant, purpose, active grant, method release and entitlement where applicable; payer is not data owner",
+      "required_states": [
+        "ready",
+        "partial",
+        "needs_input",
+        "not_eligible",
+        "method_not_released",
+        "revoked",
+        "error"
+      ],
+      "privacy_rights": {
+        "paywalled": false,
+        "data_export_and_deletion_require_purchase": false,
+        "service_data_is_training_consent": false
+      },
+      "billing": {
+        "amount": null,
+        "currency": null,
+        "approved_price_version": null,
+        "enable_paid_checkout": false,
+        "purchase_of_previous_report_required": false,
+        "order_payment_entitlement_job_report_are_distinct": true
+      },
+      "release_evidence": [
+        "approved_scope_and_method_versions",
+        "typed_input_output_schema",
+        "server_authorization_negative_receipts",
+        "deterministic_fixture_receipts",
+        "phone_desktop_a11y_receipts",
+        "reviewer_receipt_for_exact_snapshot",
+        "correction_withdrawal_and_deletion_receipts",
+        "separate_staging_runtime_and_release_receipts"
+      ],
+      "unified_entrypoint": "one profile; only separately consented workspaces; clear previous context on switch",
+      "owner": "Method + Rights + QA",
+      "train": "T0_RESEARCH_PENDING",
+      "eligible_subject": "authorized_method_editor_reviewer_with_separation_of_duties",
+      "screens": [
+        "V3-UI-069",
+        "V2-S06",
+        "V2-S07",
+        "V2-S08",
+        "UI-42"
+      ],
+      "ops": [
+        "getMethodSourceConflicts",
+        "getMethodVersionHistory",
+        "methodDependencies",
+        "methodTestVectors",
+        "methodReleaseDraft",
+        "releaseImpact"
+      ],
+      "methods": [
+        "LINEAGE"
+      ],
+      "inputs": [
+        "licensed source edition and provenance",
+        "explicit school/policy variants",
+        "typed rule and test vectors",
+        "known limits and conflicts",
+        "independent reviewer identity"
+      ],
+      "outputs": [
+        "source conflict comparison without silent winner",
+        "versioned rule proposal and reproducible fixtures",
+        "downstream impact and withdrawal list",
+        "research/reference/released state shown separately"
+      ],
+      "exclusions": [
+        "editor becomes sole approver",
+        "reference code implies production release",
+        "unlicensed sources embedded in exports",
+        "silent rule changes to published reports"
+      ],
+      "negative": [
+        "missing source rights",
+        "rule conflict",
+        "source revoked",
+        "cyclic dependency",
+        "author self-review",
+        "stale approval",
+        "private PII search"
+      ],
+      "dependency": "Research tools feed method review; no publication/deploy/approval authority is granted by this screen.",
+      "exit_gates": [
+        "input_output_and_authorization_schema_approved",
+        "method_and_source_rights_released_where_used",
+        "all_listed_negative_cases_pass",
+        "phone_desktop_and_assistive_technology_receipts",
+        "exact_snapshot_human_review",
+        "billing_disabled_until_approved_price_and_provider_reconciliation",
+        "runtime_release_separately_authorized"
+      ]
+    }
+  }
+]

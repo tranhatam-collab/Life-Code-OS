@@ -1,0 +1,77 @@
+{
+  "scope": "Historical reference only; do not infer Founder approval or production state",
+  "files": [
+    {
+      "path": "committed/_handover/00_LIVE_VS_LOCAL_DIFF_REPORT.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "90267805cc6b530e363c7c6200f87d8fb158ca3504782666ead1488716a68d58"
+    },
+    {
+      "path": "committed/_handover/01_PROJECT_AUDIT.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "47c220d57b290d5624733b43374e6e683f9d2b43ca515f5b66c3df85f389f2c6"
+    },
+    {
+      "path": "committed/_handover/02_COMPLETION_PLAN.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "a545cbac80d2601b079dfb228ec44e4faad8ba22a3afa05a43e9ae2b6e3ad5de"
+    },
+    {
+      "path": "committed/_handover/03_CLOUDFLARE_DEPLOY_QA_PLAYBOOK.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "ad79a20357a1164cc3a39cebe0f3d26d7fbdd739501565fd785fe95de7b1635c"
+    },
+    {
+      "path": "committed/_handover/04_DEV_ONBOARDING.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "973bdce27bc52e35c111d69a6e396f308adff81ba07809e4658acb6588d8aa77"
+    },
+    {
+      "path": "committed/_handover/05_BACKLOG_TICKETS.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "e8a2837051b0cf361cc7ea5ea47432bc95ce71ab599e1850b0eab78ff1b1256d"
+    },
+    {
+      "path": "committed/_handover/06_BILINGUAL_LANGUAGE_REBUILD_LOCK.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "662a25acc6d296c6abf2d3431b412d8b377e909c2a071737f354b20b27ee0ed8"
+    },
+    {
+      "path": "committed/_handover/README.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "da11e2b5d3b5658807428f6063c5530702d1837145b144f11e948d5048867c50"
+    },
+    {
+      "path": "committed/_handover/bilingual/LANGUAGE_CODEX.md",
+      "source_commit": "4df9b6efa6601bc113bc51956ed83e076da75657",
+      "status": "VERIFIED_HEAD_ONLY",
+      "sha256": "407a9196ac9eb4e3dd3d00fc0af04e5fcf4b4f9cec2803a89adb259d9008c5ae"
+    },
+    {
+      "path": "uncommitted/_handover/bilingual/PHASE_1_5_PROGRESS.md",
+      "source_commit": null,
+      "status": "VERIFIED_WORKTREE_ONLY",
+      "sha256": "37af9ce33f2aa8c0f6cf4f3d1fbc8f6788a57848f9c6c59fc956339c84b8880d"
+    },
+    {
+      "path": "uncommitted/_handover/bilingual/01_CRAWL_INVENTORY.csv",
+      "source_commit": null,
+      "status": "VERIFIED_WORKTREE_ONLY",
+      "sha256": "5a10c7b9d247866ee3e377007baf2c1577b8876104093538803730ffde30e125"
+    },
+    {
+      "path": "uncommitted/_handover/bilingual/01_CRAWL_INVENTORY.summary.json",
+      "source_commit": null,
+      "status": "VERIFIED_WORKTREE_ONLY",
+      "sha256": "c79e15612c3606e831ae2bffe64dc62dc1778bc016c934c4003fd9ff28ffbc0d"
+    }
+  ]
+}

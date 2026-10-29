@@ -1,0 +1,12 @@
+{
+  "section_id": "identity.source",
+  "title": "Dữ liệu căn cứ",
+  "block": "identity",
+  "supporting_claim_ids": [],
+  "body": "Hồ sơ tổng hợp, chưa phải dữ liệu khách hàng.",
+  "availability": "partial",
+  "missing_requirements": [
+    "time_zone"
+  ],
+  "review_state": "draft"
+}

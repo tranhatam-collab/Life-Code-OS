@@ -1,0 +1,123 @@
+{
+  "schema_dialect": "https://json-schema.org/draft/2020-12/schema",
+  "contract_id": "lc.authorization-policy-matrix",
+  "contract_version": "2.1-proposed",
+  "status": "DESIGN_APPROVAL_PENDING_NOT_IMPLEMENTED",
+  "operation_registry": "API_OPERATIONS.json",
+  "expected_operation_count": 64,
+  "decision_inputs": [
+    "verified_principal",
+    "account_state",
+    "session_state_and_auth_strength",
+    "registered_operation_id",
+    "server_loaded_resource_lineage",
+    "tenant_and_subject_scope",
+    "grant_action_category_and_expiry",
+    "server_resolved_purpose_and_processing_basis",
+    "permission_revision",
+    "entitlement_when_required",
+    "product_country_and_age_rules"
+  ],
+  "client_inputs_never_authoritative": [
+    "user_id",
+    "account_id",
+    "tenant_id",
+    "owner_id",
+    "role",
+    "permissions",
+    "entitlement",
+    "policy_decision",
+    "method_release_status"
+  ],
+  "templates": {
+    "public_read": {
+      "authentication": "none",
+      "resource_resolution": "published_public_projection_only",
+      "deny_visibility": "public_problem",
+      "recheck_points": ["request"]
+    },
+    "session_self": {
+      "authentication": "verified_session",
+      "resource_resolution": "principal_account_from_session_only",
+      "deny_visibility": "401_or_403_without_private_metadata",
+      "recheck_points": ["request"]
+    },
+    "subject_scoped": {
+      "authentication": "verified_session_or_scoped_partner_token",
+      "resource_resolution": "single_query_tenant_subject_object_lineage",
+      "deny_visibility": "404_for_out_of_scope_object_403_for_disallowed_action",
+      "recheck_points": ["request", "worker_start", "before_publish_or_download"]
+    },
+    "owner_scoped": {
+      "authentication": "verified_session",
+      "resource_resolution": "single_query_owner_account_object_lineage",
+      "deny_visibility": "404_for_other_owner",
+      "recheck_points": ["request", "worker_start"]
+    },
+    "assigned_role": {
+      "authentication": "verified_session_with_active_assignment",
+      "resource_resolution": "assignment_plus_tenant_plus_resource_scope",
+      "deny_visibility": "404_for_unassigned_resource",
+      "recheck_points": ["request", "worker_start", "before_publish_or_download"]
+    },
+    "reviewer_role": {
+      "authentication": "verified_session_with_required_auth_strength",
+      "resource_resolution": "server_role_assignment_plus_explicit_scope",
+      "deny_visibility": "403_without_role_or_scope",
+      "recheck_points": ["request", "before_state_transition"]
+    },
+    "signed_webhook": {
+      "authentication": "provider_signature_over_raw_body",
+      "resource_resolution": "provider_and_merchant_account_from_server_configuration",
+      "deny_visibility": "generic_2xx_for_verified_duplicate_or_safe_4xx_for_invalid_signature_by_provider_contract",
+      "recheck_points": ["request", "before_effect"]
+    }
+  },
+  "policies": {
+    "public": {"template": "public_read", "actions": ["read"], "purpose": "public_education", "entitlement": "none"},
+    "public_minimal": {"template": "public_read", "actions": ["read"], "purpose": "public_verification_minimal_fields", "entitlement": "none"},
+    "self": {"template": "session_self", "actions": ["read", "logout"], "purpose": "account_service", "entitlement": "none"},
+    "subject:read": {"template": "subject_scoped", "actions": ["read", "list"], "purpose": "operation_allowlist", "entitlement": "none"},
+    "subject:write": {"template": "subject_scoped", "actions": ["create", "update"], "purpose": "operation_allowlist", "entitlement": "none"},
+    "subject:consent": {"template": "subject_scoped", "actions": ["read", "create", "withdraw"], "purpose": "privacy_control", "entitlement": "never_required"},
+    "subject:share": {"template": "subject_scoped", "actions": ["read", "grant", "revoke"], "purpose": "explicit_share_purpose", "entitlement": "never_expands_access"},
+    "subject:analyze": {"template": "subject_scoped", "actions": ["create_analysis"], "purpose": "selected_product_purpose", "entitlement": "required_when_product_paid"},
+    "subject:report": {"template": "subject_scoped", "actions": ["create_report", "list_reports"], "purpose": "selected_product_purpose", "entitlement": "required_when_product_paid"},
+    "subject:privacy": {"template": "subject_scoped", "actions": ["export_personal_data", "request_deletion"], "purpose": "privacy_right", "entitlement": "never_required"},
+    "subject:automate": {"template": "subject_scoped", "actions": ["create_automation"], "purpose": "explicit_automation_authorization", "entitlement": "product_rule_only"},
+    "grant:owner": {"template": "subject_scoped", "actions": ["read", "create", "revoke"], "purpose": "explicit_share_purpose", "entitlement": "never_expands_access"},
+    "action:write": {"template": "subject_scoped", "actions": ["create_checkin"], "purpose": "plan_tracking", "entitlement": "none_for_existing_plan"},
+    "run:read": {"template": "subject_scoped", "actions": ["read_job_state"], "purpose": "same_as_run", "entitlement": "none_for_existing_run"},
+    "run:cancel": {"template": "subject_scoped", "actions": ["cancel"], "purpose": "same_as_run", "entitlement": "none_for_existing_run"},
+    "result:read": {"template": "subject_scoped", "actions": ["read"], "purpose": "same_as_run", "entitlement": "required_if_result_is_paid_product"},
+    "report:read": {"template": "subject_scoped", "actions": ["read"], "purpose": "same_as_report_snapshot", "entitlement": "required_if_contract_allows_access_gate"},
+    "report:review": {"template": "reviewer_role", "actions": ["review"], "purpose": "assigned_review", "entitlement": "not_applicable"},
+    "report:publish": {"template": "reviewer_role", "actions": ["publish"], "purpose": "assigned_release", "entitlement": "report_ready_and_order_state_are_separate"},
+    "report:export": {"template": "subject_scoped", "actions": ["create_export"], "purpose": "same_as_report_snapshot", "entitlement": "required_if_export_format_is_paid"},
+    "artifact:download": {"template": "subject_scoped", "actions": ["download"], "purpose": "same_as_report_snapshot", "entitlement": "rechecked_at_each_download"},
+    "order:owner": {"template": "owner_scoped", "actions": ["create", "read", "checkout", "request_refund"], "purpose": "commerce", "entitlement": "not_an_input_to_payment_authorization"},
+    "webhook_signature": {"template": "signed_webhook", "actions": ["record_event", "apply_idempotent_effect"], "purpose": "commerce_provider_callback", "entitlement": "effect_output_only"},
+    "ticket:owner": {"template": "owner_scoped", "actions": ["create", "read"], "purpose": "support", "entitlement": "none"},
+    "job:owner": {"template": "owner_scoped", "actions": ["read_job_state"], "purpose": "same_as_requested_resource", "entitlement": "none_for_existing_job"},
+    "automation:owner": {"template": "owner_scoped", "actions": ["stop"], "purpose": "same_as_automation", "entitlement": "none_to_stop"},
+    "practitioner:assigned": {"template": "assigned_role", "actions": ["list_assigned", "read_assigned"], "purpose": "case_assignment_and_subject_grant", "entitlement": "seat_does_not_replace_subject_grant"},
+    "enrollment:write": {"template": "owner_scoped", "actions": ["submit_assignment"], "purpose": "academy_enrollment", "entitlement": "active_enrollment"},
+    "organization:member": {"template": "assigned_role", "actions": ["read_workspace_projection"], "purpose": "organization_work", "entitlement": "active_membership_but_no_personal_profile_access"},
+    "partner:assigned": {"template": "assigned_role", "actions": ["read_partner_projection"], "purpose": "partner_operations", "entitlement": "active_partner_license_and_country_scope"},
+    "method:editor": {"template": "reviewer_role", "actions": ["create_draft_only"], "purpose": "method_governance", "entitlement": "not_applicable"},
+    "legal:reviewer": {"template": "reviewer_role", "actions": ["review_country_pack"], "purpose": "legal_country_review", "entitlement": "not_applicable"},
+    "quality:reviewer": {"template": "reviewer_role", "actions": ["read_quality_metadata"], "purpose": "quality_assurance", "entitlement": "not_applicable"},
+    "ops:reader": {"template": "reviewer_role", "actions": ["read_redacted_operations_metadata"], "purpose": "operations", "entitlement": "not_applicable"}
+  },
+  "invariants": [
+    "organization_membership_never_implies_personal_subject_grant",
+    "entitlement_never_implies_subject_authorization",
+    "resource_id_knowledge_never_implies_access",
+    "cors_never_substitutes_for_authentication_or_authorization",
+    "deny_response_never_contains_private_owner_or_subject_metadata",
+    "job_and_download_permissions_are_rechecked_after_revocation",
+    "permission_revision_must_match_at_state_transition",
+    "runtime_database_roles_must_not_be_owner_superuser_or_bypassrls"
+  ]
+}
+

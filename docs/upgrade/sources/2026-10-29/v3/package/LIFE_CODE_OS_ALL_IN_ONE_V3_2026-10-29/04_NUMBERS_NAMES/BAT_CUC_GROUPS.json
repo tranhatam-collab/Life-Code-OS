@@ -1,0 +1,186 @@
+[
+  {
+    "group_id": "SK",
+    "name_vi": "Sinh khí",
+    "name_zh_Hant": "生氣",
+    "name_zh_Hans": "生气",
+    "traditional_label": "Sinh khí",
+    "editorial_reflection_theme": "kết nối và nguồn hỗ trợ",
+    "pairs": [
+      "14",
+      "41",
+      "67",
+      "76",
+      "39",
+      "93",
+      "28",
+      "82"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  },
+  {
+    "group_id": "TY",
+    "name_vi": "Thiên y",
+    "name_zh_Hant": "天醫",
+    "name_zh_Hans": "天医",
+    "traditional_label": "Thiên y",
+    "editorial_reflection_theme": "nguồn lực và điều cần gìn giữ",
+    "pairs": [
+      "13",
+      "31",
+      "68",
+      "86",
+      "49",
+      "94",
+      "27",
+      "72"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  },
+  {
+    "group_id": "DN",
+    "name_vi": "Diên niên",
+    "name_zh_Hant": "延年",
+    "name_zh_Hans": "延年",
+    "traditional_label": "Diên niên",
+    "editorial_reflection_theme": "tổ chức và trách nhiệm",
+    "pairs": [
+      "19",
+      "91",
+      "78",
+      "87",
+      "34",
+      "43",
+      "26",
+      "62"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  },
+  {
+    "group_id": "PV",
+    "name_vi": "Phục vị",
+    "name_zh_Hant": "伏位",
+    "name_zh_Hans": "伏位",
+    "traditional_label": "Phục vị",
+    "editorial_reflection_theme": "duy trì và khả năng điều chỉnh",
+    "pairs": [
+      "11",
+      "22",
+      "33",
+      "44",
+      "66",
+      "77",
+      "88",
+      "99"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  },
+  {
+    "group_id": "TM",
+    "name_vi": "Tuyệt mệnh",
+    "name_zh_Hant": "絕命",
+    "name_zh_Hans": "绝命",
+    "traditional_label": "Tuyệt mệnh",
+    "editorial_reflection_theme": "lựa chọn và giới hạn đánh đổi",
+    "pairs": [
+      "12",
+      "21",
+      "69",
+      "96",
+      "48",
+      "84",
+      "37",
+      "73"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  },
+  {
+    "group_id": "NQ",
+    "name_vi": "Ngũ quỷ",
+    "name_zh_Hant": "五鬼",
+    "name_zh_Hans": "五鬼",
+    "traditional_label": "Ngũ quỷ",
+    "editorial_reflection_theme": "ý tưởng mới và tính nhất quán",
+    "pairs": [
+      "18",
+      "81",
+      "79",
+      "97",
+      "36",
+      "63",
+      "24",
+      "42"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  },
+  {
+    "group_id": "LS",
+    "name_vi": "Lục sát",
+    "name_zh_Hant": "六煞",
+    "name_zh_Hans": "六煞",
+    "traditional_label": "Lục sát",
+    "editorial_reflection_theme": "quan hệ và ranh giới",
+    "pairs": [
+      "16",
+      "61",
+      "47",
+      "74",
+      "38",
+      "83",
+      "29",
+      "92"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  },
+  {
+    "group_id": "HH",
+    "name_vi": "Họa hại",
+    "name_zh_Hant": "禍害",
+    "name_zh_Hans": "祸害",
+    "traditional_label": "Họa hại",
+    "editorial_reflection_theme": "lời nói và trách nhiệm giao tiếp",
+    "pairs": [
+      "17",
+      "71",
+      "89",
+      "98",
+      "46",
+      "64",
+      "23",
+      "32"
+    ],
+    "source_ids": [
+      "R04",
+      "R05"
+    ],
+    "interpretation_status": "CULTURAL_REFLECTION_NOT_INDIVIDUAL_FACT"
+  }
+]

@@ -1,0 +1,42 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {execute,TABLE} from '../src/engine.mjs';
+import {PAIRS,tail80,root} from '../src/numbers.mjs';
+import {hexagramTransform} from '../src/symbolic.mjs';
+import {canonical,digest} from '../src/canonical.mjs';
+import {DemoLedger,authorize} from '../src/policy.mjs';
+import {ageAt} from '../src/time.mjs';
+const cases=JSON.parse(readFileSync(new URL('../data/demo-cases.json',import.meta.url),'utf8'));
+function subset(got,want,path='root'){if(want===null||typeof want!=='object'){assert.deepEqual(got,want,path);return;}for(const [k,v] of Object.entries(want))subset(got?.[k],v,path+'.'+k);}
+for(const c of cases)test(`${c.id} ${c.title}`,()=>{if(c.expected_error)assert.throws(()=>execute(c.method,c.input),e=>e.code===c.expected_error);else {const got=execute(c.method,c.input);if(c.expected_subset)subset(got,c.expected_subset);assert.ok(got);}});
+test('Bảng 80 đủ và không trùng',()=>{assert.equal(TABLE.records.length,80);assert.equal(new Set(TABLE.records.map(r=>r.code)).size,80);for(let n=1;n<=80;n++)assert.ok(TABLE.records.some(r=>r.code===n));});
+test('Miền 10.000 đuôi: số dư, 0→80 và phân bố 125/mã',()=>{const bins=Array(81).fill(0);for(let n=0;n<10000;n++){const s=String(n).padStart(4,'0');const r=tail80({suffix:s,zero_policy:'as80'},TABLE).calculation;assert.equal(r.remainder,n-80*Math.floor(n/80));assert.equal(r.lookup_code,n%80||80);bins[r.lookup_code]++;}for(let i=1;i<=80;i++)assert.equal(bins[i],125);});
+test('Miền 64 cặp và đối xứng đảo thứ tự',()=>{assert.equal(Object.keys(PAIRS).length,64);for(const [p,g] of Object.entries(PAIRS)){assert.equal(PAIRS[[...p].reverse().join('')],g);assert.ok(!/[05]/.test(p));}});
+test('Miền 64×64 biến đổi hào: XOR và đảo ngược',()=>{for(let n=0;n<64;n++)for(let mask=0;mask<64;mask++){const lines=Array.from({length:6},(_,i)=>(n>>i)&1),chg=Array.from({length:6},(_,i)=>i+1).filter(i=>(mask>>(i-1))&1);const r=hexagramTransform({lines_bottom_up:lines,changing_lines:chg}).calculation;assert.equal(r.changed_binary_index,n^mask);const back=hexagramTransform({lines_bottom_up:r.changed_lines,changing_lines:chg}).calculation;assert.equal(back.changed_binary_index,n);}});
+test('Digital root không nhận số không an toàn',()=>{assert.throws(()=>root(Number.MAX_SAFE_INTEGER+1));assert.throws(()=>root(-1));});
+test('Canonical key order ổn định',()=>{assert.equal(digest({b:2,a:1}),digest({a:1,b:2}));assert.notEqual(digest({a:[1,2]}),digest({a:[2,1]}));});
+test('Không nhận NaN, Infinity, undefined, số thực và lone surrogate',()=>{for(const x of [NaN,Infinity,undefined,0.3,'\uD800'])assert.throws(()=>canonical(x));});
+test('Tên NFC/NFD cùng tổng; raw giữ riêng',()=>{const a=execute('name',{name:'Đỗ An'}).calculation,b=execute('name',{name:'ĐỖ AN'}).calculation;assert.equal(a.sum,b.sum);assert.notEqual(a.original,b.original);});
+test('Thay chủ thể không thay phép chia đuôi',()=>{const a=execute('tail80',{suffix:'6231'}).calculation,b=execute('tail80',{suffix:'6231'}).calculation;assert.deepEqual(a,b);});
+test('Cùng thuê bao chuẩn hóa không đổi kết quả',()=>{const a=execute('phone',{raw:'0900 000 001'}).canonical,b=execute('phone',{raw:'+84 900 000 001'}).canonical;assert.equal(a,b);});
+test('100 khoảng tuổi liên tục và đúng định nghĩa end-exclusive',()=>{const r=execute('timeline',{birth_date:'2000-02-29',as_of:'2026-10-20'}).calculation;assert.equal(r.intervals.length,100);for(let i=1;i<100;i++)assert.equal(r.intervals[i-1].end_exclusive,r.intervals[i].start);assert.equal(ageAt('2000-02-29','2025-02-28','feb28'),25);assert.equal(ageAt('2000-02-29','2025-02-28','mar01'),24);});
+test('UTC ứng viên DST không âm thầm chọn một',()=>{const r=execute('time',{date:'2026-10-25',time:'02:30',time_zone:'Europe/Berlin'}).calculation;assert.equal(r.candidates.length,2);assert.equal(r.state,'ambiguous');});
+test('Đổi ngày không sinh lịch biến cố',()=>{const r=execute('timeline',{birth_date:'1990-01-01',as_of:'2026-10-20'});assert.ok(!('risk_years' in r.calculation));assert.equal(r.probability,null);});
+test('Idempotency đồng thời: chỉ gọi một lần trong cùng tiến trình',async()=>{const ledger=new DemoLedger();let calls=0;const request={tenant:'t1',operation:'report',key:'k1',digest:'abc'};const f=async()=>{calls++;await new Promise(r=>setTimeout(r,5));return {id:'r1'};};const a=await Promise.all(Array.from({length:12},()=>ledger.run(request,f)));assert.equal(calls,1);assert.ok(a.every(r=>r.id==='r1'));});
+test('Idempotency khác payload trả conflict; khác tenant độc lập',async()=>{const l=new DemoLedger();await l.run({tenant:'t1',operation:'x',key:'k',digest:'a'},()=>1);await assert.rejects(l.run({tenant:'t1',operation:'x',key:'k',digest:'b'},()=>2),e=>e.code==='IDEMPOTENCY_CONFLICT');assert.equal(await l.run({tenant:'t2',operation:'x',key:'k',digest:'b'},()=>2),2);});
+test('Job lỗi không đóng receipt thành công',async()=>{const l=new DemoLedger(),k={tenant:'t',operation:'x',key:'a',digest:'a'};await assert.rejects(l.run(k,()=>{throw Error('fail');}));assert.equal(await l.run(k,()=>3),3);});
+test('Grant malformed fail closed',()=>{assert.equal(authorize({}).allowed,false);assert.equal(authorize({principal:{authenticated:true,state:'active'}}).allowed,false);});
+test('Không cho phép chấm nhân cách từ ảnh trong claim',()=>{assert.throws(()=>execute('claim',{claim:{type:'symbolic_interpretation',text:'Ví dụ bị cấm.',evidence_ids:['x'],use_case:'personality_from_face'}}),e=>e.code==='PROHIBITED_INFERENCE');});
+test('Tổng nguyên âm + phụ âm luôn bằng tổng tên',()=>{for(const name of ['Demo An','Lê Bình','Đỗ An']){const r=execute('name',{name}).calculation;assert.equal(r.sum,r.vowel_sum+r.consonant_sum);}});
+test('Coverage chỉ một trường không thành full',()=>{const r=execute('coverage',{product_release:'self-signal.demo.2',valid_field_ids:['name']}).calculation;assert.equal(r.ratio,1/3);});
+test('Không có nhiệm vụ đến hạn không thành 0 điểm',()=>{assert.equal(execute('actions',{actions:[],window_start:'2026-01-01',window_end:'2026-01-02'}).calculation.ratio,null);});
+
+test('Thiếu principal ID không tạo quyền từ hai undefined',()=>{assert.equal(authorize({principal:{authenticated:true,state:'active'},resource:{state:'active'},grant:{state:'active'}}).allowed,false);});
+test('Optimistic update không chấp nhận phiên bản undefined',()=>{assert.throws(()=>execute('optimistic',{patch:{x:1}}));});
+test('Evidence ID null bị chặn',()=>{assert.throws(()=>execute('claim',{claim:{type:'self_report',text:'Ví dụ',evidence_ids:[null]}}),e=>e.code==='EVIDENCE_REQUIRED');});
+test('Tên trường __proto__ không làm hỏng thống kê',()=>{const x=execute('resonance',{observations:[{date:'2026-10-20',field:'__proto__',rating:5}]}).calculation;assert.equal(x.summaries[0].mean,5);});
+test('MCDA thiếu dữ liệu giữ thứ tự nhập, không xếp hạng ngầm',()=>{const x=execute('preference',{criteria:[{id:'a',weight:100}],options:[{id:'one',values:{a:null}},{id:'two',values:{a:90}}]}).calculation;assert.equal(x.options[0].id,'one');assert.equal(x.ranking_allowed,false);});
+test('Pipeline thiếu ngày vẫn kiểm tra as_of',()=>{assert.throws(()=>execute('profile_pipeline',{profile:{},as_of:'bad'}),e=>e.code==='INVALID_DATE');});
+
+test('DAG dùng Map cho ID trùng tên thuộc tính prototype',()=>{const out=execute('dag',{nodes:[{id:'__proto__',depends_on:[]},{id:'constructor',depends_on:['__proto__']}]});assert.deepEqual(out.waves,[['__proto__'],['constructor']]);});

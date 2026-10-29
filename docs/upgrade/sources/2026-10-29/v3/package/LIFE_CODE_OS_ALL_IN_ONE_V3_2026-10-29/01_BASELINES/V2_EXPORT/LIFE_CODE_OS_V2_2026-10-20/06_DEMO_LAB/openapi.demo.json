@@ -1,0 +1,108 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "Life Code V2 local reference demo",
+    "version": "0.2.0",
+    "description": "Không phải productionAPI. Loopback; không dữ liệu thật, DB, auth hoặc payment."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8788"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "demoHealth",
+        "responses": {
+          "200": {
+            "description": "Demo state"
+          }
+        }
+      }
+    },
+    "/api/demo/catalog": {
+      "get": {
+        "operationId": "demoCatalog",
+        "responses": {
+          "200": {
+            "description": "90 synthetic cases"
+          }
+        }
+      }
+    },
+    "/api/demo/run": {
+      "post": {
+        "operationId": "demoRun",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "method": {
+                    "enum": [
+                      "actions",
+                      "authorization",
+                      "birth",
+                      "blocked",
+                      "cache_key",
+                      "cashflow",
+                      "claim",
+                      "coverage",
+                      "cycle",
+                      "dag",
+                      "digit_matrix",
+                      "hexagram",
+                      "hypotheses",
+                      "impact",
+                      "name",
+                      "optimistic",
+                      "pairs",
+                      "phone",
+                      "preference",
+                      "profile_pipeline",
+                      "report",
+                      "resonance",
+                      "sequence",
+                      "tail80",
+                      "time",
+                      "timeline",
+                      "transition"
+                    ]
+                  },
+                  "input": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "method",
+                  "input"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Reference result"
+          },
+          "400": {
+            "description": "Validation/policy failure"
+          },
+          "403": {
+            "description": "Foreign origin/host"
+          },
+          "413": {
+            "description": "Payload too large"
+          },
+          "415": {
+            "description": "JSON required"
+          }
+        }
+      }
+    }
+  }
+}

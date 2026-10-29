@@ -1,0 +1,164 @@
+[
+  {
+    "source_id": "N01",
+    "title": "W3C WCAG 2.2",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Tiêu chuẩn accessibility; chỉ mục tiêu thiết kế, chưa chứng nhận AA",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N02",
+    "title": "PostgreSQL Row Security",
+    "url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "RLS; role và owner bypass cần kiểm thử riêng",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N03",
+    "title": "Cloudflare Queues delivery",
+    "url": "https://developers.cloudflare.com/queues/reference/delivery-guarantees/",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "At-least-once; idempotency",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N04",
+    "title": "OpenAPI 3.1.1",
+    "url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Phiên bản hợp đồng được chọn; không khẳng định mới nhất",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N05",
+    "title": "RFC 9457 Problem Details",
+    "url": "https://www.rfc-editor.org/rfc/rfc9457.html",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Định dạng lỗi HTTP",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N06",
+    "title": "RFC 8785 JCS",
+    "url": "https://www.rfc-editor.org/rfc/rfc8785.html",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Tham chiếu canonicalization; demo chỉ hỗ trợ tập con riêng",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N07",
+    "title": "Unicode normalization",
+    "url": "https://unicode.org/reports/tr15/",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Giữ nguyên tên và tạo derivative NFC",
+    "read_status": "OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N08",
+    "title": "IANA time zone database",
+    "url": "https://www.iana.org/time-zones",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Lịch sử múi giờ và pin version",
+    "read_status": "OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N09",
+    "title": "OWASP object authorization",
+    "url": "https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Quyền từng đối tượng",
+    "read_status": "OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N10",
+    "title": "JSON Schema 2020-12",
+    "url": "https://json-schema.org/draft/2020-12",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Schema cấu trúc; không thay business authorization",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N11",
+    "title": "Luật 91/2025/QH15",
+    "url": "https://congbao.chinhphu.vn/van-ban/luat-so-91-2025-qh15-45578/57730.htm",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Metadata văn bản; áp dụng cần counsel",
+    "read_status": "CURRENT_PUBLIC_METADATA",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N12",
+    "title": "Luật 134/2025/QH15",
+    "url": "https://congbao.chinhphu.vn/van-ban/luat-so-134-2025-qh15-468694/61695.htm",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Metadata văn bản; áp dụng cần counsel",
+    "read_status": "CURRENT_PUBLIC_METADATA",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N13",
+    "title": "Luật 122/2025/QH15",
+    "url": "https://congbao.chinhphu.vn/van-ban/luat-so-122-2025-qh15-468683/61714.htm",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Metadata văn bản; áp dụng cần counsel",
+    "read_status": "CURRENT_PUBLIC_METADATA",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N14",
+    "title": "Nghị định hướng dẫn AI 142/2026",
+    "url": "https://media.chinhphu.vn/ban-hanh-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-tri-tue-nhan-tao-102260508162952667.htm",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Nguồn thông tin Chính phủ; chưa thay đọc điều khoản",
+    "read_status": "CURRENT_PUBLIC_METADATA",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N15",
+    "title": "EU AI Act FAQs",
+    "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Phân loại chức năng và hành vi bị cấm",
+    "read_status": "CURRENT_PUBLIC_METADATA",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N16",
+    "title": "Life Code public home",
+    "url": "https://lifecode.iai.one/",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Nội dung public được công cụ truy xuất; không receipt runtime SHA",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N17",
+    "title": "GitHub main pinned",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/tree/99b402764437f81859fa0cd3a3af860125f7bd52",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Mã nguồn remote được đọc",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  },
+  {
+    "source_id": "N18",
+    "title": "GitHub audit pinned",
+    "url": "https://github.com/tranhatam-collab/Life-Code-OS/tree/336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+    "retrieved_or_referenced_on": "2026-10-20",
+    "scope": "Baseline audit; không chứng nhận production",
+    "read_status": "CURRENT_CONTENT_READ",
+    "rights": "Reference/link; no full-text redistribution"
+  }
+]

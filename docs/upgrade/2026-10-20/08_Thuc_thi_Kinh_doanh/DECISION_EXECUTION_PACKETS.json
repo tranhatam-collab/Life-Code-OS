@@ -1,0 +1,2493 @@
+[
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q1",
+    "topic": "Định vị tự hiểu và thiết kế đời sống",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q1-A",
+        "label": "Bounded self-understanding and life-design positioning",
+        "scope": "Position the system as reflective decision support with explicit limits; exclude diagnosis, destiny and guaranteed outcomes.",
+        "tradeoffs": [
+          "Preserves the product vision and action orientation",
+          "Requires disciplined claim review across every surface"
+        ]
+      },
+      {
+        "option_id": "Q1-B",
+        "label": "Educational wellbeing content only",
+        "scope": "Restrict the offer to static education and journaling without individualized interpretations.",
+        "tradeoffs": [
+          "Lowest claim risk",
+          "Removes much of the differentiated personalized value"
+        ]
+      },
+      {
+        "option_id": "Q1-C",
+        "label": "Pause positioning and run discovery",
+        "scope": "Do not freeze a public position until user research and legal review are complete.",
+        "tradeoffs": [
+          "Reduces premature commitment",
+          "Delays taxonomy, copy, product contracts and demo acceptance"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q1-A",
+    "recommendation_rationale": "It preserves the stated vision while creating a reviewable boundary between reflection and prohibited scientific, medical or deterministic claims.",
+    "recommendation_tradeoffs": [
+      "Requires ongoing Editorial, Method, Privacy and Legal review",
+      "Public copy cannot outrun evidence or product-specific gates"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "UPG-PRD-001",
+      "UPG-PRD-002",
+      "UPG-UX-002",
+      "UPG-PM-001"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q1",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds recurring claim-review and research capacity; no monetary estimate is valid yet.",
+      "cost_drivers": [
+        "user research",
+        "editorial review",
+        "method review",
+        "privacy/legal review"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Method Lead",
+      "Editorial Lead",
+      "Privacy/Legal"
+    ],
+    "decision_due_event": "before product narrative, public copy or pilot scope is frozen",
+    "constraints": [
+      "No diagnosis, destiny, guaranteed outcome or high-impact decision claim",
+      "Every public claim must map to a product/method/content release"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q1/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q2",
+    "topic": "9 cấp/12 lớp/4 phần/12 trường/K01–20",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q2-A",
+        "label": "Lock the 9-level/12-layer/4-block/12-field/K01-K20 model as a versioned taxonomy",
+        "scope": "Keep the complete model, publish definitions and version every semantic change.",
+        "tradeoffs": [
+          "Preserves all original vision and trace IDs",
+          "Creates broad governance and regression-test obligations"
+        ]
+      },
+      {
+        "option_id": "Q2-B",
+        "label": "Lock nine levels only and defer lower taxonomies",
+        "scope": "Use nine levels now; treat layers, blocks, fields and K families as research-only.",
+        "tradeoffs": [
+          "Smaller initial contract",
+          "Delays report differentiation and method mapping"
+        ]
+      },
+      {
+        "option_id": "Q2-C",
+        "label": "Redesign the taxonomy before implementation",
+        "scope": "Replace the current hierarchy after a dedicated research cycle.",
+        "tradeoffs": [
+          "May simplify the model",
+          "Breaks current product/report/trace mappings and delays development"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q2-A",
+    "recommendation_rationale": "Versioning retains all requested concepts without representing the taxonomy as validated science and gives downstream schemas stable identifiers.",
+    "recommendation_tradeoffs": [
+      "More documentation and migration discipline",
+      "Definitions must be testable and cannot remain marketing labels"
+    ],
+    "decision_dependencies": [
+      "Q1"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-PRD-002",
+      "UPG-AI-001",
+      "UPG-PM-001"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q2",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A has the largest up-front taxonomy and regression effort but avoids later ID churn.",
+      "cost_drivers": [
+        "taxonomy workshops",
+        "schema/versioning work",
+        "report-template regression",
+        "translation"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Method Lead",
+      "Data Architect",
+      "AI/Editorial Lead"
+    ],
+    "decision_due_event": "before schema, API and nine-level report contracts are frozen",
+    "constraints": [
+      "Taxonomy status is conceptual until evidence says otherwise",
+      "Semantic changes require migration and downstream trace review"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q2/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q3",
+    "topic": "Method độc lập theo nguồn và phiên bản",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q3-A",
+        "label": "Independent versioned method releases",
+        "scope": "Release each method by source, rights, formula, tests, limits and named approvers.",
+        "tradeoffs": [
+          "Strong provenance and selective withdrawal",
+          "Higher registry and review overhead"
+        ]
+      },
+      {
+        "option_id": "Q3-B",
+        "label": "One bundled method release",
+        "scope": "Approve the whole method set under one version and review.",
+        "tradeoffs": [
+          "Simpler packaging",
+          "A defect or rights issue can block or taint the entire bundle"
+        ]
+      },
+      {
+        "option_id": "Q3-C",
+        "label": "Content-only mode with no calculation methods",
+        "scope": "Keep method descriptions but disable computed or individualized outputs.",
+        "tradeoffs": [
+          "Lowest execution and rights risk",
+          "Cannot deliver the intended analytic product depth"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q3-A",
+    "recommendation_rationale": "Per-method releases provide the minimum isolation needed for rights, corrections, rollback and level-specific eligibility.",
+    "recommendation_tradeoffs": [
+      "Requires a release registry and independent review per method",
+      "Some catalog products remain unavailable while individual methods are blocked"
+    ],
+    "decision_dependencies": [
+      "Q2"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-AI-001",
+      "UPG-BE-001",
+      "UPG-BE-002",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q3",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Cost varies by source rights, expert review and test depth for each method.",
+      "cost_drivers": [
+        "source licensing",
+        "method review",
+        "formula implementation",
+        "golden and negative tests"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Method Council",
+      "Data Lead",
+      "Legal/Rights Reviewer",
+      "QA"
+    ],
+    "decision_due_event": "before any method result is eligible for a product or report",
+    "constraints": [
+      "No release without source/right/formula/test/limit evidence",
+      "Withdrawal must invalidate dependent jobs, reports and exports"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q3/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q4",
+    "topic": "Entitlement khác quyền và đủ dữ liệu",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q4-A",
+        "label": "Separate entitlement, authorization, eligibility and data sufficiency",
+        "scope": "Evaluate each server-side and return typed denial or missing-data reasons.",
+        "tradeoffs": [
+          "Correct security and user guidance",
+          "More policy states and negative tests"
+        ]
+      },
+      {
+        "option_id": "Q4-B",
+        "label": "Treat entitlement as sufficient access",
+        "scope": "A paid entitlement opens a product whenever the route exists.",
+        "tradeoffs": [
+          "Simpler commerce logic",
+          "Unsafe because payment does not prove subject rights, purpose or data sufficiency"
+        ]
+      },
+      {
+        "option_id": "Q4-C",
+        "label": "Manual eligibility review for every request",
+        "scope": "A reviewer approves each access and run.",
+        "tradeoffs": [
+          "Strong human control",
+          "Does not scale and increases sensitive-data handling"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q4-A",
+    "recommendation_rationale": "The four-way separation prevents payment or a client flag from becoming authorization and supports precise recovery states.",
+    "recommendation_tradeoffs": [
+      "Requires a policy engine and cross-layer test matrix",
+      "More blocked states must be designed across mobile and desktop"
+    ],
+    "decision_dependencies": [
+      "Q9"
+    ],
+    "affected_task_ids": [
+      "TRUST-01",
+      "TRUST-02",
+      "TRUST-03",
+      "TRUST-04",
+      "TRUST-05",
+      "TRUST-06",
+      "TRUST-07",
+      "TRUST-08",
+      "TRUST-09",
+      "TRUST-10",
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "API-01",
+      "API-02",
+      "API-03",
+      "API-04",
+      "API-05",
+      "API-06",
+      "API-07",
+      "API-08",
+      "API-09",
+      "API-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "UPG-BE-003",
+      "UPG-BE-004",
+      "UPG-BE-006"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q4",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds policy, authorization and cross-device state work; provider-independent estimates remain in person-days only.",
+      "cost_drivers": [
+        "policy engine",
+        "object/tenant tests",
+        "entitlement reconciliation",
+        "UX denial states"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Security Lead",
+      "Privacy/Data Owner",
+      "Commerce Lead"
+    ],
+    "decision_due_event": "before entitlement, profile, analysis or report authorization contracts are frozen",
+    "constraints": [
+      "Client-supplied IDs or flags cannot grant access",
+      "Every denial must avoid object-existence leakage"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q4/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q5",
+    "topic": "Dừng điểm giả và cho null",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q5-A",
+        "label": "Typed null, unknown, withheld and not-applicable results",
+        "scope": "Preserve uncertainty and block unsupported derived scores while allowing partial truthful reports.",
+        "tradeoffs": [
+          "Prevents fabricated certainty",
+          "Requires more schema and UI states"
+        ]
+      },
+      {
+        "option_id": "Q5-B",
+        "label": "Impute fallback scores",
+        "scope": "Fill missing values from defaults or heuristics.",
+        "tradeoffs": [
+          "Fewer visible gaps",
+          "Creates false precision and unsafe downstream inferences"
+        ]
+      },
+      {
+        "option_id": "Q5-C",
+        "label": "Fail the entire report on any missing input",
+        "scope": "Return no result until every field is present.",
+        "tradeoffs": [
+          "Simple consistency rule",
+          "Unnecessarily blocks safe partial value and encourages coerced data entry"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q5-A",
+    "recommendation_rationale": "Typed absence is the only option consistent with the plan's evidence discipline and differentiated report contracts.",
+    "recommendation_tradeoffs": [
+      "Every formula and narrative path needs null behavior",
+      "Users require clear explanations of what is missing and why"
+    ],
+    "decision_dependencies": [
+      "Q2",
+      "Q3"
+    ],
+    "affected_task_ids": [
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-BE-002",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q5",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A increases schema, fixture, UI and report-regression work.",
+      "cost_drivers": [
+        "typed schemas",
+        "null-state UX",
+        "formula tests",
+        "report fixtures"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Data Lead",
+      "Method Lead",
+      "AI/Editorial Lead",
+      "QA"
+    ],
+    "decision_due_event": "before formula, result and report schemas are accepted",
+    "constraints": [
+      "Unknown is never converted to zero",
+      "AI cannot infer or narrate unavailable deterministic values"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q5/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q6",
+    "topic": "Numbers là tham chiếu không đo số phận",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q6-A",
+        "label": "Numbers as bounded symbolic reference",
+        "scope": "Allow clearly labeled symbolic interpretation with sources, limitations and no fate or clinical claim.",
+        "tradeoffs": [
+          "Retains the original Numbers concept",
+          "Needs prominent limitations and cultural/claim review"
+        ]
+      },
+      {
+        "option_id": "Q6-B",
+        "label": "Numbers as predictive life metric",
+        "scope": "Use numeric outputs to predict traits, compatibility or outcomes.",
+        "tradeoffs": [
+          "Strong marketing differentiation",
+          "Unacceptable unsupported and potentially harmful inference risk"
+        ]
+      },
+      {
+        "option_id": "Q6-C",
+        "label": "Remove Numbers from the active portfolio",
+        "scope": "Keep historical material only and do not expose the method.",
+        "tradeoffs": [
+          "Lowest claim risk",
+          "Discards a material part of the product vision"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q6-A",
+    "recommendation_rationale": "A bounded reference mode keeps the vision visible without treating symbolic arithmetic as measurement or destiny.",
+    "recommendation_tradeoffs": [
+      "May reduce persuasive marketing language",
+      "Some users may still over-interpret results, requiring UX safeguards"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q3",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q6",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A requires source/right review, careful copy and misuse testing.",
+      "cost_drivers": [
+        "source rights",
+        "editorial review",
+        "claim testing",
+        "localization"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Method Lead",
+      "Editorial Lead",
+      "Privacy/Legal",
+      "QA"
+    ],
+    "decision_due_event": "before Numbers content or calculation is included in a release candidate",
+    "constraints": [
+      "No prediction, diagnosis or high-impact use",
+      "Every output includes method version, source, limitation and correction path"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q6/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q7",
+    "topic": "Báo cáo cấu trúc không filler",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q7-A",
+        "label": "Differentiated structured reports with evidence blocks",
+        "scope": "Use nine level-specific contracts, deterministic inputs, provenance, unknowns, actions and review states.",
+        "tradeoffs": [
+          "High traceability and genuine level differentiation",
+          "Largest template and regression surface"
+        ]
+      },
+      {
+        "option_id": "Q7-B",
+        "label": "One universal report template",
+        "scope": "Reuse a single report structure and vary only length or content.",
+        "tradeoffs": [
+          "Lower authoring cost",
+          "Risks filler and fails nine-level differentiation"
+        ]
+      },
+      {
+        "option_id": "Q7-C",
+        "label": "Free-form AI narrative",
+        "scope": "Let the model compose reports without a fixed schema.",
+        "tradeoffs": [
+          "Fast experimentation",
+          "Cannot reliably prove provenance, limits, corrections or stable outputs"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q7-A",
+    "recommendation_rationale": "The structured approach is required to avoid filler and to separate deterministic facts, interpretation, uncertainty and action.",
+    "recommendation_tradeoffs": [
+      "Needs nine golden fixture suites and reviewer capacity",
+      "Longer reports cannot be accepted by page count alone"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q12"
+    ],
+    "affected_task_ids": [
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q7",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds template engineering, evaluation, rendering and human review capacity.",
+      "cost_drivers": [
+        "template development",
+        "evaluation suite",
+        "human review",
+        "render/accessibility QA"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "AI Lead",
+      "Editorial Lead",
+      "Method Lead",
+      "Privacy",
+      "QA"
+    ],
+    "decision_due_event": "before L1 report implementation and before any report template is published",
+    "constraints": [
+      "Public auto-publish remains off",
+      "Report acceptance is content- and evidence-based, not page-count-based"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q7/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q8",
+    "topic": "Dòng sản phẩm mở theo gates",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q8-A",
+        "label": "Open products by explicit train and exact release gates",
+        "scope": "Keep all 23 products registered but unlock only the approved product/release/market after receipts.",
+        "tradeoffs": [
+          "Preserves long-term vision and limits blast radius",
+          "Slower portfolio expansion"
+        ]
+      },
+      {
+        "option_id": "Q8-B",
+        "label": "Open the complete portfolio in one launch",
+        "scope": "Ship all products once the shared platform passes.",
+        "tradeoffs": [
+          "Faster catalog breadth",
+          "Unbounded legal, method, support and operating risk"
+        ]
+      },
+      {
+        "option_id": "Q8-C",
+        "label": "Freeze permanently to Guest and L1",
+        "scope": "Remove higher levels and advanced product lines from execution.",
+        "tradeoffs": [
+          "Smallest scope",
+          "Discards the requested portfolio vision"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q8-A",
+    "recommendation_rationale": "Train-by-train release keeps all 23 products without implying that shared platform evidence clears product-specific gates.",
+    "recommendation_tradeoffs": [
+      "Requires repeated candidate reviews",
+      "Commercial growth follows evidence rather than a fixed calendar"
+    ],
+    "decision_dependencies": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q7",
+      "Q9",
+      "Q12",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "UPG-PRD-001",
+      "UPG-PRD-002"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q8",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Staged release spreads cost and adds repeated review; portfolio-wide cost cannot be quoted yet.",
+      "cost_drivers": [
+        "product-specific review",
+        "release verification",
+        "support readiness",
+        "country/legal review"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Release Owner",
+      "Privacy/Legal",
+      "Security/SRE",
+      "QA"
+    ],
+    "decision_due_event": "before a product train enters build beyond reversible design or synthetic fixtures",
+    "constraints": [
+      "No product inherits approval from another product",
+      "Exact SHA, artifact, environment, market and expiry bind every release"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q8/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q9",
+    "topic": "Privacy, auth, delete từ đầu",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q9-A",
+        "label": "Privacy, server authorization and deletion by design",
+        "scope": "Implement identity, object/tenant policy, consent, retention, export, correction and deletion before real intake.",
+        "tradeoffs": [
+          "Strongest trust baseline",
+          "Significant early engineering and review work"
+        ]
+      },
+      {
+        "option_id": "Q9-B",
+        "label": "Retrofit privacy after MVP",
+        "scope": "Collect data with basic authentication and add rights later.",
+        "tradeoffs": [
+          "Faster prototype",
+          "Creates unacceptable migration, disclosure and legal risk"
+        ]
+      },
+      {
+        "option_id": "Q9-C",
+        "label": "Anonymous ephemeral use only",
+        "scope": "Do not persist profiles, reports or accounts.",
+        "tradeoffs": [
+          "Minimizes stored personal data",
+          "Cannot support the planned longitudinal and commerce experience"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q9-A",
+    "recommendation_rationale": "Personalized life data requires rights and authorization contracts before collection; later retrofit is not a safe migration plan.",
+    "recommendation_tradeoffs": [
+      "Delays real-data pilots",
+      "Requires deletion/export/correction and backup implications to be rehearsed"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "TRUST-01",
+      "TRUST-02",
+      "TRUST-03",
+      "TRUST-04",
+      "TRUST-05",
+      "TRUST-06",
+      "TRUST-07",
+      "TRUST-08",
+      "TRUST-09",
+      "TRUST-10",
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "API-01",
+      "API-02",
+      "API-03",
+      "API-04",
+      "API-05",
+      "API-06",
+      "API-07",
+      "API-08",
+      "API-09",
+      "API-10",
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "OPS-01",
+      "OPS-02",
+      "OPS-03",
+      "OPS-04",
+      "OPS-05",
+      "OPS-06",
+      "OPS-07",
+      "OPS-08",
+      "OPS-09",
+      "OPS-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "UPG-AI-002",
+      "UPG-BE-003",
+      "UPG-BE-005",
+      "UPG-BE-006",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q9",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A carries early security, privacy and data-lifecycle cost but avoids expensive unsafe retrofit.",
+      "cost_drivers": [
+        "identity",
+        "authorization/RLS",
+        "privacy rights jobs",
+        "retention/legal review",
+        "security testing"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Privacy/Data Owner",
+      "Security Lead",
+      "Backend Lead",
+      "Legal",
+      "QA"
+    ],
+    "decision_due_event": "before any real personal data intake, persistence, sharing or migration",
+    "constraints": [
+      "Synthetic fixtures only until the trust baseline is evidenced",
+      "No production data access is authorized by this packet"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q9/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q10",
+    "topic": "Tám bộ nền từ source/runtime khóa",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q10-A",
+        "label": "Build eight bundles from a locked, hashed source/runtime baseline",
+        "scope": "Bind source, generation inputs, output manifest and receipts before transformation.",
+        "tradeoffs": [
+          "Reproducible and auditable",
+          "Requires source lock and transformation tracking"
+        ]
+      },
+      {
+        "option_id": "Q10-B",
+        "label": "Normalize and rewrite before baseline lock",
+        "scope": "Clean the source first, then record the resulting package.",
+        "tradeoffs": [
+          "Cleaner working material",
+          "Destroys provenance and makes omissions hard to detect"
+        ]
+      },
+      {
+        "option_id": "Q10-C",
+        "label": "Exclude runtime and deployment evidence",
+        "scope": "Package documents and source files only.",
+        "tradeoffs": [
+          "Smaller package",
+          "Cannot substantiate current-state, integration or release claims"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q10-A",
+    "recommendation_rationale": "A pre-transform receipt is necessary to prove all source content was retained and to separate planning artifacts from runtime evidence.",
+    "recommendation_tradeoffs": [
+      "Larger package and catalog maintenance",
+      "Every regenerated export changes the final manifest"
+    ],
+    "decision_dependencies": [
+      "Q11"
+    ],
+    "affected_task_ids": [
+      "P0-01",
+      "P0-02",
+      "P0-03",
+      "P0-04",
+      "P0-05",
+      "P0-06",
+      "P0-07",
+      "P0-08",
+      "P0-09",
+      "P0-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q10",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds evidence cataloging, hashing and export QA labor.",
+      "cost_drivers": [
+        "source inventory",
+        "transformation ledger",
+        "artifact generation",
+        "independent QA"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Program Lead",
+      "Tech Lead",
+      "Evidence Reviewer",
+      "Release Owner"
+    ],
+    "decision_due_event": "before any bundle is declared complete or handed to implementation",
+    "constraints": [
+      "The 149-file source package remains byte-preserved",
+      "Historical claims cannot be promoted without current receipts"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q10/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q11",
+    "topic": "Quarantine experimental_legacy",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q11-A",
+        "label": "Quarantine experimental legacy code and outputs",
+        "scope": "Keep recoverable history but deny product/public selection until an explicit re-release.",
+        "tradeoffs": [
+          "Preserves forensic value and prevents unsafe reuse",
+          "Requires deny rules and migration handling"
+        ]
+      },
+      {
+        "option_id": "Q11-B",
+        "label": "Retain legacy behind a feature flag",
+        "scope": "Allow reactivation through runtime configuration.",
+        "tradeoffs": [
+          "Easy fallback",
+          "Feature flags can bypass product, rights and safety review"
+        ]
+      },
+      {
+        "option_id": "Q11-C",
+        "label": "Delete all legacy material",
+        "scope": "Remove code, data and outputs permanently.",
+        "tradeoffs": [
+          "Eliminates accidental execution",
+          "Destroys provenance, rollback analysis and potential lawful records"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q11-A",
+    "recommendation_rationale": "Quarantine balances preservation with containment and makes re-entry depend on a new reviewed release rather than a hidden switch.",
+    "recommendation_tradeoffs": [
+      "Storage and inventory remain",
+      "Rollback cannot simply restore the old artifact"
+    ],
+    "decision_dependencies": [
+      "Q9"
+    ],
+    "affected_task_ids": [
+      "P0-01",
+      "P0-02",
+      "P0-03",
+      "P0-04",
+      "P0-05",
+      "P0-06",
+      "P0-07",
+      "P0-08",
+      "P0-09",
+      "P0-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q11",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds inventory, deny tests and storage but avoids destructive deletion.",
+      "cost_drivers": [
+        "legacy inventory",
+        "artifact scans",
+        "migration classification",
+        "containment tests"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Tech Lead",
+      "Security Lead",
+      "Data Owner",
+      "Method Lead",
+      "QA"
+    ],
+    "decision_due_event": "before source bundling, migration classification or public artifact construction",
+    "constraints": [
+      "No client or entitlement flag can enable quarantined output",
+      "Deletion of retained records requires separate legal/data authority"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q11/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q12",
+    "topic": "Passport/rights/tests/limits/approver",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q12-A",
+        "label": "Hard method-release gate",
+        "scope": "Require passport, source/right, formula/result contract, tests, limits and named approvers for each release.",
+        "tradeoffs": [
+          "Highest provenance and selective control",
+          "More work before each method becomes eligible"
+        ]
+      },
+      {
+        "option_id": "Q12-B",
+        "label": "Provisional method release with partial packet",
+        "scope": "Permit beta use when some source or test fields are pending.",
+        "tradeoffs": [
+          "Faster experimentation",
+          "Normalizes missing evidence and complicates withdrawal"
+        ]
+      },
+      {
+        "option_id": "Q12-C",
+        "label": "One product-level approval covers all methods",
+        "scope": "Treat product approval as authorization for every included method.",
+        "tradeoffs": [
+          "Simple governance",
+          "Cannot isolate rights, defect or limitation changes"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q12-A",
+    "recommendation_rationale": "The hard gate is the only option that supports reproducibility, rights control and precise withdrawal across methods and reports.",
+    "recommendation_tradeoffs": [
+      "Method throughput is constrained by expert reviewers",
+      "Catalog availability may be uneven"
+    ],
+    "decision_dependencies": [
+      "Q3"
+    ],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "METHOD-01",
+      "METHOD-02",
+      "METHOD-03",
+      "METHOD-04",
+      "METHOD-05",
+      "METHOD-06",
+      "METHOD-07",
+      "METHOD-08",
+      "METHOD-09",
+      "METHOD-10",
+      "REPORT-01",
+      "REPORT-02",
+      "REPORT-03",
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "UPG-AI-001",
+      "UPG-BE-001",
+      "UPG-BE-002"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q12",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Cost depends on source licenses, expert review and per-method test complexity.",
+      "cost_drivers": [
+        "rights clearance",
+        "expert review",
+        "golden fixtures",
+        "release operations"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Method Council",
+      "Legal/Rights Reviewer",
+      "Data Lead",
+      "QA"
+    ],
+    "decision_due_event": "before any method is referenced by an eligible analysis or report release",
+    "constraints": [
+      "Missing evidence keeps release blocked",
+      "Approver must be independent of the sole author for high-risk methods"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q12/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q13",
+    "topic": "Free Essentials và quota minh bạch",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q13-A",
+        "label": "Bounded Free Essentials with transparent quota",
+        "scope": "Offer one self-managed profile, core goal/journal/privacy rights and explicit compute/storage limits with graceful degradation.",
+        "tradeoffs": [
+          "Supports entry and learning",
+          "Requires abuse, quota and unit-economics controls"
+        ]
+      },
+      {
+        "option_id": "Q13-B",
+        "label": "Unlimited free personalized service",
+        "scope": "Remove usage limits for all free users.",
+        "tradeoffs": [
+          "Lowest adoption friction",
+          "Unbounded AI, support and storage cost"
+        ]
+      },
+      {
+        "option_id": "Q13-C",
+        "label": "No free tier",
+        "scope": "Require payment before persistent personalized use.",
+        "tradeoffs": [
+          "Simpler cost recovery",
+          "Raises trust and adoption barriers"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q13-A",
+    "recommendation_rationale": "A bounded tier preserves free entry while keeping provider and support cost measurable and explaining limits honestly.",
+    "recommendation_tradeoffs": [
+      "Quota UX and abuse controls add complexity",
+      "Exact limits remain blocked until provider quotes and pilot data"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q15",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q13",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Quota values and marginal cost require selected providers, approved rates and observed usage.",
+      "cost_drivers": [
+        "AI tokens",
+        "database/storage",
+        "egress/rendering",
+        "support",
+        "abuse prevention"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Commerce/Finance Owner",
+      "SRE",
+      "Privacy",
+      "Support"
+    ],
+    "decision_due_event": "before public pricing, quota or free-tier launch copy is frozen",
+    "constraints": [
+      "Missing provider cost is unknown, not zero",
+      "Quota cannot remove privacy rights or corrupt paid entitlement"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q13/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q14",
+    "topic": "Pháp nhân/merchant/controller",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q14-A",
+        "label": "Named Vietnam entity as controller and merchant",
+        "scope": "Use a selected local entity for contracting, invoicing and controller duties after legal review.",
+        "tradeoffs": [
+          "Clear local accountability",
+          "Requires entity, tax, payment and privacy analysis"
+        ]
+      },
+      {
+        "option_id": "Q14-B",
+        "label": "Contracting entity with documented controller/processor split",
+        "scope": "Use a selected entity and vendors under explicit data-processing and merchant responsibilities.",
+        "tradeoffs": [
+          "Flexible regional model",
+          "More contracts and cross-border analysis"
+        ]
+      },
+      {
+        "option_id": "Q14-C",
+        "label": "No commercial or real-data launch until roles are selected",
+        "scope": "Continue planning and synthetic work only.",
+        "tradeoffs": [
+          "Avoids inventing a legal structure",
+          "Delays payment and real-user pilots"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q14-C",
+    "recommendation_rationale": "No verified entity, merchant or controller decision exists; synthetic planning can continue while commercial and real-data actions remain closed.",
+    "recommendation_tradeoffs": [
+      "Revenue and real-user validation wait",
+      "Legal assessment becomes a critical-path dependency"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-PM-002",
+      "UPG-BE-004"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q14",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Legal, entity, tax, merchant and data-processing costs require jurisdiction-specific quotes.",
+      "cost_drivers": [
+        "entity/tax advice",
+        "merchant onboarding",
+        "data-processing contracts",
+        "cross-border review"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Legal Counsel",
+      "Privacy/Data Owner",
+      "Finance/Commerce Owner"
+    ],
+    "decision_due_event": "before contracting, invoicing, payment onboarding or real personal-data collection",
+    "constraints": [
+      "This packet does not name or authorize an entity",
+      "Cross-border processing and tax duties require market-specific review"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q14/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q15",
+    "topic": "IdP/PG/payment/AI provider selection",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q15-A",
+        "label": "Evidence-weighted selection per provider category with adapters",
+        "scope": "Score IdP, PostgreSQL host, payment and AI providers separately; bind decisions to contracts, regions, exits and cost caps.",
+        "tradeoffs": [
+          "Best fit and lower lock-in",
+          "More integration and vendor-management work"
+        ]
+      },
+      {
+        "option_id": "Q15-B",
+        "label": "Single-suite provider strategy",
+        "scope": "Choose one ecosystem for as many categories as possible.",
+        "tradeoffs": [
+          "Simpler procurement and integration",
+          "Concentrated lock-in, outage and exit risk"
+        ]
+      },
+      {
+        "option_id": "Q15-C",
+        "label": "Self-host all core services",
+        "scope": "Operate identity, database and AI/payment-adjacent components directly where possible.",
+        "tradeoffs": [
+          "Maximum control",
+          "Highest security, compliance and on-call burden; payment still needs regulated rails"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q15-A",
+    "recommendation_rationale": "Category-specific assessment avoids inventing vendors and makes exit, data location, security and unit cost explicit before commitment.",
+    "recommendation_tradeoffs": [
+      "Adapters and multi-vendor operations cost more",
+      "Selection cannot close until quotes and technical/legal evidence exist"
+    ],
+    "decision_dependencies": [
+      "Q9",
+      "Q14",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "TRUST-01",
+      "TRUST-02",
+      "TRUST-03",
+      "TRUST-04",
+      "TRUST-05",
+      "TRUST-06",
+      "TRUST-07",
+      "TRUST-08",
+      "TRUST-09",
+      "TRUST-10",
+      "DATA-01",
+      "DATA-02",
+      "DATA-03",
+      "DATA-04",
+      "DATA-05",
+      "DATA-06",
+      "DATA-07",
+      "DATA-08",
+      "DATA-09",
+      "DATA-10",
+      "API-01",
+      "API-02",
+      "API-03",
+      "API-04",
+      "API-05",
+      "API-06",
+      "API-07",
+      "API-08",
+      "API-09",
+      "API-10",
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "OPS-01",
+      "OPS-02",
+      "OPS-03",
+      "OPS-04",
+      "OPS-05",
+      "OPS-06",
+      "OPS-07",
+      "OPS-08",
+      "OPS-09",
+      "OPS-10",
+      "UPG-UX-001",
+      "UPG-AI-002",
+      "UPG-PM-002",
+      "UPG-BE-004",
+      "UPG-BE-005",
+      "UPG-BE-006",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q15",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "All provider amounts remain unavailable until comparable quotes, volumes, taxes and exit costs are recorded.",
+      "cost_drivers": [
+        "IdP MAU",
+        "PostgreSQL compute/storage/egress",
+        "payment fees/refunds",
+        "AI tokens/models",
+        "monitoring/support"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Tech Lead",
+      "Security/SRE",
+      "Privacy/Legal",
+      "Finance/Commerce Owner"
+    ],
+    "decision_due_event": "before provider-specific implementation, contract signature, spend or production data transfer",
+    "constraints": [
+      "No provider is selected by this planning artifact",
+      "Secrets, contracts and production accounts require separate authority"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q15/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q16",
+    "topic": "Autonomy A0–A3 và kill switches",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q16-A",
+        "label": "A0-A1 default, gated A2, hold A3",
+        "scope": "Permit assistive drafting and approved reversible automation; require receipts and kill switches before higher autonomy.",
+        "tradeoffs": [
+          "Balances productivity and control",
+          "Needs action taxonomy, monitoring and human review"
+        ]
+      },
+      {
+        "option_id": "Q16-B",
+        "label": "A0 only",
+        "scope": "AI may suggest but never execute or schedule actions.",
+        "tradeoffs": [
+          "Smallest operational risk",
+          "Leaves automation value unrealized"
+        ]
+      },
+      {
+        "option_id": "Q16-C",
+        "label": "Enable A0-A3 at launch",
+        "scope": "Allow autonomous multi-step operation across eligible workflows.",
+        "tradeoffs": [
+          "Fastest automation ambition",
+          "Unacceptable without mature controls, provider and incident evidence"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q16-A",
+    "recommendation_rationale": "Progressive autonomy allows useful low-risk assistance while keeping high-impact or irreversible actions behind explicit evidence and approval.",
+    "recommendation_tradeoffs": [
+      "More state, review and kill-switch engineering",
+      "Some promised automation remains unavailable during early phases"
+    ],
+    "decision_dependencies": [
+      "Q9",
+      "Q15"
+    ],
+    "affected_task_ids": [
+      "AI-01",
+      "AI-02",
+      "AI-03",
+      "AI-04",
+      "AI-05",
+      "AI-06",
+      "AI-07",
+      "AI-08",
+      "AI-09",
+      "AI-10",
+      "UPG-AI-002"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q16",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds monitoring, evaluation, review and incident-response capacity.",
+      "cost_drivers": [
+        "model evaluation",
+        "workflow controls",
+        "observability",
+        "human review",
+        "incident rehearsal"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "AI Lead",
+      "Security/SRE",
+      "Privacy",
+      "Product Lead",
+      "QA"
+    ],
+    "decision_due_event": "before any workflow can act beyond user-confirmed reversible assistance",
+    "constraints": [
+      "No payment, publication, deletion or high-impact action without explicit human authority",
+      "Global and per-workflow kill switches must be tested"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q16/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q17",
+    "topic": "Academy/practitioner scope",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q17-A",
+        "label": "Academy learning pilot without practitioner credential claims",
+        "scope": "Launch curriculum and assessments on synthetic cases; defer certification authority until standards and complaints handling are proven.",
+        "tradeoffs": [
+          "Tests learning value safely",
+          "Delays monetizable practitioner credentials"
+        ]
+      },
+      {
+        "option_id": "Q17-B",
+        "label": "Full practitioner certification program",
+        "scope": "Issue credentials and permit practice under a complete standard at launch.",
+        "tradeoffs": [
+          "Strong ecosystem proposition",
+          "High legal, method, assessment and supervision burden"
+        ]
+      },
+      {
+        "option_id": "Q17-C",
+        "label": "Defer Academy entirely",
+        "scope": "Focus only on end-user products.",
+        "tradeoffs": [
+          "Reduces scope",
+          "Removes a core adoption and quality-control channel"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q17-A",
+    "recommendation_rationale": "A non-credential pilot preserves the Academy vision while evidence for competence, ethics, supervision and appeals is built.",
+    "recommendation_tradeoffs": [
+      "Certificates cannot imply regulated or professional authority",
+      "Requires clear distinction between completion and competence"
+    ],
+    "decision_dependencies": [
+      "Q3",
+      "Q7",
+      "Q12",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q17",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Academy cost depends on curriculum, reviewers, platform, accreditation advice and support volume.",
+      "cost_drivers": [
+        "curriculum production",
+        "assessment operations",
+        "expert reviewers",
+        "legal/accreditation review",
+        "learner support"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Academic Lead",
+      "Method Council",
+      "Legal",
+      "Privacy",
+      "QA"
+    ],
+    "decision_due_event": "before curriculum implementation promises certification or practitioner authority",
+    "constraints": [
+      "No regulated-profession implication",
+      "Assessment, appeals, suspension and complaint routes precede credential release"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q17/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q18",
+    "topic": "Organization privacy boundary",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q18-A",
+        "label": "Tenant-isolated organization product with member-controlled private profile",
+        "scope": "Expose only purpose-bound shared or minimum-cohort aggregate data; prohibit employer access to private profiles and high-impact profiling.",
+        "tradeoffs": [
+          "Preserves organization use with privacy boundary",
+          "Limits employer analytics and requires strong RLS"
+        ]
+      },
+      {
+        "option_id": "Q18-B",
+        "label": "Organization-administered full member profiles",
+        "scope": "Let the organization view and manage individual analysis and reports.",
+        "tradeoffs": [
+          "High administrative utility",
+          "Creates severe consent, employment and discrimination risk"
+        ]
+      },
+      {
+        "option_id": "Q18-C",
+        "label": "Do not offer organization features",
+        "scope": "Keep all use individual and direct-to-user.",
+        "tradeoffs": [
+          "Smallest tenant/privacy surface",
+          "Removes an important enterprise product line"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q18-A",
+    "recommendation_rationale": "Member control, tenant isolation and aggregation thresholds are the minimum viable boundary for an organization offering.",
+    "recommendation_tradeoffs": [
+      "Some enterprise requests must be rejected",
+      "Complex subject/tenant/grant testing and re-identification review"
+    ],
+    "decision_dependencies": [
+      "Q4",
+      "Q9",
+      "Q14",
+      "Q15"
+    ],
+    "affected_task_ids": [
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-BE-003"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q18",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Option A adds tenant isolation, privacy review, enterprise support and audit capability.",
+      "cost_drivers": [
+        "RLS/authorization",
+        "enterprise contracts",
+        "privacy/re-identification review",
+        "audit logs",
+        "support"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Product Lead",
+      "Privacy/Data Owner",
+      "Security Lead",
+      "Legal",
+      "Enterprise Support"
+    ],
+    "decision_due_event": "before organization data model, contracts or pilot recruitment are frozen",
+    "constraints": [
+      "No employment, credit, insurance or other high-impact profiling",
+      "Cross-tenant denial and aggregate re-identification tests are mandatory"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q18/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q19",
+    "topic": "Country pack và license/franchise",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q19-A",
+        "label": "One reviewed country pack at a time; license before franchise",
+        "scope": "Pilot a single market with locale, legal, support, claims and tax evidence; validate licensing before operational franchise.",
+        "tradeoffs": [
+          "Contained learning and easier rollback",
+          "Slower international expansion"
+        ]
+      },
+      {
+        "option_id": "Q19-B",
+        "label": "Parallel multi-country launch",
+        "scope": "Prepare and open several markets together.",
+        "tradeoffs": [
+          "Faster reach",
+          "Multiplies legal, translation, support and operational risk"
+        ]
+      },
+      {
+        "option_id": "Q19-C",
+        "label": "Remote software license only with no country pack",
+        "scope": "Offer a generic partner license without local operating adaptation.",
+        "tradeoffs": [
+          "Lower localization effort",
+          "May still create local legal duties and weak customer experience"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q19-A",
+    "recommendation_rationale": "Sequential country packs keep market-specific evidence and operating capacity reviewable and avoid calling a software license a ready franchise.",
+    "recommendation_tradeoffs": [
+      "Expansion cadence is evidence-limited",
+      "Reusable core still needs local legal and claim review"
+    ],
+    "decision_dependencies": [
+      "Q14",
+      "Q17",
+      "Q18",
+      "Q20"
+    ],
+    "affected_task_ids": [
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q19",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "Country cost requires local counsel, translation, tax, payment, support and partner quotes.",
+      "cost_drivers": [
+        "local legal/tax",
+        "translation/editorial",
+        "payment/merchant",
+        "support coverage",
+        "partner enablement"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Global/Partnerships Lead",
+      "Legal/Tax",
+      "Privacy",
+      "Finance",
+      "Support/SRE"
+    ],
+    "decision_due_event": "before selecting the first non-home market or signing a license/franchise commitment",
+    "constraints": [
+      "Country approval is product- and release-specific",
+      "No franchise representation without operating, support and legal readiness"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q19/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "packet_version": "2026-10-20",
+    "decision_id": "Q20",
+    "topic": "Budget/team/roadmap có điều kiện",
+    "status": "PENDING_FOUNDER",
+    "approval": null,
+    "production_permission": false,
+    "options": [
+      {
+        "option_id": "Q20-A",
+        "label": "Stage-gated funding and staffing with low/base/high scenarios",
+        "scope": "Fund the next bounded phase and release additional capacity only after decision and evidence checkpoints.",
+        "tradeoffs": [
+          "Controls downside and exposes uncertainty",
+          "May slow hiring and procurement"
+        ]
+      },
+      {
+        "option_id": "Q20-B",
+        "label": "Fixed full-portfolio budget and calendar",
+        "scope": "Approve the complete roadmap as one committed program.",
+        "tradeoffs": [
+          "Simple headline plan",
+          "False precision while scope, providers and gates remain unresolved"
+        ]
+      },
+      {
+        "option_id": "Q20-C",
+        "label": "No-spend planning only",
+        "scope": "Continue documentation and volunteer/internal work without budget commitment.",
+        "tradeoffs": [
+          "Avoids premature spend",
+          "Cannot responsibly promise implementation, review or support capacity"
+        ]
+      }
+    ],
+    "recommended_option_id": "Q20-A",
+    "recommendation_rationale": "Stage-gated scenarios match the 452-1,039 person-day range and preserve the longer conditional portfolio horizon without inventing rates or dates.",
+    "recommendation_tradeoffs": [
+      "Budget must be revisited at checkpoints",
+      "Vendor and specialist capacity may require lead time"
+    ],
+    "decision_dependencies": [],
+    "affected_task_ids": [
+      "GOV-01",
+      "GOV-02",
+      "GOV-03",
+      "GOV-04",
+      "GOV-05",
+      "GOV-06",
+      "GOV-07",
+      "GOV-08",
+      "GOV-09",
+      "GOV-10",
+      "WEB-01",
+      "WEB-02",
+      "WEB-03",
+      "WEB-04",
+      "WEB-05",
+      "WEB-06",
+      "WEB-07",
+      "WEB-08",
+      "WEB-09",
+      "WEB-10",
+      "COMMERCE-01",
+      "COMMERCE-02",
+      "COMMERCE-03",
+      "COMMERCE-04",
+      "COMMERCE-05",
+      "COMMERCE-06",
+      "COMMERCE-07",
+      "COMMERCE-08",
+      "COMMERCE-09",
+      "COMMERCE-10",
+      "OPS-01",
+      "OPS-02",
+      "OPS-03",
+      "OPS-04",
+      "OPS-05",
+      "OPS-06",
+      "OPS-07",
+      "OPS-08",
+      "OPS-09",
+      "OPS-10",
+      "ACADEMY-01",
+      "ACADEMY-02",
+      "ACADEMY-03",
+      "ACADEMY-04",
+      "ACADEMY-05",
+      "ACADEMY-06",
+      "ACADEMY-07",
+      "ACADEMY-08",
+      "ACADEMY-09",
+      "ACADEMY-10",
+      "EXPAND-01",
+      "EXPAND-02",
+      "EXPAND-03",
+      "EXPAND-04",
+      "EXPAND-05",
+      "EXPAND-06",
+      "EXPAND-07",
+      "EXPAND-08",
+      "EXPAND-09",
+      "EXPAND-10",
+      "GLOBAL-01",
+      "GLOBAL-02",
+      "GLOBAL-03",
+      "GLOBAL-04",
+      "GLOBAL-05",
+      "GLOBAL-06",
+      "GLOBAL-07",
+      "GLOBAL-08",
+      "GLOBAL-09",
+      "GLOBAL-10",
+      "UPG-PRD-001",
+      "UPG-PRD-002",
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "UPG-AI-001",
+      "UPG-AI-002",
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "UPG-BE-005",
+      "UPG-BE-007"
+    ],
+    "affected_task_source": "TASK_EXECUTION_CONTRACTS.json decision_dependencies contains Q20",
+    "cost_impact": {
+      "status": "UNAVAILABLE_PENDING_APPROVED_RATES_AND_VENDOR_QUOTES",
+      "monetary_value": null,
+      "currency": null,
+      "planning_effect": "The package has person-day ranges only; monetary scenarios require approved role rates, vendor quotes, tax and contingency.",
+      "cost_drivers": [
+        "452-1,039 person-days",
+        "vendor quotes",
+        "independent reviews",
+        "support/operations",
+        "15-30 percent contingency"
+      ]
+    },
+    "approver_roles": [
+      "Founder",
+      "Program Lead",
+      "Finance Owner",
+      "Product Lead",
+      "Tech Lead"
+    ],
+    "decision_due_event": "before hiring, procurement, paid vendor commitment or a delivery date is promised",
+    "constraints": [
+      "Missing rates or quotes remain unavailable, never zero",
+      "Schedule separates raw capacity from gate, review and observation time"
+    ],
+    "acceptance_receipt": {
+      "status": "NOT_CHECKED",
+      "evidence_path": "evidence/decisions/Q20/<baseline>/decision.json",
+      "required_fields": [
+        "decision_id",
+        "selected_option_id",
+        "scope_and_exclusions",
+        "conditions",
+        "baseline_sha_and_artifact_ids",
+        "approver_names_and_roles",
+        "decided_at",
+        "expiry_or_revisit_event",
+        "affected_task_and_gate_updates"
+      ]
+    },
+    "claim_status": "NOT_CHECKED"
+  }
+]
+

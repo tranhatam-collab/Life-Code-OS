@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lifecode:v3:AllInOneInput",
+  "title": "AllInOneInput",
+  "type": "object",
+  "required": [
+    "profile"
+  ],
+  "properties": {
+    "profile": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "full_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "birth_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "common_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "given_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "y_policy": {
+          "enum": [
+            "unknown",
+            "vowel",
+            "consonant"
+          ]
+        },
+        "reduction_policy": {
+          "enum": [
+            "single_digit",
+            "preserve_11_22_33"
+          ]
+        },
+        "life_path_variant": {
+          "enum": [
+            "all_digits",
+            "reduced_components"
+          ]
+        },
+        "pinnacle_boundary_policy": {
+          "enum": [
+            "last_integer_age_inclusive",
+            "unmapped"
+          ]
+        },
+        "challenge_span_policy": {
+          "enum": [
+            "unmapped",
+            "follow_pinnacles"
+          ]
+        },
+        "period_span_policy": {
+          "enum": [
+            "unmapped",
+            "provided"
+          ]
+        },
+        "period_source_note": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "period_spans": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "required": [
+              "start_age",
+              "end_age_exclusive"
+            ],
+            "properties": {
+              "start_age": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 150
+              },
+              "end_age_exclusive": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 150
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "birth_time": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{2}:\\d{2}$"
+        },
+        "birth_place": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        }
+      },
+      "additionalProperties": false
+    },
+    "as_of": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "selected": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 8,
+      "items": {
+        "enum": [
+          "numerology",
+          "raw_matrix",
+          "working_matrix",
+          "bat_cuc",
+          "lifetime"
+        ]
+      }
+    },
+    "goal": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 800
+    },
+    "number_sequence": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "bat_cuc_policy": {
+      "enum": [
+        "strict_adjacent_v3",
+        "bridge_single_0_5_diagnostic_v3"
+      ]
+    },
+    "events": {
+      "type": "array",
+      "maxItems": 300,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "date",
+          "title",
+          "domain"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "domain": {
+            "enum": [
+              "identity",
+              "learning",
+              "work",
+              "resources",
+              "relationships",
+              "family",
+              "home",
+              "community",
+              "body",
+              "daily_rhythm",
+              "meaning",
+              "creativity",
+              "mobility",
+              "caregiving",
+              "later_life",
+              "legacy",
+              "life_changes",
+              "digital_life"
+            ]
+          },
+          "source_note": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "plans": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "target_date",
+          "title",
+          "domain"
+        ],
+        "properties": {
+          "target_date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          },
+          "domain": {
+            "enum": [
+              "identity",
+              "learning",
+              "work",
+              "resources",
+              "relationships",
+              "family",
+              "home",
+              "community",
+              "body",
+              "daily_rhythm",
+              "meaning",
+              "creativity",
+              "mobility",
+              "caregiving",
+              "later_life",
+              "legacy",
+              "life_changes",
+              "digital_life"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cycle_years": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    }
+  },
+  "additionalProperties": false
+}

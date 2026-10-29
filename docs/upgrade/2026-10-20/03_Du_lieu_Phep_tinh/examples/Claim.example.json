@@ -1,0 +1,20 @@
+{
+  "claim_id": "00000000-0000-0000-0000-000000000004",
+  "subject_id": "00000000-0000-0000-0000-000000000002",
+  "type": "symbolic_interpretation",
+  "text_vi": "Trong bảng tham chiếu đang chọn, mã 71 có nhãn Hung; không phải dự báo cho người dùng.",
+  "source_ids": [
+    "USER_TABLE80"
+  ],
+  "result_ids": [
+    "00000000-0000-0000-0000-000000000005"
+  ],
+  "scope": "tail80_symbolic_reference",
+  "probability": null,
+  "model_release_id": null,
+  "model_evidence": null,
+  "limitations": [
+    "Không nhận ngày sinh hoặc dữ liệu hành vi."
+  ],
+  "review_state": "draft"
+}

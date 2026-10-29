@@ -1,0 +1,112 @@
+[
+  {
+    "activity_id": "LEGAL-SERVICE",
+    "activity": "All service",
+    "question": "Legal entity/controller/processor/merchant and scope",
+    "owner_role": "Founder + Legal",
+    "decision_dependencies": [
+      "Q14"
+    ],
+    "acceptance_artifact": "Service charter + entity and duties memo",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  },
+  {
+    "activity_id": "LEGAL-DATA",
+    "activity": "Intake and profiling",
+    "question": "Purpose/lawful basis/data flow/retention/vendor transfer by activity",
+    "owner_role": "Privacy + Legal",
+    "decision_dependencies": [
+      "Q9",
+      "Q14",
+      "Q15"
+    ],
+    "acceptance_artifact": "Activity processing register + notice + impact/filing assessment",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  },
+  {
+    "activity_id": "LEGAL-AI",
+    "activity": "AI use",
+    "question": "Classify each function and role under applicable AI rules",
+    "owner_role": "AI Lead + Legal",
+    "decision_dependencies": [
+      "Q16"
+    ],
+    "acceptance_artifact": "Function inventory + classification + controls + policy versions",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  },
+  {
+    "activity_id": "LEGAL-COMMERCE",
+    "activity": "Paid reports/subscriptions",
+    "question": "Merchant/platform role/refund/consumer/tax/invoice and current ecommerce rules",
+    "owner_role": "Commerce + Legal",
+    "decision_dependencies": [
+      "Q14",
+      "Q15",
+      "Q20"
+    ],
+    "acceptance_artifact": "Sandbox flow + terms/refund + applicability memo",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  },
+  {
+    "activity_id": "LEGAL-METHOD",
+    "activity": "Source and formula release",
+    "question": "Edition/source/license/translation/commercial redistribution permissions",
+    "owner_role": "Method Lead + Rights",
+    "decision_dependencies": [
+      "Q3",
+      "Q12"
+    ],
+    "acceptance_artifact": "One source-rights receipt per release",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  },
+  {
+    "activity_id": "LEGAL-SENSITIVE",
+    "activity": "Children/health/biometrics",
+    "question": "Separate legal and professional review plus data minimization",
+    "owner_role": "Privacy + Legal + qualified specialist",
+    "decision_dependencies": [
+      "Q8",
+      "Q18"
+    ],
+    "acceptance_artifact": "Explicit additional scope approval; default feature disabled",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  },
+  {
+    "activity_id": "LEGAL-INTERNATIONAL",
+    "activity": "Country rollout and franchise",
+    "question": "Country-specific contracts/privacy/trademark/disclosure/support",
+    "owner_role": "Legal + Partnerships",
+    "decision_dependencies": [
+      "Q19"
+    ],
+    "acceptance_artifact": "Country pack signed for exact offering/territory",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  },
+  {
+    "activity_id": "LEGAL-INCIDENT",
+    "activity": "Suspected/confirmed incident",
+    "question": "Assess facts, obligations and time limits for actual jurisdiction",
+    "owner_role": "Incident Commander + Legal",
+    "decision_dependencies": [
+      "Q9"
+    ],
+    "acceptance_artifact": "Incident decision log + notifications assessment",
+    "status": "BLOCKED",
+    "blocker": "Applicable review and named authority receipt not supplied",
+    "approval_ref": null
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "suite_id": "lc-synthetic-demo-v2.1",
+  "suite_version": "2026-10-20",
+  "status": "REFERENCE_ONLY_NOT_PRODUCT_VALIDATION",
+  "synthetic_only": true,
+  "personal_claims": false,
+  "case_count": 64,
+  "notes": [
+    "Exact output demonstrates software contract only.",
+    "Symbolic tables and name-number rules are not validated predictions.",
+    "No case authorizes a method release or production deployment."
+  ],
+  "cases": [
+    {"id":"D001","kind":"digital_root","input":0,"expected":0},
+    {"id":"D002","kind":"digital_root","input":1,"expected":1},
+    {"id":"D003","kind":"digital_root","input":9,"expected":9},
+    {"id":"D004","kind":"digital_root","input":10,"expected":1},
+    {"id":"D005","kind":"digital_root","input":38,"expected":2},
+    {"id":"D006","kind":"digital_root","input":999999,"expected":9},
+    {"id":"D007","kind":"digital_root_error","input":-1,"expected_error":"TypeError"},
+    {"id":"D008","kind":"digital_root_error","input":9007199254740992,"expected_error":"TypeError"},
+
+    {"id":"D009","kind":"digit_sum","input":"0000","expected":0},
+    {"id":"D010","kind":"digit_sum","input":"24091983","expected":36},
+    {"id":"D011","kind":"digit_sum","input":"9999","expected":36},
+    {"id":"D012","kind":"digit_sum","input":"1234567890","expected":45},
+    {"id":"D013","kind":"digit_sum_error","input":"１２３４","expected_error":"TypeError"},
+    {"id":"D014","kind":"digit_sum_error","input":"","expected_error":"TypeError"},
+
+    {"id":"D015","kind":"tail80","input":{"suffix":"0000","zeroPolicy":"unmapped"},"expected":{"quotient":0,"remainder":0,"lookup_code":null,"probability":null}},
+    {"id":"D016","kind":"tail80","input":{"suffix":"0080","zeroPolicy":"unmapped"},"expected":{"quotient":1,"remainder":0,"lookup_code":null,"probability":null}},
+    {"id":"D017","kind":"tail80","input":{"suffix":"0080","zeroPolicy":"as80"},"expected":{"quotient":1,"remainder":0,"lookup_code":80,"probability":null}},
+    {"id":"D018","kind":"tail80","input":{"suffix":"6231","zeroPolicy":"unmapped"},"expected":{"quotient":77,"remainder":71,"lookup_code":71,"probability":null}},
+    {"id":"D019","kind":"tail80","input":{"suffix":"1986","zeroPolicy":"unmapped"},"expected":{"quotient":24,"remainder":66,"lookup_code":66,"probability":null}},
+    {"id":"D020","kind":"tail80","input":{"suffix":"3468","zeroPolicy":"unmapped"},"expected":{"quotient":43,"remainder":28,"lookup_code":28,"probability":null}},
+    {"id":"D021","kind":"tail80","input":{"suffix":"9999","zeroPolicy":"unmapped"},"expected":{"quotient":124,"remainder":79,"lookup_code":79,"probability":null}},
+    {"id":"D022","kind":"tail80","input":{"suffix":"0001","zeroPolicy":"unmapped"},"expected":{"quotient":0,"remainder":1,"lookup_code":1,"probability":null}},
+    {"id":"D023","kind":"tail80_error","input":{"suffix":"123","zeroPolicy":"unmapped"},"expected_error":"TypeError"},
+
+    {"id":"D024","kind":"name_cycle","input":"Trần Hà Tâm","expected":{"latin":"TRAN HA TAM","sum":33,"root":6,"prediction":false}},
+    {"id":"D025","kind":"name_cycle","input":"Đỗ","expected":{"latin":"DO","sum":10,"root":1,"prediction":false}},
+    {"id":"D026","kind":"name_cycle","input":"Trần Hà Tâm","expected":{"nfc":"Trần Hà Tâm","latin":"TRAN HA TAM","sum":33,"root":6,"prediction":false}},
+    {"id":"D027","kind":"name_cycle_error","input":"陳","expected_error":"TypeError"},
+
+    {"id":"D028","kind":"pairs","input":"876","expected":{"groups":["DN","SK"],"known":2,"total":2}},
+    {"id":"D029","kind":"pairs","input":"55","expected":{"groups":[null],"known":0,"total":1}},
+    {"id":"D030","kind":"pairs","input":"0943876231","expected":{"total":9}},
+    {"id":"D031","kind":"pairs","input":"10","expected":{"groups":[null],"known":0,"total":1}},
+    {"id":"D032","kind":"pairs","input":"141","expected":{"groups":["SK","SK"],"known":2,"total":2}},
+
+    {"id":"D033","kind":"ratio_decimal","input":{"numerator":1,"denominator":2,"scale":6,"rounding":"half_even"},"expected":{"value":"0.500000","missing_reason":null}},
+    {"id":"D034","kind":"ratio_decimal","input":{"numerator":1,"denominator":3,"scale":6,"rounding":"half_even"},"expected":{"value":"0.333333","missing_reason":null}},
+    {"id":"D035","kind":"ratio_decimal","input":{"numerator":2,"denominator":3,"scale":6,"rounding":"half_even"},"expected":{"value":"0.666667","missing_reason":null}},
+    {"id":"D036","kind":"ratio_decimal","input":{"numerator":1,"denominator":8,"scale":2,"rounding":"half_even"},"expected":{"value":"0.12","missing_reason":null}},
+    {"id":"D037","kind":"ratio_decimal","input":{"numerator":1,"denominator":8,"scale":2,"rounding":"half_up"},"expected":{"value":"0.13","missing_reason":null}},
+    {"id":"D038","kind":"ratio_decimal","input":{"numerator":-1,"denominator":8,"scale":2,"rounding":"floor"},"expected":{"value":"-0.13","missing_reason":null}},
+    {"id":"D039","kind":"ratio_decimal","input":{"numerator":-1,"denominator":8,"scale":2,"rounding":"ceiling"},"expected":{"value":"-0.12","missing_reason":null}},
+    {"id":"D040","kind":"ratio_decimal","input":{"numerator":1,"denominator":0,"scale":6,"rounding":"half_even"},"expected":{"value":null,"missing_reason":"division_by_zero"}},
+    {"id":"D041","kind":"ratio_decimal","input":{"numerator":5,"denominator":2,"scale":0,"rounding":"half_even"},"expected":{"value":"2","missing_reason":null}},
+    {"id":"D042","kind":"ratio_decimal","input":{"numerator":5,"denominator":2,"scale":0,"rounding":"half_up"},"expected":{"value":"3","missing_reason":null}},
+
+    {"id":"D043","kind":"age_interval","input":{"birthDate":"2000-02-29","age":1,"leapDayPolicy":"feb28"},"expected":{"age":1,"start":"2001-02-28","end_exclusive":"2002-02-28","interval_notation":"[start,end)"}},
+    {"id":"D044","kind":"age_interval","input":{"birthDate":"2000-02-29","age":1,"leapDayPolicy":"mar01"},"expected":{"age":1,"start":"2001-03-01","end_exclusive":"2002-03-01","interval_notation":"[start,end)"}},
+    {"id":"D045","kind":"age_interval","input":{"birthDate":"2000-02-29","age":4,"leapDayPolicy":"feb28"},"expected":{"age":4,"start":"2004-02-29","end_exclusive":"2005-02-28","interval_notation":"[start,end)"}},
+    {"id":"D046","kind":"age_interval","input":{"birthDate":"1983-09-24","age":42,"leapDayPolicy":"feb28"},"expected":{"age":42,"start":"2025-09-24","end_exclusive":"2026-09-24","interval_notation":"[start,end)"}},
+    {"id":"D047","kind":"age_interval","input":{"birthDate":"1900-02-28","age":100,"leapDayPolicy":"feb28"},"expected":{"age":100,"start":"2000-02-28","end_exclusive":"2001-02-28","interval_notation":"[start,end)"}},
+    {"id":"D048","kind":"age_interval_error","input":{"birthDate":"1900-02-29","age":0,"leapDayPolicy":"feb28"},"expected_error":"RangeError"},
+
+    {"id":"D049","kind":"coverage","input":{"requirements":[],"values":{}},"expected":{"ratio":null,"completed_weight":0,"total_weight":0}},
+    {"id":"D050","kind":"coverage","input":{"requirements":[{"id":"a","weight":1},{"id":"b","weight":1}],"values":{"a":true}},"expected":{"ratio":0.5,"completed_weight":1,"total_weight":2}},
+    {"id":"D051","kind":"coverage","input":{"requirements":[{"id":"a","weight":1},{"id":"b","weight":3}],"values":{"b":true}},"expected":{"ratio":0.75,"completed_weight":3,"total_weight":4}},
+
+    {"id":"D052","kind":"authorization","variant":"allow","expected":true},
+    {"id":"D053","kind":"authorization","variant":"wrong_subject","expected":false},
+    {"id":"D054","kind":"authorization","variant":"wrong_action","expected":false},
+    {"id":"D055","kind":"authorization","variant":"future_grant","expected":false},
+    {"id":"D056","kind":"authorization","variant":"malformed_permissions","expected":false},
+    {"id":"D057","kind":"authorization","variant":"revision_match","expected":true},
+    {"id":"D058","kind":"authorization","variant":"revision_mismatch","expected":false},
+
+    {"id":"D059","kind":"release_gate","variant":"all_gates","expected":{"allowed":true,"reasons":[]}},
+    {"id":"D060","kind":"release_gate","variant":"research_only","expected_reason":"release_state_not_permitted"},
+    {"id":"D061","kind":"release_gate","variant":"rights_pending","expected_reason":"rights_not_permitted"},
+    {"id":"D062","kind":"release_gate","variant":"missing_source","expected_reason":"missing_source_links"},
+    {"id":"D063","kind":"release_gate","variant":"symbolic_probability","expected_reason":"probability_for_non_model"},
+
+    {"id":"D064","kind":"claim_model_probability","input":{"type":"model_probability","probability":0.7,"model_release_id":"model-release-synthetic","target_event":"synthetic_event","horizon":"30d","population":"synthetic_fixture_population","evaluation_receipt_id":"receipt-synthetic","applicability_check":"passed"},"expected":true}
+  ]
+}
+

@@ -35,6 +35,5 @@ jobs:
         run: npm install -g wrangler@${WRANGLER_VERSION}
 
       - name: Deploy Worker
+        # Do not set WRANGLER_CONFIG_PATH=/dev/null — it overrides --config and breaks CI.
         run: wrangler deploy --config workers/life-code-api/wrangler.toml
-        env:
-          WRANGLER_CONFIG_PATH: /dev/null

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "R20-01",
+    "title": "Vietnam AI Law134/2025",
+    "url": "https://vanban.chinhphu.vn/?docid=216334&orggroupid=1&pageid=27160",
+    "access_date": "2026-10-20",
+    "scope_read": "Metadata; effective2026-03-01",
+    "limitation": "Metadata verified; full applicability not reviewed",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  },
+  {
+    "id": "R20-02",
+    "title": "Vietnam Decree142/2026",
+    "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-142-2026-nd-cp-469480/64703.htm",
+    "access_date": "2026-10-20",
+    "scope_read": "Metadata; effective2026-05-01",
+    "limitation": "97-page document linked; full text not read in this research pass",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  },
+  {
+    "id": "R20-03",
+    "title": "Vietnam Ecommerce Law122/2025",
+    "url": "https://congbao.chinhphu.vn/van-ban-dang-cong-bao/luat-l13/trang-6.htm",
+    "access_date": "2026-10-20",
+    "scope_read": "Gazette metadata; effective2026-07-01",
+    "limitation": "Counsel must retrieve signed text and transition rules",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  },
+  {
+    "id": "R20-04",
+    "title": "Vietnam Decree248/2026",
+    "url": "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-248-2026-nd-cp-469983.htm",
+    "access_date": "2026-10-20",
+    "scope_read": "Metadata; effective2026-07-01",
+    "limitation": "93-page document linked; full applicability not reviewed",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  },
+  {
+    "id": "R20-05",
+    "title": "Vietnam Personal Data Law91/2025",
+    "url": "https://vanban.chinhphu.vn/?docid=214590&pageid=27160",
+    "access_date": "2026-10-20",
+    "scope_read": "Metadata; effective2026-01-01",
+    "limitation": "No compliance conclusion from metadata",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  },
+  {
+    "id": "R20-06",
+    "title": "EU AI Act Commission guidance",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "access_date": "2026-10-20",
+    "scope_read": "Risk-based application overview",
+    "limitation": "Recheck consolidated law, amendments and timetable per country launch",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  },
+  {
+    "id": "R20-07",
+    "title": "PostgreSQL18 Row Security",
+    "url": "https://www.postgresql.org/docs/18/ddl-rowsecurity.html",
+    "access_date": "2026-10-20",
+    "scope_read": "Technical RLS behavior and bypass roles",
+    "limitation": "Does not verify project DB, provider or SQL execution",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  },
+  {
+    "id": "R20-08",
+    "title": "Cloudflare Queues delivery",
+    "url": "https://developers.cloudflare.com/queues/reference/delivery-guarantees/",
+    "access_date": "2026-10-20",
+    "scope_read": "At-least-once delivery design basis",
+    "limitation": "No account provisioning or runtime receipt",
+    "status": "VERIFIED_CURRENT",
+    "type": "primary_source_metadata_or_technical_document",
+    "project_design_approval": false
+  }
+]

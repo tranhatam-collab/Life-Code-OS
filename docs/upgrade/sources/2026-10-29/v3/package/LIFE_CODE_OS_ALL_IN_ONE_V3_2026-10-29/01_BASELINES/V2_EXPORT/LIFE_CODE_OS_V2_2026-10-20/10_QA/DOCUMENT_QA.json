@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-10-20",
+  "scope": "Two new books; baseline bytes preserved without re-typesetting",
+  "pdf_checks": [
+    {
+      "file": "00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.pdf",
+      "pages": 21,
+      "bookmarks": 116,
+      "links": 14,
+      "out_of_page_blocks": [],
+      "replacement_glyph_pages": [],
+      "near_empty_pages": [],
+      "visual_review": "All new pages reviewed at full-page resolution; no visible clipping/overlap found.",
+      "sha256": "a5bdf55e4a75841fadfb223cf6166e596928265f90a3a8eb47b637e5c6c58ff2"
+    },
+    {
+      "file": "00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.pdf",
+      "pages": 36,
+      "bookmarks": 148,
+      "links": 18,
+      "out_of_page_blocks": [],
+      "replacement_glyph_pages": [],
+      "near_empty_pages": [],
+      "visual_review": "All new pages reviewed at full-page resolution; no visible clipping/overlap found.",
+      "sha256": "d9a901e7f653caa8b7b2e32c7bd8c7502ecaaa2161cfa0124181d75b5c19801d"
+    }
+  ],
+  "docx_rendered_with": "render_docx.py / LibreOffice",
+  "native_word_variation": "Pagination may vary with application/font environment; PDF is fixed reference."
+}

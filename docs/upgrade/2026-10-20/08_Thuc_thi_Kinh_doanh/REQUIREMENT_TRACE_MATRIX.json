@@ -1,0 +1,3911 @@
+[
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-01",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-01 Trang chủ: responsive state and authorization parity",
+    "product_ids": [
+      "LC-GUEST"
+    ],
+    "screen_ids": [
+      "UI-01"
+    ],
+    "api_operation_ids": [
+      "catalog"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-01-PHONE",
+      "UIT-UI-01-DESKTOP",
+      "UIT-UI-01-A11Y",
+      "UIT-UI-01-OFFLINE",
+      "UIT-UI-01-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-01/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-02",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-02 Giới thiệu HNH: responsive state and authorization parity",
+    "product_ids": [
+      "LC-GUEST"
+    ],
+    "screen_ids": [
+      "UI-02"
+    ],
+    "api_operation_ids": [],
+    "non_api_reason": "static public content",
+    "task_ids": [
+      "WEB-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-02-PHONE",
+      "UIT-UI-02-DESKTOP",
+      "UIT-UI-02-A11Y",
+      "UIT-UI-02-OFFLINE",
+      "UIT-UI-02-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-02/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-03",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-03 Danh mục9cấp: responsive state and authorization parity",
+    "product_ids": [
+      "LC-GUEST"
+    ],
+    "screen_ids": [
+      "UI-03"
+    ],
+    "api_operation_ids": [
+      "catalog"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "GOV-09",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-03-PHONE",
+      "UIT-UI-03-DESKTOP",
+      "UIT-UI-03-A11Y",
+      "UIT-UI-03-OFFLINE",
+      "UIT-UI-03-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G04",
+      "G06"
+    ],
+    "evidence_path": "evidence/ui/UI-03/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-04",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-04 Thư viện phương pháp: responsive state and authorization parity",
+    "product_ids": [
+      "LC-GUEST"
+    ],
+    "screen_ids": [
+      "UI-04"
+    ],
+    "api_operation_ids": [
+      "methods"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "METHOD-10",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-04-PHONE",
+      "UIT-UI-04-DESKTOP",
+      "UIT-UI-04-A11Y",
+      "UIT-UI-04-OFFLINE",
+      "UIT-UI-04-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G06"
+    ],
+    "evidence_path": "evidence/ui/UI-04/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-05",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-05 Tra bộ số miễn phí: responsive state and authorization parity",
+    "product_ids": [
+      "LC-GUEST",
+      "LC-NUMBERS"
+    ],
+    "screen_ids": [
+      "UI-05"
+    ],
+    "api_operation_ids": [],
+    "non_api_reason": "local deterministic calculation",
+    "task_ids": [
+      "WEB-02",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-05-PHONE",
+      "UIT-UI-05-DESKTOP",
+      "UIT-UI-05-A11Y",
+      "UIT-UI-05-OFFLINE",
+      "UIT-UI-05-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-05/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-06",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-06 Giá và phạm vi: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-06"
+    ],
+    "api_operation_ids": [
+      "catalog"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "COMMERCE-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-06-PHONE",
+      "UIT-UI-06-DESKTOP",
+      "UIT-UI-06-A11Y",
+      "UIT-UI-06-OFFLINE",
+      "UIT-UI-06-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G09",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-06/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-07",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-07 Bắt đầu theo nhu cầu: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1",
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-07"
+    ],
+    "api_operation_ids": [
+      "createSubject"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-03",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-07-PHONE",
+      "UIT-UI-07-DESKTOP",
+      "UIT-UI-07-A11Y",
+      "UIT-UI-07-OFFLINE",
+      "UIT-UI-07-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-07/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-08",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-08 Đăng nhập: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-08"
+    ],
+    "api_operation_ids": [
+      "login"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-08-PHONE",
+      "UIT-UI-08-DESKTOP",
+      "UIT-UI-08-A11Y",
+      "UIT-UI-08-OFFLINE",
+      "UIT-UI-08-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05"
+    ],
+    "evidence_path": "evidence/ui/UI-08/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-09",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-09 Tổng quan: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1",
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-09"
+    ],
+    "api_operation_ids": [
+      "overview"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-06",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-09-PHONE",
+      "UIT-UI-09-DESKTOP",
+      "UIT-UI-09-A11Y",
+      "UIT-UI-09-OFFLINE",
+      "UIT-UI-09-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-09/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-10",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-10 Hồ sơ: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-10"
+    ],
+    "api_operation_ids": [
+      "subjects"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-02",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-10-PHONE",
+      "UIT-UI-10-DESKTOP",
+      "UIT-UI-10-A11Y",
+      "UIT-UI-10-OFFLINE",
+      "UIT-UI-10-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G09"
+    ],
+    "evidence_path": "evidence/ui/UI-10/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-11",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-11 Chỉnh hồ sơ: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1",
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-11"
+    ],
+    "api_operation_ids": [
+      "newProfileVersion"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "DATA-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-11-PHONE",
+      "UIT-UI-11-DESKTOP",
+      "UIT-UI-11-A11Y",
+      "UIT-UI-11-OFFLINE",
+      "UIT-UI-11-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G05",
+      "G07",
+      "G10"
+    ],
+    "evidence_path": "evidence/ui/UI-11/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-12",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-12 Giả thuyết dữ liệu: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-12"
+    ],
+    "api_operation_ids": [
+      "newHypothesis"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "DATA-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-12-PHONE",
+      "UIT-UI-12-DESKTOP",
+      "UIT-UI-12-A11Y",
+      "UIT-UI-12-OFFLINE",
+      "UIT-UI-12-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G05",
+      "G07",
+      "G10"
+    ],
+    "evidence_path": "evidence/ui/UI-12/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-13",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-13 Sự đồng ý: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L5",
+      "LC-L7",
+      "LC-L9",
+      "LC-FREE",
+      "LC-FAMILY"
+    ],
+    "screen_ids": [
+      "UI-13"
+    ],
+    "api_operation_ids": [
+      "consentDecision"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-08",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-13-PHONE",
+      "UIT-UI-13-DESKTOP",
+      "UIT-UI-13-A11Y",
+      "UIT-UI-13-OFFLINE",
+      "UIT-UI-13-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05"
+    ],
+    "evidence_path": "evidence/ui/UI-13/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-14",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-14 Chia sẻ: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L5",
+      "LC-L9",
+      "LC-EXPERT",
+      "LC-FAMILY"
+    ],
+    "screen_ids": [
+      "UI-14"
+    ],
+    "api_operation_ids": [
+      "grant"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-07",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-14-PHONE",
+      "UIT-UI-14-DESKTOP",
+      "UIT-UI-14-A11Y",
+      "UIT-UI-14-OFFLINE",
+      "UIT-UI-14-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05"
+    ],
+    "evidence_path": "evidence/ui/UI-14/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-15",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-15 Nhật ký: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L3",
+      "LC-L7",
+      "LC-FREE",
+      "LC-COMPANION"
+    ],
+    "screen_ids": [
+      "UI-15"
+    ],
+    "api_operation_ids": [
+      "observation"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-07",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-15-PHONE",
+      "UIT-UI-15-DESKTOP",
+      "UIT-UI-15-A11Y",
+      "UIT-UI-15-OFFLINE",
+      "UIT-UI-15-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-15/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-16",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-16 Đồng nhịp: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-16"
+    ],
+    "api_operation_ids": [
+      "observations"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "EXPAND-04",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-16-PHONE",
+      "UIT-UI-16-DESKTOP",
+      "UIT-UI-16-A11Y",
+      "UIT-UI-16-OFFLINE",
+      "UIT-UI-16-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G05",
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-16/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-17",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-17 Mục tiêu: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L4",
+      "LC-L8",
+      "LC-FREE",
+      "LC-COMPANION"
+    ],
+    "screen_ids": [
+      "UI-17"
+    ],
+    "api_operation_ids": [
+      "createPlan"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-05",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-17-PHONE",
+      "UIT-UI-17-DESKTOP",
+      "UIT-UI-17-A11Y",
+      "UIT-UI-17-OFFLINE",
+      "UIT-UI-17-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G09"
+    ],
+    "evidence_path": "evidence/ui/UI-17/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-18",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-18 Check-in: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L3",
+      "LC-L8",
+      "LC-COMPANION"
+    ],
+    "screen_ids": [
+      "UI-18"
+    ],
+    "api_operation_ids": [
+      "checkin"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-05",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-18-PHONE",
+      "UIT-UI-18-DESKTOP",
+      "UIT-UI-18-A11Y",
+      "UIT-UI-18-OFFLINE",
+      "UIT-UI-18-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G09"
+    ],
+    "evidence_path": "evidence/ui/UI-18/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-19",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-19 Dòng thời gian: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L4",
+      "LC-L6",
+      "LC-L9"
+    ],
+    "screen_ids": [
+      "UI-19"
+    ],
+    "api_operation_ids": [
+      "timeline"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "METHOD-08",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-19-PHONE",
+      "UIT-UI-19-DESKTOP",
+      "UIT-UI-19-A11Y",
+      "UIT-UI-19-OFFLINE",
+      "UIT-UI-19-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G06"
+    ],
+    "evidence_path": "evidence/ui/UI-19/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-20",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-20 Khảo sát: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L2",
+      "LC-L3"
+    ],
+    "screen_ids": [
+      "UI-20"
+    ],
+    "api_operation_ids": [
+      "questionnaireResponse"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "EXPAND-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-20-PHONE",
+      "UIT-UI-20-DESKTOP",
+      "UIT-UI-20-A11Y",
+      "UIT-UI-20-OFFLINE",
+      "UIT-UI-20-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G05",
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-20/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-21",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-21 Tính phân tích: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1",
+      "LC-L2",
+      "LC-L3",
+      "LC-L4",
+      "LC-L6",
+      "LC-L7",
+      "LC-L8",
+      "LC-L9"
+    ],
+    "screen_ids": [
+      "UI-21"
+    ],
+    "api_operation_ids": [
+      "analyze"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-03",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-21-PHONE",
+      "UIT-UI-21-DESKTOP",
+      "UIT-UI-21-A11Y",
+      "UIT-UI-21-OFFLINE",
+      "UIT-UI-21-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G09"
+    ],
+    "evidence_path": "evidence/ui/UI-21/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-22",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-22 Tiến độ: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1"
+    ],
+    "screen_ids": [
+      "UI-22"
+    ],
+    "api_operation_ids": [
+      "analysisStatus"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-03",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-22-PHONE",
+      "UIT-UI-22-DESKTOP",
+      "UIT-UI-22-A11Y",
+      "UIT-UI-22-OFFLINE",
+      "UIT-UI-22-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G09"
+    ],
+    "evidence_path": "evidence/ui/UI-22/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-23",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-23 Thư viện báo cáo: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1",
+      "LC-L2",
+      "LC-L9",
+      "LC-PUBLISH"
+    ],
+    "screen_ids": [
+      "UI-23"
+    ],
+    "api_operation_ids": [
+      "reports"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-08",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-23-PHONE",
+      "UIT-UI-23-DESKTOP",
+      "UIT-UI-23-A11Y",
+      "UIT-UI-23-OFFLINE",
+      "UIT-UI-23-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-23/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-24",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-24 Đọc báo cáo: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1",
+      "LC-L2",
+      "LC-L3",
+      "LC-L4",
+      "LC-L5",
+      "LC-L6",
+      "LC-L7",
+      "LC-L8",
+      "LC-L9",
+      "LC-PUBLISH"
+    ],
+    "screen_ids": [
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "report"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-05",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-24-PHONE",
+      "UIT-UI-24-DESKTOP",
+      "UIT-UI-24-A11Y",
+      "UIT-UI-24-OFFLINE",
+      "UIT-UI-24-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-24/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-25",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-25 So sánh revisions: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L2",
+      "LC-L5",
+      "LC-L6",
+      "LC-L9",
+      "LC-PUBLISH"
+    ],
+    "screen_ids": [
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "reportRevisions"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-09",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-25-PHONE",
+      "UIT-UI-25-DESKTOP",
+      "UIT-UI-25-A11Y",
+      "UIT-UI-25-OFFLINE",
+      "UIT-UI-25-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-25/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-26",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-26 Xuất/tải: responsive state and authorization parity",
+    "product_ids": [
+      "LC-L1",
+      "LC-L9",
+      "LC-PUBLISH"
+    ],
+    "screen_ids": [
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "exportReport"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-06",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-26-PHONE",
+      "UIT-UI-26-DESKTOP",
+      "UIT-UI-26-A11Y",
+      "UIT-UI-26-OFFLINE",
+      "UIT-UI-26-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-26/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-27",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-27 Đơn hàng: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-27"
+    ],
+    "api_operation_ids": [
+      "order"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "COMMERCE-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-27-PHONE",
+      "UIT-UI-27-DESKTOP",
+      "UIT-UI-27-A11Y",
+      "UIT-UI-27-OFFLINE",
+      "UIT-UI-27-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G09",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-27/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-28",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-28 Thanh toán: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-28"
+    ],
+    "api_operation_ids": [
+      "checkout"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "COMMERCE-03",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-28-PHONE",
+      "UIT-UI-28-DESKTOP",
+      "UIT-UI-28-A11Y",
+      "UIT-UI-28-OFFLINE",
+      "UIT-UI-28-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G09",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-28/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-29",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-29 Quyền dịch vụ: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-29"
+    ],
+    "api_operation_ids": [
+      "entitlements"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "COMMERCE-05",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-29-PHONE",
+      "UIT-UI-29-DESKTOP",
+      "UIT-UI-29-A11Y",
+      "UIT-UI-29-OFFLINE",
+      "UIT-UI-29-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G09",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-29/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-30",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-30 Hỗ trợ: responsive state and authorization parity",
+    "product_ids": [
+      "LC-EXPERT"
+    ],
+    "screen_ids": [
+      "UI-30"
+    ],
+    "api_operation_ids": [
+      "ticket"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "COMMERCE-08",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-30-PHONE",
+      "UIT-UI-30-DESKTOP",
+      "UIT-UI-30-A11Y",
+      "UIT-UI-30-OFFLINE",
+      "UIT-UI-30-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G09",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-30/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-31",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-31 Xuất dữ liệu: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-31"
+    ],
+    "api_operation_ids": [
+      "privacyExport"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "DATA-09",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-31-PHONE",
+      "UIT-UI-31-DESKTOP",
+      "UIT-UI-31-A11Y",
+      "UIT-UI-31-OFFLINE",
+      "UIT-UI-31-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G05",
+      "G07",
+      "G10"
+    ],
+    "evidence_path": "evidence/ui/UI-31/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-32",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-32 Yêu cầu xóa: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-32"
+    ],
+    "api_operation_ids": [
+      "deleteSubject"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "DATA-07",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-32-PHONE",
+      "UIT-UI-32-DESKTOP",
+      "UIT-UI-32-A11Y",
+      "UIT-UI-32-OFFLINE",
+      "UIT-UI-32-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G05",
+      "G07",
+      "G10"
+    ],
+    "evidence_path": "evidence/ui/UI-32/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-33",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-33 Trung tâm tự động: responsive state and authorization parity",
+    "product_ids": [
+      "LC-COMPANION"
+    ],
+    "screen_ids": [
+      "UI-33"
+    ],
+    "api_operation_ids": [
+      "newAutomation"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "AI-10",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-33-PHONE",
+      "UIT-UI-33-DESKTOP",
+      "UIT-UI-33-A11Y",
+      "UIT-UI-33-OFFLINE",
+      "UIT-UI-33-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-33/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-34",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-34 Gia đình: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FAMILY"
+    ],
+    "screen_ids": [
+      "UI-34"
+    ],
+    "api_operation_ids": [
+      "subjects"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "EXPAND-05",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-34-PHONE",
+      "UIT-UI-34-DESKTOP",
+      "UIT-UI-34-A11Y",
+      "UIT-UI-34-OFFLINE",
+      "UIT-UI-34-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G05",
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-34/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-35",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-35 Case chuyên gia: responsive state and authorization parity",
+    "product_ids": [
+      "LC-EXPERT",
+      "LC-PRACTICE",
+      "LC-ACADEMY-PRO"
+    ],
+    "screen_ids": [
+      "UI-35"
+    ],
+    "api_operation_ids": [
+      "cases"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-05",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-35-PHONE",
+      "UIT-UI-35-DESKTOP",
+      "UIT-UI-35-A11Y",
+      "UIT-UI-35-OFFLINE",
+      "UIT-UI-35-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-35/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-36",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-36 Duyệt báo cáo: responsive state and authorization parity",
+    "product_ids": [
+      "LC-EXPERT",
+      "LC-PRACTICE",
+      "LC-ACADEMY-PRO"
+    ],
+    "screen_ids": [
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "review"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-10",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-36-PHONE",
+      "UIT-UI-36-DESKTOP",
+      "UIT-UI-36-A11Y",
+      "UIT-UI-36-OFFLINE",
+      "UIT-UI-36-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-36/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-37",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-37 Academy: responsive state and authorization parity",
+    "product_ids": [
+      "LC-ACADEMY-FOUNDATION",
+      "LC-ACADEMY-PRO",
+      "LC-ACADEMY-TRAINER"
+    ],
+    "screen_ids": [
+      "UI-37"
+    ],
+    "api_operation_ids": [
+      "courses"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-37-PHONE",
+      "UIT-UI-37-DESKTOP",
+      "UIT-UI-37-A11Y",
+      "UIT-UI-37-OFFLINE",
+      "UIT-UI-37-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-37/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-38",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-38 Học bài: responsive state and authorization parity",
+    "product_ids": [
+      "LC-ACADEMY-FOUNDATION",
+      "LC-ACADEMY-PRO",
+      "LC-ACADEMY-TRAINER"
+    ],
+    "screen_ids": [
+      "UI-38"
+    ],
+    "api_operation_ids": [
+      "assignment"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-03",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-38-PHONE",
+      "UIT-UI-38-DESKTOP",
+      "UIT-UI-38-A11Y",
+      "UIT-UI-38-OFFLINE",
+      "UIT-UI-38-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-38/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-39",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-39 Chứng nhận: responsive state and authorization parity",
+    "product_ids": [
+      "LC-ACADEMY-FOUNDATION",
+      "LC-ACADEMY-PRO",
+      "LC-ACADEMY-TRAINER"
+    ],
+    "screen_ids": [
+      "UI-39"
+    ],
+    "api_operation_ids": [
+      "verifyCertificate"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-06",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-39-PHONE",
+      "UIT-UI-39-DESKTOP",
+      "UIT-UI-39-A11Y",
+      "UIT-UI-39-OFFLINE",
+      "UIT-UI-39-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-39/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-40",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-40 Workspace: responsive state and authorization parity",
+    "product_ids": [
+      "LC-ORG"
+    ],
+    "screen_ids": [
+      "UI-40"
+    ],
+    "api_operation_ids": [
+      "organizationOverview"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "EXPAND-08",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-40-PHONE",
+      "UIT-UI-40-DESKTOP",
+      "UIT-UI-40-A11Y",
+      "UIT-UI-40-OFFLINE",
+      "UIT-UI-40-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G05",
+      "G08"
+    ],
+    "evidence_path": "evidence/ui/UI-40/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-41",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-41 Partner: responsive state and authorization parity",
+    "product_ids": [
+      "LC-REGIONAL"
+    ],
+    "screen_ids": [
+      "UI-41"
+    ],
+    "api_operation_ids": [
+      "partner"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "GLOBAL-05",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-41-PHONE",
+      "UIT-UI-41-DESKTOP",
+      "UIT-UI-41-A11Y",
+      "UIT-UI-41-OFFLINE",
+      "UIT-UI-41-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-41/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-42",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-42 Nguồn/phương pháp Admin: responsive state and authorization parity",
+    "product_ids": [
+      "LC-ACADEMY-TRAINER"
+    ],
+    "screen_ids": [
+      "UI-42"
+    ],
+    "api_operation_ids": [
+      "methodReleaseDraft"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "METHOD-10",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-42-PHONE",
+      "UIT-UI-42-DESKTOP",
+      "UIT-UI-42-A11Y",
+      "UIT-UI-42-OFFLINE",
+      "UIT-UI-42-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G06"
+    ],
+    "evidence_path": "evidence/ui/UI-42/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-43",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-43 Quality center: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-43"
+    ],
+    "api_operation_ids": [
+      "quality"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "OPS-08",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-43-PHONE",
+      "UIT-UI-43-DESKTOP",
+      "UIT-UI-43-A11Y",
+      "UIT-UI-43-OFFLINE",
+      "UIT-UI-43-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-43/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-44",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-44 Ops center: responsive state and authorization parity",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-44"
+    ],
+    "api_operation_ids": [
+      "operations"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "OPS-04",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-44-PHONE",
+      "UIT-UI-44-DESKTOP",
+      "UIT-UI-44-A11Y",
+      "UIT-UI-44-OFFLINE",
+      "UIT-UI-44-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-44/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-SCREEN-UI-45",
+    "requirement_type": "SCREEN",
+    "requirement_statement": "UI-45 Rights/legal center: responsive state and authorization parity",
+    "product_ids": [
+      "LC-REGIONAL"
+    ],
+    "screen_ids": [
+      "UI-45"
+    ],
+    "api_operation_ids": [
+      "countryPackReview"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "GLOBAL-01",
+      "UPG-UX-001"
+    ],
+    "test_ids": [
+      "UIT-UI-45-PHONE",
+      "UIT-UI-45-DESKTOP",
+      "UIT-UI-45-A11Y",
+      "UIT-UI-45-OFFLINE",
+      "UIT-UI-45-NEGATIVE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G12"
+    ],
+    "evidence_path": "evidence/ui/UI-45/<sha>/receipt.json",
+    "expected_result": "phone and desktop complete the same authorized task; all universal/category states are truthful",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L1",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L1 in T2 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L1"
+    ],
+    "screen_ids": [
+      "UI-07",
+      "UI-09",
+      "UI-11",
+      "UI-21",
+      "UI-22",
+      "UI-23",
+      "UI-24",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "createSubject",
+      "overview",
+      "newProfileVersion",
+      "analyze",
+      "analysisStatus",
+      "analysisResults",
+      "reports",
+      "report",
+      "exportReport"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-03",
+      "WEB-06",
+      "DATA-01",
+      "API-03",
+      "WEB-08",
+      "REPORT-05",
+      "REPORT-06",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L1-CONTRACT",
+      "PRD-LC-L1-ELIGIBILITY",
+      "PRD-LC-L1-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-L1/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L2",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L2 in T4 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L2"
+    ],
+    "screen_ids": [
+      "UI-20",
+      "UI-21",
+      "UI-23",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "questionnaireResponse",
+      "analyze",
+      "analysisResults",
+      "reports",
+      "report",
+      "reportRevisions"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "EXPAND-01",
+      "API-03",
+      "WEB-08",
+      "REPORT-05",
+      "REPORT-09",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L2-CONTRACT",
+      "PRD-LC-L2-ELIGIBILITY",
+      "PRD-LC-L2-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/products/LC-L2/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L3",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L3 in T4 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L3"
+    ],
+    "screen_ids": [
+      "UI-15",
+      "UI-18",
+      "UI-20",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "observation",
+      "checkin",
+      "questionnaireResponse",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-07",
+      "API-05",
+      "EXPAND-01",
+      "API-03",
+      "REPORT-05",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L3-CONTRACT",
+      "PRD-LC-L3-ELIGIBILITY",
+      "PRD-LC-L3-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/products/LC-L3/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L4",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L4 in T4 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L4"
+    ],
+    "screen_ids": [
+      "UI-17",
+      "UI-19",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "createPlan",
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-05",
+      "METHOD-08",
+      "API-03",
+      "REPORT-05",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L4-CONTRACT",
+      "PRD-LC-L4-ELIGIBILITY",
+      "PRD-LC-L4-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/products/LC-L4/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L5",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L5 in T4 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L5"
+    ],
+    "screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "grant",
+      "revokeGrant",
+      "report",
+      "reportRevisions"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-08",
+      "TRUST-07",
+      "REPORT-05",
+      "REPORT-09",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L5-CONTRACT",
+      "PRD-LC-L5-ELIGIBILITY",
+      "PRD-LC-L5-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/products/LC-L5/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L6",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L6 in T6 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L6"
+    ],
+    "screen_ids": [
+      "UI-19",
+      "UI-21",
+      "UI-24",
+      "UI-25"
+    ],
+    "api_operation_ids": [
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "report",
+      "reportRevisions"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "METHOD-08",
+      "API-03",
+      "REPORT-05",
+      "REPORT-09",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L6-CONTRACT",
+      "PRD-LC-L6-ELIGIBILITY",
+      "PRD-LC-L6-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/products/LC-L6/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L7",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L7 in T6 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L7"
+    ],
+    "screen_ids": [
+      "UI-13",
+      "UI-15",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "observation",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-08",
+      "WEB-07",
+      "API-03",
+      "REPORT-05",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L7-CONTRACT",
+      "PRD-LC-L7-ELIGIBILITY",
+      "PRD-LC-L7-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-L7/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L8",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L8 in T6 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L8"
+    ],
+    "screen_ids": [
+      "UI-17",
+      "UI-18",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "createPlan",
+      "checkin",
+      "analyze",
+      "analysisResults",
+      "report"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-05",
+      "API-03",
+      "REPORT-05",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L8-CONTRACT",
+      "PRD-LC-L8-ELIGIBILITY",
+      "PRD-LC-L8-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G05",
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/products/LC-L8/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-L9",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-L9 in T6 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-L9"
+    ],
+    "screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-19",
+      "UI-21",
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "consentDecision",
+      "grant",
+      "timeline",
+      "analyze",
+      "analysisResults",
+      "reports",
+      "report",
+      "reportRevisions",
+      "exportReport"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-08",
+      "TRUST-07",
+      "METHOD-08",
+      "API-03",
+      "WEB-08",
+      "REPORT-05",
+      "REPORT-09",
+      "REPORT-06",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-L9-CONTRACT",
+      "PRD-LC-L9-ELIGIBILITY",
+      "PRD-LC-L9-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-L9/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-GUEST",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-GUEST in T1 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-GUEST"
+    ],
+    "screen_ids": [
+      "UI-01",
+      "UI-02",
+      "UI-03",
+      "UI-04",
+      "UI-05"
+    ],
+    "api_operation_ids": [
+      "catalog",
+      "methods"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-01",
+      "GOV-09",
+      "METHOD-10",
+      "WEB-02",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-GUEST-CONTRACT",
+      "PRD-LC-GUEST-ELIGIBILITY",
+      "PRD-LC-GUEST-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-GUEST/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-FREE",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-FREE in T2 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-07",
+      "UI-09",
+      "UI-10",
+      "UI-11",
+      "UI-13",
+      "UI-15",
+      "UI-17",
+      "UI-31",
+      "UI-32"
+    ],
+    "api_operation_ids": [
+      "createSubject",
+      "overview",
+      "subjects",
+      "newProfileVersion",
+      "consentDecision",
+      "observation",
+      "createPlan",
+      "privacyExport",
+      "deleteSubject"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-03",
+      "WEB-06",
+      "API-02",
+      "DATA-01",
+      "TRUST-08",
+      "WEB-07",
+      "API-05",
+      "DATA-09",
+      "DATA-07",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-FREE-CONTRACT",
+      "PRD-LC-FREE-ELIGIBILITY",
+      "PRD-LC-FREE-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-FREE/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-COMPANION",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-COMPANION in T3 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-COMPANION"
+    ],
+    "screen_ids": [
+      "UI-15",
+      "UI-17",
+      "UI-18",
+      "UI-33"
+    ],
+    "api_operation_ids": [
+      "observation",
+      "createPlan",
+      "checkin",
+      "newAutomation",
+      "stopAutomation"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-07",
+      "API-05",
+      "AI-10",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-COMPANION-CONTRACT",
+      "PRD-LC-COMPANION-ELIGIBILITY",
+      "PRD-LC-COMPANION-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-COMPANION/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-NUMBERS",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-NUMBERS in T1 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-NUMBERS"
+    ],
+    "screen_ids": [
+      "UI-05"
+    ],
+    "api_operation_ids": [],
+    "non_api_reason": "Numbers remains a client-side synthetic reference flow until Q3/Q6/Q12 approve a versioned method release and a dedicated server operation contract",
+    "task_ids": [
+      "WEB-02",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-NUMBERS-CONTRACT",
+      "PRD-LC-NUMBERS-ELIGIBILITY",
+      "PRD-LC-NUMBERS-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G08"
+    ],
+    "evidence_path": "evidence/products/LC-NUMBERS/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-EXPERT",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-EXPERT in T3 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-EXPERT"
+    ],
+    "screen_ids": [
+      "UI-14",
+      "UI-30",
+      "UI-35",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "grant",
+      "revokeGrant",
+      "ticket",
+      "cases",
+      "caseDetail",
+      "review"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-07",
+      "COMMERCE-08",
+      "ACADEMY-05",
+      "REPORT-10",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-EXPERT-CONTRACT",
+      "PRD-LC-EXPERT-ELIGIBILITY",
+      "PRD-LC-EXPERT-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G08",
+      "G09",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-EXPERT/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-PRACTICE",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-PRACTICE in T5 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-PRACTICE"
+    ],
+    "screen_ids": [
+      "UI-35",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "cases",
+      "caseDetail",
+      "review"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-05",
+      "REPORT-10",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-PRACTICE-CONTRACT",
+      "PRD-LC-PRACTICE-ELIGIBILITY",
+      "PRD-LC-PRACTICE-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-PRACTICE/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-ACADEMY-FOUNDATION",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-ACADEMY-FOUNDATION in T5 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-ACADEMY-FOUNDATION"
+    ],
+    "screen_ids": [
+      "UI-37",
+      "UI-38",
+      "UI-39"
+    ],
+    "api_operation_ids": [
+      "courses",
+      "assignment",
+      "verifyCertificate"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-01",
+      "ACADEMY-03",
+      "ACADEMY-06",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-ACADEMY-FOUNDATION-CONTRACT",
+      "PRD-LC-ACADEMY-FOUNDATION-ELIGIBILITY",
+      "PRD-LC-ACADEMY-FOUNDATION-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-ACADEMY-FOUNDATION/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-ACADEMY-PRO",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-ACADEMY-PRO in T6 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-ACADEMY-PRO"
+    ],
+    "screen_ids": [
+      "UI-35",
+      "UI-36",
+      "UI-37",
+      "UI-38",
+      "UI-39"
+    ],
+    "api_operation_ids": [
+      "cases",
+      "caseDetail",
+      "review",
+      "courses",
+      "assignment",
+      "verifyCertificate"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-05",
+      "REPORT-10",
+      "ACADEMY-01",
+      "ACADEMY-03",
+      "ACADEMY-06",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-ACADEMY-PRO-CONTRACT",
+      "PRD-LC-ACADEMY-PRO-ELIGIBILITY",
+      "PRD-LC-ACADEMY-PRO-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-ACADEMY-PRO/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-ACADEMY-TRAINER",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-ACADEMY-TRAINER in T6 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-ACADEMY-TRAINER"
+    ],
+    "screen_ids": [
+      "UI-37",
+      "UI-38",
+      "UI-39",
+      "UI-42"
+    ],
+    "api_operation_ids": [
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "methodReleaseDraft"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "ACADEMY-01",
+      "ACADEMY-03",
+      "ACADEMY-06",
+      "METHOD-10",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-ACADEMY-TRAINER-CONTRACT",
+      "PRD-LC-ACADEMY-TRAINER-ELIGIBILITY",
+      "PRD-LC-ACADEMY-TRAINER-KILL"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-ACADEMY-TRAINER/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-FAMILY",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-FAMILY in T6 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-FAMILY"
+    ],
+    "screen_ids": [
+      "UI-13",
+      "UI-14",
+      "UI-34"
+    ],
+    "api_operation_ids": [
+      "subjects",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-08",
+      "TRUST-07",
+      "EXPAND-05",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-FAMILY-CONTRACT",
+      "PRD-LC-FAMILY-ELIGIBILITY",
+      "PRD-LC-FAMILY-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G08",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-FAMILY/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-ORG",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-ORG in T7 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-ORG"
+    ],
+    "screen_ids": [
+      "UI-40"
+    ],
+    "api_operation_ids": [
+      "organizationOverview"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "EXPAND-08",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-ORG-CONTRACT",
+      "PRD-LC-ORG-ELIGIBILITY",
+      "PRD-LC-ORG-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G08",
+      "G09",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-ORG/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-API",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-API in T7 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-API"
+    ],
+    "screen_ids": [],
+    "api_operation_ids": [
+      "health",
+      "catalog",
+      "methods",
+      "methodDetail",
+      "login",
+      "authCallback",
+      "logout",
+      "subjects",
+      "createSubject",
+      "subject",
+      "overview",
+      "newProfileVersion",
+      "profileVersion",
+      "newHypothesis",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant",
+      "observations",
+      "observation",
+      "questionnaireResponse",
+      "createPlan",
+      "plans",
+      "checkin",
+      "timeline",
+      "analyze",
+      "analysisStatus",
+      "cancelAnalysis",
+      "analysisResults",
+      "methodResult",
+      "createReport",
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact",
+      "order",
+      "orderStatus",
+      "checkout",
+      "requestRefund",
+      "paymentWebhook",
+      "entitlements",
+      "ticket",
+      "ticketStatus",
+      "privacyExport",
+      "deleteSubject",
+      "deletionStatus",
+      "jobStatus",
+      "newAutomation",
+      "stopAutomation",
+      "cases",
+      "caseDetail",
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "organizationOverview",
+      "partner",
+      "methodReleaseDraft",
+      "countryPackReview",
+      "quality",
+      "operations"
+    ],
+    "non_api_reason": null,
+    "non_screen_reason": "The licensed API product is a server integration surface and has no dedicated end-user screen in this package",
+    "task_ids": [
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-API-CONTRACT",
+      "PRD-LC-API-ELIGIBILITY",
+      "PRD-LC-API-KILL"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-API/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-PUBLISH",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-PUBLISH in T3 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-PUBLISH"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "WEB-08",
+      "REPORT-05",
+      "REPORT-09",
+      "REPORT-06",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-PUBLISH-CONTRACT",
+      "PRD-LC-PUBLISH-ELIGIBILITY",
+      "PRD-LC-PUBLISH-KILL"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G04",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-PUBLISH/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-PRODUCT-LC-REGIONAL",
+    "requirement_type": "PRODUCT",
+    "requirement_statement": "Retain LC-REGIONAL in T8 with conditional evidence and kill metrics",
+    "product_ids": [
+      "LC-REGIONAL"
+    ],
+    "screen_ids": [
+      "UI-41",
+      "UI-45"
+    ],
+    "api_operation_ids": [
+      "partner",
+      "countryPackReview"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "GLOBAL-05",
+      "GLOBAL-01",
+      "UPG-PRD-002"
+    ],
+    "test_ids": [
+      "PRD-LC-REGIONAL-CONTRACT",
+      "PRD-LC-REGIONAL-ELIGIBILITY",
+      "PRD-LC-REGIONAL-KILL"
+    ],
+    "custom_gate_ids": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12"
+    ],
+    "evidence_path": "evidence/products/LC-REGIONAL/<release>/decision.json",
+    "expected_result": "scope, eligible user, dependencies, metrics, evidence and approval bind the exact release",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L1",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 1 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L1"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-02",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L1-GOLDEN",
+      "EVAL-FX-RPT-L1-NULL",
+      "EVAL-FX-RPT-L1-CONFLICT",
+      "EVAL-FX-RPT-L1-UNAUTHORIZED",
+      "EVAL-FX-RPT-L1-INJECTION",
+      "EVAL-FX-RPT-L1-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L1/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L2",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 2 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L2"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L2-GOLDEN",
+      "EVAL-FX-RPT-L2-NULL",
+      "EVAL-FX-RPT-L2-CONFLICT",
+      "EVAL-FX-RPT-L2-UNAUTHORIZED",
+      "EVAL-FX-RPT-L2-INJECTION",
+      "EVAL-FX-RPT-L2-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L2/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L3",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 3 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L3"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L3-GOLDEN",
+      "EVAL-FX-RPT-L3-NULL",
+      "EVAL-FX-RPT-L3-CONFLICT",
+      "EVAL-FX-RPT-L3-UNAUTHORIZED",
+      "EVAL-FX-RPT-L3-INJECTION",
+      "EVAL-FX-RPT-L3-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L3/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L4",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 4 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L4"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L4-GOLDEN",
+      "EVAL-FX-RPT-L4-NULL",
+      "EVAL-FX-RPT-L4-CONFLICT",
+      "EVAL-FX-RPT-L4-UNAUTHORIZED",
+      "EVAL-FX-RPT-L4-INJECTION",
+      "EVAL-FX-RPT-L4-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L4/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L5",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 5 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L5"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-03",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L5-GOLDEN",
+      "EVAL-FX-RPT-L5-NULL",
+      "EVAL-FX-RPT-L5-CONFLICT",
+      "EVAL-FX-RPT-L5-UNAUTHORIZED",
+      "EVAL-FX-RPT-L5-INJECTION",
+      "EVAL-FX-RPT-L5-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L5/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L6",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 6 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L6"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L6-GOLDEN",
+      "EVAL-FX-RPT-L6-NULL",
+      "EVAL-FX-RPT-L6-CONFLICT",
+      "EVAL-FX-RPT-L6-UNAUTHORIZED",
+      "EVAL-FX-RPT-L6-INJECTION",
+      "EVAL-FX-RPT-L6-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L6/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L7",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 7 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L7"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L7-GOLDEN",
+      "EVAL-FX-RPT-L7-NULL",
+      "EVAL-FX-RPT-L7-CONFLICT",
+      "EVAL-FX-RPT-L7-UNAUTHORIZED",
+      "EVAL-FX-RPT-L7-INJECTION",
+      "EVAL-FX-RPT-L7-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L7/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L8",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 8 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L8"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L8-GOLDEN",
+      "EVAL-FX-RPT-L8-NULL",
+      "EVAL-FX-RPT-L8-CONFLICT",
+      "EVAL-FX-RPT-L8-UNAUTHORIZED",
+      "EVAL-FX-RPT-L8-INJECTION",
+      "EVAL-FX-RPT-L8-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L8/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-REPORT-L9",
+    "requirement_type": "REPORT_LEVEL",
+    "requirement_statement": "Level 9 follows differentiated typed input, AI, review and rejection contract",
+    "product_ids": [
+      "LC-L9"
+    ],
+    "screen_ids": [
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-36"
+    ],
+    "api_operation_ids": [
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "exportReport",
+      "downloadArtifact"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "REPORT-04",
+      "REPORT-05",
+      "REPORT-06",
+      "REPORT-07",
+      "REPORT-08",
+      "REPORT-09",
+      "REPORT-10",
+      "UPG-AI-001",
+      "UPG-AI-002"
+    ],
+    "test_ids": [
+      "EVAL-FX-RPT-L9-GOLDEN",
+      "EVAL-FX-RPT-L9-NULL",
+      "EVAL-FX-RPT-L9-CONFLICT",
+      "EVAL-FX-RPT-L9-UNAUTHORIZED",
+      "EVAL-FX-RPT-L9-INJECTION",
+      "EVAL-FX-RPT-L9-CORRECTION"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/reports/L9/<template-version>/<sha>/receipt.json",
+    "expected_result": "typed claims retain lineage; prohibited inference rejected; human/release authority recorded",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-PWA",
+    "requirement_type": "PWA",
+    "requirement_statement": "Install is optional; manifest scope/update/cache/offline behavior is explicit",
+    "product_ids": [
+      "LC-GUEST",
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-01",
+      "UI-02",
+      "UI-03",
+      "UI-04",
+      "UI-05",
+      "UI-06",
+      "UI-07",
+      "UI-08",
+      "UI-09",
+      "UI-10",
+      "UI-11",
+      "UI-12",
+      "UI-13",
+      "UI-14",
+      "UI-15",
+      "UI-16",
+      "UI-17",
+      "UI-18",
+      "UI-19",
+      "UI-20",
+      "UI-21",
+      "UI-22",
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-27",
+      "UI-28",
+      "UI-29",
+      "UI-30",
+      "UI-31",
+      "UI-32",
+      "UI-33",
+      "UI-34",
+      "UI-35",
+      "UI-36",
+      "UI-37",
+      "UI-38",
+      "UI-39",
+      "UI-40",
+      "UI-41",
+      "UI-42",
+      "UI-43",
+      "UI-44",
+      "UI-45"
+    ],
+    "api_operation_ids": [],
+    "non_api_reason": "policy/research requirement without direct API operation",
+    "task_ids": [
+      "UPG-UX-001",
+      "UPG-UX-003"
+    ],
+    "test_ids": [
+      "PWA-MANIFEST",
+      "PWA-SW-UPDATE",
+      "PWA-CACHE-PRIVACY",
+      "PWA-OFFLINE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G10",
+      "G12"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-PWA/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-A11Y",
+    "requirement_type": "ACCESSIBILITY",
+    "requirement_statement": "Critical flows conform to WCAG 2.2 AA with manual and automated evidence",
+    "product_ids": [
+      "LC-GUEST",
+      "LC-FREE",
+      "LC-L1"
+    ],
+    "screen_ids": [
+      "UI-01",
+      "UI-02",
+      "UI-03",
+      "UI-04",
+      "UI-05",
+      "UI-06",
+      "UI-07",
+      "UI-08",
+      "UI-09",
+      "UI-10",
+      "UI-11",
+      "UI-12",
+      "UI-13",
+      "UI-14",
+      "UI-15",
+      "UI-16",
+      "UI-17",
+      "UI-18",
+      "UI-19",
+      "UI-20",
+      "UI-21",
+      "UI-22",
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-27",
+      "UI-28",
+      "UI-29",
+      "UI-30",
+      "UI-31",
+      "UI-32",
+      "UI-33",
+      "UI-34",
+      "UI-35",
+      "UI-36",
+      "UI-37",
+      "UI-38",
+      "UI-39",
+      "UI-40",
+      "UI-41",
+      "UI-42",
+      "UI-43",
+      "UI-44",
+      "UI-45"
+    ],
+    "api_operation_ids": [],
+    "non_api_reason": "policy/research requirement without direct API operation",
+    "task_ids": [
+      "WEB-10",
+      "UPG-UX-003"
+    ],
+    "test_ids": [
+      "A11Y-KEYBOARD",
+      "A11Y-SR",
+      "A11Y-REFLOW",
+      "A11Y-ZOOM",
+      "A11Y-FOCUS"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G08",
+      "G10"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-A11Y/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-AUTH",
+    "requirement_type": "AUTHORIZATION",
+    "requirement_statement": "Every object is authorized by server-side tenant/subject/grant context",
+    "product_ids": [
+      "LC-FREE",
+      "LC-PRACTICE",
+      "LC-FAMILY",
+      "LC-ORG",
+      "LC-API"
+    ],
+    "screen_ids": [
+      "UI-10",
+      "UI-14",
+      "UI-34",
+      "UI-35",
+      "UI-40"
+    ],
+    "api_operation_ids": [
+      "subjects",
+      "grants",
+      "cases",
+      "organizationOverview"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "TRUST-04",
+      "TRUST-05",
+      "UPG-BE-003"
+    ],
+    "test_ids": [
+      "AUTH-IDOR",
+      "AUTH-TENANT-SWAP",
+      "AUTH-SUBJECT-SWAP",
+      "AUTH-REVOKED-GRANT"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G05"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-AUTH/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-TYPED",
+    "requirement_type": "TYPED_RESULT",
+    "requirement_statement": "Formula result represents null/decimal/date/timezone explicitly",
+    "product_ids": [
+      "LC-NUMBERS",
+      "LC-L1",
+      "LC-L6"
+    ],
+    "screen_ids": [
+      "UI-05",
+      "UI-19",
+      "UI-21",
+      "UI-24"
+    ],
+    "api_operation_ids": [
+      "timeline",
+      "analyze",
+      "analysisResults"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "METHOD-07",
+      "UPG-BE-002"
+    ],
+    "test_ids": [
+      "TYPE-NULL",
+      "TYPE-DECIMAL",
+      "TYPE-TIMEZONE",
+      "TYPE-PRECISION"
+    ],
+    "custom_gate_ids": [
+      "G05",
+      "G06",
+      "G09"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-TYPED/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-METHOD-RIGHTS",
+    "requirement_type": "METHOD_RIGHTS",
+    "requirement_statement": "Only released methods with source and rights may calculate or publish",
+    "product_ids": [
+      "LC-L1",
+      "LC-L2",
+      "LC-L3",
+      "LC-L4",
+      "LC-L5",
+      "LC-L6",
+      "LC-L7",
+      "LC-L8",
+      "LC-L9",
+      "LC-GUEST",
+      "LC-FREE",
+      "LC-COMPANION",
+      "LC-NUMBERS",
+      "LC-EXPERT",
+      "LC-PRACTICE",
+      "LC-ACADEMY-FOUNDATION",
+      "LC-ACADEMY-PRO",
+      "LC-ACADEMY-TRAINER",
+      "LC-FAMILY",
+      "LC-ORG",
+      "LC-API",
+      "LC-PUBLISH",
+      "LC-REGIONAL"
+    ],
+    "screen_ids": [
+      "UI-04",
+      "UI-42",
+      "UI-45"
+    ],
+    "api_operation_ids": [
+      "methods",
+      "methodDetail",
+      "methodReleaseDraft",
+      "countryPackReview"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "METHOD-10",
+      "UPG-BE-001"
+    ],
+    "test_ids": [
+      "METHOD-REVOKED",
+      "METHOD-NO-RIGHT",
+      "METHOD-IMPACT"
+    ],
+    "custom_gate_ids": [
+      "G04",
+      "G06"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-METHOD-RIGHTS/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-JOBS",
+    "requirement_type": "ASYNC_CONSISTENCY",
+    "requirement_statement": "Jobs/outbox/payment fulfill exactly once and reconcile terminal state",
+    "product_ids": [
+      "LC-COMPANION",
+      "LC-PUBLISH",
+      "LC-FREE"
+    ],
+    "screen_ids": [
+      "UI-22",
+      "UI-26",
+      "UI-28",
+      "UI-31",
+      "UI-32"
+    ],
+    "api_operation_ids": [
+      "analysisStatus",
+      "exportReport",
+      "checkout",
+      "privacyExport",
+      "deleteSubject",
+      "jobStatus"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "DATA-06",
+      "COMMERCE-04",
+      "UPG-BE-004"
+    ],
+    "test_ids": [
+      "JOB-REPLAY",
+      "JOB-PARTIAL",
+      "PAY-OUT-OF-ORDER",
+      "PAY-RECONCILE"
+    ],
+    "custom_gate_ids": [
+      "G05",
+      "G07",
+      "G09",
+      "G10"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-JOBS/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-MIGRATION",
+    "requirement_type": "MIGRATION",
+    "requirement_statement": "D1 to Postgres dry-run reconciles and rolls back before any separately authorized real migration",
+    "product_ids": [
+      "LC-FREE"
+    ],
+    "screen_ids": [],
+    "non_screen_reason": "Migration is a backend and data rehearsal obligation with no dedicated end-user screen",
+    "api_operation_ids": [],
+    "non_api_reason": "policy/research requirement without direct API operation",
+    "task_ids": [
+      "DATA-03",
+      "DATA-04",
+      "UPG-BE-005"
+    ],
+    "test_ids": [
+      "MIG-COUNT",
+      "MIG-HASH",
+      "MIG-REJECT",
+      "MIG-ROLLBACK"
+    ],
+    "custom_gate_ids": [
+      "G05",
+      "G07",
+      "G10"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-MIGRATION/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-OPENAPI",
+    "requirement_type": "API_CONTRACT",
+    "requirement_statement": "All 64 retained operation IDs have schemas, auth and negative contracts",
+    "product_ids": [
+      "LC-API"
+    ],
+    "screen_ids": [],
+    "non_screen_reason": "The OpenAPI contract is a backend integration artifact exercised by contract tests rather than a dedicated UI screen",
+    "api_operation_ids": [
+      "health",
+      "catalog",
+      "methods",
+      "methodDetail",
+      "login",
+      "authCallback",
+      "logout",
+      "subjects",
+      "createSubject",
+      "subject",
+      "overview",
+      "newProfileVersion",
+      "profileVersion",
+      "newHypothesis",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant",
+      "observations",
+      "observation",
+      "questionnaireResponse",
+      "createPlan",
+      "plans",
+      "checkin",
+      "timeline",
+      "analyze",
+      "analysisStatus",
+      "cancelAnalysis",
+      "analysisResults",
+      "methodResult",
+      "createReport",
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact",
+      "order",
+      "orderStatus",
+      "checkout",
+      "requestRefund",
+      "paymentWebhook",
+      "entitlements",
+      "ticket",
+      "ticketStatus",
+      "privacyExport",
+      "deleteSubject",
+      "deletionStatus",
+      "jobStatus",
+      "newAutomation",
+      "stopAutomation",
+      "cases",
+      "caseDetail",
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "organizationOverview",
+      "partner",
+      "methodReleaseDraft",
+      "countryPackReview",
+      "quality",
+      "operations"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "API-01",
+      "API-10",
+      "UPG-BE-006"
+    ],
+    "test_ids": [
+      "API-64-PARITY",
+      "API-AUTH-NEGATIVE",
+      "API-ERROR",
+      "API-IDEMPOTENCY"
+    ],
+    "custom_gate_ids": [
+      "G02",
+      "G03",
+      "G06",
+      "G09"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-OPENAPI/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-DEMO",
+    "requirement_type": "SYNTHETIC_DEMO",
+    "requirement_statement": "Demo and trace explorer use synthetic data and disclose exact candidate",
+    "product_ids": [
+      "LC-GUEST",
+      "LC-FREE",
+      "LC-L1",
+      "LC-API"
+    ],
+    "screen_ids": [
+      "UI-01",
+      "UI-02",
+      "UI-03",
+      "UI-04",
+      "UI-05",
+      "UI-06",
+      "UI-07",
+      "UI-08",
+      "UI-09",
+      "UI-10",
+      "UI-11",
+      "UI-12",
+      "UI-13",
+      "UI-14",
+      "UI-15",
+      "UI-16",
+      "UI-17",
+      "UI-18",
+      "UI-19",
+      "UI-20",
+      "UI-21",
+      "UI-22",
+      "UI-23",
+      "UI-24",
+      "UI-25",
+      "UI-26",
+      "UI-27",
+      "UI-28",
+      "UI-29",
+      "UI-30",
+      "UI-31",
+      "UI-32",
+      "UI-33",
+      "UI-34",
+      "UI-35",
+      "UI-36",
+      "UI-37",
+      "UI-38",
+      "UI-39",
+      "UI-40",
+      "UI-41",
+      "UI-42",
+      "UI-43",
+      "UI-44",
+      "UI-45"
+    ],
+    "api_operation_ids": [
+      "health",
+      "catalog",
+      "methods",
+      "methodDetail",
+      "login",
+      "authCallback",
+      "logout",
+      "subjects",
+      "createSubject",
+      "subject",
+      "overview",
+      "newProfileVersion",
+      "profileVersion",
+      "newHypothesis",
+      "consents",
+      "consentDecision",
+      "grants",
+      "grant",
+      "revokeGrant",
+      "observations",
+      "observation",
+      "questionnaireResponse",
+      "createPlan",
+      "plans",
+      "checkin",
+      "timeline",
+      "analyze",
+      "analysisStatus",
+      "cancelAnalysis",
+      "analysisResults",
+      "methodResult",
+      "createReport",
+      "reports",
+      "report",
+      "reportRevisions",
+      "review",
+      "publish",
+      "exportReport",
+      "downloadArtifact",
+      "order",
+      "orderStatus",
+      "checkout",
+      "requestRefund",
+      "paymentWebhook",
+      "entitlements",
+      "ticket",
+      "ticketStatus",
+      "privacyExport",
+      "deleteSubject",
+      "deletionStatus",
+      "jobStatus",
+      "newAutomation",
+      "stopAutomation",
+      "cases",
+      "caseDetail",
+      "courses",
+      "assignment",
+      "verifyCertificate",
+      "organizationOverview",
+      "partner",
+      "methodReleaseDraft",
+      "countryPackReview",
+      "quality",
+      "operations"
+    ],
+    "non_api_reason": null,
+    "task_ids": [
+      "UPG-UX-002",
+      "UPG-BE-007"
+    ],
+    "test_ids": [
+      "DEMO-01-12",
+      "TRACE-LINEAGE",
+      "TRACE-OFFLINE"
+    ],
+    "custom_gate_ids": [
+      "G03",
+      "G06",
+      "G08",
+      "G10"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-DEMO/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  },
+  {
+    "trace_version": "2026-10-20",
+    "requirement_id": "REQ-X-COST",
+    "requirement_type": "COST_CAPACITY",
+    "requirement_statement": "Costs remain formulas until approved rates/vendors/currency; missing is not zero",
+    "product_ids": [
+      "LC-L1",
+      "LC-L2",
+      "LC-L3",
+      "LC-L4",
+      "LC-L5",
+      "LC-L6",
+      "LC-L7",
+      "LC-L8",
+      "LC-L9",
+      "LC-GUEST",
+      "LC-FREE",
+      "LC-COMPANION",
+      "LC-NUMBERS",
+      "LC-EXPERT",
+      "LC-PRACTICE",
+      "LC-ACADEMY-FOUNDATION",
+      "LC-ACADEMY-PRO",
+      "LC-ACADEMY-TRAINER",
+      "LC-FAMILY",
+      "LC-ORG",
+      "LC-API",
+      "LC-PUBLISH",
+      "LC-REGIONAL"
+    ],
+    "screen_ids": [],
+    "non_screen_reason": "Capacity and cost governance is tracked in the execution workbook and decision packets rather than a dedicated application screen",
+    "api_operation_ids": [],
+    "non_api_reason": "policy/research requirement without direct API operation",
+    "task_ids": [
+      "COMMERCE-09",
+      "UPG-PM-002"
+    ],
+    "test_ids": [
+      "COST-INPUT-COMPLETE",
+      "COST-SCENARIO",
+      "COST-VARIANCE"
+    ],
+    "custom_gate_ids": [
+      "G04",
+      "G09",
+      "G12"
+    ],
+    "evidence_path": "evidence/requirements/REQ-X-COST/<sha>/receipt.json",
+    "expected_result": "exact acceptance and adverse path recorded for the candidate; no approval inferred",
+    "claim_status": "NOT_CHECKED"
+  }
+]

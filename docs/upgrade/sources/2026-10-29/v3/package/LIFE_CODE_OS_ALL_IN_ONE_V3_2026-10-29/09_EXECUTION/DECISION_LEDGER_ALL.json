@@ -1,0 +1,357 @@
+[
+  {
+    "decision_id": "Q1",
+    "topic": "Định vị tự hiểu và thiết kế đời sống",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q2",
+    "topic": "9 cấp/12 lớp/4 phần/12 trường/K01–20",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q3",
+    "topic": "Method độc lập theo nguồn và phiên bản",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q4",
+    "topic": "Entitlement khác quyền và đủ dữ liệu",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q5",
+    "topic": "Dừng điểm giả và cho null",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q6",
+    "topic": "Numbers là tham chiếu không đo số phận",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q7",
+    "topic": "Báo cáo cấu trúc không filler",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q8",
+    "topic": "Dòng sản phẩm mở theo gates",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q9",
+    "topic": "Privacy, auth, delete từ đầu",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q10",
+    "topic": "Tám bộ nền từ source/runtime khóa",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q11",
+    "topic": "Quarantine experimental_legacy",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q12",
+    "topic": "Passport/rights/tests/limits/approver",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q13",
+    "topic": "Free Essentials và quota minh bạch",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q14",
+    "topic": "Pháp nhân/merchant/controller",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q15",
+    "topic": "IdP/PG/payment/AI provider selection",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q16",
+    "topic": "Autonomy A0–A3 và kill switches",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q17",
+    "topic": "Academy/practitioner scope",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q18",
+    "topic": "Organization privacy boundary",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q19",
+    "topic": "Country pack và license/franchise",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q20",
+    "topic": "Budget/team/roadmap có điều kiện",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q21",
+    "proposal": "Giữ nguyên 149 tệp và quản thay đổi bằng overlay/hash",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Giữ nguyên 149 tệp và quản thay đổi bằng overlay/hash",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q22",
+    "proposal": "Duyệt 16 họ công thức tham chiếu, không gọi là production release",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Duyệt 16 họ công thức tham chiếu, không gọi là production release",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q23",
+    "proposal": "Chính sách canonical digest và không coi hash PII là ẩn danh",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Chính sách canonical digest và không coi hash PII là ẩn danh",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q24",
+    "proposal": "Chính sách thời gian: timezone/hypothesis/ngày nhuận",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Chính sách thời gian: timezone/hypothesis/ngày nhuận",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q25",
+    "proposal": "Tách demoAPI local khỏi targetAPI có quyền",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Tách demoAPI local khỏi targetAPI có quyền",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q26",
+    "proposal": "Duyệt ma trận 144 câu hỏi, không phải năng lượng đo được",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Duyệt ma trận 144 câu hỏi, không phải năng lượng đo được",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q27",
+    "proposal": "Duyệt previewthiếudữ liệu cho 9 level, không viết bù",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Duyệt previewthiếudữ liệu cho 9 level, không viết bù",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q28",
+    "proposal": "Chốt blueprintmobile/PWA/offlinesync trước native",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Chốt blueprintmobile/PWA/offlinesync trước native",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q29",
+    "proposal": "Chốt contract review, migration và RLS staging",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Chốt contract review, migration và RLS staging",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q30",
+    "proposal": "Duyệt importer không ghiđè và nhánhreview, không deploy",
+    "status": "PENDING_FOUNDER_AND_FUNCTIONAL_REVIEW",
+    "topic": "Duyệt importer không ghiđè và nhánhreview, không deploy",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q31",
+    "proposal": "Khóa manifest bảo toàn và thứ tự hiệu lực V3; không sửa lịch sử",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Khóa manifest bảo toàn và thứ tự hiệu lực V3; không sửa lịch sử",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q32",
+    "proposal": "Duyệt 23 chỉ số và các chính sách rút gọn/Y/tên riêng",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Duyệt 23 chỉ số và các chính sách rút gọn/Y/tên riêng",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q33",
+    "proposal": "Duyệt Bát Cực chế độ strict; chẩn đoán 0/5 không được coi là quy tắc chính thống đã xác nhận",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Duyệt Bát Cực chế độ strict; chẩn đoán 0/5 không được coi là quy tắc chính thống đã xác nhận",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q34",
+    "proposal": "Giữ cấp luận số và quan sát đời thực riêng; không có điểm định mệnh",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Giữ cấp luận số và quan sát đời thực riêng; không có điểm định mệnh",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q35",
+    "proposal": "Duyệt Mã đuôi 80: bảng nguồn và chính sách số dư 0",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Duyệt Mã đuôi 80: bảng nguồn và chính sách số dư 0",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q36",
+    "proposal": "Psychomatrix gồm 17 ô và trục chỉ dùng phép đếm; không suy trí nhớ, sức khỏe hoặc đời tư",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Psychomatrix gồm 17 ô và trục chỉ dùng phép đếm; không suy trí nhớ, sức khỏe hoặc đời tư",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q37",
+    "proposal": "Duyệt 18 lĩnh vực và chín giai đoạn biên tập; không bắt người dùng sống theo mẫu",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Duyệt 18 lĩnh vực và chín giai đoạn biên tập; không bắt người dùng sống theo mẫu",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q38",
+    "proposal": "Mốc Pinnacle/Challenge/Period có hợp đồng độc lập",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Mốc Pinnacle/Challenge/Period có hợp đồng độc lập",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q39",
+    "proposal": "Một hồ sơ nhiều workspace, quyền riêng theo mục đích",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Một hồ sơ nhiều workspace, quyền riêng theo mục đích",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q40",
+    "proposal": "Bảo toàn 23 sản phẩm; thêm năm dòng phụ trợ chưa mở bán",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Bảo toàn 23 sản phẩm; thêm năm dòng phụ trợ chưa mở bán",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q41",
+    "proposal": "Báo cáo bốn khối, chín cấp; không viết thêm sự kiện để đủ trang",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Báo cáo bốn khối, chín cấp; không viết thêm sự kiện để đủ trang",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q42",
+    "proposal": "Academy: chín buổi, mỗi buổi 120 phút; giảng viên hoạt động trong phạm vi chứng nhận",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Academy: chín buổi, mỗi buổi 120 phút; giảng viên hoạt động trong phạm vi chứng nhận",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q43",
+    "proposal": "Cấp phép quốc tế theo lãnh thổ; không tự có quyền truy cập dữ liệu toàn cầu",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Cấp phép quốc tế theo lãnh thổ; không tự có quyền truy cập dữ liệu toàn cầu",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q44",
+    "proposal": "AI A0–A3: quản lý chi phí và ngoại lệ; phát hành có người phê duyệt",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "AI A0–A3: quản lý chi phí và ngoại lệ; phát hành có người phê duyệt",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  },
+  {
+    "decision_id": "Q45",
+    "proposal": "Nhập V3 theo cách bổ sung; không merge hoặc deploy khi chưa có biên bản phát hành",
+    "status": "PENDING_FOUNDER_APPROVAL",
+    "topic": "Nhập V3 theo cách bổ sung; không merge hoặc deploy khi chưa có biên bản phát hành",
+    "approver": "Founder + chủ trì chuyên môn liên quan"
+  }
+]

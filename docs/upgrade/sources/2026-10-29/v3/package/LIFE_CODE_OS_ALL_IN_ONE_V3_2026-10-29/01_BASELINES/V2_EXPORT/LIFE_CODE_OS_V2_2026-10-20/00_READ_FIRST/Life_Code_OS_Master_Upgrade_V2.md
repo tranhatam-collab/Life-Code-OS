@@ -1,0 +1,570 @@
+# KẾ HOẠCH NÂNG CẤP HỢP NHẤT
+
+# Kế hoạch hợp nhất V2: giữ nền cũ, làm sâu backend, đưa trải nghiệm vào vận hành
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Mục tiêu và quyết định kiến trúc
+Bản V2 không thay bằng một kế hoạch khác. Toàn bộ 149 tệp của gói ngày 11/10/2026 được giữ nguyên trong `01_BASELINE/2026-10-11`. Tệp ZIP gốc cũng được giữ nguyên; bốn đính kèm trực tiếp được xác nhận trùng hash với tệp trong ZIP. Danh mục 23 sản phẩm, 20 họ phương pháp, 12 lớp, 12 trường đồng nhịp, chín cấp, 120 trường dữ liệu tùy chọn, 140 công việc và Q1–Q20 vẫn tồn tại. V2 bổ sung hợp đồng thực thi, ví dụ có thể chạy, tiêu chí nghiệm thu và lịch sử quyết định.
+
+Hệ đích là một nền tảng tự hiểu và thiết kế đời sống: tri thức có nguồn; phép tính được tách khỏi diễn giải; dữ liệu thực được tách khỏi giả thuyết; hành động được theo dõi. Huyền Nhân Học giữ vai trò triết lý và ngữ pháp tổng hợp. Công nghệ không tự tuyên bố biết những bí mật chưa được người dùng cung cấp.
+
+## 2. Điểm phát triển mới
+Backend cần trả lời được không chỉ “mã nào được tính”, mà cả “tính từ dữ liệu phiên bản nào, theo quy tắc nào, kết quả thiếu gì, ai được xem, kết quả nào phải cập nhật khi nguồn thay đổi”. V2 đưa thêm 16 họ công thức tham chiếu, luồng hồ sơ Level 1, 90 tình huống demo, API demo chạy tại máy, ma trận kiểm thử và thiết kế kiểm soát concurrency. Bộ công thức nâng cao chưa đủ nguồn vẫn được giữ trong danh mục, có điều kiện mở, thay vì được thay bằng một lời luận ngẫu nhiên.
+
+Frontend được thiết kế theo nhu cầu: hiểu mình, bộ số, công việc, quan hệ, nhịp sống, hồ sơ tổng hợp. Giao diện mobile và desktop dùng cùng kết quả máy chủ. Bản demo đã thể hiện tìm kiếm tình huống, chọn nhóm, tự nhập dữ liệu, xem lời giải từng bước và tải JSON; nó không giả làm ứng dụng đã có xác thực hoặc thanh toán.
+
+## 3. Sản phẩm hoàn thiện cần làm được gì?
+Người mới có thể dùng công cụ minh bạch và nội dung giáo dục mà không phải giao toàn bộ đời tư. Người có tài khoản giữ mục tiêu, nhật ký và các bản báo cáo. Người dùng trả phí nhận thêm phạm vi phân tích, xuất bản và rà soát, không mua “độ đúng của số phận”. Chuyên gia làm việc trên phần hồ sơ được chia sẻ. Tổ chức quản mục tiêu và phối hợp, không dùng phương pháp biểu tượng để tuyển dụng hoặc sa thải. Đối tác quốc tế chỉ mở nội dung, phương pháp và phạm vi đã được cấp phép.
+
+Chín cấp là chín hợp đồng sản phẩm, không bắt buộc mua tuần tự. Body Intelligence không là điều kiện phải mua trước Mission Path. Hồ sơ trẻ em, nội dung sức khỏe và dịch vụ có tác động lớn có cổng riêng; không tự được mở chỉ vì phần mềm đã có ô nhập.
+
+## 4. Căn cứ đối chiếu
+Repo đúng là `tranhatam-collab/Life-Code-OS`. Remote `main` được đọc tại SHA `99b402764437f81859fa0cd3a3af860125f7bd52`; nhánh audit ngày 11/10/2026 tại `336ef35a8386a744c6de18a7f7c6e268e89e6dac`. Nội dung trang công khai được truy xuất lại, nhưng đây không phải biên nhận SHA đang chạy. Truy cập trực tiếp Engine Lab và health chưa xác minh được trong môi trường này. Không kết luận website ngừng hoạt động chỉ từ việc công cụ không truy cập được.
+
+Các lỗi P0 trong audit cũ tiếp tục là căn cứ cần xử lý: cấp phiên tin ID client, truy cập đối tượng thiếu khóa chủ sở hữu, token thô, điểm hardcode và timeline lượng giác. Việc làm bản kế hoạch V2 và demo không sửa các lỗi production ấy. Toàn bộ cổng phát hành production giữ trạng thái chưa chứng minh.
+
+## 5. Cấu trúc vận hành
+Public web → Account/Subject/Grant/Purpose → Profile versions/Hypotheses → Method orchestrator → Deterministic core → Claim registry/HNH synthesis → Writer/Reviewer → Report snapshot/Action plan. PostgreSQL quản nghiệp vụ; private R2 quản tệp; queue/outbox quản tác vụ; policy và audit xuyên suốt. Modular monolith là điểm khởi đầu để kiểm soát phụ thuộc, không chia hàng chục microservice theo tên bộ môn.
+
+Một codebase lõi JS/TypeScript tiếp tục phục vụ web, mobile, báo cáo và API. Python chỉ bổ sung cho nghiên cứu hoặc tính toán cần thư viện chuyên biệt. Việc chọn nhà cung cấp xác thực, PostgreSQL, AI và thanh toán vẫn là quyết định phải duyệt; không được viết tài liệu như thể đã ký hợp đồng.
+
+## 6. Cách dùng bộ V2
+Founder đọc bản tổng hợp, danh mục quyết định và bảng khác biệt. Tech Lead đọc backend book, schema, OpenAPI, kế hoạch migration và P0. DEV chạy demo, kiểm thử và xem công thức trước khi triển khai adapter thật. QA dùng corpus và ma trận negative tests để tái kiểm. Biên tập dùng ví dụ người dùng đọc được, không chỉ cấu trúc JSON. Đội quốc tế dùng country pack và hợp đồng cấp phép, không tự dịch một trang web rồi mở bán toàn cầu.
+
+Đọc kế hoạch không đồng nghĩa được quyền deploy. Mọi nhiệm vụ production vẫn cần phạm vi, người chịu trách nhiệm, branch, môi trường, evidence và điều kiện quay lui. Người triển khai phải nhận rõ khác biệt giữa `REFERENCE_TESTED`, `DESIGN_ONLY`, `RESEARCH_ONLY` và `PRODUCTION_VERIFIED`.
+
+
+# Rà soát toàn bộ gói cũ và nguyên tắc không mất nội dung
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Phạm vi đã đọc
+Tất cả tệp trong ZIP được kiểm kê, trích xuất hoặc phân tích theo định dạng. Markdown, JSON, YAML, CSV, SQL, JS và Python được đọc bằng công cụ; PDF được trích văn bản; Word được đọc các đoạn và bảng; workbook được đọc cả giá trị và công thức của 11 trang tính bằng artifact_tool. Một số hình trang của bản cũ được xem để hiểu thiết kế; không gọi đó là nghiệm thu trực quan lại toàn bộ 47 trang cũ. Phần mới có quy trình render và kiểm tra riêng.
+
+`FILE_REVIEW_LEDGER.csv` liên kết từng tệp gốc với hash và trạng thái. Toàn bộ tệp gốc còn nguyên trong thư mục baseline; sửa đổi chỉ diễn ra ở các thư mục V2. Các ảnh và hồ sơ cá nhân từ những yêu cầu khác không thuộc bộ đính kèm kế hoạch hiện tại, nên không được tự đưa vào gói hoặc repository.
+
+## 2. Các khoảng trống đã xác định
+Bộ cũ có kiến trúc rộng nhưng chỉ một nhóm mã tham chiếu nhỏ. Bảng API có nhiều phản hồi dùng một kiểu Resource tổng quát; thiếu một số hợp đồng thao tác sâu. SQL thiết kế bật RLS nhưng không tự tạo được một hệ phân quyền hoàn chỉnh. Các trường date/time đã nêu ý tưởng, nhưng cần thuật toán DST fold/gap, chính sách ngày nhuận và nhiều giả thuyết chạy được.
+
+Tài liệu bộ số nói cần lưu nguyên văn, trong khi tệp tail80 hiện chứa nhãn và chủ đề biên tập, không có nguyên văn toàn bộ 80 dòng. V2 giữ đúng dữ liệu có sẵn, ghi nguồn nguyên văn chưa nằm trong tệp; không tái tạo âm thầm rồi gọi là nguyên bản. Hai mục 34 và 55 tiếp tục có ghi chú biên tập cần duyệt.
+
+Hàm goalProgress cũ chưa thể hiện đầy đủ cửa sổ ngày đến hạn. Demo V2 tính theo khoảng ngày, loại nhiệm vụ hủy và trả null khi mẫu số bằng không. Ledger xử lý trùng cũ là ví dụ đơn giản; V2 có mô phỏng đồng thời trong một tiến trình, đồng thời bổ sung đặc tả transaction/outbox thật. Không coi Map bộ nhớ là kho idempotency production.
+
+## 3. Những quyết định không được lùi lại
+Không quay về chấm LCI tùy ý. Không dùng Math.sin/seed để tạo năm rủi ro. Không suy năng lực, bệnh hay đạo đức từ ngoại hình. Không thu dữ liệu nhạy cảm để làm biểu đồ trông đầy. Không thay một input thiếu bằng giá trị mặc định mà không ghi trạng thái.
+
+## 4. Giữ lịch sử nhưng không giữ hiệu lực sai
+“Không loại bỏ kế hoạch cũ” được thực hiện bằng bảo toàn nguyên bản và liên kết thay thế. Một công thức legacy được lưu cho audit nhưng không được tiếp tục chạy trong sản phẩm. Tệp cũ vẫn đọc được; V2 có bảng đối chiếu và quyết định ưu tiên khi hai phiên bản khác nhau. Đây là quản lý thay đổi, không phải xóa lịch sử.
+
+## 5. Trạng thái nghiệm thu
+Các kiểm thử của gói tham chiếu chỉ chứng minh hành vi cụ thể trong môi trường local. Chưa có auth thật, PostgreSQL thật, payment gateway, R2 private, queue cloud, penetration test hoặc production E2E trong demo. Thông tin này phải xuất hiện ở README, receipt và phần giao việc, không chỉ ở disclaimer cuối sách.
+
+
+# Sản phẩm miễn phí đến Full Life Code: đầu ra, dữ liệu và quyền
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Giữ nguyên 23 sản phẩm
+`PRODUCT_CATALOG_BASELINE.json` là danh mục cũ được giữ nguyên. Không xóa ID hoặc tự đổi giá. V2 bổ sung một lớp acceptance contract: mục tiêu người dùng, dữ liệu bắt buộc theo phương pháp, đầu ra, hành động, điều kiện hoàn thành, giới hạn và chế độ hỗ trợ. Giá vẫn chờ quyết định thương mại; không lấy số trang làm yếu tố duy nhất.
+
+## 2. Miễn phí phải làm được việc
+Guest Numbers cho nhập chuỗi tối thiểu, chạy tại thiết bị khi phù hợp và nhận phép tính cùng ý nghĩa được gắn nhãn. Không bắt đăng ký để xem dữ liệu học thuật công khai. Free Essentials có một hồ sơ tự quản, mục tiêu, nhật ký và đường xuất/xóa dữ liệu. Quota AI hiển thị trước khi dùng; khi hết quota vẫn còn công cụ xác định và nội dung hướng dẫn. Không tài trợ miễn phí bằng bán nhật ký.
+
+## 3. Hợp đồng chín cấp
+Level 1 giao dữ liệu đã xác nhận, cách tính, điều chưa biết và kế hoạch 30 ngày. Level 2 thêm giá trị, vai trò và ví dụ tự thuật để xem mâu thuẫn nội tâm. Level 3 cần quan sát lặp theo thời gian; một bảng hỏi chưa đủ để tự tuyên bố biết mọi hành vi. Level 4 cần kỹ năng, hoàn cảnh và nguồn lực thực; số học không thay phân tích dòng tiền. Level 5 cần quyền của từng bên; người yêu hoặc công ty không mặc nhiên được xem hồ sơ riêng.
+
+Level 6 đặt lịch sử, chu kỳ biểu tượng và kế hoạch lên các đường riêng. Level 7 giữ nghiên cứu hình thái, nhưng sản phẩm chỉ mở đúng phạm vi quan sát được phê duyệt. Level 8 giúp lựa chọn hướng sống và phụng sự; không gán sứ mệnh duy nhất. Level 9 hợp nhất và loại lặp, không nối tám báo cáo thành sách dài. Các phần chưa đủ dữ liệu được nêu trong mục lục, không lấp bằng tự sự AI.
+
+## 4. Năm trạng thái trước khi mua
+`READY_FOR_SCOPE`: đủ dữ liệu cho phạm vi đã chọn. `PARTIAL_WITH_DISCLOSURE`: có thể giao một phần đã giải thích. `NEEDS_INPUT`: cần bổ sung dữ liệu thiết yếu. `METHOD_NOT_RELEASED`: công cụ chưa được phát hành. `NOT_ELIGIBLE_FOR_SCOPE`: độ tuổi/quyền/quốc gia không thuộc phạm vi. Không quy tất cả thành “coverage thấp nên phải mua cấp cao hơn”.
+
+## 5. Tương tác người dùng thật
+Báo cáo phải có đoạn “Điều này có đúng với trải nghiệm của tôi không?” và cho trả lời không. Lời đáp không khớp không được diễn giải thành “đúng ở tầng sâu chưa nhận ra”. Hệ thống ghi lại điều người dùng xác nhận, tách khỏi nhận định gốc. Chỉ thông tin họ tự khai mới mang loại self_report.
+
+## 6. Người dùng có quyền thay đổi
+Thay tên, sửa ngày sinh hoặc rút quyền chia sẻ tạo phiên bản mới. Hệ thống giải thích phần nào phải tính lại và phần nào không đổi. Đổi họ tên không tự sửa nhật ký cũ hoặc biến sự kiện cũ thành sự kiện mới. Tải báo cáo đã phát hành giữ snapshot; bản lỗi có thể bị rút hiệu lực trong hệ thống và thay bằng bản sửa có lý do.
+
+
+# Học viện, chuyên gia, tổ chức và cấp phép quốc tế
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Học viện chín buổi
+Giữ cấu trúc đào tạo chín buổi, mỗi buổi 120 phút như hướng trước đây của Founder. Buổi 1 học dữ liệu và giới hạn lời luận; buổi 2 lịch và tên; buổi 3 bộ số và bảng phiên bản; buổi 4 nhiều bản đồ biểu tượng; buổi 5 hành vi và bối cảnh; buổi 6 đồng nhịp sống; buổi 7 thiết kế hành động; buổi 8 thực hành ca có giám sát; buổi 9 kiểm tra, sửa lỗi và hướng dẫn dùng hệ thống. Mỗi buổi có mục tiêu, bài trước lớp, thực hành, tài liệu có quyền và rubric chấm. Đây là giáo trình đề xuất, không phải khóa đã khai giảng.
+
+Chứng nhận chia theo phạm vi: người học tự ứng dụng, người thực hành có giám sát, người giảng dạy/biên soạn được cấp quyền. Điều kiện gia hạn gồm thực hành, khiếu nại, cập nhật phương pháp và đánh giá độc lập. Không quảng bá chứng nhận HNH như giấy phép trị liệu hoặc chuyên môn được pháp luật mặc nhiên công nhận.
+
+## 2. Không gian chuyên gia
+Practitioner nhận case sau khi có grant theo mục đích và thời hạn. Luồng gồm intake, chọn phạm vi, ghi chú riêng/ghi chú chia sẻ, draft, người dùng xác nhận dữ kiện, phê duyệt, giao báo cáo và đóng case. Một chuyên gia không được tìm kiếm toàn bộ kho khách hàng. AI gợi ý câu hỏi và tóm tắt phần được cấp quyền; không tự sửa nguồn hoặc thông tin khách.
+
+Hệ thống đo công suất reviewer bằng thời gian và số ca có chất lượng, không bằng số trang ký nhanh. Khi quá tải, xếp hàng và báo thời gian thật thay vì giảm kiểm tra mà không nói. Lỗi về danh tính, quyền hoặc suy luận nhạy cảm phải chặn phát hành.
+
+## 3. Tổ chức và doanh nghiệp
+Workspace tách dữ liệu mục tiêu công việc khỏi hồ sơ đời tư. Quản trị viên tổ chức xem vai trò, tiến độ và nội dung người dùng được thông báo sẽ chia sẻ; không tự xem nhật ký tình cảm, sức khỏe hoặc bản đồ biểu tượng riêng. Chức năng đội nhóm hỗ trợ thỏa thuận giao việc, không xếp hạng “người tốt/xấu” bằng số hoặc ảnh. Báo cáo tổng hợp cần ngưỡng nhóm và chính sách chống tái nhận diện trước khi mở.
+
+## 4. Quốc tế và franchise
+Giữ bốn mô hình: referral; practitioner; institutional license; regional license/franchise. Mỗi mô hình có quyền thương hiệu, dữ liệu, nội dung, phí, trách nhiệm và cách chấm dứt khác nhau. Các country pack Việt Nam, EU/EEA, Hoa Kỳ, Australia, Singapore được giữ ở trạng thái chưa phê duyệt mở bán. Bản dịch không cấp quyền kinh doanh và tên “license” không tự loại trừ việc giao dịch bị điều chỉnh như franchise.
+
+Partner chỉ được đổi theme/locale/phạm vi được cấp. Không thay bảng phương pháp, bỏ giới hạn hoặc tăng quyền AI. Country policy, tenant policy, method policy và subject grant giao nhau theo nguyên tắc hạn chế nhất được ưu tiên. Bản dịch có lỗi phải thu hồi được theo locale release mà không xóa dữ liệu gốc.
+
+## 5. Hỗ trợ và tự động hóa
+AI hỗ trợ hướng dẫn, giải thích quy trình, tóm tắt case và rà thiếu tài liệu. Người thật xử lý ngoại lệ quyền, khiếu nại, refund ngoài chính sách, nội dung nhạy cảm, phát hành phương pháp và hợp đồng lãnh thổ. Mục tiêu là giảm việc lặp, không tạo một hệ không ai chịu trách nhiệm.
+
+
+# Chín báo cáo: cấu trúc nội dung để người dùng hiểu và hành động
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Chuẩn chung
+Mỗi report có bìa, phạm vi, dữ liệu gốc, điều chưa biết, mục lục, bốn lớp nội dung và phụ lục phép tính/nguồn. Một đoạn luận phải nói nó dựa vào dữ liệu gì. Không thay việc thuyết minh bằng các nhãn “engine”, “confidence” mà người dùng không hiểu. Chữ confidence chưa đủ định nghĩa được bỏ khỏi giao diện thay vì gán 0,8.
+
+## 2. Level 1 — Self Signal
+Phần Identity trình bày tên/ngày/giờ và độ chắc dữ liệu. Analysis giải thích từng phép tính, không gán nhân cách từ căn số. Timeline nêu tuổi/chủ đề biểu tượng và phần lịch không có dữ kiện. Action chốt một mục tiêu 30 ngày, ví dụ cụ thể và biểu mẫu theo dõi. Nên có trang “Tôi đồng ý/không đồng ý với điều gì?” để người dùng phản hồi tự do.
+
+## 3. Level 2 — Inner Architecture
+Trình bày vai trò, nhu cầu và giá trị do người dùng tự khai; mỗi xung đột cần ít nhất một ví dụ đời thật. So sánh điều muốn, điều đang làm và ràng buộc. Bản đồ không đóng nhãn “bản chất bên trong”; nó là cách hiểu có thể cập nhật. Kế hoạch 90 ngày gồm thử nghiệm, dấu hiệu xem lại và người hỗ trợ.
+
+## 4. Level 3 — Behavior Code
+Phân tách mô thức trong ngày thường và lúc áp lực. Ghi cửa sổ quan sát, số lần, dữ liệu thiếu và ngoại lệ. Biểu đồ không tự làm bằng chứng nhân quả. Mỗi mô thức có một hành động nhỏ và cách đo trước/sau phù hợp. Không dùng thiếu chữ số làm chỉ số lười, thiếu trí nhớ hoặc thiếu trách nhiệm.
+
+## 5. Level 4 — Work & Wealth
+Dùng bảng kỹ năng có minh chứng, sở thích, điều kiện thị trường do người dùng xác nhận và nguồn lực. Kịch bản tiền bạc phải ghi giả định/currency/date. Hướng nghề là phương án để thử, không phán nghề bắt buộc. Có phần “điều chưa nên quyết chỉ từ báo cáo này”.
+
+## 6. Level 5 — Relationship Field
+Nêu rõ đang dùng dữ liệu một người hay nhiều bên. Nếu chỉ một người kể, không kết luận nội tâm người còn lại. Cấu trúc gồm nhu cầu, cách giao tiếp, ranh giới, trách nhiệm và cuộc đối thoại được chuẩn bị. Không đưa kết luận phản bội hoặc tỷ lệ ly hôn từ ngày sinh.
+
+## 7. Level 6 — Life Timeline
+Các phần: nguồn sự kiện quá khứ; danh sách khoảng tuổi; cycle track; plan track; scenario track. Mỗi mốc phải có loại dữ liệu và ngày xác nhận. Bản đồ 10 năm là hướng và điểm review; không nhồi 100 năm lời tiên đoán. Các phương án ngày sinh có view riêng.
+
+## 8. Level 7 — Body Intelligence
+Nêu điều kiện ảnh/thiết bị, chất lượng và sai số. Mô tả quan sát không suy đạo đức hoặc sức khỏe. Phần đồng nhịp giúp ghi sinh hoạt/môi trường và câu hỏi cần hỏi chuyên gia khi cần. Không coi việc chụp thêm ảnh làm tăng độ đúng của mọi lớp khác.
+
+## 9. Level 8 — Mission Path
+Các phần: điều người dùng trân trọng; năng lực có minh chứng; nhóm muốn phục vụ; giới hạn; thử nghiệm phụng sự; kế hoạch 90 ngày; hướng di sản. Tu tập gồm tự quan sát, lòng biết ơn và trách nhiệm; không yêu cầu hy sinh vô hạn hay trung thành với một người hướng dẫn.
+
+## 10. Level 9 — Full Life Code
+Biên tập lại theo câu chuyện dữ liệu, không nối nguyên văn tám tập. Có bảng thay đổi, điểm còn khác nhau, các quyết định hiện tại và hệ hành động. Các đoạn hướng dẫn chung tách khỏi kết quả cá nhân. Số trang 150–600 chỉ dùng khi dữ liệu tương xứng; thiếu dữ liệu không được thay bằng nhiều lời đẹp.
+
+## 11. Tệp nguồn và renderer
+Content model có block paragraph/table/chart/quote/question/action/citation, ngôn ngữ và supporting_claim_ids. Các bản Web/PDF/Word dùng cùng nội dung đã duyệt. Một sửa lỗi phải phát hành version mới, ghi release note và cho người dùng biết, không âm thầm thay tệp tải về bằng cùng tên mà không history.
+
+
+# Nhà máy tri thức: từ nhiều ngôn ngữ đến phương pháp có thể chạy
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Hai mươi họ vẫn được giữ, nhưng đơn vị phát hành là phương pháp nhỏ
+K01–K20 là registry nghiên cứu, không phải hai mươi phép tính đã hoàn thành. Trong một họ có nhiều bản dịch, trường phái và phiên bản. Một adapter chỉ được phát hành khi khóa được đầu vào, quy tắc, ngoại lệ, tài liệu nguồn, quyền sử dụng và bộ ví dụ. Bản giới thiệu sách hoặc mục lục không thay toàn văn.
+
+## 2. Quy trình tiếp nhận
+Nhận diện tác phẩm → lưu metadata và quyền → phân đoạn theo trang/mục → giữ nguyên văn và bản dịch riêng → trích quy tắc → soát ngược với nguồn → tạo golden cases độc lập → lập adapter → kiểm tra độ phù hợp phạm vi → duyệt release. AI có thể hỗ trợ dịch và trích xuất nhưng không tự xác nhận quyền hoặc nguồn chưa đọc.
+
+Mỗi nguồn có trạng thái `DISCOVERED`, `METADATA_READ`, `EXCERPT_READ`, `FULL_TEXT_AVAILABLE`, `RULES_REVIEWED`. Không dùng “đã nghiên cứu đầy đủ” cho tất cả tài liệu chỉ vì chúng nằm trong thư mục. Những văn bản tiếng Hán, Phạn, Pāli, Tamil, Nga, Ả Rập hoặc Hebrew cần người đọc ngôn ngữ phù hợp rà thuật ngữ và quy tắc khi ảnh hưởng phép tính.
+
+## 3. Ngữ pháp HNH tổng hợp
+Sáu quan hệ được giữ: nuôi dưỡng, cản trở, bù đắp, xung đột, chuyển tiếp, lựa chọn. Mỗi liên hệ phải nói rõ là biểu tượng từ nguồn hay quan sát từ người dùng. Hai hệ cùng dùng ngày sinh không tạo hai bằng chứng thực nghiệm độc lập. Có thể trình bày đồng thuận và khác biệt về chủ đề, nhưng không tự tăng confidence bằng số lượng bộ môn.
+
+## 4. Dòng phương pháp nâng cao
+Bát tự cần timezone, tiết khí, quy tắc ranh ngày và trường phái dụng thần. Tử Vi cần lịch âm, tháng nhuận, quy tắc an sao và tuổi hạn. Chiêm tinh cần ephemeris, hệ nhà và hệ hoàng đạo; giấy phép thư viện phải được kiểm tra. Nadi cần định nghĩa nhánh và nguồn; không tuyên bố đã có mọi lá của mọi người. Kinh Dịch cần cách lấy quẻ, thứ tự hào và văn bản; demo sáu bit không phải engine Lục Hào đầy đủ. Các phương pháp hình thái cần dữ liệu quan sát và phạm vi hợp lệ, không dùng để suy phẩm chất hoặc bệnh.
+
+Những phần này không bị xóa; chúng có backlog riêng và trạng thái `RESEARCH_ONLY` hoặc `SPECIFICATION_PENDING`. Một người dùng chưa đủ dữ liệu nhận lời giải thích phần thiếu, không nhận một kết quả giả theo template.
+
+## 5. Quản trị nguồn và bản quyền
+Một bảng có 80 mục vẫn phải biết nguồn từng mục và cách biên tập. Tệp V1 giữ 80 nhãn/chủ đề nhưng thiếu trường nguyên văn; V2 không tự điền từ trí nhớ. Trạng thái source_text_missing chặn chức năng “trích nguyên văn nguồn”, không chặn phép tính số dư. Khi quyền không cho đưa toàn văn vào RAG, chỉ lưu metadata hoặc phần được phép. Tài liệu khách hàng không tự trở thành học liệu hoặc dữ liệu huấn luyện.
+
+## 6. Bằng chứng cần có trước release
+Một method receipt cần exact code hash, source version, rule digest, runtime dependency, vector đầu vào/đầu ra, reviewer và phạm vi người dùng. Kết quả tính đúng mới cho phép gọi “calculation verified”. Tính hợp lệ nội dung, tác dụng người dùng và dự báo thực tế là các workstream khác; không dùng một nhãn pass thay tất cả.
+
+
+# Backend V2: ranh giới mô-đun, đường dữ liệu và bảo đảm tính đúng
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Từ yêu cầu tới báo cáo
+Gateway xác thực → resolve subject và grant → kiểm tra purpose/entitlement → khóa profile version → chọn method releases → validate inputs → lập DAG → chạy công cụ → kiểm tra kết quả → tạo claims → tổng hợp → viết nội dung → review → phát hành snapshot. Mỗi bước ghi state transition và trace ID nhưng không ghi nguyên payload nhạy cảm vào log.
+
+Modular monolith được chia miền identity, profiles, knowledge, methods, observations, synthesis, reports, commerce, practice và operations. Mỗi miền có service boundary và data ownership. Không có domain nào được trực tiếp bỏ qua authorization bằng cách truy vấn bảng của domain khác. API layer không chứa công thức; renderer không tính lại.
+
+## 2. Hai API khác nhau phải được ghi đúng
+`06_DEMO_LAB` chỉ có local HTTP API không xác thực, bind loopback và dùng dữ liệu tổng hợp. `openapi.target.v2.json` là hợp đồng sản phẩm đích với cookie/session và quyền, chưa được triển khai. Demo không nhận cookie production, không dùng database và không được deploy như API công khai. Mọi tệp và màn hình ghi `REFERENCE_ONLY` để tránh nhập nhằng.
+
+## 3. Khóa phiên bản đầu vào
+Run dùng profile_version_id, hypothesis_selection, product_release_id, method_release_ids, purpose_id, access_revision và input_digest. Dữ liệu không được lấy lại từ profile live giữa lúc run đang xử lý. Một người sửa ngày sinh trong khi đang render không làm bản đang dựng đổi một nửa; tạo run mới với snapshot mới.
+
+## 4. Tính đồng bộ và bất đồng bộ
+Phép số nguyên ngắn có thể trả đồng bộ. Pipeline nhiều phương pháp hoặc export trả 202 cùng run_id, state và polling/SSE endpoint. Worker xử lý công việc phải kiểm tra lại grant, purpose, quyền phương pháp và trạng thái deletion trước khi đọc input và trước khi publish. Việc queue đã nhận không là bảo đảm được quyền hoàn tất.
+
+## 5. Thiết kế lỗi
+Lỗi dùng Problem Details với code ổn định, trace ID và thông báo tiếng Việt dễ hiểu. Phân biệt validation, thiếu phương pháp, thiếu đầu vào, conflict, rate limit và lỗi hạ tầng. Không trả stack trace hoặc câu SQL. Retry chỉ cho lỗi tạm thời, không retry lỗi quyền, dữ liệu hoặc phương pháp chưa phát hành. [N05]
+
+## 6. Tái lập kết quả
+Cùng input đã chuẩn hóa, cấu hình, bảng nguồn và dependency version phải trả cùng calculation. Ngày hiện tại phải truyền như tham số as_of chứ không ẩn trong engine. Random chỉ được dùng nếu một phương pháp quy định sự gieo ngẫu nhiên, và phải lưu phương thức cùng dữ kiện tương ứng; tuyệt đối không dùng random để tạo năm rủi ro.
+
+Hash cần bind vào cả input, method version, table/source digest và cấu hình. Dữ liệu cá nhân entropy thấp không được công khai bằng hash trần vì có thể đoán lại; production cần HMAC tenant-scoped hoặc cơ chế tương đương do security duyệt. Demo dùng SHA-256 để tái lập, không gọi đó là ẩn danh hóa. [N06]
+
+**Tra nguồn:** xem `11_SOURCES/SOURCE_ADDENDUM.csv`; các mã Nxx là nguồn đối chiếu chính thức, không phải mọi nhận định của HNH đã được khoa học xác nhận.
+
+
+# Giao diện mobile, web và desktop: một dữ liệu, nhiều cách sử dụng
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Nguyên tắc trải nghiệm
+Người dùng không cần hiểu thuật ngữ backend để hiểu kết quả. Màn hình đầu hỏi mục tiêu, sau đó chỉ yêu cầu dữ liệu cần thiết. Mỗi trường có lý do thu thập, bắt buộc/tùy chọn, ai có thể xem và cách sửa. Dữ liệu thiếu phải có đường đi tiếp phù hợp, không làm người dùng cảm thấy hồ sơ của họ kém giá trị.
+
+Các câu nhãn nên dùng: “Chưa có giờ sinh”, “Có hai phương án ngày sinh”, “Phép tính đã hoàn tất”, “Phần này chỉ là biểu tượng”, “Cần thêm ví dụ thực tế”. Không dùng “Hồ sơ yếu”, “Vận xấu”, “Bạn chỉ đạt 38% con người” hoặc “mua thêm để tăng độ chính xác”.
+
+## 2. Ba bề mặt
+Mobile web: thao tác một tay, form một cột, thanh hành động rõ, bàn phím phù hợp, cho lưu nháp khi đã đăng nhập. Tablet: hai vùng khi đủ rộng, form không kéo dãn quá mức. Desktop: danh sách/chi tiết, so sánh hai kết quả, outline báo cáo và phím tắt có tài liệu. Native app về sau dùng chung API và content model; camera và offline là capability bổ sung, không một bộ engine mới.
+
+## 3. Luồng đầu tiên
+Chọn nhu cầu → giải thích phạm vi → nhập dữ liệu tối thiểu → xác nhận cách hiểu ngày/tên → xem phần tính được/chưa tính được → tạo bản đọc → chọn một hành động → lưu hoặc tải theo quyền. Không yêu cầu ảnh mặt, tay, chân ở Level 1. Hình thức tên/giờ/lịch phải được kiểm tra trước khi tính, không đợi cuối báo cáo mới nói kết quả có thể sai.
+
+## 4. Dashboard thực dụng
+Ưu tiên mục tiêu đang làm, ba hành động, thay đổi từ lần xem trước và dữ liệu cần bổ sung. Bảng chu kỳ biểu tượng có chú giải và có thể ẩn. Timeline có danh sách đọc được bằng screen reader; không chỉ một biểu đồ màu. Kết quả phép tính có chế độ “Giải thích từng bước” và “Dữ liệu máy”. Không hiển thị một đồng hồ rủi ro cuộc đời như trung tâm giao diện.
+
+## 5. Trạng thái màn hình bắt buộc
+Mỗi screen có empty, loading, ready, partial, validation_error, unauthorized, revoked, unsupported_method, quota_exhausted, provider_failure, offline và stale_version khi áp dụng. Nút bị khóa phải giải thích vì sao và bước hợp lệ tiếp theo. Skeleton không được tạo số giả để trang trông hoàn chỉnh. Thông báo lỗi không xóa nội dung người dùng đã nhập.
+
+## 6. WCAG và ngôn ngữ
+Mục tiêu WCAG 2.2 AA cho các luồng cốt lõi: focus nhìn rõ, dùng bàn phím, label/error liên kết, contrast, touch target, reduced motion, không chỉ dùng màu. Đặt đúng lang=vi và format ngày theo locale; ngôn ngữ hiển thị bằng tên đầy đủ. Bản dịch không thay claim type. Tên người giữ nguyên Unicode, không buộc đổi sang tiếng Anh. [N01][N07]
+
+## 7. Offline và đồng bộ
+Bản demo hiện không cài service worker và không lưu PII. Kế hoạch PWA cho phép cache tài liệu công khai; nội dung cá nhân cần thiết kế mã hóa local, thời hạn, logout purge và thu hồi chia sẻ. Nhật ký offline mang client_event_id, expected_version và trạng thái conflict. Server không tự ghi đè bằng last-write-wins. Người dùng phải thấy xung đột và chọn cách hòa giải.
+
+## 8. Tài nguyên giao diện đã bàn giao
+45 màn hình cũ được giữ nguyên, V2 bổ sung bảng đặc tả chi tiết cho core journeys. Demo có thư viện 90 ca, tìm kiếm, chọn nhóm, xem từng bước, tự nhập bốn công cụ và lưu JSON. Kiểm thử ở 360,390,768,1440 px là kiểm thử browser local; không gọi đó là kiểm thử native iOS/Android hoặc production E2E.
+
+**Tra nguồn:** xem `11_SOURCES/SOURCE_ADDENDUM.csv`; các mã Nxx là nguồn đối chiếu chính thức, không phải mọi nhận định của HNH đã được khoa học xác nhận.
+
+
+# AI tương tác và bảng điều hành giảm thao tác lặp
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. AI trợ giúp ngay trong ngữ cảnh
+Người dùng có thể hỏi “con số này được tính thế nào?”, “tại sao giờ sinh này có hai phương án?”, “phần nào trong báo cáo là dữ liệu tôi cung cấp?” hoặc “việc nào tôi nên làm trong tuần?”. AI nhận đúng report snapshot và nguồn được phép, không tự mở toàn hồ sơ nếu câu hỏi chỉ cần một phép tính.
+
+## 2. Bốn vai AI
+Retriever tìm đoạn nguồn có quyền và phiên bản. Explainer diễn giải calculation trace bằng tiếng Việt. Writer dựng văn bản từ claims đã được phép. Reviewer tìm số liệu sai, câu không có nguồn, nhãn gây sợ, dữ liệu lẫn chủ thể và lặp nội dung. Deterministic checks phải chạy trước và sau AI. Reviewer cùng họ model với writer không được coi là đánh giá độc lập tuyệt đối.
+
+## 3. Mức tự chủ
+A0 chỉ soạn nháp. A1 chạy phép tính hoặc truy xuất ít rủi ro trong quyền đã cấp. A2 thực hiện workflow lặp có điều kiện và quyền người dùng đã chấp thuận, ví dụ nhắc kế hoạch. A3 là nhóm tác vụ vận hành được phê duyệt chặt, có hạn mức và cách dừng. Không cấp AI quyền tự deploy, đọc PII toàn bộ, mở health/children, ký franchise hoặc tự thu tiền. Mức tự chủ không tăng chỉ vì có model mới.
+
+## 4. Admin làm theo hàng ngoại lệ
+Console có hàng chờ method release, source rights, report review, input conflicts, deletion provider_pending, payment exception, cost limit, incident và partner quality. Sự kiện bình thường được tự ghi receipt; người thật tập trung quyết định có rủi ro. Dashboard hiển thị owner và deadline; không cần nhân sự viết báo cáo tiến độ lặp mỗi giờ khi hệ có thể tổng hợp commit/test/job.
+
+## 5. Bảo mật nội dung
+Prompt injection từ sách, tệp hoặc câu hỏi không được ra lệnh bỏ quyền. Tool allowlist theo role/purpose; dữ liệu truy xuất đã ACL-filter trước model. Không chỉ lọc đầu ra rồi cho model đọc dữ liệu không được phép. Không ghi chain-of-thought; lưu prompt template version, claim/source IDs, quyết định policy và kết quả cần kiểm toán.
+
+## 6. Chất lượng hội thoại
+AI cần hỏi một câu có ích thay vì dồn 30 câu một lần. Có nút sửa dữ kiện, báo không đúng, xem nguồn và chuyển người phụ trách. Không tạo quan hệ lệ thuộc hoặc nói chỉ mình hiểu người dùng. Với câu hỏi sức khỏe/tài chính/pháp lý vượt phạm vi, chuyển hướng đúng mà vẫn hỗ trợ tổ chức thông tin để làm việc với chuyên gia.
+
+## 7. Chưa có AI provider trong demo
+Gói demo dùng nội dung template xác định để kiểm tra trace và hiển thị. Chưa gọi mô hình, chưa đo chi phí token hoặc quality của mô hình. Kế hoạch AI kèm evaluation set, data policy và ngân sách; mọi provider cần review trước khi xử lý dữ liệu thật.
+
+
+# Chuẩn bị chạy dự án: thứ tự thực thi và nghiệm thu
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. T0 có điều kiện
+T0 là ngày có chủ trì, repo/branch, quyền môi trường, budget và phạm vi đã duyệt. Các ước lượng 4–6 tháng paid beta và 12–18+ tháng tầm nhìn vẫn là kế hoạch có giả định, không ngày hứa cố định. V2 thêm việc backend/demo nhưng không tự tăng mức hoàn thành production.
+
+## 2. Công việc giữ và bổ sung
+140 công việc cũ giữ nguyên ID, trạng thái và estimate. `BACKLOG_V2_ADDITIONS.json` chứa việc bổ sung và task cha liên quan; các estimate addition là mức chi tiết tham chiếu, không được cộng chồng toàn bộ với estimate task cha. Khi planning, Tech Lead chọn roll-up hoặc replacement theo decision, không tính hai lần. Mỗi task có input, output, acceptance, test, reviewer và evidence path.
+
+## 3. Các wave
+Đợt 0: P0 containment/source receipt, quyền sở hữu và dữ liệu legacy. Đợt 1: contract/schema, time/name/number core, source registry, auth/purpose foundation. Đợt 2: Level 1 pipeline, journal, plan, report factory, frontendcore. Đợt 3: paid beta, payment, entitlement, support, restore. Đợt 4: Level 2–5, resonance/practice. Đợt 5: timeline đầy đủ, academy, organization, API đối tác, native khi đủ lý do. Country/children/health là gate riêng, không theo lịch tự động.
+
+## 4. Nghiệm thu một task
+Một task code phải có input/output schema, test đúng/sai/thiếu, quyền, lỗi, log đúng, tài liệu, rollback khi cần. Một task nội dung phải có source, edition, rights, claim type, review và examples. Tạo file không tự là completed. `REFERENCE_TESTED` trong gói V2 không đóng `PRODUCTION_NOT_STARTED` của task triển khai.
+
+## 5. Báo cáo Founder
+Bảng theo ngày gồm việc đã hoàn tất có receipt; việc đang làm; blocked; thay đổi scope; quyết định cần chốt. Báo cáo hàng giờ nếu dùng nên tự lấy commit/test/job và nhóm đang hoạt động, không buộc người viết lại. Chưa có automation định kỳ nào được tạo bởi gói này.
+
+## 6. Đóng băng và quay lui
+Không thay schema shared khi chưa báo integration owner. Feature flag tắt được theo module/tenant/country. Nếu không có bản an toàn, quay về static/maintenance thay vì mở lại legacy có lỗ hổng. Rollback dữ liệu khác rollback code; migration expand-contract cần kế hoạch riêng. Có diễn tập mới được nói khả năng khôi phục đã chứng minh.
+
+
+# Rà soát pháp lý bổ sung và điều kiện mở thị trường
+
+**Life Code OS · Bản nâng cấp bảo toàn V2 · 20/10/2026**  
+**Trạng thái:** Đặc tả để triển khai và rà soát; không phải chứng nhận production.
+
+## 1. Phạm vi
+Đây là checklist kỹ thuật–sản phẩm để counsel áp dụng, không phải legal opinion hoặc chứng nhận tuân thủ. Các country pack V1 được giữ nguyên và vẫn chờ phê duyệt. Ngày đối chiếu bản V2 là 20/10/2026; một nguồn đã đọc tháng 10 không tự thay việc kiểm văn bản và hợp đồng tại ngày launch.
+
+## 2. Việt Nam
+Nguồn chính thức đã đối chiếu ghi Luật 91/2025/QH15 bảo vệ dữ liệu cá nhân hiệu lực 01/01/2026; Luật 134/2025/QH15 về AI hiệu lực 01/03/2026; Luật 122/2025/QH15 thương mại điện tử hiệu lực 01/07/2026. Nghị định 142/2026 hướng dẫn AI đã được nhận diện từ nguồn Chính phủ. Counsel phải đọc đầy đủ phạm vi, điều khoản chuyển tiếp và các nghị định áp dụng, không dựa riêng vào tóm tắt. [N11–N14]
+
+Cần chốt pháp nhân dịch vụ, merchant, controller/processor, thương hiệu, vendor và vùng xử lý. Không tự dùng pháp nhân phi lợi nhuận của Founder cho thương mại. Consent theo mục đích không thay tất cả căn cứ pháp lý; dùng dữ liệu dịch vụ để nghiên cứu/huấn luyện cần đánh giá riêng.
+
+## 3. Quyền trẻ em và quyết định nhạy cảm
+Sản phẩm beta adult-self; family có dữ liệu trẻ em chờ gate riêng. Không thu thêm ảnh để luận số phận. Workspace cấm dùng biểu tượng/hình thái cho tuyển dụng, sa thải hoặc cấp tín dụng. EU AI Act có nhóm hành vi bị cấm và nghĩa vụ theo rủi ro cần phân loại theo function thực tế, không theo tên “giáo dục”. [N15]
+
+## 4. Franchise và nội dung đa ngôn ngữ
+Hợp đồng cần phân định referral/license/practice/franchise theo thực chất, lãnh thổ, quyền thương hiệu, fees, quality, sub-license, data portability và chấm dứt. Giấy phép dịch không tự là quyền tái bản; một tác phẩm hết bản quyền ở một nước không tự hết ở mọi nước. Không công bố “độc quyền toàn thế giới” khi chưa có căn cứ. Bản dịch phương pháp có reviewer ngôn ngữ và reviewer method riêng.
+
+## 5. Chứng cứ trước mở bán
+Country pack chỉ PASS khi có chủ thể chịu trách nhiệm, legal review cho scope, hợp đồng/vendor, chính sách người dùng, hỗ trợ đúng ngôn ngữ và cơ chế khiếu nại/xóa. Không đánh APPROVED vì trang web dịch xong. Các mức phí nhượng quyền/royalty hiện chưa được xác định, không đưa số đoán vào báo giá.
+
+**Tra nguồn:** xem `11_SOURCES/SOURCE_ADDENDUM.csv`; các mã Nxx là nguồn đối chiếu chính thức, không phải mọi nhận định của HNH đã được khoa học xác nhận.
+
+
+# Đưa V2 vào đúng dự án, giữ nguyên kế hoạch cũ
+
+**Life Code OS · V2 · 20/10/2026**  
+**Trạng thái:** Bộ bàn giao đầy đủ trong gói; thao tác ghi GitHub bị chặn bởi quyền kết nối.
+
+## 1. Đích cố định
+Repository đích là `tranhatam-collab/Life-Code-OS`. Đường dẫn bổ sung là `docs/upgrades/2026-10-20-v2/`. Không đặt kho tài liệu, SQL, tệp nén hoặc dữ liệu kiểm thử vào thư mục được phát hành công khai của website. Không sửa main, quy trình triển khai, migration đang chạy hoặc mã legacy trong bước bàn giao kế hoạch.
+
+## 2. Kết quả thao tác GitHub thực tế
+Kết nối cho phép đọc repository, nhưng cả hai thao tác tạo cây tệp và tạo nhánh mới đều trả HTTP 403 với thông báo “Resource not accessible by integration”. Do đó chưa có commit, nhánh hay pull request mới được tạo trong lần bàn giao này. Không được ghi trạng thái “đã đồng bộ toàn bộ”. Chi tiết nằm trong `DELIVERY_RECEIPT.json` cùng thư mục.
+
+## 3. Nhập an toàn từ gói bàn giao
+Công cụ `import_into_repo.py` mặc định chỉ kiểm tra và lập danh sách. Nó xác minh remote đúng dự án, nhánh không phải main/master/production, worktree sạch, manifest hợp lệ và không có symbolic link hoặc tệp đích khác nội dung. Chỉ khi thêm `--apply`, công cụ mới sao chép các tệp còn thiếu; không ghi đè, xóa, commit, push hoặc deploy.
+
+Chạy công cụ từ một checkout sạch của nhánh review. Nếu đã chạy demo hoặc thay tệp trong gói, dùng lại bản giải nén nguyên vẹn để kiểm tra manifest. Một tệp có hash khác phải được giải quyết rõ trước khi nhập; không dùng reset hoặc force để xóa thay đổi chưa được bảo toàn.
+
+## 4. Bản vá bổ sung
+Tệp patch đi kèm chứa các bổ sung dưới đường dẫn V2. Trước khi áp dụng, kiểm tra `git apply --check` trên nhánh review và đọc danh mục thay đổi. Không áp patch và importer tùy tiện lên một thư mục đang nhập dở. Chỉ dùng một phương án, đối soát đầy đủ rồi mới commit theo quy trình đội dự án.
+
+## 5. Kiểm tra sau nhập
+Kiểm lại checksum toàn gói và 149 tệp nền. Chạy kiểm thử Node, 90 tình huống và xem giao diện cục bộ. Rà soát toàn bộ diff trước commit. Không chạy các lệnh deploy trong gói nguồn cũ. Trước khi merge, kiểm tra bản dựng public không chứa tài liệu nội bộ, tệp ZIP, SQL, report riêng hoặc fixture.
+
+## 6. Điều kiện hoàn tất đồng bộ
+Chỉ khi mọi tệp manifest tồn tại ở repository đích với hash phù hợp mới được chuyển trạng thái thành FULL_PACKAGE_IMPORTED. Receipt cần commit, branch, danh mục tệp, thời gian, người thực hiện và kết quả kiểm tra. Việc đồng bộ tài liệu cũng không phải phê duyệt triển khai ứng dụng hoặc xác nhận đã khắc phục P0.
+
+
+# Chất lượng, kiểm thử và cách đọc bằng chứng
+
+**Life Code OS · V2 · 20/10/2026**  
+**Trạng thái:** Kiểm thử tham chiếu cục bộ; chưa xác nhận production.
+
+## 1. Năm phạm vi kiểm tra riêng
+Kiểm thử phép tính đánh giá công thức. Kiểm thử hợp đồng đánh giá cấu trúc dữ liệu. Kiểm thử chính sách đánh giá trường hợp được phép và bị chặn. Kiểm thử trình duyệt đánh giá tương tác hiển thị. Kiểm thử production đánh giá quyền và hạ tầng thật. Một phạm vi đạt không thay thế tất cả các phạm vi còn lại.
+
+Bằng chứng phải ghi môi trường, phiên bản mã, dữ liệu đầu vào, thời điểm, kết quả và giới hạn. Không dùng số lượng phép thử để quảng bá độ chính xác về số phận con người.
+
+## 2. Bằng chứng cục bộ trong V2
+Demo gồm 90 tình huống. Bộ Node có 125 kiểm thử, bao gồm các vòng kiểm tra toàn miền 10.000 đuôi số, 64 cặp và 4.096 phép biến đổi hào. Các vòng kiểm tra toàn miền không được tính thành 14.000 cuộc đời đã xác minh. Bộ kiểm thử gốc có 83 kiểm thử được chạy lại riêng trên bản sao.
+
+HTTP cục bộ được kiểm tra giới hạn đầu vào, nguồn yêu cầu, danh sách tệp được phục vụ và định dạng lỗi. Kiểm thử trình duyệt sử dụng markup cục bộ và cầu nối loopback rõ ràng do điều hướng trực tiếp bị hạn chế trong môi trường chạy. Không thay đổi chính sách trình duyệt và không gọi hệ thống đang hoạt động.
+
+## 3. Bằng chứng chưa có
+Chưa thực thi migration PostgreSQL, chính sách RLS bằng tài khoản runtime, callback nhà cung cấp danh tính, triển khai Cloudflare, thanh toán sandbox, R2, hàng đợi cloud, kiểm thử xâm nhập, tải nhiều người dùng, diễn tập khôi phục hoặc phê duyệt pháp lý. Các tài liệu thiết kế không được xem là biên bản hoàn thành những việc này.
+
+## 4. Tính đầy đủ của gói
+Verifier xác nhận 149 tệp gốc giữ nguyên hash; các JSON/schema đọc được; ID sản phẩm và công việc gốc được giữ; phụ thuộc có thật; mã demo không trùng; phản hồi phù hợp kết quả kỳ vọng; tham chiếu OpenAPI nội bộ tồn tại. Những kiểm tra thực tế được lưu riêng với các cổng production chưa hoàn tất.
+
+## 5. Tài liệu và giao diện
+Word/PDF mới phải được render và kiểm tra hình trang, bảng, khả năng chọn chữ, tiếng Việt và điều hướng. Không chia sẻ tệp phông chữ. Workbook giữ nguyên 11 trang tính gốc về dữ liệu nhập và công thức, bổ sung chín trang tính V2. Việc tính lại có thể đổi giá trị cache trống từ null thành chuỗi rỗng nhưng không thay công thức hoặc đơn giá.
+
+Giao diện demo được xem ở độ rộng 360, 390, 768 và 1440 px. Đây không phải chứng nhận WCAG hoặc kiểm thử ứng dụng native iOS/Android. Các quyền camera, lưu offline, thông báo và danh tính thật vẫn thuộc kế hoạch triển khai riêng.
+
+## 6. Quản lý sai sót
+Khi một kết quả kỳ vọng bị sai, phải sửa kèm lý do và phiên bản fixture. Không đổi quy tắc production chỉ để làm test đạt. Lỗi nguồn cần hội đồng phương pháp rà soát; lỗi hiển thị cần bằng chứng giao diện; nhận định vượt dữ liệu cần được rút và kiểm tra những báo cáo phụ thuộc.
+
+Người dùng có quyền không đồng ý với một diễn giải. Đội sản phẩm không được coi mọi phản hồi khác biệt là dấu hiệu “chưa đủ hiểu” để bảo vệ kết quả của hệ thống.
+
+
+# Nguồn tham khảo và phạm vi đã tiếp cận
+
+
+
+Những nguồn có nhãn kế thừa chưa được xem là đã đọc lại toàn văn trong V2. Nguồn bên thứ ba cung cấp căn cứ kỹ thuật hoặc nội dung nghiên cứu, không xác nhận toàn bộ Huyền Nhân Học.
+
+
+
+## N01 — W3C WCAG 2.2
+
+Tiêu chuẩn accessibility; chỉ mục tiêu thiết kế, chưa chứng nhận AA
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://www.w3.org/TR/WCAG22/
+
+
+
+## N02 — PostgreSQL Row Security
+
+RLS; role và owner bypass cần kiểm thử riêng
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+
+
+
+## N03 — Cloudflare Queues delivery
+
+At-least-once; idempotency
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://developers.cloudflare.com/queues/reference/delivery-guarantees/
+
+
+
+## N04 — OpenAPI 3.1.1
+
+Phiên bản hợp đồng được chọn; không khẳng định mới nhất
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://spec.openapis.org/oas/v3.1.1.html
+
+
+
+## N05 — RFC 9457 Problem Details
+
+Định dạng lỗi HTTP
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://www.rfc-editor.org/rfc/rfc9457.html
+
+
+
+## N06 — RFC 8785 JCS
+
+Tham chiếu canonicalization; demo chỉ hỗ trợ tập con riêng
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://www.rfc-editor.org/rfc/rfc8785.html
+
+
+
+## N07 — Unicode normalization
+
+Giữ nguyên tên và tạo derivative NFC
+
+Trạng thái: OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD. Ngày ghi nhận: 2026-10-20.
+
+https://unicode.org/reports/tr15/
+
+
+
+## N08 — IANA time zone database
+
+Lịch sử múi giờ và pin version
+
+Trạng thái: OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD. Ngày ghi nhận: 2026-10-20.
+
+https://www.iana.org/time-zones
+
+
+
+## N09 — OWASP object authorization
+
+Quyền từng đối tượng
+
+Trạng thái: OFFICIAL_REFERENCE_BASELINE_CARRIED_FORWARD. Ngày ghi nhận: 2026-10-20.
+
+https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/
+
+
+
+## N10 — JSON Schema 2020-12
+
+Schema cấu trúc; không thay business authorization
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://json-schema.org/draft/2020-12
+
+
+
+## N11 — Luật 91/2025/QH15
+
+Metadata văn bản; áp dụng cần counsel
+
+Trạng thái: CURRENT_PUBLIC_METADATA. Ngày ghi nhận: 2026-10-20.
+
+https://congbao.chinhphu.vn/van-ban/luat-so-91-2025-qh15-45578/57730.htm
+
+
+
+## N12 — Luật 134/2025/QH15
+
+Metadata văn bản; áp dụng cần counsel
+
+Trạng thái: CURRENT_PUBLIC_METADATA. Ngày ghi nhận: 2026-10-20.
+
+https://congbao.chinhphu.vn/van-ban/luat-so-134-2025-qh15-468694/61695.htm
+
+
+
+## N13 — Luật 122/2025/QH15
+
+Metadata văn bản; áp dụng cần counsel
+
+Trạng thái: CURRENT_PUBLIC_METADATA. Ngày ghi nhận: 2026-10-20.
+
+https://congbao.chinhphu.vn/van-ban/luat-so-122-2025-qh15-468683/61714.htm
+
+
+
+## N14 — Nghị định hướng dẫn AI 142/2026
+
+Nguồn thông tin Chính phủ; chưa thay đọc điều khoản
+
+Trạng thái: CURRENT_PUBLIC_METADATA. Ngày ghi nhận: 2026-10-20.
+
+https://media.chinhphu.vn/ban-hanh-nghi-dinh-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-thi-hanh-luat-tri-tue-nhan-tao-102260508162952667.htm
+
+
+
+## N15 — EU AI Act FAQs
+
+Phân loại chức năng và hành vi bị cấm
+
+Trạng thái: CURRENT_PUBLIC_METADATA. Ngày ghi nhận: 2026-10-20.
+
+https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act
+
+
+
+## N16 — Life Code public home
+
+Nội dung public được công cụ truy xuất; không receipt runtime SHA
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://lifecode.iai.one/
+
+
+
+## N17 — GitHub main pinned
+
+Mã nguồn remote được đọc
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://github.com/tranhatam-collab/Life-Code-OS/tree/99b402764437f81859fa0cd3a3af860125f7bd52
+
+
+
+## N18 — GitHub audit pinned
+
+Baseline audit; không chứng nhận production
+
+Trạng thái: CURRENT_CONTENT_READ. Ngày ghi nhận: 2026-10-20.
+
+https://github.com/tranhatam-collab/Life-Code-OS/tree/336ef35a8386a744c6de18a7f7c6e268e89e6dac
+
+

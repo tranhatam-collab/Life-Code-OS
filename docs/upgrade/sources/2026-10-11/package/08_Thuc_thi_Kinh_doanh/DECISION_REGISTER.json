@@ -1,0 +1,182 @@
+[
+  {
+    "decision_id": "Q1",
+    "topic": "Định vị tự hiểu và thiết kế đời sống",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q2",
+    "topic": "9 cấp/12 lớp/4 phần/12 trường/K01–20",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q3",
+    "topic": "Method độc lập theo nguồn và phiên bản",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q4",
+    "topic": "Entitlement khác quyền và đủ dữ liệu",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q5",
+    "topic": "Dừng điểm giả và cho null",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q6",
+    "topic": "Numbers là tham chiếu không đo số phận",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q7",
+    "topic": "Báo cáo cấu trúc không filler",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q8",
+    "topic": "Dòng sản phẩm mở theo gates",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q9",
+    "topic": "Privacy, auth, delete từ đầu",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q10",
+    "topic": "Tám bộ nền từ source/runtime khóa",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q11",
+    "topic": "Quarantine experimental_legacy",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q12",
+    "topic": "Passport/rights/tests/limits/approver",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q13",
+    "topic": "Free Essentials và quota minh bạch",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q14",
+    "topic": "Pháp nhân/merchant/controller",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q15",
+    "topic": "IdP/PG/payment/AI provider selection",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q16",
+    "topic": "Autonomy A0–A3 và kill switches",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q17",
+    "topic": "Academy/practitioner scope",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q18",
+    "topic": "Organization privacy boundary",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q19",
+    "topic": "Country pack và license/franchise",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  },
+  {
+    "decision_id": "Q20",
+    "topic": "Budget/team/roadmap có điều kiện",
+    "status": "PENDING_FOUNDER",
+    "proposed_action": "APPROVE_WITH_CONDITIONS",
+    "approver": "Founder + chức năng liên quan",
+    "evidence_required": "Biên bản phạm vi, điều kiện, ngày, người duyệt",
+    "production_permission": false
+  }
+]

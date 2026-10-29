@@ -1,0 +1,7 @@
+{
+  "type": "urn:lifecode:problem:invalid-input",
+  "title": "Dữ liệu chưa hợp lệ",
+  "status": 422,
+  "code": "INVALID_SUFFIX",
+  "detail": "Nhập đúng bốn chữ số."
+}

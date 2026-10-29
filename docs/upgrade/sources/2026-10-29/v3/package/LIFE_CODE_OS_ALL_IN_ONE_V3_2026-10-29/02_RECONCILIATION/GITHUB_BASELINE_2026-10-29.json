@@ -1,0 +1,19 @@
+{
+  "repository": "tranhatam-collab/Life-Code-OS",
+  "checked_on": "2026-10-29",
+  "access": "read_only_connector",
+  "main_sha": "99b402764437f81859fa0cd3a3af860125f7bd52",
+  "audit_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+  "rescue_branch": "wip/rescue-20261027-codex-complete-upgrade-plan-2026-10-20",
+  "rescue_sha": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+  "v2_import_evidence": "NOT_PROVEN_BY_BRANCH_HEAD",
+  "deployed_sha": null,
+  "production_tests": "NOT_RUN",
+  "local_filesystem_user_mac": "NOT_ACCESSED",
+  "new_package_remote_status": "NOT_IMPORTED",
+  "notes": [
+    "Nhánh rescue có mặt nhưng cùng SHA audit; không chứng minh V2 đã được nhập.",
+    "Không sửa remote, production hoặc dữ liệu người dùng.",
+    "Nguồn website qua công cụ web có thể là bản crawl; không coi là biên bản HTTP hiện thời."
+  ]
+}

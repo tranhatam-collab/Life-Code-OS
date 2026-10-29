@@ -1,0 +1,77 @@
+[
+  {
+    "decision_id": "Q31",
+    "proposal": "Khóa manifest bảo toàn và thứ tự hiệu lực V3; không sửa lịch sử",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q32",
+    "proposal": "Duyệt 23 chỉ số và các chính sách rút gọn/Y/tên riêng",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q33",
+    "proposal": "Duyệt Bát Cực chế độ strict; chẩn đoán 0/5 không được coi là quy tắc chính thống đã xác nhận",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q34",
+    "proposal": "Giữ cấp luận số và quan sát đời thực riêng; không có điểm định mệnh",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q35",
+    "proposal": "Duyệt Mã đuôi 80: bảng nguồn và chính sách số dư 0",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q36",
+    "proposal": "Psychomatrix gồm 17 ô và trục chỉ dùng phép đếm; không suy trí nhớ, sức khỏe hoặc đời tư",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q37",
+    "proposal": "Duyệt 18 lĩnh vực và chín giai đoạn biên tập; không bắt người dùng sống theo mẫu",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q38",
+    "proposal": "Mốc Pinnacle/Challenge/Period có hợp đồng độc lập",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q39",
+    "proposal": "Một hồ sơ nhiều workspace, quyền riêng theo mục đích",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q40",
+    "proposal": "Bảo toàn 23 sản phẩm; thêm năm dòng phụ trợ chưa mở bán",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q41",
+    "proposal": "Báo cáo bốn khối, chín cấp; không viết thêm sự kiện để đủ trang",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q42",
+    "proposal": "Academy: chín buổi, mỗi buổi 120 phút; giảng viên hoạt động trong phạm vi chứng nhận",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q43",
+    "proposal": "Cấp phép quốc tế theo lãnh thổ; không tự có quyền truy cập dữ liệu toàn cầu",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q44",
+    "proposal": "AI A0–A3: quản lý chi phí và ngoại lệ; phát hành có người phê duyệt",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  },
+  {
+    "decision_id": "Q45",
+    "proposal": "Nhập V3 theo cách bổ sung; không merge hoặc deploy khi chưa có biên bản phát hành",
+    "status": "PENDING_FOUNDER_APPROVAL"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "calendar": "gregorian",
+  "date_original": "2000-02-29",
+  "date_iso": "2000-02-29",
+  "date_precision": "day",
+  "time_original": null,
+  "time_local": null,
+  "time_precision": "unknown",
+  "time_zone": null,
+  "tzdb_version": null,
+  "utc_candidates": [],
+  "place_original": null,
+  "source_kind": "self_report"
+}

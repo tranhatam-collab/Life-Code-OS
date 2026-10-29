@@ -1,0 +1,29 @@
+﻿product_id,name,name_vi,family,level,phase,production_status
+LC-L1,Self Signal,Tín hiệu nền,personal_report,1,C,NOT_RELEASED
+LC-L2,Inner Architecture,Cấu trúc nội tâm,personal_report,2,E,NOT_RELEASED
+LC-L3,Behavior Code,Cách hành động,personal_report,3,E,NOT_RELEASED
+LC-L4,Work & Wealth Code,Công việc và nguồn lực,personal_report,4,E,NOT_RELEASED
+LC-L5,Relationship Field,Quan hệ và ranh giới,personal_report,5,E,NOT_RELEASED
+LC-L6,Life Timeline,Dòng thời gian,personal_report,6,F,NOT_RELEASED
+LC-L7,Body Intelligence,Cơ thể và môi trường,personal_report,7,F_REVIEW,NOT_RELEASED
+LC-L8,Mission Path,Hướng sống và phụng sự,personal_report,8,F,NOT_RELEASED
+LC-L9,Full Life Code,Hồ sơ đời sống hợp nhất,personal_report,9,F,NOT_RELEASED
+LC-GUEST,Guest Tools,Công cụ không tài khoản,free,,C,NOT_RELEASED
+LC-FREE,Free Essentials,Hồ sơ căn bản miễn phí,free,,C,NOT_RELEASED
+LC-COMPANION,Companion,AI đồng hành,subscription,,D,NOT_RELEASED
+LC-NUMBERS,Numbers,Bộ số và tên,module,,C,NOT_RELEASED
+LC-EXPERT,Expert Review,Phiên chuyên gia,session,,D,NOT_RELEASED
+LC-PRACTICE,Practitioner Studio,Không gian chuyên gia,subscription,,E,NOT_RELEASED
+LC-ACADEMY-FOUNDATION,Academy Foundation,Khóa nền HNH chín buổi,cohort,,E,NOT_RELEASED
+LC-ACADEMY-PRO,Practitioner Certification,Đào tạo thực hành có giám sát,cohort,,F,NOT_RELEASED
+LC-ACADEMY-TRAINER,Trainer License,Đào tạo giảng viên,license,,F,NOT_RELEASED
+LC-FAMILY,Family,Gia đình có quyền riêng,subscription,,E_F_REVIEW,NOT_RELEASED
+LC-ORG,Workspace,Tổ chức và doanh nghiệp,license,,F,NOT_RELEASED
+LC-API,Partner API,API cấp phép,usage,,F,NOT_RELEASED
+LC-PUBLISH,Publishing,Xuất bản và bộ sách,one_time,,D,NOT_RELEASED
+LC-REGIONAL,Regional Partnership,Cấp phép quốc gia/nhượng quyền,contract,,F_LEGAL,NOT_RELEASED
+LC-NUM-ATLAS,Numbers & Names Atlas,Bộ số–tên hoàn chỉnh,extension,,E/F,NOT_RELEASED
+LC-LIFE-MAP,Living Life Map,Bản đồ một đời sống,extension,,E/F,NOT_RELEASED
+LC-LEGACY,Knowledge Legacy,Di sản tri thức,extension,,E/F,NOT_RELEASED
+LC-REGION-KIT,Territory Kit,Bộ triển khai lãnh thổ,extension,,E/F,NOT_RELEASED
+LC-RESEARCH-STUDIO,Research Studio,Xưởng phương pháp,extension,,E/F,NOT_RELEASED

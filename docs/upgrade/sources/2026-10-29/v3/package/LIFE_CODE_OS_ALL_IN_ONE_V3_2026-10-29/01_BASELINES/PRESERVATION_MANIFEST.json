@@ -1,0 +1,2155 @@
+{
+  "source_v1_sha256": "55ec5c5234d4a046e5f47d845066117d477f78730bfc94f63a85c454d6cd8ff3",
+  "source_v2_sha256": "4e32664092dca700c995851adc33b0239aa9b486121cf34ffb515ff04ea4338f",
+  "files": [
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/DOCUMENT_INDEX.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/DOCUMENT_INDEX.json",
+      "bytes": 5786,
+      "sha256": "8e3d506b91c4bd285ea60decc708479af564d5e942e4d670a71b1b0d434e1b61",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.docx",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.docx",
+      "bytes": 72360,
+      "sha256": "d416b9e0cf7071435ce6f81d9087cc123dbbebb601ae2f03c6441ada7d594973",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.md",
+      "bytes": 88547,
+      "sha256": "ed4f53dc8365f7b258d755c20ab5476ef2a2cff7dd2b0941c7b71a427e0201f0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.pdf",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Backend_Formula_Demo_V2.pdf",
+      "bytes": 518569,
+      "sha256": "d9a901e7f653caa8b7b2e32c7bd8c7502ecaaa2161cfa0124181d75b5c19801d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Execution_Board_V2.xlsx",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Execution_Board_V2.xlsx",
+      "bytes": 104831,
+      "sha256": "d4da98bfa52cc222a3b88c5c12a202de31d1ac3958e1403041b141c42dbfa489",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.docx",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.docx",
+      "bytes": 60598,
+      "sha256": "480135c94835411d67ba58ff1091745bf3e43af11931364f6721d4898013fa28",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.md",
+      "bytes": 56214,
+      "sha256": "6c2cb5442c43b533394cbfa00c3856e7938f6b4585208ac605769474bada5184",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.pdf",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/Life_Code_OS_Master_Upgrade_V2.pdf",
+      "bytes": 245517,
+      "sha256": "a5bdf55e4a75841fadfb223cf6166e596928265f90a3a8eb47b637e5c6c58ff2",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/MASTER_UPGRADE_V2.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/MASTER_UPGRADE_V2.md",
+      "bytes": 6244,
+      "sha256": "1ee0b91bdc2b05bfae4bb09ec43e38b727399f3bd246c25ed363ea79b94c1d11",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/START_HERE_V2.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/00_READ_FIRST/START_HERE_V2.md",
+      "bytes": 3845,
+      "sha256": "e0751eeb4d88ff65df2e71ffe0c5ea5a4c1fc02efe64ed61355f45cc2e95b218",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/CHANGELOG.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/CHANGELOG.md",
+      "bytes": 2107,
+      "sha256": "1fc6e579bd73f23bb36a85e27921f0d1b304f50f348411eb7877f0c45e84617d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/DOCUMENT_INDEX.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/DOCUMENT_INDEX.json",
+      "bytes": 11667,
+      "sha256": "25957f5d3a912f72e71ecea2d6861971cee141b71593dd3797470ea8072e8382",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/EIGHT_BUNDLES_MAP.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/EIGHT_BUNDLES_MAP.md",
+      "bytes": 1114,
+      "sha256": "3ceb7705d624865f629357b00851d5565df7794527bf0880fa541ede88229870",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/EXPORT_QA.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/EXPORT_QA.json",
+      "bytes": 1108,
+      "sha256": "a07f8ec80550c16fc22397dfb47394c5538934ce35b5cd547c46b65ea39f1501",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/KNOWN_LIMITATIONS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/KNOWN_LIMITATIONS.md",
+      "bytes": 2647,
+      "sha256": "4891b8dab927163385800c2df2944a3169ce5c9e5a5b2fb0c78b30442afe8cec",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Execution_Board.xlsx",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Execution_Board.xlsx",
+      "bytes": 53323,
+      "sha256": "49a9a1a0ab18101c472d0a016c8b3906978f4b6e9c0109ac11516ca3f45f47a0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.docx",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.docx",
+      "bytes": 97144,
+      "sha256": "28c51030e3df873e95d6188efa4cf82d06fee3ad8bbe27be006b0088e9a571a1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.md",
+      "bytes": 151085,
+      "sha256": "13da5e73434718b6c69e914ef7e386e3b5d971027753706acdc4e5eddb13ab18",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.pdf",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/Life_Code_OS_Master_Upgrade_Plan.pdf",
+      "bytes": 642984,
+      "sha256": "7d56e8a897eabdd90decf893a9a21738750381385794cccfb2a4b095fd2963bd",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/PACKAGE_QA.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/PACKAGE_QA.json",
+      "bytes": 23505,
+      "sha256": "f571484a236e5fc505a3375f07c2d0b88664d02e36be833637f83c8036ebafd5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/WORKBOOK_QA.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/00_Doc_truoc/WORKBOOK_QA.json",
+      "bytes": 3199,
+      "sha256": "4776275c57cf72154b441fb2b2cf8ed30e3504766572548baf33856790688ac3",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/01_MASTER_VISION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/01_MASTER_VISION.md",
+      "bytes": 3854,
+      "sha256": "02902402814b77bd73d018d4c628093b59710ec434cbb074c5cabe197412d98a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/02_FREE_TO_ENTERPRISE.md",
+      "bytes": 3452,
+      "sha256": "fd6851112a120def9f9211f1ef10a6a0ac864a06f0d6cd866461328a39d64a4c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/03_NINE_LEVEL_CONTRACT.md",
+      "bytes": 3980,
+      "sha256": "e9ebf0828397c15816b15012de820dcf6b34b4b741c74f9dbaaf3056f52a753a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/04_USER_JOURNEYS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/04_USER_JOURNEYS.md",
+      "bytes": 3643,
+      "sha256": "9ddf5b2581300f8bdec1a7d96c4b07aad231ece8883dc26b1dd4aa8bf2b7c0a5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/05_ACADEMY_AND_PRACTITIONERS.md",
+      "bytes": 3377,
+      "sha256": "d8e38e8b44a18af948d37aa3e95ab8d53b72c19d2fafcad87caf3fae1cbbf2a1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/06_ORGANIZATION_AND_FAMILY.md",
+      "bytes": 3343,
+      "sha256": "3e90762e266ed0d82202fd80b6a6625fda6ae288718d50b8afea580d755c26a3",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/NINE_LEVELS.json",
+      "bytes": 8138,
+      "sha256": "6854b7b9ee26c7531f8420607d0997862ddbd9f46cc199f6f27435a25a84bb6d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/PRODUCT_CATALOG.csv",
+      "bytes": 4096,
+      "sha256": "c72f2799c33afa490796278e0dc9b8a241e0c08d6eb23a58118e2849aea55f20",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/PRODUCT_CATALOG.json",
+      "bytes": 18829,
+      "sha256": "07f231482f840e205047f33ffc91197ba0eb4dcf218f12beb375dd5aeff9d475",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/01_Chien_luoc_San_pham/QUOTA_POLICY_PROPOSED.json",
+      "bytes": 620,
+      "sha256": "cdced6403e55ad312c59e45cb60b91564d298e0847454d4203ce67f619d4df34",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/01_HNH_DOCTRINE.md",
+      "bytes": 3452,
+      "sha256": "05a7aca604191fa932a15f813ff2d0d76f312afe47198a10082fce7bb65d53fc",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/02_METHOD_RESEARCH_PROTOCOL.md",
+      "bytes": 3494,
+      "sha256": "9004ecb60c97c2429da1af12e0e104d5b88ffa8b8d27cbd13b9b8d5ebf47259a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/03_RESONANCE_AND_LIFE_DESIGN.md",
+      "bytes": 3270,
+      "sha256": "cb5010be794223e6799388388e385dbd5b76c29f56df946772ef203d37b00cb8",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/04_DEEP_RESEARCH_SYLLABUS.md",
+      "bytes": 12843,
+      "sha256": "e81a76c3522bf93599ecc49d451543eafe5dccb7a232c7ea771d2a5602f2a462",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.json",
+      "bytes": 11500,
+      "sha256": "772619f2492d76811118fe2eddaa785c2a1936b813649a8895cd5fbf4e70065b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/GLOSSARY_VI_EN.md",
+      "bytes": 8166,
+      "sha256": "5cb8832aa506438c17ab134143aa9a85d8ba8d70aa5c465f7e392dca1179faf6",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/LAYERS_AND_FIELDS.json",
+      "bytes": 4400,
+      "sha256": "0b95e26a6f50d7fa325e2d190f47ca3cfce138c5afee7aa1af7133186d1b2f63",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.csv",
+      "bytes": 3819,
+      "sha256": "370aa37d517d44cc4e4e9008c5a60d32e60d73ac2b316acd58ab207e8ca0784a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_FAMILIES.json",
+      "bytes": 7338,
+      "sha256": "b76688b91ab543c4382cc32fa3336fe281cb89c12b8cfb22d353d6253a8fcb54",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/02_Tri_thuc_HNH/METHOD_PASSPORTS.json",
+      "bytes": 13898,
+      "sha256": "7a286db190565398bb03e7d42a8d598e74523d594ca75fa646c7832a0c30bbe6",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/01_DOMAIN_MODEL.md",
+      "bytes": 4235,
+      "sha256": "6c204b3f5be2d6e6079f166fcd13113af736b3d1d27f0c0f81ca9716e89b2c30",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/02_METHOD_CONTRACT_AND_METRICS.md",
+      "bytes": 3324,
+      "sha256": "fa394fd8e4295167e53d0653fdc15b37feab1c565fd15b5cf80520af7a5d9bee",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/03_NUMBERS_AND_TAIL80.md",
+      "bytes": 3145,
+      "sha256": "685724029478fe6225234bd5b0b89b9d5548487ebc8ff32712e0a0b91768e8c6",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/04_TIMELINE_AND_SCENARIOS.md",
+      "bytes": 2895,
+      "sha256": "ce204fa6cf1cc38813124384bc2f95774e046d8d3786720dbf9c850147225175",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.csv",
+      "bytes": 27383,
+      "sha256": "7a984704e6f410c17a32f885b73e87773ed1518a63c80d1c32b6e22d20d077a2",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/DATA_FIELD_REGISTRY_120.json",
+      "bytes": 55698,
+      "sha256": "12036706a99364009c176d6470dd57c1aaebe85f17b8ded36b1f13e194dbffad",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Claim.example.json",
+      "bytes": 583,
+      "sha256": "b8c005e229b4e7aada74c64d2b9f86b0059461f0399a04ee0085f8fe24f54ceb",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/JobEnvelope.example.json",
+      "bytes": 716,
+      "sha256": "3a9a69bcc8914a8db532adf9122fca041a11bed4b50b2f9d2f3a26c49521f040",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodRelease.example.json",
+      "bytes": 802,
+      "sha256": "8a7a044c24183b23f84cb25a7e35c7042d4b07e961c353effe90403c6d886eac",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/MethodResult.example.json",
+      "bytes": 1642,
+      "sha256": "0031c755fd9333b6ffb1dc2fc1ae9baca6ccb2f1abe496826c344aceaf687cee",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Metric.example.json",
+      "bytes": 240,
+      "sha256": "77024b90db82edf1ab0914b99d63c950c5a7bd04497d1672238468ff3ddde4a4",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ProfileVersion.example.json",
+      "bytes": 702,
+      "sha256": "e6ea345f0b60c66739400766c7e4168c07df2301cc9fb4765d1d9910d0ba0077",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReleaseReceipt.example.json",
+      "bytes": 525,
+      "sha256": "46fc34bdcc5458b2049d795b088c251218cf477381217226b63c90d229d73845",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/ReportSnapshot.example.json",
+      "bytes": 1013,
+      "sha256": "0dfee7a649435057267c5a3b150a79090a3c9d08e8598fca80a315f2596308ce",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/examples/Tail80Result.example.json",
+      "bytes": 266,
+      "sha256": "6323be63f262cb8e91404fe9f0f7a32dcb180f051dcf4a39f8676671d19b52de",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Claim.schema.json",
+      "bytes": 2399,
+      "sha256": "ddf67830aa8dc32a967fe5829bc88e980d44a66860433a54704edd274d682dd0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/JobEnvelope.schema.json",
+      "bytes": 1778,
+      "sha256": "3eed377cc61f981d5384bf3ccf8effc5d989a2b30c237a9b4e06284d98794d24",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodRelease.schema.json",
+      "bytes": 3341,
+      "sha256": "b1fd70ae0690e22ae09f3e5bc5085ecc5e14806e994f3cd60891fad078ab81c4",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/MethodResult.schema.json",
+      "bytes": 7257,
+      "sha256": "6ac7a8e060ee48682552b69c7da2faf1e5ca3d974f03b1afdc1ea6c47a0052de",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Metric.schema.json",
+      "bytes": 839,
+      "sha256": "0631326f54e30dcf8b08b246e01af1a82e524818ae3d2f46c17022c70398d2ba",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ProfileVersion.schema.json",
+      "bytes": 3190,
+      "sha256": "4bbcfc3c8b857b681107ae14ccfbbeaeec38ec8ca3303f6317b393bf896b0e9d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReleaseReceipt.schema.json",
+      "bytes": 2550,
+      "sha256": "6c1743b8ae14be6f2cb5af0c14c39dde1324114f5c9eebf1c0c1299be0a195f9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/ReportSnapshot.schema.json",
+      "bytes": 3595,
+      "sha256": "0e0d8e6d01bd561ce49bddf7acd254fc5eda01383c2063d5840104aaa6f229de",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/03_Du_lieu_Phep_tinh/schemas/Tail80Result.schema.json",
+      "bytes": 1215,
+      "sha256": "e6c48bb7fe55ee74dd70daa70ab24512a359838ad96b04315c2393e230007962",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/01_TARGET_ARCHITECTURE.md",
+      "bytes": 3419,
+      "sha256": "3e10b6293eb70b068456a4facb6ce85216fae060b848cdab6dd3c460ba0f597e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/02_AUTH_AND_AUTHORIZATION.md",
+      "bytes": 3086,
+      "sha256": "c3c53a35d73e129b13174c17e13783a30f2591298d6be8ebe6b7a6f817c243ec",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/03_JOBS_IDEMPOTENCY_AND_COMMERCE.md",
+      "bytes": 3292,
+      "sha256": "a9131cb0128cb43f93ce6aef38bae1d487ffe5919de6a28dbbb8b4e9b8a1f019",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/04_API_AND_MIGRATION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/04_API_AND_MIGRATION.md",
+      "bytes": 3257,
+      "sha256": "6231bc4519bbc6c4fb3270ca90c56954f6fb6d24b2666901cb3a09e9070b1f7a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/API_OPERATIONS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/API_OPERATIONS.json",
+      "bytes": 16191,
+      "sha256": "a10ace2ed34f5470f172c82b3016bce219d8a5a5a6307454f73fc48a263f3e97",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ARCHITECTURE.mmd",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ARCHITECTURE.mmd",
+      "bytes": 905,
+      "sha256": "0a5059f17c321026dfe8fc2c21d55b82ada8f8fd1749bf56c03f1b9eb76d6d19",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ENTITY_REGISTRY.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/ENTITY_REGISTRY.json",
+      "bytes": 16803,
+      "sha256": "361b942e963b3e6f23d3b9d7264ba6a3b55c13183cbd3f516a642cc5d48db046",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_DESIGN_REFERENCE.sql",
+      "bytes": 29369,
+      "sha256": "064602c61f7f5352628d2a8452575b8954686b74df5875277b7394a5bb920c92",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_README.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/SCHEMA_README.md",
+      "bytes": 1127,
+      "sha256": "86205fc0e2bac05b90e1670288cb9bddacc326c97ed7d6fa94514b8d061cac7e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.json",
+      "bytes": 313322,
+      "sha256": "3fbd57337e33747f4d26acb2fd642b46532a73a255615a605aa6124725013825",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.yaml",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/04_Backend_API/openapi.yaml",
+      "bytes": 215983,
+      "sha256": "b98d0a744253de3b6eb5c950df83f9db3b1912cca73b252a4907c2a21107121e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/01_INFORMATION_ARCHITECTURE.md",
+      "bytes": 3293,
+      "sha256": "c5eb9607999423d551c42b0adab489b344c46aa1cd4bf1d0a872900ec17b8739",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/02_DESIGN_SYSTEM_AND_A11Y.md",
+      "bytes": 3214,
+      "sha256": "47aede81a1c411e47b572ab7b2a7b9acaf89b99a826136327482b2fb88070f10",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/03_PUBLIC_COPY_AND_SEO_MIGRATION.md",
+      "bytes": 3081,
+      "sha256": "b8aa46ad6b57ff65a9db83342fe228822f2ca7b376241cdf1f1ce02dff72bec7",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/DESIGN_TOKENS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/DESIGN_TOKENS.json",
+      "bytes": 815,
+      "sha256": "d07c335d4bdd22d168d8d766a1d575457c938c087fa13a8ec140d3e5b1fb5eb7",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/SCREEN_REGISTRY.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/SCREEN_REGISTRY.csv",
+      "bytes": 9089,
+      "sha256": "73e65f2eaaae37a48ee8f4cd6aae972a7f6601db156f866ebc4e5f8daed2df10",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/SCREEN_REGISTRY.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/05_Frontend_UI/SCREEN_REGISTRY.json",
+      "bytes": 18433,
+      "sha256": "f889ae17392d53c1c1085eb7ad8adaf0ee16b517346fdfc438de4c3bcaa8cf6e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/01_AI_ORCHESTRATION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/01_AI_ORCHESTRATION.md",
+      "bytes": 4122,
+      "sha256": "56a345d3573c25e8cbedf693157b97bdd727dd9ee80143672c89755db9e76e7f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/02_AUTONOMY_AND_ADMIN_MINIMIZATION.md",
+      "bytes": 3801,
+      "sha256": "3d74d97e716e4cac55362e74a2647999e64b69150546857b9fff3f646674f612",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/03_REPORT_FACTORY.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/03_REPORT_FACTORY.md",
+      "bytes": 3708,
+      "sha256": "9619d462d31315a7472e19e9bce7eb6e4448b2f715bf9f046670064c71cbd9fd",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/04_EDITORIAL_AND_EDUCATIONAL_STANDARD.md",
+      "bytes": 3621,
+      "sha256": "e25834a25e848255e3cae655e1f472403b84888a3893d778fc816d624d19339d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/05_USER_VALUE_AND_SAMPLE_NARRATIVE.md",
+      "bytes": 3728,
+      "sha256": "819fee6ae311da6ff357d844b516d279237eeee047c0470ac897540eea6aee7b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/AUTOMATION_WORKFLOWS.json",
+      "bytes": 2910,
+      "sha256": "efa5ba8d6f656cf40e08bacb65e77f2a12e74d112656da9bca79b46bd95aa00b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/AUTONOMY_POLICY.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/AUTONOMY_POLICY.json",
+      "bytes": 2093,
+      "sha256": "987cdd892f83876b80ce4951a3b33b295e87a1937bb178f7e55b64c54b13257e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_1.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_1.json",
+      "bytes": 3639,
+      "sha256": "aff43ca819925900dbcaf501a81239b6c522115a9abef84649b352a5a3144dd2",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_1.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_1.md",
+      "bytes": 1915,
+      "sha256": "1bae9802357962668d05e782b8681e3b93dd83e52eaecae1138b5ae5372758df",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_2.json",
+      "bytes": 3550,
+      "sha256": "77b2939a170f971960552649f5d18164c796721ebc874f84bdd33c6323f2cb6a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_2.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_2.md",
+      "bytes": 1838,
+      "sha256": "c82bfc0cf80dbe11d56c14875b0e19af434abef3cf7480a338257c1b3479470b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_3.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_3.json",
+      "bytes": 3536,
+      "sha256": "a15b2af30f5f5cdd624815a51d66cab8d5ff3f29b353256163b882424ef70400",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_3.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_3.md",
+      "bytes": 1816,
+      "sha256": "43412673bd79b8b9d349a27c9d1e6f0265d4963fbd7faab95d1067ab0f5db454",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_4.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_4.json",
+      "bytes": 3551,
+      "sha256": "2982f7aee7866ad7188fc4ed0b2b274129370e7655d17ec6097806b7492a2eb0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_4.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_4.md",
+      "bytes": 1847,
+      "sha256": "839746e08a1b1b02717adf3a9596d927ed4bf58075daba76306c380965354dab",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_5.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_5.json",
+      "bytes": 3542,
+      "sha256": "08dfd52b24936eb39892969be89e0c18a767444ded3d5f3d1599c75fd286aad9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_5.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_5.md",
+      "bytes": 1833,
+      "sha256": "4e90968c01cd6c651aa3e8bcef722391236ec3a32d9f29788db8e3bfcc4aefaa",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_6.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_6.json",
+      "bytes": 3538,
+      "sha256": "8c55325dd66df836a9cdfbdab2e83c739bfabdb999112f1bf3a8cbd608c966c1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_6.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_6.md",
+      "bytes": 1815,
+      "sha256": "edd013293f1aba4f1c469747ead1d24f1a215921b5bb7506b8da854610fb0430",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_7.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_7.json",
+      "bytes": 3549,
+      "sha256": "230ce68acbb772f3f0c588ac706221ac83f9c494e007635eb6a485181ec3d5d8",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_7.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_7.md",
+      "bytes": 1841,
+      "sha256": "b03ab45aae7d6d11da6f34fdf0a3509d4855679e2edfd9c2fc5c21f771515b92",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_8.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_8.json",
+      "bytes": 3517,
+      "sha256": "7d5c1b5ee00920e34d01b83ae4a0772a5f54eda535b89aedcc737a0be1ad9d11",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_8.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_8.md",
+      "bytes": 1808,
+      "sha256": "88f95b9262bafb48dc205c417c52a38a592d2c2591a56ada239a134278e63c39",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_9.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_9.json",
+      "bytes": 3538,
+      "sha256": "ccfd55f850f65d95a45c1a5a22fde30346b9248dc28fa97577d0cb617d2a975a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_9.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/06_AI_Bao_cao/templates/LEVEL_9.md",
+      "bytes": 1831,
+      "sha256": "46d6264bafc37b6bbbc0537e7534698170dba257b4b4a392f2c5fca1434d1a92",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/01_P0_CONTAINMENT.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/01_P0_CONTAINMENT.md",
+      "bytes": 3642,
+      "sha256": "6bf83b9533ee51afdbd5e4cda510182d2d376fe56b6927d6657bdffba07355d9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/02_PRIVACY_AND_DELETION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/02_PRIVACY_AND_DELETION.md",
+      "bytes": 3423,
+      "sha256": "8ddd19adb61333466a5b1922d096ff889ae2ac9b454075fbf67961834b90c5da",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/03_SECURITY_THREAT_MODEL.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/03_SECURITY_THREAT_MODEL.md",
+      "bytes": 3117,
+      "sha256": "01a6129a74a55a1a14c2c90591ba1c0ecd721bcc18d03d3b4b974f2943c81701",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/04_OPERATIONS_SRE_AND_COST.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/04_OPERATIONS_SRE_AND_COST.md",
+      "bytes": 3359,
+      "sha256": "bb86a903164a9bcc3746ea0347500d09dffa466a9b96a66435c7afa010d40f0b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/05_VIETNAM_LEGAL_READINESS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/05_VIETNAM_LEGAL_READINESS.md",
+      "bytes": 3418,
+      "sha256": "5a5d76267bfbd4f5bdcbaba40fac9d6332e75100485b354f8547d0b5637d0584",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/06_RELEASE_GATES.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/06_RELEASE_GATES.md",
+      "bytes": 3040,
+      "sha256": "4e8177162ee36035b60c9f424501734eb8bccb73aba92172abcd5e74a15347a9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/CI_RELEASE_POLICY.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/CI_RELEASE_POLICY.md",
+      "bytes": 1075,
+      "sha256": "75ef8e61fb58a33f3e731c16a3d09c34ca272da51dd3f2382558c0cb598d9d2e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/00_SCOPE_AND_AUTHORITY.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/00_SCOPE_AND_AUTHORITY.md",
+      "bytes": 2051,
+      "sha256": "847a0c2672253c16cd780ac2823781bc557317964caa1d2b1e463b688988a619",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/01_EVIDENCE_BASELINE.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/01_EVIDENCE_BASELINE.json",
+      "bytes": 4746,
+      "sha256": "6e96a2a3fada4d8e0eea612a19e301a707e52b7da92c86f8b26adb34256a736a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/02_SURFACE_INVENTORY.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/02_SURFACE_INVENTORY.csv",
+      "bytes": 1557,
+      "sha256": "8edff3cbdf8164179c6cf812ad948c51043c3b09bd32022f2445ad3bd84c052f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/03_PATCH_PLAN.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/03_PATCH_PLAN.csv",
+      "bytes": 3323,
+      "sha256": "dadfca301050bd0a6bff3bd9b92b3e8f4a3af78543e611ea5235ef5c2805b988",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/04_NEGATIVE_TEST_MATRIX.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/04_NEGATIVE_TEST_MATRIX.csv",
+      "bytes": 3103,
+      "sha256": "8f0f8daf5f4b530c18b64b831908458eea14016646a6ff2cd8f187058ce50366",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/05_DEPLOYMENT_AND_ROLLBACK.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/05_DEPLOYMENT_AND_ROLLBACK.md",
+      "bytes": 1680,
+      "sha256": "6edc53df1463e302027450f3eece2c03f35a20a8fe363ca66aa8b8ebfd1a6bee",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/06_LEGACY_AND_INCIDENT_TRIAGE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/06_LEGACY_AND_INCIDENT_TRIAGE.md",
+      "bytes": 1839,
+      "sha256": "afc2fe222c8fe85d3f4085800e80f38e420535e2de13a115709fb0863d715e48",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/07_EXIT_REVIEW.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/P0_PACKET/07_EXIT_REVIEW.json",
+      "bytes": 877,
+      "sha256": "06d6bfe2e57fbcdbe124f2b24274316c48adc22c6974b9752f0261690d85f630",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/RETENTION_SCHEDULE_PROPOSED.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/07_Bao_mat_Van_hanh/RETENTION_SCHEDULE_PROPOSED.json",
+      "bytes": 1780,
+      "sha256": "befa643e00eabf4b8b4befd992419ca57173a1ed632a6a34ce7612cef39d50b1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/01_INTERNATIONAL_AND_FRANCHISE.md",
+      "bytes": 4375,
+      "sha256": "cebe3f5d851276f8a4df9dd6fe9b29cbb63f8b1d0d9976d2e9bb8643fb91b62a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/02_COMMERCIAL_MODEL_AND_UNIT_ECONOMICS.md",
+      "bytes": 3333,
+      "sha256": "cc3bb1d2a278770968134dc8957cfc9a060b754379181b413e6328b801b36e04",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/03_ROADMAP_AND_RACI.md",
+      "bytes": 3322,
+      "sha256": "f57baf61fbdd860d8a40d80bec8e3232d84a8bc3d40454d4c11935923d1ac313",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/04_FOUNDER_DECISIONS.md",
+      "bytes": 2816,
+      "sha256": "97b5d81fde84e939461518576ac5cfae631a12c1b0c06d40550253ccf6bbb775",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/05_AI_DEV_HANDOVER_PROTOCOL.md",
+      "bytes": 2963,
+      "sha256": "9a6294da270816d98f8e9c787af2814a8deefc263bca209552009dcfea2fdeb3",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/COUNTRY_PACKS.json",
+      "bytes": 2872,
+      "sha256": "a3225049c50246f5e446f0e8960cdea3a04bbe6d7e325c9d46606145b5feb766",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.csv",
+      "bytes": 3860,
+      "sha256": "d009db808f785adb43d089f05318f92f47865713b350d5320838384e6566cb9e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/DECISION_REGISTER.json",
+      "bytes": 7027,
+      "sha256": "05611a2ef112466a90b365a35900b1f20a51dcd10e808c60c88a22868808d2a4",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+      "bytes": 41818,
+      "sha256": "ae96706951d6bd3e11029a8270313d3528dce4a356478e864b918e67686fc59d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+      "bytes": 90286,
+      "sha256": "0c9937c8e6e1e30c1b17f18a18aa5a50164b33f6484b9a2db6f7ad9dbbe87386",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/RELEASE_GATES.csv",
+      "bytes": 1388,
+      "sha256": "3e3edc8ded587937235b40ed6a40fa18f3d7aeb6acdb836ca7212869281c539a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/08_Thuc_thi_Kinh_doanh/RELEASE_GATES.json",
+      "bytes": 3506,
+      "sha256": "573558e993f91664e27ed70449f08ecefced7c43c6390bd4830f237522db6681",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/01_CURRENT_STATE_AUDIT.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/01_CURRENT_STATE_AUDIT.md",
+      "bytes": 3444,
+      "sha256": "706618934753f8967269b8353bd413b3682ba0182dcff9abc5964e4096c309aa",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/BASELINE_LOCK.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/BASELINE_LOCK.json",
+      "bytes": 469,
+      "sha256": "9522da263e060dfa29c032eb5aba9851fe6039fb1b3cd35bc3ad4fa4a2dd466f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.csv",
+      "bytes": 2308,
+      "sha256": "bd4276e9561641ebb33aaaee8d23422f35c744ea2612fbf38b9fa489b82b6cdf",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/EVIDENCE_LEDGER.json",
+      "bytes": 4228,
+      "sha256": "6ee8093a7156c98fceaf72f6e39061e726a8bd6e7cf64045108147cf2a51affc",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.csv",
+      "bytes": 10809,
+      "sha256": "5d3cb3de8fe8aa1f081f01d74ac506202f19c208048cf3d46ff31f96d8fa7fde",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_REGISTRY.json",
+      "bytes": 17733,
+      "sha256": "59760243821bfbfb84fda22729621e04118d1d8109077d9454afb83c96838c4a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.csv",
+      "bytes": 5490,
+      "sha256": "716a17c9e4cfb0b8fe3c272973ac62bf5b0c7a96121c599e9049ad6eeb81330f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/09_Doi_chieu_Bang_chung/SOURCE_TO_TARGET_MATRIX.json",
+      "bytes": 11028,
+      "sha256": "9bae124c90a608c3fc9e45cf4b0a910f09202aaa87629447b960ee72d3ab9321",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/README.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/README.md",
+      "bytes": 1055,
+      "sha256": "2336c8c8837e567aa8af025e26b2ce35b8d77e07075ed77aa83d26fa0d5e03fa",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/data/tail80_table.json",
+      "bytes": 23987,
+      "sha256": "1c5157653ee549532093c7800ff60bb9077ae6f9407fa478ec0ad3afe39266e8",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/package.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/package.json",
+      "bytes": 339,
+      "sha256": "3409425cc3ef9fd98d8f58ed8da5130e9203f98c181d0cd7aef79c759a827b23",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/numbers.mjs",
+      "bytes": 2902,
+      "sha256": "5974178a9095e1e5ab976b84ac6c160aa55004ab2acce2a8992bde5354ec3224",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/src/policies.mjs",
+      "bytes": 2766,
+      "sha256": "58e0f3c4333d69a8d4a70dd17f2b02195366c9f2efeea115020a25aaa6daa972",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/test-results.tap",
+      "bytes": 9957,
+      "sha256": "b09c6b32ff323edf62cc103da0f72f78254514e67b8bedaf1cb27d4f4c9e738f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tests/reference.test.mjs",
+      "bytes": 7004,
+      "sha256": "70f38450c69edd9c88d17357c71ec5ebeb7e2b9dcdb9711ea4e6dfc1ac7e8e34",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/10_Ma_tham_chieu_Kiem_thu/tools/collect_public_evidence.py",
+      "bytes": 1415,
+      "sha256": "18305a2311dcec37c7f97e4414fbe6b07994d03a72a4cb6b55391d20c40365e7",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/FILE_CATALOG.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/FILE_CATALOG.csv",
+      "bytes": 28500,
+      "sha256": "d751196e0f9fd7d682b9293e9dc176379f0ee3473fdc2a699fa232c5a9ebaed5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/FILE_CATALOG.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/FILE_CATALOG.json",
+      "bytes": 40892,
+      "sha256": "ebb4fa85fb4d5559c99d37b5adc0c663368726d9cccf82f7d4a5c70b39d8bf81",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/INDEX.html",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/INDEX.html",
+      "bytes": 48605,
+      "sha256": "f6083978ab93ec5210f33e7e2a4dea035b1c5aadb23debea5aaccc55c9da3b3d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/MANIFEST.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/MANIFEST.json",
+      "bytes": 28196,
+      "sha256": "b06423786b796fd3b1f80bb90b815e2fe455e2385a2f1212651476c41e6cea44",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/README.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/README.md",
+      "bytes": 5029,
+      "sha256": "6c582337ff4a1626836c88c17a9022b591fa4a1992a75834877c74ec1cedaa05",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/REFERENCE_USE_AND_RIGHTS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/REFERENCE_USE_AND_RIGHTS.md",
+      "bytes": 1224,
+      "sha256": "2768e16326597f9adf25859d3f1ee92150fd69ddab49a22442f04c30f9773a8f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/VERIFY_PACKAGE.py",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/VERIFY_PACKAGE.py",
+      "bytes": 889,
+      "sha256": "151f593a8b599ac0b94ea7c5e39396457336a673b44ee5751e417f325256c47c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/manifest.txt",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/2026-10-11/manifest.txt",
+      "bytes": 6408,
+      "sha256": "a17ecfb14c912c7f271abe49104664b77a4ad60ea1b6a2a9e513f79e6363b055",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/Life_Code_OS_Complete_Upgrade_Package_2026-10-11.zip",
+      "bytes": 797563,
+      "sha256": "55ec5c5234d4a046e5f47d845066117d477f78730bfc94f63a85c454d6cd8ff3",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/PRESERVATION.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/01_BASELINE/PRESERVATION.json",
+      "bytes": 60630,
+      "sha256": "8b84eff7e87c2444e993e2d3303448b2918e4d826843a364093106af6a6c1c91",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/FILE_REVIEW_LEDGER.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/FILE_REVIEW_LEDGER.csv",
+      "bytes": 33637,
+      "sha256": "5f62bcec1965506acd7c3ddf4aac381cb4eab295d8f34bb3d3f868e6fa6738ba",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/NO_LOSS_UPGRADE_MATRIX.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/NO_LOSS_UPGRADE_MATRIX.csv",
+      "bytes": 51776,
+      "sha256": "cd65bf6b140e43ee00d9b5e57b83f23714d6fc7720819204c27a6842c8ec8f86",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/NO_LOSS_UPGRADE_MATRIX.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/NO_LOSS_UPGRADE_MATRIX.json",
+      "bytes": 74351,
+      "sha256": "f58bf0759a6c0c0760d18a5197fd2ab65021d8f28695f531a59cda044d7fb128",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/READ_ALL_AND_CHANGELOG.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/02_REVIEW/READ_ALL_AND_CHANGELOG.md",
+      "bytes": 3861,
+      "sha256": "40999c708c35776222947d4127ddcbcaa8c11d74b1acb9d9c2ab13c9559fdfa5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/ACADEMY_EXPERT_ORGANIZATION_GLOBAL.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/ACADEMY_EXPERT_ORGANIZATION_GLOBAL.md",
+      "bytes": 4097,
+      "sha256": "fd84050eb8830a1db7b22d6a1baf98bffdde6047a8e6e87bc70db92c0341a1d1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/NINE_REPORT_BLUEPRINTS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/NINE_REPORT_BLUEPRINTS.md",
+      "bytes": 4771,
+      "sha256": "59ff8b14dc69410439d4f1de4b644f3103eed0efa4a7109f8817dfbb146f36d3",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_AND_USER_VALUE_V2.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_AND_USER_VALUE_V2.md",
+      "bytes": 3771,
+      "sha256": "1a488954beaeda28f013603ffaa1aff615a7f2ea41806f68400f2091b8d5697a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_CATALOG_BASELINE.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_CATALOG_BASELINE.json",
+      "bytes": 18829,
+      "sha256": "07f231482f840e205047f33ffc91197ba0eb4dcf218f12beb375dd5aeff9d475",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_CATALOG_V2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/03_PRODUCT/PRODUCT_CATALOG_V2.json",
+      "bytes": 32192,
+      "sha256": "bef19a4bc912222ffb1045e7754ed36ced4793d3d9f3de0af575217a839853a9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/LAYERS_AND_FIELDS_BASELINE.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/LAYERS_AND_FIELDS_BASELINE.json",
+      "bytes": 4400,
+      "sha256": "0b95e26a6f50d7fa325e2d190f47ca3cfce138c5afee7aa1af7133186d1b2f63",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/METHOD_FAMILIES_BASELINE.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/METHOD_FAMILIES_BASELINE.json",
+      "bytes": 7338,
+      "sha256": "b76688b91ab543c4382cc32fa3336fe281cb89c12b8cfb22d353d6253a8fcb54",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/METHOD_PASSPORT_UPGRADES.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/METHOD_PASSPORT_UPGRADES.json",
+      "bytes": 15544,
+      "sha256": "a418a5e101f3fe71c2322a9a70e958451fab3e72ef0dbb2677fe0e86d3b02e8b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/RESEARCH_TO_METHOD_FACTORY.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/RESEARCH_TO_METHOD_FACTORY.md",
+      "bytes": 4129,
+      "sha256": "95079e41e8403ac0c11d2b6b99acf9b050cc1b9af97793cd587406600c946a12",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/RESONANCE_144_QUESTION_MATRIX.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/04_KNOWLEDGE/RESONANCE_144_QUESTION_MATRIX.json",
+      "bytes": 89379,
+      "sha256": "4e2d6100eb13663e56233771c4cf2d3ec197a32dc1cdb71c2ca4a27c062da3d9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/01_BACKEND_BLUEPRINT.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/01_BACKEND_BLUEPRINT.md",
+      "bytes": 3877,
+      "sha256": "53b8bebea1b16c7b61cfa84205eb6e4ff195a3cd9d6a1088ed914e90ec24772b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/02_FORMULA_MATRIX_SPEC.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/02_FORMULA_MATRIX_SPEC.md",
+      "bytes": 4054,
+      "sha256": "a86981ac98a444ebd93d6e088a99524f0c4213dc362363ffbf1d26f8b22e7c10",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/03_TIME_HYPOTHESES_SPEC.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/03_TIME_HYPOTHESES_SPEC.md",
+      "bytes": 3653,
+      "sha256": "d73975b2d79d7ff683a8745d08c1329b7a9c27a4259206c85370fdfaa8add215",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/04_AUTH_DATA_TRANSACTION_SPEC.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/04_AUTH_DATA_TRANSACTION_SPEC.md",
+      "bytes": 3386,
+      "sha256": "36681ca2eb9298dd3c2faa37575e94a945399e82655765ba0c5231912001516c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/05_JOBS_PAYMENTS_DELETE_SPEC.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/05_JOBS_PAYMENTS_DELETE_SPEC.md",
+      "bytes": 2994,
+      "sha256": "4bdd4313e4fd49a0e10ba56cc837789b6957dcca92adc3cf2a98ba0c42556365",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/06_API_SCHEMA_REPORT_CONTRACT.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/06_API_SCHEMA_REPORT_CONTRACT.md",
+      "bytes": 3611,
+      "sha256": "aa9e630f77782f61b8fbec15378a1609024107aa019fdbb84202b24a3bca2369",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/07_PERFORMANCE_CACHE_OBSERVABILITY.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/07_PERFORMANCE_CACHE_OBSERVABILITY.md",
+      "bytes": 2809,
+      "sha256": "aa593d4749e2b37419fc3aad0e63a062c59cf5e4e06d82aab4fe54903bc46988",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/08_SECURITY_MIGRATION_AND_P0.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/08_SECURITY_MIGRATION_AND_P0.md",
+      "bytes": 2825,
+      "sha256": "d0ad2ff38d5149d8fe6b051a571cfb7131cdc6e6e107769900302531cc265341",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/09_ADVANCED_METHOD_EXPANSION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/09_ADVANCED_METHOD_EXPANSION.md",
+      "bytes": 3393,
+      "sha256": "7278d7082a4f2968271108359b9e92a39b6b11b76538da289f30afef97ea22bc",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/10_RUN_PROTOCOL_AND_CANCELLATION.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/10_RUN_PROTOCOL_AND_CANCELLATION.md",
+      "bytes": 5515,
+      "sha256": "c142d745bff8ce301af4e8e79e98b9afe7353077f21fbba690d9a9168add7b4b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/11_DATA_LINEAGE_SOURCE_AND_UPDATE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/11_DATA_LINEAGE_SOURCE_AND_UPDATE.md",
+      "bytes": 4607,
+      "sha256": "2db66403b5736416630e17394e7bc25bb236885aba4913f8474b1cabd0767bb2",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/12_REFERENCE_ADAPTER_AND_ACCEPTANCE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/12_REFERENCE_ADAPTER_AND_ACCEPTANCE.md",
+      "bytes": 4924,
+      "sha256": "dd1be434fbc613e1f16bd1dec7acc838761e5e5f895b455dd1d983bb821099e9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/API_OPERATIONS_V2.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/API_OPERATIONS_V2.csv",
+      "bytes": 18714,
+      "sha256": "6affd8f766d27889dd00e3ab0c3e52e8a8184c9188836310420bcc8935e9502b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/API_OPERATIONS_V2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/API_OPERATIONS_V2.json",
+      "bytes": 27501,
+      "sha256": "35483ac2c7d1ea720b81073a5055a387eb77fb8cd711fef84e48ddb27a0db15f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/DATA_FIELDS_BASELINE_120.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/DATA_FIELDS_BASELINE_120.json",
+      "bytes": 55698,
+      "sha256": "12036706a99364009c176d6470dd57c1aaebe85f17b8ded36b1f13e194dbffad",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/FORMULA_ATLAS.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/FORMULA_ATLAS.md",
+      "bytes": 21793,
+      "sha256": "aefac803f5cc51cfbb4ddcd25dc8322d2d698f36702947af3fdd79945dd86c72",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/FORMULA_CATALOG.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/FORMULA_CATALOG.csv",
+      "bytes": 19870,
+      "sha256": "ee3542e9ebddd70343ccb25094a0060e617c31e2030858580c1843c1c618609c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/FORMULA_CATALOG.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/FORMULA_CATALOG.json",
+      "bytes": 29246,
+      "sha256": "ab530aeab0902ab021bc5ac82b188e98b25173feaefd0a78e42a3e467c7b44cd",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/diagrams/01_system.mmd",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/diagrams/01_system.mmd",
+      "bytes": 444,
+      "sha256": "344aba3ef1cc2d55bedcc8817e468a0f9507a1c2bcb0bca778645b7a492ad053",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/diagrams/02_analysis_sequence.mmd",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/diagrams/02_analysis_sequence.mmd",
+      "bytes": 598,
+      "sha256": "966546cf96d5d04a447cc7bdea721d8246198d346ec4b973d7620bab4bf1a37c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/diagrams/03_run_state.mmd",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/diagrams/03_run_state.mmd",
+      "bytes": 353,
+      "sha256": "3c527ceb0594d110b3e524766b327a7aabed0680382dd88869bb7ad8aadec5ea",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/AccessDecision.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/AccessDecision.json",
+      "bytes": 156,
+      "sha256": "a90f6e71622575ae35b03f21637fea597bb8597f61b00a2a31760ed52c29d06e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/BirthRecordV2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/BirthRecordV2.json",
+      "bytes": 323,
+      "sha256": "7652ad7040f6b1a74f9bb39c1da9c3202fe41c1c4037a01c73955d9bfab13663",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ClaimV2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ClaimV2.json",
+      "bytes": 348,
+      "sha256": "b7d3b36bf1e73d41487dd95802847fc39004fa7cac3798712c122b6082daae5f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ConflictResolution.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ConflictResolution.json",
+      "bytes": 197,
+      "sha256": "a6d2b593b5f055c2092b83227d2eddaa6502b5e0229abcda6895d5ba842f1d93",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/DeletionRequestV2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/DeletionRequestV2.json",
+      "bytes": 166,
+      "sha256": "b082b008661ff97a371641aa9f278ec382281e9bfc162905e7cf7704e834c68d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodFreeze.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodFreeze.json",
+      "bytes": 106,
+      "sha256": "d38427376599343fe203a483d514e9f8e82a2ec3d7bbf38cb1e5278d301c0992",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodPassportV2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodPassportV2.json",
+      "bytes": 489,
+      "sha256": "c207b961d5cdb5ff3253a891ad079346df2df921ff9e9b4e600f537c92c648a0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodPreview.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/MethodPreview.json",
+      "bytes": 104,
+      "sha256": "a2ac48b97207e5e4ffa219b933bf3eb506131d477416e339b216c983f8b20c5c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/OfflineBatch.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/OfflineBatch.json",
+      "bytes": 330,
+      "sha256": "9ef2780041a34a3f2b378ab3e530adf769d0f8f83d83ef97ba0e26668f901a3e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/OutboxEvent.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/OutboxEvent.json",
+      "bytes": 451,
+      "sha256": "dc3ef006b619defe88d44a7aec6ff4489998df8620d55f906f7926ecf13ca5b4",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/Problem.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/Problem.json",
+      "bytes": 186,
+      "sha256": "d65a1f6ab94c0f07e90591ee52a2d5b6fe1c933ee83b3d667a76dbd4aad23fc9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ProfilePipelineInput.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ProfilePipelineInput.json",
+      "bytes": 277,
+      "sha256": "1e435dbfb3d06c108d5cb3fa7f1ffcaacedc704c4572b22fdabec5a86c14cd64",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ReportSectionV2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ReportSectionV2.json",
+      "bytes": 307,
+      "sha256": "6e2bf782a6e59b2181cfc5dd032a54d03d264f8e386f1dfe5b59831aec0b8902",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ReviewDecision.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/ReviewDecision.json",
+      "bytes": 111,
+      "sha256": "a5acc7458f27f4c0699eddcf1c7152db66247181b01e937ec0e330b7e0379d7a",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunCompare.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunCompare.json",
+      "bytes": 136,
+      "sha256": "19450d3d34bbd0c275b025acb6f2bc836a919579d0d612d7097a482e77a3f0a6",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunCreate.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunCreate.json",
+      "bytes": 326,
+      "sha256": "70a03bb4b2bd226647701fe8ac57126610531ec3e8ebb6b97251130abdad6791",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunStatus.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/examples/RunStatus.json",
+      "bytes": 235,
+      "sha256": "dea8235742eeff0a530c4b2ac8042a9a11eb341f8e5badc223af5bbbdfd7a81c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.baseline.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.baseline.json",
+      "bytes": 313322,
+      "sha256": "3fbd57337e33747f4d26acb2fd642b46532a73a255615a605aa6124725013825",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.json",
+      "bytes": 373098,
+      "sha256": "35f05c7e2439effefc1595062c8d6705aca130a9b3dea41b8f442c48bd4059c1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.yaml",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/openapi.target.v2.yaml",
+      "bytes": 254326,
+      "sha256": "dbfe661a1a384236b0c37aa43e3d8d06c49fe84e8e9fe86a7a212bb608b7c96b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/AccessDecision.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/AccessDecision.schema.json",
+      "bytes": 735,
+      "sha256": "78b95dd796ff3f54491a2c8c565d8b9ee1ae817cd6711e7a028036b56d31f634",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/BirthRecordV2.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/BirthRecordV2.schema.json",
+      "bytes": 1794,
+      "sha256": "bcb82919fb242943148682ee84441bba39095b4674a77c19b7088b6b7a574e81",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ClaimV2.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ClaimV2.schema.json",
+      "bytes": 2470,
+      "sha256": "cae1528011afa29285cb3ae0632640d40a257236a08199b56a8a1167f7b16f82",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ConflictResolution.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ConflictResolution.schema.json",
+      "bytes": 584,
+      "sha256": "304008e7adb237763be919e19f714f1333ebdd27992b649e9f67d028c044ff36",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/DeletionRequestV2.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/DeletionRequestV2.schema.json",
+      "bytes": 629,
+      "sha256": "14555d8c0e8f9c01c5fdfa75dd184a50563b4c9af0ec4b021e2bdb09f2e31ff0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodFreeze.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodFreeze.schema.json",
+      "bytes": 535,
+      "sha256": "d2cce3bc47ff4674b1856d4f5a4c36213a438f012156b2f80444bd2ae4dd30a1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPassportV2.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPassportV2.schema.json",
+      "bytes": 2021,
+      "sha256": "14efd6f08e9077f485b9c64e18156377e5d4e1dbc6dfd362ad853d4c2e60cf28",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPreview.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/MethodPreview.schema.json",
+      "bytes": 450,
+      "sha256": "4fd4d335edae85f72a8a5d7e462ddc89b9d4cd4fa97cbc087ff347735ed57cfb",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OfflineBatch.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OfflineBatch.schema.json",
+      "bytes": 1260,
+      "sha256": "cf84c961b06ada01ba5649386dc3f2037d577decfd2b6ec13d5fb02bc9f028a0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OutboxEvent.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/OutboxEvent.schema.json",
+      "bytes": 1378,
+      "sha256": "dbd37ea7bc83978d246ae6a6818effb2fefab2e23ce0a7dd6034e4932d74b3a5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/Problem.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/Problem.schema.json",
+      "bytes": 716,
+      "sha256": "f7bbb539260376851a6aa2ca435725fab3ca6e9f06abe058db44c15e85616e06",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ProfilePipelineInput.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ProfilePipelineInput.schema.json",
+      "bytes": 1425,
+      "sha256": "f94f97bf1fca4cf207507b2b30afc9e5a704fbca958c1000939f08af52576bb9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReportSectionV2.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReportSectionV2.schema.json",
+      "bytes": 1312,
+      "sha256": "a34488d93aa03b30a8259205d7285d29cd762049fa23f55e0f4c7203041e81b9",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReviewDecision.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/ReviewDecision.schema.json",
+      "bytes": 540,
+      "sha256": "cf3adebb8b77391e50c87f199347d555de79726c111b72ba6f41be84a94f8f77",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCompare.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCompare.schema.json",
+      "bytes": 540,
+      "sha256": "b1f7667172cbfaf61698edb715d173bbf1336d1d93712c20ac2e5ad9ae889180",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCreate.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunCreate.schema.json",
+      "bytes": 1233,
+      "sha256": "974b34517af5d90cdb5da7f9f0ddc30abf9f105650a036d1246bf7bf58a52433",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunStatus.schema.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/schemas/RunStatus.schema.json",
+      "bytes": 1158,
+      "sha256": "b858b2ab7931fcba573727f6c0f9416188fc41f079ad42635b285c120280a99f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/sql/README.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/sql/README.md",
+      "bytes": 927,
+      "sha256": "83469e61340a78d8fc378cb17519d1f50e41b08924fb05686ffe8be1179308b7",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/sql/TRANSACTIONAL_CORE_REFERENCE.sql",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/05_BACKEND/sql/TRANSACTIONAL_CORE_REFERENCE.sql",
+      "bytes": 6824,
+      "sha256": "5eed65c34d2487ce862750c9ebcd90da02e200df2a027716bf574ba519620911",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/DEMO_CATALOG.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/DEMO_CATALOG.md",
+      "bytes": 11922,
+      "sha256": "f8a6bd9e5d49db8895c4dfe7194f1bcf58090b82bbea5ad284eeb3485edddaf5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/README.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/README.md",
+      "bytes": 1790,
+      "sha256": "d62235dbb727457df251b94bddc2566154335a2e2fb512ea251177101e46c18d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/data/demo-cases.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/data/demo-cases.json",
+      "bytes": 61704,
+      "sha256": "7ca8ce1342d34b15b2f80978dd4484769e5a615f3c8ba25588f4064e7d108118",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/data/tail80_table.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/data/tail80_table.json",
+      "bytes": 23987,
+      "sha256": "1c5157653ee549532093c7800ff60bb9077ae6f9407fa478ec0ad3afe39266e8",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/openapi.demo.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/openapi.demo.json",
+      "bytes": 2749,
+      "sha256": "720696548eb11250c4409f4f368f2c2ce133039441bc0ed7de90a861bdeae681",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/package.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/package.json",
+      "bytes": 430,
+      "sha256": "1b740edcfec2ede201ab67e483395f15a76ae4e14433af252ad7659c6d138082",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-082.html",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-082.html",
+      "bytes": 2123,
+      "sha256": "8c23ddace169fe0acb7a3d62b0b2463ce0b81667fd6b9fb2cb319acab6576355",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-082.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-082.md",
+      "bytes": 1686,
+      "sha256": "322453501521499296132327aeca47505aff8f580d76330968a165f8387bdca3",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-083.html",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-083.html",
+      "bytes": 2049,
+      "sha256": "7023ae55d191f3238f92c445784f58d6f5a84c55749d48f90cbeb91d50d8ef43",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-083.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-083.md",
+      "bytes": 1612,
+      "sha256": "03fb51157922dfc966ebf07856952521460ffe34955bd8f5d177b7db5a2afd0b",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-084.html",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-084.html",
+      "bytes": 1916,
+      "sha256": "bf56ec1274b1f6f59c8e0490601bcffad5965c2f005cc1b42e905ab8f7308e9e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-084.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/profile_examples/DEMO-084.md",
+      "bytes": 1479,
+      "sha256": "a372c46a8619a03abb4cdbcdb59b02b2c5e199e14b2e2ef89990b4b14e06c60f",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/public/app.js",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/public/app.js",
+      "bytes": 9959,
+      "sha256": "e52aea1b34b89973f4d54175d1499b5baa25192fe118d9f996b0f9db21a57100",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/public/index.html",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/public/index.html",
+      "bytes": 5349,
+      "sha256": "cbf86d68527085baa2843fd171e2d4ea5dc414c1000a5b56a872198817718245",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/public/style.css",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/public/style.css",
+      "bytes": 6027,
+      "sha256": "f5dffdea20b27f7b795a18acaabf649856ec92d4d4067e9480c4ea42d50366bc",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/benchmark.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/benchmark.json",
+      "bytes": 1385,
+      "sha256": "0830e600ac28bf786067e6e62dccc98ce880d953c179af46f88ccca18ff98d5c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/browser-ui.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/browser-ui.json",
+      "bytes": 11244,
+      "sha256": "be8407878af429848a64fae025d06f9eb603e4c00599354cae13f514b65efbb2",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/demo-results.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/demo-results.json",
+      "bytes": 197989,
+      "sha256": "56a375013022af21a94a8e8f63b68e9546d0d8b7926328e2a37db5b37c18c6dc",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/tests.tap",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/receipts/tests.tap",
+      "bytes": 21861,
+      "sha256": "fc89a8da770f211f72bce3c8f82e55f8b9bf84686aa7e5daf3a78cba077ee485",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/server.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/server.mjs",
+      "bytes": 3347,
+      "sha256": "924d91495f7215513e5134f81229ab2f5f20064888ae42ae0c1385c4e4648e11",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/canonical.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/canonical.mjs",
+      "bytes": 1992,
+      "sha256": "612fe4682dbc98b551b141e79e0e3398394fef727644cf93b72ed3ab1a64d7c7",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/dag.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/dag.mjs",
+      "bytes": 2546,
+      "sha256": "5e8b05162165882d1caea5cf34bc75c4f303ab6cb5f052f16f5ac9774bc49260",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/engine.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/engine.mjs",
+      "bytes": 1882,
+      "sha256": "df696f1c42b2ca3e6d5e4fa0d8a306947f0ea14e4c5fbc2e92d98b0939744dcb",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/errors.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/errors.mjs",
+      "bytes": 868,
+      "sha256": "ab7c070df898d853fa91079277475aac484baeca27df4b777d60205720d54e51",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/metrics.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/metrics.mjs",
+      "bytes": 5981,
+      "sha256": "2ffbd95f47ac6a39da48cd441a0bd807f8699e9f28267289d39ad2e477014434",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/names.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/names.mjs",
+      "bytes": 1919,
+      "sha256": "417ab2426e0cd6c5681a706c2a5d283bd6830b65c26eff6fad80fa745fffdd98",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/numbers.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/numbers.mjs",
+      "bytes": 5260,
+      "sha256": "e63e194655ee6ec6487cc4021a8ed0940f3ed05f90df06a08d47f9a4b0035833",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/pipeline.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/pipeline.mjs",
+      "bytes": 4787,
+      "sha256": "e322156f50a0a4b6b411f67a5eea192a9cff3cf103c679b89a27eb430afe9f55",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/policy.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/policy.mjs",
+      "bytes": 5315,
+      "sha256": "99dfd845ee3c4fc175d69a5b420e48df6073654a96a70e126d4ad3de8a3804e4",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/report.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/report.mjs",
+      "bytes": 2661,
+      "sha256": "8df3079b8df780f20900e43a88cae47859ab68779b9230a448f76fdd28511d6c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/symbolic.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/symbolic.mjs",
+      "bytes": 1752,
+      "sha256": "439d40d71819c08a5da9924510a2a8fa1747dc12b1b9d1999c23631e7bf301b8",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/time.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/src/time.mjs",
+      "bytes": 6430,
+      "sha256": "3abd23117925aa6e195752a5082d8b1b3550db4969bf15e90d9a84575578fd45",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tests/core.test.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tests/core.test.mjs",
+      "bytes": 7774,
+      "sha256": "8cc33f3a961d43147ffebf69f4f40041bd6a7f9e5c5e918c138b9273afdb35c5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tests/http.test.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tests/http.test.mjs",
+      "bytes": 2127,
+      "sha256": "582245e1a5f00e282bea95c8022b025b74292e66800f457485848f4c82410cd1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tools/benchmark.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tools/benchmark.mjs",
+      "bytes": 1632,
+      "sha256": "39e521bf31458a4915a18173888c4242980d179e962dc85abddc3d3c0032528d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tools/run-demos.mjs",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/06_DEMO_LAB/tools/run-demos.mjs",
+      "bytes": 800,
+      "sha256": "03908a8d7ad7c08d30320cf0eb2484725e7d020791826f322a7e62b163a0ca76",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/AI_INTERACTION_AND_ADMIN_CONSOLE.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/AI_INTERACTION_AND_ADMIN_CONSOLE.md",
+      "bytes": 3446,
+      "sha256": "65da15aa92cd29fd8f4dc967ca6c80f7137659e8f6bb4649525cacf978c904ec",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/SCREEN_ADDITIONS_V2.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/SCREEN_ADDITIONS_V2.json",
+      "bytes": 6985,
+      "sha256": "fb75c277c5e2ab03af829205f635ee97278ae8e903bbd74154f980214007c5f8",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/SCREEN_REGISTRY_COMBINED.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/SCREEN_REGISTRY_COMBINED.json",
+      "bytes": 25415,
+      "sha256": "dfa042f285fc48b74a2adc8edc09cedf9a139b0a648fa3d055ee8ff70a7295cf",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/UX_MOBILE_WEB_DESKTOP.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/UX_MOBILE_WEB_DESKTOP.md",
+      "bytes": 4527,
+      "sha256": "5e9fee514cf1adcc08cd0dab7b920f40b7a3583f4fe0a689d46efac230a88073",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_1440.png",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_1440.png",
+      "bytes": 292044,
+      "sha256": "2738b3617396803b244f91e717987915776fd6006bcdd61a3ad010b502a3a4dc",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_360.png",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_360.png",
+      "bytes": 209326,
+      "sha256": "d83950df193e011ebd1bd8aa7c08567f098b6557a8093702ac41e6bb9c7a54c5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_390.png",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_390.png",
+      "bytes": 207007,
+      "sha256": "f4d5a249b5d98664d26de28c3ccf573dec78476474fc352055bd5ecac9579f40",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_768.png",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/07_UI/screenshots/Life_Code_Demo_768.png",
+      "bytes": 280825,
+      "sha256": "74b2f9042c5838eecb04d09efc9f6d82797d7090279769eabb07f225f136478c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_BASELINE_140.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_BASELINE_140.json",
+      "bytes": 90286,
+      "sha256": "0c9937c8e6e1e30c1b17f18a18aa5a50164b33f6484b9a2db6f7ad9dbbe87386",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_V2_ADDITIONS.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_V2_ADDITIONS.csv",
+      "bytes": 16949,
+      "sha256": "3afacacfa5f1136c8f7ae77d41a4a8083344f1c193d711d1c7b1ff7e7390d75e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_V2_ADDITIONS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_V2_ADDITIONS.json",
+      "bytes": 43842,
+      "sha256": "e53190bdb9e2039d6daed6b22e1f55171f2ffdd92c78814ea5cc9da975ddb068",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_BASELINE.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_BASELINE.json",
+      "bytes": 7027,
+      "sha256": "05611a2ef112466a90b365a35900b1f20a51dcd10e808c60c88a22868808d2a4",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/DECISIONS_V2_ADDITIONS.json",
+      "bytes": 1716,
+      "sha256": "cb8d58b9a14fd14de3dec2ac41403092dafc5debfb634b4053cc8c4c490d27b3",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/EXECUTION_AND_ACCEPTANCE_V2.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/EXECUTION_AND_ACCEPTANCE_V2.md",
+      "bytes": 2828,
+      "sha256": "33d9e7711954025640c44c9b0520500bbb03e70f0f6924ed4da9d0b90b13fc1e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/LEGAL_AND_INTERNATIONAL_ADDENDUM.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/LEGAL_AND_INTERNATIONAL_ADDENDUM.md",
+      "bytes": 3137,
+      "sha256": "c3a6967312ab1ff4fe3ae85942a4e5895f478af0400a6c32bd64254f226f601d",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/RELEASE_GATES_BASELINE.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/RELEASE_GATES_BASELINE.json",
+      "bytes": 3506,
+      "sha256": "573558e993f91664e27ed70449f08ecefced7c43c6390bd4830f237522db6681",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/09_REPOSITORY/DELIVERY_RECEIPT.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/09_REPOSITORY/DELIVERY_RECEIPT.json",
+      "bytes": 1035,
+      "sha256": "f7ff2670d974461ba8a1f6f8c96e1c71b4b4da487ff235a6daab63a292eafc48",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/09_REPOSITORY/INTEGRATION_PLAN.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/09_REPOSITORY/INTEGRATION_PLAN.md",
+      "bytes": 3152,
+      "sha256": "9b1efc2f5d9abd5582161474509b6d7a187d58cbbfe4e1eecad15f92d9b1cad2",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/09_REPOSITORY/import_into_repo.py",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/09_REPOSITORY/import_into_repo.py",
+      "bytes": 6548,
+      "sha256": "a837ea63b430c22eb1968a17dd693580b1eaf4c9aeedea70c8333cc15d3b82a4",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/10_QA/BASELINE_TEST_RERUN.tap",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/10_QA/BASELINE_TEST_RERUN.tap",
+      "bytes": 10027,
+      "sha256": "f6cb8f3832934100f2449d7b266574d282f29fe40fbfd724aeea9733a60caa25",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/10_QA/DOCUMENT_QA.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/10_QA/DOCUMENT_QA.json",
+      "bytes": 1162,
+      "sha256": "fd79d831b0d6364d0a748bafe61f21c6b6728b99dd7da1f50bcd0f0adef6e905",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/10_QA/IMPORTER_TESTS.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/10_QA/IMPORTER_TESTS.json",
+      "bytes": 776,
+      "sha256": "eabcd3fca440c81be64ea4b9ad13be7f7364f227d3bcf708a8a6b4e2883b7a55",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/10_QA/PACKAGE_PREFLIGHT.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/10_QA/PACKAGE_PREFLIGHT.json",
+      "bytes": 152172,
+      "sha256": "d73e81467a5a7d34a25b330135135540454375633fe78ef88edd25e60b8d84ca",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/10_QA/QUALITY_AND_EVIDENCE_PLAN.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/10_QA/QUALITY_AND_EVIDENCE_PLAN.md",
+      "bytes": 3966,
+      "sha256": "a80ea95903afe383bff715c3e2e7a7669ea837c4d76db4d0a4250fb29353af77",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/10_QA/WORKBOOK_QA.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/10_QA/WORKBOOK_QA.json",
+      "bytes": 4251,
+      "sha256": "964af96acca987a24875bd4c6770441f57671be1dcd3a57984edeeb48ac9bfc7",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/11_SOURCES/SOURCE_ADDENDUM.csv",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/11_SOURCES/SOURCE_ADDENDUM.csv",
+      "bytes": 4044,
+      "sha256": "05b76c7b403fcc6a1d02991f4d5459847446e7b87196517f189c4ea4cb84f43c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/11_SOURCES/SOURCE_ADDENDUM.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/11_SOURCES/SOURCE_ADDENDUM.json",
+      "bytes": 6673,
+      "sha256": "d0994cc688536b737bbdca8e7af21871704f1323ac6906ec54ed6e3b346071b0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/11_SOURCES/SOURCE_NOTES.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/11_SOURCES/SOURCE_NOTES.md",
+      "bytes": 4341,
+      "sha256": "415a0b748a9ffc3b4c6df3dc77629f7e688d4f8f599ed682ba291a082012762e",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/INDEX.html",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/INDEX.html",
+      "bytes": 68581,
+      "sha256": "edb554d5d2003da8a8705a98e4b7cf0a8c93ddc5f91b5ca8308e520f5af9e7a1",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/MANIFEST.json",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/MANIFEST.json",
+      "bytes": 56605,
+      "sha256": "fef16715ef33376cb189e1c32e85d5af785f118efeae1af536c0e4e9fba96472",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/README.md",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/README.md",
+      "bytes": 2933,
+      "sha256": "bdd5330da164a1eb7082fc48b0c63cb7094834abc67279b35683faeda98467f0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/VERIFY_PACKAGE.py",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/VERIFY_PACKAGE.py",
+      "bytes": 8026,
+      "sha256": "d0d2db09146f17eef4748a1ce31d57f65e8914dc0d0de0e4d1e92fff436fc40c",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/LIFE_CODE_OS_V2_2026-10-20/requirements-verifier.txt",
+      "source_path": "LIFE_CODE_OS_V2_2026-10-20/requirements-verifier.txt",
+      "bytes": 20,
+      "sha256": "4046ca1e3a64f4ea791fb4fb3d8566242086ff1c8e2431e2c349e1052ffc6ba0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/Life_Code_OS_V2_Additive_Import_2026-10-20.patch",
+      "source_path": "Life_Code_OS_V2_Additive_Import_2026-10-20.patch",
+      "bytes": 8217929,
+      "sha256": "58a2604e047334b8dd9658057772aebaa713e34ab1ae940d9e77663b1f1527d0",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/Life_Code_OS_V2_Import_Receipt_2026-10-20.json",
+      "source_path": "Life_Code_OS_V2_Import_Receipt_2026-10-20.json",
+      "bytes": 1635,
+      "sha256": "119bd281d6d3c69d8989039b2f1f9204a93882ed2827d94fa12860307faca168",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    },
+    {
+      "path": "01_BASELINES/V2_EXPORT/Life_Code_OS_V2_Verification_2026-10-20.json",
+      "source_path": "Life_Code_OS_V2_Verification_2026-10-20.json",
+      "bytes": 192882,
+      "sha256": "52f93393e190602013a9e90a5164bf9da22fb3b98fc41b87360722a44db34be5",
+      "policy": "PRESERVED_BYTE_FOR_BYTE"
+    }
+  ]
+}

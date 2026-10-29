@@ -1,0 +1,285 @@
+[
+  {
+    "domain_id": "identity",
+    "name_vi": "Bản sắc và quyền tự chủ",
+    "input_scope": "Tên gọi, vai trò, điều người dùng muốn được hiểu",
+    "anchor_question": "Tôi muốn được gọi thế nào và ai có quyền xem hồ sơ?",
+    "levels": [
+      1,
+      2,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "learning",
+    "name_vi": "Học tập và năng lực",
+    "input_scope": "Kỹ năng, sản phẩm học tập, mục tiêu, phản hồi",
+    "anchor_question": "Điều gì đã học được và có minh chứng nào?",
+    "levels": [
+      1,
+      2,
+      3,
+      4,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "work",
+    "name_vi": "Công việc và vai trò",
+    "input_scope": "Kinh nghiệm, quyền hạn, tải việc, trách nhiệm",
+    "anchor_question": "Vai trò nào phù hợp nguồn lực và mục tiêu hiện tại?",
+    "levels": [
+      3,
+      4,
+      8,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "resources",
+    "name_vi": "Nguồn lực và tài chính",
+    "input_scope": "Thu–chi, tài sản, nợ do người dùng nhập, đơn vị tiền",
+    "anchor_question": "Điều gì cần được giữ, giảm hoặc tổ chức lại?",
+    "levels": [
+      4,
+      6,
+      9
+    ],
+    "sensitive": true,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "relationships",
+    "name_vi": "Quan hệ và ranh giới",
+    "input_scope": "Nhu cầu, cách đối thoại, thỏa thuận, quyền của mỗi bên",
+    "anchor_question": "Tôi đang mong điều gì và đã nói rõ chưa?",
+    "levels": [
+      2,
+      5,
+      8,
+      9
+    ],
+    "sensitive": true,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "family",
+    "name_vi": "Gia đình và trách nhiệm chung",
+    "input_scope": "Vai trò tự khai, lịch chung, quyền chia sẻ từng phần",
+    "anchor_question": "Trách nhiệm nào là của tôi, của người khác hoặc cần thỏa thuận?",
+    "levels": [
+      2,
+      5,
+      6,
+      9
+    ],
+    "sensitive": true,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "home",
+    "name_vi": "Nhà ở và môi trường",
+    "input_scope": "Không gian, thời gian đi lại, chi phí, an toàn",
+    "anchor_question": "Nơi sống hỗ trợ hay làm khó hoạt động nào?",
+    "levels": [
+      4,
+      6,
+      7,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "community",
+    "name_vi": "Cộng đồng và sự tham gia",
+    "input_scope": "Nhóm tham gia, nhu cầu hỗ trợ, đóng góp tự nguyện",
+    "anchor_question": "Có thể đóng góp điều gì mà vẫn giữ giới hạn?",
+    "levels": [
+      5,
+      8,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "body",
+    "name_vi": "Cơ thể và tự chăm sóc",
+    "input_scope": "Quan sát tự khai, dữ liệu phù hợp có quyền, referral khi cần",
+    "anchor_question": "Điều gì đang cần được trao đổi với chuyên gia phù hợp?",
+    "levels": [
+      7,
+      9
+    ],
+    "sensitive": true,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "daily_rhythm",
+    "name_vi": "Nhịp sống và phục hồi",
+    "input_scope": "Lịch ngủ, nghỉ, vận động, thời gian, cảm nhận",
+    "anchor_question": "Một điều chỉnh nhỏ nào thực hiện được trong tuần?",
+    "levels": [
+      3,
+      7,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "meaning",
+    "name_vi": "Ý nghĩa và niềm tin",
+    "input_scope": "Giá trị tự chọn, thực hành nội tâm, điều không muốn đánh đổi",
+    "anchor_question": "Điều quan trọng với tôi có mặt trong việc tôi đang làm không?",
+    "levels": [
+      2,
+      8,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "creativity",
+    "name_vi": "Sáng tạo và biểu đạt",
+    "input_scope": "Bản thảo, sản phẩm, sở thích và thời gian thực hành",
+    "anchor_question": "Tôi muốn tạo ra điều gì thay vì chỉ tiêu thụ?",
+    "levels": [
+      2,
+      3,
+      4,
+      8,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "mobility",
+    "name_vi": "Di chuyển và chuyển môi trường",
+    "input_scope": "Địa điểm, lịch đi lại, ngôn ngữ, nhu cầu hỗ trợ",
+    "anchor_question": "Chuyển nơi sống cần chuẩn bị những điều kiện nào?",
+    "levels": [
+      4,
+      6,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "caregiving",
+    "name_vi": "Chăm sóc và người phụ thuộc",
+    "input_scope": "Vai trò chăm sóc, sự ủy quyền, lịch và nguồn hỗ trợ",
+    "anchor_question": "Cần phân chia trách nhiệm thế nào để không một người phải gánh tất cả?",
+    "levels": [
+      5,
+      6,
+      7,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "later_life",
+    "name_vi": "Nghỉ hưu và đời sống lớn tuổi",
+    "input_scope": "Mục tiêu, nguồn lực, nhịp sống, khả năng tiếp cận",
+    "anchor_question": "Bước tiếp theo nào vừa sức và có ý nghĩa?",
+    "levels": [
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "legacy",
+    "name_vi": "Di sản và chuyển giao",
+    "input_scope": "Tri thức, tài liệu, người nhận, quyền truy cập và nguyện vọng",
+    "anchor_question": "Điều gì cần được ghi lại, bàn giao hoặc giữ riêng?",
+    "levels": [
+      6,
+      8,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "life_changes",
+    "name_vi": "Biến chuyển và mất mát",
+    "input_scope": "Sự kiện người dùng muốn kể, nguồn hỗ trợ, nhu cầu riêng tư",
+    "anchor_question": "Người dùng muốn kể đến đâu và cần điều gì lúc này?",
+    "levels": [
+      2,
+      5,
+      6,
+      8,
+      9
+    ],
+    "sensitive": true,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  },
+  {
+    "domain_id": "digital_life",
+    "name_vi": "Đời sống số và danh tính",
+    "input_scope": "Tài khoản, thói quen màn hình, dữ liệu, quyền truy cập",
+    "anchor_question": "Thông tin nào cần bảo vệ, giảm chia sẻ hoặc dọn lại?",
+    "levels": [
+      1,
+      3,
+      6,
+      9
+    ],
+    "sensitive": false,
+    "inference_from_name_birth_or_photo": false,
+    "source": "HNH_PRODUCT_DESIGN_V3",
+    "status": "DESIGN_NOT_RELEASED"
+  }
+]

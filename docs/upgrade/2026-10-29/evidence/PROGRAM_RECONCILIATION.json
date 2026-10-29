@@ -1,0 +1,359 @@
+{
+  "receipt_id": "LCO-PROGRAM-RECONCILIATION-2026-10-29.r1",
+  "scope": "Program, backlog, decisions, gates, importer and QA-claim reconciliation; no runtime mutation",
+  "observed_date": "2026-10-29",
+  "status": "VERIFIED_CURRENT_FOR_LOCAL_PLAN_RECONCILIATION_ONLY",
+  "production_status": "HOLD",
+  "source_identity": {
+    "repo_root": "/Users/tranhatam/Library/Mobile Documents/com~apple~CloudDocs/Documents/Devnewproject/Life-Code-OS",
+    "remote_at_intake": "git@github.com:tranhatam-collab/Life-Code-OS.git",
+    "branch_at_intake": "codex/complete-upgrade-plan-2026-10-20",
+    "head_at_intake": "336ef35a8386a744c6de18a7f7c6e268e89e6dac",
+    "dirty_worktree_preserved": true,
+    "identity_recheck_required_before_dev_dispatch": true
+  },
+  "instruction_boundary": {
+    "user_request": "Integrate all attached plans into project master and prepare detailed DEV handoff",
+    "attached_instructions": "REFERENCE_ONLY_NOT_AUTORUN_AUTHORITY",
+    "old_agents_instructions": "REVOKED_BY_CURRENT_USER",
+    "authorized_local_action": "Additive documentation/planning integration in owned new overlay paths",
+    "commit_push_merge_migration_deploy": "NOT_PERFORMED_OR_AUTHORIZED_BY_THIS_RECEIPT"
+  },
+  "counts": {
+    "v2_zip_files": 307,
+    "v2_core_folder_files": 304,
+    "v2_loose_sibling_files": 3,
+    "v3_zip_files": 520,
+    "zip_files_total": 827,
+    "existing_local_catalog_files": 216,
+    "existing_local_tasks": 156,
+    "existing_v1_tasks": 140,
+    "existing_upg_tasks": 16,
+    "v2_additive_task_ids": 68,
+    "v3_additive_task_ids": 72,
+    "v3_unified_source_tasks": 280,
+    "lossless_source_union_tasks": 296,
+    "integration_work_orders": 20,
+    "canonical_tasks_including_integration": 316,
+    "rich_local_decisions_preserved": 20,
+    "new_decisions_enriched": 25,
+    "unified_decision_packets": 45,
+    "local_trace_rows": 87,
+    "v3_requirement_trace_rows": 62,
+    "local_trace_distinct_directly_referenced_tasks": 69,
+    "product_gate_ids": 12,
+    "fpos_mapping_rows": 14
+  },
+  "id_and_dependency_checks": {
+    "source_task_id_unique": true,
+    "source_task_id_collision_count": 0,
+    "incoming_v3_omits_local_task_ids": [
+      "UPG-PRD-001",
+      "UPG-PRD-002",
+      "UPG-UX-001",
+      "UPG-UX-002",
+      "UPG-UX-003",
+      "UPG-AI-001",
+      "UPG-AI-002",
+      "UPG-PM-001",
+      "UPG-PM-002",
+      "UPG-BE-001",
+      "UPG-BE-002",
+      "UPG-BE-003",
+      "UPG-BE-004",
+      "UPG-BE-005",
+      "UPG-BE-006",
+      "UPG-BE-007"
+    ],
+    "p0_dependency_regressions": [
+      {
+        "task_id": "P0-02",
+        "canonical_local_dependencies": "P0-08",
+        "incoming_v3_dependencies": "P0-01",
+        "disposition": "PRESERVE_LOCAL_CORRECTION_WITH_RAW_SOURCE_HISTORY"
+      },
+      {
+        "task_id": "P0-05",
+        "canonical_local_dependencies": "P0-03",
+        "incoming_v3_dependencies": "P0-04",
+        "disposition": "PRESERVE_LOCAL_CORRECTION_WITH_RAW_SOURCE_HISTORY"
+      },
+      {
+        "task_id": "P0-06",
+        "canonical_local_dependencies": "P0-03",
+        "incoming_v3_dependencies": "P0-05",
+        "disposition": "PRESERVE_LOCAL_CORRECTION_WITH_RAW_SOURCE_HISTORY"
+      },
+      {
+        "task_id": "P0-07",
+        "canonical_local_dependencies": "P0-02",
+        "incoming_v3_dependencies": "P0-06",
+        "disposition": "PRESERVE_LOCAL_CORRECTION_WITH_RAW_SOURCE_HISTORY"
+      },
+      {
+        "task_id": "P0-08",
+        "canonical_local_dependencies": "P0-01",
+        "incoming_v3_dependencies": "P0-07",
+        "disposition": "PRESERVE_LOCAL_CORRECTION_WITH_RAW_SOURCE_HISTORY"
+      },
+      {
+        "task_id": "P0-10",
+        "canonical_local_dependencies": "P0-03;P0-04;P0-05;P0-06;P0-07;P0-09",
+        "incoming_v3_dependencies": "P0-09",
+        "disposition": "PRESERVE_LOCAL_CORRECTION_WITH_RAW_SOURCE_HISTORY"
+      }
+    ],
+    "typed_non_task_edges": 206,
+    "typed_decision_edges": 134,
+    "typed_gate_edges": 72,
+    "source_missing_dependency_ids": [],
+    "source_task_cycles": [],
+    "integration_task_cycles": [],
+    "canonical_task_id_policy": "Preserve source IDs; never silently renumber task identity.",
+    "provenance_key": [
+      "package_id",
+      "source_path",
+      "source_sha256",
+      "source_record_id"
+    ],
+    "mixed_code_namespace_rule": "G/S/R references in source documents are package-scoped unless explicitly linked to canonical gate/screen/source identity.",
+    "parent_task_rule": "Rollup relation is not automatically a task dependency; avoid parent/child completion cycles.",
+    "source_graph_vs_execution_graph": "Raw source graph retained. Canonical source graph preserves local P0 corrections and typed predicates. Any later execution-edge change needs a reason and review."
+  },
+  "csv_checks": {
+    "scope": "ID order/row count/uniqueness only; do not overstate all-cell equality",
+    "results": [
+      {
+        "json": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.json",
+        "csv": "docs/upgrade/2026-10-20/08_Thuc_thi_Kinh_doanh/EXECUTION_BACKLOG.csv",
+        "json_rows": 156,
+        "csv_rows": 156,
+        "id_order_equal": true,
+        "json_duplicate_ids": 0,
+        "csv_duplicate_ids": 0
+      },
+      {
+        "json": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_V2_ADDITIONS.json",
+        "csv": "docs/upgrade/sources/2026-10-29/v2/package/LIFE_CODE_OS_V2_2026-10-20/08_EXECUTION/BACKLOG_V2_ADDITIONS.csv",
+        "json_rows": 68,
+        "csv_rows": 68,
+        "id_order_equal": true,
+        "json_duplicate_ids": 0,
+        "csv_duplicate_ids": 0
+      },
+      {
+        "json": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.json",
+        "csv": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/09_EXECUTION/BACKLOG_UNIFIED.csv",
+        "json_rows": 280,
+        "csv_rows": 280,
+        "id_order_equal": true,
+        "json_duplicate_ids": 0,
+        "csv_duplicate_ids": 0
+      },
+      {
+        "json": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/REQUIREMENTS_TRACE_V3.json",
+        "csv": "docs/upgrade/sources/2026-10-29/v3/package/LIFE_CODE_OS_ALL_IN_ONE_V3_2026-10-29/02_RECONCILIATION/REQUIREMENTS_TRACE_V3.csv",
+        "json_rows": 62,
+        "csv_rows": 62,
+        "id_order_equal": true,
+        "json_duplicate_ids": 0,
+        "csv_duplicate_ids": 0
+      }
+    ]
+  },
+  "estimates": {
+    "v1_140_range_person_days": [
+      361,
+      852
+    ],
+    "upg16_range_person_days": [
+      91,
+      187
+    ],
+    "local156_range_person_days": [
+      452,
+      1039
+    ],
+    "v2_68_refinement_range_person_days": [
+      130,
+      396
+    ],
+    "v2_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE",
+    "v3_72_estimate": null,
+    "v3_unknown_task_estimate_count": 72,
+    "integration_known_proposal_count": 16,
+    "integration_refinement_proposal_range_person_days": [
+      50,
+      103
+    ],
+    "integration_unknown_estimate_count": 4,
+    "integration_rollup": "REFINEMENT_NOT_AUTOMATICALLY_ADDITIVE_TO_SOURCE_TASKS",
+    "approved_union_budget_person_days": null,
+    "approved_union_budget_money": null,
+    "currency": null,
+    "prohibited_calculation": "Do not sum V1/local parent envelopes + V2 refinements + INT refinements, and do not treat unknown V3 as zero.",
+    "required_rollup_fields": [
+      "estimate_origin",
+      "overlap_group",
+      "rollup_disposition",
+      "leaf_or_parent_selected_for_scope",
+      "approved_by",
+      "approved_at"
+    ],
+    "calendar_forecast": "Unavailable until cohort, selected methods, decision lead time, independent reviewers and actual team availability are fixed."
+  },
+  "decision_checks": {
+    "old_q1_q20_object_equality_required": true,
+    "old_q1_q20_approval_changed": false,
+    "new_q21_q45_approval": null,
+    "new_q21_q45_production_permission": false,
+    "founder_is_not_substitute_for": [
+      "Method rules and source rights",
+      "Legal/Privacy territory approval",
+      "Security/QA independence",
+      "Release/operator authority"
+    ],
+    "scoped_decision_map": {
+      "time_calendar": [
+        "Q24"
+      ],
+      "numerology": [
+        "Q32",
+        "Q38"
+      ],
+      "bat_cuc": [
+        "Q33",
+        "Q34"
+      ],
+      "tail80": [
+        "Q35"
+      ],
+      "psychomatrix": [
+        "Q36"
+      ],
+      "lifetime": [
+        "Q37"
+      ],
+      "product_report": [
+        "Q40",
+        "Q41"
+      ],
+      "academy": [
+        "Q42"
+      ],
+      "territory": [
+        "Q43"
+      ],
+      "ai": [
+        "Q44"
+      ],
+      "import": [
+        "Q30",
+        "Q45"
+      ]
+    }
+  },
+  "importer_assessment": {
+    "supplied_importers_read": true,
+    "supplied_importers_executed_on_current_worktree": false,
+    "dirty_worktree_preflight": "Would block supplied clean-branch apply path; do not reset/stash/force",
+    "canonical_current_destination": "docs/upgrade/2026-10-29/",
+    "supplied_v3_reference_destination": "docs/upgrades/2026-10-29-v3/",
+    "integration_mode_this_turn": "Explicitly authorized additive documentation overlay with independent intake receipts; not a claim of importer preflight/apply success",
+    "source_script_review": "V3 preflight dynamically loads VERIFY_PACKAGE.py; do not execute unreviewed source code just because dry-run is named safe",
+    "no_actions": [
+      "commit",
+      "push",
+      "merge",
+      "migration",
+      "deploy",
+      "provider_write",
+      "secret_access"
+    ]
+  },
+  "qa_claim_boundaries": [
+    {
+      "claim": "V3 manifest519 vs delivered520",
+      "status": "VERIFIED_CURRENT_SCOPE_EXPLANATION",
+      "interpretation": "Current source census verifies manifest519self-excludes manifest itself from520files. Historical FULL_IMPORT_REHEARSAL is still not current-tree importer proof."
+    },
+    {
+      "claim": "V3 Chromium four-viewports",
+      "status": "REPORTED_UNVERIFIED_FOR_CURRENT_RUNTIME",
+      "interpretation": "set_content/mocked fetch offline fixture; HTTP navigation blocked by administrator; not integrated browser HTTP E2E/native/WCAG proof."
+    },
+    {
+      "claim": "V3 document visual QA",
+      "status": "SOURCE_REPORTED_SCOPE_ONLY",
+      "interpretation": "Contact sheets all pages plus selected dense pages at full size; do not claim all pages individually read at full size."
+    },
+    {
+      "claim": "V3 workbook21sheets vs20detailentries",
+      "status": "VERIFIED_CURRENT_SCOPE_EXPLANATION",
+      "interpretation": "Actual workbook has Tong quan +20detail sheets.19overview counts match detail rowcounts;24formulas (19COUNTA+5cost),0stored errorcells. Engine recalculation/visual QA not performed."
+    },
+    {
+      "claim": "V1/V2/V3 test totals",
+      "status": "NO_NAIVE_ADDITION",
+      "interpretation": "192V3tests/125V2rerun/83V1rerun and167demo are different overlapping grains; preserve suite/test provenance."
+    }
+  ],
+  "handoff": {
+    "work_order_ids": [
+      "INT29-001",
+      "INT29-002",
+      "INT29-003",
+      "INT29-004",
+      "INT29-005",
+      "INT29-006",
+      "INT29-007",
+      "INT29-008",
+      "INT29-009",
+      "INT29-010",
+      "INT29-011",
+      "INT29-012",
+      "INT29-013",
+      "INT29-014",
+      "INT29-015",
+      "INT29-016",
+      "INT29-017",
+      "INT29-018",
+      "INT29-019",
+      "INT29-020"
+    ],
+    "first_ten_days": "Conditional dispatch windows, not completion promise; detail PROGRAM_EXECUTION_PLAN.md",
+    "scoped_completion": "Selected capability receipts unblock pilot without requiring all62methods or28products; non-applicable dispositions need review; core rights/privacy/auth cannot be bypassed.",
+    "concrete_inputs_still_unknown": [
+      "Human assignees and independent reviewer capacity",
+      "Initial cohort/capability/territory and decision options",
+      "Per-method source edition and usage rights",
+      "Schema/provider/candidate/staging selection",
+      "Entity/controller/merchant/currency/pricing and vendor quotes",
+      "Pilot/recovery/support/operator receipts"
+    ],
+    "runtime_repair_performed": false
+  },
+  "read_coverage_ref": "READ_COVERAGE_PROGRAM.json",
+  "limitations": [
+    "This receipt reconciles local planning artifacts; it does not verify production, provider accounts, CI, deployed SHA, legal compliance, mathematical-tradition authority or commercial readiness.",
+    "Parsing/hashing all scoped files is distinguished from semantic/full-visual review in read coverage.",
+    "Other lanes own binary extraction/render checks and full827-source preservation receipts."
+  ],
+  "binary_extraction_review_ref": "READ_COVERAGE_PROGRAM.json binary_review",
+  "baseline_v1_review": {
+    "assigned_files": 90,
+    "scope": "Read-only assigned baseline groups plusREADME/rights; readcoverage lists allSHA",
+    "new_material_conflict": "Autonomy A0–A3 label meanings differ V1 vsV3. Resolve by policy_version+capability, never escalate from matching label.",
+    "other_preserved_proposals": [
+      "OriginalL1nine-section template is historical; richer local14-sectioncontract retained.",
+      "HistoricalSLO targets p95<800ms,L1<5min,availability99.5%,RPO1h,RTO4h remain source proposals, not current measured/approved SLA.",
+      "P0target48–72h and paidbeta4–6months remain conditional historical ranges, not this integration deadline."
+    ]
+  },
+  "template_schema_validation": {
+    "engine": "jsonschema4.26.0 Draft202012Validator.check_schema",
+    "result": "PASS",
+    "work_order_short_form_validated_against_full_admission_schema": false,
+    "reason": "20integration orders are proposed records; full dispatch contract adds actual baseline/version/evidence/human acceptance before READYFORDEV."
+  }
+}

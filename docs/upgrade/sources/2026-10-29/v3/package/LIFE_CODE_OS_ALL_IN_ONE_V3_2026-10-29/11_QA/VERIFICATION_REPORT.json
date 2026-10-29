@@ -1,0 +1,51 @@
+{
+  "checked_on": "2026-10-29",
+  "delivery_version": "3.0-review",
+  "status": "PASS_LOCAL_PACKAGE_CHECKS",
+  "quality_checks": 1348,
+  "quality_passed": 1348,
+  "quality_failed": 0,
+  "importer_tests": 12,
+  "importer_passed": 12,
+  "calculation_tests": {
+    "V3": 192,
+    "V2_rerun": 125,
+    "V1_rerun": 83
+  },
+  "demo_cases": 167,
+  "preserved_v2_files": 307,
+  "v1_files_nested": 149,
+  "new_books": [
+    {
+      "name": "Life_Code_All_In_One_Master_V3",
+      "pages": 25
+    },
+    {
+      "name": "Life_Code_Numbers_Names_Bat_Cuc_Atlas_V3",
+      "pages": 23
+    }
+  ],
+  "workbook_sheets": 21,
+  "ui_viewports": [
+    360,
+    390,
+    768,
+    1440
+  ],
+  "ui_test_mode": "offline render with local result fixtures; browser loopback navigation blocked by environment policy; Node HTTP tests separate",
+  "deployment_status": "NOT_PERFORMED",
+  "github_write_status": "NOT_PERFORMED_THIS_TURN",
+  "deployed_sha": "NOT_VERIFIED",
+  "production_status": "NO_GO_PENDING_APPLICABLE_GATES",
+  "scientific_predictive_validation": "NOT_ESTABLISHED_BY_CALCULATION_TESTS",
+  "remaining": [
+    "IdP and full object authorization",
+    "PostgreSQL/RLS and migration rehearsal",
+    "R2/Queues and deletion/restore",
+    "Payment and reconciliation",
+    "Advanced traditional-method sources, versions and rights",
+    "Independent review and territory release",
+    "Native mobile applications"
+  ],
+  "full_import_rehearsal": "PASS on a temporary local Git review repository; see FULL_IMPORT_REHEARSAL.json. No remote write."
+}

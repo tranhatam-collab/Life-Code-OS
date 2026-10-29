@@ -1,0 +1,128 @@
+{
+  "receipt_id": "LCO-FINAL-PROGRAM-QA-2026-10-29.r1",
+  "observed_date": "2026-10-29",
+  "scope": "Independent read-only canonical planning artifact QA",
+  "status": "PASS",
+  "passed": 16,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "316unique IDs across backlog/graph/contracts/backward",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "674local decision predicates retained across3views",
+      "pass": true,
+      "detail": {
+        "expected_edges": 674,
+        "missing": []
+      }
+    },
+    {
+      "check": "156old contracts nested OBJECT_EXACT",
+      "pass": true,
+      "detail": 156
+    },
+    {
+      "check": "Q1–Q20 packet objects exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "45decisions unique and unapproved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "316topological nodes no missing/cyclic edge",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "typed decision/gate FK close",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "62method snapshots equal current matrix",
+      "pass": true,
+      "detail": {
+        "count": 62,
+        "mismatch": []
+      }
+    },
+    {
+      "check": "0method falsely released",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "task source pointers hashes/IDs current",
+      "pass": true,
+      "detail": {
+        "source_records": 456,
+        "unique_files": 3,
+        "errors": []
+      }
+    },
+    {
+      "check": "316legitimate source-scope backward rows;149formal/167review",
+      "pass": true,
+      "detail": {
+        "direct_formal_tasks": 149,
+        "needs_review": 167,
+        "errors": []
+      }
+    },
+    {
+      "check": "407unique trace rows valid taskrefs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "316DEVcontracts release disabled/human names null",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "BACKLOG_UNIFIEDCSV ID order parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "REQUIREMENT_TRACE_UNIFIEDCSV ID order parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "TASK_BACKWARD_TRACECSV ID order parity",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "artifact_hashes": {
+    "docs/upgrade/2026-10-29/execution/BACKLOG_UNIFIED.json": "914deb4ea812d3ed1589b707f49fd17f246ca55a248201a9c850fe8b99fbb328",
+    "docs/upgrade/2026-10-29/execution/TASK_DEPENDENCY_GRAPH.json": "a6bde3c71ca87000182784fda43aa2bdbb32f7450151e47a713b7f9933472f22",
+    "docs/upgrade/2026-10-29/execution/TASK_DEV_CONTRACTS.json": "4918c1a7f9ae06735973f16a8738e983ca543fb0b393968190288a13ae3189e5",
+    "docs/upgrade/2026-10-29/execution/TASK_BACKWARD_TRACE.json": "359aa2fc910381a9148f58963d8904e01fe41d6aec1267e37a670a2ee66ed69c",
+    "docs/upgrade/2026-10-29/execution/REQUIREMENT_TRACE_UNIFIED.json": "f78d2303c489b44e11e4065f00c7901a72e8a32cad0b4e6aafc3b243586450ea",
+    "docs/upgrade/2026-10-29/execution/DECISION_EXECUTION_PACKETS.json": "cdcbdbe7de99b44b676590507738c0e59e0b8a0734265b403d3c1eabb35f281b",
+    "docs/upgrade/2026-10-29/backend/FORMULA_METHOD_EXECUTION_MATRIX.json": "ec19c15fc8cc130f76e8ba68d6030226c26608620eb6e8b46a0273a3718fd6bc"
+  },
+  "limitations": [
+    "Hash/version-specific planning validation, not runtime/staging/provider/legal/release proof.",
+    "316source-scope rows are distinct from149direct formal-task links and167requiring trace review.",
+    "20INTrecords remain proposals; dispatch requires full work-order admission contract and human acceptance.",
+    "No app changes, secret access, provider actions or production approval."
+  ],
+  "additional_checks": {
+    "work_order_template_schema_validation": "PASS jsonschema4.26.0 Draft202012Validator.check_schema",
+    "read_coverage_program": {
+      "entries": 195,
+      "unique_paths": 195,
+      "bytes": 5687085,
+      "sha_mismatches": []
+    }
+  }
+}
